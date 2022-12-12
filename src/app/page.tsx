@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function HomePage() {
   return (
-    <main className="p-12 mx-auto max-w-[790px]">
+    <main className="mx-auto max-w-[720px]">
       <h1 className="text-4xl mb-6 font-semibold	w-full">이력서</h1>
 
       <div>
