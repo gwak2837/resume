@@ -187,35 +187,9 @@ export default function HomePage() {
         </tbody>
       </table>
 
-      <h2 className="text-3xl my-8">경력</h2>
+      <h2 className="text-3xl my-8">개발 경력</h2>
 
       <ul>
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <b>카투사 1지역대 정보작전과 (동두천)</b>
-            <div>2022년 12월 1일 ~</div>
-          </div>
-          <div>직책: 전산병</div>
-          <div>직급: 병장</div>
-          <div>
-            역할: 1지역대 내 한국군 컴퓨터 수리 및 유지보수, JavaScript 기반 업무 자동화 프로그램
-            개발, 행정 문서 수합
-          </div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <b>카투사 제176재정관리지원대 (동두천)</b>
-            <div>2022년 5월 11일 ~ 11월 30일 (6개월)</div>
-          </div>
-          <div>직책: SW Maintenance Team member</div>
-          <div>직급: 병장</div>
-          <div>
-            역할: 미군 월급 관리 시스템(DJMS, Defense Joint Military pay Service), 미군 월급 관리
-            웹사이트(MMPA, Master Military Pay Account) 유지보수
-          </div>
-        </li>
-        <div className="border w-full my-6" />
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
             <b>(주)더하트컴퍼니 @사람인</b>
@@ -236,19 +210,7 @@ export default function HomePage() {
           <div>역할: '4050 여성 전용 커뮤니티' 알파카살롱 기획 및 MVP 개발</div>
         </li>
         <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <b>Purdue University 온라인 해외교육</b>
-            <div>2021년 7월 5일 ~ 8월 20일 (2개월)</div>
-          </div>
-          <div>직책: 프로젝트 팀원</div>
-          <div>직급: 교육생</div>
-          <div>
-            역할: 'UAV ground scanning systems to find people or groups' 논문 작성, 학습 데이터 수집
-            및 가공
-          </div>
-        </li>
-        <div className="border w-full my-6" />
+
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
             <b>Headstart Silicon Valley, Inc.</b>
@@ -290,6 +252,55 @@ export default function HomePage() {
             역할: 적외선 영상 통계 분석 개발 보조 (C++), OpenMP 라이브러리 기반 병렬처리로 수학 계산
             성능 최적화
           </div>
+        </li>
+      </ul>
+
+      <h2 className="text-3xl my-8">기타 경력</h2>
+
+      <ul>
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
+            <b>카투사 1지역대 정보작전과 (동두천)</b>
+            <div>2022년 12월 1일 ~</div>
+          </div>
+          <div>직책: 전산병</div>
+          <div>직급: 병장</div>
+          <div>
+            역할: 1지역대 내 한국군 컴퓨터 수리 및 유지보수, JavaScript 기반 업무 자동화 프로그램
+            개발, 행정 문서 수합
+          </div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
+            <b>카투사 제176재정관리지원대 (동두천)</b>
+            <div>2022년 5월 11일 ~ 11월 30일 (6개월)</div>
+          </div>
+          <div>직책: SW Maintenance Team member</div>
+          <div>직급: 병장</div>
+          <div>
+            역할: 미군 월급 관리 시스템(DJMS, Defense Joint Military pay Service), 미군 월급 관리
+            웹사이트(MMPA, Master Military Pay Account) 유지보수
+          </div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
+            <b>Purdue University 온라인 해외교육</b>
+            <div>2021년 7월 5일 ~ 8월 20일 (2개월)</div>
+          </div>
+          <div>직책: 프로젝트 팀원</div>
+          <div>직급: 교육생</div>
+          <div>
+            역할: 'UAV ground scanning systems to find people or groups' 논문 작성, 학습 데이터 수집
+            및 가공
+          </div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          **신디(SINDY, Signature in Dessert) 창업** 2021. 2. 25. ~ 10. 31. (8개월) - Frontend ·
+          Backend 개발자, Cloud 엔지니어 (개발팀장) - '카페의 특색을 담아내는 사용자 주도 SNS형
+          디저트 정보 공유 공간' 디저트핏 기획 및 개발
         </li>
         <div className="border w-full my-6" />
         <li>
