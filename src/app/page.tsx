@@ -261,7 +261,7 @@ export default function HomePage() {
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
             <b>카투사 1지역대 정보작전과 (동두천)</b>
-            <div>2022년 12월 1일 ~</div>
+            <div>2022년 12월 1일 ~ 2023년 7월 23일 (7개월)</div>
           </div>
           <div>직책: 전산병</div>
           <div>직급: 병장</div>
@@ -298,9 +298,16 @@ export default function HomePage() {
         </li>
         <div className="border w-full my-6" />
         <li>
-          **신디(SINDY, Signature in Dessert) 창업** 2021. 2. 25. ~ 10. 31. (8개월) - Frontend ·
-          Backend 개발자, Cloud 엔지니어 (개발팀장) - '카페의 특색을 담아내는 사용자 주도 SNS형
-          디저트 정보 공유 공간' 디저트핏 기획 및 개발
+          <div className="grid grid-cols-2 gap-4 my-4">
+            <b>신디(SINDY, Signature in Dessert) 창업</b>
+            <div>2021년 2월 25일 ~ 10월 31일 (8개월)</div>
+          </div>
+          <div>직책: 개발팀장 (Frontend/Backend/Cloud)</div>
+          <div>직급: 기술책임자</div>
+          <div>
+            역할: '카페의 특색을 담아내는 사용자 주도 SNS형 디저트 정보 공유 공간' 디저트핏 기획 및
+            개발
+          </div>
         </li>
         <div className="border w-full my-6" />
         <li>
@@ -317,25 +324,53 @@ export default function HomePage() {
       <h2 className="text-3xl my-8">수상</h2>
 
       <ul>
-        <li>인천e지 인천스마트시티 2022년 12월 9일 최우수상(2등)</li>
-        <div className="border w-full my-6" />
-
-        <li>MMO 해커톤 2022년 11월 27일 우수상(2등)</li>
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <b>2022 인천 스마트관광 데이터 아이디어 공모전</b>
+            <div>인천관광공사</div>
+            <div>2022년 12월 9일</div>
+          </div>
+          <div>여행일지 자동기록 서비스 아이디어 제시 (2등, 150만원)</div>
+        </li>
         <div className="border w-full my-6" />
 
         <li>
-          <b>2021 AI 해커톤</b> 2022년 1월 22일. 제주테크노벨리 식의약용 자생식물 데이터 기반 사업화
-          서비스 아이디어 제시 (입상)
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <b>MMO 해커톤 2회</b>
+            <div>
+              MMO&nbsp;
+              <span className="text-xs">(IT교육회사)</span>
+            </div>
+            <div>2022년 11월 27일</div>
+          </div>
+          <div>결식 아동에게 줄 크리스마스 선물 크라우드펀딩 서비스 (2등, 5만원)</div>
         </li>
         <div className="border w-full my-6" />
         <li>
-          <b>2021 경희대학교 캠퍼스타운 입주 스타트업 '캠퍼 2기'</b> 2021년 11월 1일 ~ 2022년 8월
-          31일. 경희대학교 Sindy 창업팀 선정
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <b>2021 AI 해커톤</b>
+            <div>제주테크노벨리</div>
+            <div>2022년 1월 22일</div>
+          </div>
+          <div>식의약용 자생식물 데이터 기반 사업화 서비스 아이디어 제시 (입상)</div>
         </li>
         <div className="border w-full my-6" />
         <li>
-          <b>2021년 3차 포스코 창업인큐베이팅스쿨</b> 2021년 10월 18일 ~ 10월 29일. 포스코 Sindy
-          창업팀 선정
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <b>2021 경희대학교 캠퍼스타운 입주 스타트업 캠퍼 2기</b>
+            <div>경희대학교 캠퍼스타운</div>
+            <div>2021년 11월 1일</div>
+          </div>
+          <div>Sindy 창업팀 선정 (2021년 11월 1일 ~ 2022년 8월 31일, 10개월)</div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <b>2021년 3차 포스코 창업인큐베이팅스쿨</b>
+            <div>POSCO</div>
+            <div>2021년 10월 18일</div>
+          </div>
+          <div>Sindy 창업팀 선정 (2021년 10월 18일 ~ 10월 29일, 2주)</div>
         </li>
         <div className="border w-full my-6" />
         <li>
