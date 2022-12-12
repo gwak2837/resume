@@ -75,6 +75,10 @@ textarea {
   line-height: 1.75rem;
 }
 
+b {
+  font-weight: bold;
+}
+
 table {
   border-width: 1px;
   width: 100%;
@@ -97,6 +101,6 @@ table {
   }
 }
 
-ul {
+ol {
   line-height: 1.5rem;
 }
