@@ -6,7 +6,9 @@ import OtherCertificates from './OtherCertificates'
 export default function HomePage() {
   return (
     <main className="mx-auto mb-8 max-w-[720px]">
-      <h1 className="text-4xl mb-6 font-semibold	w-full">이력서</h1>
+      <a href="https://gwak2837.vercel.app" target="_blank" rel="noreferrer">
+        <h1 className="text-4xl mb-6 font-semibold	w-full">이력서</h1>
+      </a>
       <div>
         <div className="grid gap-4 grid-cols-[2fr_3fr]">
           <Image src="/images/1.jpeg" alt="asd" width="250" height="250" />
