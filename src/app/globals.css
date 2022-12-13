@@ -49,14 +49,18 @@ p {
   margin: 0;
 }
 
+h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  background: rgb(241 245 249);
   font-weight: 600;
   width: 100%;
+}
+
+h2 {
+  background: rgb(241 245 249);
 }
 
 a {
@@ -103,4 +107,8 @@ table {
 
 ol {
   line-height: 1.5rem;
+}
+
+dl {
+  list-style: inside;
 }
