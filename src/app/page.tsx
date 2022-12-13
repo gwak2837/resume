@@ -5,7 +5,7 @@ import OtherCertificates from './OtherCertificates'
 
 export default function HomePage() {
   return (
-    <main className="mx-auto max-w-[720px]">
+    <main className="mx-auto mb-8 max-w-[720px]">
       <h1 className="text-4xl mb-6 font-semibold	w-full">이력서</h1>
       <div>
         <div className="grid gap-4 grid-cols-[2fr_3fr]">
@@ -956,6 +956,13 @@ export default function HomePage() {
       </dl>
 
       <h2 className="text-3xl my-8">프로젝트</h2>
+      <a
+        href="https://gwak2837.notion.site/Resume-3fb93cf3019243fc8fd9103975f2872f"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Notion
+      </a>
     </main>
   )
 }
