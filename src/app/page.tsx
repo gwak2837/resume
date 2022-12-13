@@ -357,56 +357,82 @@ export default function HomePage() {
           <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
             <b>2021년도 LINC+ Start-up Members</b>
             <div>중앙대학교 LINC+사업단</div>
-            <div>2021년 6월 30일</div>
+            <div>2021년 7월 1일</div>
           </div>
-          <div>Sindy 창업팀 선정 (2021년 7월 1일 ~ 12월 31일, 6개월, 200만원)</div>
+          <div>Sindy 창업팀 선정 (2021년 7월 1일 ~ 12월 31일, 6개월) (200만원)</div>
         </li>
         <div className="border w-full my-6" />
         <li>
-          <b>2021 실전창업교육 1기 (2단계)</b> 2021년 6월 1일 ~ 7월 31일. 중소벤처기업부 Sindy
-          창업팀 선정 및 2단계 진출
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <b>2021 실전창업교육 1기</b>
+            <div>중소벤처기업부</div>
+            <div>2021년 6월 1일</div>
+          </div>
+          <div>Sindy 창업팀 선정 및 2단계 진출 (2021년 6월 1일 ~ 7월 31일, 2개월)</div>
         </li>
         <div className="border w-full my-6" />
         <li>
-          <b>2021 동작구 스타트업 펀딩 사업</b> 2021년 2월 5일 ~ 11월 30일. 동작구청 Sindy 창업팀
-          선정
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <b>2021 동작구 스타트업 펀딩 사업</b>
+            <div>동작구청</div>
+            <div>2021년 2월 5일</div>
+          </div>
+          <div>Sindy 창업팀 선정 (2021년 2월 5일 ~ 11월 30일, 10개월) (500만원)</div>
         </li>
         <div className="border w-full my-6" />
         <li>
-          <b>2021년 K-Startup 예비창업패키지 대비 멘토링</b> 2021년 1월 11일 ~ 3월 30일. 중앙대학교
-          Sindy 창업팀 선정
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <b>2020년 C-디자인씽킹 아카데미 경진대회</b>
+            <div>중앙대 교수학습개발센터</div>
+            <div>2020년 12월 3일</div>
+          </div>
+          <div>‘버려지는 소재를 새로운 순환으로’를 주제로 사업계획서 작성</div>
+          <div>‘온라인 새활용 제품 유통 플랫폼’ 기획으로 대상(1등, 250만원) 수상 및 특허 출원</div>
         </li>
         <div className="border w-full my-6" />
         <li>
-          <b>경기 창업아이템 Jump-up School</b> 2021. 1. 6. ~ 2. 28. Sindy 창업팀 선정
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <b>국가우수장학생 (이공계)</b>
+            <div>한국장학재단</div>
+            <div>2019년 8월 14일</div>
+          </div>
+          <div>2019-1학기 ~ 2020-2학기 전액장학금 (4개 학기)</div>
         </li>
         <div className="border w-full my-6" />
         <li>
-          <b>2020년 C-디자인씽킹 아카데미 경진대회</b> 2020년 12월 3일. 중앙대학교 ‘버려지는 소재를
-          새로운 순환으로’를 주제로 사업계획서 작성 ‘온라인 새활용 제품 유통 플랫폼’ 기획으로
-          대상(1등) 수상 및 특허 출원
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <b>2018 창의ICT공과대학 학술제</b>
+            <div>중앙대 창의ICT공과대학</div>
+            <div>2018년 11월 30일</div>
+          </div>
+          <div>
+            택배 상하차 아르바이트생의 열약한 근무 환경을 주제로 '초록 유니폼을 입은 알바생' VR 영상
+            제작 및 우수상 수상&nbsp;
+            <a href="https://www.youtube.com/watch?v=ruqZIWGwH-I" rel="noreferrer" target="_blank">
+              YouTube
+            </a>
+          </div>
         </li>
         <div className="border w-full my-6" />
         <li>
-          <b>국가우수장학생 (이공계)</b> 2019년 8월 14일. 한국장학재단
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <b>2018 창의ICT공과대학 학술제</b> 2018년 11월 30일. 중앙대학교 택배 상하차 아르바이트생의
-          열약한 근무 환경 [#YouTube](https://www.youtube.com/watch?v=ruqZIWGwH-I) VR 공감 영상전
-          (제목: 초록 유니폼을 입은 알바생) 우수상
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <b>BBR BlockCamp Hackathon X 데이빗 배 블록체인 해커톤</b> 2018년 10월 29일. BBR, 디센터
-          블록체인 기반 전자투표 시스템(e-voting) 기획 및 개발 (피칭상)
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <b>BBR BlockCamp 블록체인 해커톤</b>
+            <div>BBR, 디센터</div>
+            <div>2018년 10월 29일</div>
+          </div>
+          <div>
+            블록체인 기반 전자투표 시스템(e-voting) 기획 및 개발{' '}
+            <a href="https://bond687.wixsite.com/bbreview" rel="noreferrer" target="_blank">
+              (피칭상)
+            </a>
+          </div>
         </li>
       </ul>
       <h2 className="text-3xl my-8">기술</h2>
 
-      <h3 className="text-2xl my-4">Language</h3>
+      <h4 className="my-2">Language</h4>
 
-      <div className="flex gap-2">
+      <div className="flex gap-1">
         <a href="https://javascript.info/" rel="noreferrer" target="_blank">
           <img
             src="https://img.shields.io/badge/ES2022-F7DF1E?style=flat-square&logo=JavaScript&logoColor=black"
@@ -438,10 +464,9 @@ export default function HomePage() {
           />
         </a>
       </div>
-      <h3 className="text-2xl my-4">Frontend</h3>
-
-      <div className="grid gap-2">
-        <div className="flex gap-2">
+      <h4 className="my-2">Frontend</h4>
+      <div className="grid gap-1">
+        <div className="flex gap-1">
           <a href="https://nextjs.org/" rel="noreferrer" target="_blank">
             <img
               src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"
@@ -485,7 +510,7 @@ export default function HomePage() {
             />
           </a>
         </div>
-        <div className="flex gap-2">
+        <div className="flex gap-1">
           <a href="https://tailwindcss.com/" rel="noreferrer" target="_blank">
             <img
               src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white"
@@ -505,7 +530,7 @@ export default function HomePage() {
             />
           </a>
         </div>
-        <div className="flex gap-2">
+        <div className="flex gap-1">
           <a
             href="https://developer.mozilla.org/en-US/docs/Web/API/EventSource"
             rel="noreferrer"
@@ -539,7 +564,7 @@ export default function HomePage() {
             />
           </a>
         </div>
-        <div className="flex gap-2">
+        <div className="flex gap-1">
           <a href="https://www.figma.com/" rel="noreferrer" target="_blank">
             <img
               src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=Figma&logoColor=black"
@@ -554,215 +579,229 @@ export default function HomePage() {
           </a>
         </div>
       </div>
-      <h3 className="text-2xl my-4">Backend</h3>
-      <div className="flex gap-2"></div>
-      <a href="https://www.fastify.io/" rel="noreferrer">
-        <img
-          src="https://img.shields.io/badge/Fastify-000000?style=flat-square&logo=Fastify&logoColor=white"
-          alt="Apollo Badge"
-        />
-      </a>
-      <a href="https://en.wikipedia.org/wiki/HTTP/3" rel="noreferrer" target="_blank">
-        <img
-          src="https://img.shields.io/badge/HTTP3-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
-          alt="HTTP3 Badge"
-        />
-      </a>
-      <a href="https://en.wikipedia.org/wiki/HTTP/2_Server_Push" rel="noreferrer" target="_blank">
-        <img
-          src="https://img.shields.io/badge/Server Push-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
-          alt="Server Push Badge"
-        />
-      </a>
-      <a href="https://nodejs.org/en/" rel="noreferrer" target="_blank">
-        <img
-          src="https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white"
-          alt="Node.js Badge"
-          data-canonical-src="https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white"
-        />
-      </a>
-      <a href="https://www.docker.com/" rel="noreferrer" target="_blank">
-        <img
-          src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"
-          alt="Docker Badge"
-        />
-      </a>
-      <br />
-      <a href="https://expressjs.com/" rel="noreferrer">
-        <img
-          src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white"
-          alt="Fastify Badge"
-        />
-      </a>
-      <a href="https://www.apollographql.com/docs/apollo-server/" rel="noreferrer">
-        <img
-          src="https://img.shields.io/badge/Apollo-311C87?style=flat-square&logo=apollo-graphql&logoColor=white"
-          alt="Express Badge"
-        />
-      </a>
-      <a href="https://graphql.org/" rel="noreferrer" target="_blank">
-        <img
-          src="https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white"
-          alt="GraphQL Badge"
-        />
-      </a>
-      <a href="https://socket.io/" rel="noreferrer" target="_blank">
-        <img
-          src="https://img.shields.io/badge/Socket.io-010101?style=flat-square&logo=Socket.io&logoColor=white"
-          alt="WebSocket Badge"
-        />
-      </a>
-
-      <h3 className="text-2xl my-4">Database</h3>
-      <div className="flex gap-2"></div>
-      <a href="https://www.postgresql.org/" rel="noreferrer" target="_blank">
-        <img
-          src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=PostgreSQL&logoColor=white"
-          alt="PostgreSQL Badge"
-        />
-      </a>
-      <a href="https://redis.io/" rel="noreferrer" target="_blank">
-        <img
-          src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"
-          alt="Redis Badge"
-        />
-      </a>
-      <a href="https://www.mysql.com/" rel="noreferrer" target="_blank">
-        <img
-          src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"
-          alt="MySQL Badge"
-        />
-      </a>
-
-      <h3 className="text-2xl my-4">Cloud</h3>
-      <div className="flex gap-2">
-        <a href="https://cloud.google.com/gcp/" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Cloud Run-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
-            alt="GCP Badge"
-          />
-        </a>
-        <a href="https://cloud.google.com/gcp/" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Compute Engine-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
-            alt="GCP Badge"
-          />
-        </a>
-        <a href="https://cloud.google.com/gcp/" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Cloud Storage-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
-            alt="GCP Badge"
-          />
-        </a>
-        <a href="https://cloud.google.com/gcp/" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Cloud SQL-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
-            alt="GCP Badge"
-          />
-        </a>
-        <br />
-        <a href="https://vercel.com/" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white"
-            alt="Vercel Badge"
-          />
-        </a>
-        <br />
-        <a href="https://aws.amazon.com/ko/" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/RDS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white"
-            alt="AWS Badge"
-          />
-        </a>
-        <a href="https://aws.amazon.com/ko/" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/EC2-232F3E?style=flat-square&logo=Amazon-AWS&logoColor=white"
-            alt="AWS Badge"
-          />
-        </a>
-        <a href="https://aws.amazon.com/ko/" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/S3-569A31?style=flat-square&logo=Amazon-S3&logoColor=white"
-            alt="AWS Badge"
-          />
-        </a>
-        <br />
-        <a href="" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Oracle Instance-F80000?style=flat-square&logo=oracle&logoColor=white"
-            alt="GCP Badge"
-          />
-        </a>
+      <h4 className="my-2">Backend</h4>
+      <div className="grid gap-1">
+        <div className="flex gap-1">
+          <a href="https://www.fastify.io/" rel="noreferrer">
+            <img
+              src="https://img.shields.io/badge/Fastify-000000?style=flat-square&logo=Fastify&logoColor=white"
+              alt="Apollo Badge"
+            />
+          </a>
+          <a href="https://en.wikipedia.org/wiki/HTTP/3" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/HTTP3-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
+              alt="HTTP3 Badge"
+            />
+          </a>
+          <a
+            href="https://en.wikipedia.org/wiki/HTTP/2_Server_Push"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              src="https://img.shields.io/badge/Server Push-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
+              alt="Server Push Badge"
+            />
+          </a>
+          <a href="https://nodejs.org/en/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white"
+              alt="Node.js Badge"
+              data-canonical-src="https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white"
+            />
+          </a>
+          <a href="https://www.docker.com/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"
+              alt="Docker Badge"
+            />
+          </a>
+        </div>
+        <div className="flex gap-1">
+          <a href="https://expressjs.com/" rel="noreferrer">
+            <img
+              src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white"
+              alt="Fastify Badge"
+            />
+          </a>
+          <a href="https://www.apollographql.com/docs/apollo-server/" rel="noreferrer">
+            <img
+              src="https://img.shields.io/badge/Apollo-311C87?style=flat-square&logo=apollo-graphql&logoColor=white"
+              alt="Express Badge"
+            />
+          </a>
+          <a href="https://graphql.org/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white"
+              alt="GraphQL Badge"
+            />
+          </a>
+          <a href="https://socket.io/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Socket.io-010101?style=flat-square&logo=Socket.io&logoColor=white"
+              alt="WebSocket Badge"
+            />
+          </a>
+        </div>
+        <div className="flex gap-1">
+          <a href="https://www.postgresql.org/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=PostgreSQL&logoColor=white"
+              alt="PostgreSQL Badge"
+            />
+          </a>
+          <a href="https://redis.io/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"
+              alt="Redis Badge"
+            />
+          </a>
+          <a href="https://www.mysql.com/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"
+              alt="MySQL Badge"
+            />
+          </a>
+        </div>
       </div>
-      <h3 className="text-2xl my-4">Developer Tool</h3>
-      <div className="flex gap-2">
-        <a href="https://yarnpkg.com/getting-started/install" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Yarn berry-2C8EBB?style=flat-square&logo=yarn&logoColor=white"
-            alt="Yarn Berry Badge"
-          />
-        </a>
-        <a href="https://esbuild.github.io/" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/esbuild-FFCF00?style=flat-square&logo=esbuild&logoColor=black"
-            alt="esbuild Badge"
-          />
-        </a>
-        <a href="https://eslint.org/" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=eslint&logoColor=white"
-            alt="ESLint Badge"
-          />
-        </a>
-        <a href="https://prettier.io/" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Prettier-F7B93E?style=flat-square&logo=prettier&logoColor=black"
-            alt="Prettier Badge"
-          />
-        </a>
-        <a href="https://webpack.js.org/" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Webpack-8DD6F9?style=flat-square&logo=webpack&logoColor=black"
-            alt="Webpack Badge"
-          />
-        </a>
-        <a href="" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Jest-C21325?style=flat-square&logo=jest&logoColor=white"
-            alt="Jest Badge"
-          />
-        </a>
-        <br />
-        <a href="https://code.visualstudio.com/" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/VSCode-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white"
-            alt="VSCode Badge"
-          />
-        </a>
-        <a href="" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Slack Bot-4A154B?style=flat-square&logo=slack&logoColor=white"
-            alt="Slack Badge"
-          />
-        </a>
-        <a href="" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=notion&logoColor=white"
-            alt="Notion Badge"
-          />
-        </a>
-        <a href="" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"
-            alt="Notion Badge"
-          />
-        </a>
-        <a href="" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white"
-            alt="Jira Badge"
-          />
-        </a>
+
+      <h4 className="my-2">Cloud</h4>
+      <div className="grid gap-1">
+        <div className="flex gap-1">
+          <a href="https://vercel.com/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white"
+              alt="Vercel Badge"
+            />
+          </a>
+          <a href="" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Oracle Instance-F80000?style=flat-square&logo=oracle&logoColor=white"
+              alt="GCP Badge"
+            />
+          </a>
+        </div>
+        <div className="flex gap-1">
+          <a href="https://cloud.google.com/gcp/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Cloud Run-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
+              alt="GCP Badge"
+            />
+          </a>
+          <a href="https://cloud.google.com/gcp/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Compute Engine-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
+              alt="GCP Badge"
+            />
+          </a>
+          <a href="https://cloud.google.com/gcp/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Cloud Storage-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
+              alt="GCP Badge"
+            />
+          </a>
+          <a href="https://cloud.google.com/gcp/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Cloud SQL-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
+              alt="GCP Badge"
+            />
+          </a>
+        </div>
+        <div className="flex gap-1">
+          <a href="https://aws.amazon.com/ko/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/RDS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white"
+              alt="AWS Badge"
+            />
+          </a>
+          <a href="https://aws.amazon.com/ko/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/EC2-232F3E?style=flat-square&logo=Amazon-AWS&logoColor=white"
+              alt="AWS Badge"
+            />
+          </a>
+          <a href="https://aws.amazon.com/ko/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/S3-569A31?style=flat-square&logo=Amazon-S3&logoColor=white"
+              alt="AWS Badge"
+            />
+          </a>
+        </div>
+      </div>
+      <h4 className="my-2">Developer Tool</h4>
+      <div className="grid gap-1">
+        <div className="flex gap-1">
+          <a href="https://yarnpkg.com/getting-started/install" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Yarn berry-2C8EBB?style=flat-square&logo=yarn&logoColor=white"
+              alt="Yarn Berry Badge"
+            />
+          </a>
+          <a href="https://esbuild.github.io/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/esbuild-FFCF00?style=flat-square&logo=esbuild&logoColor=black"
+              alt="esbuild Badge"
+            />
+          </a>
+          <a href="https://eslint.org/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=eslint&logoColor=white"
+              alt="ESLint Badge"
+            />
+          </a>
+          <a href="https://prettier.io/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Prettier-F7B93E?style=flat-square&logo=prettier&logoColor=black"
+              alt="Prettier Badge"
+            />
+          </a>
+          <a href="https://webpack.js.org/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Webpack-8DD6F9?style=flat-square&logo=webpack&logoColor=black"
+              alt="Webpack Badge"
+            />
+          </a>
+          <a href="" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Jest-C21325?style=flat-square&logo=jest&logoColor=white"
+              alt="Jest Badge"
+            />
+          </a>
+        </div>
+        <div className="flex gap-1">
+          <a href="" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"
+              alt="Git Badge"
+            />
+          </a>
+          <a href="https://code.visualstudio.com/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/VSCode-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white"
+              alt="VSCode Badge"
+            />
+          </a>
+          <a href="" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Slack Bot-4A154B?style=flat-square&logo=slack&logoColor=white"
+              alt="Slack Badge"
+            />
+          </a>
+          <a href="" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=notion&logoColor=white"
+              alt="Notion Badge"
+            />
+          </a>
+
+          <a href="" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white"
+              alt="Jira Badge"
+            />
+          </a>
+        </div>
       </div>
 
       <h3 className="text-2xl my-4">React.js (Next.js)</h3>
@@ -828,7 +867,31 @@ export default function HomePage() {
           >
             Geolocation API
           </a>
-          , Notification API, WebRTC API, Push API 기능을 사용했습니다.
+          ,&nbsp;
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Notification API
+          </a>
+          ,&nbsp;
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API"
+            target="_blank"
+            rel="noreferrer"
+          >
+            WebRTC API
+          </a>
+          ,&nbsp;
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Push_API"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Push API
+          </a>
+          &nbsp;기능을 사용했습니다.
         </li>
         <li>웹소켓 또는 HTTP/2 Push 기능을 활용해 일대일 채팅 기능을 구현했습니다.</li>
       </dl>
@@ -891,6 +954,8 @@ export default function HomePage() {
         <li>Telegram API를 사용해 알림용 메시지를 보낸 경험이 있습니다.</li>
         <li>(예정) 아임포트 연동</li>
       </dl>
+
+      <h2 className="text-3xl my-8">프로젝트</h2>
     </main>
   )
 }
