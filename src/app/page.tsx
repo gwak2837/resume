@@ -11,39 +11,77 @@ export default function HomePage() {
       </a>
       <div>
         <div className="grid gap-4 grid-cols-[2fr_3fr]">
-          <Image src="/images/1.jpeg" alt="asd" width="250" height="250" />
-          <ol>
-            <div>🧑&nbsp; 곽태욱 (Taeuk Gwak, 郭泰昱)</div>
-            <div>🎉&nbsp; 1998년 4월 12일 (남)</div>
-            <div>🎓&nbsp; 중앙대학교 컴퓨터공학부 학사</div>
-            <div>🏠&nbsp; 서울시 강동구 천호동</div>
-            <div>🪖&nbsp; ROTC 2019년 1월 ~ 2020년 8월</div>
-            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 카투사 2022년 3월 ~ 2023년 7월</div>
-            <div>
-              📱&nbsp; <a href="tel:010-9203-2837">010-9203-2837</a>
-            </div>
-            <div>
-              ✉️&nbsp; <a href="mailto:gwak2837@kakao.com">gwak2837@kakao.com</a>
-            </div>
-            <div>
-              🖥&nbsp;{' '}
-              <a href="https://github.com/rmfpdlxmtidl" target="_blank" rel="noreferrer">
-                github.com/rmfpdlxmtidl
-              </a>
-            </div>
-            <div>
-              🌐&nbsp;{' '}
-              <a href="https://velog.io/@gwak2837" target="_blank" rel="noreferrer">
-                velog.io/@gwak2837
-              </a>
-            </div>
-            <div>
-              📷&nbsp;{' '}
-              <a href="https://www.instagram.com/gwak2837/" target="_blank" rel="noreferrer">
-                instagram.com/gwak2837
-              </a>
-            </div>
-          </ol>
+          <Image src="/images/1.jpeg" alt="asd" width="270" height="270" />
+          <table className="border-none w-fit	">
+            <tbody>
+              <tr>
+                <td className="border-none p-px">🧑&nbsp;&nbsp;</td>
+                <td className="border-none p-px">곽태욱 (Taeuk Gwak, 郭泰昱)</td>
+              </tr>
+              <tr>
+                <td className="border-none p-px">🎉</td>
+                <td className="border-none p-px">1998년 4월 12일 (남)</td>
+              </tr>
+              <tr>
+                <td className="border-none p-px">🎓</td>
+                <td className="border-none p-px">중앙대학교 컴퓨터공학부 학사</td>
+              </tr>
+              <tr>
+                <td className="border-none p-px">🏠</td>
+                <td className="border-none p-px">서울시 강동구 천호동</td>
+              </tr>
+              <tr>
+                <td className="border-none p-px">🪖</td>
+                <td className="border-none p-px">ROTC 2019년 1월 ~ 2020년 8월</td>
+              </tr>
+              <tr>
+                <td className="border-none p-px"></td>
+                <td className="border-none p-px">카투사 2022년 3월 ~ 2023년 7월</td>
+              </tr>
+              <tr>
+                <td className="border-none p-px">📱</td>
+                <td className="border-none p-px">
+                  <a href="tel:010-9203-2837">010-9203-2837</a>
+                </td>
+              </tr>
+              <tr>
+                <td className="border-none p-px">✉️</td>
+                <td className="border-none p-px">
+                  <a href="mailto:gwak2837@kakao.com">gwak2837@kakao.com</a>
+                </td>
+              </tr>
+              <tr>
+                <td className="border-none p-px">
+                  <Image src="/images/github.svg" alt="github" width="16" height="16" />
+                </td>
+                <td className="border-none p-px">
+                  <a href="https://github.com/rmfpdlxmtidl" target="_blank" rel="noreferrer">
+                    github.com/rmfpdlxmtidl
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td className="border-none p-px">
+                  <Image src="/images/velog.png" alt="velog" width="16" height="16" />
+                </td>
+                <td className="border-none p-px">
+                  <a href="https://velog.io/@gwak2837" target="_blank" rel="noreferrer">
+                    velog.io/@gwak2837
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td className="border-none p-px">
+                  <Image src="/images/instagram.svg" alt="velog" width="16" height="16" />
+                </td>
+                <td className="border-none p-px">
+                  <a href="https://www.instagram.com/gwak2837/" target="_blank" rel="noreferrer">
+                    instagram.com/gwak2837
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
       <p className="my-4 ">
@@ -132,7 +170,9 @@ export default function HomePage() {
         </tbody>
       </table>
       <OtherCertificates />
-      <h2 className="text-3xl my-8">개발 경력</h2>
+      <h2 className="text-3xl my-8">
+        개발 경력 <span className="text-base">(1년)</span>
+      </h2>
       <ul>
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
@@ -195,7 +235,6 @@ export default function HomePage() {
             <div>2022년 12월 1일 ~ 2023년 7월 23일 (7개월)</div>
           </div>
           <div>직책: 전산병</div>
-          <div>직급: 병장</div>
           <div>
             역할: 1지역대 내 한국군 컴퓨터 수리 및 유지보수, JavaScript 기반 업무 자동화 프로그램
             개발, 행정 문서 수합
@@ -208,7 +247,6 @@ export default function HomePage() {
             <div>2022년 5월 11일 ~ 11월 30일 (6개월)</div>
           </div>
           <div>직책: SW Maintenance Team member</div>
-          <div>직급: 병장</div>
           <div>
             역할: 미군 월급 관리 시스템(DJMS, Defense Joint Military pay Service), 미군 월급 관리
             웹사이트(MMPA, Master Military Pay Account) 유지보수
@@ -220,8 +258,7 @@ export default function HomePage() {
             <b>비욘드코딩 (코딩학원)</b>
             <div>2021년 8월 25일 ~ 9월 30일 (1개월)</div>
           </div>
-          <div>직책: 웹 개발 수업</div>
-          <div>직급: 강사</div>
+          <div>직책: 웹 개발 수업 강사</div>
           <div>
             역할: 초등학생/중학생을 대상으로 HTML/CSS/JS 개념 및 자기소개 웹페이지 제작 수업 (주
             2회, 1회 3시간)
@@ -245,7 +282,6 @@ export default function HomePage() {
             <div>2021년 7월 5일 ~ 8월 20일 (2개월)</div>
           </div>
           <div>직책: 프로젝트 팀원</div>
-          <div>직급: 교육생</div>
           <div>
             역할: 'UAV ground scanning systems to find people or groups' 논문 작성, 학습 데이터 수집
             및 가공
@@ -258,7 +294,6 @@ export default function HomePage() {
             <div>2021년 5월 31일 ~ 11월 9일 (5개월)</div>
           </div>
           <div>직책: 프로젝트 팀장</div>
-          <div>직급: 교육생</div>
           <div>역할: Docker 기반 심리테스트 웹사이트 구축, k8s와 CI/CD 기반 CRUD 게시판 구축</div>
         </li>
         <div className="border w-full my-6" />
@@ -268,7 +303,6 @@ export default function HomePage() {
             <div>2021년 2월 25일 ~ 10월 31일 (8개월)</div>
           </div>
           <div>직책: 개발팀장 (Frontend/Backend/Cloud)</div>
-          <div>직급: 기술책임자</div>
           <div>
             역할: '카페의 특색을 담아내는 사용자 주도 SNS형 디저트 정보 공유 공간' 디저트핏 기획 및
             개발
@@ -281,7 +315,6 @@ export default function HomePage() {
             <div>2021년 1월 4일 ~ 2월 5일 (1개월)</div>
           </div>
           <div>직책: 프로젝트 팀장</div>
-          <div>직급: 인턴</div>
           <div>역할: ‘음성인식 기반 노래검색 서비스’ Icezam 기획 및 개발</div>
         </li>
         <div className="border w-full my-6" />
@@ -291,7 +324,6 @@ export default function HomePage() {
             <div>2019년 9월 16일 ~ 12월 13일 (3개월)</div>
           </div>
           <div>직책: ‘컴퓨팅적 사고와 문제 해결’ 수업 조교</div>
-          <div>직급: 조교</div>
           <div>역할: 수업 중 수강생의 Scratch 프로그래밍 관련 질의 응답 및 과제 채점</div>
         </li>
         <div className="border w-full my-6" />
@@ -965,6 +997,9 @@ export default function HomePage() {
       >
         Notion
       </a>
+
+      <div className="w-full text-center text-slate-800 text-sm mt-8">2022년 12월 14일</div>
+      <div className="w-full text-center text-slate-800 text-sm">작성자: 곽태욱</div>
     </main>
   )
 }
