@@ -840,12 +840,11 @@ export default function HomePage() {
 
       <h3 className="text-2xl my-4">React.js (Next.js)</h3>
       <dl>
-        <li>Recoil.js, Context API 등 상태 관리 라이브러리 경험이 있습니다.</li>
+        <li>Recoil.js, Context API 등 전역 상태 관리 경험이 있습니다.</li>
         <li>
-          Apollo, React Query, useSWR 등 네트워크 요청 및 응답 관리 라이브러리 경험이 있습니다.
+          React Query, Apollo client, useSWR 등 네트워크 요청 및 응답 데이터 관리 경험이 있습니다.
         </li>
-        <li>Next.js 프레임워크 기반 SSR 개발 경험 및 REST API 개발 경험이 있습니다.</li>
-        <li>Atomic 컴포넌트 디자인을 고민했습니다.</li>
+        <li>Next.js 프레임워크 기반 SSR 개발 경험이 있습니다.</li>
         <li>
           PWA를 적용해 모바일 접근성을 높이고, 브라우저 Notification/Push API로 사용자 재방문율을
           향상했습니다.
@@ -929,20 +928,18 @@ export default function HomePage() {
         </li>
         <li>웹소켓 또는 HTTP/2 Push 기능을 활용해 일대일 채팅 기능을 구현했습니다.</li>
       </dl>
-      <h3 className="text-2xl my-4">JavaScript</h3>
+      <h3 className="text-2xl my-4">Backend</h3>
       <dl>
-        <li>
-          Express.js, Fastify, Koa.js, Next.js의 API를 사용한 REST API 서버 개발 경험이 있습니다.
-        </li>
-        <li>Apollo Server를 사용한 GraphQL API 서버 개발 경험이 있습니다.</li>
+        <li>Fastify, Next.js, Express.js, Koa.js 라이브러리로 REST API 서버를 개발했습니다.</li>
+        <li>Apollo Server를 사용해 GraphQL API 서버를 개발했습니다.</li>
         <li>Jest를 사용한 유닛 테스트 자동화(CI) 경험이 있습니다.</li>
         <li>
-          Docker의 Dockerfile, compose를 사용해 서버 인프라 설정, 컨테이너 관리를 자동화했습니다.
+          Dockerfile, compose.yaml 파일을 사용해 서버 인프라 설정, 컨테이너 관리를 자동화했습니다.
         </li>
         <li>간단한 PostgreSQL 쿼리 빌더 및 ORM을 직접 구현했습니다.</li>
         <li>
-          BFF(Backend For Frontend) 개념을 활용해 프론트엔드 개별 페이지에 최적화된 엔드포인트를
-          설계 · 구현할 수 있습니다.
+          BFF 개념을 활용해 프론트엔드 개별 페이지에 최적화된 엔드포인트를 설계 · 구현할 수
+          있습니다.
         </li>
       </dl>
       <h3 className="text-2xl my-4">PostgreSQL</h3>
@@ -963,13 +960,15 @@ export default function HomePage() {
       </dl>
       <h3 className="text-2xl my-4">Cloud</h3>
       <dl>
-        <li>Compute Engine에 Docker 기반 SSL 전용 PostgreSQL 서버를 구축했습니다.</li>
+        <li>
+          클라우드 가상 머신에 Docker 기반 SSL 전용 PostgreSQL 서버와 Redis 서버를 구축했습니다.
+        </li>
         <li>
           Cloud Build와 Cloud Run을 활용해 Docker 이미지 빌드 · 배포를 자동화(CI · CD) 했습니다.
         </li>
         <li>Cloud Function을 사용한 Slack 알림봇 개발 경험이 있습니다.</li>
         <li>GCP VPC 네트워크에서 방화벽 규칙을 설정해 요청 IP 또는 포트 범위를 제한했습니다.</li>
-        <li>Cloud Storage에 이미지 파일을 동적으로 업로드하고 이미지를 서비스 했습니다.</li>
+        <li>Cloud Storage에 이미지 파일을 동적으로 업로드하고 서비스 했습니다.</li>
         <li>Cloud SQL 및 AWS RDS에 클라우드 DB 서버를 구축했습니다.</li>
         <li>
           AWS RDS, AWS EC2, AWS S3, Oracle Instance, 가비아 클라우드를 사용한 경험이 있습니다.
@@ -982,11 +981,8 @@ export default function HomePage() {
         <li>Google Analytics를 활용한 사이트 통계 분석 경험이 있습니다.</li>
         <li>네이버지도 API를 활용해 지도를 사용한 경험이 있습니다.</li>
         <li>
-          채널톡 API, SOLAPI를 활용해 카카오 비즈 채널로 카카오 알림톡, 친구톡을 자동으로 보낸
-          경험이 있습니다.
+          채널톡 API, Telegram API, SOLAPI를 활용해 사용자에게 알림용 메시지를 보낸 경험이 있습니다.
         </li>
-        <li>Telegram API를 사용해 알림용 메시지를 보낸 경험이 있습니다.</li>
-        <li>(예정) 아임포트 연동</li>
       </dl>
 
       <h2 className="text-3xl my-8">프로젝트</h2>
