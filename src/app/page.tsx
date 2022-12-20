@@ -32,11 +32,11 @@ export default function HomePage() {
               </tr>
               <tr>
                 <td className="border-none p-px">🪖</td>
-                <td className="border-none p-px">ROTC 2019년 1월 ~ 2020년 8월</td>
+                <td className="border-none p-px">ROTC 2019년 1월 ~ 2020년 9월</td>
               </tr>
               <tr>
                 <td className="border-none p-px"></td>
-                <td className="border-none p-px">카투사 2022년 3월 ~ 2023년 7월</td>
+                <td className="border-none p-px">카투사 2022년 3월 ~ 2023년 7월 (1년 4개월)</td>
               </tr>
               <tr>
                 <td className="border-none p-px">📱</td>
@@ -140,7 +140,7 @@ export default function HomePage() {
             <td className="font-semibold">완주화산중학교</td>
             <td>졸업</td>
             <td>2011년 3월 ~ 2014년 2월 </td>
-            <td>졸업 등수: 남자 수석, 전체 4등</td>
+            <td>졸업 등수: 남자 수석 (전체 4등)</td>
           </tr>
         </tbody>
       </table>
