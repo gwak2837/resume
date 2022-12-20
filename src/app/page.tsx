@@ -276,6 +276,12 @@ export default function HomePage() {
               alt="React Badge"
             />
           </a>
+          <a href="https://tailwindcss.com/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white"
+              alt="tailwind Badge"
+            />
+          </a>
           <a href="https://web.dev/progressive-web-apps/" rel="noreferrer" target="_blank">
             <img
               src="https://img.shields.io/badge/PWA-5A0FC8?style=flat-square&logo=PWA&logoColor=white"
@@ -306,27 +312,14 @@ export default function HomePage() {
               alt="GA Badge"
             />
           </a>
-        </div>
-        <div className="flex gap-1">
-          <a href="https://tailwindcss.com/" rel="noreferrer" target="_blank">
+          <a href="https://www.figma.com/" rel="noreferrer" target="_blank">
             <img
-              src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white"
-              alt="tailwind Badge"
-            />
-          </a>
-          <a href="https://styled-components.com/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Styled-DB7093?style=flat-square&logo=styled-components&logoColor=white"
-              alt="styled Badge"
-            />
-          </a>
-          <a href="https://emotion.sh/docs/introduction" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Emotion-C43BAD?style=flat-square&logo=&logoColor=white"
-              alt="emotion Badge"
+              src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=Figma&logoColor=black"
+              alt="Figma Badge"
             />
           </a>
         </div>
+
         <div className="flex gap-1">
           <a
             href="https://developer.mozilla.org/en-US/docs/Web/API/EventSource"
@@ -362,10 +355,16 @@ export default function HomePage() {
           </a>
         </div>
         <div className="flex gap-1">
-          <a href="https://www.figma.com/" rel="noreferrer" target="_blank">
+          <a href="https://styled-components.com/" rel="noreferrer" target="_blank">
             <img
-              src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=Figma&logoColor=black"
-              alt="Figma Badge"
+              src="https://img.shields.io/badge/Styled-DB7093?style=flat-square&logo=styled-components&logoColor=white"
+              alt="styled Badge"
+            />
+          </a>
+          <a href="https://emotion.sh/docs/introduction" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Emotion-C43BAD?style=flat-square&logo=&logoColor=white"
+              alt="emotion Badge"
             />
           </a>
           <a href="https://www.adobe.com/products/xd.html" rel="noreferrer" target="_blank">
@@ -405,7 +404,6 @@ export default function HomePage() {
             <img
               src="https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white"
               alt="Node.js Badge"
-              data-canonical-src="https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white"
             />
           </a>
           <a href="https://www.docker.com/" rel="noreferrer" target="_blank">
@@ -414,12 +412,24 @@ export default function HomePage() {
               alt="Docker Badge"
             />
           </a>
+          <a href="https://www.postgresql.org/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=PostgreSQL&logoColor=white"
+              alt="PostgreSQL Badge"
+            />
+          </a>
+          <a href="https://redis.io/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"
+              alt="Redis Badge"
+            />
+          </a>
         </div>
         <div className="flex gap-1">
           <a href="https://expressjs.com/" rel="noreferrer">
             <img
               src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white"
-              alt="Fastify Badge"
+              alt="Express Badge"
             />
           </a>
           <a href="https://www.apollographql.com/docs/apollo-server/" rel="noreferrer">
@@ -438,20 +448,6 @@ export default function HomePage() {
             <img
               src="https://img.shields.io/badge/Socket.io-010101?style=flat-square&logo=Socket.io&logoColor=white"
               alt="WebSocket Badge"
-            />
-          </a>
-        </div>
-        <div className="flex gap-1">
-          <a href="https://www.postgresql.org/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=PostgreSQL&logoColor=white"
-              alt="PostgreSQL Badge"
-            />
-          </a>
-          <a href="https://redis.io/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"
-              alt="Redis Badge"
             />
           </a>
           <a href="https://www.mysql.com/" rel="noreferrer" target="_blank">
@@ -478,8 +474,6 @@ export default function HomePage() {
               alt="GCP Badge"
             />
           </a>
-        </div>
-        <div className="flex gap-1">
           <a href="https://cloud.google.com/gcp/" rel="noreferrer" target="_blank">
             <img
               src="https://img.shields.io/badge/Cloud Run-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
