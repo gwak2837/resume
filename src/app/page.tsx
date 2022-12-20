@@ -227,245 +227,8 @@ export default function HomePage() {
           </div>
         </li>
       </ul>
-      <h2 className="text-3xl my-8">경험</h2>
-      <ul>
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <b>카투사 1지역대 정보작전과 (동두천)</b>
-            <div>2022년 12월 1일 ~ 2023년 7월 23일 (7개월)</div>
-          </div>
-          <div>직책: 전산병</div>
-          <div>
-            역할: 1지역대 내 한국군 컴퓨터 수리 및 유지보수, JavaScript 기반 업무 자동화 프로그램
-            개발, 행정 문서 수합
-          </div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <b>카투사 제176재정관리지원대 (동두천)</b>
-            <div>2022년 5월 11일 ~ 11월 30일 (6개월)</div>
-          </div>
-          <div>직책: SW Maintenance Team member</div>
-          <div>
-            역할: 미군 월급 관리 시스템(DJMS, Defense Joint Military pay Service), 미군 월급 관리
-            웹사이트(MMPA, Master Military Pay Account) 유지보수
-          </div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <b>비욘드코딩 (코딩학원)</b>
-            <div>2021년 8월 25일 ~ 9월 30일 (1개월)</div>
-          </div>
-          <div>직책: 웹 개발 수업 강사</div>
-          <div>
-            역할: 초등학생/중학생을 대상으로 HTML/CSS/JS 개념 및 자기소개 웹페이지 제작 수업 (주
-            2회, 1회 3시간)
-          </div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <b>과외</b>
-            <div>2021년 8월 9일 ~ 2022년 2월 6일 (6개월)</div>
-          </div>
-          <div>
-            역할: 대학생을 대상으로 프론트엔드/백엔드/클라우드 개념 및 인스타그램 클론 코딩 수업 (주
-            3회, 1회 2시간)
-          </div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <b>Purdue University 온라인 해외교육</b>
-            <div>2021년 7월 5일 ~ 8월 20일 (2개월)</div>
-          </div>
-          <div>직책: 프로젝트 팀원</div>
-          <div>
-            역할: 'UAV ground scanning systems to find people or groups' 논문 작성, 학습 데이터 수집
-            및 가공
-          </div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <b>쿠버네티스 기반 클라우드 시스템 엔지니어 양성 과정</b>
-            <div>2021년 5월 31일 ~ 11월 9일 (5개월)</div>
-          </div>
-          <div>직책: 프로젝트 팀장</div>
-          <div>역할: Docker 기반 심리테스트 웹사이트 구축, k8s와 CI/CD 기반 CRUD 게시판 구축</div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <b>신디(SINDY, Signature in Dessert) 창업</b>
-            <div>2021년 2월 25일 ~ 10월 31일 (8개월)</div>
-          </div>
-          <div>직책: 개발팀장 (Frontend/Backend/Cloud)</div>
-          <div>
-            역할: '카페의 특색을 담아내는 사용자 주도 SNS형 디저트 정보 공유 공간' 디저트핏 기획 및
-            개발
-          </div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <b>Headstart Silicon Valley, Inc.</b>
-            <div>2021년 1월 4일 ~ 2월 5일 (1개월)</div>
-          </div>
-          <div>직책: 프로젝트 팀장</div>
-          <div>역할: ‘음성인식 기반 노래검색 서비스’ Icezam 기획 및 개발</div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <b>중앙대학교 2019년 2학기 SW 기초 교과목 멘토</b>
-            <div>2019년 9월 16일 ~ 12월 13일 (3개월)</div>
-          </div>
-          <div>직책: ‘컴퓨팅적 사고와 문제 해결’ 수업 조교</div>
-          <div>역할: 수업 중 수강생의 Scratch 프로그래밍 관련 질의 응답 및 과제 채점</div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <b>(주)리서치랩</b>
-            <div>2017년 7월 31일 ~ 8월 25일 (1개월)</div>
-          </div>
-          <div>직책: 연구4팀 팀원</div>
-          <div>직급: 인턴</div>
-          <div>역할: 설문 조사 데이터 통계 분석 (엑셀), 설문지 작성 (워드)</div>
-        </li>
-      </ul>
-      <h2 className="text-3xl my-8">수상</h2>
-      <ul>
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <b>2022 인천 스마트관광 데이터 아이디어 공모전</b>
-            <div>인천관광공사</div>
-            <div>2022년 12월 9일</div>
-          </div>
-          <div>여행일지 자동기록 서비스 아이디어 제시 (2등, 150만원)</div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <b>MMO 해커톤 2회</b>
-            <div>
-              MMO&nbsp;
-              <span className="text-xs">(IT교육회사)</span>
-            </div>
-            <div>2022년 11월 27일</div>
-          </div>
-          <div>결식 아동에게 줄 크리스마스 선물 크라우드펀딩 서비스 (2등, 5만원)</div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <b>2021 AI 해커톤</b>
-            <div>제주테크노벨리</div>
-            <div>2022년 1월 22일</div>
-          </div>
-          <div>식의약용 자생식물 데이터 기반 사업화 서비스 아이디어 제시 (입상)</div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <b>2021 경희대학교 캠퍼스타운 입주 스타트업 캠퍼 2기</b>
-            <div>경희대학교 캠퍼스타운</div>
-            <div>2021년 11월 1일</div>
-          </div>
-          <div>Sindy 창업팀 선정 (2021년 11월 1일 ~ 2022년 8월 31일, 10개월)</div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <b>2021년 3차 포스코 창업인큐베이팅스쿨</b>
-            <div>POSCO</div>
-            <div>2021년 10월 18일</div>
-          </div>
-          <div>Sindy 창업팀 선정 (2021년 10월 18일 ~ 10월 29일, 2주)</div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <b>2021년도 LINC+ Start-up Members</b>
-            <div>중앙대학교 LINC+사업단</div>
-            <div>2021년 7월 1일</div>
-          </div>
-          <div>Sindy 창업팀 선정 (2021년 7월 1일 ~ 12월 31일, 6개월) (200만원)</div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <b>2021 실전창업교육 1기</b>
-            <div>중소벤처기업부</div>
-            <div>2021년 6월 1일</div>
-          </div>
-          <div>Sindy 창업팀 선정 및 2단계 진출 (2021년 6월 1일 ~ 7월 31일, 2개월)</div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <b>2021 동작구 스타트업 펀딩 사업</b>
-            <div>동작구청</div>
-            <div>2021년 2월 5일</div>
-          </div>
-          <div>Sindy 창업팀 선정 (2021년 2월 5일 ~ 11월 30일, 10개월) (500만원)</div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <b>2020년 C-디자인씽킹 아카데미 경진대회</b>
-            <div>중앙대 교수학습개발센터</div>
-            <div>2020년 12월 3일</div>
-          </div>
-          <div>‘버려지는 소재를 새로운 순환으로’를 주제로 사업계획서 작성</div>
-          <div>‘온라인 새활용 제품 유통 플랫폼’ 기획으로 대상(1등, 250만원) 수상 및 특허 출원</div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <b>국가우수장학생 (이공계)</b>
-            <div>한국장학재단</div>
-            <div>2019년 8월 14일</div>
-          </div>
-          <div>2019-1학기 ~ 2020-2학기 전액장학금 (4개 학기)</div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <b>2018 창의ICT공과대학 학술제</b>
-            <div>중앙대 창의ICT공과대학</div>
-            <div>2018년 11월 30일</div>
-          </div>
-          <div>
-            택배 상하차 아르바이트생의 열약한 근무 환경을 주제로 '초록 유니폼을 입은 알바생' VR 영상
-            제작 및 우수상 수상&nbsp;
-            <a href="https://www.youtube.com/watch?v=ruqZIWGwH-I" rel="noreferrer" target="_blank">
-              YouTube
-            </a>
-          </div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <b>BBR BlockCamp 블록체인 해커톤</b>
-            <div>BBR, 디센터</div>
-            <div>2018년 10월 29일</div>
-          </div>
-          <div>
-            블록체인 기반 전자투표 시스템(e-voting) 기획 및 개발{' '}
-            <a href="https://bond687.wixsite.com/bbreview" rel="noreferrer" target="_blank">
-              (피칭상)
-            </a>
-          </div>
-        </li>
-      </ul>
       <h2 className="text-3xl my-8">기술</h2>
-
       <h4 className="my-2">Language</h4>
-
       <div className="flex gap-1">
         <a href="https://javascript.info/" rel="noreferrer" target="_blank">
           <img
@@ -986,6 +749,11 @@ export default function HomePage() {
       </dl>
 
       <h2 className="text-3xl my-8">프로젝트</h2>
+      <h4 className="my-8">쿠팡 가격 알리미</h4>
+      <div>2022년 11월 22일 ~ 현재. 1명</div>
+      <div>(깃허브 저장소)</div>
+      <div>(홈페이지 링크)</div>
+      <h4 className="my-8">(노션에서 여기로 옮기는 중)</h4>
       <a
         href="https://gwak2837.notion.site/Resume-3fb93cf3019243fc8fd9103975f2872f"
         target="_blank"
@@ -993,7 +761,241 @@ export default function HomePage() {
       >
         Notion
       </a>
-
+      <h2 className="text-3xl my-8">경험</h2>
+      <ul>
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
+            <b>카투사 1지역대 정보작전과 (동두천)</b>
+            <div>2022년 12월 1일 ~ 2023년 7월 23일 (7개월)</div>
+          </div>
+          <div>직책: 전산병</div>
+          <div>
+            역할: 1지역대 내 한국군 컴퓨터 수리 및 유지보수, JavaScript 기반 업무 자동화 프로그램
+            개발, 행정 문서 수합
+          </div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
+            <b>카투사 제176재정관리지원대 (동두천)</b>
+            <div>2022년 5월 11일 ~ 11월 30일 (6개월)</div>
+          </div>
+          <div>직책: SW Maintenance Team member</div>
+          <div>
+            역할: 미군 월급 관리 시스템(DJMS, Defense Joint Military pay Service), 미군 월급 관리
+            웹사이트(MMPA, Master Military Pay Account) 유지보수
+          </div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
+            <b>비욘드코딩 (코딩학원)</b>
+            <div>2021년 8월 25일 ~ 9월 30일 (1개월)</div>
+          </div>
+          <div>직책: 웹 개발 수업 강사</div>
+          <div>
+            역할: 초등학생/중학생을 대상으로 HTML/CSS/JS 개념 및 자기소개 웹페이지 제작 수업 (주
+            2회, 1회 3시간)
+          </div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
+            <b>과외</b>
+            <div>2021년 8월 9일 ~ 2022년 2월 6일 (6개월)</div>
+          </div>
+          <div>
+            역할: 대학생을 대상으로 프론트엔드/백엔드/클라우드 개념 및 인스타그램 클론 코딩 수업 (주
+            3회, 1회 2시간)
+          </div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
+            <b>Purdue University 온라인 해외교육</b>
+            <div>2021년 7월 5일 ~ 8월 20일 (2개월)</div>
+          </div>
+          <div>직책: 프로젝트 팀원</div>
+          <div>
+            역할: 'UAV ground scanning systems to find people or groups' 논문 작성, 학습 데이터 수집
+            및 가공
+          </div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
+            <b>쿠버네티스 기반 클라우드 시스템 엔지니어 양성 과정</b>
+            <div>2021년 5월 31일 ~ 11월 9일 (5개월)</div>
+          </div>
+          <div>직책: 프로젝트 팀장</div>
+          <div>역할: Docker 기반 심리테스트 웹사이트 구축, k8s와 CI/CD 기반 CRUD 게시판 구축</div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
+            <b>신디(SINDY, Signature in Dessert) 창업</b>
+            <div>2021년 2월 25일 ~ 10월 31일 (8개월)</div>
+          </div>
+          <div>직책: 개발팀장 (Frontend/Backend/Cloud)</div>
+          <div>
+            역할: '카페의 특색을 담아내는 사용자 주도 SNS형 디저트 정보 공유 공간' 디저트핏 기획 및
+            개발
+          </div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
+            <b>Headstart Silicon Valley, Inc.</b>
+            <div>2021년 1월 4일 ~ 2월 5일 (1개월)</div>
+          </div>
+          <div>직책: 프로젝트 팀장</div>
+          <div>역할: ‘음성인식 기반 노래검색 서비스’ Icezam 기획 및 개발</div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
+            <b>중앙대학교 2019년 2학기 SW 기초 교과목 멘토</b>
+            <div>2019년 9월 16일 ~ 12월 13일 (3개월)</div>
+          </div>
+          <div>직책: ‘컴퓨팅적 사고와 문제 해결’ 수업 조교</div>
+          <div>역할: 수업 중 수강생의 Scratch 프로그래밍 관련 질의 응답 및 과제 채점</div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
+            <b>(주)리서치랩</b>
+            <div>2017년 7월 31일 ~ 8월 25일 (1개월)</div>
+          </div>
+          <div>직책: 연구4팀 팀원</div>
+          <div>직급: 인턴</div>
+          <div>역할: 설문 조사 데이터 통계 분석 (엑셀), 설문지 작성 (워드)</div>
+        </li>
+      </ul>
+      <h2 className="text-3xl my-8">수상</h2>
+      <ul>
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <b>2022 인천 스마트관광 데이터 아이디어 공모전</b>
+            <div>인천관광공사</div>
+            <div>2022년 12월 9일</div>
+          </div>
+          <div>여행일지 자동기록 서비스 아이디어 제시 (2등, 150만원)</div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <b>MMO 해커톤 2회</b>
+            <div>
+              MMO&nbsp;
+              <span className="text-xs">(IT교육회사)</span>
+            </div>
+            <div>2022년 11월 27일</div>
+          </div>
+          <div>결식 아동에게 줄 크리스마스 선물 크라우드펀딩 서비스 (2등, 5만원)</div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <b>2021 AI 해커톤</b>
+            <div>제주테크노벨리</div>
+            <div>2022년 1월 22일</div>
+          </div>
+          <div>식의약용 자생식물 데이터 기반 사업화 서비스 아이디어 제시 (입상)</div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <b>2021 경희대학교 캠퍼스타운 입주 스타트업 캠퍼 2기</b>
+            <div>경희대학교 캠퍼스타운</div>
+            <div>2021년 11월 1일</div>
+          </div>
+          <div>Sindy 창업팀 선정 (2021년 11월 1일 ~ 2022년 8월 31일, 10개월)</div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <b>2021년 3차 포스코 창업인큐베이팅스쿨</b>
+            <div>POSCO</div>
+            <div>2021년 10월 18일</div>
+          </div>
+          <div>Sindy 창업팀 선정 (2021년 10월 18일 ~ 10월 29일, 2주)</div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <b>2021년도 LINC+ Start-up Members</b>
+            <div>중앙대학교 LINC+사업단</div>
+            <div>2021년 7월 1일</div>
+          </div>
+          <div>Sindy 창업팀 선정 (2021년 7월 1일 ~ 12월 31일, 6개월) (200만원)</div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <b>2021 실전창업교육 1기</b>
+            <div>중소벤처기업부</div>
+            <div>2021년 6월 1일</div>
+          </div>
+          <div>Sindy 창업팀 선정 및 2단계 진출 (2021년 6월 1일 ~ 7월 31일, 2개월)</div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <b>2021 동작구 스타트업 펀딩 사업</b>
+            <div>동작구청</div>
+            <div>2021년 2월 5일</div>
+          </div>
+          <div>Sindy 창업팀 선정 (2021년 2월 5일 ~ 11월 30일, 10개월) (500만원)</div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <b>2020년 C-디자인씽킹 아카데미 경진대회</b>
+            <div>중앙대 교수학습개발센터</div>
+            <div>2020년 12월 3일</div>
+          </div>
+          <div>‘버려지는 소재를 새로운 순환으로’를 주제로 사업계획서 작성</div>
+          <div>‘온라인 새활용 제품 유통 플랫폼’ 기획으로 대상(1등, 250만원) 수상 및 특허 출원</div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <b>국가우수장학생 (이공계)</b>
+            <div>한국장학재단</div>
+            <div>2019년 8월 14일</div>
+          </div>
+          <div>2019-1학기 ~ 2020-2학기 전액장학금 (4개 학기)</div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <b>2018 창의ICT공과대학 학술제</b>
+            <div>중앙대 창의ICT공과대학</div>
+            <div>2018년 11월 30일</div>
+          </div>
+          <div>
+            택배 상하차 아르바이트생의 열약한 근무 환경을 주제로 '초록 유니폼을 입은 알바생' VR 영상
+            제작 및 우수상 수상&nbsp;
+            <a href="https://www.youtube.com/watch?v=ruqZIWGwH-I" rel="noreferrer" target="_blank">
+              YouTube
+            </a>
+          </div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <b>BBR BlockCamp 블록체인 해커톤</b>
+            <div>BBR, 디센터</div>
+            <div>2018년 10월 29일</div>
+          </div>
+          <div>
+            블록체인 기반 전자투표 시스템(e-voting) 기획 및 개발{' '}
+            <a href="https://bond687.wixsite.com/bbreview" rel="noreferrer" target="_blank">
+              (피칭상)
+            </a>
+          </div>
+        </li>
+      </ul>
       <div className="w-full text-center text-slate-800 text-sm mt-8">2022년 12월 14일</div>
       <div className="w-full text-center text-slate-800 text-sm">작성자: 곽태욱</div>
     </main>
