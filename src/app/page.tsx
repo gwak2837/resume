@@ -744,10 +744,10 @@ export default function HomePage() {
       </dl>
 
       <h2 className="text-3xl my-8">프로젝트</h2>
-      <div className="grid grid-cols-3 gap-4 my-4">
-        <h4 className="my-8">쿠팡 가격 알리미</h4>
+      <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
+        <h4>쿠팡 가격 알리미</h4>
         <div>1명</div>
-        <div>2022년 11월 22일 ~ 현재 (x개월)</div>
+        <div>2022년 11월 22일 ~ 현재</div>
       </div>
       <div className="flex gap-1">
         <div>(깃허브 저장소)</div>
