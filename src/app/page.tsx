@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 
@@ -743,11 +744,47 @@ export default function HomePage() {
       </dl>
 
       <h2 className="text-3xl my-8">프로젝트</h2>
-      <h4 className="my-8">쿠팡 가격 알리미</h4>
-      <div>2022년 11월 22일 ~ 현재. 1명</div>
-      <div>(깃허브 저장소)</div>
-      <div>(홈페이지 링크)</div>
-      <h4 className="my-8">(노션에서 여기로 옮기는 중)</h4>
+      <div className="grid grid-cols-3 gap-4 my-4">
+        <h4 className="my-8">쿠팡 가격 알리미</h4>
+        <div>1명</div>
+        <div>2022년 11월 22일 ~ 현재 (x개월)</div>
+      </div>
+      <div className="flex gap-1">
+        <div>(깃허브 저장소)</div>
+        <div>(홈페이지 링크)</div>
+      </div>
+      <div>
+        Apollo server 사용하다가 Apollo는 서버에 HTTP2를 적용할 수 없어서 HTTP2를 지원하는 Fastify로
+        변경
+      </div>
+      <div>Fastify 출처인 벤치마크에도 Fastify가 Apollo보다 몇 배 빠르다고 해서 Fastify 선택</div>
+      <div>GraphQL을 안 쓰게 돼서 Apoll client를 react query로 변경</div>
+      <div>
+        font 로딩 속도 개선과 font 변경으로 인한 cumulative layout shift 방지를 위해 next font 선택
+      </div>
+      <div>
+        nextjs 페이지 revalidation을 위해 nextjs api 기능 사용. 이때 lru-cache를 통해 요청 빈도를
+        제한함
+      </div>
+      <div>
+        지금까지 styled components 사용했는데 tailwind npm 주간 다운로드 수가 styled components를
+        넘기도 했고, 프로젝트 규모가 커질 수록 styled components 사용하면 css 번들 크기가 선형으로
+        증가하니까, 큰 프로젝트에서 css 번들 크기를 줄이기 위해 tailwindcss 사용하려고 함. 그때를
+        위해 연습할 겸 선택
+      </div>
+      <div>
+        웹워커에 push api 직접 구현하다가 push api 관련 ui 구현 및 ux 개선하기 지쳐서 flarelane
+        선택. 나중에 프로젝트 규모가 커져서 성능 및 비용 문제가 발생하면 직접 웹워커에서 push api
+        구현 예정
+      </div>
+      <div>---공통---</div>
+      <div>
+        네트워크 요청 및 응답 데이터와 input 입력값 데이터 관리를 제외한, React 전역 상태 관리를
+        위해 recoil 선택함. 네트워크 요청 및 응답 데이터 관리는 react query로, input 입력값 데이터
+        관리는 react form에서 함.
+      </div>
+      <div className="border w-full my-6" />
+      <h4 className="my-8">2022년 이전 프로젝트 목록</h4>
       <a
         href="https://gwak2837.notion.site/Resume-3fb93cf3019243fc8fd9103975f2872f"
         target="_blank"
