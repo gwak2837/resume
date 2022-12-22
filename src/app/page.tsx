@@ -974,14 +974,14 @@ export default function HomePage() {
           </div>
           <div>직책: 전산병</div>
           <div>
-            역할: 1지역대 내 한국군 컴퓨터 수리 및 유지보수, JavaScript 기반 업무 자동화 프로그램
-            개발, 행정 문서 수합
+            역할: 1지역대 내 한국군 컴퓨터 설치.수리.유지보수, 한셀 VBS(Visual basic script)로 업무
+            자동화
           </div>
         </li>
         <div className="border w-full my-6" />
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
-            <b>카투사 제176재정관리지원대 (동두천)</b>
+            <b>카투사 미8군 제176재정관리지원대 (동두천)</b>
             <div>2022년 5월 11일 ~ 11월 30일 (6개월)</div>
           </div>
           <div>직책: SW Maintenance Team member</div>
