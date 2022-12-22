@@ -88,7 +88,7 @@ export default function HomePage() {
       <p className="my-4 ">
         고객의 불편함을 해결하는 제품을 기획하면서 고객의 목소리에 귀 기울여 비즈니스 문제를
         해결하고, 제품을 개발하는 도중 얻은 지식을 다른 사람과 공유하면서 기술의 존재 이유를
-        고민하는 <b>개발자 및 클라우드 엔지니어</b> 곽태욱입니다.
+        고민하는 <b>프론트엔드 개발자</b> 곽태욱입니다.
       </p>
       <h2 className="text-3xl my-8 ">소개</h2>
       <p className="my-4 	">
@@ -107,7 +107,7 @@ export default function HomePage() {
         처음부터 키웠습니다.
       </p>
       <p className="	">
-        현재는 프론트엔드 분야를 집중적으로 연구하고 있고, 백엔드 및 클라우드 분야 등 서비스 출시를
+        현재는 프론트엔드 분야를 집중적으로 탐구하고 있고, 백엔드 및 클라우드 분야 등 서비스 출시를
         위해 필요한 분야로 관심사를 넓히고 있습니다.
       </p>
       <Image src="/images/mbti.png" alt="asd" width="2716" height="1200" />
@@ -261,8 +261,9 @@ export default function HomePage() {
         </a>
       </div>
       <div>
-        동기: Notion, Confluence, Google Docs 등 온라인 기반 문서 편집기는 PDF 변환 기능이 미흡해,
-        깔끔한 문서 인쇄 및 PDF 변환을 목적으로 프로젝트를 시작함
+        Notion, Confluence, Google Docs 등 온라인 기반 문서 편집기는 PDF 변환 기능이 미흡해, 깔끔한
+        문서 인쇄 및 PDF 변환을 목적으로 프로젝트를 시작함. 이력서를 작성하는데 품이 들지만, 특정
+        형식에 얽메이지 않고 작성할 수 있어서 좋음
       </div>
       <div className="flex flex-wrap gap-1 my-2">
         <a href="" rel="noreferrer" target="_blank">
@@ -277,9 +278,15 @@ export default function HomePage() {
             alt="tailwind"
           />
         </a>
+        <a href="https://vercel.com/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white"
+            alt="Vercel Badge"
+          />
+        </a>
       </div>
       <ol>
-        <li>빠른 개발을 위해 Next.js와 TailwindCSS를 사용함</li>
+        <li>빠른 개발을 위해 Next.js와 TailwindCSS, Vercel을 이용함</li>
       </ol>
       <div className="border w-full my-6" />
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
@@ -327,8 +334,8 @@ export default function HomePage() {
         </a>
       </div>
       <div>
-        동기: 시시각각 변하는 쿠팡의 가격을 추적하여 알림을 받기 위해 프로젝트를 시작함. 이후 이
-        기능을 쿠팡 파트너스의 제휴 URL과 연계해 수입을 얻을 예정임
+        시시각각 변하는 쿠팡의 가격을 추적하여 알림을 받기 위해 프로젝트를 시작함. 이후 이 기능을
+        쿠팡 파트너스의 제휴 URL과 연계해 수입을 얻을 예정임
       </div>
       <div className="flex flex-wrap gap-1 my-2">
         <a href="" rel="noreferrer" target="_blank">
@@ -353,6 +360,28 @@ export default function HomePage() {
           <img
             src="https://img.shields.io/badge/Fastify-000000?style=flat-square&logo=fastify&logoColor=white"
             alt="fastify"
+          />
+        </a>
+        <a href="https://web.dev/progressive-web-apps/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/PWA-5A0FC8?style=flat-square&logo=PWA&logoColor=white"
+            alt="PWA Badge"
+          />
+        </a>
+        <a href="https://en.wikipedia.org/wiki/HTTP/2" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/HTTP2-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
+            alt="HTTP2 Badge"
+          />
+        </a>
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/API/Push_API"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img
+            src="https://img.shields.io/badge/Web Push-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
+            alt="Web Push Badge"
           />
         </a>
       </div>
@@ -425,6 +454,7 @@ export default function HomePage() {
           </div>
         </a>
       </div>
+      <div>공공보건 증진을 위한 개인간 보건기록 QR코드 익명 인증 서비스</div>
       <div className="flex flex-wrap gap-1 my-2">
         <a href="" rel="noreferrer" target="_blank">
           <img
@@ -450,6 +480,34 @@ export default function HomePage() {
             alt="tailwind"
           />
         </a>
+        <a href="https://en.wikipedia.org/wiki/HTTP/2" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/HTTP2-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
+            alt="HTTP2 Badge"
+          />
+        </a>
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/API/EventSource"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img
+            src="https://img.shields.io/badge/Event Source-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
+            alt="Event Source Badge"
+          />
+        </a>
+        <a href="https://en.wikipedia.org/wiki/HTTP/2_Server_Push" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Server Push-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
+            alt="Server Push Badge"
+          />
+        </a>
+        <a href="https://en.wikipedia.org/wiki/WebRTC" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/WebRTC-333333?style=flat-square&logo=webrtc&logoColor=white"
+            alt="WebRTC Badge"
+          />
+        </a>
       </div>
       <ol>
         <li>
@@ -457,6 +515,14 @@ export default function HomePage() {
           위해 Recoil.js를 선택함. 네트워크 요청 및 응답 데이터는 Apollo client로 관리하고, input
           입력값 데이터는 React form으로 관리함
         </li>
+        <li>
+          웹소켓보다 가벼운 HTTP2 Server push를 사용해 채팅 기능을 구현함. 웹소켓을 사용하면
+          서버와의 양방향 통신이 가능해 서버가 먼저 바이너리 데이터를 보낼 수 있는데, 본
+          프로젝트에선 서버에서 바이너리 데이터를 먼저 보내는 경우가 없어 Server push로도 적당하다고
+          판단함. 브라우저의 EventSource 기능을 활용하면 HTTP2 서버에서 브라우저로 먼저 요청할 수
+          있음
+        </li>
+        <li>브라우저 카메라를 이용해 QR 코드 스캔 기능을 구현함</li>
       </ol>
       <Image
         src="/images/jayudam.png"
@@ -466,7 +532,6 @@ export default function HomePage() {
         className="border"
       />
       <div className="border w-full my-6" />
-
       <h4 className="my-8">2022년 이전 프로젝트 목록</h4>
       <a
         href="https://gwak2837.notion.site/Resume-3fb93cf3019243fc8fd9103975f2872f"
@@ -1083,7 +1148,16 @@ export default function HomePage() {
             <div>인천관광공사</div>
             <div>2022년 12월 9일</div>
           </div>
-          <div>여행일지 자동기록 서비스 아이디어 제시 (2등, 150만원)</div>
+          <div>
+            여행일지 자동기록 서비스 아이디어 제시{' '}
+            <a
+              href="https://www.asiatoday.co.kr/view.php?key=20221216010008397"
+              rel="noreferrer"
+              target="_blank"
+            >
+              (2등, 150만원)
+            </a>
+          </div>
         </li>
         <div className="border w-full my-6" />
         <li>
@@ -1095,7 +1169,16 @@ export default function HomePage() {
             </div>
             <div>2022년 11월 27일</div>
           </div>
-          <div>결식 아동에게 줄 크리스마스 선물 크라우드펀딩 서비스 (2등, 5만원)</div>
+          <div>
+            결식 아동에게 줄 크리스마스 선물 크라우드펀딩 서비스{' '}
+            <a
+              href="https://morning-kayak-412.notion.site/MMO-2-4-4-5-0-96f0009dd4e94f3cb817ed7d051bfe93"
+              rel="noreferrer"
+              target="_blank"
+            >
+              (2등, 5만원)
+            </a>
+          </div>
         </li>
         <div className="border w-full my-6" />
         <li>
