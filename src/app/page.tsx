@@ -177,7 +177,16 @@ export default function HomePage() {
       <ul>
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
-            <b>(주)더하트컴퍼니 @사람인</b>
+            <b>
+              (주)더하트컴퍼니{' '}
+              <a
+                href="https://www.saramin.co.kr/zf_user/company-info/view?csn=eFE2Qks5TzVpanROVE5pQW9ZbGMyZz09"
+                target="_blank"
+                rel="noreferrer"
+              >
+                @사람인
+              </a>
+            </b>
             <div>2022년 2월 14일 ~ 3월 13일 (1개월)</div>
           </div>
           <div>직책: 개발팀장</div>
@@ -187,7 +196,16 @@ export default function HomePage() {
         <div className="border w-full my-6" />
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
-            <b>(주)알파카살롱 @로켓펀치</b>
+            <b>
+              (주)알파카살롱{' '}
+              <a
+                href="https://www.saramin.co.kr/zf_user/company-info/view?csn=TTNPako4L0s0cVFhdktlYjlwZ0JZUT09"
+                target="_blank"
+                rel="noreferrer"
+              >
+                @사람인
+              </a>
+            </b>
             <div>2021년 11월 9일 ~ 2022년 2월 8일 (3개월)</div>
           </div>
           <div>직책: 개발팀장</div>
@@ -197,7 +215,16 @@ export default function HomePage() {
         <div className="border w-full my-6" />
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
-            <b>(주)페스타 @로켓펀치</b>
+            <b>
+              (주)페스타{' '}
+              <a
+                href="https://www.saramin.co.kr/zf_user/company-info/view?csn=VUxtcFBINlJLR2wra01lNlhjbEV0QT09"
+                target="_blank"
+                rel="noreferrer"
+              >
+                @사람인
+              </a>
+            </b>
             <div>2020년 9월 1일 ~ 12월 31일 (4개월)</div>
           </div>
           <div>직책: Frontend 개발팀원</div>
@@ -207,7 +234,16 @@ export default function HomePage() {
         <div className="border w-full my-6" />
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
-            <b>(주)행복한 다람쥐단 @로켓펀치</b>
+            <b>
+              (주)행복한 다람쥐단{' '}
+              <a
+                href="https://www.saramin.co.kr/zf_user/company-info/view?csn=VHFyWXhFL2E1N1hYMkhEZmUxK05SZz09"
+                target="_blank"
+                rel="noreferrer"
+              >
+                @사람인
+              </a>
+            </b>
             <div>2019년 12월 23일 ~ 2020년 2월 21일 (2개월)</div>
           </div>
           <div>직책: 개발부원</div>
