@@ -56,8 +56,8 @@ export default function HomePage() {
                   <Image src="/images/github.svg" alt="github" width="16" height="16" />
                 </td>
                 <td className="border-none p-px">
-                  <a href="https://github.com/rmfpdlxmtidl" target="_blank" rel="noreferrer">
-                    github.com/rmfpdlxmtidl
+                  <a href="https://github.com/gwak2837" target="_blank" rel="noreferrer">
+                    github.com/gwak2837
                   </a>
                 </td>
               </tr>
