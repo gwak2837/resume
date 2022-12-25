@@ -236,7 +236,7 @@ export default function HomePage() {
       </div>
       <div className="flex gap-0.5 my-2">
         <a
-          href="https://github.com/rmfpdlxmtidl/resume"
+          href="https://github.com/gwak2837/resume"
           target="_blank"
           rel="noreferrer"
           className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
@@ -296,18 +296,18 @@ export default function HomePage() {
       </div>
       <div className="flex gap-0.5 my-2">
         <a
-          href="https://github.com/rmfpdlxmtidl/coopang"
+          href="https://github.com/gwak2837/yeou"
           target="_blank"
           rel="noreferrer"
           className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
         >
           <div className="flex gap-1 items-center">
             <Image src="/images/github.svg" alt="github" width="16" height="16" />
-            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">coopang</h5>
+            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">yeou</h5>
           </div>
         </a>
         <a
-          href="https://github.com/rmfpdlxmtidl/coopang-backend"
+          href="https://github.com/gwak2837/yeou-backend"
           target="_blank"
           rel="noreferrer"
           className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
@@ -315,12 +315,12 @@ export default function HomePage() {
           <div className="flex gap-1 items-center">
             <Image src="/images/github.svg" alt="github" width="16" height="16" />
             <h5 className="underline-offset-4	underline text-black decoration-gray-300	">
-              coopang-backend
+              yeou-backend
             </h5>
           </div>
         </a>
         <a
-          href="https://coopang.vercel.app"
+          href="https://yeou.vercel.app"
           target="_blank"
           rel="noreferrer"
           className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
@@ -328,7 +328,7 @@ export default function HomePage() {
           <div className="flex gap-1 items-center">
             <Image src="/images/vercel.png" alt="github" width="16" height="16" />
             <h5 className="underline-offset-4	underline text-black decoration-gray-300 		">
-              coopang.vercel.app
+              yeou.vercel.app
             </h5>
           </div>
         </a>
@@ -417,7 +417,7 @@ export default function HomePage() {
       </div>
       <div className="flex gap-0.5 my-2">
         <a
-          href="https://github.com/rmfpdlxmtidl/jayudam"
+          href="https://github.com/gwak2837/jayudam"
           target="_blank"
           rel="noreferrer"
           className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
@@ -428,7 +428,7 @@ export default function HomePage() {
           </div>
         </a>
         <a
-          href="https://github.com/rmfpdlxmtidl/jayudam-backend"
+          href="https://github.com/gwak2837/jayudam-backend"
           target="_blank"
           rel="noreferrer"
           className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
