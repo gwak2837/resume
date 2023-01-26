@@ -33,7 +33,7 @@ export default function HomePage() {
               </tr>
               <tr>
                 <td className="border-none p-px">🪖</td>
-                <td className="border-none p-px">ROTC 2019년 1월 ~ 2020년 9월</td>
+                <td className="border-none p-px">ROTC 2019년 1월 ~ 2020년 9월 (1년 8개월)</td>
               </tr>
               <tr>
                 <td className="border-none p-px"></td>
@@ -427,22 +427,42 @@ export default function HomePage() {
           Fastify로 변경함. Fastify 출처인 벤치마크에도 Fastify가 Apollo보다 몇 배 빠르다고 해서
           Fastify를 선택함
         </li>
-        <li>GraphQL을 안 쓰게 돼서 Apoll client를 react query로 변경함</li>
+        <li>GraphQL을 안 쓰게 돼서 Apoll client를 React Query로 변경함</li>
         <li>
           Next.js 페이지 revalidation을 위해 Next.js api 기능을 활용함. 이때 lru-cache를 통해 요청
           빈도를 제한함. 또한 font 로딩 속도 개선과 font 지연 로딩으로 인한 cumulative layout shift
           방지를 위해 @next/font를 사용함
         </li>
         <li>
-          지금까지 Styled components를 사용했는데 Tailwind npm 주간 다운로드 수가 급격히 증가하기도
-          했고, Styled components를 사용하면 프로젝트 규모가 커질 수록 css 번들 크기가 선형으로
-          증가하니까, 큰 프로젝트에서 css 번들 크기를 줄이기 위해 Tailwind를 사용하려고 함. 그때를
-          위해 연습할 겸 Tailwind를 선택함
+          지금까지 Styled components를 사용했는데 Styled components를 사용하면 프로젝트 규모가 커질
+          수록 css 번들 크기가 선형으로 증가하는 단점이 있음. 그래서 큰 프로젝트에서 css 번들 크기를
+          줄이기 위해 Tailwind를 사용함. Tailwind CSS를 처음 도입하면 초기 학습 시간이 있는데,
+          시간이 지날 수록 Styled component처럼 따로 변수를 만들지 않고 바로 className만 작성하면
+          된다는 부분에 편리함을 느낌
         </li>
         <li>
           Push API를 웹워커로 직접 구현하다가 Push API 관련 UI 구현 및 UX 개선하는데 품이 많이
           들어서 FlareLane을 선택함. 나중에 프로젝트 규모가 커져서 성능 및 비용 문제가 발생하면 다시
           직접 웹워커로 구현할 예정임
+        </li>
+        <li>
+          서버리스 서비스인 Cloud Run에서 웹사이트 크롤링 용도로 설치한 puppeteer가 작동하지 않는
+          문제가 발생함. root 사용자 대신 권한이 특정 폴더로 제한된 새로운 사용자를 만들어 puppeteer
+          접근 범위를 제한하고, puppeteer가 컨테이너 위에서 실행되기 때문에 sandbox 보안 설정을
+          해제하여 해결함
+        </li>
+        <li>
+          React Query request, Fastify JSON schema validation, Fastify API response 자료형을 한번에
+          관리할 수 없는 것에 불편함을 느낌. 그래서 ...
+        </li>
+        <li>사이트를 크롤링 후 특정 조건을 만족하면 알림을 보내는 알고리즘을 구현함</li>
+        <li>
+          Cheerio 패키지만으론 {`<iframe>`} 하위 HTML을 불러올 수 없어, Puppeteer 브라우저의
+          자바스크립트를 사용해 불러옴
+        </li>
+        <li>
+          one-to-many 관계의 테이블일 때 many 쪽 테이블에서 모든 레코드가 아닌 특정 레코드 N개만
+          선택해 JOIN 해야하는 상황이 발생했는데, Greatest-N-Per-Group 알고리즘을 사용하여 해결함
         </li>
       </ol>
       <div className="border w-full my-6" />
