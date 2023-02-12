@@ -92,11 +92,12 @@ export default function HomePage() {
       </p>
       <h2 className="text-3xl my-8 ">소개</h2>
       <p className="my-4 	">
-        직접 만든 기프트링크 동아리의 소프트웨어 개발자로 시작해, 행복한 다람쥐단의 프론트엔드 인턴,
-        (주)페스타의 프론트엔드 인턴, Headstart Silicon Valley의 프로젝트 관리자, 신디(Sindy)
-        창업팀, (주)알파카살롱의 MVP 개발팀장, (주)더하트컴퍼니의 서비스 개발팀장 등에서 다양한
-        프로젝트를 수행하며 서비스가 세상에 나오기 위한 개발 주기 과정을 전부 경험했습니다. 첫
-        창업팀인 신디에서 서비스를 처음부터 구축해야 하다보니 여러 개발 분야를 경험했습니다.
+        직접 만든 기프트링크 동아리의 소프트웨어 개발자로 시작해, 행복한 다람쥐단 프론트엔드 인턴,
+        (주)페스타 프론트엔드 인턴, Headstart Silicon Valley, Inc 프로젝트 매니저, 신디(Sindy)
+        창업팀 프로토타입 개발팀장, (주)알파카살롱 MVP 개발팀장, (주)더하트컴퍼니 베타 서비스
+        개발팀장 등에서 다양한 프로젝트를 수행하며 서비스가 세상에 나오기 위한 전체 개발 주기를
+        경험했습니다. 첫 창업팀인 신디에서 서비스를 처음부터 구축해야 하다보니 여러 개발 분야를
+        경험했습니다.
       </p>
       <p className="my-4 	">
         그러면서 서비스를 잘 만들려면 동료와의 협업이 중요하단 것과, 나와 동료의 성장이 수반되야
@@ -266,9 +267,137 @@ export default function HomePage() {
       </ul>
       <h2 className="text-3xl my-8">프로젝트</h2>
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
+        <h4>중앙정부 · 지자체 세출</h4>
+        <div>본인</div>
+        <div>2023년 1월 23일 ~ 현재</div>
+      </div>
+      <div className="flex gap-0.5 my-2">
+        <a
+          href="https://github.com/gwak2837/lofin"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+        >
+          <div className="flex gap-1 items-center">
+            <Image src="/images/github.svg" alt="github" width="16" height="16" />
+            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">lofin</h5>
+          </div>
+        </a>
+        <a
+          href="https://github.com/gwak2837/lofin-backend"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+        >
+          <div className="flex gap-1 items-center">
+            <Image src="/images/github.svg" alt="github" width="16" height="16" />
+            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
+              lofin-backend
+            </h5>
+          </div>
+        </a>
+        <a
+          href="https://lofin.vercel.app"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+        >
+          <div className="flex gap-1 items-center">
+            <Image src="/images/vercel.png" alt="github" width="16" height="16" />
+            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
+              lofin.vercel.app
+            </h5>
+          </div>
+        </a>
+        <a
+          href="https://lofin-2uhldmgcia-du.a.run.app"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+        >
+          <div className="flex gap-1 items-center">
+            <Image src="/images/cloud-run.svg" alt="github" width="16" height="16" />
+            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
+              lofin-2uhldmgcia-du.a.run.app
+            </h5>
+          </div>
+        </a>
+      </div>
+      <div>
+        대한민국 한 해 예산이 약 600조이고 이걸 중앙 정부와 지자체가 나눠서 가져간다. 하지만 현재
+        해마다 집행되는 예산이 선출직 공직자의 공약대로 쓰여졌는지 판단할 수 있는 방법이 부족하다.
+        그래서 편성된 예산이 국민의 감시 하에 원래 목적대로 사용될 수 있도록 해당 프로젝트를
+        기획했다. 나아가 집행된 예산이 타당하게 쓰였는지 검증하기 위해 집행일, 지자체, 분야별로
+        평가할 수 있는 시스템을 구축해, 정부 정책이 국민을 위한 방향으로 수립되는 것을 목표로 한다.
+      </div>
+      <div className="flex flex-wrap gap-1 my-2">
+        <a href="https://nextjs.org" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Next.js 13-000000?style=flat-square&logo=next.js&logoColor=white"
+            alt="next.js"
+          />
+        </a>
+        <a href="https://tailwindcss.com/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white"
+            alt="tailwind"
+          />
+        </a>
+        <a href="https://www.postgresql.org/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=PostgreSQL&logoColor=white"
+            alt="PostgreSQL Badge"
+          />
+        </a>
+        <a href="https://vercel.com/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white"
+            alt="Vercel Badge"
+          />
+        </a>
+        <a href="https://cloud.google.com/gcp/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Cloud Run-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
+            alt="GCP Badge"
+          />
+        </a>
+        <a href="https://cloud.google.com/gcp/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Cloud SQL-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
+            alt="GCP Badge"
+          />
+        </a>
+      </div>
+      <ol>
+        <li>
+          정부에서 제공하는 OpenAPI를 이용해{' '}
+          <a
+            href="https://www.openfiscaldata.go.kr/op/ko/sd/UOPKOSDA01?odtId=5Y5A50K2L4CW2IRKI2J0F2C8T"
+            rel="noreferrer"
+            target="_blank"
+          >
+            중앙정부 세출
+          </a>
+          과{' '}
+          <a
+            href="https://lofin.mois.go.kr/portal/service/openInfPage.do?infId=0GAR4HBB8LWEBSL4NIHZ817053&srvCd=#"
+            rel="noreferrer"
+            target="_blank"
+          >
+            지방자치단체 세출
+          </a>{' '}
+          데이터를 데이터베이스에 저장함
+        </li>
+        <li>B-Tree 인덱스를 설계해 약 2억 개의 재정 데이터를 5초 안으로 검색할 수 있음</li>
+        <li>
+          JavaScript 번들 용량을 줄이기 위해 Next.js 13을 이용해 특정 URL의 HTML 파일을 캐싱함
+        </li>
+      </ol>
+      <div className="border w-full my-6" />
+      <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>이력서</h4>
         <div>본인</div>
-        <div>2022년 12월 12일 ~ 현재</div>
+        <div>2022년 12월 12일 ~ 수시</div>
       </div>
       <div className="flex gap-0.5 my-2">
         <a
@@ -302,13 +431,13 @@ export default function HomePage() {
         형식에 얽메이지 않고 작성할 수 있어서 좋음
       </div>
       <div className="flex flex-wrap gap-1 my-2">
-        <a href="" rel="noreferrer" target="_blank">
+        <a href="https://nextjs.org" rel="noreferrer" target="_blank">
           <img
             src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"
             alt="next.js"
           />
         </a>
-        <a href="" rel="noreferrer" target="_blank">
+        <a href="https://tailwindcss.com/" rel="noreferrer" target="_blank">
           <img
             src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white"
             alt="tailwind"
@@ -328,7 +457,7 @@ export default function HomePage() {
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>쿠팡 가격 알리미</h4>
         <div>본인</div>
-        <div>2022년 11월 22일 ~ 현재</div>
+        <div>2022년 11월 22일 ~ 2023년 1월 19일 (2개월)</div>
       </div>
       <div className="flex gap-0.5 my-2">
         <a
@@ -588,7 +717,7 @@ export default function HomePage() {
         className="border"
       />
       <div className="border w-full my-6" />
-      <h4 className="my-8">2022년 이전 프로젝트 목록</h4>
+      <h4 className="my-8">이전 프로젝트 목록</h4>
       <a
         href="https://gwak2837.notion.site/Resume-3fb93cf3019243fc8fd9103975f2872f"
         target="_blank"
@@ -1339,7 +1468,7 @@ export default function HomePage() {
           </div>
         </li>
       </ul>
-      <div className="w-full text-center text-slate-800 text-sm mt-8">2022년 12월 14일</div>
+      <div className="w-full text-center text-slate-800 text-sm mt-8">2023년 2월 12일</div>
       <div className="w-full text-center text-slate-800 text-sm">작성자: 곽태욱</div>
     </main>
   )
