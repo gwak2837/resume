@@ -185,7 +185,7 @@ export default function HomePage() {
                 target="_blank"
                 rel="noreferrer"
               >
-                @사람인
+                회사정보
               </a>
             </b>
             <div>2022년 2월 14일 ~ 3월 13일 (1개월)</div>
@@ -204,7 +204,7 @@ export default function HomePage() {
                 target="_blank"
                 rel="noreferrer"
               >
-                @사람인
+                회사정보
               </a>
             </b>
             <div>2021년 11월 9일 ~ 2022년 2월 8일 (3개월)</div>
@@ -223,7 +223,7 @@ export default function HomePage() {
                 target="_blank"
                 rel="noreferrer"
               >
-                @사람인
+                회사정보
               </a>
             </b>
             <div>2020년 9월 1일 ~ 12월 31일 (4개월)</div>
@@ -242,7 +242,7 @@ export default function HomePage() {
                 target="_blank"
                 rel="noreferrer"
               >
-                @사람인
+                회사정보
               </a>
             </b>
             <div>2019년 12월 23일 ~ 2020년 2월 21일 (2개월)</div>
@@ -1518,7 +1518,7 @@ export default function HomePage() {
           </div>
         </li>
       </ul>
-      <div className="w-full text-center text-slate-800 text-sm mt-8">작성일: 2023년 2월 20일</div>
+      <div className="w-full text-center text-slate-800 text-sm mt-8">작성일: 2023년 6월 27일</div>
       <div className="w-full text-center text-slate-800 text-sm">작성자: 곽태욱</div>
     </main>
   )
