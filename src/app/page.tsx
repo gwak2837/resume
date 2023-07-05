@@ -761,7 +761,7 @@ export default function HomePage() {
         target="_blank"
         rel="noreferrer"
       >
-        Notion
+        Notion에서 보기
       </a>
       <h2 className="text-3xl my-8">기술</h2>
       <h4 className="my-2">Language</h4>
@@ -1402,7 +1402,13 @@ export default function HomePage() {
         <div className="border w-full my-6" />
         <li>
           <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <b>2018 창의ICT공과대학 학술제</b>
+            <a
+              href="http://m.dhnews.co.kr/news/articleView.html?idxno=88851"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>2018 창의ICT공과대학 학술제</b>
+            </a>
             <div>중앙대 창의ICT공과대학</div>
             <div>2018년 11월 30일</div>
           </div>
