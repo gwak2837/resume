@@ -89,12 +89,6 @@ export default function OtherCertificates() {
               <td className="text-center">2009년 12월 3일</td>
             </tr>
             <tr>
-              <td>대한검정회</td>
-              <td className="text-center">준1급</td>
-              <td className="text-center">대한민국한자교육연구회</td>
-              <td className="text-center">2009년 11월 28일</td>
-            </tr>
-            <tr>
               <td>워드프로세서</td>
               <td className="text-center">3급</td>
               <td className="text-center">대한상공회의소</td>

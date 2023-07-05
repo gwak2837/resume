@@ -169,6 +169,12 @@ export default function HomePage() {
             <td className="text-center">국제테스트 연구원</td>
             <td className="text-center">2020년 5월 3일</td>
           </tr>
+          <tr>
+            <td>대한검정회</td>
+            <td className="text-center">준1급</td>
+            <td className="text-center">대한민국한자교육연구회</td>
+            <td className="text-center">2009년 11월 28일</td>
+          </tr>
         </tbody>
       </table>
       <OtherCertificates />
