@@ -159,15 +159,15 @@ export default function HomePage() {
         <tbody>
           <tr>
             <td>TOPCIT 15회</td>
-            <td>627점 (전국 4등)</td>
-            <td>과학기술정보통신부</td>
-            <td>2021년 5월 22일</td>
+            <td className="text-center">627점 (전국 4등)</td>
+            <td className="text-center">과학기술정보통신부</td>
+            <td className="text-center">2021년 5월 22일</td>
           </tr>
           <tr>
             <td>G-TELP (Level 2)</td>
-            <td>82점</td>
-            <td>국제테스트 연구원</td>
-            <td>2020년 5월 3일</td>
+            <td className="text-center">82점</td>
+            <td className="text-center">국제테스트 연구원</td>
+            <td className="text-center">2020년 5월 3일</td>
           </tr>
         </tbody>
       </table>
@@ -178,16 +178,13 @@ export default function HomePage() {
       <ul>
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
-            <b>
-              (주)더하트컴퍼니{' '}
-              <a
-                href="https://www.saramin.co.kr/zf_user/company-info/view?csn=eFE2Qks5TzVpanROVE5pQW9ZbGMyZz09"
-                target="_blank"
-                rel="noreferrer"
-              >
-                회사정보
-              </a>
-            </b>
+            <a
+              href="https://www.saramin.co.kr/zf_user/company-info/view?csn=eFE2Qks5TzVpanROVE5pQW9ZbGMyZz09"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>(주)더하트컴퍼니</b>
+            </a>
             <div>2022년 2월 14일 ~ 3월 13일 (1개월)</div>
           </div>
           <div>직책: 개발팀장</div>
@@ -197,16 +194,13 @@ export default function HomePage() {
         <div className="border w-full my-6" />
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
-            <b>
-              (주)알파카살롱{' '}
-              <a
-                href="https://www.saramin.co.kr/zf_user/company-info/view?csn=TTNPako4L0s0cVFhdktlYjlwZ0JZUT09"
-                target="_blank"
-                rel="noreferrer"
-              >
-                회사정보
-              </a>
-            </b>
+            <a
+              href="https://www.saramin.co.kr/zf_user/company-info/view?csn=TTNPako4L0s0cVFhdktlYjlwZ0JZUT09"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>(주)알파카살롱</b>
+            </a>
             <div>2021년 11월 9일 ~ 2022년 2월 8일 (3개월)</div>
           </div>
           <div>직책: 개발팀장</div>
@@ -216,16 +210,13 @@ export default function HomePage() {
         <div className="border w-full my-6" />
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
-            <b>
-              (주)페스타{' '}
-              <a
-                href="https://www.saramin.co.kr/zf_user/company-info/view?csn=VUxtcFBINlJLR2wra01lNlhjbEV0QT09"
-                target="_blank"
-                rel="noreferrer"
-              >
-                회사정보
-              </a>
-            </b>
+            <a
+              href="https://www.saramin.co.kr/zf_user/company-info/view?csn=VUxtcFBINlJLR2wra01lNlhjbEV0QT09"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>(주)페스타</b>
+            </a>
             <div>2020년 9월 1일 ~ 12월 31일 (4개월)</div>
           </div>
           <div>직책: Frontend 개발팀원</div>
@@ -235,16 +226,13 @@ export default function HomePage() {
         <div className="border w-full my-6" />
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
-            <b>
-              (주)행복한 다람쥐단{' '}
-              <a
-                href="https://www.saramin.co.kr/zf_user/company-info/view?csn=VHFyWXhFL2E1N1hYMkhEZmUxK05SZz09"
-                target="_blank"
-                rel="noreferrer"
-              >
-                회사정보
-              </a>
-            </b>
+            <a
+              href="https://www.saramin.co.kr/zf_user/company-info/view?csn=VHFyWXhFL2E1N1hYMkhEZmUxK05SZz09"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>(주)행복한 다람쥐단 </b>
+            </a>
             <div>2019년 12월 23일 ~ 2020년 2월 21일 (2개월)</div>
           </div>
           <div>직책: 개발부원</div>
@@ -269,7 +257,7 @@ export default function HomePage() {
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>중앙정부 · 지자체 세출</h4>
         <div>본인</div>
-        <div>2023년 1월 23일 ~ 현재</div>
+        <div>2023년 1월 24일 ~ 현재</div>
       </div>
       <div className="flex gap-0.5 my-2">
         <a
@@ -1265,6 +1253,184 @@ export default function HomePage() {
         <li>네이버지도 API를 활용해 지도 기능을 개발할 수 있음</li>
         <li>채널톡 API, Telegram API, SOLAPI를 활용해 사용자에게 알림용 메시지를 보낼 수 있음</li>
       </dl>
+      <h2 className="text-3xl my-8">수상</h2>
+      <ul>
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <a
+              href="https://www.ito.or.kr/main/bbs/bbsMsgDetail.do?msg_seq=684&bcd=notice"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>2022 인천 스마트관광 데이터 아이디어 공모전</b>
+            </a>
+            <div>인천관광공사</div>
+            <div>2022년 12월 9일</div>
+          </div>
+          <div>
+            여행일지 자동기록 서비스 아이디어 제시{' '}
+            <a
+              href="https://www.asiatoday.co.kr/view.php?key=20221216010008397"
+              rel="noreferrer"
+              target="_blank"
+            >
+              (2등, 150만원)
+            </a>
+          </div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <a href="https://www.jungle.co.kr/contest/204985" target="_blank" rel="noreferrer">
+              <b>MMO 해커톤 2회</b>
+            </a>
+            <div>
+              MMO&nbsp;
+              <span className="text-xs">(IT교육회사)</span>
+            </div>
+            <div>2022년 11월 27일</div>
+          </div>
+          <div>결식 아동에게 줄 크리스마스 선물 크라우드펀딩 서비스 (2등, 5만원)</div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <a href="https://event-us.kr/pmsolution/event/40979" target="_blank" rel="noreferrer">
+              <b>2021 AI 해커톤</b>
+            </a>
+            <div>제주테크노벨리</div>
+            <div>2022년 1월 22일</div>
+          </div>
+          <div>식의약용 자생식물 데이터 기반 사업화 서비스 아이디어 제시 (입상)</div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <a
+              href="https://blog.naver.com/khucampustown/222535649294"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>2021 경희대학교 캠퍼스타운 입주 스타트업 캠퍼 2기</b>
+            </a>
+            <div>경희대학교 캠퍼스타운</div>
+            <div>2021년 11월 1일</div>
+          </div>
+          <div>Sindy 창업팀 추가 선정 (2021년 11월 1일 ~ 2022년 8월 31일, 10개월)</div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <a
+              href="https://youth.posco.com/posco/edu/index.php?mod=incubator&pag=icb01#khwhay"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>2021년 3차 포스코 창업인큐베이팅스쿨</b>
+            </a>
+            <div>POSCO</div>
+            <div>2021년 10월 18일</div>
+          </div>
+          <div>Sindy 창업팀 선정 (2021년 10월 18일 ~ 10월 29일, 2주)</div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <a
+              href="https://me.cau.ac.kr/bbs/board.php?bo_table=sub5_1&wr_id=4037&page=34"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>2021년도 LINC+ Start-up Members</b>
+            </a>
+            <div>중앙대학교 LINC+사업단</div>
+            <div>2021년 7월 1일</div>
+          </div>
+          <div>Sindy 창업팀 선정 (2021년 7월 1일 ~ 12월 31일, 6개월) (200만원)</div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <a
+              href="https://www.kised.or.kr/board.es?mid=a10305000000&bid=0006&list_no=2255&act=view"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>2021 실전창업교육 1기</b>
+            </a>
+            <div>중소벤처기업부</div>
+            <div>2021년 6월 1일</div>
+          </div>
+          <div>Sindy 창업팀 선정 및 2단계 진출 (2021년 6월 1일 ~ 7월 31일, 2개월)</div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <a href="https://blog.naver.com/djsepc/222200468576" target="_blank" rel="noreferrer">
+              <b>2021 동작구 스타트업 펀딩 사업</b>
+            </a>
+            <div>동작구청</div>
+            <div>2021년 2월 5일</div>
+          </div>
+          <div>Sindy 창업팀 선정 (2021년 2월 5일 ~ 11월 30일, 10개월) (500만원)</div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <a
+              href="https://www.donga.com/news/Society/article/all/20201217/104493689/2"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>2020년 C-디자인씽킹 아카데미 경진대회</b>
+            </a>
+            <div>중앙대 교수학습개발센터</div>
+            <div>2020년 12월 3일</div>
+          </div>
+          <div>‘버려지는 소재를 새로운 순환으로’를 주제로 사업계획서 작성</div>
+          <div>‘온라인 새활용 제품 유통 플랫폼’ 기획으로 대상(1등, 250만원) 수상 및 특허 출원</div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <b>국가우수장학생 (이공계)</b>
+            <div>한국장학재단</div>
+            <div>2019년 8월 14일</div>
+          </div>
+          <div>2019-1학기 ~ 2020-2학기 전액장학금 (4개 학기)</div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <b>2018 창의ICT공과대학 학술제</b>
+            <div>중앙대 창의ICT공과대학</div>
+            <div>2018년 11월 30일</div>
+          </div>
+          <div>
+            택배 상하차 아르바이트생의 열약한 근무 환경을 주제로 '초록 유니폼을 입은 알바생' VR 영상
+            제작 및 우수상 수상{' '}
+            <a href="https://www.youtube.com/watch?v=ruqZIWGwH-I" rel="noreferrer" target="_blank">
+              YouTube
+            </a>
+          </div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <a href="https://onoffmix.com/event/153038" target="_blank" rel="noreferrer">
+              <b>BBR BlockCamp 블록체인 해커톤</b>
+            </a>
+            <div>BBR, 디센터</div>
+            <div>2018년 10월 29일</div>
+          </div>
+          <div>
+            블록체인 기반 전자투표 시스템(e-voting) 기획 및 개발{' '}
+            <a href="https://bond687.wixsite.com/bbreview" rel="noreferrer" target="_blank">
+              (피칭상)
+            </a>
+          </div>
+        </li>
+      </ul>
       <h2 className="text-3xl my-8">경험</h2>
       <ul>
         <li>
@@ -1293,7 +1459,9 @@ export default function HomePage() {
         <div className="border w-full my-6" />
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
-            <b>비욘드코딩 (코딩학원)</b>
+            <a href="http://www.beyondcoding.kr/about.php" target="_blank" rel="noreferrer">
+              <b>비욘드코딩 (코딩학원)</b>
+            </a>
             <div>2021년 8월 25일 ~ 9월 30일 (1개월)</div>
           </div>
           <div>직책: 웹 개발 수업 강사</div>
@@ -1316,7 +1484,13 @@ export default function HomePage() {
         <div className="border w-full my-6" />
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
-            <b>Purdue University 온라인 해외교육</b>
+            <a
+              href="https://swedu.cau.ac.kr/core/program/programview?menuid=001004001002007&programgroupno=8&programno=420"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>Purdue University 온라인 해외교육</b>
+            </a>
             <div>2021년 7월 5일 ~ 8월 20일 (2개월)</div>
           </div>
           <div>직책: 프로젝트 팀원</div>
@@ -1328,7 +1502,9 @@ export default function HomePage() {
         <div className="border w-full my-6" />
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
-            <b>쿠버네티스 기반 클라우드 시스템 엔지니어 양성 과정</b>
+            <a href="https://www.onoffmix.com/event/236424" target="_blank" rel="noreferrer">
+              <b>쿠버네티스 기반 클라우드 시스템 엔지니어 양성 과정</b>
+            </a>
             <div>2021년 5월 31일 ~ 11월 9일 (5개월)</div>
           </div>
           <div>직책: 프로젝트 팀장</div>
@@ -1367,7 +1543,13 @@ export default function HomePage() {
         <div className="border w-full my-6" />
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
-            <b>(주)리서치랩</b>
+            <a
+              href="https://www.saramin.co.kr/zf_user/company-info/view/csn/b2ZtOGw4SWdmTldhbjVLK2pqNzdDZz09/company_nm/(%EC%A3%BC)%EB%A6%AC%EC%84%9C%EC%B9%98%EB%9E%A9"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>(주)리서치랩</b>
+            </a>
             <div>2017년 7월 31일 ~ 8월 25일 (1개월)</div>
           </div>
           <div>직책: 연구4팀 팀원</div>
@@ -1375,149 +1557,7 @@ export default function HomePage() {
           <div>역할: 설문 조사 데이터 통계 분석 (엑셀), 설문지 작성 (워드)</div>
         </li>
       </ul>
-      <h2 className="text-3xl my-8">수상</h2>
-      <ul>
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <b>2022 인천 스마트관광 데이터 아이디어 공모전</b>
-            <div>인천관광공사</div>
-            <div>2022년 12월 9일</div>
-          </div>
-          <div>
-            여행일지 자동기록 서비스 아이디어 제시{' '}
-            <a
-              href="https://www.asiatoday.co.kr/view.php?key=20221216010008397"
-              rel="noreferrer"
-              target="_blank"
-            >
-              (2등, 150만원)
-            </a>
-          </div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <b>MMO 해커톤 2회</b>
-            <div>
-              MMO&nbsp;
-              <span className="text-xs">(IT교육회사)</span>
-            </div>
-            <div>2022년 11월 27일</div>
-          </div>
-          <div>
-            결식 아동에게 줄 크리스마스 선물 크라우드펀딩 서비스{' '}
-            <a
-              href="https://morning-kayak-412.notion.site/MMO-2-4-4-5-0-96f0009dd4e94f3cb817ed7d051bfe93"
-              rel="noreferrer"
-              target="_blank"
-            >
-              (2등, 5만원)
-            </a>
-          </div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <b>2021 AI 해커톤</b>
-            <div>제주테크노벨리</div>
-            <div>2022년 1월 22일</div>
-          </div>
-          <div>식의약용 자생식물 데이터 기반 사업화 서비스 아이디어 제시 (입상)</div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <b>2021 경희대학교 캠퍼스타운 입주 스타트업 캠퍼 2기</b>
-            <div>경희대학교 캠퍼스타운</div>
-            <div>2021년 11월 1일</div>
-          </div>
-          <div>Sindy 창업팀 선정 (2021년 11월 1일 ~ 2022년 8월 31일, 10개월)</div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <b>2021년 3차 포스코 창업인큐베이팅스쿨</b>
-            <div>POSCO</div>
-            <div>2021년 10월 18일</div>
-          </div>
-          <div>Sindy 창업팀 선정 (2021년 10월 18일 ~ 10월 29일, 2주)</div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <b>2021년도 LINC+ Start-up Members</b>
-            <div>중앙대학교 LINC+사업단</div>
-            <div>2021년 7월 1일</div>
-          </div>
-          <div>Sindy 창업팀 선정 (2021년 7월 1일 ~ 12월 31일, 6개월) (200만원)</div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <b>2021 실전창업교육 1기</b>
-            <div>중소벤처기업부</div>
-            <div>2021년 6월 1일</div>
-          </div>
-          <div>Sindy 창업팀 선정 및 2단계 진출 (2021년 6월 1일 ~ 7월 31일, 2개월)</div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <b>2021 동작구 스타트업 펀딩 사업</b>
-            <div>동작구청</div>
-            <div>2021년 2월 5일</div>
-          </div>
-          <div>Sindy 창업팀 선정 (2021년 2월 5일 ~ 11월 30일, 10개월) (500만원)</div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <b>2020년 C-디자인씽킹 아카데미 경진대회</b>
-            <div>중앙대 교수학습개발센터</div>
-            <div>2020년 12월 3일</div>
-          </div>
-          <div>‘버려지는 소재를 새로운 순환으로’를 주제로 사업계획서 작성</div>
-          <div>‘온라인 새활용 제품 유통 플랫폼’ 기획으로 대상(1등, 250만원) 수상 및 특허 출원</div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <b>국가우수장학생 (이공계)</b>
-            <div>한국장학재단</div>
-            <div>2019년 8월 14일</div>
-          </div>
-          <div>2019-1학기 ~ 2020-2학기 전액장학금 (4개 학기)</div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <b>2018 창의ICT공과대학 학술제</b>
-            <div>중앙대 창의ICT공과대학</div>
-            <div>2018년 11월 30일</div>
-          </div>
-          <div>
-            택배 상하차 아르바이트생의 열약한 근무 환경을 주제로 '초록 유니폼을 입은 알바생' VR 영상
-            제작 및 우수상 수상&nbsp;
-            <a href="https://www.youtube.com/watch?v=ruqZIWGwH-I" rel="noreferrer" target="_blank">
-              YouTube
-            </a>
-          </div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <b>BBR BlockCamp 블록체인 해커톤</b>
-            <div>BBR, 디센터</div>
-            <div>2018년 10월 29일</div>
-          </div>
-          <div>
-            블록체인 기반 전자투표 시스템(e-voting) 기획 및 개발{' '}
-            <a href="https://bond687.wixsite.com/bbreview" rel="noreferrer" target="_blank">
-              (피칭상)
-            </a>
-          </div>
-        </li>
-      </ul>
+
       <div className="w-full text-center text-slate-800 text-sm mt-8">작성일: 2023년 6월 27일</div>
       <div className="w-full text-center text-slate-800 text-sm">작성자: 곽태욱</div>
     </main>

@@ -11,7 +11,7 @@ export default function OtherCertificates() {
         className="w-full text-center my-4 text-slate-500 text-sm"
         onClick={() => setShow((prev) => !prev)}
       >
-        {show ? '기타 자격증 숨기' : '기타 자격증 보기'}
+        {show ? '기타 자격증 숨기기' : '기타 자격증 보기'}
       </button>
       {show && (
         <table>
@@ -26,57 +26,57 @@ export default function OtherCertificates() {
           <tbody>
             <tr>
               <td>TOPCIT 14회</td>
-              <td>523점</td>
-              <td>과학기술정보통신부</td>
-              <td>2020년 10월 31일</td>
+              <td className="text-center">523점</td>
+              <td className="text-center">과학기술정보통신부</td>
+              <td className="text-center">2020년 10월 31일</td>
             </tr>
             <tr>
               <td>TOPCIT 13회</td>
-              <td>609점</td>
-              <td>과학기술정보통신부</td>
-              <td>2020년 6월 20일</td>
+              <td className="text-center">609점</td>
+              <td className="text-center">과학기술정보통신부</td>
+              <td className="text-center">2020년 6월 20일</td>
             </tr>
             <tr>
               <td>TOPCIT 12회</td>
-              <td>488점</td>
-              <td>과학기술정보통신부</td>
-              <td>2019년 10월 19일</td>
+              <td className="text-center">488점</td>
+              <td className="text-center">과학기술정보통신부</td>
+              <td className="text-center">2019년 10월 19일</td>
             </tr>
             <tr>
               <td>TOPCIT 11회</td>
-              <td>383점</td>
-              <td>과학기술정보통신부</td>
-              <td>2019년 5월 18일</td>
+              <td className="text-center">383점</td>
+              <td className="text-center">과학기술정보통신부</td>
+              <td className="text-center">2019년 5월 18일</td>
             </tr>
             <tr>
               <td>TOPCIT 10회</td>
-              <td>343점</td>
-              <td>과학기술정보통신부</td>
-              <td>2018년 10월 20일</td>
+              <td className="text-center">343점</td>
+              <td className="text-center">과학기술정보통신부</td>
+              <td className="text-center">2018년 10월 20일</td>
             </tr>
             <tr>
               <td>TOPCIT 9회</td>
-              <td>397점</td>
-              <td>과학기술정보통신부</td>
-              <td>2018년 5월 19일</td>
+              <td className="text-center">397점</td>
+              <td className="text-center">과학기술정보통신부</td>
+              <td className="text-center">2018년 5월 19일</td>
             </tr>
             <tr>
               <td>태권도</td>
-              <td>1단</td>
-              <td>국기원</td>
-              <td>2015년 11월 18일</td>
+              <td className="text-center">1단</td>
+              <td className="text-center">국기원</td>
+              <td className="text-center">2015년 11월 18일</td>
             </tr>
             <tr>
               <td>유도</td>
-              <td>2단</td>
-              <td>대한유도회</td>
-              <td>2013년 11월 27일</td>
+              <td className="text-center">2단</td>
+              <td className="text-center">대한유도회</td>
+              <td className="text-center">2013년 11월 27일</td>
             </tr>
             <tr>
               <td>그래픽기술자격</td>
-              <td>3급</td>
-              <td>한국생산성본부</td>
-              <td>2010년 11월 26일</td>
+              <td className="text-center">3급</td>
+              <td className="text-center">한국생산성본부</td>
+              <td className="text-center">2010년 11월 26일</td>
             </tr>
             <tr>
               <td>
@@ -84,21 +84,21 @@ export default function OtherCertificates() {
                 <br />
                 (한글파워포인트)
               </td>
-              <td>A등급</td>
-              <td>한국생산성본부</td>
-              <td>2009년 12월 3일</td>
+              <td className="text-center">A등급</td>
+              <td className="text-center">한국생산성본부</td>
+              <td className="text-center">2009년 12월 3일</td>
             </tr>
             <tr>
               <td>대한검정회</td>
-              <td>준1급</td>
-              <td>대한민국한자교육연구회</td>
-              <td>2009년 11월 28일</td>
+              <td className="text-center">준1급</td>
+              <td className="text-center">대한민국한자교육연구회</td>
+              <td className="text-center">2009년 11월 28일</td>
             </tr>
             <tr>
               <td>워드프로세서</td>
-              <td>3급</td>
-              <td>대한상공회의소</td>
-              <td>2008년 12월 26일</td>
+              <td className="text-center">3급</td>
+              <td className="text-center">대한상공회의소</td>
+              <td className="text-center">2008년 12월 26일</td>
             </tr>
           </tbody>
         </table>
