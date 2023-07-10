@@ -147,3 +147,4 @@ public/*.js
 public/*.map
 
 .env.*
+.DS_Store
