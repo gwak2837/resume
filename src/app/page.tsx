@@ -199,7 +199,7 @@ export default function HomePage() {
           <tr>
             <td>G-TELP (Level 2)</td>
             <td className="text-center">
-              <a href="/images/2020-gtelp.jpg" target="_blank">
+              <a href="/images/2020-gtelp.webp" target="_blank">
                 82점
               </a>
             </td>
@@ -430,7 +430,7 @@ export default function HomePage() {
               <b>Headstart Silicon Valley, Inc.</b>
             </a>
             <div>
-              <a href="/images/2021-headstart-sv.png" target="_blank">
+              <a href="/images/2021-headstart-sv.webp" target="_blank">
                 2021년 1월 4일 ~ 2월 5일 (1개월)
               </a>
             </div>
@@ -458,7 +458,7 @@ export default function HomePage() {
               <b>(주)리서치랩</b>
             </a>
             <div>
-              <a href="/images/2017-researchlab.jpg" target="_blank">
+              <a href="/images/2017-researchlab.webp" target="_blank">
                 2017년 7월 31일 ~ 8월 25일 (1개월)
               </a>
             </div>
@@ -1608,7 +1608,7 @@ export default function HomePage() {
         <div className="border w-full my-6" />
         <li>
           <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <a href="/images/2019-scholarship.jpg" target="_blank">
+            <a href="/images/2019-scholarship.webp" target="_blank">
               <b>국가우수장학생 (이공계)</b>
             </a>
             <div>한국장학재단</div>
