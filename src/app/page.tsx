@@ -229,7 +229,7 @@ export default function HomePage() {
       </table>
       <OtherCertificates />
       <h2 className="text-3xl my-8">
-        개발 경력 <span className="text-base">(1년)</span>
+        개발 경력 <span className="text-base">(1년 1개월)</span>
       </h2>
       <ul>
         <li>
@@ -331,6 +331,26 @@ export default function HomePage() {
             역할: 적외선 영상 통계 분석 개발 보조 (C++), OpenMP 라이브러리 기반 병렬처리로 수학 계산
             성능 최적화
           </div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
+            <a
+              href="https://www.saramin.co.kr/zf_user/company-info/view/csn/b2ZtOGw4SWdmTldhbjVLK2pqNzdDZz09/company_nm/(%EC%A3%BC)%EB%A6%AC%EC%84%9C%EC%B9%98%EB%9E%A9"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>(주)리서치랩</b>
+            </a>
+            <div>
+              <a href="/images/2017-researchlab.webp" target="_blank">
+                2017년 7월 31일 ~ 8월 25일 (1개월)
+              </a>
+            </div>
+          </div>
+          <div>직책: 연구4팀 팀원</div>
+          <div>직급: 인턴</div>
+          <div>역할: 설문 조사 데이터 통계 분석 및 엑셀 함수 작성</div>
         </li>
       </ul>
       <h2 className="text-3xl my-8">개발 경험</h2>
@@ -455,26 +475,6 @@ export default function HomePage() {
           </div>
           <div>직책: ‘컴퓨팅적 사고와 문제 해결’ 수업 조교</div>
           <div>역할: 수업 중 수강생의 Scratch 프로그래밍 관련 질의 응답 및 과제 채점</div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <a
-              href="https://www.saramin.co.kr/zf_user/company-info/view/csn/b2ZtOGw4SWdmTldhbjVLK2pqNzdDZz09/company_nm/(%EC%A3%BC)%EB%A6%AC%EC%84%9C%EC%B9%98%EB%9E%A9"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <b>(주)리서치랩</b>
-            </a>
-            <div>
-              <a href="/images/2017-researchlab.webp" target="_blank">
-                2017년 7월 31일 ~ 8월 25일 (1개월)
-              </a>
-            </div>
-          </div>
-          <div>직책: 연구4팀 팀원</div>
-          <div>직급: 인턴</div>
-          <div>역할: 설문 조사 데이터 통계 분석 및 엑셀 함수 작성</div>
         </li>
       </ul>
       <h2 className="text-3xl my-8">프로젝트</h2>
