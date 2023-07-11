@@ -251,7 +251,7 @@ export default function HomePage() {
               </a>
             </div>
           </div>
-          <div>직책: 개발팀장</div>
+          <div>직책: 개발팀장 (팀장 포함 2명)</div>
           <div>직급: 인턴</div>
           <div>역할: '다시 일하고 싶은 여성의 상호성장 플랫폼' 비마이시즌 개발</div>
         </li>
@@ -271,7 +271,7 @@ export default function HomePage() {
               </a>
             </div>
           </div>
-          <div>직책: 개발팀장</div>
+          <div>직책: 개발팀장 (팀장 포함 3명)</div>
           <div>직급: 인턴</div>
           <div>역할: '4050 여성 전용 커뮤니티' 알파카살롱 기획 및 MVP 개발</div>
         </li>
@@ -291,7 +291,7 @@ export default function HomePage() {
               </a>
             </div>
           </div>
-          <div>직책: Frontend 개발팀원</div>
+          <div>직책: Frontend 개발팀원 (팀장 포함 3명)</div>
           <div>직급: 인턴</div>
           <div>역할: '페스타 서비스 관리자(Admin) 페이지' 기획 및 개발</div>
         </li>
@@ -315,7 +315,7 @@ export default function HomePage() {
               </a>
             </div>
           </div>
-          <div>직책: 개발부원</div>
+          <div>직책: 개발부원 (팀장 포함 3명)</div>
           <div>직급: 인턴</div>
           <div>역할: '방탈출 리뷰 웹사이트' 기획/디자인 및 MVP 개발</div>
         </li>
@@ -325,7 +325,7 @@ export default function HomePage() {
             <b>중앙대학교 적외선스텔스 실험실</b>
             <div>2019년 3월 26일 ~ 5월 31일 (2개월)</div>
           </div>
-          <div>직책: SW 개발팀원</div>
+          <div>직책: SW 개발팀원 (팀장 포함 2명)</div>
           <div>직급: 인턴</div>
           <div>
             역할: 적외선 영상 통계 분석 개발 보조 (C++), OpenMP 라이브러리 기반 병렬처리로 수학 계산
@@ -419,7 +419,7 @@ export default function HomePage() {
               </a>
             </div>
           </div>
-          <div>직책: 프로젝트 팀원</div>
+          <div>직책: 프로젝트 팀원 (지도교수 포함 8명)</div>
           <div>
             역할: 'UAV ground scanning systems to find people or groups' 논문 작성, 학습 데이터 수집
             및 가공
@@ -437,7 +437,7 @@ export default function HomePage() {
               </a>
             </div>
           </div>
-          <div>직책: 프로젝트 팀장</div>
+          <div>직책: 프로젝트 팀장 (팀장 포함 5명)</div>
           <div>역할: Docker 기반 심리테스트 웹사이트 구축, k8s와 CI/CD 기반 CRUD 게시판 구축</div>
         </li>
         <div className="border w-full my-6" />
@@ -446,7 +446,7 @@ export default function HomePage() {
             <b>신디(SINDY, Signature in Dessert) 창업</b>
             <div>2021년 2월 25일 ~ 10월 31일 (8개월)</div>
           </div>
-          <div>직책: 개발팀장 (Frontend/Backend/Cloud)</div>
+          <div>직책: 개발팀장 (Frontend/Backend/Cloud) (팀장 포함 2명)</div>
           <div>
             역할: '카페의 특색을 담아내는 사용자 주도 SNS형 디저트 정보 공유 공간' 디저트핏 기획 및
             개발
@@ -464,7 +464,7 @@ export default function HomePage() {
               </a>
             </div>
           </div>
-          <div>직책: 프로젝트 팀장</div>
+          <div>직책: 프로젝트 팀장 (팀장 포함 5명)</div>
           <div>역할: ‘음성인식 기반 노래검색 서비스’ Icezam 기획 및 개발</div>
         </li>
         <div className="border w-full my-6" />
@@ -602,7 +602,8 @@ export default function HomePage() {
         </li>
         <li>B-Tree 인덱스를 설계해 약 2억 개의 재정 데이터를 5초 안으로 검색할 수 있음</li>
         <li>
-          JavaScript 번들 용량을 줄이기 위해 Next.js 13을 이용해 특정 URL의 HTML 파일을 캐싱함
+          페이지 렌더링에 필요한 리소스 용량을 줄이기 위해 Next.js 13을 이용해 특정 URL의 HTML
+          파일을 캐싱함
         </li>
       </ol>
       <div className="border w-full my-6" />
