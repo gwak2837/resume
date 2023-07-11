@@ -140,7 +140,16 @@ export default function HomePage() {
               </a>
             </td>
             <td>
-              전체 학점: 4.1 / 4.5 (163 학점) <br />
+              <a href="/images/2022-univ.png" target="_blank">
+                전체 학점:
+              </a>{' '}
+              <a href="/images/2022-univ2.png" target="_blank">
+                4.1 / 4.5
+              </a>{' '}
+              <a href="/images/2022-univ3.png" target="_blank">
+                (163 학점)
+              </a>
+              <br />
               전공 학점: 4.0 / 4.5 (89 학점)
             </td>
           </tr>
