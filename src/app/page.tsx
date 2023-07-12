@@ -502,7 +502,10 @@ export default function HomePage() {
             <div>2019년 9월 16일 ~ 12월 13일 (3개월)</div>
           </div>
           <div>직책: ‘컴퓨팅적 사고와 문제 해결’ 수업 조교</div>
-          <div>역할: 수업 중 수강생의 Scratch 프로그래밍 관련 질의 응답 및 과제 채점</div>
+          <div>
+            역할: 수업 중 수강생의 Scratch 프로그래밍 관련 질의 응답 및 과제 채점 (주 2회, 1회
+            2시간)
+          </div>
         </li>
       </ul>
       <h2 className="text-3xl my-8">프로젝트</h2>
