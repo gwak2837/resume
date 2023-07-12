@@ -229,7 +229,7 @@ export default function HomePage() {
       </table>
       <OtherCertificates />
       <h2 className="text-3xl my-8">
-        개발 경력 <span className="text-base">(1년 1개월)</span>
+        개발 경력 <span className="text-base">(1년 4개월)</span>
       </h2>
       <ul>
         <li>
@@ -278,6 +278,24 @@ export default function HomePage() {
         <div className="border w-full my-6" />
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
+            <a href="http://pmcm.cau.ac.kr/" target="_blank" rel="noreferrer">
+              <b>중앙대학교 건설경영정보 연구실 (김경주 교수)</b>
+            </a>
+            <a href="/images/2021-cau-lab.webp" target="_blank">
+              2021년 6월 1일 ~ 8월 31일 (3개월)
+            </a>
+          </div>
+          <div>직책: 개발팀장 (팀장 포함 2명)</div>
+          <div>직급: 참여연구원</div>
+          <div>
+            역할: '3차) 블록체인 기술을 이용한 해외 건설프로젝트 스마트 분쟁관리 모델구축 연구' 과제
+            참여. 건설 프로젝트 수주 협상 과정에서 주고 받는 이메일을 블록체인 상에 관리하여 추후
+            분쟁 발생 여지를 최소화하는 사이트 개발
+          </div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
             <a
               href="https://www.saramin.co.kr/zf_user/company-info/view?csn=VUxtcFBINlJLR2wra01lNlhjbEV0QT09"
               target="_blank"
@@ -322,14 +340,24 @@ export default function HomePage() {
         <div className="border w-full my-6" />
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
-            <b>중앙대학교 적외선스텔스 실험실</b>
-            <div>2019년 3월 26일 ~ 5월 31일 (2개월)</div>
+            <a href="https://web.cau.ac.kr/energy/index.htm" target="_blank" rel="noreferrer">
+              <b>중앙대학교 에너지 및 복사특성 연구실 (김태국 교수)</b>
+            </a>
+            <div>
+              <a href="/images/2019-cau-lab.webp" target="_blank">
+                2019년 4월 1일
+              </a>{' '}
+              ~{' '}
+              <a href="/images/2019-cau-lab2.webp" target="_blank">
+                5월 31일 (2개월)
+              </a>
+            </div>
           </div>
-          <div>직책: SW 개발팀원 (팀장 포함 2명)</div>
-          <div>직급: 인턴</div>
+          <div>직책: 개발팀원 (팀장 포함 2명)</div>
+          <div>직급: 참여연구원</div>
           <div>
-            역할: 적외선 영상 통계 분석 개발 보조 (C++), OpenMP 라이브러리 기반 병렬처리로 수학 계산
-            성능 최적화
+            역할: 'KFX IR 해석 기법 및 해석 소프트웨어 개발 연구' 과제 참여. 적외선 영상 통계 분석
+            개발 보조 (C++), OpenMP 라이브러리 기반 병렬처리로 수학 계산 성능 최적화
           </div>
         </li>
         <div className="border w-full my-6" />
@@ -978,6 +1006,83 @@ export default function HomePage() {
       <ol>
         <li>웹소켓을 활용해 실시간으로 코인 시세를 획득함</li>
         <li>이동평균선, RSI, MFI 등 차트 보조 지표를 구현해 매매 알고리즘에 활용함</li>
+      </ol>
+      <div className="border w-full my-6" />
+      <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
+        <h4>이메일 블록체인 검증</h4>
+        <div>2명</div>
+        <a href="/images/2021-cau-lab.webp" target="_blank">
+          2021년 6월 1일 ~ 8월 31일 (3개월)
+        </a>
+      </div>
+      <div className="flex gap-0.5 my-2">
+        <a
+          href="https://github.com/gwak2837/email-blockchain"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+        >
+          <div className="flex gap-1 items-center">
+            <Image src="/images/github.svg" alt="github" width="16" height="16" />
+            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
+              email-blockchain (Private)
+            </h5>
+          </div>
+        </a>
+      </div>
+      <div>
+        이메일 수발신을 블록체인 상의 하나의 트랜잭션 및 블록으로 관리하면 이메일을 주고 받을 때마다
+        블록이 생성되어 블록체인 형태가 되는데, 추후에 이메일 내용 관련으로 분쟁이 발생하면 각 블록
+        및 트랜잭션의 검증된 해시값을 사용하여 이메일 내용의 무결성을 증명할 수 있음
+      </div>
+      <div className="flex flex-wrap gap-1 my-2">
+        <a href="https://nextjs.org/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"
+            alt="Next.js Badge"
+          />
+        </a>
+        <a href="https://ant.design/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Ant_Design-0170FE?style=flat-square&logo=Ant-Design&logoColor=white"
+            alt="styled Badge"
+          />
+        </a>
+        <a href="https://styled-components.com/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Styled-DB7093?style=flat-square&logo=styled-components&logoColor=white"
+            alt="styled Badge"
+          />
+        </a>
+        <a href="https://vercel.com/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white"
+            alt="Vercel Badge"
+          />
+        </a>
+      </div>
+      <ol>
+        <li>
+          Next.js{' '}
+          <a
+            href="https://nextjs.org/docs/pages/building-your-application/routing/api-routes"
+            target="_blank"
+            rel="noreferrer"
+          >
+            API Routes
+          </a>{' '}
+          기능을 이용해 비공개 블록체인의 개별 노드와 통신
+        </li>
+        <li>
+          <a href="https://github.com/emailjs-com/emailjs-sdk" target="_blank" rel="noreferrer">
+            <pre className="inline p-1 rounded bg-slate-100">@emailjs/browser</pre>
+          </a>{' '}
+          라이브러리를 사용해 다른 서버로 이메일 전송 및{' '}
+          <a href="https://github.com/mscdex/node-imap" target="_blank" rel="noreferrer">
+            <pre className="inline p-1 rounded bg-slate-100">imap</pre>
+          </a>{' '}
+          라이브러리를 사용해 다른 IMAP 이메일 서버 내용을 가져옴
+        </li>
       </ol>
       <div className="border w-full my-6" />
       <h4 className="my-8">이전 프로젝트 목록</h4>

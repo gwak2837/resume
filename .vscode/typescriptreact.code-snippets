@@ -1,0 +1,12 @@
+{
+  "ahref": {
+    "prefix": "aout",
+    "description": "ahref",
+    "body": ["<a href=$1 target=\"_blank\" rel=\"noreferrer\">", "</a>"]
+  },
+  "ahref2": {
+    "prefix": "ain",
+    "description": "ahref",
+    "body": ["<a href=\"/images/\" target=\"_blank\">", "</a>"]
+  }
+}
