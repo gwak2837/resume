@@ -507,7 +507,7 @@ export default function HomePage() {
       </ul>
       <h2 className="text-3xl my-8">프로젝트</h2>
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
-        <h4>중앙정부 · 지자체 세출</h4>
+        <h4>지키다</h4>
         <div>본인</div>
         <div>2023년 1월 24일 ~ 현재</div>
       </div>
@@ -520,7 +520,9 @@ export default function HomePage() {
         >
           <div className="flex gap-1 items-center">
             <Image src="/images/github.svg" alt="github" width="16" height="16" />
-            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">lofin</h5>
+            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
+              lofin (Priv.)
+            </h5>
           </div>
         </a>
         <a
@@ -532,12 +534,12 @@ export default function HomePage() {
           <div className="flex gap-1 items-center">
             <Image src="/images/github.svg" alt="github" width="16" height="16" />
             <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
-              lofin-backend
+              lofin-backend (Priv.)
             </h5>
           </div>
         </a>
         <a
-          href="https://lofin.vercel.app"
+          href="https://jikida.vercel.app"
           target="_blank"
           rel="noreferrer"
           className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
@@ -545,12 +547,12 @@ export default function HomePage() {
           <div className="flex gap-1 items-center">
             <Image src="/images/vercel.png" alt="github" width="16" height="16" />
             <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
-              lofin.vercel.app
+              jikida.vercel.app
             </h5>
           </div>
         </a>
         <a
-          href="https://lofin-2uhldmgcia-du.a.run.app"
+          href="https://lofin-gxyyph2xda-du.a.run.app"
           target="_blank"
           rel="noreferrer"
           className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
@@ -558,7 +560,7 @@ export default function HomePage() {
           <div className="flex gap-1 items-center">
             <Image src="/images/cloud-run.svg" alt="github" width="16" height="16" />
             <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
-              lofin-2uhldmgcia-du.a.run.app
+              lofin-gxyyph2xda-du.a.run.app
             </h5>
           </div>
         </a>
@@ -1025,7 +1027,7 @@ export default function HomePage() {
           <div className="flex gap-1 items-center">
             <Image src="/images/github.svg" alt="github" width="16" height="16" />
             <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
-              email-blockchain (Private)
+              email-blockchain (Priv.)
             </h5>
           </div>
         </a>
@@ -1770,7 +1772,7 @@ export default function HomePage() {
         </li>
       </ul>
 
-      <div className="w-full text-center text-slate-800 text-sm mt-8">작성일: 2023년 7월 10일</div>
+      <div className="w-full text-center text-slate-800 text-sm mt-8">작성일: 2023년 7월 12일</div>
       <div className="w-full text-center text-slate-800 text-sm">작성자: 곽태욱</div>
     </main>
   )
