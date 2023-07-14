@@ -118,3 +118,12 @@ ol {
 ol > li {
   margin: 0.5rem 0;
 }
+
+pre {
+  display: inline;
+  font-size: 0.9rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}

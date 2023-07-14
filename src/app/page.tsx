@@ -588,16 +588,22 @@ export default function HomePage() {
             alt="tailwind"
           />
         </a>
-        <a href="https://www.postgresql.org/" rel="noreferrer" target="_blank">
+        <a href="https://tanstack.com/query/v4/" rel="noreferrer" target="_blank">
           <img
-            src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=PostgreSQL&logoColor=white"
-            alt="PostgreSQL Badge"
+            src="https://img.shields.io/badge/React Query-FF4154?style=flat-square&logo=react-query&logoColor=white"
+            alt="React Query Badge"
           />
         </a>
         <a href="https://vercel.com/" rel="noreferrer" target="_blank">
           <img
             src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white"
             alt="Vercel Badge"
+          />
+        </a>
+        <a href="https://www.postgresql.org/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=PostgreSQL&logoColor=white"
+            alt="PostgreSQL Badge"
           />
         </a>
         <a href="https://cloud.google.com/gcp/" rel="noreferrer" target="_blank">
@@ -633,7 +639,17 @@ export default function HomePage() {
           </a>{' '}
           데이터를 데이터베이스에 저장함
         </li>
-        <li>B-Tree 인덱스를 설계해 약 2억 개의 재정 데이터를 5초 안으로 검색할 수 있음</li>
+        <li>
+          약 2억 개의 재정 데이터 검색에 50초 걸리는 응답시간을 PostgreSQL{' '}
+          <a
+            href="https://velog.io/@emplam27/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%EA%B7%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C-%EC%95%8C%EC%95%84%EB%B3%B4%EB%8A%94-B-Plus-Tree"
+            target="_blank"
+            rel="noreferrer"
+          >
+            B+Tree
+          </a>{' '}
+          인덱스를 설계해 5초로 개선함
+        </li>
         <li>
           페이지 렌더링에 필요한 리소스 용량을 줄이기 위해 Next.js 13을 이용해 특정 URL의 HTML
           파일을 캐싱함
@@ -679,7 +695,7 @@ export default function HomePage() {
       <div className="flex flex-wrap gap-1 my-2">
         <a href="https://nextjs.org" rel="noreferrer" target="_blank">
           <img
-            src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"
+            src="https://img.shields.io/badge/Next.js 13-000000?style=flat-square&logo=next.js&logoColor=white"
             alt="next.js"
           />
         </a>
@@ -751,7 +767,7 @@ export default function HomePage() {
       <div className="flex flex-wrap gap-1 my-2">
         <a href="" rel="noreferrer" target="_blank">
           <img
-            src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"
+            src="https://img.shields.io/badge/Next.js 13-000000?style=flat-square&logo=next.js&logoColor=white"
             alt="next.js"
           />
         </a>
@@ -797,40 +813,26 @@ export default function HomePage() {
         </a>
       </div>
       <ol>
+        <li>사이트를 크롤링 후 특정 조건을 만족하면 모바일로 알림을 보내는 알고리즘을 구현함</li>
         <li>
-          Apollo server 사용하다가 Apollo는 서버에 HTTP2를 적용할 수 없어서, HTTP2를 지원하면서
-          Apollo server보다 몇 배 빠른 Fastify로 변경함
-        </li>
-        <li>GraphQL을 안 쓰게 돼서 Apoll client를 React Query로 변경함</li>
-        <li>
-          Next.js 페이지 revalidation을 위해 Next.js api 기능을 활용함. 이때 lru-cache를 통해 요청
-          빈도를 제한함. 또한 font 로딩 속도 개선과 font 지연 로딩으로 인한 cumulative layout shift
-          방지를 위해 @next/font를 사용함
+          특정 사용자의 최근 N개 알림 목록과 같이, one-to-many 관계의 테이블일 때 many 쪽 테이블에서
+          모든 레코드가 아닌 특정 레코드 N개만 선택해 JOIN 해야하는 상황이 발생했는데,{' '}
+          <a href="https://stackoverflow.com/a/7745635" target="_blank" rel="noreferrer">
+            Greatest-N-Per-Group
+          </a>{' '}
+          알고리즘을 사용하여 해결함
         </li>
         <li>
           Styled components는 프로젝트 규모가 커질 수록 css 번들 크기가 선형으로 증가하는 단점이
-          있음. 그래서 큰 프로젝트에서 css 번들 크기를 줄이기 위해 Tailwind를 사용함. Tailwind CSS를
-          처음 도입하면 초기 학습 시간이 있는데, 시간이 지날 수록 Styled component처럼 따로 변수를
-          만들지 않고 바로 className만 작성하면 된다는 부분에 편리함을 느낌
+          있음. 그래서 큰 프로젝트에서 css 번들 크기를 줄이기 위해 Tailwind를 사용함. Tailwind CSS
+          문법을 익혀야하는 단점이 있지만, 시간이 지날 수록 Styled component처럼 따로 변수를 만들지
+          않고 바로 className만 작성하면 된다는 부분에 편리함을 느낌
         </li>
-        <li>
-          Push API를 웹워커로 직접 구현하다가 Push API 관련 UI 구현 및 UX 개선하는데 품이 많이
-          들어서 FlareLane을 선택함
-        </li>
-        <li>사이트를 크롤링 후 특정 조건을 만족하면 모바일로 알림을 보내는 알고리즘을 구현함</li>
         <li>
           서버리스 서비스인 Cloud Run에서 웹사이트 크롤링 용도로 설치한 puppeteer가 작동하지 않는
           문제가 발생함. root 사용자 대신 권한이 특정 폴더로 제한된 새로운 사용자를 만들어 puppeteer
           접근 범위를 제한하고, puppeteer가 컨테이너 위에서 실행되기 때문에 sandbox 보안 설정을
           해제하여 해결함
-        </li>
-        <li>
-          Cheerio 패키지만으론 {`<iframe>`} 하위 HTML을 불러올 수 없어, Puppeteer 브라우저의
-          자바스크립트를 사용해 불러옴
-        </li>
-        <li>
-          one-to-many 관계의 테이블일 때 many 쪽 테이블에서 모든 레코드가 아닌 특정 레코드 N개만
-          선택해 JOIN 해야하는 상황이 발생했는데, Greatest-N-Per-Group 알고리즘을 사용하여 해결함
         </li>
       </ol>
       <div className="border w-full my-6" />
@@ -957,6 +959,137 @@ export default function HomePage() {
       />
       <div className="border w-full my-6" />
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
+        <h4>비마이시즌</h4>
+        <div>2명</div>
+        <div>
+          <a href="/images/2022-theheartcompany.png" target="_blank">
+            2022년 2월 14일
+          </a>{' '}
+          ~{' '}
+          <a href="/images/2022-theheartcompany2.png" target="_blank">
+            3월 13일 (1개월)
+          </a>
+        </div>
+      </div>
+      <div className="flex gap-0.5 my-2">
+        <a
+          href="https://github.com/gwak2837/be-my-season"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+        >
+          <div className="flex gap-1 items-center">
+            <Image src="/images/github.svg" alt="github" width="16" height="16" />
+            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
+              be-my-season
+            </h5>
+          </div>
+        </a>
+        <a
+          href="https://www.bemyseason.co.kr/"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+        >
+          <div className="flex gap-1 items-center">
+            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
+              www.bemyseason.co.kr
+            </h5>
+          </div>
+        </a>
+      </div>
+      <div>
+        경력보유여성을 위해 교육, 문화컨텐츠, 커뮤니티를 만들어가는 다시 일하고 싶은 여성의 상호성장
+        플랫폼
+      </div>
+      <div className="flex flex-wrap gap-1 my-2">
+        <a href="https://nextjs.org" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Next.js 13-000000?style=flat-square&logo=next.js&logoColor=white"
+            alt="next.js"
+          />
+        </a>
+        <a href="https://nextjs.org" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/NGINX-009639?style=flat-square&logo=nginx&logoColor=white"
+            alt="next.js"
+          />
+        </a>
+        <a href="https://www.mysql.com/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"
+            alt="MySQL Badge"
+          />
+        </a>
+      </div>
+      <ol>
+        <li>Nginx를 사용해 동일 호스트 내 멀티 도메인 및 멀티 서버 구축</li>
+        <li>가비아 클라우드 내 g클라우드 서버 임대 후 도메인 및 네트워크 설정</li>
+        <li>Certbot을 사용해 HTTPS 적용 및 Crontab으로 인증서 자동 갱신</li>
+        <li>TOAST UI 및 채널톡 적용</li>
+      </ol>
+      <div className="grid grid-cols-4 gap-2">
+        <Image
+          src="/images/be-my-season1.png"
+          alt="jayudam architecture"
+          width="394"
+          height="843"
+          className="my-2 border"
+        />
+        <Image
+          src="/images/be-my-season2.png"
+          alt="jayudam architecture"
+          width="394"
+          height="843"
+          className="my-2 border"
+        />
+        <Image
+          src="/images/be-my-season3.png"
+          alt="jayudam architecture"
+          width="394"
+          height="843"
+          className="my-2 border"
+        />
+        <Image
+          src="/images/be-my-season4.png"
+          alt="jayudam architecture"
+          width="394"
+          height="843"
+          className="my-2 border"
+        />
+      </div>
+      <div className="grid grid-cols-4 gap-2">
+        <Image
+          src="/images/be-my-season5.png"
+          alt="jayudam architecture"
+          width="394"
+          height="843"
+          className="my-2 border"
+        />
+        <Image
+          src="/images/be-my-season6.png"
+          alt="jayudam architecture"
+          width="394"
+          height="843"
+          className="my-2 border"
+        />
+        <Image
+          src="/images/be-my-season7.png"
+          alt="jayudam architecture"
+          width="394"
+          height="843"
+          className="my-2 border"
+        />
+        <Image
+          src="/images/be-my-season8.png"
+          alt="jayudam architecture"
+          width="394"
+          height="843"
+          className="my-2 border"
+        />
+      </div>
+      <div className="border w-full my-6" />
+      <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>업비트 자동 매매</h4>
         <div>본인</div>
         <div>2021년 9월 25일 ~ 수시</div>
@@ -1012,6 +1145,186 @@ export default function HomePage() {
         <li>웹소켓을 활용해 실시간으로 코인 시세를 획득함</li>
         <li>이동평균선, RSI, MFI 등 차트 보조 지표를 구현해 매매 알고리즘에 활용함</li>
       </ol>
+      <div className="border w-full my-6" />
+      <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
+        <h4>소복</h4>
+        <div>2명</div>
+        2021년 8월 10일 ~ 10월 31일 (2개월 20일)
+      </div>
+      <div className="flex gap-0.5 my-2">
+        <a
+          href="https://github.com/gwak2837/sobok"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+        >
+          <div className="flex gap-1 items-center">
+            <Image src="/images/github.svg" alt="github" width="16" height="16" />
+            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">sobok</h5>
+          </div>
+        </a>
+        <a
+          href="https://github.com/gwak2837/sobok-backend"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+        >
+          <div className="flex gap-1 items-center">
+            <Image src="/images/github.svg" alt="github" width="16" height="16" />
+            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
+              sobok-backend
+            </h5>
+          </div>
+        </a>
+        <a
+          href="https://sobok.vercel.app"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+        >
+          <div className="flex gap-1 items-center">
+            <Image src="/images/vercel.png" alt="github" width="16" height="16" />
+            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
+              sobok.vercel.app
+            </h5>
+          </div>
+        </a>
+      </div>
+      <div>
+        <b>소</b>소한 행<b>복</b> :) 카페 및 디저트 매장 검색이 불편하니 검색을 편리하게 만들자!
+      </div>
+      <div className="flex flex-wrap gap-1 my-2">
+        <a href="https://nextjs.org/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"
+            alt="Next.js Badge"
+          />
+        </a>
+        <a href="https://web.dev/progressive-web-apps/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/PWA-5A0FC8?style=flat-square&logo=PWA&logoColor=white"
+            alt="PWA Badge"
+          />
+        </a>
+        <a href="https://vercel.com/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white"
+            alt="Vercel Badge"
+          />
+        </a>
+        <a href="https://www.apollographql.com/docs/apollo-server/" rel="noreferrer">
+          <img
+            src="https://img.shields.io/badge/Apollo-311C87?style=flat-square&logo=apollo-graphql&logoColor=white"
+            alt="apollographql Badge"
+          />
+        </a>
+        <a href="https://graphql.org/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white"
+            alt="GraphQL Badge"
+          />
+        </a>
+        <a href="https://www.docker.com/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"
+            alt="Docker Badge"
+          />
+        </a>
+        <a href="https://cloud.google.com/gcp/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Cloud Run-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
+            alt="GCP Badge"
+          />
+        </a>
+        <a href="https://cloud.google.com/gcp/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Cloud Storage-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
+            alt="GCP Badge"
+          />
+        </a>
+      </div>
+      <ol>
+        <li>PostgreSQL 쿼리 빌더를 간단하게 구현하고 PL/pgSQL을 사용하여 SQL 요청 횟수 줄임</li>
+        <li>
+          Webpack을 활용해 JavaScript 코드를 압축하여 Docker 이미지 크기 최적화 (140MB → 40MB)
+        </li>
+        <li>디자이너와 Zeplin을 통해 페이지 디자인 및 SVG 벡터 이미지 공유</li>
+      </ol>
+      <div className="grid grid-cols-4 gap-2">
+        <Image
+          src="/images/sobok1.png"
+          alt="jayudam architecture"
+          width="376"
+          height="810"
+          className="my-2 border"
+        />
+        <Image
+          src="/images/sobok2.png"
+          alt="jayudam architecture"
+          width="376"
+          height="810"
+          className="my-2 border"
+        />
+        <Image
+          src="/images/sobok3.png"
+          alt="jayudam architecture"
+          width="376"
+          height="810"
+          className="my-2 border"
+        />
+        <Image
+          src="/images/sobok9.png"
+          alt="jayudam architecture"
+          width="376"
+          height="810"
+          className="my-2 border"
+        />
+      </div>
+      <div className="grid grid-cols-4 gap-2">
+        <Image
+          src="/images/sobok7.png"
+          alt="jayudam architecture"
+          width="376"
+          height="810"
+          className="my-2 border"
+        />
+        <Image
+          src="/images/sobok8.png"
+          alt="jayudam architecture"
+          width="376"
+          height="810"
+          className="my-2 border"
+        />
+
+        <Image
+          src="/images/sobok4.png"
+          alt="jayudam architecture"
+          width="376"
+          height="810"
+          className="my-2 border"
+        />
+        <Image
+          src="/images/sobok5.png"
+          alt="jayudam architecture"
+          width="376"
+          height="810"
+          className="my-2 border"
+        />
+      </div>
+      <Image
+        src="/images/sobok11.webp"
+        alt="jayudam architecture"
+        width="1920"
+        height="1080"
+        className="my-2 border"
+      />
+      <Image
+        src="/images/sobok12.webp"
+        alt="jayudam architecture"
+        width="1920"
+        height="1080"
+        className="my-2 border"
+      />
       <div className="border w-full my-6" />
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>이메일 블록체인 검증</h4>
@@ -1080,16 +1393,17 @@ export default function HomePage() {
         </li>
         <li>
           <a href="https://github.com/emailjs-com/emailjs-sdk" target="_blank" rel="noreferrer">
-            <pre className="inline p-1 rounded bg-slate-100">@emailjs/browser</pre>
+            <pre>@emailjs/browser</pre>
           </a>{' '}
           라이브러리를 사용해 다른 서버로 이메일 전송 및{' '}
           <a href="https://github.com/mscdex/node-imap" target="_blank" rel="noreferrer">
-            <pre className="inline p-1 rounded bg-slate-100">imap</pre>
+            <pre>imap</pre>
           </a>{' '}
           라이브러리를 사용해 다른 IMAP 이메일 서버 내용을 가져옴
         </li>
       </ol>
       <div className="border w-full my-6" />
+
       <h4 className="my-8">이전 프로젝트 목록</h4>
       <a
         href="https://gwak2837.notion.site/Resume-3fb93cf3019243fc8fd9103975f2872f"
@@ -1306,7 +1620,7 @@ export default function HomePage() {
           <a href="https://www.apollographql.com/docs/apollo-server/" rel="noreferrer">
             <img
               src="https://img.shields.io/badge/Apollo-311C87?style=flat-square&logo=apollo-graphql&logoColor=white"
-              alt="Express Badge"
+              alt="apollographql Badge"
             />
           </a>
           <a href="https://graphql.org/" rel="noreferrer" target="_blank">
@@ -1473,7 +1787,15 @@ export default function HomePage() {
           PWA를 적용해 모바일 접근성을 높이고, 브라우저 Notification/Push API로 사용자 재방문율을
           향상함
         </li>
-        <li>Virtual DOM의 존재 의의와 언제 Reconciliation이 발생하는지 고민함</li>
+        <li>
+          <a
+            href="https://velog.io/@gwak2837/React-Virtual-DOM-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Virtual DOM의 존재 의의와 언제 Reconciliation이 발생하는지 고민함
+          </a>
+        </li>
         <li>
           함수 컴포넌트와 클래스 컴포넌트를 비교하며 여러 useEffect가 어떤 순서로 실행되는지 고민함
         </li>
@@ -1775,7 +2097,7 @@ export default function HomePage() {
         </li>
       </ul>
 
-      <div className="w-full text-center text-slate-800 text-sm mt-8">작성일: 2023년 7월 12일</div>
+      <div className="w-full text-center text-slate-800 text-sm mt-8">작성일: 2023년 7월 15일</div>
       <div className="w-full text-center text-slate-800 text-sm">작성자: 곽태욱</div>
     </main>
   )
