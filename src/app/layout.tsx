@@ -1,5 +1,6 @@
 import './globals.css'
 
+import { Metadata } from 'next'
 import localFont from 'next/font/local'
 import { ReactNode } from 'react'
 
@@ -32,6 +33,10 @@ const myFont = localFont({
     'sans-serif',
   ],
 })
+
+export const metadata: Metadata = {
+  title: '이력서',
+}
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
