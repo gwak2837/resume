@@ -474,10 +474,10 @@ export default function HomePage() {
             <b>신디(SINDY, Signature in Dessert) 창업</b>
             <div>2021년 2월 25일 ~ 10월 31일 (8개월)</div>
           </div>
-          <div>직책: 개발팀장 (Frontend/Backend/Cloud) (팀장 포함 2명)</div>
+          <div>직책: 개발팀장 (팀장 포함 2명)</div>
           <div>
             역할: '카페의 특색을 담아내는 사용자 주도 SNS형 디저트 정보 공유 공간' 디저트핏 기획 및
-            개발
+            Frontend/Backend/Cloud 개발
           </div>
         </li>
         <div className="border w-full my-6" />
