@@ -370,7 +370,7 @@ export default function HomePage() {
               </a>
             </div>
           </div>
-          <div>직책: 연구4팀 팀원</div>
+          <div>직책: 연구4팀 팀원 (팀장 포함 10명 이상)</div>
           <div>직급: 인턴</div>
           <div>역할: 설문 조사 데이터 통계 분석 및 엑셀 함수 작성</div>
         </li>
@@ -503,6 +503,88 @@ export default function HomePage() {
         </li>
       </ul>
       <h2 className="text-3xl my-8">프로젝트</h2>
+      <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
+        <h4>코리아톡</h4>
+        <div>본인</div>
+        <div>2023년 7월 15일 (1일)</div>
+      </div>
+      <div className="flex gap-0.5 my-2">
+        <a
+          href="https://github.com/gwak2837/korea-talk"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+        >
+          <div className="flex gap-1 items-center">
+            <Image src="/images/github.svg" alt="github" width="16" height="16" />
+            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
+              korea-talk (Priv.)
+            </h5>
+          </div>
+        </a>
+      </div>
+      <div>
+        코리아톡은 고객의 문의를 관리자 화면에서 통합하여 응대할 수 있음. 여기서 고객에게 문의가
+        들어올 때 문의에 대한 내용을 답변하기 위해서 클라이언트 화면에 여러 기능을 추가함.
+      </div>
+      <div className="flex flex-wrap gap-1 my-2">
+        <a href="https://reactjs.org/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/React.js-61DAFB?style=flat-square&logo=react&logoColor=black"
+            alt="React Badge"
+          />
+        </a>
+        <a href="https://styled-components.com/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Styled-DB7093?style=flat-square&logo=styled-components&logoColor=white"
+            alt="styled Badge"
+          />
+        </a>
+        <a href="https://socket.io/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Socket.io-010101?style=flat-square&logo=Socket.io&logoColor=white"
+            alt="WebSocket Badge"
+          />
+        </a>
+        <a href="" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Recoil.js-3578e5?style=flat-square&logo=recoil&logoColor=white"
+            alt="Recoil.js"
+          />
+        </a>
+      </div>
+      <ol>
+        <li>
+          디자인: 페이지 왼쪽엔 자신의 대화방 목록을 불러오고 각 대화방을 클릭 시 해당 대화방 id를
+          참조하여 대화 내용을 오른쪽에 보여줌. 대화 목록은 마지막 대화 시각 기준 내림차순으로
+          이메일은 생성일 기준 오름차순으로 클라이언트 측에서 정렬해서 표시해 줌
+        </li>
+        <li>
+          메시지 전송: 특정 대화방에서 대화 입력 중 Shift+Enter를 눌렀을 땐 전송 가능하지만 아무
+          내용이 없을 경우에는 전송이 불가능함. 대화를 전송하면 카카오톡과 비슷하게 응답이 올 때까지
+          로딩 상태의 말풍선을 보여줌. 그 후 서버 응답이 오면 서버 응답 내용으로 대체됨. 메시지를
+          2개 이상 동시에 전송해도 일관성 있는 UI를 보여줌.
+        </li>
+        <li>
+          메시지 응답: 메시지를 전송하면 임의의 시간 이후에 답장이 소켓으로 옴. 이를{' '}
+          <pre>Socket.io</pre>를 이용해 대화 목록에 실시간으로 추가시킴. 서버 응답을 소켓으로 받기
+          때문에, 여러 브라우저 창에서 코리아톡 사이트를 열었을 때 한 창에서 메시지를 전송하더라도
+          서버 응답이 다른 창에서도 보임. 소켓으로 다른 대화방 대화 내용이 오면 대화방 목록의 마지막
+          대화 시각을 갱신하고 정렬해줌.
+        </li>
+        <li>
+          SWR: 각 대화방의 대화 내용을 <pre>Recoil.js</pre>로 캐싱해서 해당 대화방의 마지막 대화
+          시각이 변경되지 않으면 서버에 추가로 요청하지 않고 이전에 불러왔던 데이터를 보여줌
+        </li>
+      </ol>
+      <Image
+        src="/images/korea-talk.webp"
+        alt="jayudam architecture"
+        width="1656"
+        height="1256"
+        // className="border"
+      />
+      <div className="border w-full my-6" />
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>지키다</h4>
         <div>본인</div>
@@ -649,6 +731,20 @@ export default function HomePage() {
           파일을 캐싱함
         </li>
       </ol>
+      <Image
+        src="/images/jikida1.webp"
+        alt="jayudam architecture"
+        width="1656"
+        height="1256"
+        className="my-2 border"
+      />
+      <Image
+        src="/images/jikida2.webp"
+        alt="jayudam architecture"
+        width="1656"
+        height="1256"
+        className="my-2 border"
+      />
       <div className="border w-full my-6" />
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>이력서</h4>
@@ -829,6 +925,13 @@ export default function HomePage() {
           해제하여 해결함
         </li>
       </ol>
+      <Image
+        src="/images/yeou1.webp"
+        alt="jayudam architecture"
+        width="1656"
+        height="1256"
+        className="border"
+      />
       <div className="border w-full my-6" />
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>자유담</h4>
@@ -884,8 +987,8 @@ export default function HomePage() {
         </a>
         <a href="" rel="noreferrer" target="_blank">
           <img
-            src="https://img.shields.io/badge/Recoil.js-3578e5?style=flat-square&logo=&logoColor=white"
-            alt="next.js"
+            src="https://img.shields.io/badge/Recoil.js-3578e5?style=flat-square&logo=recoil&logoColor=white"
+            alt="Recoil.js"
           />
         </a>
         <a href="" rel="noreferrer" target="_blank">
@@ -944,12 +1047,42 @@ export default function HomePage() {
         </li>
         <li>브라우저 카메라를 이용해 QR 코드 스캔 기능을 구현함</li>
       </ol>
+      <div className="grid grid-cols-2 gap-2">
+        <Image
+          src="/images/jayudam1.webp"
+          alt="jayudam architecture"
+          width="1920"
+          height="1080"
+          className="border"
+        />
+        <Image
+          src="/images/jayudam4.webp"
+          alt="jayudam architecture"
+          width="1920"
+          height="1080"
+          className="border"
+        />
+        <Image
+          src="/images/jayudam2.webp"
+          alt="jayudam architecture"
+          width="1920"
+          height="1080"
+          className="border"
+        />
+        <Image
+          src="/images/jayudam3.webp"
+          alt="jayudam architecture"
+          width="1920"
+          height="1080"
+          className="border"
+        />
+      </div>
       <Image
         src="/images/jayudam.png"
         alt="jayudam architecture"
         width="1920"
         height="1080"
-        className="border"
+        className="my-2 border"
       />
       <div className="border w-full my-6" />
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
@@ -1482,7 +1615,7 @@ export default function HomePage() {
           <a href="https://react-hook-form.com/" rel="noreferrer" target="_blank">
             <img
               src="https://img.shields.io/badge/React Form-EC5990?style=flat-square&logo=react-hook-form&logoColor=white"
-              alt="styled Badge"
+              alt="eact-hook-form Badge"
             />
           </a>
           <a href="https://analytics.google.com/analytics/web/" rel="noreferrer" target="_blank">
