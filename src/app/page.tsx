@@ -955,13 +955,22 @@ export default function HomePage() {
           해제하여 해결함
         </li>
       </ol>
-      <Image
-        src="/images/yeou1.webp"
-        alt="jayudam architecture"
-        width="1656"
-        height="1256"
-        className="border"
-      />
+      <div className="grid grid-cols-2 gap-2">
+        <Image
+          src="/images/yeou1.webp"
+          alt="jayudam architecture"
+          width="792"
+          height="1040"
+          className="border"
+        />
+        <Image
+          src="/images/yeou2.webp"
+          alt="jayudam architecture"
+          width="792"
+          height="1040"
+          className="border"
+        />
+      </div>
       <div className="border w-full my-6" />
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>자유담</h4>
@@ -1011,7 +1020,7 @@ export default function HomePage() {
       <div className="flex flex-wrap gap-1 my-2">
         <a href="" rel="noreferrer" target="_blank">
           <img
-            src="https://img.shields.io/badge/Apollo client-311C87?style=flat-square&logo=Apollo GraphQL&logoColor=white"
+            src="https://img.shields.io/badge/Apollo Server/Client-311C87?style=flat-square&logo=Apollo GraphQL&logoColor=white"
             alt="react-query"
           />
         </a>
@@ -1025,12 +1034,6 @@ export default function HomePage() {
           <img
             src="https://img.shields.io/badge/React Form-EC5990?style=flat-square&logo=react-hook-form&logoColor=white"
             alt="fastify"
-          />
-        </a>
-        <a href="" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Apollo server-311C87?style=flat-square&logo=Apollo GraphQL&logoColor=white"
-            alt="tailwind"
           />
         </a>
         <a href="https://en.wikipedia.org/wiki/HTTP/2" rel="noreferrer" target="_blank">
