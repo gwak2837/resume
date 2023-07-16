@@ -2224,7 +2224,7 @@ export default function HomePage() {
         </li>
       </ul>
 
-      <div className="w-full text-center text-slate-800 text-sm mt-8">작성일: 2023년 7월 15일</div>
+      <div className="w-full text-center text-slate-800 text-sm mt-8">작성일: 2023년 7월 16일</div>
       <div className="w-full text-center text-slate-800 text-sm">작성자: 곽태욱</div>
     </main>
   )
