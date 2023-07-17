@@ -141,13 +141,11 @@ export default function HomePage() {
         기여하였습니다.
       </p>
       <p className="my-4 	">
-        아이디어를 프로토타입으로 변환하고, 그 프로토타입을 실제 서비스로 발전시키는 과정에서, 저를
-        비롯한 팀원 모두 성장하였습니다. 그 결과, 저희는 '디저트 사랑자들의 정보 교류를 위한 SNS형
-        디저트 정보 공유 플랫폼'을 성공적으로 출시할 수 있었습니다. 현재는 프론트엔드 분야를
-        집중적으로 탐구하고 있고, 백엔드 및 클라우드 분야 등 서비스 출시를 위해 필요한 분야로
-        관심사를 넓히고 있습니다.
+        아이디어를 프로토타입으로 변환하고 그 프로토타입을 실제 서비스로 발전시키는 과정에서, 저를
+        비롯한 팀원 모두 성장하면서 '소복: 카페·디저트 정보 공유 커뮤니티' 서비스를 성공적으로
+        출시할 수 있었습니다. 현재는 프론트엔드 분야를 집중적으로 탐구하고 있고, 백엔드 및 클라우드
+        분야 등 서비스 출시를 위해 필요한 분야로 관심사를 넓히고 있습니다.
       </p>
-      <p className="	"></p>
       <Image src="/images/mbti.png" alt="asd" width="551" height="304" className="mx-auto" />
       <h2 className="text-3xl my-8 ">학력</h2>
       <table>
@@ -276,7 +274,13 @@ export default function HomePage() {
           </div>
           <div>직책: 개발팀장 (팀장 포함 2명)</div>
           <div>직급: 인턴</div>
-          <div>역할: '다시 일하고 싶은 여성의 상호성장 플랫폼' 비마이시즌 개발</div>
+          <div>
+            역할:{' '}
+            <a href="https://www.bemyseason.co.kr/" target="_blank" rel="noreferrer">
+              '비마이시즌 - 다시 일하고 싶은 여성의 상호성장 플랫폼'
+            </a>{' '}
+            개발
+          </div>
         </li>
         <div className="border w-full my-6" />
         <li>
@@ -334,7 +338,13 @@ export default function HomePage() {
           </div>
           <div>직책: Frontend 개발팀원 (팀장 포함 3명)</div>
           <div>직급: 인턴</div>
-          <div>역할: '페스타 서비스 관리자(Admin) 페이지' 기획 및 개발</div>
+          <div>
+            역할:{' '}
+            <a href="https://festa.io/" target="_blank" rel="noreferrer">
+              '페스타 - 온·오프라인 이벤트 티켓 및 고객 관리 서비스'
+            </a>{' '}
+            관리자(Admin) 페이지 기획 및 개발
+          </div>
         </li>
         <div className="border w-full my-6" />
         <li>
@@ -358,7 +368,7 @@ export default function HomePage() {
           </div>
           <div>직책: 개발부원 (팀장 포함 3명)</div>
           <div>직급: 인턴</div>
-          <div>역할: '방탈출 리뷰 웹사이트' 기획/디자인 및 MVP 개발</div>
+          <div>역할: '방탈출 리뷰 웹사이트' 기획·디자인 및 MVP 개발</div>
         </li>
         <div className="border w-full my-6" />
         <li>
@@ -1193,58 +1203,222 @@ export default function HomePage() {
           alt="jayudam architecture"
           width="394"
           height="843"
-          className="my-2 border"
+          className="border"
         />
         <Image
           src="/images/be-my-season2.png"
           alt="jayudam architecture"
           width="394"
           height="843"
-          className="my-2 border"
+          className="border"
         />
         <Image
           src="/images/be-my-season3.png"
           alt="jayudam architecture"
           width="394"
           height="843"
-          className="my-2 border"
+          className="border"
         />
         <Image
           src="/images/be-my-season4.png"
           alt="jayudam architecture"
           width="394"
           height="843"
-          className="my-2 border"
+          className="border"
         />
-      </div>
-      <div className="grid grid-cols-4 gap-2">
         <Image
           src="/images/be-my-season5.png"
           alt="jayudam architecture"
           width="394"
           height="843"
-          className="my-2 border"
+          className="border"
         />
         <Image
           src="/images/be-my-season6.png"
           alt="jayudam architecture"
           width="394"
           height="843"
-          className="my-2 border"
+          className="border"
         />
         <Image
           src="/images/be-my-season7.png"
           alt="jayudam architecture"
           width="394"
           height="843"
-          className="my-2 border"
+          className="border"
         />
         <Image
           src="/images/be-my-season8.png"
           alt="jayudam architecture"
           width="394"
           height="843"
-          className="my-2 border"
+          className="border"
+        />
+      </div>
+      <div className="border w-full my-6" />
+      <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
+        <h4>알파카살롱</h4>
+        <div>1명</div>
+        <a href="/images/2021-alpacasalon.webp" target="_blank">
+          2021년 12월 21일 ~ 2022년 1월 10일 (3주)
+        </a>
+      </div>
+      <div className="flex gap-0.5 my-2">
+        <a
+          href="https://github.com/gwak2837/alpacasalon"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+        >
+          <div className="flex gap-1 items-center">
+            <Image src="/images/github.svg" alt="github" width="16" height="16" />
+            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
+              alpacasalon
+            </h5>
+          </div>
+        </a>
+        <a
+          href="https://github.com/gwak2837/alpacasalon-backend"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+        >
+          <div className="flex gap-1 items-center">
+            <Image src="/images/github.svg" alt="github" width="16" height="16" />
+            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
+              alpacasalon-backend
+            </h5>
+          </div>
+        </a>
+      </div>
+      <div></div>
+      <div className="flex flex-wrap gap-1 my-2">
+        <a href="https://nextjs.org" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Next.js 13-000000?style=flat-square&logo=next.js&logoColor=white"
+            alt="next.js"
+          />
+        </a>
+        <a href="" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Apollo Server/Client-311C87?style=flat-square&logo=Apollo GraphQL&logoColor=white"
+            alt="react-query"
+          />
+        </a>
+        <a href="https://www.postgresql.org/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=PostgreSQL&logoColor=white"
+            alt="PostgreSQL Badge"
+          />
+        </a>
+        <a href="https://cloud.google.com/gcp/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Cloud Run-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
+            alt="GCP Badge"
+          />
+        </a>
+        <a href="https://cloud.google.com/gcp/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Cloud Storage-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
+            alt="GCP Badge"
+          />
+        </a>
+      </div>
+      <ol>
+        <li>게시글·댓글·답글 CRUD, 회원·그룹 CRUD, 댓글 좋아요 기능 구현</li>
+        <li>순수 CSS와 React portal을 이용해 Drawer·Modal 직접 구현</li>
+        <li>Google Cloud Build를 활용해 CI·CD 설정, Google Cloud Storage에 이미지 자동 업로드</li>
+        <li>카카오 OAuth 및 자동 로그인</li>
+        <li>카카오 비즈 채널로 카카오 알림톡·친구톡 연동해서 새 댓글 및 답글 등 알림 기능</li>
+      </ol>
+      <div className="grid grid-cols-4 gap-2 my-2">
+        <Image
+          src="/images/alpacasalon-1.png"
+          alt="jayudam architecture"
+          width="368"
+          height="804"
+          className="border"
+        />
+        <Image
+          src="/images/alpacasalon-2.png"
+          alt="jayudam architecture"
+          width="368"
+          height="804"
+          className="border"
+        />
+        <Image
+          src="/images/alpacasalon-3.png"
+          alt="jayudam architecture"
+          width="368"
+          height="804"
+          className="border"
+        />
+        <Image
+          src="/images/alpacasalon-4.png"
+          alt="jayudam architecture"
+          width="368"
+          height="804"
+          className="border"
+        />
+      </div>
+      <div className="grid grid-cols-4 gap-2 my-2">
+        <Image
+          src="/images/alpacasalon-5.png"
+          alt="jayudam architecture"
+          width="368"
+          height="804"
+          className="border"
+        />
+        <Image
+          src="/images/alpacasalon-7.png"
+          alt="jayudam architecture"
+          width="368"
+          height="804"
+          className="border"
+        />
+        <Image
+          src="/images/alpacasalon-6.png"
+          alt="jayudam architecture"
+          width="368"
+          height="804"
+          className="border"
+        />
+        <Image
+          src="/images/alpacasalon-8.png"
+          alt="jayudam architecture"
+          width="368"
+          height="804"
+          className="border"
+        />
+      </div>
+      <div className="grid grid-cols-4 gap-2 my-2">
+        <Image
+          src="/images/alpacasalon-9.png"
+          alt="jayudam architecture"
+          width="368"
+          height="804"
+          className="border"
+        />
+        <Image
+          src="/images/alpacasalon-10.png"
+          alt="jayudam architecture"
+          width="368"
+          height="804"
+          className="border"
+        />
+        <Image
+          src="/images/alpacasalon-11.png"
+          alt="jayudam architecture"
+          width="368"
+          height="804"
+          className="border"
+        />
+        <Image
+          src="/images/alpacasalon-12.png"
+          alt="jayudam architecture"
+          width="368"
+          height="804"
+          className="border"
         />
       </div>
       <div className="border w-full my-6" />
@@ -1415,59 +1589,56 @@ export default function HomePage() {
           alt="jayudam architecture"
           width="376"
           height="810"
-          className="my-2 border"
+          className="border"
         />
         <Image
           src="/images/sobok2.png"
           alt="jayudam architecture"
           width="376"
           height="810"
-          className="my-2 border"
+          className="border"
         />
         <Image
           src="/images/sobok3.png"
           alt="jayudam architecture"
           width="376"
           height="810"
-          className="my-2 border"
+          className="border"
         />
         <Image
           src="/images/sobok9.png"
           alt="jayudam architecture"
           width="376"
           height="810"
-          className="my-2 border"
+          className="border"
         />
-      </div>
-      <div className="grid grid-cols-4 gap-2">
         <Image
           src="/images/sobok7.png"
           alt="jayudam architecture"
           width="376"
           height="810"
-          className="my-2 border"
+          className="border"
         />
         <Image
           src="/images/sobok8.png"
           alt="jayudam architecture"
           width="376"
           height="810"
-          className="my-2 border"
+          className="border"
         />
-
         <Image
           src="/images/sobok4.png"
           alt="jayudam architecture"
           width="376"
           height="810"
-          className="my-2 border"
+          className="border"
         />
         <Image
           src="/images/sobok5.png"
           alt="jayudam architecture"
           width="376"
           height="810"
-          className="my-2 border"
+          className="border"
         />
       </div>
       <Image
@@ -2256,7 +2427,7 @@ export default function HomePage() {
         </li>
       </ul>
 
-      <div className="w-full text-center text-slate-800 text-sm mt-8">작성일: 2023년 7월 16일</div>
+      <div className="w-full text-center text-slate-800 text-sm mt-8">작성일: 2023년 7월 17일</div>
       <div className="w-full text-center text-slate-800 text-sm">작성자: 곽태욱</div>
     </main>
   )
