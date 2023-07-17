@@ -12,7 +12,7 @@ export default function HomePage() {
       </a>
       <div>
         <div className="grid gap-4 grid-cols-2">
-          <Image src="/images/1.jpeg" alt="asd" width="350" height="350" />
+          <Image src="/images/1.webp" alt="asd" width="350" height="350" />
           <table className="border-none w-fit	">
             <tbody>
               <tr>
@@ -263,7 +263,7 @@ export default function HomePage() {
               <b>(주)더하트컴퍼니</b>
             </a>
             <div>
-              <a href="/images/2022-theheartcompany.png" target="_blank">
+              <a href="/images/2022-theheartcompany.webp" target="_blank">
                 2022년 2월 14일
               </a>{' '}
               ~{' '}
