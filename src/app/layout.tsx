@@ -34,8 +34,14 @@ const myFont = localFont({
   ],
 })
 
+function getISODate(d: Date) {
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(
+    d.getDate()
+  ).padStart(2, '0')}`
+}
+
 export const metadata: Metadata = {
-  title: '이력서',
+  title: `${getISODate(new Date())} 이력서`,
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
