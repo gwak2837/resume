@@ -31,37 +31,37 @@ export default function OtherCertificates() {
           </thead>
           <tbody>
             <tr>
-              <td>TOPCIT 14회</td>
+              <td>TOPCIT 제14회</td>
               <td className="text-center">523점</td>
               <td className="text-center">과학기술정보통신부</td>
               <td className="text-center">2020년 10월 31일</td>
             </tr>
             <tr>
-              <td>TOPCIT 13회</td>
+              <td>TOPCIT 제13회</td>
               <td className="text-center">609점</td>
               <td className="text-center">과학기술정보통신부</td>
               <td className="text-center">2020년 6월 20일</td>
             </tr>
             <tr>
-              <td>TOPCIT 12회</td>
+              <td>TOPCIT 제12회</td>
               <td className="text-center">488점</td>
               <td className="text-center">과학기술정보통신부</td>
               <td className="text-center">2019년 10월 19일</td>
             </tr>
             <tr>
-              <td>TOPCIT 11회</td>
+              <td>TOPCIT 제11회</td>
               <td className="text-center">383점</td>
               <td className="text-center">과학기술정보통신부</td>
               <td className="text-center">2019년 5월 18일</td>
             </tr>
             <tr>
-              <td>TOPCIT 10회</td>
+              <td>TOPCIT 제10회</td>
               <td className="text-center">343점</td>
               <td className="text-center">과학기술정보통신부</td>
               <td className="text-center">2018년 10월 20일</td>
             </tr>
             <tr>
-              <td>TOPCIT 9회</td>
+              <td>TOPCIT 제9회</td>
               <td className="text-center">397점</td>
               <td className="text-center">과학기술정보통신부</td>
               <td className="text-center">2018년 5월 19일</td>

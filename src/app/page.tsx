@@ -166,7 +166,7 @@ export default function HomePage() {
         </thead>
         <tbody>
           <tr>
-            <td>TOPCIT 15회</td>
+            <td>TOPCIT 제15회</td>
             <td className="text-center">
               <a href="/images/2021-topcit-627.webp" target="_blank">
                 627점 (전국 4등)
