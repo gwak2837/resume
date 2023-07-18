@@ -490,7 +490,7 @@ export default function HomePage() {
           </div>
         </li>
       </ul>
-      <h1 className="text-4xl mb-8 font-semibold w-full break-before-page	">포트폴리오</h1>
+      <h1 className="text-4xl mb-8 font-semibold w-full break-before-page">포트폴리오</h1>
       <h2 className="text-3xl my-8 ">소개</h2>
       <p className="my-4 	">
         직접 만든 기프트링크 동아리의 소프트웨어 개발자로 시작해, 행복한 다람쥐단 인턴, (주)페스타
@@ -1330,96 +1330,110 @@ export default function HomePage() {
         <li>카카오 OAuth 및 자동 로그인</li>
         <li>카카오 비즈 채널로 카카오 알림톡·친구톡 연동해서 새 댓글 및 답글 등 알림 기능</li>
       </ol>
-      <div className="grid grid-cols-4 gap-2 my-2">
-        <Image
-          src="/images/alpacasalon-1.png"
-          alt="jayudam architecture"
-          width="368"
-          height="804"
-          className="border"
-        />
-        <Image
-          src="/images/alpacasalon-2.png"
-          alt="jayudam architecture"
-          width="368"
-          height="804"
-          className="border"
-        />
-        <Image
-          src="/images/alpacasalon-3.png"
-          alt="jayudam architecture"
-          width="368"
-          height="804"
-          className="border"
-        />
-        <Image
-          src="/images/alpacasalon-4.png"
-          alt="jayudam architecture"
-          width="368"
-          height="804"
-          className="border"
-        />
+      <div className="break-inside-auto">
+        <div className="grid grid-cols-4 gap-2 my-2">
+          <Image
+            src="/images/alpacasalon-1.png"
+            alt="jayudam architecture"
+            width="368"
+            height="804"
+            className="border"
+          />
+          <Image
+            src="/images/alpacasalon-2.png"
+            alt="jayudam architecture"
+            width="368"
+            height="804"
+            className="border"
+          />
+          <Image
+            src="/images/alpacasalon-3.png"
+            alt="jayudam architecture"
+            width="368"
+            height="804"
+            className="border"
+          />
+          <Image
+            src="/images/alpacasalon-4.png"
+            alt="jayudam architecture"
+            width="368"
+            height="804"
+            className="border"
+          />
+          <Image
+            src="/images/alpacasalon-5.png"
+            alt="jayudam architecture"
+            width="368"
+            height="804"
+            className="border"
+          />
+          <Image
+            src="/images/alpacasalon-7.png"
+            alt="jayudam architecture"
+            width="368"
+            height="804"
+            className="border"
+          />
+          <Image
+            src="/images/alpacasalon-6.png"
+            alt="jayudam architecture"
+            width="368"
+            height="804"
+            className="border"
+          />
+          <Image
+            src="/images/alpacasalon-8.png"
+            alt="jayudam architecture"
+            width="368"
+            height="804"
+            className="border"
+          />
+          <Image
+            src="/images/alpacasalon-9.png"
+            alt="jayudam architecture"
+            width="368"
+            height="804"
+            className="border"
+          />
+          <Image
+            src="/images/alpacasalon-10.png"
+            alt="jayudam architecture"
+            width="368"
+            height="804"
+            className="border"
+          />
+          <Image
+            src="/images/alpacasalon-11.png"
+            alt="jayudam architecture"
+            width="368"
+            height="804"
+            className="border"
+          />
+          <Image
+            src="/images/alpacasalon-12.png"
+            alt="jayudam architecture"
+            width="368"
+            height="804"
+            className="border"
+          />
+          <Image
+            src="/images/alpacasalon-13.png"
+            alt="jayudam architecture"
+            width="368"
+            height="804"
+            className="border"
+          />
+          <Image
+            src="/images/alpacasalon-14.png"
+            alt="jayudam architecture"
+            width="368"
+            height="804"
+            className="border"
+          />
+        </div>
       </div>
-      <div className="grid grid-cols-4 gap-2 my-2">
-        <Image
-          src="/images/alpacasalon-5.png"
-          alt="jayudam architecture"
-          width="368"
-          height="804"
-          className="border"
-        />
-        <Image
-          src="/images/alpacasalon-7.png"
-          alt="jayudam architecture"
-          width="368"
-          height="804"
-          className="border"
-        />
-        <Image
-          src="/images/alpacasalon-6.png"
-          alt="jayudam architecture"
-          width="368"
-          height="804"
-          className="border"
-        />
-        <Image
-          src="/images/alpacasalon-8.png"
-          alt="jayudam architecture"
-          width="368"
-          height="804"
-          className="border"
-        />
-      </div>
-      <div className="grid grid-cols-4 gap-2 my-2">
-        <Image
-          src="/images/alpacasalon-9.png"
-          alt="jayudam architecture"
-          width="368"
-          height="804"
-          className="border"
-        />
-        <Image
-          src="/images/alpacasalon-10.png"
-          alt="jayudam architecture"
-          width="368"
-          height="804"
-          className="border"
-        />
-        <Image
-          src="/images/alpacasalon-11.png"
-          alt="jayudam architecture"
-          width="368"
-          height="804"
-          className="border"
-        />
-        <Image
-          src="/images/alpacasalon-12.png"
-          alt="jayudam architecture"
-          width="368"
-          height="804"
-          className="border"
-        />
-      </div>
+      <div className="grid grid-cols-4 gap-2 my-2"></div>
+      <div className="grid grid-cols-4 gap-2 my-2"></div>
       <div className="border w-full my-6" />
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>업비트 자동 매매</h4>
@@ -2426,7 +2440,7 @@ export default function HomePage() {
         </li>
       </ul>
 
-      <div className="w-full text-center text-slate-800 text-sm mt-8">작성일: 2023년 7월 17일</div>
+      <div className="w-full text-center text-slate-800 text-sm mt-8">작성일: 2023년 7월 18일</div>
       <div className="w-full text-center text-slate-800 text-sm">작성자: 곽태욱</div>
     </main>
   )
