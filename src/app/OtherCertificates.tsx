@@ -1,18 +1,24 @@
 'use client'
 
-import { useState } from 'react'
+import { MouseEvent, useState } from 'react'
 
 export default function OtherCertificates() {
   const [show, setShow] = useState(false)
 
+  function toggleShow(e: MouseEvent<HTMLButtonElement>) {
+    e.preventDefault()
+    e.stopPropagation()
+    setShow((prev) => !prev)
+  }
+
   return (
     <>
-      <button
-        className="w-full text-center my-4 text-slate-500 text-sm"
-        onClick={() => setShow((prev) => !prev)}
-      >
-        {show ? '기타 자격증 숨기기' : '기타 자격증 보기'}
-      </button>
+      <a href="/" target="_blank" rel="noreferrer">
+        <button className="w-full text-center my-4 text-slate-500 text-sm" onClick={toggleShow}>
+          {show ? '기타 자격증 숨기기' : '기타 자격증 보기'}
+        </button>
+      </a>
+
       {show && (
         <table>
           <thead>

@@ -7,9 +7,7 @@ import OtherCertificates from './OtherCertificates'
 export default function HomePage() {
   return (
     <main className="mx-auto mb-8 max-w-[720px]">
-      <a href="https://gwak2837.vercel.app" target="_blank" rel="noreferrer">
-        <h1 className="text-4xl mb-6 font-semibold w-full">이력서</h1>
-      </a>
+      <h1 className="text-4xl mb-6 font-semibold w-full">이력서</h1>
       <div>
         <div className="grid gap-4 grid-cols-2">
           <Image src="/images/1.webp" alt="asd" width="350" height="350" />
@@ -98,55 +96,6 @@ export default function HomePage() {
         해결하고, 제품을 개발하는 도중 얻은 지식을 다른 사람과 공유하면서 기술의 존재 이유를
         고민하는 <b>프론트엔드 개발자</b> 곽태욱입니다.
       </p>
-      <h2 className="text-3xl my-8 ">소개</h2>
-      <p className="my-4 	">
-        직접 만든 기프트링크 동아리의 소프트웨어 개발자로 시작해, 행복한 다람쥐단 인턴, (주)페스타
-        인턴, 신디(Sindy) 창업팀, (주)알파카살롱 인턴, (주)더하트컴퍼니 인턴 등에서 다양한
-        프로젝트를 수행하며 서비스가 세상에 나오기 위한 전체 개발 주기를 경험했습니다. 이 과정에서
-        서비스의 성공은 동료와의 협업과 서로의 성장에 기반한다는 사실을 느꼈습니다.
-      </p>
-      <p className="my-4 	">
-        이는 신디 창업팀에서 '카페의 특색을 담아내는 SNS형 디저트 정보 공유 공간' 서비스를 제작하는
-        과정에서 얻었습니다. 프로젝트 초기, 저희 팀은 수많은 아이디어를 결합하여 초기 프로토타입을
-        개발했는데, 이 초기 프로토타입은 최종적으로 제공하고자 했던 서비스와는 차이가 있었고, 실제로
-        사용하기에 성능 개선도 필요했습니다. 이에 대한 해결책을 찾기 위해 저희는 각자의 분야에
-        한정하지 않고 협업하였습니다.
-      </p>
-      <p className="my-4 	">
-        특히, 프론트엔드 개발자는 사용자 인터페이스에 대한 세세한 피드백을 제공하였고, 그 피드백을
-        기반으로{' '}
-        <a
-          href="https://fe-developers.kakaoent.com/2022/220310-kakaopage-bff/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          프론트엔드에 최적화된 백엔드 API
-        </a>
-        를 설계할 수 있었습니다. 예를 들면, 사용자가 서비스를 더욱 빠르고 원활하게 이용할 수 있도록
-        필요한 데이터만 주고 데이터 처리 효율을 높이는 방향으로 백엔드 시스템을 개선하였습니다.
-      </p>
-      <p className="my-4 	">
-        또한, 클라우드 엔지니어링이 백엔드에서 사용하는 기술 선택에도 영향을 끼쳤습니다. 예를 들어,
-        실시간 사용자 상호작용을 위해 웹소켓 기술과 HTTP2 Server Push 기술 중 어떤 것을 사용할지
-        고민하다가, 다중 컨테이너 오케스트레이션 환경에선{' '}
-        <a
-          href="https://cloud.google.com/run/docs/triggering/websockets?hl=ko"
-          target="_blank"
-          rel="noreferrer"
-        >
-          컨테이너 인스턴스 간에 소켓 데이터를 동기화하는 것
-        </a>
-        이 까다롭기 때문에 서비스의 빠른 개발을 위해 HTTP2 Server Push 기술을 선택하였습니다. 이렇게
-        선택된 기술은 서비스의 안정성을 보장하며 동시에 확장성 있는 시스템 아키텍처 개선에도
-        기여하였습니다.
-      </p>
-      <p className="my-4 	">
-        아이디어를 프로토타입으로 변환하고 그 프로토타입을 실제 서비스로 발전시키는 과정에서, 저를
-        비롯한 팀원 모두 성장하면서 '소복: 카페·디저트 정보 공유 커뮤니티' 서비스를 성공적으로
-        출시할 수 있었습니다. 현재는 프론트엔드 분야를 집중적으로 탐구하고 있고, 백엔드 및 클라우드
-        분야 등 서비스 출시를 위해 필요한 분야로 관심사를 넓히고 있습니다.
-      </p>
-      <Image src="/images/mbti.png" alt="asd" width="551" height="304" className="mx-auto" />
       <h2 className="text-3xl my-8 ">학력</h2>
       <table>
         <thead>
@@ -415,7 +364,7 @@ export default function HomePage() {
         </li>
       </ul>
       <h2 className="text-3xl my-8">개발 경험</h2>
-      <ul>
+      <ul className="my-8">
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
             <b>카투사 1지역대 정보작전과 (동두천)</b>
@@ -541,6 +490,56 @@ export default function HomePage() {
           </div>
         </li>
       </ul>
+      <h1 className="text-4xl mb-8 font-semibold w-full break-before-page	">포트폴리오</h1>
+      <h2 className="text-3xl my-8 ">소개</h2>
+      <p className="my-4 	">
+        직접 만든 기프트링크 동아리의 소프트웨어 개발자로 시작해, 행복한 다람쥐단 인턴, (주)페스타
+        인턴, 신디(Sindy) 창업팀, (주)알파카살롱 인턴, (주)더하트컴퍼니 인턴 등에서 다양한
+        프로젝트를 수행하며 서비스가 세상에 나오기 위한 전체 개발 주기를 경험했습니다. 이 과정에서
+        서비스의 성공은 동료와의 협업과 서로의 성장에 기반한다는 사실을 느꼈습니다.
+      </p>
+      <p className="my-4 	">
+        이는 신디 창업팀에서 '카페의 특색을 담아내는 SNS형 디저트 정보 공유 공간' 서비스를 제작하는
+        과정에서 얻었습니다. 프로젝트 초기, 저희 팀은 수많은 아이디어를 결합하여 초기 프로토타입을
+        개발했는데, 이 초기 프로토타입은 최종적으로 제공하고자 했던 서비스와는 차이가 있었고, 실제로
+        사용하기에 성능 개선도 필요했습니다. 이에 대한 해결책을 찾기 위해 저희는 각자의 분야에
+        한정하지 않고 협업하였습니다.
+      </p>
+      <p className="my-4 	">
+        특히, 프론트엔드 개발자는 사용자 인터페이스에 대한 세세한 피드백을 제공하였고, 그 피드백을
+        기반으로{' '}
+        <a
+          href="https://fe-developers.kakaoent.com/2022/220310-kakaopage-bff/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          프론트엔드에 최적화된 백엔드 API
+        </a>
+        를 설계할 수 있었습니다. 예를 들면, 사용자가 서비스를 더욱 빠르고 원활하게 이용할 수 있도록
+        필요한 데이터만 주고 데이터 처리 효율을 높이는 방향으로 백엔드 시스템을 개선하였습니다.
+      </p>
+      <p className="my-4 	">
+        또한, 클라우드 엔지니어링이 백엔드에서 사용하는 기술 선택에도 영향을 끼쳤습니다. 예를 들어,
+        실시간 사용자 상호작용을 위해 웹소켓 기술과 HTTP2 Server Push 기술 중 어떤 것을 사용할지
+        고민하다가, 다중 컨테이너 오케스트레이션 환경에선{' '}
+        <a
+          href="https://cloud.google.com/run/docs/triggering/websockets?hl=ko"
+          target="_blank"
+          rel="noreferrer"
+        >
+          컨테이너 인스턴스 간에 소켓 데이터를 동기화하는 것
+        </a>
+        이 까다롭기 때문에 서비스의 빠른 개발을 위해 HTTP2 Server Push 기술을 선택하였습니다. 이렇게
+        선택된 기술은 서비스의 안정성을 보장하며 동시에 확장성 있는 시스템 아키텍처 개선에도
+        기여하였습니다.
+      </p>
+      <p className="my-4 	">
+        아이디어를 프로토타입으로 변환하고 그 프로토타입을 실제 서비스로 발전시키는 과정에서, 저를
+        비롯한 팀원 모두 성장하면서 '소복: 카페·디저트 정보 공유 커뮤니티' 서비스를 성공적으로
+        출시할 수 있었습니다. 현재는 프론트엔드 분야를 집중적으로 탐구하고 있고, 백엔드 및 클라우드
+        분야 등 서비스 출시를 위해 필요한 분야로 관심사를 넓히고 있습니다.
+      </p>
+      <Image src="/images/mbti.png" alt="asd" width="551" height="304" className="mx-auto" />
       <h2 className="text-3xl my-8">프로젝트</h2>
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>코리아톡</h4>
