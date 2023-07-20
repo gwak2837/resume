@@ -1964,11 +1964,12 @@ export default function HomePage() {
         </a>
       </div>
       <ol>
+        <li>GCP 백엔드 아키텍처 설계 및 클라우드 CI·CD 구성</li>
         <li>PostgreSQL 쿼리 빌더를 간단하게 구현하고 PL/pgSQL을 사용하여 SQL 요청 횟수 줄임</li>
         <li>
           Webpack을 활용해 JavaScript 코드를 압축하여 Docker 이미지 크기 최적화 (140MB → 40MB)
         </li>
-        <li>디자이너와 Zeplin을 통해 페이지 디자인 및 SVG 벡터 이미지 공유</li>
+        <li>디자이너와 Figma 및 Zeplin을 통해 페이지 디자인 및 SVG 벡터 이미지 공유</li>
       </ol>
       <div className="grid grid-cols-4 gap-2">
         <Image
