@@ -41,7 +41,7 @@ function getISODate(d: Date) {
 }
 
 export const metadata: Metadata = {
-  title: `${getISODate(new Date())} 이력서`,
+  title: `${getISODate(new Date())} 이력서 포트폴리오`,
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
