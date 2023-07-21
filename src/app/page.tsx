@@ -48,7 +48,11 @@ export default function HomePage() {
               </tr>
               <tr>
                 <td className="border-none p-px"></td>
-                <td className="border-none p-px">KATUSA 2022년 3월 ~ 2023년 7월</td>
+                <td className="border-none p-px">
+                  <a href="/images/2023-military.webp" target="_blank">
+                    KATUSA 2022년 3월 ~ 2023년 7월
+                  </a>
+                </td>
               </tr>
               <tr>
                 <td className="border-none p-px">📱</td>
@@ -1806,8 +1810,105 @@ export default function HomePage() {
           />
         </div>
       </div>
-      <div className="grid grid-cols-4 gap-2 my-2"></div>
-      <div className="grid grid-cols-4 gap-2 my-2"></div>
+      <div className="border w-full my-6" />
+      <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
+        <h4>게시판</h4>
+        <div>본인</div>
+        <div>2021년 10월 21일 ~ 11월 5일 (2주)</div>
+      </div>
+      <div className="flex gap-0.5 my-2">
+        <a
+          href="https://github.com/gwak2837/kubernetes-cloud"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+        >
+          <div className="flex gap-1 items-center">
+            <Image src="/images/github.svg" alt="github" width="16" height="16" />
+            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
+              kubernetes-cloud
+            </h5>
+          </div>
+        </a>
+        <a
+          href=" https://github.com/gwak2837/kubernetes-cloud-backend"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+        >
+          <div className="flex gap-1 items-center">
+            <Image src="/images/github.svg" alt="github" width="16" height="16" />
+            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
+              kubernetes-cloud-backend
+            </h5>
+          </div>
+        </a>
+      </div>
+      <div>Google Kubernetes Engine(GKE) 상 게시글 CRUD 및 로그인 회원가입 서비스 구현</div>
+      <div className="flex flex-wrap gap-1 my-2">
+        <a href="https://nextjs.org/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"
+            alt="Next.js Badge"
+          />
+        </a>
+        <a href="https://ant.design/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Ant_Design-0170FE?style=flat-square&logo=Ant-Design&logoColor=white"
+            alt="antd Badge"
+          />
+        </a>
+        <a href="https://www.postgresql.org/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white"
+            alt="jsonwebtokens Badge"
+          />
+        </a>
+        <a href="https://www.typescriptlang.org/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Koa-33333D?style=flat-square&logo=koa&logoColor=white"
+            alt="Koa"
+          />
+        </a>
+        <a href="https://www.postgresql.org/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=PostgreSQL&logoColor=white"
+            alt="PostgreSQL Badge"
+          />
+        </a>
+        <a href="https://cloud.google.com/gcp/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Kubernetes Engine-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
+            alt="GCP Badge"
+          />
+        </a>
+      </div>
+      <ol>
+        <li>
+          <pre>display: grid</pre>, <pre>@media</pre> 쿼리를 사용해 반응형 디자인을 구현함
+        </li>
+        <li>
+          GKE를 사용하여 클러스터, 노드, 팟을 설정하고, 컨테이너의 자동 스케일링과 로드 밸런싱을
+          구현함
+        </li>
+        <li>GCP 상의 IP, 포트 방화벽 등 네트워크 환경을 설정함</li>
+      </ol>
+      <div className="grid grid-cols-4 gap-2">
+        <Image src="/images/k8s-1.png" alt="k8s" width="376" height="810" className="border" />
+        <Image src="/images/k8s-2.png" alt="k8s" width="376" height="810" className="border" />
+        <Image src="/images/k8s-3.png" alt="k8s" width="376" height="810" className="border" />
+        <Image src="/images/k8s-4.png" alt="k8s" width="376" height="810" className="border" />
+        <Image src="/images/k8s-5.png" alt="k8s" width="376" height="810" className="border" />
+        <Image src="/images/k8s-7.png" alt="k8s" width="376" height="810" className="border" />
+        <Image
+          src="/images/k8s-8.png"
+          alt="k8s"
+          width="376"
+          height="810"
+          className="border col-span-2"
+        />
+      </div>
+
       <div className="border w-full my-6" />
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>업비트 자동 매매</h4>
@@ -1864,7 +1965,23 @@ export default function HomePage() {
       <ol>
         <li>웹소켓을 활용해 실시간으로 코인 시세를 획득함</li>
         <li>이동평균선, RSI, MFI 등 차트 보조 지표를 구현해 매매 알고리즘에 활용함</li>
+        <li>Docker를 활용해 오류 등으로 컨테이너가 종료됐을 때 자동으로 재실행됨</li>
       </ol>
+      <Image
+        src="/images/upbit-2.webp"
+        alt="jayudam architecture"
+        width="2650"
+        height="1104"
+        className="text-center"
+      />
+      <Image
+        src="/images/upbit-1.webp"
+        alt="jayudam architecture"
+        width="2278"
+        height="1286"
+        className="text-center"
+      />
+      <div className="grid grid-cols-2 gap-2"></div>
       <div className="border w-full my-6" />
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>소복</h4>
@@ -1972,13 +2089,6 @@ export default function HomePage() {
         <li>디자이너와 Figma 및 Zeplin을 통해 페이지 디자인 및 SVG 벡터 이미지 공유</li>
       </ol>
       <div className="grid grid-cols-4 gap-2">
-        <Image
-          src="/images/sobok1.png"
-          alt="jayudam architecture"
-          width="376"
-          height="810"
-          className="border"
-        />
         <Image
           src="/images/sobok2.png"
           alt="jayudam architecture"
@@ -2150,7 +2260,14 @@ export default function HomePage() {
           </a>
         </li>
         <li>
-          함수 컴포넌트와 클래스 컴포넌트를 비교하며 여러 useEffect가 어떤 순서로 실행되는지 고민함
+          <a
+            href="https://velog.io/@gwak2837/React-Hooks%EC%9D%98-%EC%9D%B4%ED%95%B4#effect-%ED%95%A8%EC%88%98%EC%99%80-clean-up-%ED%95%A8%EC%88%98"
+            target="_blank"
+            rel="noreferrer"
+          >
+            함수 컴포넌트와 클래스 컴포넌트를 비교하며 여러 useEffect가 어떤 순서로 실행되는지
+            고민함
+          </a>
         </li>
         <li>함수형 프로그래밍에서 나오는 클로저 개념을 활용해 useState를 간단하게 직접 구현함</li>
         <li>메모이제이션 개념을 이용한 useMemo, useCallback을 활용해 컴포넌트 렌더링을 최적화함</li>
