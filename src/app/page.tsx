@@ -921,7 +921,7 @@ export default function HomePage() {
       <h2 className="text-3xl my-8">프로젝트</h2>
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>코리아톡</h4>
-        <div>본인</div>
+        <div>1명 (본인)</div>
         <div>2023년 7월 15일 (1일)</div>
       </div>
       <div className="flex gap-0.5 my-2">
@@ -1003,7 +1003,7 @@ export default function HomePage() {
       <div className="border w-full my-6" />
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>지키다</h4>
-        <div>본인</div>
+        <div>1명 (본인)</div>
         <div>2023년 1월 24일 ~ 현재</div>
       </div>
       <div className="flex gap-0.5 my-2">
@@ -1164,7 +1164,7 @@ export default function HomePage() {
       <div className="border w-full my-6" />
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>이력서</h4>
-        <div>본인</div>
+        <div>1명 (본인)</div>
         <div>2022년 12월 12일 ~ 수시</div>
       </div>
       <div className="flex gap-0.5 my-2">
@@ -1224,7 +1224,7 @@ export default function HomePage() {
       <div className="border w-full my-6" />
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>쿠팡 가격 알리미</h4>
-        <div>본인</div>
+        <div>1명 (본인)</div>
         <div>2022년 11월 22일 ~ 2023년 1월 19일 (2개월)</div>
       </div>
       <div className="flex gap-0.5 my-2">
@@ -1360,7 +1360,7 @@ export default function HomePage() {
       <div className="border w-full my-6" />
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>자유담</h4>
-        <div>본인</div>
+        <div>1명 (본인)</div>
         <div>2022년 6월 1일 ~ 10월 31일 (5개월)</div>
       </div>
       <div className="flex gap-0.5 my-2">
@@ -1635,7 +1635,7 @@ export default function HomePage() {
       <div className="border w-full my-6" />
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>알파카살롱</h4>
-        <div>1명</div>
+        <div>1명 (본인)</div>
         <a href="/images/2021-alpacasalon.webp" target="_blank">
           2021년 12월 21일 ~ 2022년 1월 10일 (3주)
         </a>
@@ -1813,7 +1813,7 @@ export default function HomePage() {
       <div className="border w-full my-6" />
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>게시판</h4>
-        <div>본인</div>
+        <div>1명 (본인)</div>
         <div>2021년 10월 21일 ~ 11월 5일 (2주)</div>
       </div>
       <div className="flex gap-0.5 my-2">
@@ -1912,7 +1912,7 @@ export default function HomePage() {
       <div className="border w-full my-6" />
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>업비트 자동 매매</h4>
-        <div>본인</div>
+        <div>1명 (본인)</div>
         <div>2021년 9월 25일 ~ 수시</div>
       </div>
       <div className="flex gap-0.5 my-2">
