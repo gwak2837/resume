@@ -1908,7 +1908,6 @@ export default function HomePage() {
           className="border col-span-2"
         />
       </div>
-
       <div className="border w-full my-6" />
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>업비트 자동 매매</h4>
@@ -2153,6 +2152,153 @@ export default function HomePage() {
         height="1080"
         className="my-2 border"
       />
+      <div className="border w-full my-6" />
+      <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
+        <h4>수능 모의고사 웹사이트</h4>
+        <div>4명</div>
+        <div>2021년 7월 16일 ~ 7월 18일 (3일)</div>
+      </div>
+      <div className="flex gap-0.5 my-2">
+        <a
+          href="https://github.com/gwak2837/moigosa"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+        >
+          <div className="flex gap-1 items-center">
+            <Image src="/images/github.svg" alt="github" width="16" height="16" />
+            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">moigosa</h5>
+          </div>
+        </a>
+        <a
+          href="https://github.com/gwak2837/moigosa-backend"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+        >
+          <div className="flex gap-1 items-center">
+            <Image src="/images/github.svg" alt="github" width="16" height="16" />
+            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
+              moigosa-backend
+            </h5>
+          </div>
+        </a>
+        <a
+          href="https://moigosa.vercel.app"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+        >
+          <div className="flex gap-1 items-center">
+            <Image src="/images/vercel.png" alt="github" width="16" height="16" />
+            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
+              moigosa.vercel.app
+            </h5>
+          </div>
+        </a>
+      </div>
+      <div>
+        코로나19로 어려워진 대면 시험.. 수능 성적을 올리고 싶다면? 나는 타고난 수능 만점자인 것인가?
+        당신의 숨겨진 성적을 깨닫고 싶다면?
+      </div>
+      <div className="flex flex-wrap gap-1 my-2">
+        <a href="https://nextjs.org/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"
+            alt="Next.js Badge"
+          />
+        </a>
+        <a href="https://expressjs.com/" rel="noreferrer">
+          <img
+            src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white"
+            alt="Express Badge"
+          />
+        </a>
+        <a href="https://www.postgresql.org/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=PostgreSQL&logoColor=white"
+            alt="PostgreSQL Badge"
+          />
+        </a>
+        <a href="https://vercel.com/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white"
+            alt="Vercel Badge"
+          />
+        </a>
+        <a href="https://vercel.com/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Virtual Box-183A61?style=flat-square&logo=virtualbox&logoColor=white"
+            alt="Vercel Badge"
+          />
+        </a>
+      </div>
+      <ol>
+        <li>Virtual Box VM 인스턴스를 활용해 웹 서버, API 서버, DB 서버 구축</li>
+        <li>사설 IP를 활용해 3가지 서버 연결 및 각 서버별 방화벽 설정</li>
+        <li>
+          배포 자동화를 위해 리눅스 crontab을 활용하여 <pre>git pull</pre> 자동화
+        </li>
+      </ol>
+      <div className="grid grid-cols-4 gap-2">
+        <Image
+          src="/images/moigosa-1.png"
+          alt="preview"
+          width="376"
+          height="810"
+          className="border"
+        />
+        <Image
+          src="/images/moigosa-2.png"
+          alt="preview"
+          width="376"
+          height="810"
+          className="border"
+        />
+        <Image
+          src="/images/moigosa-3.png"
+          alt="preview"
+          width="376"
+          height="810"
+          className="border"
+        />
+        <Image
+          src="/images/moigosa-4.png"
+          alt="preview"
+          width="376"
+          height="810"
+          className="border"
+        />
+        <Image
+          src="/images/moigosa-5.png"
+          alt="preview"
+          width="376"
+          height="810"
+          className="border"
+        />
+        <Image
+          src="/images/moigosa-6.png"
+          alt="preview"
+          width="376"
+          height="810"
+          className="border"
+        />
+        <Image
+          src="/images/moigosa-7.png"
+          alt="preview"
+          width="376"
+          height="810"
+          className="border"
+        />
+        <Image
+          src="/images/moigosa-8.png"
+          alt="preview"
+          width="376"
+          height="810"
+          className="border"
+        />
+      </div>
+
       <div className="border w-full my-6" />
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>이메일 블록체인 검증</h4>
