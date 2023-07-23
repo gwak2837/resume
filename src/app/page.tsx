@@ -2042,6 +2042,12 @@ export default function HomePage() {
             alt="PWA Badge"
           />
         </a>
+        <a href="https://analytics.google.com/analytics/web/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/GA-E37400?style=flat-square&logo=Google Analytics&logoColor=white"
+            alt="GA Badge"
+          />
+        </a>
         <a href="https://vercel.com/" rel="noreferrer" target="_blank">
           <img
             src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white"
@@ -2088,6 +2094,13 @@ export default function HomePage() {
         <li>디자이너와 Figma 및 Zeplin을 통해 페이지 디자인 및 SVG 벡터 이미지 공유</li>
       </ol>
       <div className="grid grid-cols-4 gap-2">
+        <Image
+          src="/images/sobok1.png"
+          alt="jayudam architecture"
+          width="376"
+          height="810"
+          className="border"
+        />
         <Image
           src="/images/sobok2.png"
           alt="jayudam architecture"
@@ -2298,7 +2311,163 @@ export default function HomePage() {
           className="border"
         />
       </div>
-
+      <div className="border w-full my-6" />
+      <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
+        <h4>심리 테스트</h4>
+        <div>4명</div>
+        <div>
+          <div>Frontend: 2021년 6월 14일 ~ 16일 (3일)</div>
+          <div>Backend: 2021년 7월 1일 ~ 3일 (3일)</div>
+        </div>
+      </div>
+      <div className="flex gap-0.5 my-2">
+        <a
+          href="https://github.com/gwak2837/simli-test"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+        >
+          <div className="flex gap-1 items-center">
+            <Image src="/images/github.svg" alt="github" width="16" height="16" />
+            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
+              simli-test
+            </h5>
+          </div>
+        </a>
+        <a
+          href="https://github.com/gwak2837/simli-test-backend"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+        >
+          <div className="flex gap-1 items-center">
+            <Image src="/images/github.svg" alt="github" width="16" height="16" />
+            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
+              simli-test-backend
+            </h5>
+          </div>
+        </a>
+        <a
+          href="https://simli.vercel.app"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+        >
+          <div className="flex gap-1 items-center">
+            <Image src="/images/vercel.png" alt="github" width="16" height="16" />
+            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
+              simli.vercel.app
+            </h5>
+          </div>
+        </a>
+      </div>
+      <div>
+        쟤도 날 좋아할까? 그/그녀의 심리를 알고 싶다면? 나는 타고난 어그로 꾼인가? 당신의 숨겨진
+        정체를 깨닫고 싶다면? 이 말을 가짜라고 생각하고 무시한다면 정말 안 좋은 사고가 꼭
+        일어납니다. 지금 당장 시작하세요.
+      </div>
+      <div className="flex flex-wrap gap-1 my-2">
+        <a href="https://nextjs.org/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"
+            alt="Next.js Badge"
+          />
+        </a>
+        <a href="https://web.dev/progressive-web-apps/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/PWA-5A0FC8?style=flat-square&logo=PWA&logoColor=white"
+            alt="PWA Badge"
+          />
+        </a>
+        <a href="https://expressjs.com/" rel="noreferrer">
+          <img
+            src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white"
+            alt="Express Badge"
+          />
+        </a>
+        <a href="https://ant.design/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/MariaDB-003545?style=flat-square&logo=mariadb&logoColor=white"
+            alt="mariadb Badge"
+          />
+        </a>
+        <a href="https://vercel.com/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white"
+            alt="Vercel Badge"
+          />
+        </a>
+        <a href="https://cloud.google.com/gcp/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Cloud Run-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
+            alt="GCP Badge"
+          />
+        </a>
+      </div>
+      <ol>
+        <li>Vercel에 프론트엔드 자동 배포, Cloud Run에 백엔드 자동 배포</li>
+        <li>Slack에 프론트엔드·백엔드 배포 알림 설정 및 GitHub, Slack을 사용해서 협업</li>
+        <li>Google Analytics를 적용해 방문하는 사용자 분석</li>
+        <li>PWA를 적용해 모바일 환경의 사용자 경험 및 접근성 향상</li>
+      </ol>
+      <div className="grid grid-cols-4 gap-2">
+        <Image
+          src="/images/simli-1.png"
+          alt="jayudam architecture"
+          width="376"
+          height="810"
+          className="border"
+        />
+        <Image
+          src="/images/simli-2.png"
+          alt="jayudam architecture"
+          width="376"
+          height="810"
+          className="border"
+        />
+        <Image
+          src="/images/simli-3.png"
+          alt="jayudam architecture"
+          width="376"
+          height="810"
+          className="border"
+        />
+        <Image
+          src="/images/simli-4.png"
+          alt="jayudam architecture"
+          width="376"
+          height="810"
+          className="border"
+        />
+        <Image
+          src="/images/simli-5.png"
+          alt="jayudam architecture"
+          width="376"
+          height="810"
+          className="border"
+        />
+        <Image
+          src="/images/simli-6.png"
+          alt="jayudam architecture"
+          width="376"
+          height="810"
+          className="border"
+        />
+        <Image
+          src="/images/simli-7.png"
+          alt="jayudam architecture"
+          width="376"
+          height="810"
+          className="border"
+        />
+        <Image
+          src="/images/simli-8.png"
+          alt="jayudam architecture"
+          width="376"
+          height="810"
+          className="border"
+        />
+      </div>
       <div className="border w-full my-6" />
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>이메일 블록체인 검증</h4>
@@ -2377,7 +2546,6 @@ export default function HomePage() {
         </li>
       </ol>
       <div className="border w-full my-6" />
-
       <h4 className="my-8">이전 프로젝트 목록</h4>
       <a
         href="https://gwak2837.notion.site/Resume-3fb93cf3019243fc8fd9103975f2872f"
