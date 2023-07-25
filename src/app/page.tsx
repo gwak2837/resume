@@ -175,7 +175,12 @@ export default function HomePage() {
         </thead>
         <tbody>
           <tr>
-            <td>TOPCIT 제15회</td>
+            <td>
+              <a href="https://www.topcit.or.kr/home.do" target="_blank" rel="noreferrer">
+                TOPCIT
+              </a>{' '}
+              제15회
+            </td>
             <td className="text-center">
               <a href="/images/2021-topcit-627.webp" target="_blank">
                 627점 (전국 4등)
@@ -185,7 +190,11 @@ export default function HomePage() {
             <td className="text-center">2021년 5월 22일</td>
           </tr>
           <tr>
-            <td>G-TELP (Level 2)</td>
+            <td>
+              <a href="https://www.g-telp.co.kr:335/" target="_blank" rel="noreferrer">
+                G-TELP (Level 2)
+              </a>
+            </td>
             <td className="text-center">
               <a href="/images/2020-gtelp.webp" target="_blank">
                 82점
@@ -195,7 +204,11 @@ export default function HomePage() {
             <td className="text-center">2020년 5월 3일</td>
           </tr>
           <tr>
-            <td>대한검정회</td>
+            <td>
+              <a href="https://www.hanja.ne.kr/index_original.asp" target="_blank" rel="noreferrer">
+                대한검정회
+              </a>
+            </td>
             <td className="text-center">
               <a href="/images/2009-hanja.webp" target="_blank">
                 준1급
@@ -576,6 +589,21 @@ export default function HomePage() {
         개발 경력 <span className="text-base">(1년 4개월)</span>
       </h2>
       <ul>
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
+            <a href="https://www.tossbank.com/" target="_blank" rel="noreferrer">
+              <b>토스뱅크(주)</b>
+            </a>
+            <div>2023년 8월 7일 ~ 11월 6일 (3개월)</div>
+          </div>
+          <div>직책: Admin Developer</div>
+          <div>직급: 단기계약직</div>
+          <div>
+            역할: 대출 상품의 심사·운영에 필요한 내부 웹 서비스, 팀원들 업무의 효율성을 높이고 대출
+            고객의 불편함을 최소화하는 Admin 제품 개발
+          </div>
+        </li>
+        <div className="border w-full my-6" />
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
             <a
