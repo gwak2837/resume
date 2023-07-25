@@ -594,7 +594,7 @@ export default function HomePage() {
             <a href="https://www.tossbank.com/" target="_blank" rel="noreferrer">
               <b>토스뱅크(주)</b>
             </a>
-            <div>2023년 8월 7일 ~ 11월 6일 (3개월)</div>
+            <div>2023년 8월 7일 ~ 현재</div>
           </div>
           <div>직책: Admin Developer</div>
           <div>직급: 단기계약직</div>
