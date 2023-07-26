@@ -1643,18 +1643,27 @@ export default function HomePage() {
       </div>
       <ol>
         <li>
-          네트워크 요청 및 응답 데이터와 input 입력값 데이터 관리를 제외한, React 전역 상태 관리를
-          위해 Recoil.js를 선택함. 네트워크 요청 및 응답 데이터는 Apollo client로 관리하고, input
-          입력값 데이터는 React form으로 관리함
+          상태 관리: 네트워크 요청 및 응답 데이터는 Apollo client로 관리하고, input 입력값 데이터는
+          React form으로 관리하고, 클라이언트 전역 상태는 Recoil.js로 관리함
         </li>
         <li>
-          웹소켓보다 가벼운 HTTP2 Server push를 사용해 채팅 기능을 구현함. 웹소켓을 사용하면
-          서버와의 양방향 통신이 가능해 서버가 먼저 바이너리 데이터를 보낼 수 있는데, 본
-          프로젝트에선 서버에서 바이너리 데이터를 먼저 보내는 경우가 없어 Server push로도 적당하다고
-          판단함. 브라우저의 EventSource 기능을 활용하면 HTTP2 서버에서 브라우저로 먼저 요청할 수
-          있음
+          페이지네이션: Offset Pagination,{' '}
+          <a
+            href="https://www.cockroachlabs.com/docs/stable/pagination"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Keyset Pagination
+          </a>{' '}
+          개념을 활용한 SQL 쿼리를 작성함
         </li>
-        <li>브라우저 카메라를 이용해 QR 코드 스캔 기능을 구현함</li>
+        <li>
+          실시간 통신: 웹소켓보다 가벼운 HTTP2 Server push를 사용해 채팅 기능을 구현함. 본
+          프로젝트에선 바이너리 데이터를 서버에서 클라이언트로 먼저 보내는 경우가 없어 Server
+          push로도 적당하다고 판단함. 브라우저의 EventSource 기능을 활용하면 HTTP2 서버에서
+          브라우저로 먼저 요청할 수 있음
+        </li>
+        <li>WebRTC: 브라우저 카메라를 이용해 QR 코드 스캔 기능을 구현함</li>
       </ol>
       <div className="grid grid-cols-2 gap-2">
         <Image
@@ -2282,6 +2291,16 @@ export default function HomePage() {
           Webpack을 활용해 JavaScript 코드를 압축하여 Docker 이미지 크기 최적화 (140MB → 40MB)
         </li>
         <li>디자이너와 Figma 및 Zeplin을 통해 페이지 디자인 및 SVG 벡터 이미지 공유</li>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Intersection Observer API
+          </a>
+          를 사용해 무한스크롤 페이지네이션을 구현함
+        </li>
       </ol>
       <div className="grid grid-cols-4 gap-2">
         <Image
@@ -2795,16 +2814,6 @@ export default function HomePage() {
         <li>esbuild, Webpack 번들러를 사용해 Docker 이미지 크기를 줄임</li>
         <li>Promise, async await, generator 문법을 사용해 비동기 작업을 구현 가능함</li>
         <li>
-          <a
-            href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Intersection Observer API
-          </a>
-          를 사용해 무한스크롤 페이지네이션을 구현함
-        </li>
-        <li>
           브라우저의{' '}
           <a
             href="https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API"
@@ -2864,7 +2873,6 @@ export default function HomePage() {
         <li>
           SQL 간 경쟁조건이 있을 때 의도된 결과를 얻기 위해 특정 테이블 또는 레코드를 잠글 수 있음
         </li>
-        <li>Offset Pagination, Keyset Pagination 쿼리를 구현할 수 있음</li>
       </dl>
       <h3 className="text-2xl my-4">Cloud</h3>
       <dl>
