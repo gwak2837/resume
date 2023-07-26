@@ -769,6 +769,27 @@ export default function HomePage() {
       <ul>
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
+            <a
+              href="https://innotalk.co.kr/channel/detail?cid=C0008652"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>주식회사 플랜바이테크놀로지스</b>
+            </a>
+            <div>2023년 7월 24일 ~ 8월 6일 (2주)</div>
+          </div>
+          <div>직책: 개발자문</div>
+          <div>
+            역할: 고등학교 친구가 창업한 스타트업의{' '}
+            <a href="https://landing.planby.us/" target="_blank" rel="noreferrer">
+              'HOMI AI - 인공지능이 꾸며주는 나의 공간'
+            </a>{' '}
+            인테리어 디자인 AI 자동화 솔루션 MVP 개발
+          </div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
             <b>카투사 1지역대 정보작전과 (동두천)</b>
             <div>2022년 12월 1일 ~ 2023년 7월 23일 (7개월)</div>
           </div>
@@ -1027,50 +1048,50 @@ export default function HomePage() {
         <Image
           src="/images/tomorrow-house-1.webp"
           alt="jayudam architecture"
-          width="175"
-          height="377"
+          width="1170"
+          height="2532"
         />
         <Image
           src="/images/tomorrow-house-2.webp"
           alt="jayudam architecture"
-          width="175"
-          height="377"
+          width="1170"
+          height="2532"
         />
         <Image
           src="/images/tomorrow-house-3.webp"
           alt="jayudam architecture"
-          width="175"
-          height="377"
+          width="1170"
+          height="2532"
         />
         <Image
           src="/images/tomorrow-house-4.webp"
           alt="jayudam architecture"
-          width="175"
-          height="377"
+          width="1170"
+          height="2532"
         />
         <Image
           src="/images/tomorrow-house-5.webp"
           alt="jayudam architecture"
-          width="175"
-          height="377"
+          width="1170"
+          height="2532"
         />
         <Image
           src="/images/tomorrow-house-6.webp"
           alt="jayudam architecture"
-          width="175"
-          height="377"
+          width="1170"
+          height="2532"
         />
         <Image
           src="/images/tomorrow-house-7.webp"
           alt="jayudam architecture"
-          width="175"
-          height="377"
+          width="1170"
+          height="2532"
         />
         <Image
           src="/images/tomorrow-house-8.webp"
           alt="jayudam architecture"
-          width="175"
-          height="377"
+          width="1170"
+          height="2532"
         />
       </div>
 
@@ -1091,6 +1112,19 @@ export default function HomePage() {
             <Image src="/images/github.svg" alt="github" width="16" height="16" />
             <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
               korea-talk (Priv.)
+            </h5>
+          </div>
+        </a>
+        <a
+          href="https://korea-talk.vercel.app/"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+        >
+          <div className="flex gap-1 items-center">
+            <Image src="/images/vercel.png" alt="github" width="16" height="16" />
+            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
+              korea-talk.vercel.app
             </h5>
           </div>
         </a>
