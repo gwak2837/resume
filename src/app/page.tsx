@@ -1111,7 +1111,7 @@ export default function HomePage() {
           <div className="flex gap-1 items-center">
             <Image src="/images/github.svg" alt="github" width="16" height="16" />
             <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
-              korea-talk (Priv.)
+              korea-talk
             </h5>
           </div>
         </a>
