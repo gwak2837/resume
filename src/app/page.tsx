@@ -969,7 +969,7 @@ export default function HomePage() {
       <Image src="/images/mbti.png" alt="asd" width="551" height="304" className="mx-auto" />
       <h2 className="text-3xl my-8">프로젝트</h2>
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
-        <h4>내일의집</h4>
+        <h4>내일의집 (프로토타입)</h4>
         <div>1명 (본인)</div>
         <div>2023년 7월 24일 (3시간)</div>
       </div>
@@ -1303,7 +1303,43 @@ export default function HomePage() {
       </div>
       <ol>
         <li>
-          정부에서 제공하는 OpenAPI를 이용해{' '}
+          SQL 개선: 약 2억 개의 예산 데이터 검색에 50초 걸리는 응답시간을{' '}
+          <a
+            href="https://velog.io/@emplam27/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%EA%B7%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C-%EC%95%8C%EC%95%84%EB%B3%B4%EB%8A%94-B-Plus-Tree"
+            target="_blank"
+            rel="noreferrer"
+          >
+            B+Tree
+          </a>{' '}
+          인덱스를 설계해 5초로 개선함
+        </li>
+        <li>
+          <a
+            href="https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-upsert/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            UPSERT
+          </a>
+          : 기존 데이터의 업데이트와 새로운 데이터의 삽입이 반복적으로 발생하는 상황에서, SQL의
+          UPSERT 개념을 적용하여 데이터가 이미 존재할 경우 해당 데이터를 업데이트하고 그렇지 않을
+          경우 새로운 데이터를 삽입해, 불필요한 중복 삽입을 방지하고 데이터베이스의 무결성을
+          유지하면서 데이터 관리를 효율적으로 수행함
+        </li>
+        <li>
+          렌더링 개선: 페이지 렌더링에 필요한 리소스 용량을 줄이기 위해 Next.js 13을 이용해 특정
+          URL의 HTML 파일을 캐싱함.{' '}
+          <a
+            href="https://nextjs.org/docs/app/building-your-application/optimizing/lazy-loading"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Dynamic import
+          </a>
+          를 사용해 클라이언트 JS 번들 크기를 줄임.
+        </li>
+        <li>
+          크롤링: OpenAPI를 이용해{' '}
           <a
             href="https://www.openfiscaldata.go.kr/op/ko/sd/UOPKOSDA01?odtId=5Y5A50K2L4CW2IRKI2J0F2C8T"
             rel="noreferrer"
@@ -1319,22 +1355,7 @@ export default function HomePage() {
           >
             지방자치단체 세출
           </a>{' '}
-          데이터를 데이터베이스에 저장함
-        </li>
-        <li>
-          약 2억 개의 재정 데이터 검색에 50초 걸리는 응답시간을 PostgreSQL{' '}
-          <a
-            href="https://velog.io/@emplam27/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%EA%B7%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C-%EC%95%8C%EC%95%84%EB%B3%B4%EB%8A%94-B-Plus-Tree"
-            target="_blank"
-            rel="noreferrer"
-          >
-            B+Tree
-          </a>{' '}
-          인덱스를 설계해 5초로 개선함
-        </li>
-        <li>
-          페이지 렌더링에 필요한 리소스 용량을 줄이기 위해 Next.js 13을 이용해 특정 URL의 HTML
-          파일을 캐싱함
+          데이터를 데이터베이스에 주기적으로 저장함
         </li>
       </ol>
       <Image
@@ -1519,10 +1540,10 @@ export default function HomePage() {
           알고리즘을 사용하여 해결함
         </li>
         <li>
-          Styled components는 프로젝트 규모가 커질 수록 css 번들 크기가 선형으로 증가하는 단점이
-          있음. 그래서 큰 프로젝트에서 css 번들 크기를 줄이기 위해 Tailwind를 사용함. Tailwind CSS
-          문법을 익혀야하는 단점이 있지만, 시간이 지날 수록 Styled component처럼 따로 변수를 만들지
-          않고 바로 className만 작성하면 된다는 부분에 편리함을 느낌
+          프로젝트의 규모가 커질 수록 Styled components는 CSS 번들 크기의 선형적 증가라는 단점이
+          있어 Tailwind를 도입함. Tailwind는 사용 시 별도 CSS 문법을 익혀야한다는 단점이 있지만,
+          Styled component와 달리 Tailwind에서는 별도로 변수를 설정할 필요 없이 바로 className만을
+          작성하면 되는 점이 편리하다고 느낌.
         </li>
         <li>
           서버리스 서비스인 Cloud Run에서 웹사이트 크롤링 용도로 설치한 puppeteer가 작동하지 않는
