@@ -589,7 +589,7 @@ export default function HomePage() {
         개발 경력 <span className="text-base">(1년 4개월)</span>
       </h2>
       <ul>
-        <li>
+        {/* <li>
           <div className="grid grid-cols-2 gap-4 my-4">
             <a href="https://www.tossbank.com/" target="_blank" rel="noreferrer">
               <b>토스뱅크(주)</b>
@@ -603,7 +603,7 @@ export default function HomePage() {
             고객의 불편함을 최소화하는 Admin 제품 개발
           </div>
         </li>
-        <div className="border w-full my-6" />
+        <div className="border w-full my-6" /> */}
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
             <a
