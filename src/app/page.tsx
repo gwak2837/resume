@@ -373,7 +373,7 @@ export default function HomePage() {
           <a href="https://www.fastify.io/" rel="noreferrer">
             <img
               src="https://img.shields.io/badge/Fastify-000000?style=flat-square&logo=Fastify&logoColor=white"
-              alt="Apollo Badge"
+              alt="Fastify Badge"
             />
           </a>
           <a href="https://en.wikipedia.org/wiki/HTTP/3" rel="noreferrer" target="_blank">
@@ -589,7 +589,7 @@ export default function HomePage() {
         개발 경력 <span className="text-base">(1년 4개월)</span>
       </h2>
       <ul>
-        {/* <li>
+        <li>
           <div className="grid grid-cols-2 gap-4 my-4">
             <a href="https://www.tossbank.com/" target="_blank" rel="noreferrer">
               <b>토스뱅크(주)</b>
@@ -603,7 +603,7 @@ export default function HomePage() {
             고객의 불편함을 최소화하는 Admin 제품 개발
           </div>
         </li>
-        <div className="border w-full my-6" /> */}
+        <div className="border w-full my-6" />
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
             <a
@@ -776,7 +776,18 @@ export default function HomePage() {
             >
               <b>주식회사 플랜바이테크놀로지스</b>
             </a>
-            <div>2023년 7월 24일 ~ 8월 6일 (2주)</div>
+            <div>
+              <a href="/images/planby-1.webp" target="_blank">
+                2023년 7월 24일
+              </a>
+              {' ~ '}
+              <a href="/images/planby-2.webp" target="_blank">
+                8월 6일
+              </a>{' '}
+              <a href="/images/planby-3.webp" target="_blank">
+                (2주)
+              </a>
+            </div>
           </div>
           <div>직책: 개발자문</div>
           <div>
@@ -969,9 +980,9 @@ export default function HomePage() {
       <Image src="/images/mbti.png" alt="asd" width="551" height="304" className="mx-auto" />
       <h2 className="text-3xl my-8">프로젝트</h2>
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
-        <h4>내일의집 (프로토타입)</h4>
+        <h4>내일의집 (MVP)</h4>
         <div>1명 (본인)</div>
-        <div>2023년 7월 24일 (3시간)</div>
+        <div>2023년 7월 24일 ~ 8월 6일 (2주)</div>
       </div>
       <div className="flex gap-0.5 my-2">
         <a
@@ -984,6 +995,19 @@ export default function HomePage() {
             <Image src="/images/github.svg" alt="github" width="16" height="16" />
             <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
               tomorrow-house (Priv.)
+            </h5>
+          </div>
+        </a>
+        <a
+          href="https://github.com/gwak2837/tomorrow-house-backend"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+        >
+          <div className="flex gap-1 items-center">
+            <Image src="/images/github.svg" alt="github" width="16" height="16" />
+            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
+              tomorrow-house-backend (Priv.)
             </h5>
           </div>
         </a>
@@ -1015,10 +1039,16 @@ export default function HomePage() {
             alt="tailwind"
           />
         </a>
-        <a href="https://tanstack.com/query/v4/" rel="noreferrer" target="_blank">
+        <a href="https://www.fastify.io/" rel="noreferrer">
           <img
-            src="https://img.shields.io/badge/React Query-FF4154?style=flat-square&logo=react-query&logoColor=white"
-            alt="React Query Badge"
+            src="https://img.shields.io/badge/Fastify-000000?style=flat-square&logo=Fastify&logoColor=white"
+            alt="Fastify Badge"
+          />
+        </a>
+        <a href="https://en.wikipedia.org/wiki/HTTP/2_Server_Push" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/HTTP/2 Server Push-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
+            alt="Server Push Badge"
           />
         </a>
         <a href="" rel="noreferrer" target="_blank">
@@ -1044,15 +1074,9 @@ export default function HomePage() {
         <li>Figma UI 디자인을 참조해 프로토타입 개발 및 Vercel 클라우드에 자동 배포</li>
         <li>React Query로 AI 서버 응답 관리 및 Recoil.js로 클라이언트 전역 상태 관리</li>
       </ol>
-      <div className="grid grid-cols-4 gap-2">
+      <div className="grid grid-cols-3">
         <Image
           src="/images/tomorrow-house-1.webp"
-          alt="jayudam architecture"
-          width="1170"
-          height="2532"
-        />
-        <Image
-          src="/images/tomorrow-house-2.webp"
           alt="jayudam architecture"
           width="1170"
           height="2532"
@@ -1083,12 +1107,6 @@ export default function HomePage() {
         />
         <Image
           src="/images/tomorrow-house-7.webp"
-          alt="jayudam architecture"
-          width="1170"
-          height="2532"
-        />
-        <Image
-          src="/images/tomorrow-house-8.webp"
           alt="jayudam architecture"
           width="1170"
           height="2532"
