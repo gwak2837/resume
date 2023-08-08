@@ -5,7 +5,7 @@ import Image from 'next/image'
 import OtherCertificates from './OtherCertificates'
 
 export default function HomePage() {
-  const date = '2023년 7월 20일'
+  const date = '2023년 8월 8일'
   return (
     <main className="mx-auto mb-8 max-w-[720px]">
       <h1 className="text-4xl mb-6 font-semibold w-full">이력서</h1>
@@ -980,8 +980,8 @@ export default function HomePage() {
       <Image src="/images/mbti.png" alt="asd" width="551" height="304" className="mx-auto" />
       <h2 className="text-3xl my-8">프로젝트</h2>
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
-        <h4>내일의집 (MVP)</h4>
-        <div>1명 (본인)</div>
+        <h4>내일의집</h4>
+        <div>2명</div>
         <div>2023년 7월 24일 ~ 8월 6일 (2주)</div>
       </div>
       <div className="flex gap-0.5 my-2">
@@ -994,7 +994,7 @@ export default function HomePage() {
           <div className="flex gap-1 items-center">
             <Image src="/images/github.svg" alt="github" width="16" height="16" />
             <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
-              tomorrow-house (Priv.)
+              tomorrow-house
             </h5>
           </div>
         </a>
@@ -1007,7 +1007,7 @@ export default function HomePage() {
           <div className="flex gap-1 items-center">
             <Image src="/images/github.svg" alt="github" width="16" height="16" />
             <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
-              tomorrow-house-backend (Priv.)
+              tomorrow-house-backend
             </h5>
           </div>
         </a>
