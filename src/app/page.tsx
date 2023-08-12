@@ -1223,9 +1223,7 @@ export default function HomePage() {
         >
           <div className="flex gap-1 items-center">
             <Image src="/images/github.svg" alt="github" width="16" height="16" />
-            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
-              lofin (Priv.)
-            </h5>
+            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">lofin</h5>
           </div>
         </a>
         <a
@@ -1237,7 +1235,7 @@ export default function HomePage() {
           <div className="flex gap-1 items-center">
             <Image src="/images/github.svg" alt="github" width="16" height="16" />
             <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
-              lofin-backend (Priv.)
+              lofin-backend
             </h5>
           </div>
         </a>
@@ -2734,7 +2732,7 @@ export default function HomePage() {
           <div className="flex gap-1 items-center">
             <Image src="/images/github.svg" alt="github" width="16" height="16" />
             <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
-              email-blockchain (Priv.)
+              email-blockchain
             </h5>
           </div>
         </a>
