@@ -1212,7 +1212,7 @@ export default function HomePage() {
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>지키다</h4>
         <div>1명 (본인)</div>
-        <div>2023년 1월 24일 ~ 현재</div>
+        <div>2023년 1월 24일 ~ 8월 6일 (6개월)</div>
       </div>
       <div className="flex gap-0.5 my-2">
         <a
