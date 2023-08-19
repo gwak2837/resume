@@ -586,7 +586,7 @@ export default function HomePage() {
         </div>
       </div>
       <h2 className="text-3xl my-8">
-        개발 경력 <span className="text-base">(1년 4개월)</span>
+        개발 경력 <span className="text-base">(1년 4개월+)</span>
       </h2>
       <ul>
         <li>
@@ -893,7 +893,7 @@ export default function HomePage() {
           <div>직책: 개발팀장 (팀장 포함 2명)</div>
           <div>
             역할: '카페의 특색을 담아내는 사용자 주도 SNS형 디저트 정보 공유 공간' 디저트핏 기획 및
-            Frontend/Backend/Cloud 개발
+            Frontend · Backend · Cloud 개발
           </div>
         </li>
         <div className="border w-full my-6" />
@@ -979,6 +979,57 @@ export default function HomePage() {
       </p>
       <Image src="/images/mbti.png" alt="asd" width="551" height="304" className="mx-auto" />
       <h2 className="text-3xl my-8">프로젝트</h2>
+      <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
+        <h4>토스뱅크 여신 Admin (Frontend)</h4>
+        <div>10명 이상</div>
+        <div>2023년 8월 7일 ~ 현재</div>
+      </div>
+      <div className="flex gap-0.5 my-2">
+        <a
+          href="https://github.tossbank.it/loans-admin"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+        >
+          <div className="flex gap-1 items-center">
+            <Image src="/images/github.svg" alt="github" width="16" height="16" />
+            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
+              loans-admin (Priv.)
+            </h5>
+          </div>
+        </a>
+      </div>
+      <div>토스뱅크 내부용 대출 심사·승인·관리 서비스</div>
+      <div className="flex flex-wrap gap-1 my-2">
+        <a href="https://nextjs.org" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Next.js 13-000000?style=flat-square&logo=next.js&logoColor=white"
+            alt="next.js"
+          />
+        </a>
+        <a href="https://tailwindcss.com/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white"
+            alt="tailwind"
+          />
+        </a>
+        <a href="https://tanstack.com/query/v4/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/React Query-FF4154?style=flat-square&logo=react-query&logoColor=white"
+            alt="React Query Badge"
+          />
+        </a>
+      </div>
+      <ol>
+        <li>기존 Next.js 11 버전 대규모 코드베이스를 13으로 마이그레이션</li>
+        <li>
+          React.js 18 Suspense 기반 Layout, Page, fallback, loading 구조 적용으로 페이지 렌더링
+          최적화
+        </li>
+      </ol>
+      <div className="grid grid-cols-3"></div>
+
+      <div className="border w-full my-6" />
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>내일의집</h4>
         <div>2명</div>
