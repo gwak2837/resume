@@ -599,8 +599,8 @@ export default function HomePage() {
           <div>직책: Admin Developer</div>
           <div>직급: 단기계약직</div>
           <div>
-            역할: 대출 상품의 심사·운영에 필요한 내부 웹 서비스, 팀원들 업무의 효율성을 높이고 대출
-            고객의 불편함을 최소화하는 Admin 제품 개발
+            역할: 토스씨엑스 담당자의 대출 상품 심사·승인·운영 업무의 효율성을 높이며, 대출 고객의
+            불편함을 최소화하는 여신 관리 제품 개발
           </div>
         </li>
         <div className="border w-full my-6" />
@@ -980,7 +980,7 @@ export default function HomePage() {
       <Image src="/images/mbti.png" alt="asd" width="551" height="304" className="mx-auto" />
       <h2 className="text-3xl my-8">프로젝트</h2>
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
-        <h4>토스뱅크 여신 Admin (Frontend)</h4>
+        <h4>토스뱅크 여신 Admin</h4>
         <div>10명 이상</div>
         <div>2023년 8월 7일 ~ 현재</div>
       </div>
@@ -999,7 +999,10 @@ export default function HomePage() {
           </div>
         </a>
       </div>
-      <div>토스뱅크 내부용 대출 심사·승인·관리 서비스</div>
+      <div>
+        기존 은행에서 사용하는 통합단말을 대체하고, 토스씨엑스 내부적으로 사용하는 여신
+        심사·승인·운영 서비스를 Next.js 기반으로 Toss Design System을 적용하여 개발함.
+      </div>
       <div className="flex flex-wrap gap-1 my-2">
         <a href="https://nextjs.org" rel="noreferrer" target="_blank">
           <img
@@ -1007,10 +1010,10 @@ export default function HomePage() {
             alt="next.js"
           />
         </a>
-        <a href="https://tailwindcss.com/" rel="noreferrer" target="_blank">
+        <a href="https://toss.im/slash-21/sessions/3-4" rel="noreferrer" target="_blank">
           <img
-            src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white"
-            alt="tailwind"
+            src="https://img.shields.io/badge/Toss Design-0064FF?style=flat-square&logoColor=white"
+            alt="toss design system"
           />
         </a>
         <a href="https://tanstack.com/query/v4/" rel="noreferrer" target="_blank">
@@ -1021,6 +1024,7 @@ export default function HomePage() {
         </a>
       </div>
       <ol>
+        <li>Housing Loan 관련 대출 상품 </li>
         <li>기존 Next.js 11 버전 대규모 코드베이스를 13으로 마이그레이션</li>
         <li>
           React.js 18 Suspense 기반 Layout, Page, fallback, loading 구조 적용으로 페이지 렌더링
