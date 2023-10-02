@@ -594,13 +594,14 @@ export default function HomePage() {
             <a href="https://www.tossbank.com/" target="_blank" rel="noreferrer">
               <b>토스뱅크(주)</b>
             </a>
-            <div>2023년 8월 7일 ~ 현재</div>
+            <div>2023년 8월 7일 ~ 11월 7일 (3개월)</div>
           </div>
-          <div>직책: Admin Developer</div>
-          <div>직급: 단기계약직</div>
+          <div>직책: Frontend Developer</div>
+          <div>직위: 단기계약직</div>
+          <div>부서: Housing Loan Squad</div>
           <div>
-            역할: 토스씨엑스 담당자의 대출 상품 심사·승인·운영 업무의 효율성을 높이며, 대출 고객의
-            불편함을 최소화하는 여신 관리 제품 개발
+            역할: 토스씨엑스 담당자의 대출 관련 업무의 효율성을 높이며, 대출 고객의 불편함을
+            최소화하는 토스뱅크 여신 심사·관리·운영 시스템(LUMOS) 개발
           </div>
         </li>
         <div className="border w-full my-6" />
@@ -624,7 +625,7 @@ export default function HomePage() {
             </div>
           </div>
           <div>직책: 개발팀장 (팀장 포함 2명)</div>
-          <div>직급: 인턴</div>
+          <div>직위: 인턴</div>
           <div>
             역할:{' '}
             <a href="https://www.bemyseason.co.kr/" target="_blank" rel="noreferrer">
@@ -650,7 +651,7 @@ export default function HomePage() {
             </div>
           </div>
           <div>직책: 개발팀장 (팀장 포함 3명)</div>
-          <div>직급: 인턴</div>
+          <div>직위: 인턴</div>
           <div>역할: '4050 여성 전용 커뮤니티' 알파카살롱 기획 및 MVP 개발</div>
         </li>
         <div className="border w-full my-6" />
@@ -664,7 +665,7 @@ export default function HomePage() {
             </a>
           </div>
           <div>직책: 개발팀장 (팀장 포함 2명)</div>
-          <div>직급: 참여연구원</div>
+          <div>직위: 참여연구원</div>
           <div>
             역할: '3차) 블록체인 기술을 이용한 해외 건설프로젝트 스마트 분쟁관리 모델구축 연구' 과제
             참여. 건설 프로젝트 수주 협상 과정에서 주고 받는 이메일을 블록체인 상에 관리하여 추후
@@ -688,7 +689,7 @@ export default function HomePage() {
             </div>
           </div>
           <div>직책: Frontend 개발팀원 (팀장 포함 3명)</div>
-          <div>직급: 인턴</div>
+          <div>직위: 인턴</div>
           <div>
             역할:{' '}
             <a href="https://festa.io/" target="_blank" rel="noreferrer">
@@ -718,7 +719,7 @@ export default function HomePage() {
             </div>
           </div>
           <div>직책: 개발부원 (팀장 포함 3명)</div>
-          <div>직급: 인턴</div>
+          <div>직위: 인턴</div>
           <div>역할: '방탈출 리뷰 웹사이트' 기획·디자인 및 MVP 개발</div>
         </li>
         <div className="border w-full my-6" />
@@ -738,7 +739,7 @@ export default function HomePage() {
             </div>
           </div>
           <div>직책: 개발팀원 (팀장 포함 2명)</div>
-          <div>직급: 참여연구원</div>
+          <div>직위: 참여연구원</div>
           <div>
             역할: 'KFX IR 해석 기법 및 해석 소프트웨어 개발 연구' 과제 참여. 적외선 영상 통계 분석
             개발 보조 (C++), OpenMP 라이브러리 기반 병렬처리로 수학 계산 성능 최적화
@@ -761,7 +762,7 @@ export default function HomePage() {
             </div>
           </div>
           <div>직책: 연구4팀 팀원 (팀장 포함 10명 이상)</div>
-          <div>직급: 인턴</div>
+          <div>직위: 인턴</div>
           <div>역할: 설문 조사 데이터 통계 분석 및 엑셀 함수 작성</div>
         </li>
       </ul>
@@ -980,13 +981,13 @@ export default function HomePage() {
       <Image src="/images/mbti.png" alt="asd" width="551" height="304" className="mx-auto" />
       <h2 className="text-3xl my-8">프로젝트</h2>
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
-        <h4>토스뱅크 여신 Admin</h4>
-        <div>10명 이상</div>
+        <h4>토스뱅크 LUMOS (여신 심사·관리·운영 시스템)</h4>
+        <div>개발자: 6명, 비개발자: 5명</div>
         <div>2023년 8월 7일 ~ 현재</div>
       </div>
       <div className="flex gap-0.5 my-2">
         <a
-          href="https://github.tossbank.it/loans-admin"
+          href="https://github.tossbank.it/bank-lumos"
           target="_blank"
           rel="noreferrer"
           className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
@@ -994,14 +995,14 @@ export default function HomePage() {
           <div className="flex gap-1 items-center">
             <Image src="/images/github.svg" alt="github" width="16" height="16" />
             <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
-              loans-admin (Priv.)
+              bank-lumos (Priv.)
             </h5>
           </div>
         </a>
       </div>
       <div>
-        기존 은행에서 사용하는 통합단말을 대체하고, 토스씨엑스 내부적으로 사용하는 여신
-        심사·승인·운영 서비스를 Next.js 기반으로 Toss Design System을 적용하여 개발함.
+        기존 은행에서 사용하는 통합단말을 대체하면서, 토스씨엑스 내부적으로 사용하는 여신
+        심사·관리·운영 시스템을 Next.js와 Toss Design System 기반으로 개발함.
       </div>
       <div className="flex flex-wrap gap-1 my-2">
         <a href="https://nextjs.org" rel="noreferrer" target="_blank">
@@ -1030,6 +1031,7 @@ export default function HomePage() {
           React.js 18 Suspense 기반 Layout, Page, fallback, loading 구조 적용으로 페이지 렌더링
           최적화
         </li>
+        <li>프로젝트 Docker 빌드 시간을 275초 -{'>'} 213초로 (22%) 개선함</li>
       </ol>
       <div className="grid grid-cols-3"></div>
 
