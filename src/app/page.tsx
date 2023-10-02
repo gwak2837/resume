@@ -576,7 +576,6 @@ export default function HomePage() {
               alt="Notion Badge"
             />
           </a>
-
           <a href="" rel="noreferrer" target="_blank">
             <img
               src="https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white"
@@ -594,11 +593,13 @@ export default function HomePage() {
             <a href="https://www.tossbank.com/" target="_blank" rel="noreferrer">
               <b>토스뱅크(주)</b>
             </a>
-            <div>2023년 8월 7일 ~ 11월 7일 (3개월)</div>
+            <div>2023년 8월 7일 ~ 11월 7일 (3개월) (현재)</div>
           </div>
-          <div>직책: Frontend Developer</div>
+          <div className="grid grid-cols-2 gap-4">
+            <div>직책: Frontend Developer</div>
+            <div>부서: Housing Loan Squad</div>
+          </div>
           <div>직위: 단기계약직</div>
-          <div>부서: Housing Loan Squad</div>
           <div>
             역할: 토스씨엑스 담당자의 대출 관련 업무의 효율성을 높이며, 대출 고객의 불편함을
             최소화하는 토스뱅크 여신 심사·관리·운영 시스템(LUMOS) 개발
@@ -980,9 +981,12 @@ export default function HomePage() {
       </p>
       <Image src="/images/mbti.png" alt="asd" width="551" height="304" className="mx-auto" />
       <h2 className="text-3xl my-8">프로젝트</h2>
-      <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
-        <h4>토스뱅크 LUMOS (여신 심사·관리·운영 시스템)</h4>
-        <div>개발자: 6명, 비개발자: 5명</div>
+      <div className="grid grid-cols-[2fr_2fr_3fr] gap-4 my-4">
+        <h4>
+          토스뱅크 LUMOS <br />
+          (여신 심사·관리·운영 시스템)
+        </h4>
+        <div>개발: 6명 | 비개발: 5명</div>
         <div>2023년 8월 7일 ~ 현재</div>
       </div>
       <div className="flex gap-0.5 my-2">
@@ -1013,7 +1017,7 @@ export default function HomePage() {
         </a>
         <a href="https://toss.im/slash-21/sessions/3-4" rel="noreferrer" target="_blank">
           <img
-            src="https://img.shields.io/badge/Toss Design-0064FF?style=flat-square&logoColor=white"
+            src="https://img.shields.io/badge/Toss Design System-0064FF?style=flat-square&logoColor=white"
             alt="toss design system"
           />
         </a>
@@ -1021,6 +1025,24 @@ export default function HomePage() {
           <img
             src="https://img.shields.io/badge/React Query-FF4154?style=flat-square&logo=react-query&logoColor=white"
             alt="React Query Badge"
+          />
+        </a>
+        <a href="" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Slack-4A154B?style=flat-square&logo=slack&logoColor=white"
+            alt="Slack Badge"
+          />
+        </a>
+        <a href="" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white"
+            alt="Jira Badge"
+          />
+        </a>
+        <a href="" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=notion&logoColor=white"
+            alt="Notion Badge"
           />
         </a>
       </div>
