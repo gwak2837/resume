@@ -5,7 +5,7 @@ import Image from 'next/image'
 import OtherCertificates from './OtherCertificates'
 
 export default function HomePage() {
-  const date = '2023년 8월 8일'
+  const date = '2023년 10월 8일'
   return (
     <main className="mx-auto mb-8 max-w-[720px]">
       <h1 className="text-4xl mb-6 font-semibold w-full">이력서</h1>
@@ -225,7 +225,7 @@ export default function HomePage() {
       <div className="flex gap-1">
         <a href="https://javascript.info/" rel="noreferrer" target="_blank">
           <img
-            src="https://img.shields.io/badge/ES2022-F7DF1E?style=flat-square&logo=JavaScript&logoColor=black"
+            src="https://img.shields.io/badge/ES2023-F7DF1E?style=flat-square&logo=JavaScript&logoColor=black"
             alt="JavaScript Badge"
           />
         </a>
@@ -305,12 +305,6 @@ export default function HomePage() {
               alt="styled Badge"
             />
           </a>
-          <a href="https://emotion.sh/docs/introduction" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Emotion-C43BAD?style=flat-square&logo=&logoColor=white"
-              alt="emotion Badge"
-            />
-          </a>
         </div>
         <div className="flex gap-1">
           <a
@@ -345,8 +339,6 @@ export default function HomePage() {
               alt="Web Push Badge"
             />
           </a>
-        </div>
-        <div className="flex gap-1">
           <a href="https://analytics.google.com/analytics/web/" rel="noreferrer" target="_blank">
             <img
               src="https://img.shields.io/badge/GA-E37400?style=flat-square&logo=Google Analytics&logoColor=white"
@@ -357,12 +349,6 @@ export default function HomePage() {
             <img
               src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=Figma&logoColor=white"
               alt="Figma Badge"
-            />
-          </a>
-          <a href="https://www.adobe.com/products/xd.html" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Adobe XD-FF61F6?style=flat-square&logo=Adobe XD&logoColor=black"
-              alt="Adobe XD Badge"
             />
           </a>
         </div>
@@ -376,12 +362,6 @@ export default function HomePage() {
               alt="Fastify Badge"
             />
           </a>
-          <a href="https://en.wikipedia.org/wiki/HTTP/3" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/HTTP3-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
-              alt="HTTP3 Badge"
-            />
-          </a>
           <a
             href="https://en.wikipedia.org/wiki/HTTP/2_Server_Push"
             rel="noreferrer"
@@ -392,6 +372,7 @@ export default function HomePage() {
               alt="Server Push Badge"
             />
           </a>
+
           <a href="https://nodejs.org/en/" rel="noreferrer" target="_blank">
             <img
               src="https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white"
@@ -418,18 +399,6 @@ export default function HomePage() {
           </a>
         </div>
         <div className="flex gap-1">
-          <a href="https://expressjs.com/" rel="noreferrer">
-            <img
-              src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white"
-              alt="Express Badge"
-            />
-          </a>
-          <a href="https://www.apollographql.com/docs/apollo-server/" rel="noreferrer">
-            <img
-              src="https://img.shields.io/badge/Apollo-311C87?style=flat-square&logo=apollo-graphql&logoColor=white"
-              alt="apollographql Badge"
-            />
-          </a>
           <a href="https://graphql.org/" rel="noreferrer" target="_blank">
             <img
               src="https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white"
@@ -440,12 +409,6 @@ export default function HomePage() {
             <img
               src="https://img.shields.io/badge/Socket.io-010101?style=flat-square&logo=Socket.io&logoColor=white"
               alt="WebSocket Badge"
-            />
-          </a>
-          <a href="https://www.mysql.com/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"
-              alt="MySQL Badge"
             />
           </a>
         </div>
@@ -538,26 +501,20 @@ export default function HomePage() {
               alt="Prettier Badge"
             />
           </a>
-          <a href="https://webpack.js.org/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Webpack-8DD6F9?style=flat-square&logo=webpack&logoColor=black"
-              alt="Webpack Badge"
-            />
-          </a>
           <a href="" rel="noreferrer" target="_blank">
             <img
               src="https://img.shields.io/badge/Jest-C21325?style=flat-square&logo=jest&logoColor=white"
               alt="Jest Badge"
             />
           </a>
-        </div>
-        <div className="flex gap-1">
           <a href="" rel="noreferrer" target="_blank">
             <img
               src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"
               alt="Git Badge"
             />
           </a>
+        </div>
+        <div className="flex gap-1">
           <a href="https://code.visualstudio.com/" rel="noreferrer" target="_blank">
             <img
               src="https://img.shields.io/badge/VSCode-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white"
