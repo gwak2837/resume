@@ -275,16 +275,17 @@ export default function HomePage() {
               alt="tailwind Badge"
             />
           </a>
-          <a href="https://web.dev/progressive-web-apps/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/PWA-5A0FC8?style=flat-square&logo=PWA&logoColor=white"
-              alt="PWA Badge"
-            />
-          </a>
+
           <a href="https://tanstack.com/query/v4/" rel="noreferrer" target="_blank">
             <img
               src="https://img.shields.io/badge/React Query-FF4154?style=flat-square&logo=react-query&logoColor=white"
               alt="React Query Badge"
+            />
+          </a>
+          <a href="https://zustand-demo.pmnd.rs/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Zustand-3578e5?style=flat-square&logo=Zustand&logoColor=white"
+              alt="Zustand Badge"
             />
           </a>
           <a href="https://recoiljs.org/" rel="noreferrer" target="_blank">
@@ -296,13 +297,13 @@ export default function HomePage() {
           <a href="https://react-hook-form.com/" rel="noreferrer" target="_blank">
             <img
               src="https://img.shields.io/badge/React Form-EC5990?style=flat-square&logo=react-hook-form&logoColor=white"
-              alt="eact-hook-form Badge"
+              alt="react-hook-form Badge"
             />
           </a>
-          <a href="https://styled-components.com/" rel="noreferrer" target="_blank">
+          <a href="https://web.dev/progressive-web-apps/" rel="noreferrer" target="_blank">
             <img
-              src="https://img.shields.io/badge/Styled-DB7093?style=flat-square&logo=styled-components&logoColor=white"
-              alt="styled Badge"
+              src="https://img.shields.io/badge/PWA-5A0FC8?style=flat-square&logo=PWA&logoColor=white"
+              alt="PWA Badge"
             />
           </a>
         </div>
@@ -542,7 +543,7 @@ export default function HomePage() {
         </div>
       </div>
       <h2 className="text-3xl my-8">
-        개발 경력 <span className="text-base">(1년 4개월+)</span>
+        개발 경력 <span className="text-base">(1년 6개월+)</span>
       </h2>
       <ul>
         <li>
@@ -560,6 +561,38 @@ export default function HomePage() {
           <div>
             역할: 토스씨엑스 담당자의 대출 관련 업무의 효율성을 높이며, 대출 고객의 불편함을
             최소화하는 토스뱅크 여신 심사·관리·운영 시스템(LUMOS) 개발
+          </div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
+            <a
+              href="https://innotalk.co.kr/channel/detail?cid=C0008652"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>주식회사 플랜바이테크놀로지스</b>
+            </a>
+            <div>
+              <a href="/images/planby-1.webp" target="_blank">
+                2023년 7월 24일
+              </a>
+              {' ~ '}
+              <a href="/images/planby-2.webp" target="_blank">
+                8월 6일
+              </a>{' '}
+              <a href="/images/planby-3.webp" target="_blank">
+                (2주)
+              </a>
+            </div>
+          </div>
+          <div>직책: 개발자문</div>
+          <div>
+            역할: 고등학교 친구가 창업한 스타트업의{' '}
+            <a href="https://landing.planby.us/" target="_blank" rel="noreferrer">
+              'HOMI AI - 인공지능이 꾸며주는 나의 공간'
+            </a>{' '}
+            인테리어 디자인 AI 자동화 솔루션 MVP 개발
           </div>
         </li>
         <div className="border w-full my-6" />
@@ -726,38 +759,6 @@ export default function HomePage() {
       </ul>
       <h2 className="text-3xl my-8">개발 경험</h2>
       <ul>
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <a
-              href="https://innotalk.co.kr/channel/detail?cid=C0008652"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <b>주식회사 플랜바이테크놀로지스</b>
-            </a>
-            <div>
-              <a href="/images/planby-1.webp" target="_blank">
-                2023년 7월 24일
-              </a>
-              {' ~ '}
-              <a href="/images/planby-2.webp" target="_blank">
-                8월 6일
-              </a>{' '}
-              <a href="/images/planby-3.webp" target="_blank">
-                (2주)
-              </a>
-            </div>
-          </div>
-          <div>직책: 개발자문</div>
-          <div>
-            역할: 고등학교 친구가 창업한 스타트업의{' '}
-            <a href="https://landing.planby.us/" target="_blank" rel="noreferrer">
-              'HOMI AI - 인공지능이 꾸며주는 나의 공간'
-            </a>{' '}
-            인테리어 디자인 AI 자동화 솔루션 MVP 개발
-          </div>
-        </li>
-        <div className="border w-full my-6" />
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
             <b>카투사 1지역대 정보작전과 (동두천)</b>
