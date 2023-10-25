@@ -2,6 +2,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 
+import FestaLogo from '../svgs/FestaLogo'
 import OtherCertificates from './OtherCertificates'
 
 export default function HomePage() {
@@ -288,10 +289,10 @@ export default function HomePage() {
               alt="Zustand Badge"
             />
           </a>
-          <a href="https://recoiljs.org/" rel="noreferrer" target="_blank">
+          <a href="https://zod.dev/" rel="noreferrer" target="_blank">
             <img
-              src="https://img.shields.io/badge/Recoil-3578e5?style=flat-square&logo=recoil&logoColor=white"
-              alt="Recoil Badge"
+              src="https://img.shields.io/badge/Zod-3E67B1?style=flat-square&logo=zod&logoColor=white"
+              alt="zod"
             />
           </a>
           <a href="https://react-hook-form.com/" rel="noreferrer" target="_blank">
@@ -398,6 +399,12 @@ export default function HomePage() {
               alt="Redis Badge"
             />
           </a>
+          <a href="https://sentry.io/welcome/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Sentry-362D59?style=flat-square&logo=sentry&logoColor=white"
+              alt="Sentry"
+            />
+          </a>
         </div>
         <div className="flex gap-1">
           <a href="https://graphql.org/" rel="noreferrer" target="_blank">
@@ -421,12 +428,6 @@ export default function HomePage() {
             <img
               src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white"
               alt="Vercel Badge"
-            />
-          </a>
-          <a href="" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Oracle Instance-F80000?style=flat-square&logo=oracle&logoColor=white"
-              alt="Oracle Badge"
             />
           </a>
           <a href="https://cloud.google.com/gcp/" rel="noreferrer" target="_blank">
@@ -543,21 +544,32 @@ export default function HomePage() {
         </div>
       </div>
       <h2 className="text-3xl my-8">
-        개발 경력 <span className="text-base">(1년 6개월+)</span>
+        개발 경력 <span className="text-base">(1년 7개월)</span>
       </h2>
       <ul>
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
-            <a href="https://www.tossbank.com/" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.tossbank.com/"
+              className="flex gap-2 items-center"
+              target="_blank"
+              rel="noreferrer"
+            >
               <b>토스뱅크(주)</b>
+              <Image
+                src="/images/TossBank_Logo_Primary.png"
+                alt="tossbank"
+                width="80"
+                height="14"
+              />
             </a>
-            <div>2023년 8월 7일 ~ 11월 7일 (3개월) (현재)</div>
+            <div>2023년 8월 7일 ~ 11월 6일 (3개월)</div>
           </div>
           <div className="grid grid-cols-2 gap-4">
-            <div>직책: Frontend Developer</div>
+            <div>직책: Frontend Developer (LUMOS)</div>
             <div>부서: Housing Loan Squad</div>
           </div>
-          <div>직위: 단기계약직</div>
+          <div>직위: 계약직</div>
           <div>
             역할: 토스씨엑스 담당자의 대출 관련 업무의 효율성을 높이며, 대출 고객의 불편함을
             최소화하는 토스뱅크 여신 심사·관리·운영 시스템(LUMOS) 개발
@@ -567,11 +579,13 @@ export default function HomePage() {
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
             <a
-              href="https://innotalk.co.kr/channel/detail?cid=C0008652"
+              href="https://www.nextunicorn.kr/company/b3edccdaf3754d06?tab=all"
+              className="flex gap-2 items-center"
               target="_blank"
               rel="noreferrer"
             >
-              <b>주식회사 플랜바이테크놀로지스</b>
+              <b>(주)플랜바이테크놀로지스</b>
+              <Image src="/images/planby-logo.png" alt="planby" width="50" height="25" />
             </a>
             <div>
               <a href="/images/planby-1.webp" target="_blank">
@@ -588,7 +602,7 @@ export default function HomePage() {
           </div>
           <div>직책: 개발자문</div>
           <div>
-            역할: 고등학교 친구가 창업한 스타트업의{' '}
+            역할:{' '}
             <a href="https://landing.planby.us/" target="_blank" rel="noreferrer">
               'HOMI AI - 인공지능이 꾸며주는 나의 공간'
             </a>{' '}
@@ -600,10 +614,17 @@ export default function HomePage() {
           <div className="grid grid-cols-2 gap-4 my-4">
             <a
               href="https://www.saramin.co.kr/zf_user/company-info/view?csn=eFE2Qks5TzVpanROVE5pQW9ZbGMyZz09"
+              className="flex gap-2 items-center"
               target="_blank"
               rel="noreferrer"
             >
               <b>(주)더하트컴퍼니</b>
+              <Image
+                src="/images/theheartcompany-logo.png"
+                alt="theheartcompany"
+                width="56"
+                height="24"
+              />
             </a>
             <div>
               <a href="/images/2022-theheartcompany.webp" target="_blank">
@@ -617,6 +638,7 @@ export default function HomePage() {
           </div>
           <div>직책: 개발팀장 (팀장 포함 2명)</div>
           <div>직위: 인턴</div>
+
           <div>
             역할:{' '}
             <a href="https://www.bemyseason.co.kr/" target="_blank" rel="noreferrer">
@@ -630,10 +652,12 @@ export default function HomePage() {
           <div className="grid grid-cols-2 gap-4 my-4">
             <a
               href="https://www.saramin.co.kr/zf_user/company-info/view?csn=TTNPako4L0s0cVFhdktlYjlwZ0JZUT09"
+              className="flex gap-2 items-center"
               target="_blank"
               rel="noreferrer"
             >
               <b>(주)알파카살롱</b>
+              <Image src="/images/알파카살롱-logo.jpg" alt="알파카살롱" width="72" height="24" />
             </a>
             <div>
               <a href="/images/2021-alpacasalon.webp" target="_blank">
@@ -668,10 +692,12 @@ export default function HomePage() {
           <div className="grid grid-cols-2 gap-4 my-4">
             <a
               href="https://www.saramin.co.kr/zf_user/company-info/view?csn=VUxtcFBINlJLR2wra01lNlhjbEV0QT09"
+              className="flex gap-2 items-center"
               target="_blank"
               rel="noreferrer"
             >
               <b>(주)페스타</b>
+              <FestaLogo />
             </a>
             <div>
               <a href="/images/2020-festa.webp" target="_blank">
@@ -945,7 +971,7 @@ export default function HomePage() {
           (여신 심사·관리·운영 시스템)
         </h4>
         <div>개발: 6명 | 비개발: 5명</div>
-        <div>2023년 8월 7일 ~ 현재</div>
+        <div>2023년 8월 7일 ~ 11월 6일 (3개월)</div>
       </div>
       <div className="flex gap-0.5 my-2">
         <a
