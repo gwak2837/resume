@@ -571,8 +571,8 @@ export default function HomePage() {
           </div>
           <div>직위: 계약직</div>
           <div>
-            역할: 토스씨엑스 담당자의 대출 관련 업무의 효율성을 높이며, 대출 고객의 불편함을
-            최소화하는 토스뱅크 여신 심사·관리·운영 시스템(LUMOS, 루모스) 개발
+            역할: 대출 관련 프로세스 자동화로 토스씨엑스 담당자의 업무 효율성을 높이며, 대출 고객의
+            불편함을 최소화하는 토스뱅크 여신 심사·관리·운영 시스템(LUMOS, 루모스) 개발
           </div>
         </li>
         <div className="border w-full my-6" />
@@ -1020,6 +1020,12 @@ export default function HomePage() {
             alt="React Query Badge"
           />
         </a>
+        <a href="https://zod.dev/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Zod-3E67B1?style=flat-square&logo=zod&logoColor=white"
+            alt="zod"
+          />
+        </a>
         <a href="" rel="noreferrer" target="_blank">
           <img
             src="https://img.shields.io/badge/Slack-4A154B?style=flat-square&logo=slack&logoColor=white"
@@ -1054,7 +1060,7 @@ export default function HomePage() {
         <li>
           검색 조건을 querystring에 저장해 페이지 이동이 일어나도 입력했던 검색 조건을 유지시킴
         </li>
-        <li>LUMOS 프로젝트 빌드 시간을 305초 -{'>'} 213초로 (30%) 개선함</li>
+        <li>LUMOS 프로젝트 Docker 이미지 빌드 시간을 305초 -{'>'} 213초로 (30%) 개선함</li>
       </ol>
       <div className="grid grid-cols-3"></div>
 
