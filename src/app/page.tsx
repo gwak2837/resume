@@ -566,7 +566,7 @@ export default function HomePage() {
             <div>2023년 8월 7일 ~ 11월 6일 (3개월)</div>
           </div>
           <div className="grid grid-cols-2 gap-4">
-            <div>직책: Admin Developer</div>
+            <div>직책: Frontend Developer (LUMOS)</div>
             <div>부서: Housing Loan Squad</div>
           </div>
           <div>직위: 계약직</div>
@@ -712,7 +712,7 @@ export default function HomePage() {
             <a href="https://festa.io/" target="_blank" rel="noreferrer">
               '페스타 - 온·오프라인 이벤트 티켓 및 고객 관리 서비스'
             </a>{' '}
-            관리자(Admin) 페이지 기획 및 개발
+            Admin(관리자) 서비스 기획 및 개발
           </div>
         </li>
         <div className="border w-full my-6" />
@@ -992,7 +992,7 @@ export default function HomePage() {
           <div className="flex gap-1 items-center">
             <Image src="/images/github.svg" alt="github" width="16" height="16" />
             <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
-              loans-admin (Priv.)
+              bank-lumos (Priv.)
             </h5>
           </div>
         </a>
