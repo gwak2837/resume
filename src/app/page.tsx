@@ -6,7 +6,7 @@ import FestaLogo from '../svgs/FestaLogo'
 import OtherCertificates from './OtherCertificates'
 
 export default function HomePage() {
-  const date = '2023년 10월 8일'
+  const date = '2023년 11월 7일'
   return (
     <main className="mx-auto mb-8 max-w-[720px]">
       <h1 className="text-4xl mb-6 font-semibold w-full">이력서</h1>
@@ -563,7 +563,7 @@ export default function HomePage() {
                 height="14"
               />
             </a>
-            <div>2023년 8월 7일 ~ 11월 6일 (3개월) (현재)</div>
+            <div>2023년 8월 7일 ~ 11월 6일 (3개월)</div>
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div>직책: Admin Developer</div>
