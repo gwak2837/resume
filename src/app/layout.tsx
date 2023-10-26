@@ -9,10 +9,54 @@ import {
   APPLICATION_SHORT_NAME,
   AUTHOR,
   CANONICAL_URL,
+  CATEGORY,
+  DESCRIPTION,
   KEYWORDS,
-  SUBJECT,
+  THEME_COLOR,
 } from '../common/constants'
 import GoogleAnalytics from '../components/GoogleAnalytics'
+
+export const metadata: Metadata = {
+  metadataBase: new URL(CANONICAL_URL),
+  title: APPLICATION_NAME,
+  description: DESCRIPTION,
+  applicationName: APPLICATION_SHORT_NAME,
+  authors: [{ url: '', name: AUTHOR }],
+  generator: null,
+  keywords: KEYWORDS,
+  referrer: 'strict-origin-when-cross-origin',
+  themeColor: THEME_COLOR,
+  viewport: { width: 'device-width', initialScale: 1, viewportFit: 'cover' },
+  robots: { index: true, follow: true },
+  alternates: { canonical: CANONICAL_URL },
+  icons: {
+    icon: '/icon.png',
+    apple: '/apple-icon.png',
+    shortcut: '/shortcut-icon.png',
+  },
+  manifest: '/manifest.webmanifest',
+  openGraph: {
+    title: APPLICATION_NAME,
+    description: DESCRIPTION,
+    type: 'website',
+    url: CANONICAL_URL,
+    siteName: APPLICATION_NAME,
+    locale: 'ko_KR',
+    images: [{ url: '/images/og-image.webp', alt: `${APPLICATION_SHORT_NAME} 로고` }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: [{ url: '/images/og-image.webp', alt: `${APPLICATION_SHORT_NAME} 로고` }],
+  },
+  appleWebApp: { title: APPLICATION_SHORT_NAME, capable: true, statusBarStyle: 'black' },
+  formatDetection: { telephone: true, date: true, address: true, email: true, url: true },
+  appLinks: { web: { url: CANONICAL_URL } },
+  archives: CANONICAL_URL,
+  assets: CANONICAL_URL,
+  bookmarks: CANONICAL_URL,
+  category: CATEGORY,
+  classification: CATEGORY,
+}
 
 const myFont = localFont({
   src: './PretendardVariable.woff2',
@@ -34,48 +78,15 @@ const myFont = localFont({
   ],
 })
 
-function getISODate(d: Date) {
-  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(
-    d.getDate()
-  ).padStart(2, '0')}`
-}
-
-export const metadata: Metadata = {
-  title: `${getISODate(new Date())} 이력서 포트폴리오`,
-}
-
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="ko-KR" className={myFont.className}>
-      <head />
-
-      <meta property="og:site_name" content={APPLICATION_NAME} />
-      <meta property="og:type" content="website" />
-      <meta property="og:locale" content="ko_KR" />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:image:alt" content={`${APPLICATION_SHORT_NAME} 로고`} />
-
-      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <html lang="ko">
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-      <link rel="manifest" href="/site.webmanifest" />
-      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#f98c24" />
-      <meta name="msapplication-TileColor" content="#da532c" />
-      <meta name="theme-color" content="#f98c24" />
-
-      <link rel="shortcut icon" href="/images/shortcut-icon.png" />
-      <link rel="canonical" href={CANONICAL_URL} />
-      <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-      <meta name="author" content={AUTHOR} />
-      <meta name="keywords" content={KEYWORDS} />
-      <meta name="application-name" content={APPLICATION_SHORT_NAME} />
+      <link rel="mask-icon" href="/safari-pinned-tab.svg" color={THEME_COLOR} />
+      <meta name="msapplication-TileColor" content="#2b5797" />
       <meta name="mobile-web-app-capable" content="yes" />
-      <meta name="apple-mobile-web-app-title" content={APPLICATION_SHORT_NAME} />
-      <meta name="apple-mobile-web-app-capable" content="yes" />
-      <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-      <meta name="subject" content={SUBJECT} />
+      <meta name="subject" content={DESCRIPTION} />
       <meta name="rating" content="general" />
-      <meta name="robots" content="index,follow" />
       <meta name="revisit-after" content="3 days" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 
