@@ -563,16 +563,16 @@ export default function HomePage() {
                 height="14"
               />
             </a>
-            <div>2023년 8월 7일 ~ 11월 6일 (3개월)</div>
+            <div>2023년 8월 7일 ~ 11월 6일 (3개월) (현재)</div>
           </div>
           <div className="grid grid-cols-2 gap-4">
-            <div>직책: Frontend Developer (LUMOS)</div>
+            <div>직책: Admin Developer</div>
             <div>부서: Housing Loan Squad</div>
           </div>
           <div>직위: 계약직</div>
           <div>
             역할: 토스씨엑스 담당자의 대출 관련 업무의 효율성을 높이며, 대출 고객의 불편함을
-            최소화하는 토스뱅크 여신 심사·관리·운영 시스템(LUMOS) 개발
+            최소화하는 토스뱅크 여신 심사·관리·운영 시스템(LUMOS, 루모스) 개발
           </div>
         </li>
         <div className="border w-full my-6" />
@@ -720,10 +720,17 @@ export default function HomePage() {
           <div className="grid grid-cols-2 gap-4 my-4">
             <a
               href="https://www.saramin.co.kr/zf_user/company-info/view?csn=VHFyWXhFL2E1N1hYMkhEZmUxK05SZz09"
+              className="flex gap-2 items-center"
               target="_blank"
               rel="noreferrer"
             >
               <b>(주)행복한 다람쥐단 </b>
+              <Image
+                src="/images/happydaram-logo.webp"
+                alt="행복한다람쥐단"
+                width="28"
+                height="25"
+              />
             </a>
             <div>
               <a href="/images/2019-happydaram.webp" target="_blank">
@@ -767,10 +774,12 @@ export default function HomePage() {
           <div className="grid grid-cols-2 gap-4 my-4">
             <a
               href="https://www.saramin.co.kr/zf_user/company-info/view/csn/b2ZtOGw4SWdmTldhbjVLK2pqNzdDZz09/company_nm/(%EC%A3%BC)%EB%A6%AC%EC%84%9C%EC%B9%98%EB%9E%A9"
+              className="flex gap-2 items-center"
               target="_blank"
               rel="noreferrer"
             >
               <b>(주)리서치랩</b>
+              <Image src="/images/researchlab-logo.jpg" alt="리서치랩" width="69" height="20" />
             </a>
             <div>
               <a href="/images/2017-researchlab.webp" target="_blank">
@@ -967,7 +976,7 @@ export default function HomePage() {
       <h2 className="text-3xl my-8">프로젝트</h2>
       <div className="grid grid-cols-[2fr_2fr_3fr] gap-4 my-4">
         <h4>
-          토스뱅크 LUMOS <br />
+          토스뱅크 LUMOS, 루모스 <br />
           (여신 심사·관리·운영 시스템)
         </h4>
         <div>개발: 6명 | 비개발: 5명</div>
@@ -983,14 +992,14 @@ export default function HomePage() {
           <div className="flex gap-1 items-center">
             <Image src="/images/github.svg" alt="github" width="16" height="16" />
             <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
-              bank-lumos (Priv.)
+              loans-admin (Priv.)
             </h5>
           </div>
         </a>
       </div>
       <div>
         기존 은행에서 사용하는 통합단말을 대체하면서, 토스씨엑스 내부적으로 사용하는 여신
-        심사·관리·운영 시스템을 Next.js와 Toss Design System 기반으로 개발함.
+        심사·관리·운영 시스템을 Next.js와 Toss Design System 기반으로 개발함
       </div>
       <div className="flex flex-wrap gap-1 my-2">
         <a href="https://nextjs.org" rel="noreferrer" target="_blank">
@@ -1031,19 +1040,27 @@ export default function HomePage() {
         </a>
       </div>
       <ol>
-        <li>Housing Loan 관련 대출 상품 </li>
-        <li>기존 Next.js 11 버전 대규모 코드베이스를 13으로 마이그레이션</li>
         <li>
-          React.js 18 Suspense 기반 Layout, Page, fallback, loading 구조 적용으로 페이지 렌더링
-          최적화
+          토스씨엑스 팀원과 소통하며 전월세보증금대출 서류심사 및 사후관리와 관련된 기능을 개발함
         </li>
-        <li>프로젝트 Docker 빌드 시간을 275초 -{'>'} 213초로 (22%) 개선함</li>
+        <li>Suspense 컴포넌트와 ErrorBoundary 개념을 이용해 네트워크 상태를 선언적으로 관리함</li>
+        <li>React Query를 사용해 응답 순서가 보장되지 않는 네트워크 요청을 비동기로 관리함</li>
+        <li>Promise를 활용해 Modal, Dialog 등의 컴포넌트 열기/닫기 로직을 선언적으로 관리함</li>
+        <li>
+          <code>ts-pattern</code>의 match 함수와 Funnel 패턴을 활용해 다단계 페이지 이동을
+          명시적으로 관리함
+        </li>
+        <li>연관된 코드는 가까운 곳에 배치하여 컴포넌트 응집도를 높여 DX를 향상함</li>
+        <li>
+          검색 조건을 querystring에 저장해 페이지 이동이 일어나도 입력했던 검색 조건을 유지시킴
+        </li>
+        <li>LUMOS 프로젝트 빌드 시간을 305초 -{'>'} 213초로 (30%) 개선함</li>
       </ol>
       <div className="grid grid-cols-3"></div>
 
       <div className="border w-full my-6" />
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
-        <h4>내일의집</h4>
+        <h4>HOMI AI</h4>
         <div>2명</div>
         <div>2023년 7월 24일 ~ 8월 6일 (2주)</div>
       </div>
