@@ -550,7 +550,7 @@ export default function HomePage() {
         </div>
       </div>
       <h2 className="text-3xl my-8">
-        개발 경력 <span className="text-base">(1년 7개월)</span>
+        개발 경력 <span className="text-base">(1년 8개월)</span>
       </h2>
       <ul>
         <li>
@@ -694,6 +694,22 @@ export default function HomePage() {
             참여. 건설 프로젝트 수주 협상 과정에서 주고 받는 이메일을 블록체인 상에 관리하여 추후
             분쟁 발생 여지를 최소화하는 사이트 개발
           </div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
+            <a href="https://www.headstartsv.com/" target="_blank" rel="noreferrer">
+              <b>Headstart Silicon Valley, Inc.</b>
+            </a>
+            <div>
+              <a href="/images/2021-headstart-sv.webp" target="_blank">
+                2021년 1월 4일 ~ 2월 5일 (1개월)
+              </a>
+            </div>
+          </div>
+          <div>직책: 프로젝트 팀장 (팀장 포함 5명)</div>
+          <div>직위: 인턴</div>
+          <div>역할: ‘음성인식 기반 노래검색 서비스’ Icezam 기획 및 개발</div>
         </li>
         <div className="border w-full my-6" />
         <li>
@@ -902,21 +918,6 @@ export default function HomePage() {
         <div className="border w-full my-6" />
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
-            <a href="https://www.headstartsv.com/" target="_blank" rel="noreferrer">
-              <b>Headstart Silicon Valley, Inc.</b>
-            </a>
-            <div>
-              <a href="/images/2021-headstart-sv.webp" target="_blank">
-                2021년 1월 4일 ~ 2월 5일 (1개월)
-              </a>
-            </div>
-          </div>
-          <div>직책: 프로젝트 팀장 (팀장 포함 5명)</div>
-          <div>역할: ‘음성인식 기반 노래검색 서비스’ Icezam 기획 및 개발</div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
             <b>중앙대학교 2019년 2학기 SW 기초 교과목 멘토</b>
             <div>2019년 9월 16일 ~ 12월 13일 (3개월)</div>
           </div>
@@ -1062,7 +1063,7 @@ export default function HomePage() {
       </div>
       <ol>
         <li>
-          전월세보증금대출 상품 출시 후 토스씨엑스 팀원과 소통하며 대출 서류심사 및 사후관리와
+          전월세보증금대출 상품 출시 전후 토스씨엑스 팀원과 소통하며 대출 서류심사 및 사후관리와
           관련된 기능을 개발함
         </li>
         <li>Suspense 컴포넌트와 ErrorBoundary 개념을 이용해 네트워크 상태를 선언적으로 관리함</li>
