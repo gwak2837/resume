@@ -1078,7 +1078,7 @@ export default function HomePage() {
           Kibana 검색 및 집계 기능을 사용하여 오류 발생 주기와 원인을 분석하고, 개선된 코드를 제안
           및 구현함
         </li>
-        <li>LUMOS 프로젝트 Docker 이미지 빌드 시간을 305초 -{'>'} 213초로 (30%) 개선함</li>
+        <li>LUMOS 프로젝트 Docker 이미지 빌드 시간을 305초 → 213초로 (30%) 개선함</li>
         <li>사전에 팀의 코드 컨벤션을 논의하고 브랜치 전략을 공유해 Code Review 효율성을 높임</li>
       </ol>
       <div className="grid grid-cols-3"></div>
