@@ -1,4 +1,4 @@
-import { getISODate } from '../utils/date'
+import { getISODate } from '../util/date'
 
 export const NODE_ENV = process.env.NODE_ENV as string
 export const PROJECT_ENV = process.env.PROJECT_ENV as string
