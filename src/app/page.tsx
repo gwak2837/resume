@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 
 import FestaLogo from '../svg/FestaLogo'
