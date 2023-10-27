@@ -569,7 +569,9 @@ export default function HomePage() {
                 height="14"
               />
             </a>
-            <div>2023년 8월 7일 ~ 11월 6일 (3개월) (현재)</div>
+            <a href="/pdf/토스뱅크-재직증명서.pdf" target="_blank">
+              <div>2023년 8월 7일 ~ 11월 6일 (3개월) (현재)</div>
+            </a>
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div>직책: Frontend Developer (LUMOS)</div>
