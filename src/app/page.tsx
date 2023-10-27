@@ -12,7 +12,7 @@ export default function HomePage() {
       <h1 className="text-4xl mb-6 font-semibold w-full">이력서</h1>
       <div>
         <div className="grid gap-4 grid-cols-2">
-          <Image src="/images/1.webp" alt="asd" width="350" height="350" />
+          <Image src="/images/1.webp" alt="asd" width="350" height="350" priority />
           <table className="border-none w-fit	">
             <tbody>
               <tr>
