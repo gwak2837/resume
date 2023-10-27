@@ -307,6 +307,12 @@ export default function HomePage() {
               alt="PWA Badge"
             />
           </a>
+          <a href="https://sentry.io/welcome/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Sentry-362D59?style=flat-square&logo=sentry&logoColor=white"
+              alt="Sentry"
+            />
+          </a>
         </div>
         <div className="flex gap-1">
           <a
@@ -399,10 +405,10 @@ export default function HomePage() {
               alt="Redis Badge"
             />
           </a>
-          <a href="https://sentry.io/welcome/" rel="noreferrer" target="_blank">
+          <a href="https://www.elastic.co/kr/kibana" rel="noreferrer" target="_blank">
             <img
-              src="https://img.shields.io/badge/Sentry-362D59?style=flat-square&logo=sentry&logoColor=white"
-              alt="Sentry"
+              src="https://img.shields.io/badge/Kibana-005571?style=flat-square&logo=kibana&logoColor=white"
+              alt="kibana"
             />
           </a>
         </div>
@@ -1026,6 +1032,13 @@ export default function HomePage() {
             alt="zod"
           />
         </a>
+        <a href="https://www.elastic.co/kr/kibana" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Kibana-005571?style=flat-square&logo=kibana&logoColor=white"
+            alt="kibana"
+          />
+        </a>
+        <div className="pr-2" />
         <a href="" rel="noreferrer" target="_blank">
           <img
             src="https://img.shields.io/badge/Slack-4A154B?style=flat-square&logo=slack&logoColor=white"
@@ -1047,8 +1060,8 @@ export default function HomePage() {
       </div>
       <ol>
         <li>
-          전월세보증금대출 상품 출시 후 토스씨엑스 팀원과 소통하며 서류심사 및 사후관리와 관련된
-          기능을 개발함
+          전월세보증금대출 상품 출시 후 토스씨엑스 팀원과 소통하며 대출 서류심사 및 사후관리와
+          관련된 기능을 개발함
         </li>
         <li>Suspense 컴포넌트와 ErrorBoundary 개념을 이용해 네트워크 상태를 선언적으로 관리함</li>
         <li>React Query를 사용해 응답 순서가 보장되지 않는 네트워크 요청을 비동기로 관리함</li>
@@ -1061,7 +1074,12 @@ export default function HomePage() {
         <li>
           검색 조건을 querystring에 저장해 페이지 이동이 일어나도 입력했던 검색 조건을 유지시킴
         </li>
+        <li>
+          Kibana 검색 및 집계 기능을 사용하여 오류 발생 주기와 원인을 분석하고, 개선된 코드를 제안
+          및 구현함
+        </li>
         <li>LUMOS 프로젝트 Docker 이미지 빌드 시간을 305초 -{'>'} 213초로 (30%) 개선함</li>
+        <li>사전에 팀의 코드 컨벤션을 논의하고 브랜치 전략을 공유해 Code Review 효율성을 높임</li>
       </ol>
       <div className="grid grid-cols-3"></div>
 
