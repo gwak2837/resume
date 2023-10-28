@@ -1,5 +1,6 @@
 import './globals.css'
 
+import { Analytics } from '@vercel/analytics/react'
 import { Metadata } from 'next'
 import localFont from 'next/font/local'
 import { ReactNode } from 'react'
@@ -14,7 +15,6 @@ import {
   KEYWORDS,
   THEME_COLOR,
 } from '../common/constants'
-import GoogleAnalytics from '../components/GoogleAnalytics'
 
 export const metadata: Metadata = {
   metadataBase: new URL(CANONICAL_URL),
@@ -91,8 +91,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 
       <body className={myFont.className}>{children}</body>
-
-      <GoogleAnalytics />
+      <Analytics />
     </html>
   )
 }
