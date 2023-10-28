@@ -1054,8 +1054,8 @@ export default function HomePage() {
       </div>
       <ol>
         <li>
-          전월세보증금대출 상품 출시 전후 토스씨엑스 팀원과 소통하며 대출 서류심사 및 사후관리와
-          관련된 기능을 개발함
+          전월세보증금대출 상품 출시 전후 토스씨엑스 팀원과 소통하며 서류심사, 사후관리, 지킴보증
+          관련 기능을 개발함
         </li>
         <li>Suspense 컴포넌트와 ErrorBoundary 개념을 이용해 네트워크 상태를 선언적으로 관리함</li>
         <li>React Query를 사용해 응답 순서가 보장되지 않는 네트워크 요청을 비동기로 관리함</li>
@@ -1074,7 +1074,11 @@ export default function HomePage() {
         </li>
         <li>LUMOS 프로젝트 Docker 이미지 빌드 시간을 305초 → 213초로 (30%) 개선함</li>
         <li>
-          사전에 팀의 코드 컨벤션과 브랜치 전략을 논의하고 Pn 룰을 공유해 Code Review 효율성을 높임
+          사전에 팀의 코드 컨벤션과 브랜치 전략을 논의하고{' '}
+          <a href="https://blog.banksalad.com/tech/banksalad-code-review-culture/" target="_blank">
+            Pn 룰
+          </a>{' '}
+          등을 공유해 Code Review 효율성을 높임
         </li>
       </ol>
       <div className="grid grid-cols-3"></div>
