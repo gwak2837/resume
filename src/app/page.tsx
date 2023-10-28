@@ -121,7 +121,7 @@ export default function HomePage() {
             <td className="font-semibold">중앙대학교</td>
             <td>컴퓨터공학부 학사</td>
             <td>
-              <a href="/images/2022-graduate.webp" target="_blank">
+              <a href="/pdf/중앙대학교-졸업증명서.pdf" target="_blank">
                 2017년 3월 ~ 2022년 2월
               </a>
             </td>
@@ -138,14 +138,8 @@ export default function HomePage() {
             <td>이과 졸업</td>
             <td>2014년 3월 ~ 2017년 2월 </td>
             <td>
-              <a href="/images/2016-high.webp" target="_blank">
-                평균
-              </a>{' '}
-              <a href="/images/2016-high2.webp" target="_blank">
-                내신:
-              </a>{' '}
-              <a href="/images/2016-high3.webp" target="_blank">
-                1.45
+              <a href="/pdf/호남고등학교-성적증명서.pdf" target="_blank">
+                평균 내신: 1.45
               </a>
             </td>
           </tr>
@@ -154,12 +148,9 @@ export default function HomePage() {
             <td>졸업</td>
             <td>2011년 3월 ~ 2014년 2월 </td>
             <td>
-              <a href="/images/2013-middle.webp" target="_blank">
-                졸업 등수:
-              </a>{' '}
-              <a href="/images/2013-middle2.webp" target="_blank">
-                남자 수석 (전체 4등)
-              </a>{' '}
+              <a href="/pdf/완주화산중학교-성적증명서.pdf" target="_blank">
+                졸업 등수: 남자 수석 (전체 4등)
+              </a>
             </td>
           </tr>
         </tbody>
