@@ -1064,7 +1064,6 @@ export default function HomePage() {
           <code>ts-pattern</code>의 match 함수와 Funnel 패턴을 활용해 다단계 페이지 이동을
           명시적으로 관리함
         </li>
-        <li>연관된 코드는 가까운 곳에 배치하여 컴포넌트 응집도를 높여 DX를 향상함</li>
         <li>
           검색 조건을 querystring에 저장해 페이지 이동이 일어나도 입력했던 검색 조건을 유지시킴
         </li>
@@ -1079,6 +1078,14 @@ export default function HomePage() {
             Pn 룰
           </a>{' '}
           등을 공유해 Code Review 효율성을 높임
+        </li>
+        <li>
+          서비스 기능 장애가 발생했을 때 관련 커밋을 롤백한 후 장애 원인을 분석하고 해결 방안을
+          논의해 문서로 남김
+        </li>
+        <li>
+          연관된 코드는 가까운 곳에 배치하여 컴포넌트 응집도를 높이고, 로직 세부 구현은 hook으로
+          숨겨 코드 파악에 필수적인 정보가 잘 보이도록 개선함
         </li>
       </ol>
       <div className="grid grid-cols-3"></div>
