@@ -6,7 +6,7 @@ import FestaLogo from '../svg/FestaLogo'
 import OtherCertificates from './OtherCertificates'
 
 export default function HomePage() {
-  const date = '2023년 10월 26일'
+  const date = '2023년 11월 1일'
   return (
     <main className="mx-auto mb-8 max-w-[720px]">
       <h1 className="text-4xl mb-6 font-semibold w-full">이력서</h1>
@@ -26,7 +26,7 @@ export default function HomePage() {
               <tr>
                 <td className="border-none p-px">🎓</td>
                 <td className="border-none p-px">
-                  <a href="/images/2022-graduate.webp" target="_blank">
+                  <a href="/pdf/중앙대학교-졸업증명서.pdf" target="_blank">
                     중앙대학교 컴퓨터공학부 학사
                   </a>
                 </td>
@@ -41,7 +41,11 @@ export default function HomePage() {
               </tr>
               <tr>
                 <td className="border-none p-px">🪖</td>
-                <td className="border-none p-px">군필 (육군 병장 만기전역):</td>
+                <td className="border-none p-px">
+                  <a href="/pdf/병적증명서.pdf" target="_blank">
+                    군필 (육군 병장 만기전역):
+                  </a>
+                </td>
               </tr>
               <tr>
                 <td className="border-none p-px"></td>
@@ -539,11 +543,11 @@ export default function HomePage() {
               />
             </a>
             <a href="/pdf/토스뱅크-재직증명서.pdf" target="_blank">
-              <div>2023년 8월 7일 ~ 11월 6일 (3개월) (현재)</div>
+              <div>2023년 8월 7일 ~ 11월 6일 (3개월)</div>
             </a>
           </div>
           <div className="grid grid-cols-2 gap-4">
-            <div>직책: Frontend Developer (LUMOS)</div>
+            <div>직책: Admin Developer</div>
             <div>부서: Housing Loan Squad</div>
           </div>
           <div>직위: 계약직</div>
@@ -1051,7 +1055,10 @@ export default function HomePage() {
         <li>
           검색 조건을 querystring에 저장해 페이지 이동이 일어나도 입력했던 검색 조건을 유지시킴
         </li>
-        <li>디자이너 팀원이 프레이머에서 제작한 시안과 </li>
+        <li>
+          디자이너 팀원이 프레이머로 제작한 시안과 토스 디자인 시스템을 기반으로 화면 프로토타입을
+          빠르게 구현함
+        </li>
         <li>
           Kibana 검색 및 집계 기능을 사용하여 오류 발생 주기와 원인을 분석하고, 개선된 코드를 제안
           및 구현함
