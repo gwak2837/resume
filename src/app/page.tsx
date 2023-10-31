@@ -350,6 +350,12 @@ export default function HomePage() {
               alt="Figma Badge"
             />
           </a>
+          <a href="https://www.framer.com/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Framer-0055FF?style=flat-square&logo=framer&logoColor=white"
+              alt="framer"
+            />
+          </a>
         </div>
       </div>
       <h4 className="my-2">Backend</h4>
@@ -451,8 +457,6 @@ export default function HomePage() {
               alt="GCP Badge"
             />
           </a>
-        </div>
-        <div className="flex gap-1">
           <a href="https://aws.amazon.com/ko/" rel="noreferrer" target="_blank">
             <img
               src="https://img.shields.io/badge/RDS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white"
@@ -494,12 +498,6 @@ export default function HomePage() {
               alt="ESLint Badge"
             />
           </a>
-          <a href="https://prettier.io/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Prettier-F7B93E?style=flat-square&logo=prettier&logoColor=black"
-              alt="Prettier Badge"
-            />
-          </a>
           <a href="" rel="noreferrer" target="_blank">
             <img
               src="https://img.shields.io/badge/Jest-C21325?style=flat-square&logo=jest&logoColor=white"
@@ -512,30 +510,10 @@ export default function HomePage() {
               alt="Git Badge"
             />
           </a>
-        </div>
-        <div className="flex gap-1">
           <a href="https://code.visualstudio.com/" rel="noreferrer" target="_blank">
             <img
               src="https://img.shields.io/badge/VSCode-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white"
               alt="VSCode Badge"
-            />
-          </a>
-          <a href="" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Slack Bot-4A154B?style=flat-square&logo=slack&logoColor=white"
-              alt="Slack Badge"
-            />
-          </a>
-          <a href="" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=notion&logoColor=white"
-              alt="Notion Badge"
-            />
-          </a>
-          <a href="" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white"
-              alt="Jira Badge"
             />
           </a>
         </div>
@@ -1026,6 +1004,12 @@ export default function HomePage() {
             alt="zod"
           />
         </a>
+        <a href="https://www.framer.com/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Framer-0055FF?style=flat-square&logo=framer&logoColor=white"
+            alt="framer"
+          />
+        </a>
         <a href="https://www.elastic.co/kr/kibana" rel="noreferrer" target="_blank">
           <img
             src="https://img.shields.io/badge/Kibana-005571?style=flat-square&logo=kibana&logoColor=white"
@@ -1067,6 +1051,7 @@ export default function HomePage() {
         <li>
           검색 조건을 querystring에 저장해 페이지 이동이 일어나도 입력했던 검색 조건을 유지시킴
         </li>
+        <li>디자이너 팀원이 프레이머에서 제작한 시안과 </li>
         <li>
           Kibana 검색 및 집계 기능을 사용하여 오류 발생 주기와 원인을 분석하고, 개선된 코드를 제안
           및 구현함
