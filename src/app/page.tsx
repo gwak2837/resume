@@ -3,6 +3,7 @@
 import Image from 'next/image'
 
 import FestaLogo from '../svg/FestaLogo'
+import Pin from '../svg/Pin'
 import OtherCertificates from './OtherCertificates'
 
 export default function HomePage() {
@@ -26,7 +27,7 @@ export default function HomePage() {
               <tr>
                 <td className="border-none p-px">🎓</td>
                 <td className="border-none p-px">
-                  <a href="/pdf/중앙대학교-졸업증명서.pdf" target="_blank">
+                  <a href="/images/학위증.webp" target="_blank">
                     중앙대학교 컴퓨터공학부 학사
                   </a>
                 </td>
@@ -123,7 +124,12 @@ export default function HomePage() {
         <tbody>
           <tr>
             <td className="font-semibold">중앙대학교</td>
-            <td>컴퓨터공학부 학사</td>
+            <td>
+              <a href="/images/학위증.webp" target="_blank">
+                컴퓨터공학부 학사
+              </a>
+              <div className="text-xs">(MAGNA CUM LAUDE)</div>
+            </td>
             <td>
               <a href="/pdf/중앙대학교-졸업증명서.pdf" target="_blank">
                 2017년 3월 ~ 2022년 2월
@@ -139,7 +145,7 @@ export default function HomePage() {
           </tr>
           <tr>
             <td className="font-semibold">호남고등학교</td>
-            <td>이과 졸업</td>
+            <td>이과</td>
             <td>2014년 3월 ~ 2017년 2월 </td>
             <td>
               <a href="/pdf/호남고등학교-성적증명서.pdf" target="_blank">
@@ -149,7 +155,7 @@ export default function HomePage() {
           </tr>
           <tr>
             <td className="font-semibold">완주화산중학교</td>
-            <td>졸업</td>
+            <td>기숙형 자율학교</td>
             <td>2011년 3월 ~ 2014년 2월 </td>
             <td>
               <a href="/pdf/완주화산중학교-성적증명서.pdf" target="_blank">
@@ -608,12 +614,8 @@ export default function HomePage() {
               />
             </a>
             <div>
-              <a href="/images/2022-theheartcompany.webp" target="_blank">
-                2022년 2월 14일
-              </a>{' '}
-              ~{' '}
-              <a href="/images/2022-theheartcompany2.png" target="_blank">
-                3월 13일 (1개월)
+              <a href="/pdf/더하트컴퍼니.pdf" target="_blank">
+                2022년 2월 14일 ~ 3월 13일 (1개월)
               </a>
             </div>
           </div>
@@ -641,7 +643,7 @@ export default function HomePage() {
               <Image src="/images/알파카살롱-logo.jpg" alt="알파카살롱" width="72" height="24" />
             </a>
             <div>
-              <a href="/images/2021-alpacasalon.webp" target="_blank">
+              <a href="/pdf/알파카살롱.pdf" target="_blank">
                 2021년 11월 9일 ~ 2022년 2월 8일 (3개월)
               </a>
             </div>
@@ -697,7 +699,7 @@ export default function HomePage() {
               <FestaLogo />
             </a>
             <div>
-              <a href="/images/2020-festa.webp" target="_blank">
+              <a href="/pdf/페스타.pdf" target="_blank">
                 2020년 9월 1일 ~ 12월 31일 (4개월)
               </a>
             </div>
@@ -956,6 +958,9 @@ export default function HomePage() {
       </p>
       <Image src="/images/mbti.png" alt="asd" width="551" height="304" className="mx-auto" />
       <h2 className="text-3xl my-8">프로젝트</h2>
+      <div className="flex gap-1 px-1 text-sm text-gray-600">
+        <Pin width="16" /> <b>고정됨</b>
+      </div>
       <div className="grid grid-cols-[2fr_2fr_3fr] gap-4 my-4">
         <h4>
           토스뱅크 LUMOS, 루모스 <br />
@@ -1081,7 +1086,6 @@ export default function HomePage() {
         </li>
       </ol>
       <div className="grid grid-cols-3"></div>
-
       <div className="border w-full my-6" />
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>HOMI AI</h4>
