@@ -7,7 +7,7 @@ import Pin from '../svg/Pin'
 import OtherCertificates from './OtherCertificates'
 
 export default function HomePage() {
-  const date = '2023년 11월 1일'
+  const date = '2023년 11월 6일'
   return (
     <main className="mx-auto mb-8 max-w-[720px]">
       <h1 className="text-4xl mb-6 font-semibold w-full">이력서</h1>
@@ -548,7 +548,7 @@ export default function HomePage() {
                 height="14"
               />
             </a>
-            <a href="/pdf/토스뱅크-재직증명서.pdf" target="_blank">
+            <a href="/pdf/토스뱅크-경력증명서.pdf" target="_blank">
               <div>2023년 8월 7일 ~ 11월 6일 (3개월)</div>
             </a>
           </div>
