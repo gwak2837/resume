@@ -75,7 +75,7 @@ export default function HomePage() {
               <tr>
                 <td className="border-none p-0"></td>
                 <td className="border-none p-0">
-                  <a href="mailto:rmfpdlxmtidl@naver.com">rmfpdlxmtidl@naver.com</a>
+                  <a href="mailto:gwak2837@google.com">gwak2837@google.com</a>
                 </td>
               </tr>
               <tr>
