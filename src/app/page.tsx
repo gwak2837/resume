@@ -17,86 +17,92 @@ export default function HomePage() {
           <table className="border-none w-fit	">
             <tbody>
               <tr>
-                <td className="border-none p-px">🧑&nbsp;&nbsp;</td>
-                <td className="border-none p-px">곽태욱 (Taeuk Gwak, 郭泰昱)</td>
+                <td className="border-none p-0">🧑&nbsp;&nbsp;</td>
+                <td className="border-none p-0">곽태욱 (Taeuk Gwak, 郭泰昱)</td>
               </tr>
               <tr>
-                <td className="border-none p-px">🎉</td>
-                <td className="border-none p-px">1998년 4월 12일 (남)</td>
+                <td className="border-none p-0">🎉</td>
+                <td className="border-none p-0">1998년 4월 12일 (남)</td>
               </tr>
               <tr>
-                <td className="border-none p-px">🎓</td>
-                <td className="border-none p-px">
+                <td className="border-none p-0">🎓</td>
+                <td className="border-none p-0">
                   <a href="/images/학위증.webp" target="_blank">
                     중앙대학교 컴퓨터공학부 학사
                   </a>
                 </td>
               </tr>
               <tr>
-                <td className="border-none p-px">🏠</td>
-                <td className="border-none p-px">
+                <td className="border-none p-0">🏠</td>
+                <td className="border-none p-0">
                   <a href="https://naver.me/Fcg2bYyc" target="_blank" rel="noreferrer">
                     서울특별시 강동구 천호동
                   </a>
                 </td>
               </tr>
               <tr>
-                <td className="border-none p-px">🪖</td>
-                <td className="border-none p-px">
+                <td className="border-none p-0">🪖</td>
+                <td className="border-none p-0">
                   <a href="/pdf/병적증명서.pdf" target="_blank">
                     군필 (육군 병장 만기전역):
                   </a>
                 </td>
               </tr>
               <tr>
-                <td className="border-none p-px"></td>
-                <td className="border-none p-px">학군사관후보생 2019년 1월 ~ 2020년 9월</td>
+                <td className="border-none p-0"></td>
+                <td className="border-none p-0">학군사관후보생 2019년 1월 ~ 2020년 9월</td>
               </tr>
               <tr>
-                <td className="border-none p-px"></td>
-                <td className="border-none p-px">
+                <td className="border-none p-0"></td>
+                <td className="border-none p-0">
                   <a href="/images/2023-military.webp" target="_blank">
                     KATUSA 2022년 3월 ~ 2023년 7월
                   </a>
                 </td>
               </tr>
               <tr>
-                <td className="border-none p-px">📱</td>
-                <td className="border-none p-px">
+                <td className="border-none p-0">📱</td>
+                <td className="border-none p-0">
                   <a href="tel:010-9203-2837">+82 010-9203-2837</a>
                 </td>
               </tr>
               <tr>
-                <td className="border-none p-px">✉️</td>
-                <td className="border-none p-px">
+                <td className="border-none p-0">✉️</td>
+                <td className="border-none p-0">
                   <a href="mailto:gwak2837@kakao.com">gwak2837@kakao.com</a>
                 </td>
               </tr>
               <tr>
-                <td className="border-none p-px">
+                <td className="border-none p-0"></td>
+                <td className="border-none p-0">
+                  <a href="mailto:rmfpdlxmtidl@naver.com">rmfpdlxmtidl@naver.com</a>
+                </td>
+              </tr>
+              <tr>
+                <td className="border-none p-0">
                   <Image src="/images/github.svg" alt="github" width="16" height="16" />
                 </td>
-                <td className="border-none p-px">
+                <td className="border-none p-0">
                   <a href="https://github.com/gwak2837" target="_blank" rel="noreferrer">
                     github.com/gwak2837
                   </a>
                 </td>
               </tr>
               <tr>
-                <td className="border-none p-px">
+                <td className="border-none p-0">
                   <Image src="/images/velog.png" alt="velog" width="16" height="16" />
                 </td>
-                <td className="border-none p-px">
+                <td className="border-none p-0">
                   <a href="https://velog.io/@gwak2837" target="_blank" rel="noreferrer">
                     velog.io/@gwak2837
                   </a>
                 </td>
               </tr>
               <tr>
-                <td className="border-none p-px">
+                <td className="border-none p-0">
                   <Image src="/images/instagram.svg" alt="velog" width="16" height="16" />
                 </td>
-                <td className="border-none p-px">
+                <td className="border-none p-0">
                   <a href="https://www.instagram.com/gwak2837/" target="_blank" rel="noreferrer">
                     instagram.com/gwak2837
                   </a>
@@ -966,7 +972,7 @@ export default function HomePage() {
           토스뱅크 LUMOS, 루모스 <br />
           (여신 심사·관리·운영 시스템)
         </h4>
-        <div>개발: 6명 | 비개발: 5명</div>
+        <div>개발: 6명 | 비개발: 6명</div>
         <div>2023년 8월 7일 ~ 11월 6일 (3개월)</div>
       </div>
       <div className="flex gap-0.5 my-2">
