@@ -13,7 +13,7 @@ export const NEXT_PUBLIC_GA_ID = process.env.NEXT_PUBLIC_GA_ID as string
 // 상수
 export const APPLICATION_NAME = `곽태욱 ${getISODate(new Date())} 이력서 포트폴리오`
 export const APPLICATION_SHORT_NAME = '이력서·포트폴리오'
-export const DESCRIPTION = '이력서'
+export const DESCRIPTION = '이력서 포트폴리오'
 export const KEYWORDS = `${APPLICATION_SHORT_NAME},이력서,resume,포트폴리오,portpolio` // 최대 10개
 export const CATEGORY = '이력서'
 export const AUTHOR = ''

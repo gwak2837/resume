@@ -3,11 +3,10 @@
     "visualstudioexptteam.vscodeintellicode",
     "christian-kohler.npm-intellisense",
     "christian-kohler.path-intellisense",
-    "tabnine.tabnine-vscode",
     "bradlc.vscode-tailwindcss",
     "csstools.postcss",
-    "arcanis.vscode-zipfs",
     "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode"
+    "esbenp.prettier-vscode",
+    "jock.svg"
   ]
 }

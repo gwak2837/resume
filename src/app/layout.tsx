@@ -1,20 +1,20 @@
 import './globals.css'
 
+import {
+  CANONICAL_URL,
+  APPLICATION_NAME,
+  DESCRIPTION,
+  APPLICATION_SHORT_NAME,
+  AUTHOR,
+  KEYWORDS,
+  THEME_COLOR,
+  CATEGORY,
+} from '../common/constants'
+import { LayoutProps } from '../common/types'
+
 import { Analytics } from '@vercel/analytics/react'
 import { Metadata } from 'next'
 import localFont from 'next/font/local'
-import { ReactNode } from 'react'
-
-import {
-  APPLICATION_NAME,
-  APPLICATION_SHORT_NAME,
-  AUTHOR,
-  CANONICAL_URL,
-  CATEGORY,
-  DESCRIPTION,
-  KEYWORDS,
-  THEME_COLOR,
-} from '../common/constants'
 
 export const metadata: Metadata = {
   metadataBase: new URL(CANONICAL_URL),
@@ -78,9 +78,9 @@ const myFont = localFont({
   ],
 })
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function RootLayout({ children }: LayoutProps) {
   return (
-    <html lang="ko">
+    <html>
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
       <link rel="mask-icon" href="/safari-pinned-tab.svg" color={THEME_COLOR} />
       <meta name="msapplication-TileColor" content="#2b5797" />
