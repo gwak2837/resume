@@ -7,6 +7,7 @@ import Pin from '../../svg/Pin'
 import { getISODate } from '../../util/date'
 
 import { dictionary } from './dictionary'
+import LanguageUpdate from './LanguageUpdate'
 import OtherCertificates from './OtherCertificates'
 
 import Image from 'next/image'
@@ -26,9 +27,9 @@ export async function generateMetadata({ params }: PageProps) {
         : lang === 'en'
         ? `Taeuk Gwak ${getISODate(new Date())} Resume Portpolio`
         : lang === 'zh'
-        ? `郭泰昱 ${getISODate(new Date())} 履历书 Portpolio`
+        ? `郭泰昱 ${getISODate(new Date())} 履历书 作品集`
         : lang === 'ja'
-        ? `郭泰昱 ${getISODate(new Date())} 履歴書 Portpolio`
+        ? `郭泰昱 ${getISODate(new Date())} 履歴書 ポートフォリオ`
         : APPLICATION_NAME,
   }
 }
@@ -39,6 +40,7 @@ export default function HomePage({ params }: PageProps) {
 
   return (
     <main className="mx-auto mb-8 max-w-[720px]">
+      <LanguageUpdate lang={lang} />
       <div className="flex justify-between items-center">
         <h1 className="text-4xl mb-6 font-semibold w-full">{dictionary.이력서[lang]}</h1>
         <div className="flex whitespace-nowrap gap-2">
