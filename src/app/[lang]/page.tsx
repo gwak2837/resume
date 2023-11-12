@@ -164,7 +164,11 @@ export default function HomePage({ params }: PageProps) {
         </thead>
         <tbody>
           <tr>
-            <td className="font-semibold">{dictionary.중앙대학교[lang]}</td>
+            <td className="font-semibold">
+              <a href="https://www.cau.ac.kr" target="_blank" rel="noreferrer">
+                {dictionary.중앙대학교[lang]}
+              </a>
+            </td>
             <td>
               <a href="/images/학위증.webp" target="_blank">
                 {dictionary.학력_학위[lang]}
@@ -185,22 +189,30 @@ export default function HomePage({ params }: PageProps) {
             </td>
           </tr>
           <tr>
-            <td className="font-semibold">호남고등학교</td>
-            <td>이과</td>
-            <td>2014년 3월 ~ 2017년 2월 </td>
+            <td className="font-semibold">
+              <a href="https://school.jbedu.kr/honam-h" target="_blank" rel="noreferrer">
+                {dictionary.호남고등학교[lang]}
+              </a>
+            </td>
+            <td>{dictionary.호남고등학교_세부[lang]}</td>
+            <td>{dictionary.호남고등학교_기간[lang]}</td>
             <td>
               <a href="/pdf/호남고등학교-성적증명서.pdf" target="_blank">
-                평균 내신: 1.45
+                {dictionary.호남고등학교_성적[lang]}
               </a>
             </td>
           </tr>
           <tr>
-            <td className="font-semibold">완주화산중학교</td>
-            <td>기숙형 자율학교</td>
-            <td>2011년 3월 ~ 2014년 2월 </td>
+            <td className="font-semibold">
+              <a href="https://school.jbedu.kr/jb-hs" target="_blank" rel="noreferrer">
+                {dictionary.화산중학교[lang]}
+              </a>
+            </td>
+            <td>{dictionary.기숙형자율학교[lang]}</td>
+            <td>{dictionary.화산중학교_기간[lang]}</td>
             <td>
               <a href="/pdf/완주화산중학교-성적증명서.pdf" target="_blank">
-                졸업 등수: 남자 수석 (전체 4등)
+                {dictionary.화산중학교_성적[lang]}
               </a>
             </td>
           </tr>
@@ -570,7 +582,7 @@ export default function HomePage({ params }: PageProps) {
         </div>
       </div>
       <h2 className="text-3xl my-8">
-        개발 경력 <span className="text-base">(1년 8개월)</span>
+        {dictionary.개발경력[lang]} <span className="text-base">(1년 8개월)</span>
       </h2>
       <ul>
         <li>
