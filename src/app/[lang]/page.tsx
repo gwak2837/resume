@@ -152,36 +152,36 @@ export default function HomePage({ params }: PageProps) {
         </div>
       </div>
       <p className="my-4 ">{dictionary.한줄소개[lang]}</p>
-      <h2 className="text-3xl my-8 ">학력</h2>
+      <h2 className="text-3xl my-8 ">{dictionary.학력[lang]}</h2>
       <table>
         <thead>
           <tr>
-            <td>이름</td>
-            <td>세부</td>
-            <td>기간</td>
-            <td>비고</td>
+            <td>{dictionary.학력_이름[lang]}</td>
+            <td>{dictionary.세부[lang]}</td>
+            <td>{dictionary.기간[lang]}</td>
+            <td>{dictionary.비고[lang]}</td>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td className="font-semibold">중앙대학교</td>
+            <td className="font-semibold">{dictionary.중앙대학교[lang]}</td>
             <td>
               <a href="/images/학위증.webp" target="_blank">
-                컴퓨터공학부 학사
+                {dictionary.학력_학위[lang]}
               </a>
               <div className="text-xs">(MAGNA CUM LAUDE)</div>
             </td>
             <td>
               <a href="/pdf/중앙대학교-졸업증명서.pdf" target="_blank">
-                2017년 3월 ~ 2022년 2월
+                {dictionary.학력_기간[lang]}
               </a>
             </td>
             <td>
               <a href="/images/2022-univ.webp" target="_blank">
-                전체 학점: 4.1 / 4.5 (163 학점)
+                {dictionary.학력_전체학점[lang]}
               </a>
               <br />
-              전공 학점: 4.0 / 4.5 (89 학점)
+              {dictionary.학력_전공학점[lang]}
             </td>
           </tr>
           <tr>

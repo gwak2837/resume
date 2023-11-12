@@ -10,7 +10,7 @@ export const dictionary = {
   이력서: {
     ko: '이력서',
     en: 'Resume',
-    zh: '履历书',
+    zh: '个人简历',
     ja: '履歴書',
   },
   이름: {
@@ -30,7 +30,7 @@ export const dictionary = {
     en: (
       <>
         Bachelor of Computer Engineering <br />
-        at Chung-Ang University
+        at Chung-Ang Univ.
       </>
     ),
     zh: '中央大学计算机工程部学士本科',
@@ -50,15 +50,15 @@ export const dictionary = {
   },
   ROTC: {
     ko: '학군사관후보생 2019년 1월 ~ 2020년 9월',
-    en: 'ROTC from Jan. 2019 to Sept. 2020',
-    zh: 'ROTC 2019年 1月 ~ 2020년 9月',
-    ja: 'ROTC 2019年 1月 ~ 2020년 9月',
+    en: 'ROTC Jan. 2019 - Sept. 2020',
+    zh: 'ROTC 2019年 1月 ~ 2020年 9月',
+    ja: 'ROTC 2019年 1月 ~ 2020年 9月',
   },
   KATUSA: {
     ko: 'KATUSA 2022년 3월 ~ 2023년 7월',
-    en: 'KATUSA from Mar. 2022 to July 2023',
-    zh: 'KATUSA 2022年 3月 ~ 2023년 7月',
-    ja: 'KATUSA 2022年 3月 ~ 2023년 7月',
+    en: 'KATUSA Mar. 2022 - July 2023',
+    zh: 'KATUSA 2022年 3月 ~ 2023年 7月',
+    ja: 'KATUSA 2022年 3月 ~ 2023年 7月',
   },
   한줄소개: {
     ko: (
@@ -78,9 +78,7 @@ export const dictionary = {
     ),
     zh: (
       <>
-        我是致力于研发真正能够解决顾客问题、满足顾客商务需求产品；
-        <br />
-        乐于共享开发过程中收获的新知识且热衷于探索其理论依据的
+        我是致力于研发真正能够解决顾客问题、满足顾客商务需求产品；乐于共享开发过程中收获的新知识且热衷于探索其理论依据的
         <b>前端工程师</b>郭泰昱。
       </>
     ),
@@ -90,6 +88,78 @@ export const dictionary = {
         <b>フロントエンド開発者</b>郭泰昱です。
       </>
     ),
+  },
+  학력: {
+    ko: '학력',
+    en: 'Education',
+    zh: '教育背景',
+    ja: '学歴',
+  },
+  학력_이름: {
+    ko: '이름',
+    en: 'Name',
+    zh: '',
+    ja: '',
+  },
+  세부: {
+    ko: '세부',
+    en: 'Detail',
+    zh: '细部',
+    ja: '詳細',
+  },
+  기간: {
+    ko: '기간',
+    en: 'Period',
+    zh: '时期',
+    ja: '期間',
+  },
+  비고: {
+    ko: '비고',
+    en: 'Note',
+    zh: '备考',
+    ja: '備考',
+  },
+  중앙대학교: {
+    ko: '중앙대학교',
+    en: 'Chung-Ang Univ.',
+    zh: '中央大学',
+    ja: '中央大学',
+  },
+  학력_학위: {
+    ko: '컴퓨터공학부 학사',
+    en: 'BCompSc',
+    zh: '计算机工程部学士本科',
+    ja: 'コンピューター工学部学士',
+  },
+  학력_기간: {
+    ko: '2017년 3월 ~ 2022년 2월',
+    en: 'Mar. 2017 - Feb. 2022',
+    zh: '2017年 3月 ~ 2022年 2月',
+    ja: '2017年 3月 ~ 2022年 2月',
+  },
+  학력_전체학점: {
+    ko: '전체 학점: 4.1 / 4.5 (163 학점)',
+    en: '',
+    zh: '',
+    ja: '',
+  },
+  학력_전공학점: {
+    ko: '전공 학점: 4.0 / 4.5 (89 학점)',
+    en: '',
+    zh: '',
+    ja: '',
+  },
+  '개발 경력': {
+    ko: '개발 경력',
+    en: 'Work Experience',
+    zh: '工作经历',
+    ja: '職務経歴',
+  },
+  '개발 경험': {
+    ko: '개발 경험',
+    en: 'Experience',
+    zh: '',
+    ja: '',
   },
   '': {
     ko: '',
