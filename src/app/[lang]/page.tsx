@@ -108,13 +108,13 @@ export default function HomePage({ params }: PageProps) {
               <tr>
                 <td className="border-none p-0">✉️</td>
                 <td className="border-none p-0">
-                  <a href="mailto:gwak2837@kakao.com">gwak2837@kakao.com</a>
+                  <a href="mailto:gwak2837@google.com">gwak2837@google.com</a>
                 </td>
               </tr>
               <tr>
                 <td className="border-none p-0"></td>
                 <td className="border-none p-0">
-                  <a href="mailto:gwak2837@google.com">gwak2837@google.com</a>
+                  <a href="mailto:gwak2837@kakao.com">gwak2837@kakao.com</a>
                 </td>
               </tr>
               <tr>
