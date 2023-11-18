@@ -934,7 +934,7 @@ export default function HomePage({ params }: PageProps) {
         <div className="border w-full my-6" />
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
-            <b>신디(SINDY, Signature in Dessert) 창업</b>
+            <b>신디(SinDy, Signature in Dessert) 창업</b>
             <div>2021년 2월 25일 ~ 10월 31일 (8개월)</div>
           </div>
           <div>직책: 개발팀장 (팀장 포함 2명)</div>
@@ -956,60 +956,73 @@ export default function HomePage({ params }: PageProps) {
           </div>
         </li>
       </ul>
-      <div className="w-full text-center text-slate-800 text-sm mt-8">작성일: {date}</div>
-      <div className="w-full text-center text-slate-800 text-sm">작성자: 곽태욱</div>
-
-      <div className="my-8" />
-      <h1 className="text-4xl mb-8 font-semibold w-full break-before-page">포트폴리오</h1>
       <h2 className="text-3xl my-8 ">소개</h2>
-      <p className="my-4 	">
+      <p className="my-2">
         직접 만든 기프트링크 동아리의 소프트웨어 개발자로 시작해, 행복한 다람쥐단 인턴, (주)페스타
         인턴, 신디(Sindy) 창업팀, (주)알파카살롱 인턴, (주)더하트컴퍼니 인턴, 토스뱅크(주) 계약직
         등에서 다양한 프로젝트를 수행하며 서비스가 세상에 나오기 위한 전체 개발 주기를 경험했습니다.
         이 과정에서 서비스의 성공은 동료와의 협업과 서로의 성장에 기반한다는 사실을 느꼈습니다.
       </p>
-      <p className="my-4">
-        이는 신디 창업팀에서 '카페의 특색을 담아내는 SNS형 디저트 정보 공유 공간' 서비스를 제작하는
-        과정에서 얻었습니다. 프로젝트 초기, 저희 팀은 수많은 아이디어를 결합하여 초기 프로토타입을
-        개발했는데, 이 초기 프로토타입은 최종적으로 제공하고자 했던 서비스와는 차이가 있었고, 실제로
-        사용하기에 성능 개선도 필요했습니다. 이에 대한 해결책을 찾기 위해 저희는 각자의 분야에
-        한정하지 않고 협업하였습니다.
+      <h3 className="text-lg my-4 ">
+        가치관 및 신조 <span className="text-xs font-normal">약 900자</span>
+      </h3>
+      <p className="my-2">
+        저는 개인적인 성장과 팀의 목표 달성을 중시하는 프론트엔드 개발자입니다. 프론트엔드 개발의
+        핵심은 사용자 경험 최적화와 고객 간 신뢰 구축에 있다고 믿습니다. 이는 화면에 콘텐츠를
+        처음으로 표시하는 시점(First Contentful Paint, FCP)의 최적화와 같은 기술적 세부사항부터
+        시작됩니다. 제가 신디 창업팀의 일원으로 '카페 특색을 담은 SNS형 디저트 정보 공유 서비스'
+        프로젝트에 참여한 경험은 이러한 신념을 실현하는 과정이었습니다.
       </p>
-      <p className="my-4 	">
-        특히, 프론트엔드 개발자는 사용자 인터페이스에 대한 세세한 피드백을 제공하였고, 그 피드백을
-        기반으로{' '}
-        <a
-          href="https://fe-developers.kakaoent.com/2022/220310-kakaopage-bff/"
-          target="_blank"
-          rel="noreferrer"
-        >
+      <p className="my-2">
+        대학에서 컴퓨터공학을 전공하며 팀 프로젝트와 서비스 개발 실무 경험을 쌓기 위해, 신디
+        창업팀의 'SNS형 디저트 정보 공유 서비스' 개발에 참여하여 카페와 디저트에 관한 다양한
+        아이디어를 모아 초기 MVP(Minimum Viable Product)을 제작했습니다. 하지만 이 MVP는 추후
+        설문조사 및 인터뷰를 통해 얻은 고객의 요구사항과 다소 차이가 있었고 추가적인 성능 개선도
+        필요했습니다. 이에 신디 개발팀장으로서 팀원의 강점에 맞는 역할을 할당하고 프로젝트 방향을
+        설정했습니다. 저는 프론트엔드 개발에서 디자이너에게 사용자 인터페이스에 대한 세밀한 피드백을
+        제공했습니다. 또한 백엔드 개발에서 서비스의 사용자 경험을 개선하기 위해 필요한 데이터만 주고
+        받도록 해서 데이터 처리의 효율성을 높였고,{' '}
+        <a href="https://fe-developers.kakaoent.com/2022/220310-kakaopage-bff/" target="_blank">
           프론트엔드에 최적화된 백엔드 API
-        </a>
-        를 설계할 수 있었습니다. 예를 들면, 사용자가 서비스를 더욱 빠르고 원활하게 이용할 수 있도록
-        필요한 데이터만 주고 데이터 처리 효율을 높이는 방향으로 백엔드 시스템을 개선하였습니다.
+        </a>{' '}
+        설계에 기여했습니다. 이 프로젝트는 성공적으로 출시되어 월간 사용자 수(Monthly Active User,
+        MAU) 5천 명을 달성하는 성과를 이루었습니다.
       </p>
-      <p className="my-4 	">
-        또한, 클라우드 엔지니어링이 백엔드에서 사용하는 기술 선택에도 영향을 끼쳤습니다. 예를 들어,
-        실시간 사용자 상호작용을 위해 웹소켓 기술과 HTTP2 Server Push 기술 중 어떤 것을 사용할지
-        고민하다가, 다중 컨테이너 오케스트레이션 환경에선{' '}
-        <a
-          href="https://cloud.google.com/run/docs/triggering/websockets?hl=ko"
-          target="_blank"
-          rel="noreferrer"
-        >
-          컨테이너 인스턴스 간에 소켓 데이터를 동기화하는 것
-        </a>
-        이 까다롭기 때문에 서비스의 빠른 개발을 위해 HTTP2 Server Push 기술을 선택하였습니다. 이렇게
-        선택된 기술은 서비스의 안정성을 보장하며 동시에 확장성 있는 시스템 아키텍처 개선에도
-        기여하였습니다.
+      <p className="my-2">
+        개발자는 개인의 파트뿐만 아니라 프로젝트 전체적인 운영에 시야를 갖춰야 합니다. 개발 일정과
+        코드 유지보수, 기획 요소를 녹일 수 있는 부분까지 고려하여 최적화된 기능을 구현하여야 만족도
+        높은 결과물을 산출할 수 있기에, 이 부분에서 책임감을 나타낼 것을 약속드립니다.
       </p>
-      <p className="my-4 	">
-        아이디어를 프로토타입으로 변환하고 그 프로토타입을 실제 서비스로 발전시키는 과정에서, 저를
-        비롯한 팀원 모두 성장하면서 '소복: 카페·디저트 정보 공유 커뮤니티' 서비스를 성공적으로
-        출시할 수 있었습니다. 현재는 프론트엔드 분야를 집중적으로 탐구하고 있고, 백엔드 및 클라우드
-        분야 등 서비스 출시를 위해 필요한 분야로 관심사를 넓히고 있습니다.
+      <h3 className="text-lg my-4 ">
+        성격의 장단점 <span className="text-xs font-normal">약 800자</span>
+      </h3>
+      <p className="my-2">
+        저는 업무에 깊이 몰입하며 뛰어난 집중력을 발휘합니다. 이는 3개월 동안 토스뱅크(주)라는 금융
+        기업에서 계약직으로 근무하면서 경험했습니다.
       </p>
-      <Image src="/images/mbti.png" alt="asd" width="551" height="304" className="mx-auto" />
+      <p className="my-2">
+        토스뱅크에서 Admin Developer로서 여신 심사·관리·운영 시스템의 화면 설계 및 개발을 담당하면서
+        고객에게 직접 서비스를 제공하는 것에 중점을 두었습니다. 실제 금융 기업에서 근무하다보니 학부
+        때와 달리 금융 분야에 특화된 지식과 여신 도메인에 대한 이해가 필요했습니다. 그래서 단순
+        개발만 하는 것이 아니라 금융 관련 규제 및 법률을 검색하고 현업자분에게 피드백을 요청하며
+        업무의 흐름을 읽어나갔습니다. 또한 안정적인 서비스 제공을 위해 오류 사항을 사전에
+        검토하였고, 오류가 발생했을 때 즉시 이전 버전으로 롤백한 후 코드 수정사항을 살펴보며 사이드
+        이펙트를 분석했습니다. 그리고 코드를 작성할 때도 유지보수가 가능하도록 선언적으로
+        구성했습니다. 이러한 업무에 대한 몰입과 노력으로 토스뱅크의 전월세보증금대출 관련 프로세스를
+        자동화하고 시스템 효율성을 증가시켰습니다.
+      </p>
+      <p className="my-2">
+        반면, 한 가지에 집중하는 경우 부분적으로 놓치는 요소가 있었습니다. 하지만 다양한 프로젝트와
+        인턴 실무를 경험하며 프로젝트의 전체적인 흐름과 업무 분배의 중요성을 깨달았습니다. 현재는
+        업무 분석에 우선순위를 두고, 자체적인 데드라인 설정을 통해 시간 관리에 집중하고 있습니다.
+        또한, 해당 도메인의 전문적인 지식을 가지고 있는 팀원에게 지속적으로 업무에 대한 피드백을
+        요청해 서비스에 대한 시야를 넓히고 있으며, 프로젝트 전체를 이해하는 개발자로 성장하고
+        있습니다.
+      </p>
+      <div className="w-full text-center text-slate-800 text-sm mt-8">작성일: {date}</div>
+      <div className="w-full text-center text-slate-800 text-sm">작성자: 곽태욱</div>
+      <div className="my-8" />
+      <h1 className="text-4xl mb-8 font-semibold w-full break-before-page">포트폴리오</h1>
       <h2 className="text-3xl my-8">프로젝트</h2>
       <div className="flex gap-1 px-1 text-sm text-gray-600">
         <Pin width="16" /> <b>고정됨</b>
