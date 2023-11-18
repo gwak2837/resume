@@ -302,39 +302,32 @@ export default function HomePage({ params }: PageProps) {
             alt="Python Badge"
           />
         </a>
-        <a href="https://www.shellscript.sh/" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Shell Script-4EAA25?style=flat-square&logo=GNU-Bash&logoColor=white"
-            alt="Shell Script Badge"
-          />
-        </a>
       </div>
       <h4 className="my-2">Frontend</h4>
       <div className="grid gap-1">
         <div className="flex gap-1">
-          <a href="https://nextjs.org/" rel="noreferrer" target="_blank">
+          <a href="https://nextjs.org/" target="_blank">
             <img
               src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"
               alt="Next.js Badge"
             />
           </a>
-          <a href="https://reactjs.org/" rel="noreferrer" target="_blank">
+          <a href="https://reactjs.org/" target="_blank">
             <img
               src="https://img.shields.io/badge/React.js-61DAFB?style=flat-square&logo=react&logoColor=black"
               alt="React Badge"
             />
           </a>
-          <a href="https://tailwindcss.com/" rel="noreferrer" target="_blank">
+          <a href="https://tailwindcss.com/" target="_blank">
             <img
               src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white"
               alt="tailwind Badge"
             />
           </a>
-
-          <a href="https://tanstack.com/query/v4/" rel="noreferrer" target="_blank">
+          <a href="https://swr.vercel.app/" target="_blank">
             <img
-              src="https://img.shields.io/badge/React Query-FF4154?style=flat-square&logo=react-query&logoColor=white"
-              alt="React Query Badge"
+              src="https://img.shields.io/badge/SWR-000000?style=flat-square&logo=SWR&logoColor=white"
+              alt="SWR Badge"
             />
           </a>
           <a href="https://zustand-demo.pmnd.rs/" rel="noreferrer" target="_blank">
@@ -343,7 +336,7 @@ export default function HomePage({ params }: PageProps) {
               alt="Zustand Badge"
             />
           </a>
-          <a href="https://zod.dev/" rel="noreferrer" target="_blank">
+          <a href="https://zod.dev/" target="_blank">
             <img
               src="https://img.shields.io/badge/Zod-3E67B1?style=flat-square&logo=zod&logoColor=white"
               alt="zod"
@@ -377,12 +370,6 @@ export default function HomePage({ params }: PageProps) {
             <img
               src="https://img.shields.io/badge/Event Source-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
               alt="Event Source Badge"
-            />
-          </a>
-          <a href="https://en.wikipedia.org/wiki/HTTP/2" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/HTTP2-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
-              alt="HTTP2 Badge"
             />
           </a>
           <a href="https://en.wikipedia.org/wiki/WebRTC" rel="noreferrer" target="_blank">
@@ -430,17 +417,6 @@ export default function HomePage({ params }: PageProps) {
               alt="Fastify Badge"
             />
           </a>
-          <a
-            href="https://en.wikipedia.org/wiki/HTTP/2_Server_Push"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <img
-              src="https://img.shields.io/badge/Server Push-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
-              alt="Server Push Badge"
-            />
-          </a>
-
           <a href="https://nodejs.org/en/" rel="noreferrer" target="_blank">
             <img
               src="https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white"
@@ -465,6 +441,12 @@ export default function HomePage({ params }: PageProps) {
               alt="Redis Badge"
             />
           </a>
+          <a href="https://www.mongodb.com/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=MongoDB&logoColor=white"
+              alt="mongodb Badge"
+            />
+          </a>
           <a href="https://www.elastic.co/kr/kibana" rel="noreferrer" target="_blank">
             <img
               src="https://img.shields.io/badge/Kibana-005571?style=flat-square&logo=kibana&logoColor=white"
@@ -477,6 +459,16 @@ export default function HomePage({ params }: PageProps) {
             <img
               src="https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white"
               alt="GraphQL Badge"
+            />
+          </a>
+          <a
+            href="https://en.wikipedia.org/wiki/HTTP/2_Server_Push"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              src="https://img.shields.io/badge/Server Push-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
+              alt="Server Push Badge"
             />
           </a>
           <a href="https://socket.io/" rel="noreferrer" target="_blank">
@@ -543,12 +535,6 @@ export default function HomePage({ params }: PageProps) {
       <h4 className="my-2">Developer Tool</h4>
       <div className="grid gap-1">
         <div className="flex gap-1">
-          <a href="https://yarnpkg.com/getting-started/install" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Yarn berry-2C8EBB?style=flat-square&logo=yarn&logoColor=white"
-              alt="Yarn Berry Badge"
-            />
-          </a>
           <a href="https://esbuild.github.io/" rel="noreferrer" target="_blank">
             <img
               src="https://img.shields.io/badge/esbuild-FFCF00?style=flat-square&logo=esbuild&logoColor=black"
