@@ -302,6 +302,18 @@ export default function HomePage({ params }: PageProps) {
             alt="Python Badge"
           />
         </a>
+        <a href="https://en.wikipedia.org/wiki/SQL" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/SQL-003B57?style=flat-square&logo=SQL&logoColor=white"
+            alt="SQL Badge"
+          />
+        </a>
+        <a href="https://graphql.org/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white"
+            alt="GraphQL Badge"
+          />
+        </a>
       </div>
       <h4 className="my-2">Frontend</h4>
       <div className="grid gap-1">
@@ -342,26 +354,13 @@ export default function HomePage({ params }: PageProps) {
               alt="zod"
             />
           </a>
-          <a href="https://react-hook-form.com/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/React Form-EC5990?style=flat-square&logo=react-hook-form&logoColor=white"
-              alt="react-hook-form Badge"
-            />
-          </a>
           <a href="https://web.dev/progressive-web-apps/" rel="noreferrer" target="_blank">
             <img
               src="https://img.shields.io/badge/PWA-5A0FC8?style=flat-square&logo=PWA&logoColor=white"
               alt="PWA Badge"
             />
           </a>
-          <a href="https://sentry.io/welcome/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Sentry-362D59?style=flat-square&logo=sentry&logoColor=white"
-              alt="Sentry"
-            />
-          </a>
-        </div>
-        <div className="flex gap-1">
+
           <a
             href="https://developer.mozilla.org/en-US/docs/Web/API/EventSource"
             rel="noreferrer"
@@ -372,12 +371,6 @@ export default function HomePage({ params }: PageProps) {
               alt="Event Source Badge"
             />
           </a>
-          <a href="https://en.wikipedia.org/wiki/WebRTC" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/WebRTC-333333?style=flat-square&logo=webrtc&logoColor=white"
-              alt="WebRTC Badge"
-            />
-          </a>
           <a
             href="https://developer.mozilla.org/en-US/docs/Web/API/Push_API"
             rel="noreferrer"
@@ -386,6 +379,20 @@ export default function HomePage({ params }: PageProps) {
             <img
               src="https://img.shields.io/badge/Web Push-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
               alt="Web Push Badge"
+            />
+          </a>
+          <a href="https://sentry.io/welcome/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Sentry-362D59?style=flat-square&logo=sentry&logoColor=white"
+              alt="Sentry"
+            />
+          </a>
+        </div>
+        <div className="flex gap-1">
+          <a href="https://en.wikipedia.org/wiki/WebRTC" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/WebRTC-333333?style=flat-square&logo=webrtc&logoColor=white"
+              alt="WebRTC Badge"
             />
           </a>
           <a href="https://analytics.google.com/analytics/web/" rel="noreferrer" target="_blank">
@@ -415,6 +422,22 @@ export default function HomePage({ params }: PageProps) {
             <img
               src="https://img.shields.io/badge/Fastify-000000?style=flat-square&logo=Fastify&logoColor=white"
               alt="Fastify Badge"
+            />
+          </a>
+          <a
+            href="https://en.wikipedia.org/wiki/HTTP/2_Server_Push"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              src="https://img.shields.io/badge/Server Push-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
+              alt="Server Push Badge"
+            />
+          </a>
+          <a href="https://socket.io/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Socket.io-010101?style=flat-square&logo=Socket.io&logoColor=white"
+              alt="WebSocket Badge"
             />
           </a>
           <a href="https://nodejs.org/en/" rel="noreferrer" target="_blank">
@@ -451,30 +474,6 @@ export default function HomePage({ params }: PageProps) {
             <img
               src="https://img.shields.io/badge/Kibana-005571?style=flat-square&logo=kibana&logoColor=white"
               alt="kibana"
-            />
-          </a>
-        </div>
-        <div className="flex gap-1">
-          <a href="https://graphql.org/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white"
-              alt="GraphQL Badge"
-            />
-          </a>
-          <a
-            href="https://en.wikipedia.org/wiki/HTTP/2_Server_Push"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <img
-              src="https://img.shields.io/badge/Server Push-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
-              alt="Server Push Badge"
-            />
-          </a>
-          <a href="https://socket.io/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Socket.io-010101?style=flat-square&logo=Socket.io&logoColor=white"
-              alt="WebSocket Badge"
             />
           </a>
         </div>
