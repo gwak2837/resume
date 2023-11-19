@@ -389,12 +389,6 @@ export default function HomePage({ params }: PageProps) {
           </a>
         </div>
         <div className="flex gap-1">
-          <a href="https://en.wikipedia.org/wiki/WebRTC" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/WebRTC-333333?style=flat-square&logo=webrtc&logoColor=white"
-              alt="WebRTC Badge"
-            />
-          </a>
           <a href="https://analytics.google.com/analytics/web/" rel="noreferrer" target="_blank">
             <img
               src="https://img.shields.io/badge/GA-E37400?style=flat-square&logo=Google Analytics&logoColor=white"
@@ -573,7 +567,7 @@ export default function HomePage({ params }: PageProps) {
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
             <a
-              href="https://www.tossbank.com/"
+              href="https://www.linkedin.com/company/toss-bank/"
               className="flex gap-2 items-center"
               target="_blank"
               rel="noreferrer"
@@ -604,7 +598,7 @@ export default function HomePage({ params }: PageProps) {
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
             <a
-              href="https://www.nextunicorn.kr/company/b3edccdaf3754d06?tab=all"
+              href="https://www.linkedin.com/company/planby-technologies/about/"
               className="flex gap-2 items-center"
               target="_blank"
               rel="noreferrer"
@@ -673,7 +667,7 @@ export default function HomePage({ params }: PageProps) {
           <div className="grid grid-cols-2 gap-4 my-4">
             <div className="flex gap-2 items-center">
               <a
-                href="https://www.saramin.co.kr/zf_user/company-info/view?csn=TTNPako4L0s0cVFhdktlYjlwZ0JZUT09"
+                href="https://www.linkedin.com/company/%EC%A3%BC-%EC%95%8C%ED%8C%8C%EC%B9%B4%EC%82%B4%EB%A1%B1/about/"
                 className="flex gap-2 items-center"
                 target="_blank"
                 rel="noreferrer"
@@ -737,7 +731,7 @@ export default function HomePage({ params }: PageProps) {
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
             <a
-              href="https://www.saramin.co.kr/zf_user/company-info/view?csn=VUxtcFBINlJLR2wra01lNlhjbEV0QT09"
+              href="https://www.linkedin.com/company/festaio/"
               className="flex gap-2 items-center"
               target="_blank"
               rel="noreferrer"
