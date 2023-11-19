@@ -671,15 +671,24 @@ export default function HomePage({ params }: PageProps) {
         <div className="border w-full my-6" />
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
-            <a
-              href="https://www.saramin.co.kr/zf_user/company-info/view?csn=TTNPako4L0s0cVFhdktlYjlwZ0JZUT09"
-              className="flex gap-2 items-center"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <b>(주)알파카살롱</b>
-              <Image src="/images/알파카살롱-logo.jpg" alt="알파카살롱" width="72" height="24" />
-            </a>
+            <div className="flex gap-2 items-center">
+              <a
+                href="https://www.saramin.co.kr/zf_user/company-info/view?csn=TTNPako4L0s0cVFhdktlYjlwZ0JZUT09"
+                className="flex gap-2 items-center"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <b>(주)알파카살롱</b>{' '}
+                <Image src="/images/알파카살롱-logo.jpg" alt="알파카살롱" width="72" height="24" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/%EB%A6%AC%ED%8A%B8%EB%A6%AC%EB%B2%84%EC%82%B4%EB%A1%B1/"
+                className="text-sm"
+                target="_blank"
+              >
+                (現 리트리버살롱)
+              </a>
+            </div>
             <div>
               <a href="/pdf/알파카살롱.pdf" target="_blank">
                 2021년 11월 9일 ~ 2022년 2월 8일 (3개월)
