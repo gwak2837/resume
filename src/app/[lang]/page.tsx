@@ -562,7 +562,7 @@ export default function HomePage({ params }: PageProps) {
         </div>
       </div>
       <h2 className="text-3xl my-8">
-        {dictionary.개발경력[lang]} <span className="text-sm">(1년 9개월+)</span>
+        {dictionary.개발경력[lang]} <span className="text-sm">(1년 9개월)</span>
       </h2>
       <ul>
         {/* <li>
@@ -1207,7 +1207,7 @@ export default function HomePage({ params }: PageProps) {
         <div>2명</div>
         <div>2023년 7월 24일 ~ 8월 6일 (2주)</div>
       </div>
-      <div className="flex gap-0.5 my-2">
+      <div className="flex gap-0.5 my-2 items-center">
         <a
           href="https://github.com/gwak2837/tomorrow-house"
           target="_blank"
@@ -1235,7 +1235,7 @@ export default function HomePage({ params }: PageProps) {
           </div>
         </a>
         <a
-          href="https://tomorrow-house.vercel.app"
+          href="https://tomorrow-house.vercel.app/image/upload"
           target="_blank"
           rel="noreferrer"
           className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
@@ -1247,6 +1247,7 @@ export default function HomePage({ params }: PageProps) {
             </h5>
           </div>
         </a>
+        <span className="text-xs text-red-500">백엔드 비활성화됨</span>
       </div>
       <div>AI가 만드는 내일의 우리집 인테리어를 경험해보세요</div>
       <div className="flex flex-wrap gap-1 my-2">
@@ -1437,7 +1438,7 @@ export default function HomePage({ params }: PageProps) {
         <div>1명 (본인)</div>
         <div>2023년 1월 24일 ~ 8월 6일 (6개월)</div>
       </div>
-      <div className="flex gap-0.5 my-2">
+      <div className="flex gap-0.5 my-2 items-center">
         <a
           href="https://github.com/gwak2837/lofin"
           target="_blank"
@@ -1475,19 +1476,7 @@ export default function HomePage({ params }: PageProps) {
             </h5>
           </div>
         </a>
-        <a
-          href="https://lofin-gxyyph2xda-du.a.run.app"
-          target="_blank"
-          rel="noreferrer"
-          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
-        >
-          <div className="flex gap-1 items-center">
-            <Image src="/images/cloud-run.svg" alt="github" width="16" height="16" />
-            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
-              lofin-gxyyph2xda-du.a.run.app
-            </h5>
-          </div>
-        </a>
+        <span className="text-xs text-red-500">백엔드 비활성화됨</span>
       </div>
       <div>
         대한민국 한 해 예산이 약 600조이고 이걸 중앙 정부와 지자체가 나눠서 가져간다. 하지만 현재
@@ -1677,7 +1666,7 @@ export default function HomePage({ params }: PageProps) {
         <div>1명 (본인)</div>
         <div>2022년 11월 22일 ~ 2023년 1월 19일 (2개월)</div>
       </div>
-      <div className="flex gap-0.5 my-2">
+      <div className="flex gap-0.5 my-2 items-center">
         <a
           href="https://github.com/gwak2837/yeou"
           target="_blank"
@@ -1715,11 +1704,9 @@ export default function HomePage({ params }: PageProps) {
             </h5>
           </div>
         </a>
+        <span className="text-xs text-red-500">백엔드 비활성화됨</span>
       </div>
-      <div>
-        시시각각 변하는 쿠팡의 가격을 추적하여 알림을 받기 위해 프로젝트를 시작함. 이후 이 기능을
-        쿠팡 파트너스의 제휴 URL과 연계해 수입을 얻을 예정임
-      </div>
+      <div>시시각각 변하는 쿠팡의 가격을 추적하여 알림을 받기 위해 프로젝트를 시작함</div>
       <div className="flex flex-wrap gap-1 my-2">
         <a href="" rel="noreferrer" target="_blank">
           <img
@@ -1813,7 +1800,7 @@ export default function HomePage({ params }: PageProps) {
         <div>1명 (본인)</div>
         <div>2022년 6월 1일 ~ 10월 31일 (5개월)</div>
       </div>
-      <div className="flex gap-0.5 my-2">
+      <div className="flex gap-0.5 my-2 items-center">
         <a
           href="https://github.com/gwak2837/jayudam"
           target="_blank"
@@ -1851,6 +1838,7 @@ export default function HomePage({ params }: PageProps) {
             </h5>
           </div>
         </a>
+        <span className="text-xs text-red-500">백엔드 비활성화됨</span>
       </div>
       <div>공공보건 증진을 위한 개인간 보건기록 QR코드 익명 인증 서비스</div>
       <div className="flex flex-wrap gap-1 my-2">
@@ -1967,12 +1955,8 @@ export default function HomePage({ params }: PageProps) {
         <h4>비마이시즌</h4>
         <div>2명</div>
         <div>
-          <a href="/images/2022-theheartcompany.png" target="_blank">
-            2022년 2월 14일
-          </a>{' '}
-          ~{' '}
-          <a href="/images/2022-theheartcompany2.png" target="_blank">
-            3월 13일 (1개월)
+          <a href="/pdf/더하트컴퍼니.pdf" target="_blank">
+            2022년 2월 14일 ~ 3월 13일 (1개월)
           </a>
         </div>
       </div>
@@ -2095,7 +2079,7 @@ export default function HomePage({ params }: PageProps) {
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>알파카살롱</h4>
         <div>1명 (본인)</div>
-        <a href="/images/2021-alpacasalon.webp" target="_blank">
+        <a href="/pdf/알파카살롱.pdf" target="_blank">
           2021년 12월 21일 ~ 2022년 1월 10일 (3주)
         </a>
       </div>
@@ -2248,20 +2232,6 @@ export default function HomePage({ params }: PageProps) {
           />
           <Image
             src="/images/alpacasalon-12.png"
-            alt="jayudam architecture"
-            width="368"
-            height="804"
-            className="border"
-          />
-          <Image
-            src="/images/alpacasalon-13.png"
-            alt="jayudam architecture"
-            width="368"
-            height="804"
-            className="border"
-          />
-          <Image
-            src="/images/alpacasalon-14.png"
             alt="jayudam architecture"
             width="368"
             height="804"
@@ -2446,7 +2416,7 @@ export default function HomePage({ params }: PageProps) {
         <div>2명</div>
         2021년 8월 10일 ~ 10월 31일 (2개월 20일)
       </div>
-      <div className="flex gap-0.5 my-2">
+      <div className="flex gap-0.5 my-2 items-center">
         <a
           href="https://github.com/gwak2837/sobok"
           target="_blank"
@@ -2484,9 +2454,10 @@ export default function HomePage({ params }: PageProps) {
             </h5>
           </div>
         </a>
+        <span className="text-xs text-red-500">백엔드 비활성화됨</span>
       </div>
       <div>
-        <b>소</b>소한 행<b>복</b> :) 카페 및 디저트 매장 검색이 불편하니 검색을 편리하게 만들자!
+        <b>소</b>소한 행<b>복</b> :) 카페 및 디저트 매장 검색이 불편하니 검색을 편리하게 만들자!{' '}
       </div>
       <div className="flex flex-wrap gap-1 my-2">
         <a href="https://nextjs.org/" rel="noreferrer" target="_blank">
