@@ -196,7 +196,11 @@ export default function HomePage({ params }: PageProps) {
               </a>
             </td>
             <td>{dictionary.호남고등학교_세부[lang]}</td>
-            <td>{dictionary.호남고등학교_기간[lang]}</td>
+            <td>
+              <a href="/pdf/호남고등학교-생활기록부.pdf" target="_blank">
+                {dictionary.호남고등학교_기간[lang]}
+              </a>
+            </td>
             <td>
               <a href="/pdf/호남고등학교-성적증명서.pdf" target="_blank">
                 {dictionary.호남고등학교_성적[lang]}
@@ -638,7 +642,7 @@ export default function HomePage({ params }: PageProps) {
                 2023년 7월 24일 ~ 8월 6일 (2주)
               </a>
               <br />
-              2023년 11월 7일 ~ 26일 (2주)
+              {/* 2023년 11월 7일 ~ 26일 (2주) */}
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">
@@ -914,7 +918,11 @@ export default function HomePage({ params }: PageProps) {
             </a>
             <div>2021년 8월 25일 ~ 9월 30일 (1개월)</div>
           </div>
-          <div>직책: 웹 개발 수업 강사</div>
+          <div className="grid grid-cols-2 gap-x-4">
+            <div>직책: 웹 개발 수업 강사</div>
+            <div>부서: Class Steve Jobs (초중등반)</div>
+            <div>직위: 계약직</div>
+          </div>
           <div>
             역할: 초등학생/중학생을 대상으로 HTML/CSS/JS 개념 및 자기소개 웹페이지 제작 수업 (주
             2회, 1회 3시간)
@@ -950,6 +958,7 @@ export default function HomePage({ params }: PageProps) {
           <div className="grid grid-cols-2 gap-x-4">
             <div>직책: Data Labeler</div>
             <div>부서: 논문3팀 (지도교수 포함 8명)</div>
+            <div>직위: 교환학생</div>
           </div>
           <div>
             역할:{' '}
@@ -974,6 +983,7 @@ export default function HomePage({ params }: PageProps) {
           <div className="grid grid-cols-2 gap-x-4">
             <div>직책: Fullstack Developer (팀장)</div>
             <div>부서: 프로젝트2팀 (5명)</div>
+            <div>직위: 국비지원 교육생</div>
           </div>
           <div>역할: Docker 기반 심리테스트 웹사이트 구축, k8s와 CI/CD 기반 CRUD 게시판 구축</div>
         </li>
@@ -986,6 +996,7 @@ export default function HomePage({ params }: PageProps) {
           <div className="grid grid-cols-2 gap-x-4">
             <div>직책: Fullstack Developer (팀장)</div>
             <div>부서: 개발팀 (2명)</div>
+            <div>직위: 공동창업자</div>
           </div>
           <div>
             역할: '카페의 특색을 담아내는 사용자 주도 SNS형 디저트 정보 공유 공간' 디저트핏 기획 및
@@ -998,7 +1009,11 @@ export default function HomePage({ params }: PageProps) {
             <b>중앙대학교 2019년 2학기 SW 기초 교과목 멘토</b>
             <div>2019년 9월 16일 ~ 12월 13일 (3개월)</div>
           </div>
-          <div>직책: ‘컴퓨팅적 사고와 문제 해결’ 수업 조교</div>
+          <div className="grid grid-cols-2 gap-x-4">
+            <div>직책: 수업 조교</div>
+            <div>부서: ‘컴퓨팅적 사고와 문제 해결’ 과목</div>
+            <div>직위: 근로장학생</div>
+          </div>
           <div>
             역할: 수업 중 수강생의 Scratch 프로그래밍 관련 질의 응답 및 과제 채점 (주 2회, 1회
             2시간)
@@ -1082,7 +1097,9 @@ export default function HomePage({ params }: PageProps) {
           (여신 심사·관리·운영 시스템)
         </h4>
         <div>개발: 6명 | 비개발: 6명</div>
-        <div>2023년 8월 7일 ~ 11월 6일 (3개월)</div>
+        <a href="/pdf/토스뱅크-경력증명서.pdf" target="_blank">
+          <div>2023년 8월 7일 ~ 11월 6일 (3개월)</div>
+        </a>
       </div>
       <div className="flex gap-0.5 my-2">
         <a
@@ -1204,8 +1221,10 @@ export default function HomePage({ params }: PageProps) {
       <div className="border w-full my-6" />
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>HOMI AI</h4>
-        <div>2명</div>
-        <div>2023년 7월 24일 ~ 8월 6일 (2주)</div>
+        <div>4명</div>
+        <a href="/pdf/플랜바이테크놀로지스.pdf" target="_blank">
+          <div>2023년 7월 24일 ~ 8월 6일 (2주)</div>
+        </a>
       </div>
       <div className="flex gap-0.5 my-2 items-center">
         <a
