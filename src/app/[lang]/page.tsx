@@ -562,7 +562,7 @@ export default function HomePage({ params }: PageProps) {
         </div>
       </div>
       <h2 className="text-3xl my-8">
-        {dictionary.개발경력[lang]} <span className="text-base">(1년 9개월)</span>
+        {dictionary.개발경력[lang]} <span className="text-sm">(1년 9개월+)</span>
       </h2>
       <ul>
         {/* <li>
@@ -575,9 +575,7 @@ export default function HomePage({ params }: PageProps) {
               <b>리디(주)</b>
               <RidiLogo />
             </a>
-            <a href="/pdf/토스뱅크-경력증명서.pdf" target="_blank">
-              <div>2023년 11월 27일 ~ 현재</div>
-            </a>
+            <div>2023년 11월 27일 ~ 현재</div>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
             <div>직책: Frontend Developer </div>
@@ -944,15 +942,21 @@ export default function HomePage({ params }: PageProps) {
               <b>Purdue University 온라인 해외교육</b>
             </a>
             <div>
-              <a href="/images/2021-purdue.webp" target="_blank">
+              <a href="/pdf/Certificates-IITP-Summer-2021-CAU.pdf" target="_blank">
                 2021년 7월 5일 ~ 8월 20일 (2개월)
               </a>
             </div>
           </div>
-          <div>직책: 프로젝트 팀원 (지도교수 포함 8명)</div>
+          <div className="grid grid-cols-2 gap-x-4">
+            <div>직책: Data Labeler</div>
+            <div>부서: 논문3팀 (지도교수 포함 8명)</div>
+          </div>
           <div>
-            역할: 'UAV ground scanning systems to find people or groups' 논문 작성, 학습 데이터 수집
-            및 가공
+            역할:{' '}
+            <a href="/pdf/IITP_2021_summer_UAV_ground_scanning_system.pdf" target="_blank">
+              'UAV Ground Scanning System'
+            </a>{' '}
+            논문 작성, 학습 데이터 수집 및 가공
           </div>
         </li>
         <div className="border w-full my-6" />
@@ -967,7 +971,10 @@ export default function HomePage({ params }: PageProps) {
               </a>
             </div>
           </div>
-          <div>직책: 프로젝트 팀장 (팀장 포함 5명)</div>
+          <div className="grid grid-cols-2 gap-x-4">
+            <div>직책: Fullstack Developer (팀장)</div>
+            <div>부서: 프로젝트2팀 (5명)</div>
+          </div>
           <div>역할: Docker 기반 심리테스트 웹사이트 구축, k8s와 CI/CD 기반 CRUD 게시판 구축</div>
         </li>
         <div className="border w-full my-6" />
@@ -976,7 +983,10 @@ export default function HomePage({ params }: PageProps) {
             <b>신디(SinDy, Signature in Dessert) 창업</b>
             <div>2021년 2월 25일 ~ 10월 31일 (8개월)</div>
           </div>
-          <div>직책: 개발팀장 (팀장 포함 2명)</div>
+          <div className="grid grid-cols-2 gap-x-4">
+            <div>직책: Fullstack Developer (팀장)</div>
+            <div>부서: 개발팀 (2명)</div>
+          </div>
           <div>
             역할: '카페의 특색을 담아내는 사용자 주도 SNS형 디저트 정보 공유 공간' 디저트핏 기획 및
             Frontend · Backend · Cloud 개발
@@ -3322,7 +3332,11 @@ export default function HomePage({ params }: PageProps) {
           </div>
           <div>
             블록체인 기반 전자투표 시스템(e-voting) 기획 및 개발{' '}
-            <a href="https://bond687.wixsite.com/bbreview" rel="noreferrer" target="_blank">
+            <a
+              href="https://bond687.wixsite.com/bbreview#:~:text=BBR%20Hackathon%20%EC%88%98%EC%83%81%EC%9E%90%20%EB%AA%85%EB%8B%A8"
+              rel="noreferrer"
+              target="_blank"
+            >
               (피칭상)
             </a>
           </div>
