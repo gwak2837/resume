@@ -566,7 +566,7 @@ export default function HomePage({ params }: PageProps) {
         </div>
       </div>
       <h2 className="text-3xl my-8">
-        {dictionary.개발경력[lang]} <span className="text-sm">(1년 9개월)</span>
+        {dictionary.개발경력[lang]} <span className="text-sm">(1년 8개월)</span>
       </h2>
       <ul>
         {/* <li>
