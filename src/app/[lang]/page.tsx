@@ -4,6 +4,7 @@ import { APPLICATION_NAME } from '../../common/constants'
 import { PageProps } from '../../common/types'
 import FestaLogo from '../../svg/FestaLogo'
 import Pin from '../../svg/Pin'
+import RidiLogo from '../../svg/RidiLogo'
 import { getISODate } from '../../util/date'
 
 import { dictionary } from './dictionary'
@@ -561,16 +562,44 @@ export default function HomePage({ params }: PageProps) {
         </div>
       </div>
       <h2 className="text-3xl my-8">
-        {dictionary.개발경력[lang]} <span className="text-base">(1년 8개월)</span>
+        {dictionary.개발경력[lang]} <span className="text-base">(1년 9개월)</span>
       </h2>
       <ul>
+        {/* <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
+            <a
+              href="https://www.linkedin.com/company/ridi/"
+              className="flex gap-2 items-center"
+              target="_blank"
+            >
+              <b>리디(주)</b>
+              <RidiLogo />
+            </a>
+            <a href="/pdf/토스뱅크-경력증명서.pdf" target="_blank">
+              <div>2023년 11월 27일 ~ 현재</div>
+            </a>
+          </div>
+          <div className="grid grid-cols-2 gap-x-4">
+            <div>직책: Frontend Developer </div>
+            <div>부서: Global (00명)</div>
+            <div>직위: 정규직</div>
+            <div>직급: Junior</div>
+          </div>
+          <div>
+            역할:{' '}
+            <a href="https://manta.net/en" target="_blank">
+              Manta Comics
+            </a>{' '}
+            개발
+          </div>
+        </li>
+        <div className="border w-full my-6" /> */}
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
             <a
               href="https://www.linkedin.com/company/toss-bank/"
               className="flex gap-2 items-center"
               target="_blank"
-              rel="noreferrer"
             >
               <b>토스뱅크(주)</b>
               <Image
@@ -586,7 +615,7 @@ export default function HomePage({ params }: PageProps) {
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div>직책: Admin Developer</div>
-            <div>부서: Housing Loan Squad</div>
+            <div>부서: Housing Loan Squad (12명)</div>
           </div>
           <div>직위: 계약직</div>
           <div>
@@ -607,21 +636,20 @@ export default function HomePage({ params }: PageProps) {
               <Image src="/images/planby-logo.png" alt="planby" width="50" height="25" />
             </a>
             <div>
-              <a href="/images/planby-1.webp" target="_blank">
-                2023년 7월 24일
+              <a href="/pdf/플랜바이테크놀로지스.pdf" target="_blank">
+                2023년 7월 24일 ~ 8월 6일 (2주)
               </a>
-              {' ~ '}
-              <a href="/images/planby-2.webp" target="_blank">
-                8월 6일
-              </a>{' '}
-              <a href="/images/planby-3.webp" target="_blank">
-                (2주)
-              </a>
+              <br />
+              2023년 11월 7일 ~ 26일 (2주)
             </div>
           </div>
-          <div>직책: 개발자문</div>
+          <div className="grid grid-cols-2 gap-4">
+            <div>직책: Frontend Developer</div>
+            <div>부서: 개발팀 (4명)</div>
+          </div>
+          <div>직위: 계약직</div>
           <div>
-            역할:{' '}
+            역할: 고등학교 친구가 창업한 스타트업에서{' '}
             <a href="https://landing.planby.us/" target="_blank" rel="noreferrer">
               'HOMI AI - 인공지능이 꾸며주는 나의 공간'
             </a>{' '}
@@ -651,15 +679,17 @@ export default function HomePage({ params }: PageProps) {
               </a>
             </div>
           </div>
-          <div>직책: 개발팀장 (팀장 포함 2명)</div>
-          <div>직위: 인턴</div>
-
+          <div className="grid grid-cols-2 gap-4">
+            <div>직책: Frontend Developer</div>
+            <div>부서: 개발팀 (2명)</div>
+          </div>
+          <div>직위: 계약직</div>
           <div>
             역할:{' '}
             <a href="https://www.bemyseason.co.kr/" target="_blank" rel="noreferrer">
               '비마이시즌 - 다시 일하고 싶은 여성의 상호성장 플랫폼'
             </a>{' '}
-            개발
+            MVP 개발
           </div>
         </li>
         <div className="border w-full my-6" />
@@ -689,7 +719,10 @@ export default function HomePage({ params }: PageProps) {
               </a>
             </div>
           </div>
-          <div>직책: 개발팀장 (팀장 포함 3명)</div>
+          <div className="grid grid-cols-2 gap-4">
+            <div>직책: Fullstack Developer (팀장)</div>
+            <div>부서: 개발팀 (3명)</div>
+          </div>
           <div>직위: 인턴</div>
           <div>역할: '4050 여성 전용 커뮤니티' 알파카살롱 기획 및 MVP 개발</div>
         </li>
@@ -703,7 +736,10 @@ export default function HomePage({ params }: PageProps) {
               2021년 6월 1일 ~ 8월 31일 (3개월)
             </a>
           </div>
-          <div>직책: 개발팀장 (팀장 포함 2명)</div>
+          <div className="grid grid-cols-2 gap-4">
+            <div>직책: Frontend Developer (팀장)</div>
+            <div>부서: 개발팀 (2명)</div>
+          </div>
           <div>직위: 참여연구원</div>
           <div>
             역할: '3차) 블록체인 기술을 이용한 해외 건설프로젝트 스마트 분쟁관리 모델구축 연구' 과제
@@ -723,7 +759,10 @@ export default function HomePage({ params }: PageProps) {
               </a>
             </div>
           </div>
-          <div>직책: 프로젝트 팀장 (팀장 포함 5명)</div>
+          <div className="grid grid-cols-2 gap-4">
+            <div>직책: Frontend Developer (팀장)</div>
+            <div>부서: 프로젝트2팀 (6명)</div>
+          </div>
           <div>직위: 인턴</div>
           <div>역할: ‘음성인식 기반 노래검색 서비스’ Icezam 기획 및 개발</div>
         </li>
@@ -745,7 +784,10 @@ export default function HomePage({ params }: PageProps) {
               </a>
             </div>
           </div>
-          <div>직책: Frontend 개발팀원 (팀장 포함 3명)</div>
+          <div className="grid grid-cols-2 gap-4">
+            <div>직책: Frontend Developer</div>
+            <div>부서: Admin 개발팀 (4명)</div>
+          </div>
           <div>직위: 인턴</div>
           <div>
             역할:{' '}
@@ -782,7 +824,10 @@ export default function HomePage({ params }: PageProps) {
               </a>
             </div>
           </div>
-          <div>직책: 개발부원 (팀장 포함 3명)</div>
+          <div className="grid grid-cols-2 gap-4">
+            <div>직책: Frontend Developer</div>
+            <div>부서: 개발부 (3명)</div>
+          </div>
           <div>직위: 인턴</div>
           <div>역할: '방탈출 리뷰 웹사이트' 기획·디자인 및 MVP 개발</div>
         </li>
@@ -802,7 +847,10 @@ export default function HomePage({ params }: PageProps) {
               </a>
             </div>
           </div>
-          <div>직책: 개발팀원 (팀장 포함 2명)</div>
+          <div className="grid grid-cols-2 gap-4">
+            <div>직책: Software Developer</div>
+            <div>부서: 개발팀 (2명)</div>
+          </div>
           <div>직위: 참여연구원</div>
           <div>
             역할: 'KFX IR 해석 기법 및 해석 소프트웨어 개발 연구' 과제 참여. 적외선 영상 통계 분석
@@ -827,9 +875,12 @@ export default function HomePage({ params }: PageProps) {
               </a>
             </div>
           </div>
-          <div>직책: 연구4팀 팀원 (팀장 포함 10명 이상)</div>
+          <div className="grid grid-cols-2 gap-4">
+            <div>직책: Data Analyst</div>
+            <div>부서: 연구4팀 (10명)</div>
+          </div>
           <div>직위: 인턴</div>
-          <div>역할: 설문 조사 데이터 통계 분석 및 엑셀 함수 작성</div>
+          <div>역할: 여론 조사 데이터 통계 분석 및 엑셀 함수 작성</div>
         </li>
       </ul>
       <h2 className="text-3xl my-8">개발 경험</h2>

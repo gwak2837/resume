@@ -2,10 +2,10 @@ import 'server-only'
 
 export const dictionary = {
   작성일: {
-    ko: '2023년 11월 11일',
-    en: 'November 11, 2023',
-    zh: '2023年11月11日',
-    ja: '2023年 11月 11日',
+    ko: '2023년 11월 20일',
+    en: 'November 20, 2023',
+    zh: '2023年11月20日',
+    ja: '2023年 11月 20日',
   },
   이력서: {
     ko: '이력서',
