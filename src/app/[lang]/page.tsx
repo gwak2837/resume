@@ -4,6 +4,7 @@ import { APPLICATION_NAME } from '../../common/constants'
 import { PageProps } from '../../common/types'
 import FestaLogo from '../../svg/FestaLogo'
 import Pin from '../../svg/Pin'
+import PlanbyLogo from '../../svg/PlanbyLogo'
 import RidiLogo from '../../svg/RidiLogo'
 import { getISODate } from '../../util/date'
 
@@ -635,7 +636,7 @@ export default function HomePage({ params }: PageProps) {
               rel="noreferrer"
             >
               <b>(주)플랜바이테크놀로지스</b>
-              <Image src="/images/planby-logo.png" alt="planby" width="50" height="25" />
+              <PlanbyLogo height="19" />
             </a>
             <div>
               <a href="/pdf/플랜바이테크놀로지스.pdf" target="_blank">
@@ -2264,7 +2265,7 @@ export default function HomePage({ params }: PageProps) {
         <div>1명 (본인)</div>
         <div>2021년 10월 21일 ~ 11월 5일 (2주)</div>
       </div>
-      <div className="flex gap-0.5 my-2">
+      <div className="flex gap-0.5 my-2 items-center">
         <a
           href="https://github.com/gwak2837/kubernetes-cloud"
           target="_blank"
@@ -2274,7 +2275,7 @@ export default function HomePage({ params }: PageProps) {
           <div className="flex gap-1 items-center">
             <Image src="/images/github.svg" alt="github" width="16" height="16" />
             <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
-              kubernetes-cloud
+              frontend
             </h5>
           </div>
         </a>
@@ -2286,11 +2287,23 @@ export default function HomePage({ params }: PageProps) {
         >
           <div className="flex gap-1 items-center">
             <Image src="/images/github.svg" alt="github" width="16" height="16" />
+            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">backend</h5>
+          </div>
+        </a>
+        <a
+          href="https://kubernetes-cloud.vercel.app/"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+        >
+          <div className="flex gap-1 items-center">
+            <Image src="/images/vercel.png" alt="github" width="16" height="16" />
             <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
-              kubernetes-cloud-backend
+              kubernetes-cloud.vercel.app
             </h5>
           </div>
         </a>
+        <span className="text-xs text-red-500">백엔드 비활성화됨</span>
       </div>
       <div>Google Kubernetes Engine(GKE) 상 게시글 CRUD 및 로그인 회원가입 서비스 구현</div>
       <div className="flex flex-wrap gap-1 my-2">
