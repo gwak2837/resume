@@ -1,6 +1,6 @@
 import 'server-only'
 
-export const dictionary = {
+export const dict = {
   작성일: {
     ko: '2023년 11월 30일',
     en: 'November 30, 2023',

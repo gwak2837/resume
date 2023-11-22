@@ -8,7 +8,7 @@ import PlanbyLogo from '../../svg/PlanbyLogo'
 import RidiLogo from '../../svg/RidiLogo'
 import { getISODate } from '../../util/date'
 
-import { dictionary } from './dictionary'
+import { dict } from './dictionary'
 import LanguageUpdate from './LanguageUpdate'
 import OtherCertificates from './OtherCertificates'
 
@@ -38,13 +38,13 @@ export async function generateMetadata({ params }: PageProps) {
 
 export default function HomePage({ params }: PageProps) {
   const lang = params.lang as 'ko' | 'en' | 'zh' | 'ja'
-  const date = dictionary.작성일[lang]
+  const date = dict.작성일[lang]
 
   return (
     <main className="mx-auto mb-8 max-w-[720px]">
       <LanguageUpdate lang={lang} />
       <div className="flex justify-between items-center">
-        <h1 className="text-4xl mb-6 font-semibold w-full">{dictionary.이력서[lang]}</h1>
+        <h1 className="text-4xl mb-6 font-semibold w-full">{dict.이력서[lang]}</h1>
         <div className="flex whitespace-nowrap gap-2">
           <Link href="/ko">한국어</Link>
           <Link href="/en">English</Link>
@@ -59,17 +59,17 @@ export default function HomePage({ params }: PageProps) {
             <tbody>
               <tr>
                 <td className="border-none p-0">🧑&nbsp;&nbsp;</td>
-                <td className="border-none p-0">{dictionary.이름[lang]}</td>
+                <td className="border-none p-0">{dict.이름[lang]}</td>
               </tr>
               <tr>
                 <td className="border-none p-0">🎉</td>
-                <td className="border-none p-0">{dictionary.생일[lang]}</td>
+                <td className="border-none p-0">{dict.생일[lang]}</td>
               </tr>
               <tr>
                 <td className="border-none p-0 align-top">🎓</td>
                 <td className="border-none p-0">
                   <a href="/images/학위증.webp" target="_blank">
-                    {dictionary.학위[lang]}
+                    {dict.학위[lang]}
                   </a>
                 </td>
               </tr>
@@ -77,7 +77,7 @@ export default function HomePage({ params }: PageProps) {
                 <td className="border-none p-0 align-top">🏠</td>
                 <td className="border-none p-0">
                   <a href="https://naver.me/Fcg2bYyc" target="_blank" rel="noreferrer">
-                    {dictionary.주소[lang]}
+                    {dict.주소[lang]}
                   </a>
                 </td>
               </tr>
@@ -85,7 +85,7 @@ export default function HomePage({ params }: PageProps) {
                 <td className="border-none p-0 align-top">🪖</td>
                 <td className="border-none p-0">
                   <a href="/pdf/병적증명서.pdf" target="_blank">
-                    {dictionary.병역[lang]}
+                    {dict.병역[lang]}
                   </a>
                 </td>
               </tr>
@@ -93,13 +93,13 @@ export default function HomePage({ params }: PageProps) {
                 <td className="border-none p-0"></td>
                 <td className="border-none p-0">
                   <a href="/images/2023-military.webp" target="_blank">
-                    {dictionary.KATUSA[lang]}
+                    {dict.KATUSA[lang]}
                   </a>
                 </td>
               </tr>
               <tr>
                 <td className="border-none p-0"></td>
-                <td className="border-none p-0">{dictionary.ROTC[lang]}</td>
+                <td className="border-none p-0">{dict.ROTC[lang]}</td>
               </tr>
               <tr>
                 <td className="border-none p-0">📱</td>
@@ -153,72 +153,72 @@ export default function HomePage({ params }: PageProps) {
           </table>
         </div>
       </div>
-      <p className="my-4 ">{dictionary.한줄소개[lang]}</p>
-      <h2 className="text-3xl my-8 ">{dictionary.학력[lang]}</h2>
+      <p className="my-4 ">{dict.한줄소개[lang]}</p>
+      <h2 className="text-3xl my-8 ">{dict.학력[lang]}</h2>
       <table>
         <thead>
           <tr>
-            <td>{dictionary.학력_이름[lang]}</td>
-            <td>{dictionary.세부[lang]}</td>
-            <td>{dictionary.기간[lang]}</td>
-            <td>{dictionary.비고[lang]}</td>
+            <td>{dict.학력_이름[lang]}</td>
+            <td>{dict.세부[lang]}</td>
+            <td>{dict.기간[lang]}</td>
+            <td>{dict.비고[lang]}</td>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td className="font-semibold">
               <a href="https://www.cau.ac.kr" target="_blank" rel="noreferrer">
-                {dictionary.중앙대학교[lang]}
+                {dict.중앙대학교[lang]}
               </a>
             </td>
             <td>
               <a href="/images/학위증.webp" target="_blank">
-                {dictionary.학력_학위[lang]}
+                {dict.학력_학위[lang]}
               </a>
               <div className="text-xs">(MAGNA CUM LAUDE)</div>
             </td>
             <td>
               <a href="/pdf/중앙대학교-졸업증명서.pdf" target="_blank">
-                {dictionary.학력_기간[lang]}
+                {dict.학력_기간[lang]}
               </a>
             </td>
             <td>
               <a href="/images/2022-univ.webp" target="_blank">
-                {dictionary.학력_전체학점[lang]}
+                {dict.학력_전체학점[lang]}
               </a>
               <br />
-              {dictionary.학력_전공학점[lang]}
+              {dict.학력_전공학점[lang]}
             </td>
           </tr>
           <tr>
             <td className="font-semibold">
               <a href="https://school.jbedu.kr/honam-h" target="_blank" rel="noreferrer">
-                {dictionary.호남고등학교[lang]}
+                {dict.호남고등학교[lang]}
               </a>
             </td>
-            <td>{dictionary.호남고등학교_세부[lang]}</td>
+            <td>{dict.호남고등학교_세부[lang]}</td>
             <td>
               <a href="/pdf/호남고등학교-생활기록부.pdf" target="_blank">
-                {dictionary.호남고등학교_기간[lang]}
+                {dict.호남고등학교_기간[lang]}
               </a>
             </td>
             <td>
               <a href="/pdf/호남고등학교-성적증명서.pdf" target="_blank">
-                {dictionary.호남고등학교_성적[lang]}
+                {dict.호남고등학교_성적[lang]}
               </a>
             </td>
           </tr>
           <tr>
             <td className="font-semibold">
               <a href="https://school.jbedu.kr/jb-hs" target="_blank" rel="noreferrer">
-                {dictionary.화산중학교[lang]}
+                {dict.화산중학교[lang]}
               </a>
             </td>
-            <td>{dictionary.기숙형자율학교[lang]}</td>
-            <td>{dictionary.화산중학교_기간[lang]}</td>
+            <td>{dict.기숙형자율학교[lang]}</td>
+            <td>{dict.화산중학교_기간[lang]}</td>
             <td>
               <a href="/pdf/완주화산중학교-성적증명서.pdf" target="_blank">
-                {dictionary.화산중학교_성적[lang]}
+                {dict.화산중학교_성적[lang]}
               </a>
             </td>
           </tr>
@@ -567,10 +567,10 @@ export default function HomePage({ params }: PageProps) {
         </div>
       </div>
       <h2 className="text-3xl my-8">
-        {dictionary.개발경력[lang]} <span className="text-sm">(1년 8개월)</span>
+        {dict.개발경력[lang]} <span className="text-sm">(1년 9개월+α)</span>
       </h2>
       <ul>
-        {/* <li>
+        <li>
           <div className="grid grid-cols-2 gap-4 my-4">
             <a
               href="https://www.linkedin.com/company/ridi/"
@@ -580,11 +580,11 @@ export default function HomePage({ params }: PageProps) {
               <b>리디(주)</b>
               <RidiLogo />
             </a>
-            <div>2023년 11월 27일 ~ 현재</div>
+            <div>2023년 11월 27일 ~ 현재 (+α개월)</div>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
             <div>직책: Frontend Engineer </div>
-            <div>부서: 만타제품그룹 엔지니어링팀 (00명)</div>
+            <div>부서: 만타CIC 만타제품그룹 엔지니어링팀 (00명)</div>
             <div>직위: 정규직</div>
             <div>직급: Junior</div>
           </div>
@@ -596,7 +596,7 @@ export default function HomePage({ params }: PageProps) {
             개발
           </div>
         </li>
-        <div className="border w-full my-6" /> */}
+        <div className="border w-full my-6" />
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
             <a
@@ -643,7 +643,7 @@ export default function HomePage({ params }: PageProps) {
                 2023년 7월 24일 ~ 8월 6일 (2주)
               </a>
               <br />
-              {/* 2023년 11월 7일 ~ 26일 (2주) */}
+              2023년 11월 7일 ~ 11월 26일 (3주)
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">
