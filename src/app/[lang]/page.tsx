@@ -243,7 +243,7 @@ export default function HomePage({ params }: PageProps) {
               제15회
             </td>
             <td className="text-center">
-              <a href="/images/2021-topcit-627.webp" target="_blank">
+              <a href="/pdf/2021-05-22_TOPCIT_15회.pdf" target="_blank">
                 627점 (전국 4등)
               </a>
             </td>
@@ -583,8 +583,8 @@ export default function HomePage({ params }: PageProps) {
             <div>2023년 11월 27일 ~ 현재</div>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Frontend Developer </div>
-            <div>부서: Global (00명)</div>
+            <div>직책: Frontend Engineer </div>
+            <div>부서: 만타제품그룹 엔지니어링팀 (00명)</div>
             <div>직위: 정규직</div>
             <div>직급: Junior</div>
           </div>
