@@ -570,7 +570,7 @@ export default function HomePage({ params }: PageProps) {
         {dict.개발경력[lang]} <span className="text-sm">(1년 9개월+α)</span>
       </h2>
       <ul>
-        <li>
+        {/* <li>
           <div className="grid grid-cols-2 gap-4 my-4">
             <a
               href="https://www.linkedin.com/company/ridi/"
@@ -596,7 +596,7 @@ export default function HomePage({ params }: PageProps) {
             개발
           </div>
         </li>
-        <div className="border w-full my-6" />
+        <div className="border w-full my-6" /> */}
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
             <a
