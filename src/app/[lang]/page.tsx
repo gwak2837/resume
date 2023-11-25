@@ -772,15 +772,24 @@ export default function HomePage({ params }: PageProps) {
         <div className="border w-full my-6" />
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
-            <a
-              href="https://www.linkedin.com/company/festaio/"
-              className="flex gap-2 items-center"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <b>(주)페스타</b>
-              <FestaLogo />
-            </a>
+            <div className="flex gap-2 items-center">
+              <a
+                href="https://www.linkedin.com/company/festaio/"
+                className="flex gap-2 items-center"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <b>(주)페스타</b>
+                <FestaLogo />
+              </a>
+              <a
+                href="https://www.sedaily.com/NewsView/264PCFEN6T"
+                className="text-sm"
+                target="_blank"
+              >
+                (現 당근마켓 피인수 기업)
+              </a>
+            </div>
             <div>
               <a href="/pdf/페스타.pdf" target="_blank">
                 2020년 9월 1일 ~ 12월 31일 (4개월)
@@ -1221,6 +1230,126 @@ export default function HomePage({ params }: PageProps) {
       <div className="grid grid-cols-3"></div>
       <div className="border w-full my-6" />
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
+        <h4>OFFICE AI</h4>
+        <div>4명</div>
+        {/* <a href="/pdf/플랜바이테크놀로지스.pdf" target="_blank"> */}
+        <div>2023년 11월 7일 ~ 11월 26일 (3주)</div>
+        {/* </a> */}
+      </div>
+      <div className="flex gap-0.5 my-2 items-center">
+        <a
+          href="https://github.com/gwak2837/homi-ai-client"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+        >
+          <div className="flex gap-1 items-center">
+            <Image src="/images/github.svg" alt="github" width="16" height="16" />
+            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
+              homi-ai-client
+            </h5>
+          </div>
+        </a>
+        <a
+          href="https://app.planby.us"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+        >
+          <div className="flex gap-1 items-center">
+            <Image src="/images/vercel.png" alt="github" width="16" height="16" />
+            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
+              app.planby.us
+            </h5>
+          </div>
+        </a>
+      </div>
+      <div>인테리어 디자인 AI 자동화 솔루션 - 인공지능이 꾸며주는 사무 공간</div>
+      <div className="flex flex-wrap gap-1 my-2">
+        <a href="https://nextjs.org" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Next.js 13-000000?style=flat-square&logo=next.js&logoColor=white"
+            alt="next.js"
+          />
+        </a>
+        <a href="https://tailwindcss.com/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white"
+            alt="tailwind"
+          />
+        </a>
+        <a href="https://swr.vercel.app/" target="_blank">
+          <img
+            src="https://img.shields.io/badge/SWR-000000?style=flat-square&logo=SWR&logoColor=white"
+            alt="SWR Badge"
+          />
+        </a>
+        <a href="https://vercel.com/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white"
+            alt="Vercel Badge"
+          />
+        </a>
+        <a href="https://www.figma.com/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=Figma&logoColor=white"
+            alt="Figma Badge"
+          />
+        </a>
+      </div>
+      <ol>
+        <li>검색 순위 향상을 위해 Search Engine Optimization 관련 HTML 메타데이터를 설정함</li>
+        <li>
+          네트워크 응답 시간이 긴 AI 서비스 특성에 맞게 SWR 등을 활용해 데이터 불러오기 UI를 구현함
+        </li>
+      </ol>
+      <div className="grid grid-cols-3 gap-1">
+        <Image
+          src="/images/2023-11-homi-ai-5.webp"
+          alt="2023-11-homi-ai-2"
+          width="1526"
+          height="1700"
+          className="border"
+        />
+        <Image
+          src="/images/2023-11-homi-ai-1.webp"
+          alt="2023-11-homi-ai-1"
+          width="1536"
+          height="1702"
+          className="border"
+        />
+        <Image
+          src="/images/2023-11-homi-ai-4.webp"
+          alt="2023-11-homi-ai-1"
+          width="1532"
+          height="1708"
+          className="border"
+        />
+        <Image
+          src="/images/2023-11-homi-ai-2.webp"
+          alt="2023-11-homi-ai-2"
+          width="1540"
+          height="1694"
+          className="border"
+        />
+        <Image
+          src="/images/2023-11-homi-ai-3.webp"
+          alt="2023-11-homi-ai-3"
+          width="1538"
+          height="1690"
+          className="border"
+        />
+
+        <Image
+          src="/images/2023-11-homi-ai-6.webp"
+          alt="2023-11-homi-ai-3"
+          width="1536"
+          height="1690"
+          className="border"
+        />
+      </div>
+      <div className="border w-full my-6" />
+      <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>HOMI AI</h4>
         <div>4명</div>
         <a href="/pdf/플랜바이테크놀로지스.pdf" target="_blank">
@@ -1356,7 +1485,6 @@ export default function HomePage({ params }: PageProps) {
           height="2532"
         />
       </div>
-
       <div className="border w-full my-6" />
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>코리아톡</h4>
