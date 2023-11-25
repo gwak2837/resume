@@ -643,7 +643,7 @@ export default function HomePage({ params }: PageProps) {
                 2023년 7월 24일 ~ 8월 6일 (2주)
               </a>
               <br />
-              2023년 11월 7일 ~ 11월 26일 (3주)
+              {/* 2023년 11월 7일 ~ 11월 26일 (3주) */}
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">
@@ -1233,7 +1233,7 @@ export default function HomePage({ params }: PageProps) {
         <h4>OFFICE AI</h4>
         <div>4명</div>
         {/* <a href="/pdf/플랜바이테크놀로지스.pdf" target="_blank"> */}
-        <div>2023년 11월 7일 ~ 11월 26일 (3주)</div>
+        {/* <div>2023년 11월 7일 ~ 11월 26일 (3주)</div> */}
         {/* </a> */}
       </div>
       <div className="flex gap-0.5 my-2 items-center">
