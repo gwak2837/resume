@@ -570,7 +570,7 @@ export default function HomePage({ params }: PageProps) {
         {dict.개발경력[lang]} <span className="text-sm">(1년 9개월+α)</span>
       </h2>
       <ul>
-        {/* <li>
+        <li>
           <div className="grid grid-cols-2 gap-4 my-4">
             <a
               href="https://www.linkedin.com/company/ridi/"
@@ -580,11 +580,13 @@ export default function HomePage({ params }: PageProps) {
               <b>리디(주)</b>
               <RidiLogo />
             </a>
-            <div>2023년 11월 27일 ~ 현재 (+α개월)</div>
+            <a href="/pdf/리디-재직증명서.pdf" target="_blank">
+              <div>2023년 11월 27일 ~ 현재 (+α개월)</div>
+            </a>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
             <div>직책: Frontend Engineer </div>
-            <div>부서: 만타CIC 만타제품그룹 엔지니어링팀 (00명)</div>
+            <div>부서: 만타CIC 만타제품그룹 엔지니어링팀 (10명)</div>
             <div>직위: 정규직</div>
             <div>직급: Junior</div>
           </div>
@@ -596,7 +598,7 @@ export default function HomePage({ params }: PageProps) {
             개발
           </div>
         </li>
-        <div className="border w-full my-6" /> */}
+        <div className="border w-full my-6" />
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
             <a
@@ -643,7 +645,7 @@ export default function HomePage({ params }: PageProps) {
                 2023년 7월 24일 ~ 8월 6일 (2주)
               </a>
               <br />
-              {/* 2023년 11월 7일 ~ 11월 26일 (3주) */}
+              2023년 11월 7일 ~ 11월 26일 (3주)
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">
@@ -1232,9 +1234,7 @@ export default function HomePage({ params }: PageProps) {
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>OFFICE AI</h4>
         <div>4명</div>
-        {/* <a href="/pdf/플랜바이테크놀로지스.pdf" target="_blank"> */}
-        {/* <div>2023년 11월 7일 ~ 11월 26일 (3주)</div> */}
-        {/* </a> */}
+        <div>2023년 11월 7일 ~ 11월 26일 (3주)</div>
       </div>
       <div className="flex gap-0.5 my-2 items-center">
         <a
