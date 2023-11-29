@@ -394,26 +394,6 @@ export default function HomePage({ params }: PageProps) {
             />
           </a>
         </div>
-        <div className="flex gap-1">
-          <a href="https://analytics.google.com/analytics/web/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/GA-E37400?style=flat-square&logo=Google Analytics&logoColor=white"
-              alt="GA Badge"
-            />
-          </a>
-          <a href="https://www.figma.com/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=Figma&logoColor=white"
-              alt="Figma Badge"
-            />
-          </a>
-          <a href="https://www.framer.com/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Framer-0055FF?style=flat-square&logo=framer&logoColor=white"
-              alt="framer"
-            />
-          </a>
-        </div>
       </div>
       <h4 className="my-2">Backend</h4>
       <div className="grid gap-1">
@@ -534,6 +514,24 @@ export default function HomePage({ params }: PageProps) {
       <h4 className="my-2">Developer Tool</h4>
       <div className="grid gap-1">
         <div className="flex gap-1">
+          <a href="https://analytics.google.com/analytics/web/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/GA-E37400?style=flat-square&logo=Google Analytics&logoColor=white"
+              alt="GA Badge"
+            />
+          </a>
+          <a href="https://www.figma.com/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=Figma&logoColor=white"
+              alt="Figma Badge"
+            />
+          </a>
+          <a href="https://www.framer.com/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Framer-0055FF?style=flat-square&logo=framer&logoColor=white"
+              alt="framer"
+            />
+          </a>
           <a href="https://esbuild.github.io/" rel="noreferrer" target="_blank">
             <img
               src="https://img.shields.io/badge/esbuild-FFCF00?style=flat-square&logo=esbuild&logoColor=black"
@@ -556,6 +554,12 @@ export default function HomePage({ params }: PageProps) {
             <img
               src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"
               alt="Git Badge"
+            />
+          </a>
+          <a href="https://code.visualstudio.com/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"
+              alt="GitHub Badge"
             />
           </a>
           <a href="https://code.visualstudio.com/" rel="noreferrer" target="_blank">
@@ -932,7 +936,7 @@ export default function HomePage({ params }: PageProps) {
           </div>
           <div className="grid grid-cols-2 gap-x-4">
             <div>직책: 웹 개발 수업 강사</div>
-            <div>부서: Class Steve Jobs (초중등반)</div>
+            <div>부서: Class Steve Jobs (초중등반, 6명)</div>
             <div>직위: 계약직</div>
           </div>
           <div>
@@ -3300,7 +3304,7 @@ export default function HomePage({ params }: PageProps) {
           <div>
             여행일지 자동기록 서비스 아이디어 제시{' '}
             <a
-              href="https://www.asiatoday.co.kr/view.php?key=20221216010008397"
+              href="https://www.asiatoday.co.kr/view.php?key=20221216010008397#:~:text=%27%EC%97%AC%ED%96%89%20%EC%9D%BC%EC%A7%80%20%EC%9E%90%EB%8F%99%20%EA%B8%B0%EB%A1%9D%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EA%B8%B0%EB%B0%98%2C%20%EC%9D%B8%EC%B2%9Ce%EC%A7%80%20%EC%95%B1%20%EC%97%AC%ED%96%89%ED%8C%A8%EC%8A%A4%2C%20%EB%A6%AC%EB%B7%B0%20%EC%84%9C%EB%B9%84%EC%8A%A4%20%EB%A6%AC%EB%89%B4%EC%96%BC(%ED%8C%80%EC%9E%A5%20%EA%B3%A0%ED%98%84%EC%A4%80)%27"
               rel="noreferrer"
               target="_blank"
             >
@@ -3320,7 +3324,12 @@ export default function HomePage({ params }: PageProps) {
             </div>
             <div>2022년 11월 27일</div>
           </div>
-          <div>결식 아동에게 줄 크리스마스 선물 크라우드펀딩 서비스 (2등, 5만원)</div>
+          <div>
+            결식 아동에게 줄 크리스마스 선물 크라우드펀딩 서비스{' '}
+            <a href="/pdf/해커톤 시상_우수상_개발자팀.pdf" target="_blank">
+              (2등, 5만원)
+            </a>
+          </div>
         </li>
         <div className="border w-full my-6" />
         <li>
@@ -3331,7 +3340,12 @@ export default function HomePage({ params }: PageProps) {
             <div>제주테크노벨리</div>
             <div>2022년 1월 22일</div>
           </div>
-          <div>식의약용 자생식물 데이터 기반 사업화 서비스 아이디어 제시 (입상)</div>
+          <div>
+            식의약용 자생식물 데이터 기반 사업화 서비스 아이디어 제시{' '}
+            <a href="/pdf/입상_AHAH(고현준,곽태욱).pdf" target="_blank">
+              (입상)
+            </a>
+          </div>
         </li>
         <div className="border w-full my-6" />
         <li>
@@ -3418,16 +3432,24 @@ export default function HomePage({ params }: PageProps) {
             <div>2020년 12월 3일</div>
           </div>
           <div>‘버려지는 소재를 새로운 순환으로’를 주제로 사업계획서 작성</div>
-          <div>‘온라인 새활용 제품 유통 플랫폼’ 기획으로 대상(1등, 250만원) 수상 및 특허 출원</div>
+          <div>
+            ‘온라인 새활용 제품 유통 플랫폼’ 기획으로{' '}
+            <a href="/images/2020-C-디자인씽킹-아카데미.jpeg" target="_blank">
+              대상(1등, 250만원)
+            </a>{' '}
+            수상 및 특허 출원
+          </div>
         </li>
         <div className="border w-full my-6" />
         <li>
           <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <a href="/images/2019-scholarship.webp" target="_blank">
-              <b>국가우수장학생 (이공계)</b>
-            </a>
+            <b>국가우수장학생 (이공계)</b>
             <div>한국장학재단</div>
-            <div>2019년 8월 14일</div>
+            <div>
+              <a href="/images/2019-scholarship.webp" target="_blank">
+                2019년 8월 14일
+              </a>
+            </div>
           </div>
           <div>2019-1학기 ~ 2020-2학기 전액장학금 (4개 학기)</div>
         </li>
@@ -3445,10 +3467,13 @@ export default function HomePage({ params }: PageProps) {
             <div>2018년 11월 30일</div>
           </div>
           <div>
-            택배 상하차 아르바이트생의 열약한 근무 환경을 주제로 '초록 유니폼을 입은 알바생' VR 영상
-            제작 및 우수상 수상{' '}
-            <a href="https://www.youtube.com/watch?v=ruqZIWGwH-I" rel="noreferrer" target="_blank">
-              YouTube
+            택배 상하차 아르바이트생의 열약한 근무 환경을 주제로{' '}
+            <a href="https://www.youtube.com/watch?v=ruqZIWGwH-I" target="_blank">
+              '초록 유니폼을 입은 알바생' VR 영상
+            </a>{' '}
+            제작 및{' '}
+            <a href="/images/2018-창의ICT공과대학-학술제-VR-공감-영상전.jpg" target="_blank">
+              우수상 수상
             </a>
           </div>
         </li>
