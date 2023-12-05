@@ -32,7 +32,7 @@ export const dict = {
     ja: '中央大学コンピューター工学部学士',
   },
   주소: {
-    ko: '서울특별시 강동구 천호동',
+    ko: '서울특별시 강동구 천호동 (천호역)',
     en: 'Gangdong-gu, Seoul, Republic of Korea',
     zh: '大韩民国首尔特别市江东区千戶洞',
     ja: '大韓民国ソウル特別市江東区千戸洞',
