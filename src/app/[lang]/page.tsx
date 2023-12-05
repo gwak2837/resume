@@ -154,422 +154,6 @@ export default function HomePage({ params }: PageProps) {
         </div>
       </div>
       <p className="my-4 ">{dict.한줄소개[lang]}</p>
-      <h2 className="text-3xl my-8 ">{dict.학력[lang]}</h2>
-      <table>
-        <thead>
-          <tr>
-            <td>{dict.학력_이름[lang]}</td>
-            <td>{dict.세부[lang]}</td>
-            <td>{dict.기간[lang]}</td>
-            <td>{dict.비고[lang]}</td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td className="font-semibold">
-              <a href="https://www.cau.ac.kr" target="_blank" rel="noreferrer">
-                {dict.중앙대학교[lang]}
-              </a>
-            </td>
-            <td>
-              <a href="/images/학위증.webp" target="_blank">
-                {dict.학력_학위[lang]}
-              </a>
-              <div className="text-xs">(MAGNA CUM LAUDE)</div>
-            </td>
-            <td>
-              <a href="/pdf/중앙대학교-졸업증명서.pdf" target="_blank">
-                {dict.학력_기간[lang]}
-              </a>
-            </td>
-            <td>
-              <a href="/images/2022-univ.webp" target="_blank">
-                {dict.학력_전체학점[lang]}
-              </a>
-              <br />
-              {dict.학력_전공학점[lang]}
-            </td>
-          </tr>
-          <tr>
-            <td className="font-semibold">
-              <a href="https://school.jbedu.kr/honam-h" target="_blank" rel="noreferrer">
-                {dict.호남고등학교[lang]}
-              </a>
-            </td>
-            <td>{dict.호남고등학교_세부[lang]}</td>
-            <td>
-              <a href="/pdf/호남고등학교-생활기록부.pdf" target="_blank">
-                {dict.호남고등학교_기간[lang]}
-              </a>
-            </td>
-            <td>
-              <a href="/pdf/호남고등학교-성적증명서.pdf" target="_blank">
-                {dict.호남고등학교_성적[lang]}
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td className="font-semibold">
-              <a href="https://school.jbedu.kr/jb-hs" target="_blank" rel="noreferrer">
-                {dict.화산중학교[lang]}
-              </a>
-            </td>
-            <td>{dict.기숙형자율학교[lang]}</td>
-            <td>{dict.화산중학교_기간[lang]}</td>
-            <td>
-              <a href="/pdf/완주화산중학교-성적증명서.pdf" target="_blank">
-                {dict.화산중학교_성적[lang]}
-              </a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <h2 className="text-3xl my-8">자격증</h2>
-      <table>
-        <thead>
-          <tr>
-            <td>이름</td>
-            <td>내용</td>
-            <td>주관</td>
-            <td>일시</td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <a href="https://www.topcit.or.kr/home.do" target="_blank" rel="noreferrer">
-                TOPCIT
-              </a>{' '}
-              제15회
-            </td>
-            <td className="text-center">
-              <a href="/pdf/2021-05-22_TOPCIT_15회.pdf" target="_blank">
-                627점 (전국 4등)
-              </a>
-            </td>
-            <td className="text-center">과학기술정보통신부</td>
-            <td className="text-center">2021년 5월 22일</td>
-          </tr>
-          <tr>
-            <td>
-              <a href="https://www.g-telp.co.kr:335/" target="_blank" rel="noreferrer">
-                G-TELP (Level 2)
-              </a>
-            </td>
-            <td className="text-center">
-              <a href="/images/2020-gtelp.webp" target="_blank">
-                82점
-              </a>
-            </td>
-            <td className="text-center">국제테스트 연구원</td>
-            <td className="text-center">2020년 5월 3일</td>
-          </tr>
-          <tr>
-            <td>
-              <a href="https://www.hanja.ne.kr/index_original.asp" target="_blank" rel="noreferrer">
-                대한검정회
-              </a>
-            </td>
-            <td className="text-center">
-              <a href="/images/2009-hanja.webp" target="_blank">
-                준1급
-              </a>
-            </td>
-            <td className="text-center">대한민국한자교육연구회</td>
-            <td className="text-center">2009년 11월 28일</td>
-          </tr>
-        </tbody>
-      </table>
-      <OtherCertificates />
-      <h2 className="text-3xl my-8">기술</h2>
-      <h4 className="my-2">Language</h4>
-      <div className="flex gap-1">
-        <a href="https://javascript.info/" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/ES2023-F7DF1E?style=flat-square&logo=JavaScript&logoColor=black"
-            alt="JavaScript Badge"
-          />
-        </a>
-        <a href="https://www.typescriptlang.org/" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/TypeScript-235A97?style=flat-square&logo=Typescript&logoColor=white"
-            alt="TypeScript Badge"
-          />
-        </a>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"
-            alt="CSS3 Badge"
-          />
-        </a>
-        <a href="https://www.python.org/" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"
-            alt="Python Badge"
-          />
-        </a>
-        <a href="https://en.wikipedia.org/wiki/SQL" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/SQL-003B57?style=flat-square&logo=SQL&logoColor=white"
-            alt="SQL Badge"
-          />
-        </a>
-        <a href="https://graphql.org/" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white"
-            alt="GraphQL Badge"
-          />
-        </a>
-      </div>
-      <h4 className="my-2">Frontend</h4>
-      <div className="grid gap-1">
-        <div className="flex gap-1">
-          <a href="https://nextjs.org/" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"
-              alt="Next.js Badge"
-            />
-          </a>
-          <a href="https://reactjs.org/" target="_blank">
-            <img
-              src="https://img.shields.io/badge/React.js-61DAFB?style=flat-square&logo=react&logoColor=black"
-              alt="React Badge"
-            />
-          </a>
-          <a href="https://tailwindcss.com/" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white"
-              alt="tailwind Badge"
-            />
-          </a>
-          <a href="https://swr.vercel.app/" target="_blank">
-            <img
-              src="https://img.shields.io/badge/SWR-000000?style=flat-square&logo=SWR&logoColor=white"
-              alt="SWR Badge"
-            />
-          </a>
-          <a href="https://zustand-demo.pmnd.rs/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Zustand-3578e5?style=flat-square&logo=Zustand&logoColor=white"
-              alt="Zustand Badge"
-            />
-          </a>
-          <a href="https://zod.dev/" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Zod-3E67B1?style=flat-square&logo=zod&logoColor=white"
-              alt="zod"
-            />
-          </a>
-          <a href="https://web.dev/progressive-web-apps/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/PWA-5A0FC8?style=flat-square&logo=PWA&logoColor=white"
-              alt="PWA Badge"
-            />
-          </a>
-
-          <a
-            href="https://developer.mozilla.org/en-US/docs/Web/API/EventSource"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <img
-              src="https://img.shields.io/badge/Event Source-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
-              alt="Event Source Badge"
-            />
-          </a>
-          <a
-            href="https://developer.mozilla.org/en-US/docs/Web/API/Push_API"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <img
-              src="https://img.shields.io/badge/Web Push-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
-              alt="Web Push Badge"
-            />
-          </a>
-          <a href="https://sentry.io/welcome/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Sentry-362D59?style=flat-square&logo=sentry&logoColor=white"
-              alt="Sentry"
-            />
-          </a>
-        </div>
-      </div>
-      <h4 className="my-2">Backend</h4>
-      <div className="grid gap-1">
-        <div className="flex gap-1">
-          <a href="https://www.fastify.io/" rel="noreferrer">
-            <img
-              src="https://img.shields.io/badge/Fastify-000000?style=flat-square&logo=Fastify&logoColor=white"
-              alt="Fastify Badge"
-            />
-          </a>
-          <a
-            href="https://en.wikipedia.org/wiki/HTTP/2_Server_Push"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <img
-              src="https://img.shields.io/badge/Server Push-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
-              alt="Server Push Badge"
-            />
-          </a>
-          <a href="https://socket.io/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Socket.io-010101?style=flat-square&logo=Socket.io&logoColor=white"
-              alt="WebSocket Badge"
-            />
-          </a>
-          <a href="https://nodejs.org/en/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white"
-              alt="Node.js Badge"
-            />
-          </a>
-          <a href="https://www.docker.com/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"
-              alt="Docker Badge"
-            />
-          </a>
-          <a href="https://www.postgresql.org/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=PostgreSQL&logoColor=white"
-              alt="PostgreSQL Badge"
-            />
-          </a>
-          <a href="https://redis.io/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"
-              alt="Redis Badge"
-            />
-          </a>
-          <a href="https://www.mongodb.com/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=MongoDB&logoColor=white"
-              alt="mongodb Badge"
-            />
-          </a>
-          <a href="https://www.elastic.co/kr/kibana" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Kibana-005571?style=flat-square&logo=kibana&logoColor=white"
-              alt="kibana"
-            />
-          </a>
-        </div>
-      </div>
-      <h4 className="my-2">Cloud</h4>
-      <div className="grid gap-1">
-        <div className="flex gap-1">
-          <a href="https://vercel.com/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white"
-              alt="Vercel Badge"
-            />
-          </a>
-          <a href="https://cloud.google.com/gcp/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Cloud Run-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
-              alt="GCP Badge"
-            />
-          </a>
-          <a href="https://cloud.google.com/gcp/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Compute Engine-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
-              alt="GCP Badge"
-            />
-          </a>
-          <a href="https://cloud.google.com/gcp/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Cloud Storage-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
-              alt="GCP Badge"
-            />
-          </a>
-          <a href="https://cloud.google.com/gcp/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Cloud SQL-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
-              alt="GCP Badge"
-            />
-          </a>
-          <a href="https://aws.amazon.com/ko/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/RDS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white"
-              alt="AWS Badge"
-            />
-          </a>
-          <a href="https://aws.amazon.com/ko/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/EC2-232F3E?style=flat-square&logo=Amazon-AWS&logoColor=white"
-              alt="AWS Badge"
-            />
-          </a>
-          <a href="https://aws.amazon.com/ko/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/S3-569A31?style=flat-square&logo=Amazon-S3&logoColor=white"
-              alt="AWS Badge"
-            />
-          </a>
-        </div>
-      </div>
-      <h4 className="my-2">Developer Tool</h4>
-      <div className="grid gap-1">
-        <div className="flex gap-1">
-          <a href="https://analytics.google.com/analytics/web/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/GA-E37400?style=flat-square&logo=Google Analytics&logoColor=white"
-              alt="GA Badge"
-            />
-          </a>
-          <a href="https://www.figma.com/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=Figma&logoColor=white"
-              alt="Figma Badge"
-            />
-          </a>
-          <a href="https://www.framer.com/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Framer-0055FF?style=flat-square&logo=framer&logoColor=white"
-              alt="framer"
-            />
-          </a>
-          <a href="https://esbuild.github.io/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/esbuild-FFCF00?style=flat-square&logo=esbuild&logoColor=black"
-              alt="esbuild Badge"
-            />
-          </a>
-          <a href="https://eslint.org/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=eslint&logoColor=white"
-              alt="ESLint Badge"
-            />
-          </a>
-          <a href="" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Jest-C21325?style=flat-square&logo=jest&logoColor=white"
-              alt="Jest Badge"
-            />
-          </a>
-          <a href="" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"
-              alt="Git Badge"
-            />
-          </a>
-          <a href="https://code.visualstudio.com/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"
-              alt="GitHub Badge"
-            />
-          </a>
-          <a href="https://code.visualstudio.com/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/VSCode-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white"
-              alt="VSCode Badge"
-            />
-          </a>
-        </div>
-      </div>
       <h2 className="text-3xl my-8">
         {dict.개발경력[lang]} <span className="text-sm">(1년 9개월+α)</span>
       </h2>
@@ -1036,6 +620,633 @@ export default function HomePage({ params }: PageProps) {
           </div>
         </li>
       </ul>
+      <h2 className="text-3xl my-8 ">{dict.학력[lang]}</h2>
+      <table>
+        <thead>
+          <tr>
+            <td>{dict.학력_이름[lang]}</td>
+            <td>{dict.세부[lang]}</td>
+            <td>{dict.기간[lang]}</td>
+            <td>{dict.비고[lang]}</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td className="font-semibold">
+              <a href="https://www.cau.ac.kr" target="_blank" rel="noreferrer">
+                {dict.중앙대학교[lang]}
+              </a>
+            </td>
+            <td>
+              <a href="/images/학위증.webp" target="_blank">
+                {dict.학력_학위[lang]}
+              </a>
+              <div className="text-xs">(MAGNA CUM LAUDE)</div>
+            </td>
+            <td>
+              <a href="/pdf/중앙대학교-졸업증명서.pdf" target="_blank">
+                {dict.학력_기간[lang]}
+              </a>
+            </td>
+            <td>
+              <a href="/images/2022-univ.webp" target="_blank">
+                {dict.학력_전체학점[lang]}
+              </a>
+              <br />
+              {dict.학력_전공학점[lang]}
+            </td>
+          </tr>
+          <tr>
+            <td className="font-semibold">
+              <a href="https://school.jbedu.kr/honam-h" target="_blank" rel="noreferrer">
+                {dict.호남고등학교[lang]}
+              </a>
+            </td>
+            <td>{dict.호남고등학교_세부[lang]}</td>
+            <td>
+              <a href="/pdf/호남고등학교-생활기록부.pdf" target="_blank">
+                {dict.호남고등학교_기간[lang]}
+              </a>
+            </td>
+            <td>
+              <a href="/pdf/호남고등학교-성적증명서.pdf" target="_blank">
+                {dict.호남고등학교_성적[lang]}
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td className="font-semibold">
+              <a href="https://school.jbedu.kr/jb-hs" target="_blank" rel="noreferrer">
+                {dict.화산중학교[lang]}
+              </a>
+            </td>
+            <td>{dict.기숙형자율학교[lang]}</td>
+            <td>{dict.화산중학교_기간[lang]}</td>
+            <td>
+              <a href="/pdf/완주화산중학교-성적증명서.pdf" target="_blank">
+                {dict.화산중학교_성적[lang]}
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2 className="text-3xl my-8">기술</h2>
+      <h4 className="my-2">Language</h4>
+      <div className="flex gap-1">
+        <a href="https://javascript.info/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/ES2023-F7DF1E?style=flat-square&logo=JavaScript&logoColor=black"
+            alt="JavaScript Badge"
+          />
+        </a>
+        <a href="https://www.typescriptlang.org/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/TypeScript-235A97?style=flat-square&logo=Typescript&logoColor=white"
+            alt="TypeScript Badge"
+          />
+        </a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"
+            alt="CSS3 Badge"
+          />
+        </a>
+        <a href="https://www.python.org/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"
+            alt="Python Badge"
+          />
+        </a>
+        <a href="https://en.wikipedia.org/wiki/SQL" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/SQL-003B57?style=flat-square&logo=SQL&logoColor=white"
+            alt="SQL Badge"
+          />
+        </a>
+        <a href="https://graphql.org/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white"
+            alt="GraphQL Badge"
+          />
+        </a>
+      </div>
+      <h4 className="my-2">Frontend</h4>
+      <div className="grid gap-1">
+        <div className="flex gap-1">
+          <a href="https://nextjs.org/" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"
+              alt="Next.js Badge"
+            />
+          </a>
+          <a href="https://reactjs.org/" target="_blank">
+            <img
+              src="https://img.shields.io/badge/React.js-61DAFB?style=flat-square&logo=react&logoColor=black"
+              alt="React Badge"
+            />
+          </a>
+          <a href="https://tailwindcss.com/" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white"
+              alt="tailwind Badge"
+            />
+          </a>
+          <a href="https://swr.vercel.app/" target="_blank">
+            <img
+              src="https://img.shields.io/badge/SWR-000000?style=flat-square&logo=SWR&logoColor=white"
+              alt="SWR Badge"
+            />
+          </a>
+          <a href="https://zustand-demo.pmnd.rs/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Zustand-3578e5?style=flat-square&logo=Zustand&logoColor=white"
+              alt="Zustand Badge"
+            />
+          </a>
+          <a href="https://zod.dev/" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Zod-3E67B1?style=flat-square&logo=zod&logoColor=white"
+              alt="zod"
+            />
+          </a>
+          <a href="https://web.dev/progressive-web-apps/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/PWA-5A0FC8?style=flat-square&logo=PWA&logoColor=white"
+              alt="PWA Badge"
+            />
+          </a>
+
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/EventSource"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              src="https://img.shields.io/badge/Event Source-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
+              alt="Event Source Badge"
+            />
+          </a>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Push_API"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              src="https://img.shields.io/badge/Web Push-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
+              alt="Web Push Badge"
+            />
+          </a>
+          <a href="https://sentry.io/welcome/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Sentry-362D59?style=flat-square&logo=sentry&logoColor=white"
+              alt="Sentry"
+            />
+          </a>
+        </div>
+      </div>
+      <h4 className="my-2">Backend</h4>
+      <div className="grid gap-1">
+        <div className="flex gap-1">
+          <a href="https://www.fastify.io/" rel="noreferrer">
+            <img
+              src="https://img.shields.io/badge/Fastify-000000?style=flat-square&logo=Fastify&logoColor=white"
+              alt="Fastify Badge"
+            />
+          </a>
+          <a
+            href="https://en.wikipedia.org/wiki/HTTP/2_Server_Push"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              src="https://img.shields.io/badge/Server Push-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
+              alt="Server Push Badge"
+            />
+          </a>
+          <a href="https://socket.io/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Socket.io-010101?style=flat-square&logo=Socket.io&logoColor=white"
+              alt="WebSocket Badge"
+            />
+          </a>
+          <a href="https://nodejs.org/en/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white"
+              alt="Node.js Badge"
+            />
+          </a>
+          <a href="https://www.docker.com/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"
+              alt="Docker Badge"
+            />
+          </a>
+          <a href="https://www.postgresql.org/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=PostgreSQL&logoColor=white"
+              alt="PostgreSQL Badge"
+            />
+          </a>
+          <a href="https://redis.io/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"
+              alt="Redis Badge"
+            />
+          </a>
+          <a href="https://www.mongodb.com/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=MongoDB&logoColor=white"
+              alt="mongodb Badge"
+            />
+          </a>
+          <a href="https://www.elastic.co/kr/kibana" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Kibana-005571?style=flat-square&logo=kibana&logoColor=white"
+              alt="kibana"
+            />
+          </a>
+        </div>
+      </div>
+      <h4 className="my-2">Cloud</h4>
+      <div className="grid gap-1">
+        <div className="flex gap-1">
+          <a href="https://vercel.com/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white"
+              alt="Vercel Badge"
+            />
+          </a>
+          <a href="https://cloud.google.com/gcp/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Cloud Run-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
+              alt="GCP Badge"
+            />
+          </a>
+          <a href="https://cloud.google.com/gcp/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Compute Engine-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
+              alt="GCP Badge"
+            />
+          </a>
+          <a href="https://cloud.google.com/gcp/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Cloud Storage-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
+              alt="GCP Badge"
+            />
+          </a>
+          <a href="https://cloud.google.com/gcp/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Cloud SQL-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
+              alt="GCP Badge"
+            />
+          </a>
+          <a href="https://aws.amazon.com/ko/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/RDS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white"
+              alt="AWS Badge"
+            />
+          </a>
+          <a href="https://aws.amazon.com/ko/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/EC2-232F3E?style=flat-square&logo=Amazon-AWS&logoColor=white"
+              alt="AWS Badge"
+            />
+          </a>
+          <a href="https://aws.amazon.com/ko/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/S3-569A31?style=flat-square&logo=Amazon-S3&logoColor=white"
+              alt="AWS Badge"
+            />
+          </a>
+        </div>
+      </div>
+      <h4 className="my-2">Developer Tool</h4>
+      <div className="grid gap-1">
+        <div className="flex gap-1">
+          <a href="https://analytics.google.com/analytics/web/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/GA-E37400?style=flat-square&logo=Google Analytics&logoColor=white"
+              alt="GA Badge"
+            />
+          </a>
+          <a href="https://www.figma.com/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=Figma&logoColor=white"
+              alt="Figma Badge"
+            />
+          </a>
+          <a href="https://www.framer.com/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Framer-0055FF?style=flat-square&logo=framer&logoColor=white"
+              alt="framer"
+            />
+          </a>
+          <a href="https://esbuild.github.io/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/esbuild-FFCF00?style=flat-square&logo=esbuild&logoColor=black"
+              alt="esbuild Badge"
+            />
+          </a>
+          <a href="https://eslint.org/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=eslint&logoColor=white"
+              alt="ESLint Badge"
+            />
+          </a>
+          <a href="" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Jest-C21325?style=flat-square&logo=jest&logoColor=white"
+              alt="Jest Badge"
+            />
+          </a>
+          <a href="" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"
+              alt="Git Badge"
+            />
+          </a>
+          <a href="https://code.visualstudio.com/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"
+              alt="GitHub Badge"
+            />
+          </a>
+          <a href="https://code.visualstudio.com/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/VSCode-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white"
+              alt="VSCode Badge"
+            />
+          </a>
+        </div>
+      </div>
+      <h2 className="text-3xl my-8">수상</h2>
+      <ul>
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <a
+              href="https://www.ito.or.kr/main/bbs/bbsMsgDetail.do?msg_seq=684&bcd=notice"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>2022 인천 스마트관광 데이터 아이디어 공모전</b>
+            </a>
+            <div>인천관광공사</div>
+            <div>2022년 12월 9일</div>
+          </div>
+          <div>
+            여행일지 자동기록 서비스 아이디어 제시{' '}
+            <a
+              href="https://www.asiatoday.co.kr/view.php?key=20221216010008397#:~:text=%27%EC%97%AC%ED%96%89%20%EC%9D%BC%EC%A7%80%20%EC%9E%90%EB%8F%99%20%EA%B8%B0%EB%A1%9D%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EA%B8%B0%EB%B0%98%2C%20%EC%9D%B8%EC%B2%9Ce%EC%A7%80%20%EC%95%B1%20%EC%97%AC%ED%96%89%ED%8C%A8%EC%8A%A4%2C%20%EB%A6%AC%EB%B7%B0%20%EC%84%9C%EB%B9%84%EC%8A%A4%20%EB%A6%AC%EB%89%B4%EC%96%BC(%ED%8C%80%EC%9E%A5%20%EA%B3%A0%ED%98%84%EC%A4%80)%27"
+              rel="noreferrer"
+              target="_blank"
+            >
+              (2등)
+            </a>
+          </div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <a href="https://www.jungle.co.kr/contest/204985" target="_blank" rel="noreferrer">
+              <b>MMO 해커톤 2회</b>
+            </a>
+            <div>
+              MMO&nbsp;
+              <span className="text-xs">(IT교육회사)</span>
+            </div>
+            <div>2022년 11월 27일</div>
+          </div>
+          <div>
+            결식 아동에게 줄 크리스마스 선물 크라우드펀딩 서비스{' '}
+            <a href="/pdf/해커톤 시상_우수상_개발자팀.pdf" target="_blank">
+              (2등)
+            </a>
+          </div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <a href="https://event-us.kr/pmsolution/event/40979" target="_blank" rel="noreferrer">
+              <b>2021 AI 해커톤</b>
+            </a>
+            <div>제주테크노벨리</div>
+            <div>2022년 1월 22일</div>
+          </div>
+          <div>
+            식의약용 자생식물 데이터 기반 사업화 서비스 아이디어 제시{' '}
+            <a href="/pdf/입상_AHAH(고현준,곽태욱).pdf" target="_blank">
+              (입상)
+            </a>
+          </div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <a
+              href="https://blog.naver.com/khucampustown/222535649294"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>2021 경희대학교 캠퍼스타운 입주 스타트업 캠퍼 2기</b>
+            </a>
+            <div>경희대학교 캠퍼스타운</div>
+            <div>2021년 11월 1일</div>
+          </div>
+          <div>Sindy 창업팀 추가 선정 (2021년 11월 1일 ~ 2022년 8월 31일, 10개월)</div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <a
+              href="https://youth.posco.com/posco/edu/index.php?mod=incubator&pag=icb01#khwhay"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>2021년 3차 포스코 창업인큐베이팅스쿨</b>
+            </a>
+            <div>POSCO</div>
+            <div>2021년 10월 18일</div>
+          </div>
+          <div>Sindy 창업팀 선정 (2021년 10월 18일 ~ 10월 29일, 2주)</div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <a
+              href="https://me.cau.ac.kr/bbs/board.php?bo_table=sub5_1&wr_id=4037&page=34"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>2021년도 LINC+ Start-up Members</b>
+            </a>
+            <div>중앙대학교 LINC+사업단</div>
+            <div>2021년 7월 1일</div>
+          </div>
+          <div>Sindy 창업팀 선정 (2021년 7월 1일 ~ 12월 31일, 6개월) (200만원)</div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <a
+              href="https://www.kised.or.kr/board.es?mid=a10305000000&bid=0006&list_no=2255&act=view"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>2021 실전창업교육 1기</b>
+            </a>
+            <div>중소벤처기업부</div>
+            <div>2021년 6월 1일</div>
+          </div>
+          <div>Sindy 창업팀 선정 및 2단계 진출 (2021년 6월 1일 ~ 7월 31일, 2개월)</div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <a href="https://blog.naver.com/djsepc/222200468576" target="_blank" rel="noreferrer">
+              <b>2021 동작구 스타트업 펀딩 사업</b>
+            </a>
+            <div>동작구청</div>
+            <div>2021년 2월 5일</div>
+          </div>
+          <div>Sindy 창업팀 선정 (2021년 2월 5일 ~ 11월 30일, 10개월) (500만원)</div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <a
+              href="https://www.donga.com/news/Society/article/all/20201217/104493689/2"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>2020년 C-디자인씽킹 아카데미 경진대회</b>
+            </a>
+            <div>중앙대 교수학습개발센터</div>
+            <div>2020년 12월 3일</div>
+          </div>
+          <div>‘버려지는 소재를 새로운 순환으로’를 주제로 사업계획서 작성</div>
+          <div>
+            ‘온라인 새활용 제품 유통 플랫폼’ 기획으로{' '}
+            <a href="/images/2020-C-디자인씽킹-아카데미.jpeg" target="_blank">
+              대상(1등, 250만원)
+            </a>{' '}
+            수상 및 특허 출원
+          </div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <b>국가우수장학생 (이공계)</b>
+            <div>한국장학재단</div>
+            <div>
+              <a href="/images/2019-scholarship.webp" target="_blank">
+                2019년 8월 14일
+              </a>
+            </div>
+          </div>
+          <div>2019-1학기 ~ 2020-2학기 전액장학금 (4개 학기)</div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <a
+              href="http://m.dhnews.co.kr/news/articleView.html?idxno=88851"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>2018 창의ICT공과대학 학술제</b>
+            </a>
+            <div>중앙대 창의ICT공과대학</div>
+            <div>2018년 11월 30일</div>
+          </div>
+          <div>
+            택배 상하차 아르바이트생의 열약한 근무 환경을 주제로{' '}
+            <a href="https://www.youtube.com/watch?v=ruqZIWGwH-I" target="_blank">
+              '초록 유니폼을 입은 알바생' VR 영상
+            </a>{' '}
+            제작 및{' '}
+            <a href="/images/2018-창의ICT공과대학-학술제-VR-공감-영상전.jpg" target="_blank">
+              우수상 수상
+            </a>
+          </div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+            <a href="https://onoffmix.com/event/153038" target="_blank" rel="noreferrer">
+              <b>BBR BlockCamp 블록체인 해커톤</b>
+            </a>
+            <div>BBR, 디센터</div>
+            <div>2018년 10월 29일</div>
+          </div>
+          <div>
+            블록체인 기반 전자투표 시스템(e-voting) 기획 및 개발{' '}
+            <a
+              href="https://bond687.wixsite.com/bbreview#:~:text=BBR%20Hackathon%20%EC%88%98%EC%83%81%EC%9E%90%20%EB%AA%85%EB%8B%A8"
+              rel="noreferrer"
+              target="_blank"
+            >
+              (피칭상)
+            </a>
+          </div>
+        </li>
+      </ul>
+      <h2 className="text-3xl my-8">자격증</h2>
+      <table>
+        <thead>
+          <tr>
+            <td>이름</td>
+            <td>내용</td>
+            <td>주관</td>
+            <td>일시</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a href="https://www.topcit.or.kr/home.do" target="_blank" rel="noreferrer">
+                TOPCIT
+              </a>{' '}
+              제15회
+            </td>
+            <td className="text-center">
+              <a href="/pdf/2021-05-22_TOPCIT_15회.pdf" target="_blank">
+                627점 (전국 4등)
+              </a>
+            </td>
+            <td className="text-center">과학기술정보통신부</td>
+            <td className="text-center">2021년 5월 22일</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://www.g-telp.co.kr:335/" target="_blank" rel="noreferrer">
+                G-TELP (Level 2)
+              </a>
+            </td>
+            <td className="text-center">
+              <a href="/images/2020-gtelp.webp" target="_blank">
+                82점
+              </a>
+            </td>
+            <td className="text-center">국제테스트 연구원</td>
+            <td className="text-center">2020년 5월 3일</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://www.hanja.ne.kr/index_original.asp" target="_blank" rel="noreferrer">
+                대한검정회
+              </a>
+            </td>
+            <td className="text-center">
+              <a href="/images/2009-hanja.webp" target="_blank">
+                준1급
+              </a>
+            </td>
+            <td className="text-center">대한민국한자교육연구회</td>
+            <td className="text-center">2009년 11월 28일</td>
+          </tr>
+        </tbody>
+      </table>
+      <OtherCertificates />
       <h2 className="text-3xl my-8 ">소개</h2>
       <p className="my-2">
         직접 만든 기프트링크 동아리의 소프트웨어 개발자로 시작해, 행복한 다람쥐단 인턴, (주)페스타
@@ -3287,217 +3498,6 @@ export default function HomePage({ params }: PageProps) {
         <li>네이버지도 API를 활용해 지도 기능을 개발할 수 있음</li>
         <li>채널톡 API, Telegram API, SOLAPI를 활용해 사용자에게 알림용 메시지를 보낼 수 있음</li>
       </dl>
-      <h2 className="text-3xl my-8">수상</h2>
-      <ul>
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <a
-              href="https://www.ito.or.kr/main/bbs/bbsMsgDetail.do?msg_seq=684&bcd=notice"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <b>2022 인천 스마트관광 데이터 아이디어 공모전</b>
-            </a>
-            <div>인천관광공사</div>
-            <div>2022년 12월 9일</div>
-          </div>
-          <div>
-            여행일지 자동기록 서비스 아이디어 제시{' '}
-            <a
-              href="https://www.asiatoday.co.kr/view.php?key=20221216010008397#:~:text=%27%EC%97%AC%ED%96%89%20%EC%9D%BC%EC%A7%80%20%EC%9E%90%EB%8F%99%20%EA%B8%B0%EB%A1%9D%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EA%B8%B0%EB%B0%98%2C%20%EC%9D%B8%EC%B2%9Ce%EC%A7%80%20%EC%95%B1%20%EC%97%AC%ED%96%89%ED%8C%A8%EC%8A%A4%2C%20%EB%A6%AC%EB%B7%B0%20%EC%84%9C%EB%B9%84%EC%8A%A4%20%EB%A6%AC%EB%89%B4%EC%96%BC(%ED%8C%80%EC%9E%A5%20%EA%B3%A0%ED%98%84%EC%A4%80)%27"
-              rel="noreferrer"
-              target="_blank"
-            >
-              (2등, 150만원)
-            </a>
-          </div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <a href="https://www.jungle.co.kr/contest/204985" target="_blank" rel="noreferrer">
-              <b>MMO 해커톤 2회</b>
-            </a>
-            <div>
-              MMO&nbsp;
-              <span className="text-xs">(IT교육회사)</span>
-            </div>
-            <div>2022년 11월 27일</div>
-          </div>
-          <div>
-            결식 아동에게 줄 크리스마스 선물 크라우드펀딩 서비스{' '}
-            <a href="/pdf/해커톤 시상_우수상_개발자팀.pdf" target="_blank">
-              (2등, 5만원)
-            </a>
-          </div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <a href="https://event-us.kr/pmsolution/event/40979" target="_blank" rel="noreferrer">
-              <b>2021 AI 해커톤</b>
-            </a>
-            <div>제주테크노벨리</div>
-            <div>2022년 1월 22일</div>
-          </div>
-          <div>
-            식의약용 자생식물 데이터 기반 사업화 서비스 아이디어 제시{' '}
-            <a href="/pdf/입상_AHAH(고현준,곽태욱).pdf" target="_blank">
-              (입상)
-            </a>
-          </div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <a
-              href="https://blog.naver.com/khucampustown/222535649294"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <b>2021 경희대학교 캠퍼스타운 입주 스타트업 캠퍼 2기</b>
-            </a>
-            <div>경희대학교 캠퍼스타운</div>
-            <div>2021년 11월 1일</div>
-          </div>
-          <div>Sindy 창업팀 추가 선정 (2021년 11월 1일 ~ 2022년 8월 31일, 10개월)</div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <a
-              href="https://youth.posco.com/posco/edu/index.php?mod=incubator&pag=icb01#khwhay"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <b>2021년 3차 포스코 창업인큐베이팅스쿨</b>
-            </a>
-            <div>POSCO</div>
-            <div>2021년 10월 18일</div>
-          </div>
-          <div>Sindy 창업팀 선정 (2021년 10월 18일 ~ 10월 29일, 2주)</div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <a
-              href="https://me.cau.ac.kr/bbs/board.php?bo_table=sub5_1&wr_id=4037&page=34"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <b>2021년도 LINC+ Start-up Members</b>
-            </a>
-            <div>중앙대학교 LINC+사업단</div>
-            <div>2021년 7월 1일</div>
-          </div>
-          <div>Sindy 창업팀 선정 (2021년 7월 1일 ~ 12월 31일, 6개월) (200만원)</div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <a
-              href="https://www.kised.or.kr/board.es?mid=a10305000000&bid=0006&list_no=2255&act=view"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <b>2021 실전창업교육 1기</b>
-            </a>
-            <div>중소벤처기업부</div>
-            <div>2021년 6월 1일</div>
-          </div>
-          <div>Sindy 창업팀 선정 및 2단계 진출 (2021년 6월 1일 ~ 7월 31일, 2개월)</div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <a href="https://blog.naver.com/djsepc/222200468576" target="_blank" rel="noreferrer">
-              <b>2021 동작구 스타트업 펀딩 사업</b>
-            </a>
-            <div>동작구청</div>
-            <div>2021년 2월 5일</div>
-          </div>
-          <div>Sindy 창업팀 선정 (2021년 2월 5일 ~ 11월 30일, 10개월) (500만원)</div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <a
-              href="https://www.donga.com/news/Society/article/all/20201217/104493689/2"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <b>2020년 C-디자인씽킹 아카데미 경진대회</b>
-            </a>
-            <div>중앙대 교수학습개발센터</div>
-            <div>2020년 12월 3일</div>
-          </div>
-          <div>‘버려지는 소재를 새로운 순환으로’를 주제로 사업계획서 작성</div>
-          <div>
-            ‘온라인 새활용 제품 유통 플랫폼’ 기획으로{' '}
-            <a href="/images/2020-C-디자인씽킹-아카데미.jpeg" target="_blank">
-              대상(1등, 250만원)
-            </a>{' '}
-            수상 및 특허 출원
-          </div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <b>국가우수장학생 (이공계)</b>
-            <div>한국장학재단</div>
-            <div>
-              <a href="/images/2019-scholarship.webp" target="_blank">
-                2019년 8월 14일
-              </a>
-            </div>
-          </div>
-          <div>2019-1학기 ~ 2020-2학기 전액장학금 (4개 학기)</div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <a
-              href="http://m.dhnews.co.kr/news/articleView.html?idxno=88851"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <b>2018 창의ICT공과대학 학술제</b>
-            </a>
-            <div>중앙대 창의ICT공과대학</div>
-            <div>2018년 11월 30일</div>
-          </div>
-          <div>
-            택배 상하차 아르바이트생의 열약한 근무 환경을 주제로{' '}
-            <a href="https://www.youtube.com/watch?v=ruqZIWGwH-I" target="_blank">
-              '초록 유니폼을 입은 알바생' VR 영상
-            </a>{' '}
-            제작 및{' '}
-            <a href="/images/2018-창의ICT공과대학-학술제-VR-공감-영상전.jpg" target="_blank">
-              우수상 수상
-            </a>
-          </div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <a href="https://onoffmix.com/event/153038" target="_blank" rel="noreferrer">
-              <b>BBR BlockCamp 블록체인 해커톤</b>
-            </a>
-            <div>BBR, 디센터</div>
-            <div>2018년 10월 29일</div>
-          </div>
-          <div>
-            블록체인 기반 전자투표 시스템(e-voting) 기획 및 개발{' '}
-            <a
-              href="https://bond687.wixsite.com/bbreview#:~:text=BBR%20Hackathon%20%EC%88%98%EC%83%81%EC%9E%90%20%EB%AA%85%EB%8B%A8"
-              rel="noreferrer"
-              target="_blank"
-            >
-              (피칭상)
-            </a>
-          </div>
-        </li>
-      </ul>
 
       <div className="w-full text-center text-slate-800 text-sm mt-8">작성일: {date}</div>
       <div className="w-full text-center text-slate-800 text-sm">작성자: 곽태욱</div>
