@@ -110,13 +110,18 @@ export default function HomePage({ params }: PageProps) {
               <tr>
                 <td className="border-none p-0">✉️</td>
                 <td className="border-none p-0">
-                  <a href="mailto:gwak2837@google.com">gwak2837@google.com</a>
+                  <a href="mailto:gwak2837@google.com">gwak2837@google.com</a>{' '}
+                  <a href="mailto:gwak2837@kakao.com">(〃@kakao.com)</a>
                 </td>
               </tr>
               <tr>
-                <td className="border-none p-0"></td>
                 <td className="border-none p-0">
-                  <a href="mailto:gwak2837@kakao.com">gwak2837@kakao.com</a>
+                  <Image src="/images/LinkedIn_icon.svg" alt="github" width="16" height="16" />
+                </td>
+                <td className="border-none p-0">
+                  <a href="https://www.linkedin.com/in/gwak2837/" target="_blank">
+                    linkedin.com/in/gwak2837
+                  </a>
                 </td>
               </tr>
               <tr>
@@ -124,7 +129,7 @@ export default function HomePage({ params }: PageProps) {
                   <Image src="/images/github.svg" alt="github" width="16" height="16" />
                 </td>
                 <td className="border-none p-0">
-                  <a href="https://github.com/gwak2837" target="_blank" rel="noreferrer">
+                  <a href="https://github.com/gwak2837" target="_blank">
                     github.com/gwak2837
                   </a>
                 </td>
@@ -134,7 +139,7 @@ export default function HomePage({ params }: PageProps) {
                   <Image src="/images/velog.png" alt="velog" width="16" height="16" />
                 </td>
                 <td className="border-none p-0">
-                  <a href="https://velog.io/@gwak2837" target="_blank" rel="noreferrer">
+                  <a href="https://velog.io/@gwak2837" target="_blank">
                     velog.io/@gwak2837
                   </a>
                 </td>
@@ -174,13 +179,28 @@ export default function HomePage({ params }: PageProps) {
           </div>
           <div className="grid grid-cols-2 gap-x-4">
             <div>직책: Frontend Engineer </div>
-            <div>부서: 만타CIC 만타제품그룹 엔지니어링팀 (10명)</div>
+            <div>부서: 만타제품그룹(20명) ⊃ 엔지니어링팀(10명)</div>
             <div>직위: Junior (정규직)</div>
           </div>
           <div>
-            역할:{' '}
+            역할: 만타 오리지널 콘텐츠를 제공하는 글로벌 웹툰 구독 서비스, 'Manta - Unlimited Comics
+            Perfect to Binge'{' '}
+            <a
+              href="https://play.google.com/store/apps/details?id=net.manta.comic&hl=en&gl=US&pli=1"
+              target="_blank"
+            >
+              Android App
+            </a>{' '}
+            ·{' '}
+            <a
+              href="https://apps.apple.com/kr/app/manta-unlimited-comics/id1536116642"
+              target="_blank"
+            >
+              iOS App
+            </a>{' '}
+            ·{' '}
             <a href="https://manta.net/en" target="_blank">
-              Manta Comics
+              PWA Web
             </a>{' '}
             개발
           </div>
@@ -1115,6 +1135,23 @@ export default function HomePage({ params }: PageProps) {
       <ul>
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
+            <b>과외</b>
+            <div>2023년 12월 30일 ~ 현재</div>
+          </div>
+          <div>
+            역할: 대학생을 대상으로 OSI model,{' '}
+            <a
+              href="https://velog.io/@gwak2837/Next.js-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%A0%8C%EB%8D%94%EB%A7%81-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0"
+              target="_blank"
+            >
+              SSR·CSR·SSG
+            </a>
+            , Database 개념 및 X 클론 코딩 수업 (주 2회, 1회 3시간)
+          </div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
             <a href="http://www.beyondcoding.kr/about.php" target="_blank" rel="noreferrer">
               <b>비욘드코딩 (코딩학원)</b>
             </a>
@@ -1137,7 +1174,7 @@ export default function HomePage({ params }: PageProps) {
             <div>2021년 8월 9일 ~ 2022년 2월 6일 (6개월)</div>
           </div>
           <div>
-            역할: 대학생을 대상으로 프론트엔드/백엔드/클라우드 개념 및 인스타그램 클론 코딩 수업 (주
+            역할: 대학생을 대상으로 Frontend·Backend·Cloud 개념 및 인스타그램 클론 코딩 수업 (주
             3회, 1회 2시간)
           </div>
         </li>
