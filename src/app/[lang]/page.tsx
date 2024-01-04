@@ -1215,7 +1215,7 @@ export default function HomePage({ params }: PageProps) {
             </a>
             <div>
               <a href="/images/2021-kpc.webp" target="_blank">
-                2021년 5월 31일 ~ 11월 8일 (5개월)
+                2021년 5월 31일 ~ 11월 9일 (5개월)
               </a>
             </div>
           </div>
