@@ -14,10 +14,10 @@ export const dict = {
     ja: '履歴書',
   },
   이름: {
-    ko: '곽태욱 (Taeuk Gwak, 郭泰昱)',
-    en: 'Taeuk Gwak (곽태욱, 郭泰昱)',
-    zh: '郭泰昱（곽태욱，Taeuk Gwak）',
-    ja: '郭泰昱 (곽태욱, Taeuk Gwak)',
+    ko: '곽태욱 (Logan Gwak, 郭泰昱)',
+    en: 'Logan Gwak (곽태욱, 郭泰昱)',
+    zh: '郭泰昱（곽태욱，Logan Gwak）',
+    ja: '郭泰昱 (곽태욱, Logan Gwak)',
   },
   생일: {
     ko: '1998년 4월 12일 (남, 한국인)',
@@ -65,7 +65,7 @@ export const dict = {
     ),
     en: (
       <>
-        I&apos;m Taeuk Gwak, a <b>frontend developer</b> who listens to customers while planning
+        I&apos;m Logan Gwak, a <b>frontend developer</b> who listens to customers while planning
         products that solve customer inconveniences, solves business problems, and shares the
         knowledge gained during product development with others to think about the reason for the
         existence of technology.

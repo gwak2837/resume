@@ -1215,7 +1215,7 @@ export default function HomePage({ params }: PageProps) {
             </a>
             <div>
               <a href="/images/2021-kpc.webp" target="_blank">
-                2021년 5월 31일 ~ 11월 9일 (5개월)
+                2021년 5월 31일 ~ 11월 8일 (5개월)
               </a>
             </div>
           </div>
@@ -1230,7 +1230,7 @@ export default function HomePage({ params }: PageProps) {
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
             <b>신디(SinDy, Signature in Dessert) 창업</b>
-            <div>2021년 2월 25일 ~ 10월 31일 (8개월)</div>
+            <div>2021년 2월 8일 ~ 11월 8일 (9개월)</div>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
             <div>직책: Fullstack Developer (팀장)</div>
