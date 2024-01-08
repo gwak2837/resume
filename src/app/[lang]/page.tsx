@@ -713,6 +713,12 @@ export default function HomePage({ params }: PageProps) {
               alt="WebSocket Badge"
             />
           </a>
+          <a href="https://www.mongodb.com/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=Prisma&logoColor=white"
+              alt="prisma Badge"
+            />
+          </a>
           <a href="https://nodejs.org/en/" rel="noreferrer" target="_blank">
             <img
               src="https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white"
@@ -735,12 +741,6 @@ export default function HomePage({ params }: PageProps) {
             <img
               src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"
               alt="Redis Badge"
-            />
-          </a>
-          <a href="https://www.mongodb.com/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=MongoDB&logoColor=white"
-              alt="mongodb Badge"
             />
           </a>
           <a href="https://www.elastic.co/kr/kibana" rel="noreferrer" target="_blank">
@@ -1135,7 +1135,9 @@ export default function HomePage({ params }: PageProps) {
       <ul>
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
-            <b>과외</b>
+            <a href="/images/2023-kim.webp" target="_blank">
+              <b>과외</b>
+            </a>
             <div>2023년 12월 30일 ~ 현재</div>
           </div>
           <div>
@@ -1170,7 +1172,9 @@ export default function HomePage({ params }: PageProps) {
         <div className="border w-full my-6" />
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
-            <b>과외</b>
+            <a href="/images/2023-kim.webp" target="_blank">
+              <b>과외</b>
+            </a>
             <div>2021년 8월 9일 ~ 2022년 2월 6일 (6개월)</div>
           </div>
           <div>
