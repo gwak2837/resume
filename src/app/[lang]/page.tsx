@@ -759,10 +759,16 @@ export default function HomePage({ params }: PageProps) {
               alt="Vercel Badge"
             />
           </a>
-          <a href="https://cloud.google.com/gcp/" rel="noreferrer" target="_blank">
+          <a href="https://cloud.google.com/gcp/" target="_blank">
             <img
               src="https://img.shields.io/badge/Cloud Run, Cloud Storage, Cloud SQL-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
               alt="GCP Badge"
+            />
+          </a>
+          <a href="https://cloud.oracle.com/?region=ap-seoul-1" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Instances-F80000?style=flat-square&logo=oracle&logoColor=white"
+              alt="Oracle Badge"
             />
           </a>
           <a href="https://aws.amazon.com/ko/" rel="noreferrer" target="_blank">
