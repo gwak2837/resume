@@ -635,10 +635,10 @@ export default function HomePage({ params }: PageProps) {
               alt="tailwind Badge"
             />
           </a>
-          <a href="https://swr.vercel.app/" target="_blank">
+          <a href="https://tanstack.com/query/latest/docs/react/overview" target="_blank">
             <img
-              src="https://img.shields.io/badge/SWR-000000?style=flat-square&logo=SWR&logoColor=white"
-              alt="SWR Badge"
+              src="https://img.shields.io/badge/React Query-FF4154?style=flat-square&logo=react-query&logoColor=white"
+              alt="react query Badge"
             />
           </a>
           <a href="https://zustand-demo.pmnd.rs/" rel="noreferrer" target="_blank">
@@ -653,13 +653,18 @@ export default function HomePage({ params }: PageProps) {
               alt="zod"
             />
           </a>
+          <a href="https://sentry.io/welcome/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Sentry-362D59?style=flat-square&logo=sentry&logoColor=white"
+              alt="Sentry"
+            />
+          </a>
           <a href="https://web.dev/progressive-web-apps/" rel="noreferrer" target="_blank">
             <img
               src="https://img.shields.io/badge/PWA-5A0FC8?style=flat-square&logo=PWA&logoColor=white"
               alt="PWA Badge"
             />
           </a>
-
           <a
             href="https://developer.mozilla.org/en-US/docs/Web/API/EventSource"
             rel="noreferrer"
@@ -678,12 +683,6 @@ export default function HomePage({ params }: PageProps) {
             <img
               src="https://img.shields.io/badge/Web Push-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
               alt="Web Push Badge"
-            />
-          </a>
-          <a href="https://sentry.io/welcome/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Sentry-362D59?style=flat-square&logo=sentry&logoColor=white"
-              alt="Sentry"
             />
           </a>
         </div>
@@ -762,43 +761,13 @@ export default function HomePage({ params }: PageProps) {
           </a>
           <a href="https://cloud.google.com/gcp/" rel="noreferrer" target="_blank">
             <img
-              src="https://img.shields.io/badge/Cloud Run-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
-              alt="GCP Badge"
-            />
-          </a>
-          <a href="https://cloud.google.com/gcp/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Compute Engine-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
-              alt="GCP Badge"
-            />
-          </a>
-          <a href="https://cloud.google.com/gcp/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Cloud Storage-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
-              alt="GCP Badge"
-            />
-          </a>
-          <a href="https://cloud.google.com/gcp/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Cloud SQL-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
+              src="https://img.shields.io/badge/Cloud Run, Cloud Storage, Cloud SQL-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
               alt="GCP Badge"
             />
           </a>
           <a href="https://aws.amazon.com/ko/" rel="noreferrer" target="_blank">
             <img
-              src="https://img.shields.io/badge/RDS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white"
-              alt="AWS Badge"
-            />
-          </a>
-          <a href="https://aws.amazon.com/ko/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/EC2-232F3E?style=flat-square&logo=Amazon-AWS&logoColor=white"
-              alt="AWS Badge"
-            />
-          </a>
-          <a href="https://aws.amazon.com/ko/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/S3-569A31?style=flat-square&logo=Amazon-S3&logoColor=white"
+              src="https://img.shields.io/badge/RDS, EC2, S3-232F3E?style=flat-square&logo=amazon-aws&logoColor=white"
               alt="AWS Badge"
             />
           </a>
@@ -807,6 +776,37 @@ export default function HomePage({ params }: PageProps) {
       <h4 className="my-2">Developer Tool</h4>
       <div className="grid gap-1">
         <div className="flex gap-1">
+          <a href="" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"
+              alt="Git Badge"
+            />
+          </a>
+          <a href="https://esbuild.github.io/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/esbuild-FFCF00?style=flat-square&logo=esbuild&logoColor=black"
+              alt="esbuild Badge"
+            />
+          </a>
+          <a href="" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Jest-C21325?style=flat-square&logo=jest&logoColor=white"
+              alt="Jest Badge"
+            />
+          </a>
+          <a href="https://eslint.org/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=eslint&logoColor=white"
+              alt="ESLint Badge"
+            />
+          </a>
+          <a href="https://code.visualstudio.com/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/VSCode-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white"
+              alt="VSCode Badge"
+            />
+          </a>
+          &nbsp;
           <a href="https://analytics.google.com/analytics/web/" rel="noreferrer" target="_blank">
             <img
               src="https://img.shields.io/badge/GA-E37400?style=flat-square&logo=Google Analytics&logoColor=white"
@@ -823,42 +823,6 @@ export default function HomePage({ params }: PageProps) {
             <img
               src="https://img.shields.io/badge/Framer-0055FF?style=flat-square&logo=framer&logoColor=white"
               alt="framer"
-            />
-          </a>
-          <a href="https://esbuild.github.io/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/esbuild-FFCF00?style=flat-square&logo=esbuild&logoColor=black"
-              alt="esbuild Badge"
-            />
-          </a>
-          <a href="https://eslint.org/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=eslint&logoColor=white"
-              alt="ESLint Badge"
-            />
-          </a>
-          <a href="" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Jest-C21325?style=flat-square&logo=jest&logoColor=white"
-              alt="Jest Badge"
-            />
-          </a>
-          <a href="" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"
-              alt="Git Badge"
-            />
-          </a>
-          <a href="https://code.visualstudio.com/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"
-              alt="GitHub Badge"
-            />
-          </a>
-          <a href="https://code.visualstudio.com/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/VSCode-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white"
-              alt="VSCode Badge"
             />
           </a>
         </div>
