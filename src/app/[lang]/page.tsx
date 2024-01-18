@@ -184,21 +184,21 @@ export default function HomePage({ params }: PageProps) {
           </div>
           <div>
             역할: 만타 오리지널 콘텐츠를 제공하는 글로벌 웹툰 구독 서비스, 'Manta - Unlimited Comics
-            Perfect to Binge'{' '}
+            Perfect to Binge' React Native App (
             <a
               href="https://play.google.com/store/apps/details?id=net.manta.comic&hl=en&gl=US&pli=1"
               target="_blank"
             >
-              Android App
+              Android
             </a>{' '}
             ·{' '}
             <a
               href="https://apps.apple.com/kr/app/manta-unlimited-comics/id1536116642"
               target="_blank"
             >
-              iOS App
-            </a>{' '}
-            ·{' '}
+              iOS
+            </a>
+            ),{' '}
             <a href="https://manta.net/en" target="_blank">
               PWA Web
             </a>{' '}
