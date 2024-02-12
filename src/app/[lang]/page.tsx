@@ -262,7 +262,7 @@ export default function HomePage({ params }: PageProps) {
           <div>직위: 직원 (계약직)</div>
           <div>
             역할: 고등학교 친구가 창업한 스타트업에서{' '}
-            <a href="https://landing.planby.us/" target="_blank" rel="noreferrer">
+            <a href="https://planby.us/" target="_blank" rel="noreferrer">
               'HOMI AI - 인공지능이 꾸며주는 나의 공간'
             </a>{' '}
             인테리어 디자인 AI 자동화 솔루션 MVP 개발
