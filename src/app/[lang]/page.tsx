@@ -178,7 +178,7 @@ export default function HomePage({ params }: PageProps) {
             </a>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Frontend Engineer </div>
+            <div>직책: Frontend Engineer</div>
             <div>부서: 만타제품그룹(20명) ⊃ 엔지니어링팀(10명)</div>
             <div>직위: Junior (정규직)</div>
           </div>
@@ -1430,7 +1430,150 @@ export default function HomePage({ params }: PageProps) {
           숨겨 코드 파악에 필수적인 정보가 잘 보이도록 개선함
         </li>
       </ol>
-      <div className="grid grid-cols-3"></div>
+      <div className="border w-full my-6" />
+      <div className="grid grid-cols-[2fr_3fr_2fr] gap-4 my-4">
+        <h4>Manta (만타)</h4>
+        <div>만타제품그룹(20명) ⊃ 엔지니어링팀(10명)</div>
+        <div>2023년 11월 27일 ~ 현재</div>
+      </div>
+      <div className="flex gap-0.5 my-2 items-center">
+        <a
+          href="https://github.com/ridi/manta"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+        >
+          <div className="flex gap-1 items-center">
+            <Image src="/images/github.svg" alt="github" width="16" height="16" />
+            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
+              manta (Priv.)
+            </h5>
+          </div>
+        </a>
+        <a
+          href="https://manta.net/en"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+        >
+          <div className="flex gap-1 items-center">
+            <Image
+              src="/images/manta-logo.png"
+              alt="manta"
+              width="282"
+              height="282"
+              className="h-4 w-4"
+            />
+            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
+              manta.net
+            </h5>
+          </div>
+        </a>
+        <a
+          href="https://play.google.com/store/apps/details?id=net.manta.comic&hl=en&gl=US&pli=1"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+        >
+          <div className="flex gap-1 items-center">
+            <Image
+              src="/images/manta-logo.png"
+              alt="manta"
+              width="282"
+              height="282"
+              className="h-4 w-4"
+            />
+            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
+              Manta (Google Play)
+            </h5>
+          </div>
+        </a>
+        <a
+          href="https://apps.apple.com/kr/app/manta-unlimited-comics/id1536116642"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+        >
+          <div className="flex gap-1 items-center">
+            <Image
+              src="/images/manta-logo.png"
+              alt="manta"
+              width="282"
+              height="282"
+              className="h-4 w-4"
+            />
+            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
+              Manta (App Store)
+            </h5>
+          </div>
+        </a>
+      </div>
+      <div>Unlimited Comics Perfect to Binge (글로벌 웹툰 구독 서비스)</div>
+      <div className="flex flex-wrap gap-1 my-2">
+        <a href="https://reactnative.dev/" target="_blank">
+          <img
+            src="https://img.shields.io/badge/React Native-61DAFB?style=flat-square&logo=React&logoColor=black"
+            alt="React Native"
+          />
+        </a>
+        <a href="https://nextjs.org" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"
+            alt="next.js"
+          />
+        </a>
+        <a href="https://ko.redux.js.org/" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=Redux&logoColor=white"
+            alt="Redux"
+          />
+        </a>
+        <a href="https://redux-toolkit.js.org/" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Redux Tookit-764ABC?style=flat-square&logo=Redux&logoColor=white"
+            alt="Redux Tookit"
+          />
+        </a>
+        <a href="https://vanilla-extract.style/" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Vanilla Extract-C2FCED?style=flat-square&logo=Vanilla Extract&logoColor=white"
+            alt="Vanilla Extract"
+          />
+        </a>
+        <a href="https://cloud.google.com/gcp/" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Google Cloud-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
+            alt="GCP Badge"
+          />
+        </a>
+        <a href="https://www.figma.com/" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=Figma&logoColor=white"
+            alt="Figma"
+          />
+        </a>
+      </div>
+      <ol>
+        <li>
+          북미 웹툰 시장 점유율 2위인 글로벌 웹툰 서비스 Manta의 Frontend 분야를 개발함 (2022년
+          점유율 9.8%)
+        </li>
+        <li>
+          React 문법을 기반으로 한 React Native 및 Next.js를 활용하여 코드 유지 관리 비용을
+          최소화하고, 앱 및 웹 환경에서 다수의 고객에게 서비스를 제공함
+        </li>
+        <li>
+          팀 내 linguist와 Phrase 서비스를 통해 다양한 언어의 번역 파일을 관리하고, i18next
+          라이브러리를 활용하여 다국어 및 지역화 기능을 구현함. 국가별 화폐 및 날짜 형식, 언어별
+          텍스트 길이에 따른 디자인 차이 등을 고려하여 사용자들에게 향샹된 현지화 경험을 제공함.
+        </li>
+        <li>
+          사용자 행동 분석과 안정적인 서비스 운영을 위해 Firebase와 Braze를 활용하여 자체 이벤트를
+          기록하고, 오류 발생 시 Crashlytics에 로그를 기록함. 이를 바탕으로 CS 문의 등 다양한
+          상황에서 Google Cloud 콘솔의 로그 탐색기를 활용하여 사용자의 행동 기록을 분석하여 문제를
+          해결함.
+        </li>
+      </ol>
       <div className="border w-full my-6" />
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>OFFICE AI</h4>
