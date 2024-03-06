@@ -1560,7 +1560,7 @@ export default function HomePage({ params }: PageProps) {
         </li>
         <li>
           React 문법을 기반으로 한 React Native 및 Next.js를 활용하여 코드 유지 관리 비용을
-          최소화하고, 앱 및 웹 환경에서 다수의 고객에게 서비스를 제공함
+          최소화하여 앱 및 웹 환경에서 고객에게 서비스를 제공함
         </li>
         <li>
           팀 내 linguist와 Phrase 서비스를 통해 다양한 언어의 번역 파일을 관리하고, i18next
