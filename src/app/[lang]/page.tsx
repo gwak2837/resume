@@ -1555,8 +1555,14 @@ export default function HomePage({ params }: PageProps) {
       </div>
       <ol>
         <li>
-          북미 웹툰 시장 점유율 2위인 글로벌 웹툰 서비스 Manta의 Frontend 분야를 개발함 (2022년
-          점유율 9.8%)
+          북미 웹툰 시장 점유율 2위인 글로벌 웹툰 서비스 Manta의 Frontend 분야를 개발함{' '}
+          <a
+            href="https://files-scs.pstatic.net/2024/01/03/mpZT5kjudA/%EC%9B%B9%ED%88%B0%EC%82%B0%EC%97%85_%EB%B0%B8%EB%A5%98%ED%8C%8C%EC%9D%B8%EB%8D%94.pdf"
+            target="_blank"
+            className="text-xs"
+          >
+            (2022년 점유율 9.8%)
+          </a>
         </li>
         <li>
           React 문법을 기반으로 한 React Native 및 Next.js를 활용하여 코드 유지 관리 비용을
