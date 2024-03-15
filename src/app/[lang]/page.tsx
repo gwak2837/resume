@@ -160,7 +160,7 @@ export default function HomePage({ params }: PageProps) {
       </div>
       <p className="my-4 ">{dict.한줄소개[lang]}</p>
       <h2 className="text-3xl my-8">
-        {dict.개발경력[lang]} <span className="text-sm">(1년 9개월+α)</span>
+        {dict.개발경력[lang]} <span className="text-sm">(1년 7개월+α)</span>
       </h2>
       <ul>
         <li>
@@ -362,25 +362,6 @@ export default function HomePage({ params }: PageProps) {
         <div className="border w-full my-6" />
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
-            <a href="https://www.headstartsv.com/" target="_blank" rel="noreferrer">
-              <b>Headstart Silicon Valley, Inc.</b>
-            </a>
-            <div>
-              <a href="/images/2021-headstart-sv.webp" target="_blank">
-                2021년 1월 4일 ~ 2월 5일 (1개월)
-              </a>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-4">
-            <div>직책: Frontend Developer (팀장)</div>
-            <div>부서: 프로젝트2팀 (6명)</div>
-          </div>
-          <div>직위: 인턴</div>
-          <div>역할: ‘음성인식 기반 노래검색 서비스’ Icezam 기획 및 개발</div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
             <div className="flex gap-2 items-center">
               <a
                 href="https://www.linkedin.com/company/festaio/"
@@ -477,31 +458,6 @@ export default function HomePage({ params }: PageProps) {
             역할: 'KFX IR 해석 기법 및 해석 소프트웨어 개발 연구' 과제 참여. 적외선 영상 통계 분석
             개발 보조 (C++), OpenMP 라이브러리 기반 병렬처리로 수학 계산 성능 최적화
           </div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <a
-              href="https://www.saramin.co.kr/zf_user/company-info/view/csn/b2ZtOGw4SWdmTldhbjVLK2pqNzdDZz09/company_nm/(%EC%A3%BC)%EB%A6%AC%EC%84%9C%EC%B9%98%EB%9E%A9"
-              className="flex gap-2 items-center"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <b>(주)리서치랩</b>
-              <Image src="/images/researchlab-logo.jpg" alt="리서치랩" width="69" height="20" />
-            </a>
-            <div>
-              <a href="/images/2017-researchlab.webp" target="_blank">
-                2017년 7월 31일 ~ 8월 25일 (1개월)
-              </a>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-4">
-            <div>직책: Data Analyst</div>
-            <div>부서: 연구4팀 (10명)</div>
-          </div>
-          <div>직위: 인턴</div>
-          <div>역할: 여론 조사 데이터 통계 분석 및 엑셀 함수 작성</div>
         </li>
       </ul>
       <h2 className="text-3xl my-8 ">{dict.학력[lang]}</h2>
@@ -1219,6 +1175,25 @@ export default function HomePage({ params }: PageProps) {
         <div className="border w-full my-6" />
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
+            <a href="https://www.headstartsv.com/" target="_blank" rel="noreferrer">
+              <b>Headstart Silicon Valley, Inc.</b>
+            </a>
+            <div>
+              <a href="/images/2021-headstart-sv.webp" target="_blank">
+                2021년 1월 4일 ~ 2월 5일 (1개월)
+              </a>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            <div>직책: Frontend Developer (팀장)</div>
+            <div>부서: 프로젝트2팀 (6명)</div>
+          </div>
+          <div>직위: 인턴</div>
+          <div>역할: ‘음성인식 기반 노래검색 서비스’ Icezam 기획 및 개발</div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
             <b>중앙대학교 2019년 2학기 SW 기초 교과목 멘토</b>
             <div>2019년 9월 16일 ~ 12월 13일 (3개월)</div>
           </div>
@@ -1231,6 +1206,31 @@ export default function HomePage({ params }: PageProps) {
             역할: 수업 중 수강생의 Scratch 프로그래밍 관련 질의 응답 및 과제 채점 (주 2회, 1회
             2시간)
           </div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
+            <a
+              href="https://www.saramin.co.kr/zf_user/company-info/view/csn/b2ZtOGw4SWdmTldhbjVLK2pqNzdDZz09/company_nm/(%EC%A3%BC)%EB%A6%AC%EC%84%9C%EC%B9%98%EB%9E%A9"
+              className="flex gap-2 items-center"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>(주)리서치랩</b>
+              <Image src="/images/researchlab-logo.jpg" alt="리서치랩" width="69" height="20" />
+            </a>
+            <div>
+              <a href="/images/2017-researchlab.webp" target="_blank">
+                2017년 7월 31일 ~ 8월 25일 (1개월)
+              </a>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            <div>직책: Data Analyst</div>
+            <div>부서: 연구4팀 (10명)</div>
+          </div>
+          <div>직위: 인턴</div>
+          <div>역할: 여론 조사 데이터 통계 분석 및 엑셀 함수 작성</div>
         </li>
       </ul>
       <h2 className="text-3xl my-8 ">소개</h2>
