@@ -622,16 +622,6 @@ export default function HomePage({ params }: PageProps) {
             />
           </a>
           <a
-            href="https://developer.mozilla.org/en-US/docs/Web/API/EventSource"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <img
-              src="https://img.shields.io/badge/Event Source-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
-              alt="Event Source Badge"
-            />
-          </a>
-          <a
             href="https://developer.mozilla.org/en-US/docs/Web/API/Push_API"
             rel="noreferrer"
             target="_blank"
@@ -658,17 +648,17 @@ export default function HomePage({ params }: PageProps) {
             target="_blank"
           >
             <img
-              src="https://img.shields.io/badge/Server Push-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
+              src="https://img.shields.io/badge/HTTP/2-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
               alt="Server Push Badge"
             />
           </a>
           <a href="https://socket.io/" rel="noreferrer" target="_blank">
             <img
-              src="https://img.shields.io/badge/Socket.io-010101?style=flat-square&logo=Socket.io&logoColor=white"
+              src="https://img.shields.io/badge/Socket.IO-010101?style=flat-square&logo=Socket.io&logoColor=white"
               alt="WebSocket Badge"
             />
           </a>
-          <a href="https://www.mongodb.com/" rel="noreferrer" target="_blank">
+          <a href="https://www.prisma.io/" rel="noreferrer" target="_blank">
             <img
               src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=Prisma&logoColor=white"
               alt="prisma Badge"
@@ -698,10 +688,10 @@ export default function HomePage({ params }: PageProps) {
               alt="Redis Badge"
             />
           </a>
-          <a href="https://www.elastic.co/kr/kibana" rel="noreferrer" target="_blank">
+          <a href="https://www.elastic.co/kr" rel="noreferrer" target="_blank">
             <img
-              src="https://img.shields.io/badge/Kibana-005571?style=flat-square&logo=kibana&logoColor=white"
-              alt="kibana"
+              src="https://img.shields.io/badge/Elasticsearch, Kibana-005571?style=flat-square&logo=elastic&logoColor=white"
+              alt="elasticsearch Badge"
             />
           </a>
         </div>
@@ -756,19 +746,12 @@ export default function HomePage({ params }: PageProps) {
               alt="Jest Badge"
             />
           </a>
-          <a href="https://eslint.org/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=eslint&logoColor=white"
-              alt="ESLint Badge"
-            />
-          </a>
           <a href="https://code.visualstudio.com/" rel="noreferrer" target="_blank">
             <img
               src="https://img.shields.io/badge/VSCode-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white"
               alt="VSCode Badge"
             />
           </a>
-          &nbsp;
           <a href="https://analytics.google.com/analytics/web/" rel="noreferrer" target="_blank">
             <img
               src="https://img.shields.io/badge/GA-E37400?style=flat-square&logo=Google Analytics&logoColor=white"
