@@ -725,51 +725,82 @@ export default function HomePage({ params }: PageProps) {
           </a>
         </div>
       </div>
-      <h4 className="my-2">Developer Tool</h4>
-      <div className="grid gap-1">
-        <div className="flex gap-1">
-          <a href="" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"
-              alt="Git Badge"
-            />
-          </a>
-          <a href="https://esbuild.github.io/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/esbuild-FFCF00?style=flat-square&logo=esbuild&logoColor=black"
-              alt="esbuild Badge"
-            />
-          </a>
-          <a href="" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Jest-C21325?style=flat-square&logo=jest&logoColor=white"
-              alt="Jest Badge"
-            />
-          </a>
-          <a href="https://code.visualstudio.com/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/VSCode-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white"
-              alt="VSCode Badge"
-            />
-          </a>
-          <a href="https://analytics.google.com/analytics/web/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/GA-E37400?style=flat-square&logo=Google Analytics&logoColor=white"
-              alt="GA Badge"
-            />
-          </a>
-          <a href="https://www.figma.com/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=Figma&logoColor=white"
-              alt="Figma Badge"
-            />
-          </a>
-          <a href="https://www.framer.com/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Framer-0055FF?style=flat-square&logo=framer&logoColor=white"
-              alt="framer"
-            />
-          </a>
+      <div className="flex gap-4">
+        <div>
+          <h4 className="my-2">Developer Tool</h4>
+          <div className="grid gap-1">
+            <div className="flex gap-1">
+              <a href="" rel="noreferrer" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"
+                  alt="Git Badge"
+                />
+              </a>
+              <a href="https://esbuild.github.io/" rel="noreferrer" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/esbuild-FFCF00?style=flat-square&logo=esbuild&logoColor=black"
+                  alt="esbuild Badge"
+                />
+              </a>
+              <a href="" rel="noreferrer" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/Jest-C21325?style=flat-square&logo=jest&logoColor=white"
+                  alt="Jest Badge"
+                />
+              </a>
+              <a href="https://code.visualstudio.com/" rel="noreferrer" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/VSCode-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white"
+                  alt="VSCode Badge"
+                />
+              </a>
+              <a
+                href="https://analytics.google.com/analytics/web/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <img
+                  src="https://img.shields.io/badge/GA-E37400?style=flat-square&logo=Google Analytics&logoColor=white"
+                  alt="GA Badge"
+                />
+              </a>
+              <a href="https://www.figma.com/" rel="noreferrer" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=Figma&logoColor=white"
+                  alt="Figma Badge"
+                />
+              </a>
+              <a href="https://www.framer.com/" rel="noreferrer" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/Framer-0055FF?style=flat-square&logo=framer&logoColor=white"
+                  alt="framer"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4 className="my-2">AI</h4>
+          <div className="flex gap-1">
+            <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui" target="_blank">
+              <img
+                src="https://img.shields.io/badge/Stable Diffusion-1F1E37?style=flat-square&logo=ngrok&logoColor=white"
+                alt="Stable Diffusion Badge"
+              />
+            </a>
+            <a href="https://github.com/bmaltais/kohya_ss" target="_blank">
+              <img
+                src="https://img.shields.io/badge/LoRA-1F1E37?style=flat-square&logo=ngrok&logoColor=white"
+                alt="LoRA Badge"
+              />
+            </a>
+            <a href="https://www.runpod.io/" target="_blank">
+              <img
+                src="https://img.shields.io/badge/RunPod-824edc?style=flat-square&logo=RunPod&logoColor=white"
+                alt="RunPod Badge"
+              />
+            </a>
+          </div>
         </div>
       </div>
       <h2 className="text-3xl my-8">수상</h2>
