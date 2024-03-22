@@ -711,6 +711,12 @@ export default function HomePage({ params }: PageProps) {
               alt="GCP Badge"
             />
           </a>
+          <a href="https://firebase.google.com/" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=Firebase&logoColor=black"
+              alt="Firebase Badge"
+            />
+          </a>
           <a href="https://cloud.oracle.com/?region=ap-seoul-1" target="_blank">
             <img
               src="https://img.shields.io/badge/Instances-F80000?style=flat-square&logo=oracle&logoColor=white"
