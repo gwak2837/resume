@@ -160,7 +160,7 @@ export default function HomePage({ params }: PageProps) {
       </div>
       <p className="my-4 ">{dict.한줄소개[lang]}</p>
       <h2 className="text-3xl my-8">
-        {dict.개발경력[lang]} <span className="text-sm">(1년 5개월+α)</span>
+        {dict.개발경력[lang]} <span className="text-sm">(1년 9개월+α)</span>
       </h2>
       <ul>
         <li>
@@ -174,13 +174,35 @@ export default function HomePage({ params }: PageProps) {
               <RidiLogo />
             </a>
             <a href="/pdf/리디-재직증명서.pdf" target="_blank">
-              <div>2023년 11월 27일 ~ 현재 (+α개월)</div>
+              <div>2024년 4월 1일 ~ 현재 (+α개월)</div>
+            </a>
+          </div>
+          <div className="grid grid-cols-2 gap-x-4">
+            <div>직책: Frontend Engineer</div>
+            <div>부서: 리디 웹팀</div>
+            <div>직위: Junior (정규직)</div>
+          </div>
+          <div>역할: 리디 웹 서비스 개발</div>
+        </li>
+        {/* <div className="border w-full my-6" /> */}
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
+            <a
+              href="https://www.linkedin.com/company/ridi/"
+              className="flex gap-2 items-center"
+              target="_blank"
+            >
+              <b>리디(주)</b>
+              <RidiLogo />
+            </a>
+            <a href="/pdf/리디-재직증명서.pdf" target="_blank">
+              <div>2023년 11월 27일 ~ 2024년 3월 31일 (4개월)</div>
             </a>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
             <div>직책: Frontend Engineer</div>
             <div>부서: 만타제품그룹(20명) ⊃ 엔지니어링팀(10명)</div>
-            <div>직위: Junior (정규직)</div>
+            <div>직위: Junior (정규직, 수습 기간 3개월 포함)</div>
           </div>
           <div>
             역할: 만타 오리지널 콘텐츠를 제공하는 글로벌 웹툰 구독 서비스, 'Manta - Unlimited Comics
