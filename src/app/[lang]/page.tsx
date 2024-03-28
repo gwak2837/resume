@@ -160,7 +160,7 @@ export default function HomePage({ params }: PageProps) {
       </div>
       <p className="my-4 ">{dict.한줄소개[lang]}</p>
       <h2 className="text-3xl my-8">
-        {dict.개발경력[lang]} <span className="text-sm">(1년 7개월+α)</span>
+        {dict.개발경력[lang]} <span className="text-sm">(1년 5개월+α)</span>
       </h2>
       <ul>
         <li>
@@ -400,40 +400,7 @@ export default function HomePage({ params }: PageProps) {
           </div>
         </li>
         <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <a
-              href="https://www.saramin.co.kr/zf_user/company-info/view?csn=VHFyWXhFL2E1N1hYMkhEZmUxK05SZz09"
-              className="flex gap-2 items-center"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <b>(주)행복한 다람쥐단 </b>
-              <Image
-                src="/images/happydaram-logo.webp"
-                alt="행복한다람쥐단"
-                width="28"
-                height="25"
-              />
-            </a>
-            <div>
-              <a href="/images/2019-happydaram.webp" target="_blank">
-                2019년 12월 23일
-              </a>{' '}
-              ~{' '}
-              <a href="/images/2019-happydaram2.webp" target="_blank">
-                2020년 2월 21일 (2개월)
-              </a>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-4">
-            <div>직책: Frontend Developer</div>
-            <div>부서: 개발부 (3명)</div>
-          </div>
-          <div>직위: 인턴</div>
-          <div>역할: '방탈출 리뷰 웹사이트' 기획·디자인 및 MVP 개발</div>
-        </li>
-        <div className="border w-full my-6" />
+
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
             <a href="https://web.cau.ac.kr/energy/index.htm" target="_blank" rel="noreferrer">
@@ -1160,25 +1127,6 @@ export default function HomePage({ params }: PageProps) {
         <div className="border w-full my-6" />
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
-            <a href="https://www.onoffmix.com/event/236424" target="_blank" rel="noreferrer">
-              <b>쿠버네티스 기반 클라우드 시스템 엔지니어 양성 과정</b>
-            </a>
-            <div>
-              <a href="/images/2021-kpc.webp" target="_blank">
-                2021년 5월 31일 ~ 11월 9일 (5개월)
-              </a>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Fullstack Developer (팀장)</div>
-            <div>부서: 프로젝트2팀 (5명)</div>
-            <div>직위: 국비지원 교육생</div>
-          </div>
-          <div>역할: Docker 기반 심리테스트 웹사이트 구축, k8s와 CI/CD 기반 CRUD 게시판 구축</div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
             <b>신디(SinDy, Signature in Dessert) 창업</b>
             <div>2021년 2월 8일 ~ 11월 8일 (9개월)</div>
           </div>
@@ -1210,6 +1158,40 @@ export default function HomePage({ params }: PageProps) {
           </div>
           <div>직위: 인턴</div>
           <div>역할: ‘음성인식 기반 노래검색 서비스’ Icezam 기획 및 개발</div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
+            <a
+              href="https://www.saramin.co.kr/zf_user/company-info/view?csn=VHFyWXhFL2E1N1hYMkhEZmUxK05SZz09"
+              className="flex gap-2 items-center"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>(주)행복한 다람쥐단 </b>
+              <Image
+                src="/images/happydaram-logo.webp"
+                alt="행복한다람쥐단"
+                width="28"
+                height="25"
+              />
+            </a>
+            <div>
+              <a href="/images/2019-happydaram.webp" target="_blank">
+                2019년 12월 23일
+              </a>{' '}
+              ~{' '}
+              <a href="/images/2019-happydaram2.webp" target="_blank">
+                2020년 2월 21일 (2개월)
+              </a>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            <div>직책: Frontend Developer</div>
+            <div>부서: 개발부 (3명)</div>
+          </div>
+          <div>직위: 인턴</div>
+          <div>역할: '방탈출 리뷰 웹사이트' 기획·디자인 및 MVP 개발</div>
         </li>
         <div className="border w-full my-6" />
         <li>
@@ -2760,8 +2742,12 @@ export default function HomePage({ params }: PageProps) {
       <div className="border w-full my-6" />
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>게시판</h4>
-        <div>1명 (본인)</div>
-        <div>2021년 10월 21일 ~ 11월 5일 (2주)</div>
+        <div>4명</div>
+        <div>
+          <a href="/images/2021-kpc.webp" target="_blank">
+            2021년 10월 21일 ~ 11월 5일 (2주)
+          </a>
+        </div>
       </div>
       <div className="flex gap-0.5 my-2 items-center">
         <a
@@ -2803,7 +2789,12 @@ export default function HomePage({ params }: PageProps) {
         </a>
         <span className="text-xs text-red-500">백엔드 비활성화됨</span>
       </div>
-      <div>Google Kubernetes Engine(GKE) 상 게시글 CRUD 및 로그인 회원가입 서비스 구현</div>
+      <div>
+        <a href="https://www.onoffmix.com/event/236424" target="_blank" rel="noreferrer">
+          쿠버네티스 기반 클라우드 시스템 엔지니어 양성 과정
+        </a>{' '}
+        교육에서 Google Kubernetes Engine(GKE) 상 게시글 CRUD 및 로그인 회원가입 서비스 구현
+      </div>
       <div className="flex flex-wrap gap-1 my-2">
         <a href="https://nextjs.org/" rel="noreferrer" target="_blank">
           <img
