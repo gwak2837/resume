@@ -1412,6 +1412,12 @@ export default function HomePage({ params }: PageProps) {
             alt="Vanilla Extract"
           />
         </a>
+        <a href="https://styled-components.com/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Styled-DB7093?style=flat-square&logo=styled-components&logoColor=white"
+            alt="styled Badge"
+          />
+        </a>
         <a href="https://cloud.google.com/gcp/" target="_blank">
           <img
             src="https://img.shields.io/badge/Google Cloud-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
