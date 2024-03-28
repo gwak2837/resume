@@ -1303,136 +1303,6 @@ export default function HomePage({ params }: PageProps) {
       <div className="my-8" />
       <h1 className="text-4xl mb-8 font-semibold w-full break-before-page">포트폴리오</h1>
       <h2 className="text-3xl my-8">프로젝트</h2>
-      <div className="flex gap-1 px-1 text-sm text-gray-600">
-        <Pin width="16" /> <b>고정됨</b>
-      </div>
-      <div className="grid grid-cols-[2fr_2fr_3fr] gap-4 my-4">
-        <h4>
-          토스뱅크 LUMOS, 루모스 <br />
-          (여신 심사·관리·운영 시스템)
-        </h4>
-        <div>개발: 6명 | 비개발: 6명</div>
-        <a href="/pdf/토스뱅크-경력증명서.pdf" target="_blank">
-          <div>2023년 8월 7일 ~ 11월 6일 (3개월)</div>
-        </a>
-      </div>
-      <div className="flex gap-0.5 my-2">
-        <a
-          href="https://github.tossbank.it/bank-lumos"
-          target="_blank"
-          rel="noreferrer"
-          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
-        >
-          <div className="flex gap-1 items-center">
-            <Image src="/images/github.svg" alt="github" width="16" height="16" />
-            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
-              bank-lumos (Priv.)
-            </h5>
-          </div>
-        </a>
-      </div>
-      <div>
-        기존 은행에서 사용하는 통합단말을 대체하면서, 토스씨엑스 내부적으로 사용하는 여신
-        심사·관리·운영 시스템을 Next.js와 Toss Design System 기반으로 개발함
-      </div>
-      <div className="flex flex-wrap gap-1 my-2">
-        <a href="https://nextjs.org" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Next.js 13-000000?style=flat-square&logo=next.js&logoColor=white"
-            alt="next.js"
-          />
-        </a>
-        <a href="https://toss.im/slash-21/sessions/3-4" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Toss Design System-0064FF?style=flat-square&logoColor=white"
-            alt="toss design system"
-          />
-        </a>
-        <a href="https://tanstack.com/query/v4/" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/React Query-FF4154?style=flat-square&logo=react-query&logoColor=white"
-            alt="React Query Badge"
-          />
-        </a>
-        <a href="https://zod.dev/" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Zod-3E67B1?style=flat-square&logo=zod&logoColor=white"
-            alt="zod"
-          />
-        </a>
-        <a href="https://www.framer.com/" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Framer-0055FF?style=flat-square&logo=framer&logoColor=white"
-            alt="framer"
-          />
-        </a>
-        <a href="https://www.elastic.co/kr/kibana" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Kibana-005571?style=flat-square&logo=kibana&logoColor=white"
-            alt="kibana"
-          />
-        </a>
-        <div className="pr-2" />
-        <a href="" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Slack-4A154B?style=flat-square&logo=slack&logoColor=white"
-            alt="Slack Badge"
-          />
-        </a>
-        <a href="" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white"
-            alt="Jira Badge"
-          />
-        </a>
-        <a href="" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=notion&logoColor=white"
-            alt="Notion Badge"
-          />
-        </a>
-      </div>
-      <ol>
-        <li>
-          전월세보증금대출 상품 출시 전후 토스씨엑스 팀원과 소통하며 서류심사, 사후관리, 지킴보증
-          관련 기능을 개발함
-        </li>
-        <li>Suspense 컴포넌트와 ErrorBoundary 개념을 이용해 네트워크 상태를 선언적으로 관리함</li>
-        <li>React Query를 사용해 응답 순서가 보장되지 않는 네트워크 요청을 비동기로 관리함</li>
-        <li>Promise를 활용해 Modal, Dialog 등의 컴포넌트 열기/닫기 로직을 선언적으로 관리함</li>
-        <li>
-          <code>ts-pattern</code>의 match 함수와 Funnel 패턴을 활용해 다단계 페이지 이동을
-          명시적으로 관리함
-        </li>
-        <li>
-          검색 조건을 querystring에 저장해 페이지 이동이 일어나도 입력했던 검색 조건을 유지시킴
-        </li>
-        <li>
-          디자이너 팀원이 프레이머로 제작한 시안과 토스 디자인 시스템을 기반으로 화면 프로토타입을
-          빠르게 구현함
-        </li>
-        <li>
-          Kibana 검색 및 집계 기능을 사용하여 오류 발생 주기와 원인을 분석하고, 개선된 코드를 제안
-          및 구현함
-        </li>
-        <li>LUMOS 프로젝트 Docker 이미지 빌드 시간을 305초 → 213초로 (30%) 개선함</li>
-        <li>
-          사전에 팀의 코드 컨벤션과 브랜치 전략을 논의하고{' '}
-          <a href="https://blog.banksalad.com/tech/banksalad-code-review-culture/" target="_blank">
-            Pn 룰
-          </a>{' '}
-          등을 공유해 Code Review 효율성을 높임
-        </li>
-        <li>
-          서비스 기능 장애가 발생했을 때 관련 커밋을 롤백한 후 장애 원인을 분석하고 해결 방안을
-          논의해 문서로 남김
-        </li>
-        <li>
-          연관된 코드는 가까운 곳에 배치하여 컴포넌트 응집도를 높이고, 로직 세부 구현은 hook으로
-          숨겨 코드 파악에 필수적인 정보가 잘 보이도록 개선함
-        </li>
-      </ol>
-      <div className="border w-full my-6" />
       <div className="grid grid-cols-[2fr_3fr_2fr] gap-4 my-4">
         <h4>Manta (만타)</h4>
         <div>만타제품그룹(20명) ⊃ 엔지니어링팀(10명)</div>
@@ -1700,6 +1570,133 @@ export default function HomePage({ params }: PageProps) {
           className="border"
         />
       </div>
+      <div className="border w-full my-6" />
+      <div className="grid grid-cols-[2fr_2fr_3fr] gap-4 my-4">
+        <h4>
+          토스뱅크 LUMOS, 루모스 <br />
+          (여신 심사·관리·운영 시스템)
+        </h4>
+        <div>개발: 6명 | 비개발: 6명</div>
+        <a href="/pdf/토스뱅크-경력증명서.pdf" target="_blank">
+          <div>2023년 8월 7일 ~ 11월 6일 (3개월)</div>
+        </a>
+      </div>
+      <div className="flex gap-0.5 my-2">
+        <a
+          href="https://github.tossbank.it/bank-lumos"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+        >
+          <div className="flex gap-1 items-center">
+            <Image src="/images/github.svg" alt="github" width="16" height="16" />
+            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
+              bank-lumos (Priv.)
+            </h5>
+          </div>
+        </a>
+      </div>
+      <div>
+        기존 은행에서 사용하는 통합단말을 대체하면서, 토스씨엑스 내부적으로 사용하는 여신
+        심사·관리·운영 시스템을 Next.js와 Toss Design System 기반으로 개발함
+      </div>
+      <div className="flex flex-wrap gap-1 my-2">
+        <a href="https://nextjs.org" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Next.js 13-000000?style=flat-square&logo=next.js&logoColor=white"
+            alt="next.js"
+          />
+        </a>
+        <a href="https://toss.im/slash-21/sessions/3-4" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Toss Design System-0064FF?style=flat-square&logoColor=white"
+            alt="toss design system"
+          />
+        </a>
+        <a href="https://tanstack.com/query/v4/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/React Query-FF4154?style=flat-square&logo=react-query&logoColor=white"
+            alt="React Query Badge"
+          />
+        </a>
+        <a href="https://zod.dev/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Zod-3E67B1?style=flat-square&logo=zod&logoColor=white"
+            alt="zod"
+          />
+        </a>
+        <a href="https://www.framer.com/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Framer-0055FF?style=flat-square&logo=framer&logoColor=white"
+            alt="framer"
+          />
+        </a>
+        <a href="https://www.elastic.co/kr/kibana" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Kibana-005571?style=flat-square&logo=kibana&logoColor=white"
+            alt="kibana"
+          />
+        </a>
+        <div className="pr-2" />
+        <a href="" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Slack-4A154B?style=flat-square&logo=slack&logoColor=white"
+            alt="Slack Badge"
+          />
+        </a>
+        <a href="" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white"
+            alt="Jira Badge"
+          />
+        </a>
+        <a href="" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=notion&logoColor=white"
+            alt="Notion Badge"
+          />
+        </a>
+      </div>
+      <ol>
+        <li>
+          전월세보증금대출 상품 출시 전후 토스씨엑스 팀원과 소통하며 서류심사, 사후관리, 지킴보증
+          관련 기능을 개발함
+        </li>
+        <li>Suspense 컴포넌트와 ErrorBoundary 개념을 이용해 네트워크 상태를 선언적으로 관리함</li>
+        <li>React Query를 사용해 응답 순서가 보장되지 않는 네트워크 요청을 비동기로 관리함</li>
+        <li>Promise를 활용해 Modal, Dialog 등의 컴포넌트 열기/닫기 로직을 선언적으로 관리함</li>
+        <li>
+          <code>ts-pattern</code>의 match 함수와 Funnel 패턴을 활용해 다단계 페이지 이동을
+          명시적으로 관리함
+        </li>
+        <li>
+          검색 조건을 querystring에 저장해 페이지 이동이 일어나도 입력했던 검색 조건을 유지시킴
+        </li>
+        <li>
+          디자이너 팀원이 프레이머로 제작한 시안과 토스 디자인 시스템을 기반으로 화면 프로토타입을
+          빠르게 구현함
+        </li>
+        <li>
+          Kibana 검색 및 집계 기능을 사용하여 오류 발생 주기와 원인을 분석하고, 개선된 코드를 제안
+          및 구현함
+        </li>
+        <li>LUMOS 프로젝트 Docker 이미지 빌드 시간을 305초 → 213초로 (30%) 개선함</li>
+        <li>
+          사전에 팀의 코드 컨벤션과 브랜치 전략을 논의하고{' '}
+          <a href="https://blog.banksalad.com/tech/banksalad-code-review-culture/" target="_blank">
+            Pn 룰
+          </a>{' '}
+          등을 공유해 Code Review 효율성을 높임
+        </li>
+        <li>
+          서비스 기능 장애가 발생했을 때 관련 커밋을 롤백한 후 장애 원인을 분석하고 해결 방안을
+          논의해 문서로 남김
+        </li>
+        <li>
+          연관된 코드는 가까운 곳에 배치하여 컴포넌트 응집도를 높이고, 로직 세부 구현은 hook으로
+          숨겨 코드 파악에 필수적인 정보가 잘 보이도록 개선함
+        </li>
+      </ol>
       <div className="border w-full my-6" />
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>HOMI AI</h4>
