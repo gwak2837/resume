@@ -1683,8 +1683,9 @@ export default function HomePage({ params }: PageProps) {
           빠르게 구현함
         </li>
         <li>
-          Kibana 검색 및 집계 기능을 사용하여 오류 발생 주기와 원인을 분석하고, 개선된 코드를 제안
-          및 구현함
+          서비스 기능 장애가 발생했을 때 관련 커밋을 롤백한 후 Kibana 검색 및 집계 기능을 사용하여
+          오류 발생 주기와 원인을 분석함. 또한 해결 방안을 논의해 문서로 남긴 후 개선된 코드를
+          제안하고 구현함
         </li>
         <li>LUMOS 프로젝트 Docker 이미지 빌드 시간을 305초 → 213초로 (30%) 개선함</li>
         <li>
@@ -1693,10 +1694,6 @@ export default function HomePage({ params }: PageProps) {
             Pn 룰
           </a>{' '}
           등을 공유해 Code Review 효율성을 높임
-        </li>
-        <li>
-          서비스 기능 장애가 발생했을 때 관련 커밋을 롤백한 후 장애 원인을 분석하고 해결 방안을
-          논의해 문서로 남김
         </li>
         <li>
           연관된 코드는 가까운 곳에 배치하여 컴포넌트 응집도를 높이고, 로직 세부 구현은 hook으로
