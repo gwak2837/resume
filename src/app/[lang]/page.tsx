@@ -184,7 +184,7 @@ export default function HomePage({ params }: PageProps) {
           </div>
           <div>역할: 리디 웹 서비스 개발</div>
         </li>
-        {/* <div className="border w-full my-6" /> */}
+        <div className="h-2" />
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
             <a
@@ -202,7 +202,7 @@ export default function HomePage({ params }: PageProps) {
           <div className="grid grid-cols-2 gap-x-4">
             <div>직책: Frontend Engineer</div>
             <div>부서: 만타제품그룹(20명) ⊃ 엔지니어링팀(10명)</div>
-            <div>직위: Junior (정규직, 수습 기간 3개월 포함)</div>
+            <div>직위: Junior (정규직, 수습 기간 3개월)</div>
           </div>
           <div>
             역할: 만타 오리지널 콘텐츠를 제공하는 글로벌 웹툰 구독 서비스, 'Manta - Unlimited Comics
