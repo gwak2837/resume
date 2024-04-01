@@ -179,7 +179,7 @@ export default function HomePage({ params }: PageProps) {
           </div>
           <div className="grid grid-cols-2 gap-x-4">
             <div>직책: Frontend Engineer</div>
-            <div>부서: 리디 웹팀</div>
+            <div>부서: 개발센터(40명) ⊃ 웹팀(6명)</div>
             <div>직위: Junior (정규직)</div>
           </div>
           <div>역할: 리디 웹 서비스 개발</div>
