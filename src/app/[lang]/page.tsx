@@ -173,7 +173,7 @@ export default function HomePage({ params }: PageProps) {
               <b>리디(주)</b>
               <RidiLogo />
             </a>
-            <a href="/pdf/리디-재직증명서.pdf" target="_blank">
+            <a href="/pdf/리디-재직증명서-2024.pdf" target="_blank">
               <div>2024년 4월 1일 ~ 현재 (+α개월)</div>
             </a>
           </div>
