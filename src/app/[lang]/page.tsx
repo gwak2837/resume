@@ -160,7 +160,7 @@ export default function HomePage({ params }: PageProps) {
       </div>
       <p className="my-4 ">{dict.한줄소개[lang]}</p>
       <h2 className="text-3xl my-8">
-        {dict.개발경력[lang]} <span className="text-sm">(1년 9개월+α)</span>
+        {dict.개발경력[lang]} <span className="text-sm">(1년 7개월+α)</span>
       </h2>
       <ul>
         <li>
@@ -255,75 +255,6 @@ export default function HomePage({ params }: PageProps) {
           <div>
             역할: 대출 관련 프로세스 자동화로 토스씨엑스 담당자의 업무 효율성을 높이며, 대출 고객의
             불편함을 최소화하는 토스뱅크 여신 심사·관리·운영 시스템(LUMOS, 루모스) 개발
-          </div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <a
-              href="https://www.linkedin.com/company/planby-technologies/about/"
-              className="flex gap-2 items-center"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <b>(주)플랜바이테크놀로지스</b>
-              <PlanbyLogo height="19" />
-            </a>
-            <div>
-              <a href="/pdf/플랜바이테크놀로지스.pdf" target="_blank">
-                2023년 7월 24일 ~ 8월 6일 (2주)
-              </a>
-              <br />
-              2023년 11월 7일 ~ 11월 26일 (3주)
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-4">
-            <div>직책: Frontend Developer</div>
-            <div>부서: 개발팀 (4명)</div>
-          </div>
-          <div>직위: 직원 (계약직)</div>
-          <div>
-            역할: 고등학교 친구가 창업한 스타트업에서{' '}
-            <a href="https://planby.us/" target="_blank" rel="noreferrer">
-              'HOMI AI - 인공지능이 꾸며주는 나의 공간'
-            </a>{' '}
-            인테리어 디자인 AI 자동화 솔루션 MVP 개발
-          </div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <a
-              href="https://www.saramin.co.kr/zf_user/company-info/view?csn=eFE2Qks5TzVpanROVE5pQW9ZbGMyZz09"
-              className="flex gap-2 items-center"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <b>(주)더하트컴퍼니</b>
-              <Image
-                src="/images/theheartcompany-logo.png"
-                alt="theheartcompany"
-                width="56"
-                height="24"
-              />
-            </a>
-            <div>
-              <a href="/pdf/더하트컴퍼니.pdf" target="_blank">
-                2022년 2월 14일 ~ 3월 13일 (1개월)
-              </a>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-4">
-            <div>직책: Frontend Developer</div>
-            <div>부서: 개발팀 (2명)</div>
-          </div>
-          <div>직위: 직원 (계약직)</div>
-          <div>
-            역할:{' '}
-            <a href="https://www.bemyseason.co.kr/" target="_blank" rel="noreferrer">
-              '비마이시즌 - 다시 일하고 싶은 여성의 상호성장 플랫폼'
-            </a>{' '}
-            MVP 개발
           </div>
         </li>
         <div className="border w-full my-6" />
@@ -1084,6 +1015,75 @@ export default function HomePage({ params }: PageProps) {
               SSR·CSR·SSG
             </a>
             , Database 개념 및 X 클론 코딩 수업 (주 2회, 1회 3시간)
+          </div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
+            <a
+              href="https://www.linkedin.com/company/planby-technologies/about/"
+              className="flex gap-2 items-center"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>(주)플랜바이테크놀로지스</b>
+              <PlanbyLogo height="19" />
+            </a>
+            <div>
+              <a href="/pdf/플랜바이테크놀로지스.pdf" target="_blank">
+                2023년 7월 24일 ~ 8월 6일 (2주)
+              </a>
+              <br />
+              2023년 11월 7일 ~ 11월 26일 (3주)
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            <div>직책: Frontend Developer</div>
+            <div>부서: 개발팀 (4명)</div>
+          </div>
+          <div>직위: 직원 (계약직)</div>
+          <div>
+            역할: 고등학교 친구가 창업한 스타트업에서{' '}
+            <a href="https://planby.us/" target="_blank" rel="noreferrer">
+              'HOMI AI - 인공지능이 꾸며주는 나의 공간'
+            </a>{' '}
+            인테리어 디자인 AI 자동화 솔루션 MVP 개발
+          </div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
+            <a
+              href="https://www.saramin.co.kr/zf_user/company-info/view?csn=eFE2Qks5TzVpanROVE5pQW9ZbGMyZz09"
+              className="flex gap-2 items-center"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>(주)더하트컴퍼니</b>
+              <Image
+                src="/images/theheartcompany-logo.png"
+                alt="theheartcompany"
+                width="56"
+                height="24"
+              />
+            </a>
+            <div>
+              <a href="/pdf/더하트컴퍼니.pdf" target="_blank">
+                2022년 2월 14일 ~ 3월 13일 (1개월)
+              </a>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            <div>직책: Frontend Developer</div>
+            <div>부서: 개발팀 (2명)</div>
+          </div>
+          <div>직위: 직원 (계약직)</div>
+          <div>
+            역할:{' '}
+            <a href="https://www.bemyseason.co.kr/" target="_blank" rel="noreferrer">
+              '비마이시즌 - 다시 일하고 싶은 여성의 상호성장 플랫폼'
+            </a>{' '}
+            MVP 개발
           </div>
         </li>
         <div className="border w-full my-6" />
