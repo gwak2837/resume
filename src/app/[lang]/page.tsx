@@ -180,7 +180,8 @@ export default function HomePage({ params }: PageProps) {
           <div className="grid grid-cols-2 gap-x-4">
             <div>직책: Frontend Engineer</div>
             <div>부서: 개발센터(40명) ⊃ 웹팀(6명)</div>
-            <div>직위: Junior (정규직)</div>
+            <div>직위: Junior</div>
+            <div>소득유형: 일반근로자 (정규직)</div>
           </div>
           <div>역할: 리디 웹 서비스 개발</div>
         </li>
@@ -202,7 +203,8 @@ export default function HomePage({ params }: PageProps) {
           <div className="grid grid-cols-2 gap-x-4">
             <div>직책: Frontend Engineer</div>
             <div>부서: 만타제품그룹(20명) ⊃ 엔지니어링팀(10명)</div>
-            <div>직위: Junior (정규직, 수습 기간 3개월)</div>
+            <div>직위: Junior</div>
+            <div>유형: 일반근로자 (정규직, 수습 기간 3개월)</div>
           </div>
           <div>
             역할: 만타 오리지널 콘텐츠를 제공하는 글로벌 웹툰 구독 서비스, 'Manta - Unlimited Comics
@@ -247,11 +249,12 @@ export default function HomePage({ params }: PageProps) {
               <div>2023년 8월 7일 ~ 11월 6일 (3개월)</div>
             </a>
           </div>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-x-4">
             <div>직책: Admin Developer</div>
             <div>부서: Housing Loan Squad (12명)</div>
+            <div>직위: 팀원</div>
+            <div>유형: 일반근로자 (계약직)</div>
           </div>
-          <div>직위: 직원 (계약직)</div>
           <div>
             역할: 대출 관련 프로세스 자동화로 토스씨엑스 담당자의 업무 효율성을 높이며, 대출 고객의
             불편함을 최소화하는 토스뱅크 여신 심사·관리·운영 시스템(LUMOS, 루모스) 개발
@@ -284,11 +287,12 @@ export default function HomePage({ params }: PageProps) {
               </a>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-4">
-            <div>직책: Fullstack Developer (팀장)</div>
+          <div className="grid grid-cols-2 gap-x-4">
+            <div>직책: Full stack Developer</div>
             <div>부서: 개발팀 (3명)</div>
+            <div>직위: 개발팀장</div>
+            <div>유형: 사업소득자 (개인)</div>
           </div>
-          <div>직위: 인턴</div>
           <div>역할: '4050 여성 전용 커뮤니티' 알파카살롱 기획 및 MVP 개발</div>
         </li>
         <div className="border w-full my-6" />
@@ -301,11 +305,12 @@ export default function HomePage({ params }: PageProps) {
               2021년 6월 1일 ~ 8월 31일 (3개월)
             </a>
           </div>
-          <div className="grid grid-cols-2 gap-4">
-            <div>직책: Frontend Developer (팀장)</div>
+          <div className="grid grid-cols-2 gap-x-4">
+            <div>직책: Frontend Developer</div>
             <div>부서: 개발팀 (2명)</div>
+            <div>직위: 참여연구원 (개발팀장)</div>
+            <div>유형: 기타소득자</div>
           </div>
-          <div>직위: 참여연구원</div>
           <div>
             역할: '3차) 블록체인 기술을 이용한 해외 건설프로젝트 스마트 분쟁관리 모델구축 연구' 과제
             참여. 건설 프로젝트 수주 협상 과정에서 주고 받는 이메일을 블록체인 상에 관리하여 추후
@@ -339,11 +344,12 @@ export default function HomePage({ params }: PageProps) {
               </a>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-x-4">
             <div>직책: Frontend Developer</div>
             <div>부서: Admin 개발팀 (4명)</div>
+            <div>직위: 인턴</div>
+            <div>유형: 기타소득자</div>
           </div>
-          <div>직위: 인턴</div>
           <div>
             역할:{' '}
             <a href="https://festa.io/" target="_blank" rel="noreferrer">
@@ -361,19 +367,16 @@ export default function HomePage({ params }: PageProps) {
             </a>
             <div>
               <a href="/images/2019-cau-lab.webp" target="_blank">
-                2019년 4월 1일
-              </a>{' '}
-              ~{' '}
-              <a href="/images/2019-cau-lab2.webp" target="_blank">
-                5월 31일 (2개월)
+                2019년 4월 1일 ~ 5월 31일 (2개월)
               </a>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-x-4">
             <div>직책: Software Developer</div>
             <div>부서: 개발팀 (2명)</div>
+            <div>직위: 참여연구원</div>
+            <div>유형: 기타소득자</div>
           </div>
-          <div>직위: 참여연구원</div>
           <div>
             역할: 'KFX IR 해석 기법 및 해석 소프트웨어 개발 연구' 과제 참여. 적외선 영상 통계 분석
             개발 보조 (C++), OpenMP 라이브러리 기반 병렬처리로 수학 계산 성능 최적화
@@ -1037,11 +1040,12 @@ export default function HomePage({ params }: PageProps) {
               2023년 11월 7일 ~ 11월 26일 (3주)
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-x-4">
             <div>직책: Frontend Developer</div>
             <div>부서: 개발팀 (4명)</div>
+            <div>직위: 개발팀장</div>
+            <div>유형: 사업소득자 (개인)</div>
           </div>
-          <div>직위: 직원 (계약직)</div>
           <div>
             역할: 고등학교 친구가 창업한 스타트업에서{' '}
             <a href="https://planby.us/" target="_blank" rel="noreferrer">
@@ -1073,11 +1077,12 @@ export default function HomePage({ params }: PageProps) {
               </a>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-x-4">
             <div>직책: Frontend Developer</div>
             <div>부서: 개발팀 (2명)</div>
+            <div>직위: 개발팀장</div>
+            <div>유형: 사업소득자 (개인)</div>
           </div>
-          <div>직위: 직원 (계약직)</div>
           <div>
             역할:{' '}
             <a href="https://www.bemyseason.co.kr/" target="_blank" rel="noreferrer">
@@ -1097,7 +1102,8 @@ export default function HomePage({ params }: PageProps) {
           <div className="grid grid-cols-2 gap-x-4">
             <div>직책: 웹 개발 수업 강사</div>
             <div>부서: Class Steve Jobs (초중등반, 6명)</div>
-            <div>직위: 강사 (계약직)</div>
+            <div>직위: 강사</div>
+            <div>유형: 사업소득자 (개인)</div>
           </div>
           <div>
             역할: 초등학생/중학생을 대상으로 HTML/CSS/JS 개념 및 자기소개 웹페이지 제작 수업 (주
@@ -1111,6 +1117,10 @@ export default function HomePage({ params }: PageProps) {
               <b>과외</b>
             </a>
             <div>2021년 8월 9일 ~ 2022년 2월 6일 (6개월)</div>
+          </div>
+          <div className="grid grid-cols-2 gap-x-4">
+            <div>직책: 웹 개발 수업 강사</div>
+            <div>유형: 사업소득자 (개인)</div>
           </div>
           <div>
             역할: 대학생을 대상으로 Frontend·Backend·Cloud 개념 및 인스타그램 클론 코딩 수업 (주
@@ -1143,7 +1153,7 @@ export default function HomePage({ params }: PageProps) {
             <a href="/pdf/IITP_2021_summer_UAV_ground_scanning_system.pdf" target="_blank">
               'UAV Ground Scanning System'
             </a>{' '}
-            논문 작성, 학습 데이터 수집 및 가공
+            논문 작성 및 학습 데이터 수집/가공
           </div>
         </li>
         <div className="border w-full my-6" />
@@ -1153,7 +1163,7 @@ export default function HomePage({ params }: PageProps) {
             <div>2021년 2월 8일 ~ 11월 8일 (9개월)</div>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Fullstack Developer (팀장)</div>
+            <div>직책: Full stack Developer (팀장)</div>
             <div>부서: 개발팀 (2명)</div>
             <div>직위: 공동창업자</div>
           </div>
@@ -1208,11 +1218,12 @@ export default function HomePage({ params }: PageProps) {
               </a>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-x-4">
             <div>직책: Frontend Developer</div>
             <div>부서: 개발부 (3명)</div>
+            <div>직위: 인턴</div>
+            <div>유형: 기타소득자</div>
           </div>
-          <div>직위: 인턴</div>
           <div>역할: '방탈출 리뷰 웹사이트' 기획·디자인 및 MVP 개발</div>
         </li>
         <div className="border w-full my-6" />
@@ -1225,6 +1236,7 @@ export default function HomePage({ params }: PageProps) {
             <div>직책: 수업 조교</div>
             <div>부서: ‘컴퓨팅적 사고와 문제 해결’ 과목</div>
             <div>직위: 근로장학생</div>
+            <div>유형: 기타소득자</div>
           </div>
           <div>
             역할: 수업 중 수강생의 Scratch 프로그래밍 관련 질의 응답 및 과제 채점 (주 2회, 1회
@@ -1249,11 +1261,14 @@ export default function HomePage({ params }: PageProps) {
               </a>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-x-4">
             <div>직책: Data Analyst</div>
             <div>부서: 연구4팀 (10명)</div>
+            <div>직위: 인턴</div>
+            <div>
+              유형: <span className="text-xs text-gray-400">(홈텍스 조회 불가)</span>
+            </div>
           </div>
-          <div>직위: 인턴</div>
           <div>역할: 여론 조사 데이터 통계 분석 및 엑셀 함수 작성</div>
         </li>
       </ul>
