@@ -1039,7 +1039,7 @@ export default function HomePage({ params }: PageProps) {
           <div className="grid grid-cols-2 gap-x-4">
             <div>직책: Frontend Developer</div>
             <div>부서: 개발팀 (4명)</div>
-            <div>직위: 개발팀장</div>
+            <div>직위: 팀원</div>
             <div>
               유형: <소득유형Badge type={소득Type.사업소득자_개인} />
             </div>
@@ -1121,7 +1121,7 @@ export default function HomePage({ params }: PageProps) {
             <div>2021년 8월 9일 ~ 2022년 2월 6일 (6개월)</div>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: 웹 개발 수업 강사</div>
+            <div>직책: 개인 과외 강사</div>
             <div>
               유형: <소득유형Badge type={소득Type.사업소득자_개인} />
             </div>
