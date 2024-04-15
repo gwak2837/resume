@@ -183,7 +183,7 @@ export default function HomePage({ params }: PageProps) {
             <div>부서: 개발센터(40명) ⊃ 웹팀(6명)</div>
             <div>직위: Junior</div>
             <div>
-              소득유형: <소득유형Badge type={소득Type.일반근로자_정규직} />
+              유형: <소득유형Badge type={소득Type.일반근로자_정규직} />
             </div>
           </div>
           <div>역할: 리디 웹 서비스 개발</div>
@@ -1254,7 +1254,7 @@ export default function HomePage({ params }: PageProps) {
           </div>
           <div className="grid grid-cols-2 gap-x-4">
             <div>직책: Data Labeler</div>
-            <div>부서: 논문3팀 (지도교수 포함 8명)</div>
+            <div>소속: 논문3팀 (지도교수 포함 8명)</div>
             <div>직위: 교환학생</div>
           </div>
           <div>
@@ -1273,7 +1273,7 @@ export default function HomePage({ params }: PageProps) {
           </div>
           <div className="grid grid-cols-2 gap-x-4">
             <div>직책: Full stack Developer (팀장)</div>
-            <div>부서: 개발팀 (2명)</div>
+            <div>소속: 개발팀 (2명)</div>
             <div>직위: 공동창업자</div>
           </div>
           <div>
@@ -1295,7 +1295,7 @@ export default function HomePage({ params }: PageProps) {
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div>직책: Frontend Developer (팀장)</div>
-            <div>부서: 프로젝트2팀 (6명)</div>
+            <div>소속: 프로젝트2팀 (6명)</div>
           </div>
           <div>직위: 인턴</div>
           <div>역할: ‘음성인식 기반 노래검색 서비스’ Icezam 기획 및 개발</div>
