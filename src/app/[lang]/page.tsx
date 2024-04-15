@@ -1019,25 +1019,6 @@ export default function HomePage({ params }: PageProps) {
       <ul>
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
-            <a href="/images/2023-kim.webp" target="_blank">
-              <b>과외</b>
-            </a>
-            <div>2023년 12월 30일 ~ 현재</div>
-          </div>
-          <div>
-            역할: 대학생을 대상으로 OSI model,{' '}
-            <a
-              href="https://velog.io/@gwak2837/Next.js-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%A0%8C%EB%8D%94%EB%A7%81-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0"
-              target="_blank"
-            >
-              SSR·CSR·SSG
-            </a>
-            , Database 개념 및 X 클론 코딩 수업 (주 2회, 1회 3시간)
-          </div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
             <a
               href="https://www.linkedin.com/company/planby-technologies/about/"
               className="flex gap-2 items-center"
@@ -1154,70 +1135,6 @@ export default function HomePage({ params }: PageProps) {
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
             <a
-              href="https://swedu.cau.ac.kr/core/program/programview?menuid=001004001002007&programgroupno=8&programno=420"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <b>Purdue University 온라인 해외교육</b>
-            </a>
-            <div>
-              <a href="/pdf/Certificates-IITP-Summer-2021-CAU.pdf" target="_blank">
-                2021년 7월 5일 ~ 8월 20일 (2개월)
-              </a>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Data Labeler</div>
-            <div>부서: 논문3팀 (지도교수 포함 8명)</div>
-            <div>직위: 교환학생</div>
-          </div>
-          <div>
-            역할:{' '}
-            <a href="/pdf/IITP_2021_summer_UAV_ground_scanning_system.pdf" target="_blank">
-              'UAV Ground Scanning System'
-            </a>{' '}
-            논문 작성 및 학습 데이터 수집/가공
-          </div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <b>신디(SinDy, Signature in Dessert) 창업</b>
-            <div>2021년 2월 8일 ~ 11월 8일 (9개월)</div>
-          </div>
-          <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Full stack Developer (팀장)</div>
-            <div>부서: 개발팀 (2명)</div>
-            <div>직위: 공동창업자</div>
-          </div>
-          <div>
-            역할: '카페의 특색을 담아내는 사용자 주도 SNS형 디저트 정보 공유 공간' 디저트핏 기획 및
-            Frontend · Backend · Cloud 개발
-          </div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <a href="https://www.headstartsv.com/" target="_blank" rel="noreferrer">
-              <b>Headstart Silicon Valley, Inc.</b>
-            </a>
-            <div>
-              <a href="/images/2021-headstart-sv.webp" target="_blank">
-                2021년 1월 4일 ~ 2월 5일 (1개월)
-              </a>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-4">
-            <div>직책: Frontend Developer (팀장)</div>
-            <div>부서: 프로젝트2팀 (6명)</div>
-          </div>
-          <div>직위: 인턴</div>
-          <div>역할: ‘음성인식 기반 노래검색 서비스’ Icezam 기획 및 개발</div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <a
               href="https://www.saramin.co.kr/zf_user/company-info/view?csn=VHFyWXhFL2E1N1hYMkhEZmUxK05SZz09"
               className="flex gap-2 items-center"
               target="_blank"
@@ -1297,6 +1214,91 @@ export default function HomePage({ params }: PageProps) {
             </div>
           </div>
           <div>역할: 여론 조사 데이터 통계 분석 및 엑셀 함수 작성</div>
+        </li>
+      </ul>
+      <h2 className="text-3xl my-8 ">개발 활동</h2>
+      <ul>
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
+            <a href="/images/2023-kim.webp" target="_blank">
+              <b>과외</b>
+            </a>
+            <div>2023년 12월 30일 ~ 현재</div>
+          </div>
+          <div>
+            역할: 대학생을 대상으로 OSI model,{' '}
+            <a
+              href="https://velog.io/@gwak2837/Next.js-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%A0%8C%EB%8D%94%EB%A7%81-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0"
+              target="_blank"
+            >
+              SSR·CSR·SSG
+            </a>
+            , Database 개념 및 X 클론 코딩 수업 (주 2회, 1회 3시간)
+          </div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
+            <a
+              href="https://swedu.cau.ac.kr/core/program/programview?menuid=001004001002007&programgroupno=8&programno=420"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>Purdue University 온라인 해외교육</b>
+            </a>
+            <div>
+              <a href="/pdf/Certificates-IITP-Summer-2021-CAU.pdf" target="_blank">
+                2021년 7월 5일 ~ 8월 20일 (2개월)
+              </a>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-x-4">
+            <div>직책: Data Labeler</div>
+            <div>부서: 논문3팀 (지도교수 포함 8명)</div>
+            <div>직위: 교환학생</div>
+          </div>
+          <div>
+            역할:{' '}
+            <a href="/pdf/IITP_2021_summer_UAV_ground_scanning_system.pdf" target="_blank">
+              'UAV Ground Scanning System'
+            </a>{' '}
+            논문 작성 및 학습 데이터 수집/가공
+          </div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
+            <b>신디(SinDy, Signature in Dessert) 창업</b>
+            <div>2021년 2월 8일 ~ 11월 8일 (9개월)</div>
+          </div>
+          <div className="grid grid-cols-2 gap-x-4">
+            <div>직책: Full stack Developer (팀장)</div>
+            <div>부서: 개발팀 (2명)</div>
+            <div>직위: 공동창업자</div>
+          </div>
+          <div>
+            역할: '카페의 특색을 담아내는 사용자 주도 SNS형 디저트 정보 공유 공간' 디저트핏 기획 및
+            Frontend · Backend · Cloud 개발
+          </div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
+            <a href="https://www.headstartsv.com/" target="_blank" rel="noreferrer">
+              <b>Headstart Silicon Valley, Inc.</b>
+            </a>
+            <div>
+              <a href="/images/2021-headstart-sv.webp" target="_blank">
+                2021년 1월 4일 ~ 2월 5일 (1개월)
+              </a>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            <div>직책: Frontend Developer (팀장)</div>
+            <div>부서: 프로젝트2팀 (6명)</div>
+          </div>
+          <div>직위: 인턴</div>
+          <div>역할: ‘음성인식 기반 노래검색 서비스’ Icezam 기획 및 개발</div>
         </li>
       </ul>
       <h2 className="text-3xl my-8 ">소개</h2>

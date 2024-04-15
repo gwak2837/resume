@@ -28,7 +28,7 @@ export default function 소득유형Badge({ type }: Props) {
       : 'text-slate-700'
   return (
     <span
-      className={`rounded relative bottom-[1px] text-xs font-semibold px-2 py-1 ${textColor} ${bgColor}`}
+      className={`rounded relative bottom-[1px] text-xs font-semibold px-[6px] py-1 ${textColor} ${bgColor}`}
     >
       {type === 소득Type.일반근로자_정규직 && '일반근로자 (정규직)'}
       {type === 소득Type.일반근로자_계약직 && '일반근로자 (계약직)'}
