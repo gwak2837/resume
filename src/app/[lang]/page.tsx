@@ -1265,9 +1265,7 @@ export default function HomePage({ params }: PageProps) {
             <div>직책: Data Analyst</div>
             <div>부서: 연구4팀 (10명)</div>
             <div>직위: 인턴</div>
-            <div>
-              유형: <span className="text-xs text-gray-400">(홈텍스 조회 불가)</span>
-            </div>
+            <div>유형: 기타소득자</div>
           </div>
           <div>역할: 여론 조사 데이터 통계 분석 및 엑셀 함수 작성</div>
         </li>
