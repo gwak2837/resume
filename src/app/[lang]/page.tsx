@@ -1089,10 +1089,15 @@ export default function HomePage({ params }: PageProps) {
         <div className="border w-full my-6" />
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
-            <a href="/images/2023-kim.webp" target="_blank">
+            <a
+              href="https://kimstudy.com/tutor/379acc6f-43dd-4544-8e99-54dc4e2e6b1f"
+              target="_blank"
+            >
               <b>과외</b>
             </a>
-            <div>2021년 8월 9일 ~ 2022년 2월 6일 (6개월)</div>
+            <a href="/pdf/김과외.pdf" target="_blank">
+              2021년 8월 9일 ~ 2022년 2월 6일 (6개월)
+            </a>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
             <div>직책: 개인 과외 강사</div>
@@ -1194,9 +1199,7 @@ export default function HomePage({ params }: PageProps) {
       <ul>
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
-            <a href="/images/2023-kim.webp" target="_blank">
-              <b>과외</b>
-            </a>
+            <b>과외</b>
             <div>2023년 12월 30일 ~ 현재</div>
           </div>
           <div>
