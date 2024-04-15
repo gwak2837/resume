@@ -4,7 +4,6 @@ import { APPLICATION_NAME } from '../../common/constants'
 import { PageProps } from '../../common/types'
 import 소득유형Badge, { 소득Type } from '../../components/소득유형Badge'
 import FestaLogo from '../../svg/FestaLogo'
-import Pin from '../../svg/Pin'
 import PlanbyLogo from '../../svg/PlanbyLogo'
 import RidiLogo from '../../svg/RidiLogo'
 import { getISODate } from '../../util/date'
@@ -161,7 +160,7 @@ export default function HomePage({ params }: PageProps) {
       </div>
       <p className="my-4 ">{dict.한줄소개[lang]}</p>
       <h2 className="text-3xl my-8">
-        {dict.개발경력[lang]} <span className="text-sm">(1년 7개월+α)</span>
+        {dict.개발경력[lang]} <span className="text-sm">(1년 3개월+α)</span>
       </h2>
       <ul>
         <li>
@@ -174,33 +173,8 @@ export default function HomePage({ params }: PageProps) {
               <b>리디(주)</b>
               <RidiLogo />
             </a>
-            <a href="/pdf/리디-재직증명서-2024.pdf" target="_blank">
-              <div>2024년 4월 1일 ~ 현재 (+α개월)</div>
-            </a>
-          </div>
-          <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Frontend Engineer</div>
-            <div>부서: 개발센터(40명) ⊃ 웹팀(6명)</div>
-            <div>직위: Junior</div>
-            <div>
-              유형: <소득유형Badge type={소득Type.일반근로자_정규직} />
-            </div>
-          </div>
-          <div>역할: 리디 웹 서비스 개발</div>
-        </li>
-        <div className="h-2" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <a
-              href="https://www.linkedin.com/company/ridi/"
-              className="flex gap-2 items-center"
-              target="_blank"
-            >
-              <b>리디(주)</b>
-              <RidiLogo />
-            </a>
             <a href="/pdf/리디-재직증명서.pdf" target="_blank">
-              <div>2023년 11월 27일 ~ 2024년 3월 31일 (4개월)</div>
+              <div>2023년 11월 27일 ~ 현재 (α개월)</div>
             </a>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
