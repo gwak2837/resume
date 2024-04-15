@@ -2,6 +2,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { APPLICATION_NAME } from '../../common/constants'
 import { PageProps } from '../../common/types'
+import 소득유형Badge, { 소득Type } from '../../components/소득유형Badge'
 import FestaLogo from '../../svg/FestaLogo'
 import Pin from '../../svg/Pin'
 import PlanbyLogo from '../../svg/PlanbyLogo'
@@ -181,7 +182,9 @@ export default function HomePage({ params }: PageProps) {
             <div>직책: Frontend Engineer</div>
             <div>부서: 개발센터(40명) ⊃ 웹팀(6명)</div>
             <div>직위: Junior</div>
-            <div>소득유형: 일반근로자 (정규직)</div>
+            <div>
+              소득유형: <소득유형Badge type={소득Type.일반근로자_정규직} />
+            </div>
           </div>
           <div>역할: 리디 웹 서비스 개발</div>
         </li>
@@ -204,7 +207,9 @@ export default function HomePage({ params }: PageProps) {
             <div>직책: Frontend Engineer</div>
             <div>부서: 만타제품그룹(20명) ⊃ 엔지니어링팀(10명)</div>
             <div>직위: Junior</div>
-            <div>유형: 일반근로자 (정규직, 수습 기간 3개월)</div>
+            <div>
+              유형: <소득유형Badge type={소득Type.일반근로자_정규직} /> (수습 기간 3개월)
+            </div>
           </div>
           <div>
             역할: 만타 오리지널 콘텐츠를 제공하는 글로벌 웹툰 구독 서비스, 'Manta - Unlimited Comics
@@ -253,7 +258,9 @@ export default function HomePage({ params }: PageProps) {
             <div>직책: Admin Developer</div>
             <div>부서: Housing Loan Squad (12명)</div>
             <div>직위: 팀원</div>
-            <div>유형: 일반근로자 (계약직)</div>
+            <div>
+              유형: <소득유형Badge type={소득Type.일반근로자_계약직} />
+            </div>
           </div>
           <div>
             역할: 대출 관련 프로세스 자동화로 토스씨엑스 담당자의 업무 효율성을 높이며, 대출 고객의
@@ -291,7 +298,9 @@ export default function HomePage({ params }: PageProps) {
             <div>직책: Full stack Developer</div>
             <div>부서: 개발팀 (3명)</div>
             <div>직위: 개발팀장</div>
-            <div>유형: 사업소득자 (개인)</div>
+            <div>
+              유형: <소득유형Badge type={소득Type.사업소득자_개인} />
+            </div>
           </div>
           <div>역할: '4050 여성 전용 커뮤니티' 알파카살롱 기획 및 MVP 개발</div>
         </li>
@@ -309,7 +318,9 @@ export default function HomePage({ params }: PageProps) {
             <div>직책: Frontend Developer</div>
             <div>부서: 개발팀 (2명)</div>
             <div>직위: 참여연구원 (개발팀장)</div>
-            <div>유형: 기타소득자</div>
+            <div>
+              유형: <소득유형Badge type={소득Type.기타소득자} />
+            </div>
           </div>
           <div>
             역할: '3차) 블록체인 기술을 이용한 해외 건설프로젝트 스마트 분쟁관리 모델구축 연구' 과제
@@ -348,7 +359,9 @@ export default function HomePage({ params }: PageProps) {
             <div>직책: Frontend Developer</div>
             <div>부서: Admin 개발팀 (4명)</div>
             <div>직위: 인턴</div>
-            <div>유형: 기타소득자</div>
+            <div>
+              유형: <소득유형Badge type={소득Type.기타소득자} />
+            </div>
           </div>
           <div>
             역할:{' '}
@@ -375,7 +388,9 @@ export default function HomePage({ params }: PageProps) {
             <div>직책: Software Developer</div>
             <div>부서: 개발팀 (2명)</div>
             <div>직위: 참여연구원</div>
-            <div>유형: 기타소득자</div>
+            <div>
+              유형: <소득유형Badge type={소득Type.기타소득자} />
+            </div>
           </div>
           <div>
             역할: 'KFX IR 해석 기법 및 해석 소프트웨어 개발 연구' 과제 참여. 적외선 영상 통계 분석
@@ -1044,7 +1059,9 @@ export default function HomePage({ params }: PageProps) {
             <div>직책: Frontend Developer</div>
             <div>부서: 개발팀 (4명)</div>
             <div>직위: 개발팀장</div>
-            <div>유형: 사업소득자 (개인)</div>
+            <div>
+              유형: <소득유형Badge type={소득Type.사업소득자_개인} />
+            </div>
           </div>
           <div>
             역할: 고등학교 친구가 창업한 스타트업에서{' '}
@@ -1081,7 +1098,9 @@ export default function HomePage({ params }: PageProps) {
             <div>직책: Frontend Developer</div>
             <div>부서: 개발팀 (2명)</div>
             <div>직위: 개발팀장</div>
-            <div>유형: 사업소득자 (개인)</div>
+            <div>
+              유형: <소득유형Badge type={소득Type.사업소득자_개인} />
+            </div>
           </div>
           <div>
             역할:{' '}
@@ -1103,7 +1122,9 @@ export default function HomePage({ params }: PageProps) {
             <div>직책: 웹 개발 수업 강사</div>
             <div>부서: Class Steve Jobs (초중등반, 6명)</div>
             <div>직위: 강사</div>
-            <div>유형: 사업소득자 (개인)</div>
+            <div>
+              유형: <소득유형Badge type={소득Type.사업소득자_개인} />
+            </div>
           </div>
           <div>
             역할: 초등학생/중학생을 대상으로 HTML/CSS/JS 개념 및 자기소개 웹페이지 제작 수업 (주
@@ -1120,7 +1141,9 @@ export default function HomePage({ params }: PageProps) {
           </div>
           <div className="grid grid-cols-2 gap-x-4">
             <div>직책: 웹 개발 수업 강사</div>
-            <div>유형: 사업소득자 (개인)</div>
+            <div>
+              유형: <소득유형Badge type={소득Type.사업소득자_개인} />
+            </div>
           </div>
           <div>
             역할: 대학생을 대상으로 Frontend·Backend·Cloud 개념 및 인스타그램 클론 코딩 수업 (주
@@ -1222,7 +1245,9 @@ export default function HomePage({ params }: PageProps) {
             <div>직책: Frontend Developer</div>
             <div>부서: 개발부 (3명)</div>
             <div>직위: 인턴</div>
-            <div>유형: 기타소득자</div>
+            <div>
+              유형: <소득유형Badge type={소득Type.기타소득자} />
+            </div>
           </div>
           <div>역할: '방탈출 리뷰 웹사이트' 기획·디자인 및 MVP 개발</div>
         </li>
@@ -1236,7 +1261,9 @@ export default function HomePage({ params }: PageProps) {
             <div>직책: 수업 조교</div>
             <div>부서: ‘컴퓨팅적 사고와 문제 해결’ 과목</div>
             <div>직위: 근로장학생</div>
-            <div>유형: 기타소득자</div>
+            <div>
+              유형: <소득유형Badge type={소득Type.기타소득자} />
+            </div>
           </div>
           <div>
             역할: 수업 중 수강생의 Scratch 프로그래밍 관련 질의 응답 및 과제 채점 (주 2회, 1회
@@ -1265,7 +1292,9 @@ export default function HomePage({ params }: PageProps) {
             <div>직책: Data Analyst</div>
             <div>부서: 연구4팀 (10명)</div>
             <div>직위: 인턴</div>
-            <div>유형: 기타소득자</div>
+            <div>
+              유형: <소득유형Badge type={소득Type.기타소득자} />
+            </div>
           </div>
           <div>역할: 여론 조사 데이터 통계 분석 및 엑셀 함수 작성</div>
         </li>
