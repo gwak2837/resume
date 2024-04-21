@@ -160,7 +160,7 @@ export default function HomePage({ params }: PageProps) {
       </div>
       <p className="my-4 ">{dict.한줄소개[lang]}</p>
       <h2 className="text-3xl my-8">
-        {dict.개발경력[lang]} <span className="text-sm">(1년 3개월+α)</span>
+        {dict.개발경력[lang]} <span className="text-sm">(1년 6개월+α)</span>
       </h2>
       <ul>
         <li>
@@ -354,7 +354,7 @@ export default function HomePage({ params }: PageProps) {
             </a>
             <div>
               <a href="/images/2019-cau-lab.webp" target="_blank">
-                2019년 4월 1일 ~ 5월 31일 (2개월)
+                2019년 4월 1일 ~ 8월 31일 (5개월)
               </a>
             </div>
           </div>

@@ -193,13 +193,13 @@ export const dict = {
     ja: '',
   },
   개발경력: {
-    ko: '개발 경력',
+    ko: '경력',
     en: 'Work Experience',
     zh: '工作经历',
     ja: '職務経歴',
   },
   개발경험: {
-    ko: '개발 경험',
+    ko: '경험',
     en: 'Experience',
     zh: '',
     ja: '',
