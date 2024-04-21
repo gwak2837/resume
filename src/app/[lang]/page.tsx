@@ -54,7 +54,7 @@ export default function HomePage({ params }: PageProps) {
       </div>
       <div>
         <div className="grid gap-4 grid-cols-2">
-          <Image src="/images/1.webp" alt="asd" width="350" height="350" priority />
+          <Image src="/images/profile.webp" alt="profile" width="350" height="350" priority />
           <table className="border-none w-fit">
             <tbody>
               <tr>
