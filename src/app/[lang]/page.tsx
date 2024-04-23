@@ -153,6 +153,89 @@ export default function HomePage({ params }: PageProps) {
         </div>
       </div>
       <p className="my-4 ">{dict.한줄소개[lang]}</p>
+      <h2 className="text-3xl my-8">
+        {dict.개발경력[lang]} <span className="text-sm">(3개월+α)</span>
+      </h2>
+      <ul>
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
+            <a
+              href="https://www.linkedin.com/company/ridi/"
+              className="flex gap-2 items-center"
+              target="_blank"
+            >
+              <b>리디(주)</b>
+              <RidiLogo />
+            </a>
+            <a href="/pdf/리디-재직증명서.pdf" target="_blank">
+              <div>2023년 11월 27일 ~ 현재 (α개월)</div>
+            </a>
+          </div>
+          <div className="grid grid-cols-2 gap-x-4">
+            <div>직책: Frontend Engineer</div>
+            <div>부서: 만타제품그룹(20명) ⊃ 엔지니어링팀(10명)</div>
+            <div>직위: Junior</div>
+            <div>
+              유형: <소득유형Badge type={소득Type.일반근로자_정규직} /> (수습 기간 3개월)
+            </div>
+          </div>
+          <div>
+            역할: 만타 오리지널 콘텐츠를 제공하는 글로벌 웹툰 구독 서비스, 'Manta - Unlimited Comics
+            Perfect to Binge' React Native App (
+            <a
+              href="https://play.google.com/store/apps/details?id=net.manta.comic&hl=en&gl=US&pli=1"
+              target="_blank"
+            >
+              Android
+            </a>{' '}
+            ·{' '}
+            <a
+              href="https://apps.apple.com/kr/app/manta-unlimited-comics/id1536116642"
+              target="_blank"
+            >
+              iOS
+            </a>
+            ),{' '}
+            <a href="https://manta.net/en" target="_blank">
+              PWA Web
+            </a>{' '}
+            개발
+          </div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
+            <a
+              href="https://www.linkedin.com/company/toss-bank/"
+              className="flex gap-2 items-center"
+              target="_blank"
+            >
+              <b>토스뱅크(주)</b>
+              <Image
+                src="/images/TossBank_Logo_Primary.png"
+                alt="tossbank"
+                width="80"
+                height="14"
+              />
+            </a>
+            <a href="/pdf/토스뱅크-경력증명서.pdf" target="_blank">
+              <div>2023년 8월 7일 ~ 11월 6일 (3개월)</div>
+            </a>
+          </div>
+          <div className="grid grid-cols-2 gap-x-4">
+            <div>직책: Admin Developer</div>
+            <div>부서: Housing Loan Squad (12명)</div>
+            <div>직위: 팀원</div>
+            <div>
+              유형: <소득유형Badge type={소득Type.일반근로자_계약직} />
+            </div>
+          </div>
+          <div>
+            역할: 대출 관련 프로세스 자동화로 토스씨엑스 담당자의 업무 효율성을 높이며, 대출 고객의
+            불편함을 최소화하는 토스뱅크 여신 심사·관리·운영 시스템(LUMOS, 루모스) 개발
+          </div>
+        </li>
+      </ul>
       <h2 className="text-3xl my-8">기술</h2>
       <h4 className="my-2">Language</h4>
       <div className="flex gap-1">
@@ -202,7 +285,7 @@ export default function HomePage({ params }: PageProps) {
               alt="Next.js Badge"
             />
           </a>
-          <a href="https://reactjs.org/" target="_blank">
+          <a href="https://react.dev/" target="_blank">
             <img
               src="https://img.shields.io/badge/React.js-61DAFB?style=flat-square&logo=react&logoColor=black"
               alt="React Badge"
@@ -246,6 +329,12 @@ export default function HomePage({ params }: PageProps) {
             <img
               src="https://img.shields.io/badge/Web Push-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
               alt="Web Push Badge"
+            />
+          </a>
+          <a href="https://reactnative.dev/" target="_blank">
+            <img
+              src="https://img.shields.io/badge/React Native-61DAFB?style=flat-square&logo=react&logoColor=black"
+              alt="React Badge"
             />
           </a>
         </div>
@@ -414,89 +503,6 @@ export default function HomePage({ params }: PageProps) {
           </div>
         </div>
       </div>
-      <h2 className="text-3xl my-8">
-        {dict.개발경력[lang]} <span className="text-sm">(3개월+α)</span>
-      </h2>
-      <ul>
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <a
-              href="https://www.linkedin.com/company/ridi/"
-              className="flex gap-2 items-center"
-              target="_blank"
-            >
-              <b>리디(주)</b>
-              <RidiLogo />
-            </a>
-            <a href="/pdf/리디-재직증명서.pdf" target="_blank">
-              <div>2023년 11월 27일 ~ 현재 (α개월)</div>
-            </a>
-          </div>
-          <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Frontend Engineer</div>
-            <div>부서: 만타제품그룹(20명) ⊃ 엔지니어링팀(10명)</div>
-            <div>직위: Junior</div>
-            <div>
-              유형: <소득유형Badge type={소득Type.일반근로자_정규직} /> (수습 기간 3개월)
-            </div>
-          </div>
-          <div>
-            역할: 만타 오리지널 콘텐츠를 제공하는 글로벌 웹툰 구독 서비스, 'Manta - Unlimited Comics
-            Perfect to Binge' React Native App (
-            <a
-              href="https://play.google.com/store/apps/details?id=net.manta.comic&hl=en&gl=US&pli=1"
-              target="_blank"
-            >
-              Android
-            </a>{' '}
-            ·{' '}
-            <a
-              href="https://apps.apple.com/kr/app/manta-unlimited-comics/id1536116642"
-              target="_blank"
-            >
-              iOS
-            </a>
-            ),{' '}
-            <a href="https://manta.net/en" target="_blank">
-              PWA Web
-            </a>{' '}
-            개발
-          </div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <a
-              href="https://www.linkedin.com/company/toss-bank/"
-              className="flex gap-2 items-center"
-              target="_blank"
-            >
-              <b>토스뱅크(주)</b>
-              <Image
-                src="/images/TossBank_Logo_Primary.png"
-                alt="tossbank"
-                width="80"
-                height="14"
-              />
-            </a>
-            <a href="/pdf/토스뱅크-경력증명서.pdf" target="_blank">
-              <div>2023년 8월 7일 ~ 11월 6일 (3개월)</div>
-            </a>
-          </div>
-          <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Admin Developer</div>
-            <div>부서: Housing Loan Squad (12명)</div>
-            <div>직위: 팀원</div>
-            <div>
-              유형: <소득유형Badge type={소득Type.일반근로자_계약직} />
-            </div>
-          </div>
-          <div>
-            역할: 대출 관련 프로세스 자동화로 토스씨엑스 담당자의 업무 효율성을 높이며, 대출 고객의
-            불편함을 최소화하는 토스뱅크 여신 심사·관리·운영 시스템(LUMOS, 루모스) 개발
-          </div>
-        </li>
-      </ul>
       <h2 className="text-3xl my-8 ">{dict.학력[lang]}</h2>
       <table>
         <thead>
