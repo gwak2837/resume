@@ -145,22 +145,277 @@ export default function HomePage({ params }: PageProps) {
                 </td>
               </tr>
               <tr>
-                <td className="border-none p-0">
-                  <Image src="/images/instagram.svg" alt="velog" width="16" height="16" />
-                </td>
-                <td className="border-none p-0">
-                  <a href="https://www.instagram.com/gwak2837/" target="_blank" rel="noreferrer">
-                    instagram.com/gwak2837
-                  </a>
-                </td>
+                <td className="border-none p-0">🧑‍🎨</td>
+                <td className="border-none p-0">자전거, 산책, 시사·경제·금융</td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
       <p className="my-4 ">{dict.한줄소개[lang]}</p>
+      <h2 className="text-3xl my-8">기술</h2>
+      <h4 className="my-2">Language</h4>
+      <div className="flex gap-1">
+        <a href="https://javascript.info/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/ES2023-F7DF1E?style=flat-square&logo=JavaScript&logoColor=black"
+            alt="JavaScript Badge"
+          />
+        </a>
+        <a href="https://www.typescriptlang.org/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/TypeScript-235A97?style=flat-square&logo=Typescript&logoColor=white"
+            alt="TypeScript Badge"
+          />
+        </a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"
+            alt="CSS3 Badge"
+          />
+        </a>
+        <a href="https://www.python.org/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"
+            alt="Python Badge"
+          />
+        </a>
+        <a href="https://en.wikipedia.org/wiki/SQL" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/SQL-003B57?style=flat-square&logo=SQL&logoColor=white"
+            alt="SQL Badge"
+          />
+        </a>
+        <a href="https://graphql.org/" rel="noreferrer" target="_blank">
+          <img
+            src="https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white"
+            alt="GraphQL Badge"
+          />
+        </a>
+      </div>
+      <h4 className="my-2">Frontend</h4>
+      <div className="grid gap-1">
+        <div className="flex gap-1">
+          <a href="https://nextjs.org/" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"
+              alt="Next.js Badge"
+            />
+          </a>
+          <a href="https://reactjs.org/" target="_blank">
+            <img
+              src="https://img.shields.io/badge/React.js-61DAFB?style=flat-square&logo=react&logoColor=black"
+              alt="React Badge"
+            />
+          </a>
+          <a href="https://tailwindcss.com/" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white"
+              alt="tailwind Badge"
+            />
+          </a>
+          <a href="https://tanstack.com/query/latest/docs/react/overview" target="_blank">
+            <img
+              src="https://img.shields.io/badge/React Query-FF4154?style=flat-square&logo=react-query&logoColor=white"
+              alt="react query Badge"
+            />
+          </a>
+          <a href="https://zustand-demo.pmnd.rs/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Zustand-3578e5?style=flat-square&logo=Zustand&logoColor=white"
+              alt="Zustand Badge"
+            />
+          </a>
+          <a href="https://zod.dev/" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Zod-3E67B1?style=flat-square&logo=zod&logoColor=white"
+              alt="zod"
+            />
+          </a>
+          <a href="https://web.dev/progressive-web-apps/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/PWA-5A0FC8?style=flat-square&logo=PWA&logoColor=white"
+              alt="PWA Badge"
+            />
+          </a>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Push_API"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              src="https://img.shields.io/badge/Web Push-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
+              alt="Web Push Badge"
+            />
+          </a>
+        </div>
+      </div>
+      <h4 className="my-2">Backend</h4>
+      <div className="grid gap-1">
+        <div className="flex gap-1">
+          <a href="https://www.fastify.io/" rel="noreferrer">
+            <img
+              src="https://img.shields.io/badge/Fastify-000000?style=flat-square&logo=Fastify&logoColor=white"
+              alt="Fastify Badge"
+            />
+          </a>
+          <a
+            href="https://en.wikipedia.org/wiki/HTTP/2_Server_Push"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              src="https://img.shields.io/badge/Server Push-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
+              alt="Server Push Badge"
+            />
+          </a>
+          <a href="https://socket.io/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Socket.IO-010101?style=flat-square&logo=Socket.io&logoColor=white"
+              alt="WebSocket Badge"
+            />
+          </a>
+          <a href="https://www.prisma.io/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=Prisma&logoColor=white"
+              alt="prisma Badge"
+            />
+          </a>
+          <a href="https://nodejs.org/en/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white"
+              alt="Node.js Badge"
+            />
+          </a>
+          <a href="https://www.docker.com/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"
+              alt="Docker Badge"
+            />
+          </a>
+          <a href="https://www.postgresql.org/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=PostgreSQL&logoColor=white"
+              alt="PostgreSQL Badge"
+            />
+          </a>
+          <a href="https://redis.io/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"
+              alt="Redis Badge"
+            />
+          </a>
+          <a href="https://www.elastic.co/kr" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Elasticsearch, Kibana-005571?style=flat-square&logo=elastic&logoColor=white"
+              alt="elasticsearch Badge"
+            />
+          </a>
+        </div>
+      </div>
+      <h4 className="my-2">Cloud</h4>
+      <div className="grid gap-1">
+        <div className="flex gap-1">
+          <a href="https://vercel.com/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white"
+              alt="Vercel Badge"
+            />
+          </a>
+          <a href="https://cloud.google.com/gcp/" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Cloud Run, Cloud Storage, Cloud SQL, VPC-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
+              alt="GCP Badge"
+            />
+          </a>
+          <a href="https://aws.amazon.com/ko/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/RDS, EC2, S3, VPC-232F3E?style=flat-square&logo=amazon-aws&logoColor=white"
+              alt="AWS Badge"
+            />
+          </a>
+          <a href="https://cloud.oracle.com/?region=ap-seoul-1" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Instances, VCN-F80000?style=flat-square&logo=oracle&logoColor=white"
+              alt="Oracle Badge"
+            />
+          </a>
+          <a href="https://firebase.google.com/" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=Firebase&logoColor=black"
+              alt="Firebase Badge"
+            />
+          </a>
+        </div>
+      </div>
+      <div className="flex gap-4">
+        <div>
+          <h4 className="my-2">Developer Tool</h4>
+          <div className="grid gap-1">
+            <div className="flex gap-1">
+              <a href="https://esbuild.github.io/" rel="noreferrer" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/esbuild-FFCF00?style=flat-square&logo=esbuild&logoColor=black"
+                  alt="esbuild Badge"
+                />
+              </a>
+              <a href="" rel="noreferrer" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/Jest-C21325?style=flat-square&logo=jest&logoColor=white"
+                  alt="Jest Badge"
+                />
+              </a>
+              <a
+                href="https://analytics.google.com/analytics/web/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <img
+                  src="https://img.shields.io/badge/GA-E37400?style=flat-square&logo=Google Analytics&logoColor=white"
+                  alt="GA Badge"
+                />
+              </a>
+              <a href="https://sentry.io/welcome/" rel="noreferrer" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/Sentry-362D59?style=flat-square&logo=sentry&logoColor=white"
+                  alt="Sentry"
+                />
+              </a>
+              <a href="https://vercel.com/docs/speed-insights" rel="noreferrer" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/Speed insights-000000?style=flat-square&logo=vercel&logoColor=white"
+                  alt="Vercel Badge"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4 className="my-2">AI</h4>
+          <div className="flex gap-1">
+            <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui" target="_blank">
+              <img
+                src="https://img.shields.io/badge/Stable Diffusion-1F1E37?style=flat-square&logo=ngrok&logoColor=white"
+                alt="Stable Diffusion Badge"
+              />
+            </a>
+            <a href="https://github.com/bmaltais/kohya_ss" target="_blank">
+              <img
+                src="https://img.shields.io/badge/LoRA-1F1E37?style=flat-square&logo=ngrok&logoColor=white"
+                alt="LoRA Badge"
+              />
+            </a>
+            <a href="https://www.runpod.io/" target="_blank">
+              <img
+                src="https://img.shields.io/badge/RunPod-824edc?style=flat-square&logo=RunPod&logoColor=white"
+                alt="RunPod Badge"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
       <h2 className="text-3xl my-8">
-        {dict.개발경력[lang]} <span className="text-sm">(1년 6개월+α)</span>
+        {dict.개발경력[lang]} <span className="text-sm">(3개월+α)</span>
       </h2>
       <ul>
         <li>
@@ -241,136 +496,6 @@ export default function HomePage({ params }: PageProps) {
             불편함을 최소화하는 토스뱅크 여신 심사·관리·운영 시스템(LUMOS, 루모스) 개발
           </div>
         </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <div className="flex gap-2 items-center">
-              <a
-                href="https://www.linkedin.com/company/%EC%A3%BC-%EC%95%8C%ED%8C%8C%EC%B9%B4%EC%82%B4%EB%A1%B1/about/"
-                className="flex gap-2 items-center"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <b>(주)알파카살롱</b>{' '}
-                <Image src="/images/알파카살롱-logo.jpg" alt="알파카살롱" width="72" height="24" />
-              </a>
-              <a
-                href="https://www.linkedin.com/company/%EB%A6%AC%ED%8A%B8%EB%A6%AC%EB%B2%84%EC%82%B4%EB%A1%B1/"
-                className="text-sm"
-                target="_blank"
-              >
-                (現 리트리버살롱)
-              </a>
-            </div>
-            <div>
-              <a href="/pdf/알파카살롱.pdf" target="_blank">
-                2021년 11월 9일 ~ 2022년 2월 8일 (3개월)
-              </a>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Full stack Developer</div>
-            <div>부서: 개발팀 (3명)</div>
-            <div>직위: 개발팀장</div>
-            <div>
-              유형: <소득유형Badge type={소득Type.사업소득자_개인} />
-            </div>
-          </div>
-          <div>역할: '4050 여성 전용 커뮤니티' 알파카살롱 기획 및 MVP 개발</div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <a href="http://pmcm.cau.ac.kr/" target="_blank" rel="noreferrer">
-              <b>중앙대학교 건설경영정보 연구실 (김경주 교수)</b>
-            </a>
-            <a href="/images/2021-cau-lab.webp" target="_blank">
-              2021년 6월 1일 ~ 8월 31일 (3개월)
-            </a>
-          </div>
-          <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Frontend Developer</div>
-            <div>부서: 개발팀 (2명)</div>
-            <div>직위: 참여연구원 (개발팀장)</div>
-            <div>
-              유형: <소득유형Badge type={소득Type.기타소득자} />
-            </div>
-          </div>
-          <div>
-            역할: '3차) 블록체인 기술을 이용한 해외 건설프로젝트 스마트 분쟁관리 모델구축 연구' 과제
-            참여. 건설 프로젝트 수주 협상 과정에서 주고 받는 이메일을 블록체인 상에 관리하여 추후
-            분쟁 발생 여지를 최소화하는 사이트 개발
-          </div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <div className="flex gap-2 items-center">
-              <a
-                href="https://www.linkedin.com/company/festaio/"
-                className="flex gap-2 items-center"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <b>(주)페스타</b>
-                <FestaLogo />
-              </a>
-              <a
-                href="https://www.sedaily.com/NewsView/264PCFEN6T"
-                className="text-sm"
-                target="_blank"
-              >
-                (現 당근마켓 피인수 기업)
-              </a>
-            </div>
-            <div>
-              <a href="/pdf/페스타.pdf" target="_blank">
-                2020년 9월 1일 ~ 12월 31일 (4개월)
-              </a>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Frontend Developer</div>
-            <div>부서: Admin 개발팀 (4명)</div>
-            <div>직위: 인턴</div>
-            <div>
-              유형: <소득유형Badge type={소득Type.기타소득자} />
-            </div>
-          </div>
-          <div>
-            역할:{' '}
-            <a href="https://festa.io/" target="_blank" rel="noreferrer">
-              '페스타 - 온·오프라인 이벤트 티켓 및 고객 관리 서비스'
-            </a>{' '}
-            Admin(관리자) 서비스 기획 및 개발
-          </div>
-        </li>
-        <div className="border w-full my-6" />
-
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <a href="https://web.cau.ac.kr/energy/index.htm" target="_blank" rel="noreferrer">
-              <b>중앙대학교 에너지 및 복사특성 연구실 (김태국 교수)</b>
-            </a>
-            <div>
-              <a href="/images/2019-cau-lab.webp" target="_blank">
-                2019년 4월 1일 ~ 8월 31일 (5개월)
-              </a>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Software Developer</div>
-            <div>부서: 개발팀 (2명)</div>
-            <div>직위: 참여연구원</div>
-            <div>
-              유형: <소득유형Badge type={소득Type.기타소득자} />
-            </div>
-          </div>
-          <div>
-            역할: 'KFX IR 해석 기법 및 해석 소프트웨어 개발 연구' 과제 참여. 적외선 영상 통계 분석
-            개발 보조 (C++), OpenMP 라이브러리 기반 병렬처리로 수학 계산 성능 최적화
-          </div>
-        </li>
       </ul>
       <h2 className="text-3xl my-8 ">{dict.학력[lang]}</h2>
       <table>
@@ -442,289 +567,10 @@ export default function HomePage({ params }: PageProps) {
           </tr>
         </tbody>
       </table>
-      <h2 className="text-3xl my-8">기술</h2>
-      <h4 className="my-2">Language</h4>
-      <div className="flex gap-1">
-        <a href="https://javascript.info/" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/ES2023-F7DF1E?style=flat-square&logo=JavaScript&logoColor=black"
-            alt="JavaScript Badge"
-          />
-        </a>
-        <a href="https://www.typescriptlang.org/" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/TypeScript-235A97?style=flat-square&logo=Typescript&logoColor=white"
-            alt="TypeScript Badge"
-          />
-        </a>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"
-            alt="CSS3 Badge"
-          />
-        </a>
-        <a href="https://www.python.org/" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"
-            alt="Python Badge"
-          />
-        </a>
-        <a href="https://en.wikipedia.org/wiki/SQL" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/SQL-003B57?style=flat-square&logo=SQL&logoColor=white"
-            alt="SQL Badge"
-          />
-        </a>
-        <a href="https://graphql.org/" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white"
-            alt="GraphQL Badge"
-          />
-        </a>
-      </div>
-      <h4 className="my-2">Frontend</h4>
-      <div className="grid gap-1">
-        <div className="flex gap-1">
-          <a href="https://nextjs.org/" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"
-              alt="Next.js Badge"
-            />
-          </a>
-          <a href="https://reactjs.org/" target="_blank">
-            <img
-              src="https://img.shields.io/badge/React.js-61DAFB?style=flat-square&logo=react&logoColor=black"
-              alt="React Badge"
-            />
-          </a>
-          <a href="https://tailwindcss.com/" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white"
-              alt="tailwind Badge"
-            />
-          </a>
-          <a href="https://tanstack.com/query/latest/docs/react/overview" target="_blank">
-            <img
-              src="https://img.shields.io/badge/React Query-FF4154?style=flat-square&logo=react-query&logoColor=white"
-              alt="react query Badge"
-            />
-          </a>
-          <a href="https://zustand-demo.pmnd.rs/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Zustand-3578e5?style=flat-square&logo=Zustand&logoColor=white"
-              alt="Zustand Badge"
-            />
-          </a>
-          <a href="https://zod.dev/" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Zod-3E67B1?style=flat-square&logo=zod&logoColor=white"
-              alt="zod"
-            />
-          </a>
-          <a href="https://sentry.io/welcome/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Sentry-362D59?style=flat-square&logo=sentry&logoColor=white"
-              alt="Sentry"
-            />
-          </a>
-          <a href="https://web.dev/progressive-web-apps/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/PWA-5A0FC8?style=flat-square&logo=PWA&logoColor=white"
-              alt="PWA Badge"
-            />
-          </a>
-          <a
-            href="https://developer.mozilla.org/en-US/docs/Web/API/Push_API"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <img
-              src="https://img.shields.io/badge/Web Push-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
-              alt="Web Push Badge"
-            />
-          </a>
-        </div>
-      </div>
-      <h4 className="my-2">Backend</h4>
-      <div className="grid gap-1">
-        <div className="flex gap-1">
-          <a href="https://www.fastify.io/" rel="noreferrer">
-            <img
-              src="https://img.shields.io/badge/Fastify-000000?style=flat-square&logo=Fastify&logoColor=white"
-              alt="Fastify Badge"
-            />
-          </a>
-          <a
-            href="https://en.wikipedia.org/wiki/HTTP/2_Server_Push"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <img
-              src="https://img.shields.io/badge/HTTP/2-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
-              alt="Server Push Badge"
-            />
-          </a>
-          <a href="https://socket.io/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Socket.IO-010101?style=flat-square&logo=Socket.io&logoColor=white"
-              alt="WebSocket Badge"
-            />
-          </a>
-          <a href="https://www.prisma.io/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=Prisma&logoColor=white"
-              alt="prisma Badge"
-            />
-          </a>
-          <a href="https://nodejs.org/en/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white"
-              alt="Node.js Badge"
-            />
-          </a>
-          <a href="https://www.docker.com/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"
-              alt="Docker Badge"
-            />
-          </a>
-          <a href="https://www.postgresql.org/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=PostgreSQL&logoColor=white"
-              alt="PostgreSQL Badge"
-            />
-          </a>
-          <a href="https://redis.io/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"
-              alt="Redis Badge"
-            />
-          </a>
-          <a href="https://www.elastic.co/kr" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Elasticsearch, Kibana-005571?style=flat-square&logo=elastic&logoColor=white"
-              alt="elasticsearch Badge"
-            />
-          </a>
-        </div>
-      </div>
-      <h4 className="my-2">Cloud</h4>
-      <div className="grid gap-1">
-        <div className="flex gap-1">
-          <a href="https://vercel.com/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white"
-              alt="Vercel Badge"
-            />
-          </a>
-          <a href="https://cloud.google.com/gcp/" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Cloud Run, Cloud Storage, Cloud SQL-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
-              alt="GCP Badge"
-            />
-          </a>
-          <a href="https://firebase.google.com/" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=Firebase&logoColor=black"
-              alt="Firebase Badge"
-            />
-          </a>
-          <a href="https://cloud.oracle.com/?region=ap-seoul-1" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Instances-F80000?style=flat-square&logo=oracle&logoColor=white"
-              alt="Oracle Badge"
-            />
-          </a>
-          <a href="https://aws.amazon.com/ko/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/RDS, EC2, S3-232F3E?style=flat-square&logo=amazon-aws&logoColor=white"
-              alt="AWS Badge"
-            />
-          </a>
-        </div>
-      </div>
-      <div className="flex gap-4">
-        <div>
-          <h4 className="my-2">Developer Tool</h4>
-          <div className="grid gap-1">
-            <div className="flex gap-1">
-              <a href="" rel="noreferrer" target="_blank">
-                <img
-                  src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"
-                  alt="Git Badge"
-                />
-              </a>
-              <a href="https://esbuild.github.io/" rel="noreferrer" target="_blank">
-                <img
-                  src="https://img.shields.io/badge/esbuild-FFCF00?style=flat-square&logo=esbuild&logoColor=black"
-                  alt="esbuild Badge"
-                />
-              </a>
-              <a href="" rel="noreferrer" target="_blank">
-                <img
-                  src="https://img.shields.io/badge/Jest-C21325?style=flat-square&logo=jest&logoColor=white"
-                  alt="Jest Badge"
-                />
-              </a>
-              <a href="https://code.visualstudio.com/" rel="noreferrer" target="_blank">
-                <img
-                  src="https://img.shields.io/badge/VSCode-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white"
-                  alt="VSCode Badge"
-                />
-              </a>
-              <a
-                href="https://analytics.google.com/analytics/web/"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <img
-                  src="https://img.shields.io/badge/GA-E37400?style=flat-square&logo=Google Analytics&logoColor=white"
-                  alt="GA Badge"
-                />
-              </a>
-              <a href="https://www.figma.com/" rel="noreferrer" target="_blank">
-                <img
-                  src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=Figma&logoColor=white"
-                  alt="Figma Badge"
-                />
-              </a>
-              <a href="https://www.framer.com/" rel="noreferrer" target="_blank">
-                <img
-                  src="https://img.shields.io/badge/Framer-0055FF?style=flat-square&logo=framer&logoColor=white"
-                  alt="framer"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div>
-          <h4 className="my-2">AI</h4>
-          <div className="flex gap-1">
-            <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui" target="_blank">
-              <img
-                src="https://img.shields.io/badge/Stable Diffusion-1F1E37?style=flat-square&logo=ngrok&logoColor=white"
-                alt="Stable Diffusion Badge"
-              />
-            </a>
-            <a href="https://github.com/bmaltais/kohya_ss" target="_blank">
-              <img
-                src="https://img.shields.io/badge/LoRA-1F1E37?style=flat-square&logo=ngrok&logoColor=white"
-                alt="LoRA Badge"
-              />
-            </a>
-            <a href="https://www.runpod.io/" target="_blank">
-              <img
-                src="https://img.shields.io/badge/RunPod-824edc?style=flat-square&logo=RunPod&logoColor=white"
-                alt="RunPod Badge"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
       <h2 className="text-3xl my-8">수상</h2>
       <ul>
         <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+          <div className="grid grid-cols-[5fr_3fr_1fr_2fr] gap-4 my-2">
             <a
               href="https://www.ito.or.kr/main/bbs/bbsMsgDetail.do?msg_seq=684&bcd=notice"
               target="_blank"
@@ -733,6 +579,7 @@ export default function HomePage({ params }: PageProps) {
               <b>2022 인천 스마트관광 데이터 아이디어 공모전</b>
             </a>
             <div>인천관광공사</div>
+            <div>팀원 2명</div>
             <div>2022년 12월 9일</div>
           </div>
           <div>
@@ -742,13 +589,14 @@ export default function HomePage({ params }: PageProps) {
               rel="noreferrer"
               target="_blank"
             >
-              (최우수상, 2등)
+              (최우수상, 2등
             </a>
+            , 상금 150만원)
           </div>
         </li>
         <div className="border w-full my-6" />
         <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+          <div className="grid grid-cols-[5fr_3fr_1fr_2fr] gap-4 my-2">
             <a href="https://www.jungle.co.kr/contest/204985" target="_blank" rel="noreferrer">
               <b>MMO 해커톤 2회</b>
             </a>
@@ -756,49 +604,53 @@ export default function HomePage({ params }: PageProps) {
               MMO&nbsp;
               <span className="text-xs">(IT교육회사)</span>
             </div>
+            <div>팀원 3명</div>
             <div>2022년 11월 27일</div>
           </div>
           <div>
             결식 아동에게 줄 크리스마스 선물 크라우드펀딩 서비스{' '}
             <a href="/pdf/해커톤 시상_우수상_개발자팀.pdf" target="_blank">
-              (우수상, 2등)
+              (우수상, 2등
             </a>
+            , 상금 5만원)
           </div>
         </li>
         <div className="border w-full my-6" />
         <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+          <div className="grid grid-cols-[5fr_3fr_1fr_2fr] gap-4 my-2">
             <a href="https://event-us.kr/pmsolution/event/40979" target="_blank" rel="noreferrer">
               <b>2021 AI 해커톤</b>
             </a>
             <div>제주테크노벨리</div>
+            <div>팀원 3명</div>
             <div>2022년 1월 22일</div>
           </div>
           <div>
             식의약용 자생식물 데이터 기반 사업화 서비스 아이디어 제시{' '}
             <a href="/pdf/입상_AHAH(고현준,곽태욱).pdf" target="_blank">
-              (입상)
+              (입상, 6~15등)
             </a>
           </div>
         </li>
         <div className="border w-full my-6" />
         <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+          <div className="grid grid-cols-[5fr_3fr_1fr_2fr] gap-4 my-2">
             <a
               href="https://blog.naver.com/khucampustown/222535649294"
               target="_blank"
               rel="noreferrer"
             >
-              <b>2021 경희대학교 캠퍼스타운 입주 스타트업 캠퍼 2기</b>
+              <b>2021 경희대학교 캠퍼스타운 스타트업 캠퍼 2기</b>
             </a>
             <div>경희대학교 캠퍼스타운</div>
+            <div>팀원 5명</div>
             <div>2021년 11월 1일</div>
           </div>
           <div>Sindy 창업팀 추가 선정 (2021년 11월 1일 ~ 2022년 8월 31일, 10개월)</div>
         </li>
         <div className="border w-full my-6" />
         <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+          <div className="grid grid-cols-[5fr_3fr_1fr_2fr] gap-4 my-2">
             <a
               href="https://youth.posco.com/posco/edu/index.php?mod=incubator&pag=icb01#khwhay"
               target="_blank"
@@ -807,13 +659,14 @@ export default function HomePage({ params }: PageProps) {
               <b>2021년 3차 포스코 창업인큐베이팅스쿨</b>
             </a>
             <div>POSCO</div>
+            <div>팀원 5명</div>
             <div>2021년 10월 18일</div>
           </div>
           <div>Sindy 창업팀 선정 (2021년 10월 18일 ~ 10월 29일, 2주)</div>
         </li>
         <div className="border w-full my-6" />
         <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+          <div className="grid grid-cols-[5fr_3fr_1fr_2fr] gap-4 my-2">
             <a
               href="https://me.cau.ac.kr/bbs/board.php?bo_table=sub5_1&wr_id=4037&page=34"
               target="_blank"
@@ -821,14 +674,15 @@ export default function HomePage({ params }: PageProps) {
             >
               <b>2021년도 LINC+ Start-up Members</b>
             </a>
-            <div>중앙대학교 LINC+사업단</div>
+            <div>중앙대학교 LINC+</div>
+            <div>팀원 5명</div>
             <div>2021년 7월 1일</div>
           </div>
-          <div>Sindy 창업팀 선정 (2021년 7월 1일 ~ 12월 31일, 6개월) (200만원)</div>
+          <div>Sindy 창업팀 선정 (2021년 7월 1일 ~ 12월 31일, 6개월, 지원금 200만원)</div>
         </li>
         <div className="border w-full my-6" />
         <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+          <div className="grid grid-cols-[5fr_3fr_1fr_2fr] gap-4 my-2">
             <a
               href="https://www.kised.or.kr/board.es?mid=a10305000000&bid=0006&list_no=2255&act=view"
               target="_blank"
@@ -837,24 +691,26 @@ export default function HomePage({ params }: PageProps) {
               <b>2021 실전창업교육 1기</b>
             </a>
             <div>중소벤처기업부</div>
+            <div>팀원 5명</div>
             <div>2021년 6월 1일</div>
           </div>
           <div>Sindy 창업팀 선정 및 2단계 진출 (2021년 6월 1일 ~ 7월 31일, 2개월)</div>
         </li>
         <div className="border w-full my-6" />
         <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+          <div className="grid grid-cols-[5fr_3fr_1fr_2fr] gap-4 my-2">
             <a href="https://blog.naver.com/djsepc/222200468576" target="_blank" rel="noreferrer">
               <b>2021 동작구 스타트업 펀딩 사업</b>
             </a>
             <div>동작구청</div>
+            <div>팀원 5명</div>
             <div>2021년 2월 5일</div>
           </div>
-          <div>Sindy 창업팀 선정 (2021년 2월 5일 ~ 11월 30일, 10개월) (500만원)</div>
+          <div>Sindy 창업팀 선정 (2021년 2월 5일 ~ 11월 30일, 10개월, 지원금 500만원)</div>
         </li>
         <div className="border w-full my-6" />
         <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+          <div className="grid grid-cols-[5fr_3fr_1fr_2fr] gap-4 my-2">
             <a
               href="https://www.donga.com/news/Society/article/all/20201217/104493689/2"
               target="_blank"
@@ -862,7 +718,8 @@ export default function HomePage({ params }: PageProps) {
             >
               <b>2020년 C-디자인씽킹 아카데미 경진대회</b>
             </a>
-            <div>중앙대 교수학습개발센터</div>
+            <div>중앙대 다빈치학습혁신원</div>
+            <div>팀원 5명</div>
             <div>2020년 12월 3일</div>
           </div>
           <div>‘버려지는 소재를 새로운 순환으로’를 주제로 사업계획서 작성</div>
@@ -876,48 +733,24 @@ export default function HomePage({ params }: PageProps) {
         </li>
         <div className="border w-full my-6" />
         <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+          <div className="grid grid-cols-[5fr_3fr_1fr_2fr] gap-4 my-2">
             <b>국가우수장학생 (이공계)</b>
             <div>한국장학재단</div>
-            <div>
-              <a href="/images/2019-scholarship.webp" target="_blank">
-                2019년 8월 14일
-              </a>
-            </div>
+            <div>본인</div>
+            <a href="/images/2019-scholarship.webp" target="_blank">
+              2019년 8월 14일
+            </a>
           </div>
           <div>2019-1학기 ~ 2020-2학기 전액장학금 (4개 학기)</div>
         </li>
         <div className="border w-full my-6" />
         <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
-            <a
-              href="http://m.dhnews.co.kr/news/articleView.html?idxno=88851"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <b>2018 창의ICT공과대학 학술제</b>
-            </a>
-            <div>중앙대 창의ICT공과대학</div>
-            <div>2018년 11월 30일</div>
-          </div>
-          <div>
-            택배 상하차 아르바이트생의 열약한 근무 환경을 주제로{' '}
-            <a href="https://www.youtube.com/watch?v=ruqZIWGwH-I" target="_blank">
-              '초록 유니폼을 입은 알바생' VR 영상
-            </a>{' '}
-            제작 및{' '}
-            <a href="/images/2018-창의ICT공과대학-학술제-VR-공감-영상전.jpg" target="_blank">
-              우수상 수상
-            </a>
-          </div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 my-2">
+          <div className="grid grid-cols-[5fr_3fr_1fr_2fr] gap-4 my-2">
             <a href="https://onoffmix.com/event/153038" target="_blank" rel="noreferrer">
               <b>BBR BlockCamp 블록체인 해커톤</b>
             </a>
             <div>BBR, 디센터</div>
+            <div>팀원 7명</div>
             <div>2018년 10월 29일</div>
           </div>
           <div>
@@ -1003,11 +836,11 @@ export default function HomePage({ params }: PageProps) {
               <PlanbyLogo height="19" />
             </a>
             <div>
+              2023년 11월 7일 ~ 11월 26일 (3주)
+              <br />
               <a href="/pdf/플랜바이테크놀로지스.pdf" target="_blank">
                 2023년 7월 24일 ~ 8월 6일 (2주)
               </a>
-              <br />
-              2023년 11월 7일 ~ 11월 26일 (3주)
             </div>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
@@ -1068,6 +901,43 @@ export default function HomePage({ params }: PageProps) {
         <div className="border w-full my-6" />
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
+            <div className="flex gap-2 items-center">
+              <a
+                href="https://www.linkedin.com/company/%EC%A3%BC-%EC%95%8C%ED%8C%8C%EC%B9%B4%EC%82%B4%EB%A1%B1/about/"
+                className="flex gap-2 items-center"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <b>(주)알파카살롱</b>{' '}
+                <Image src="/images/알파카살롱-logo.jpg" alt="알파카살롱" width="72" height="24" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/%EB%A6%AC%ED%8A%B8%EB%A6%AC%EB%B2%84%EC%82%B4%EB%A1%B1/"
+                className="text-sm"
+                target="_blank"
+              >
+                (現 리트리버살롱)
+              </a>
+            </div>
+            <div>
+              <a href="/pdf/알파카살롱.pdf" target="_blank">
+                2021년 11월 9일 ~ 2022년 2월 8일 (3개월)
+              </a>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-x-4">
+            <div>직책: Full stack Developer</div>
+            <div>부서: 개발팀 (3명)</div>
+            <div>직위: 개발팀장</div>
+            <div>
+              유형: <소득유형Badge type={소득Type.사업소득자_개인} />
+            </div>
+          </div>
+          <div>역할: '4050 여성 전용 커뮤니티' 알파카살롱 기획 및 MVP 개발</div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
             <a href="http://www.beyondcoding.kr/about.php" target="_blank" rel="noreferrer">
               <b>비욘드코딩 (코딩학원)</b>
             </a>
@@ -1106,8 +976,81 @@ export default function HomePage({ params }: PageProps) {
             </div>
           </div>
           <div>
-            역할: 대학생을 대상으로 Frontend·Backend·Cloud 개념 및 인스타그램 클론 코딩 수업 (주
-            3회, 1회 2시간)
+            역할: 대학생을 대상으로 Frontend·Backend·Cloud 개념, 네트워크 OSI 계층,{' '}
+            <a
+              href="https://velog.io/@gwak2837/Next.js-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%A0%8C%EB%8D%94%EB%A7%81-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0"
+              target="_blank"
+            >
+              SSR·CSR·SSG
+            </a>
+            , Database 개념 수업 및 인스타그램 클론 코딩 지도 (주 3회, 1회 2시간)
+          </div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
+            <a href="http://pmcm.cau.ac.kr/" target="_blank" rel="noreferrer">
+              <b>중앙대학교 건설경영정보 연구실 (김경주 교수)</b>
+            </a>
+            <a href="/images/2021-cau-lab.webp" target="_blank">
+              2021년 6월 1일 ~ 8월 31일 (3개월)
+            </a>
+          </div>
+          <div className="grid grid-cols-2 gap-x-4">
+            <div>직책: Frontend Developer</div>
+            <div>부서: 개발팀 (2명)</div>
+            <div>직위: 참여연구원 (개발팀장)</div>
+            <div>
+              유형: <소득유형Badge type={소득Type.기타소득자} />
+            </div>
+          </div>
+          <div>
+            역할: '3차) 블록체인 기술을 이용한 해외 건설프로젝트 스마트 분쟁관리 모델구축 연구' 과제
+            참여. 건설 프로젝트 수주 협상 과정에서 주고 받는 이메일을 블록체인 상에 관리하여 추후
+            분쟁 발생 여지를 최소화하는 사이트 개발
+          </div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
+            <div className="flex gap-2 items-center">
+              <a
+                href="https://www.linkedin.com/company/festaio/"
+                className="flex gap-2 items-center"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <b>(주)페스타</b>
+                <FestaLogo />
+              </a>
+              <a
+                href="https://www.sedaily.com/NewsView/264PCFEN6T"
+                className="text-sm"
+                target="_blank"
+              >
+                (現 당근마켓 피인수 기업)
+              </a>
+            </div>
+            <div>
+              <a href="/pdf/페스타.pdf" target="_blank">
+                2020년 9월 1일 ~ 12월 31일 (4개월)
+              </a>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-x-4">
+            <div>직책: Frontend Developer</div>
+            <div>부서: Admin 개발팀 (4명)</div>
+            <div>직위: 인턴</div>
+            <div>
+              유형: <소득유형Badge type={소득Type.기타소득자} />
+            </div>
+          </div>
+          <div>
+            역할:{' '}
+            <a href="https://festa.io/" target="_blank" rel="noreferrer">
+              '페스타 - 온·오프라인 이벤트 티켓 및 고객 관리 서비스'
+            </a>{' '}
+            Admin(관리자) 서비스 기획 및 개발
           </div>
         </li>
         <div className="border w-full my-6" />
@@ -1169,6 +1112,31 @@ export default function HomePage({ params }: PageProps) {
         <div className="border w-full my-6" />
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
+            <a href="https://web.cau.ac.kr/energy/index.htm" target="_blank" rel="noreferrer">
+              <b>중앙대학교 에너지 및 복사특성 연구실 (김태국 교수)</b>
+            </a>
+            <div>
+              <a href="/images/2019-cau-lab.webp" target="_blank">
+                2019년 4월 1일 ~ 8월 31일 (5개월)
+              </a>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-x-4">
+            <div>직책: Software Developer</div>
+            <div>부서: 개발팀 (2명)</div>
+            <div>직위: 참여연구원</div>
+            <div>
+              유형: <소득유형Badge type={소득Type.기타소득자} />
+            </div>
+          </div>
+          <div>
+            역할: 'KFX IR 해석 기법 및 해석 소프트웨어 개발 연구' 과제 참여. 적외선 영상 통계 분석
+            개발 보조 (C++), OpenMP 라이브러리 기반 병렬처리로 수학 계산 성능 최적화
+          </div>
+        </li>
+        <div className="border w-full my-6" />
+        <li>
+          <div className="grid grid-cols-2 gap-4 my-4">
             <a
               href="https://www.saramin.co.kr/zf_user/company-info/view/csn/b2ZtOGw4SWdmTldhbjVLK2pqNzdDZz09/company_nm/(%EC%A3%BC)%EB%A6%AC%EC%84%9C%EC%B9%98%EB%9E%A9"
               className="flex gap-2 items-center"
@@ -1197,23 +1165,6 @@ export default function HomePage({ params }: PageProps) {
       </ul>
       <h2 className="text-3xl my-8 ">개발 활동</h2>
       <ul>
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <b>과외</b>
-            <div>2023년 12월 30일 ~ 현재</div>
-          </div>
-          <div>
-            역할: 대학생을 대상으로 OSI model,{' '}
-            <a
-              href="https://velog.io/@gwak2837/Next.js-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%A0%8C%EB%8D%94%EB%A7%81-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0"
-              target="_blank"
-            >
-              SSR·CSR·SSG
-            </a>
-            , Database 개념 및 X 클론 코딩 수업 (주 2회, 1회 3시간)
-          </div>
-        </li>
-        <div className="border w-full my-6" />
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
             <a
