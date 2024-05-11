@@ -176,7 +176,7 @@ export default function HomePage({ params }: PageProps) {
             <div>부서: 만타제품그룹(20명) ⊃ 엔지니어링팀(10명)</div>
             <div>직위: Junior</div>
             <div>
-              유형: <소득유형Badge type={소득Type.일반근로자_정규직} /> (수습 기간 3개월)
+              유형: <소득유형Badge type={소득Type.일반근로자_정규직} /> (수습 3개월)
             </div>
           </div>
           <div>
@@ -1207,32 +1207,13 @@ export default function HomePage({ params }: PageProps) {
           </div>
           <div className="grid grid-cols-2 gap-x-4">
             <div>직책: Full stack Developer (팀장)</div>
-            <div>소속: 개발팀 (2명)</div>
+            <div>소속: 전체(5명) ⊃ 개발팀(2명)</div>
             <div>직위: 공동창업자</div>
           </div>
           <div>
             역할: '카페의 특색을 담아내는 사용자 주도 SNS형 디저트 정보 공유 공간' 디저트핏 기획 및
             Frontend · Backend · Cloud 개발
           </div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <a href="https://www.headstartsv.com/" target="_blank" rel="noreferrer">
-              <b>Headstart Silicon Valley, Inc.</b>
-            </a>
-            <div>
-              <a href="/images/2021-headstart-sv.webp" target="_blank">
-                2021년 1월 4일 ~ 2월 5일 (1개월)
-              </a>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-4">
-            <div>직책: Frontend Developer (팀장)</div>
-            <div>소속: 프로젝트2팀 (6명)</div>
-          </div>
-          <div>직위: 인턴</div>
-          <div>역할: ‘음성인식 기반 노래검색 서비스’ Icezam 기획 및 개발</div>
         </li>
       </ul>
       <h2 className="text-3xl my-8 ">소개</h2>
@@ -1424,12 +1405,6 @@ export default function HomePage({ params }: PageProps) {
             alt="GCP Badge"
           />
         </a>
-        <a href="https://www.figma.com/" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=Figma&logoColor=white"
-            alt="Figma"
-          />
-        </a>
       </div>
       <ol>
         <li>
@@ -1516,12 +1491,6 @@ export default function HomePage({ params }: PageProps) {
           <img
             src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white"
             alt="Vercel Badge"
-          />
-        </a>
-        <a href="https://www.figma.com/" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=Figma&logoColor=white"
-            alt="Figma Badge"
           />
         </a>
       </div>
@@ -1646,20 +1615,8 @@ export default function HomePage({ params }: PageProps) {
         <div className="pr-2" />
         <a href="" rel="noreferrer" target="_blank">
           <img
-            src="https://img.shields.io/badge/Slack-4A154B?style=flat-square&logo=slack&logoColor=white"
-            alt="Slack Badge"
-          />
-        </a>
-        <a href="" rel="noreferrer" target="_blank">
-          <img
             src="https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white"
             alt="Jira Badge"
-          />
-        </a>
-        <a href="" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=notion&logoColor=white"
-            alt="Notion Badge"
           />
         </a>
       </div>
@@ -1786,12 +1743,6 @@ export default function HomePage({ params }: PageProps) {
           <img
             src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white"
             alt="Vercel Badge"
-          />
-        </a>
-        <a href="https://www.figma.com/" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=Figma&logoColor=white"
-            alt="Figma Badge"
           />
         </a>
       </div>
@@ -2238,12 +2189,6 @@ export default function HomePage({ params }: PageProps) {
             alt="PWA Badge"
           />
         </a>
-        <a href="https://en.wikipedia.org/wiki/HTTP/2" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/HTTP2-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
-            alt="HTTP2 Badge"
-          />
-        </a>
         <a
           href="https://developer.mozilla.org/en-US/docs/Web/API/Push_API"
           rel="noreferrer"
@@ -2358,12 +2303,6 @@ export default function HomePage({ params }: PageProps) {
           <img
             src="https://img.shields.io/badge/React Form-EC5990?style=flat-square&logo=react-hook-form&logoColor=white"
             alt="fastify"
-          />
-        </a>
-        <a href="https://en.wikipedia.org/wiki/HTTP/2" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/HTTP2-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
-            alt="HTTP2 Badge"
           />
         </a>
         <a
