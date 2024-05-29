@@ -164,7 +164,7 @@ export default function HomePage({ params }: PageProps) {
               className="flex gap-2 items-center"
               target="_blank"
             >
-              <b>리디(주)</b>
+              <h4 className="w-fit font-bold">리디(주)</h4>
               <RidiLogo />
             </a>
             <a href="/pdf/리디-재직증명서.pdf" target="_blank">
@@ -184,9 +184,9 @@ export default function HomePage({ params }: PageProps) {
             플랫폼 기업
           </div>
           <div className="border-l-2 pl-4">
-            <div className="grid grid-cols-2 gap-4 mt-6 mb-4 font-semibold">
-              <h4>RIDI 웹</h4>
-              <div>2024년 4월 1일 ~ 현재</div>
+            <div className="grid grid-cols-2 gap-4 mt-6 mb-4">
+              <h4 className="text-lg font-semibold">RIDI 웹</h4>
+              <div>2024년 4월 ~ 현재</div>
             </div>
             <div className="grid grid-cols-2 gap-x-4">
               <div>직책: Frontend Engineer</div>
@@ -195,10 +195,7 @@ export default function HomePage({ params }: PageProps) {
             </div>
             <div>
               역할: 국내 전자책 시장에서 점유율 50% 이상을 차지하는 리디북스의{' '}
-              <a
-                href="https://apps.apple.com/kr/app/manta-unlimited-comics/id1536116642"
-                target="_blank"
-              >
+              <a href="https://ridibooks.com" target="_blank">
                 웹 사이트
               </a>
               를 개발함
@@ -207,7 +204,6 @@ export default function HomePage({ params }: PageProps) {
               <a
                 href="https://ridibooks.com"
                 target="_blank"
-                rel="noreferrer"
                 className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
               >
                 <div className="flex gap-1 items-center">
@@ -281,9 +277,9 @@ export default function HomePage({ params }: PageProps) {
             </ol>
           </div>
           <div className="border-l-2 pl-4">
-            <div className="grid grid-cols-2 gap-4 mt-6 mb-4 font-semibold">
-              <div>Manta - Unlimited Comics Perfect to Binge</div>
-              <div>2023년 11월 27일 ~ 2024년 3월 31일 (4개월)</div>
+            <div className="grid grid-cols-2 gap-4 mt-6 mb-4 ">
+              <h4 className="text-lg font-semibold">Manta - Unlimited Comics</h4>
+              <div>2023년 11월 ~ 2024년 3월 (4개월)</div>
             </div>
             <div className="grid grid-cols-2 gap-x-4">
               <div>직책: Frontend Engineer</div>
@@ -322,7 +318,6 @@ export default function HomePage({ params }: PageProps) {
               <a
                 href="https://manta.net/en"
                 target="_blank"
-                rel="noreferrer"
                 className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
               >
                 <div className="flex gap-1 items-center">
@@ -447,7 +442,7 @@ export default function HomePage({ params }: PageProps) {
               className="flex gap-2 items-center"
               target="_blank"
             >
-              <b>토스뱅크(주)</b>
+              <h4 className="w-fit font-bold">토스뱅크(주)</h4>
               <Image
                 src="/images/TossBank_Logo_Primary.png"
                 alt="tossbank"
@@ -472,8 +467,10 @@ export default function HomePage({ params }: PageProps) {
           </div>
 
           <div className="border-l-2 pl-4">
-            <div className="grid grid-cols-2 gap-4 mt-6 mb-4 font-semibold">
-              <h4>토스뱅크 루모스 (여신 심사·관리·운영 시스템)</h4>
+            <div className="grid grid-cols-2 gap-4 mt-6 mb-4">
+              <h4 className="text-lg font-semibold">
+                토스뱅크 루모스 (여신 심사·관리·운영 시스템)
+              </h4>
               <div>2023년 8월 7일 ~ 11월 6일 (3개월)</div>
             </div>
             <div className="grid grid-cols-2 gap-x-4">
@@ -483,8 +480,8 @@ export default function HomePage({ params }: PageProps) {
             </div>
             <div>
               역할: 대출 관련 프로세스 자동화로 토스씨엑스 담당자의 업무 효율성을 높이며, 대출
-              고객의 불편함을 최소화하는 토스뱅크 여신 심사·관리·운영 시스템(루모스)을 Next.js와
-              Toss Design System 기반으로 개발함
+              고객의 불편함을 최소화하는 토스뱅크 여신 심사·관리·운영 시스템을 Next.js와 Toss Design
+              System 기반으로 개발함
             </div>
             <div className="flex flex-wrap gap-1 my-2">
               <a href="https://nextjs.org" rel="noreferrer" target="_blank">
@@ -511,19 +508,12 @@ export default function HomePage({ params }: PageProps) {
                   alt="zod"
                 />
               </a>
-              <a href="https://www.framer.com/" rel="noreferrer" target="_blank">
-                <img
-                  src="https://img.shields.io/badge/Framer-0055FF?style=flat-square&logo=framer&logoColor=white"
-                  alt="framer"
-                />
-              </a>
               <a href="https://www.elastic.co/kr/kibana" rel="noreferrer" target="_blank">
                 <img
                   src="https://img.shields.io/badge/Kibana-005571?style=flat-square&logo=kibana&logoColor=white"
                   alt="kibana"
                 />
               </a>
-              <div className="pr-2" />
               <a href="" rel="noreferrer" target="_blank">
                 <img
                   src="https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white"
