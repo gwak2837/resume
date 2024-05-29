@@ -278,7 +278,7 @@ export default function HomePage({ params }: PageProps) {
           </div>
           <div className="border-l-2 pl-4">
             <div className="grid grid-cols-2 gap-4 mt-6 mb-4 ">
-              <h4 className="text-lg font-semibold">Manta - Unlimited Comics</h4>
+              <h4 className="text-lg font-semibold">Manta - Unlimited Comics to Binge</h4>
               <div>2023년 11월 ~ 2024년 3월 (4개월)</div>
             </div>
             <div className="grid grid-cols-2 gap-x-4">
