@@ -471,7 +471,7 @@ export default function HomePage({ params }: PageProps) {
               <h4 className="text-lg font-semibold">
                 토스뱅크 루모스 (여신 심사·관리·운영 시스템)
               </h4>
-              <div>2023년 8월 7일 ~ 11월 6일 (3개월)</div>
+              <div>2023년 8월 ~ 11월 (3개월)</div>
             </div>
             <div className="grid grid-cols-2 gap-x-4">
               <div>직책: Admin Developer</div>
