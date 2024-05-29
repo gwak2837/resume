@@ -172,37 +172,274 @@ export default function HomePage({ params }: PageProps) {
             </a>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Frontend Engineer</div>
-            <div>부서: 만타제품그룹(20명) ⊃ 엔지니어링팀(10명)</div>
-            <div>직위: Junior</div>
+            <div>매출: 2023년 2,154억원</div>
+            <div>자산: 2023년 2,386억원</div>
+            <div>총원: 2023년 12월 484명</div>
             <div>
               유형: <소득유형Badge type={소득Type.일반근로자_정규직} /> (수습 3개월)
             </div>
           </div>
           <div>
-            역할: 만타 오리지널 콘텐츠를 제공하는 글로벌 웹툰 구독 서비스, 'Manta - Unlimited Comics
-            Perfect to Binge' React Native App (
-            <a
-              href="https://play.google.com/store/apps/details?id=net.manta.comic&hl=en&gl=US&pli=1"
-              target="_blank"
-            >
-              Android
-            </a>{' '}
-            ·{' '}
-            <a
-              href="https://apps.apple.com/kr/app/manta-unlimited-comics/id1536116642"
-              target="_blank"
-            >
-              iOS
-            </a>
-            ),{' '}
-            <a href="https://manta.net/en" target="_blank">
-              PWA Web
-            </a>{' '}
-            개발
+            설명: 글로벌 시장을 무대로 웹툰, 웹소설, 만화, 전자책 등을 온라인으로 제공하는 콘텐츠
+            플랫폼 기업
+          </div>
+          <div className="border-l-2 pl-4">
+            <div className="grid grid-cols-2 gap-4 mt-6 mb-4 font-semibold">
+              <h4>RIDI 웹</h4>
+              <div>2024년 4월 1일 ~ 현재</div>
+            </div>
+            <div className="grid grid-cols-2 gap-x-4">
+              <div>직책: Frontend Engineer</div>
+              <div>부서: 개발센터(50명) ⊃ 웹팀(6명)</div>
+              <div>직위: Junior</div>
+            </div>
+            <div>
+              역할: 국내 전자책 시장에서 점유율 50% 이상을 차지하는 리디북스의{' '}
+              <a
+                href="https://apps.apple.com/kr/app/manta-unlimited-comics/id1536116642"
+                target="_blank"
+              >
+                웹 사이트
+              </a>
+              를 개발함
+            </div>
+            <div className="flex gap-0.5 my-2 items-center">
+              <a
+                href="https://ridibooks.com"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+              >
+                <div className="flex gap-1 items-center">
+                  <Image
+                    src="/images/ridi-icon.ico"
+                    alt="ridi"
+                    width="282"
+                    height="282"
+                    className="h-5 w-5 border rounded"
+                  />
+                  <h5 className="underline-offset-4 font-medium text-sm underline text-black decoration-gray-300 ">
+                    ridibooks.com
+                  </h5>
+                </div>
+              </a>
+            </div>
+            <div className="flex flex-wrap gap-1 my-2">
+              <a href="https://reactjs.org/" rel="noreferrer" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/React.js-61DAFB?style=flat-square&logo=react&logoColor=black"
+                  alt="React Badge"
+                />
+              </a>
+              <a href="https://nextjs.org" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"
+                  alt="next.js"
+                />
+              </a>
+              <a href="https://ko.redux.js.org/" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=Redux&logoColor=white"
+                  alt="Redux"
+                />
+              </a>
+              <a href="https://graphql.org/" rel="noreferrer" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white"
+                  alt="GraphQL Badge"
+                />
+              </a>
+              <a href="https://www.php.net/" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=PHP&logoColor=white"
+                  alt="PHP"
+                />
+              </a>
+              <a href="https://www.mysql.com/" rel="noreferrer" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"
+                  alt="MySQL Badge"
+                />
+              </a>
+              <a href="https://aws.amazon.com/ko/" rel="noreferrer" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white"
+                  alt="AWS Badge"
+                />
+              </a>
+            </div>
+            <ol>
+              <li>
+                Feature flag: 신규 기능을 출시하는 과정에서, 추후 배포 시 의도하지 않은 장애가
+                발생했을 때 빠르게 대응하기 위해 기능 단위로 GrowthBook에서 피처 플래그를 설정하고
+                배포 후 Sentry를 통해 에러를 모니터링함
+              </li>
+              <li>
+                Trunk-Based: 브랜치 머지 시 충돌을 최소화하고, CI 과정을 안전하게 유지하기 위해 잦은
+                브랜치 머지가 수월한 Trunk 기반 개발 전략을 선택함
+              </li>
+            </ol>
+          </div>
+          <div className="border-l-2 pl-4">
+            <div className="grid grid-cols-2 gap-4 mt-6 mb-4 font-semibold">
+              <div>Manta - Unlimited Comics Perfect to Binge</div>
+              <div>2023년 11월 27일 ~ 2024년 3월 31일 (4개월)</div>
+            </div>
+            <div className="grid grid-cols-2 gap-x-4">
+              <div>직책: Frontend Engineer</div>
+              <div>부서: 만타제품그룹(20명) ⊃ 엔지니어링팀(10명)</div>
+              <div>직위: Junior</div>
+            </div>
+            <div>
+              역할: 북미 웹툰 시장 점유율 2위인 글로벌 웹툰 서비스 Manta의 React Native 앱(
+              <a
+                href="https://play.google.com/store/apps/details?id=net.manta.comic&hl=en&gl=US&pli=1"
+                target="_blank"
+              >
+                Android
+              </a>{' '}
+              ·{' '}
+              <a
+                href="https://apps.apple.com/kr/app/manta-unlimited-comics/id1536116642"
+                target="_blank"
+              >
+                iOS
+              </a>
+              )과 Next.js 기반{' '}
+              <a href="https://manta.net/en" target="_blank">
+                웹 사이트
+              </a>
+              를 개발함{' '}
+              <a
+                href="https://files-scs.pstatic.net/2024/01/03/mpZT5kjudA/%EC%9B%B9%ED%88%B0%EC%82%B0%EC%97%85_%EB%B0%B8%EB%A5%98%ED%8C%8C%EC%9D%B8%EB%8D%94.pdf"
+                target="_blank"
+                className="text-xs"
+              >
+                (2022년 점유율 9.8%)
+              </a>
+            </div>
+            <div className="flex gap-0.5 my-2 items-center">
+              <a
+                href="https://manta.net/en"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+              >
+                <div className="flex gap-1 items-center">
+                  <Image
+                    src="/images/manta-logo.png"
+                    alt="manta"
+                    width="282"
+                    height="282"
+                    className="h-4 w-4"
+                  />
+                  <h5 className="underline-offset-4 font-medium text-sm	underline text-black decoration-gray-300 ">
+                    manta.net
+                  </h5>
+                </div>
+              </a>
+              <a
+                href="https://play.google.com/store/apps/details?id=net.manta.comic&hl=en&gl=US&pli=1"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+              >
+                <div className="flex gap-1 items-center">
+                  <Image
+                    src="/images/manta-logo.png"
+                    alt="manta"
+                    width="282"
+                    height="282"
+                    className="h-4 w-4"
+                  />
+                  <h5 className="underline-offset-4	font-medium text-sm underline text-black decoration-gray-300 ">
+                    Manta (Google Play)
+                  </h5>
+                </div>
+              </a>
+              <a
+                href="https://apps.apple.com/kr/app/manta-unlimited-comics/id1536116642"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+              >
+                <div className="flex gap-1 items-center">
+                  <Image
+                    src="/images/manta-logo.png"
+                    alt="manta"
+                    width="282"
+                    height="282"
+                    className="h-4 w-4"
+                  />
+                  <h5 className="underline-offset-4	font-medium text-sm underline text-black decoration-gray-300 ">
+                    Manta (App Store)
+                  </h5>
+                </div>
+              </a>
+            </div>
+            <div className="flex flex-wrap gap-1 my-2">
+              <a href="https://reactnative.dev/" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/React Native-61DAFB?style=flat-square&logo=React&logoColor=black"
+                  alt="React Native"
+                />
+              </a>
+              <a href="https://nextjs.org" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"
+                  alt="next.js"
+                />
+              </a>
+              <a href="https://ko.redux.js.org/" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=Redux&logoColor=white"
+                  alt="Redux"
+                />
+              </a>
+              <a href="https://redux-toolkit.js.org/" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/Redux Tookit-764ABC?style=flat-square&logo=Redux&logoColor=white"
+                  alt="Redux Tookit"
+                />
+              </a>
+              <a href="https://vanilla-extract.style/" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/Vanilla Extract-C2FCED?style=flat-square&logo=Vanilla Extract&logoColor=white"
+                  alt="Vanilla Extract"
+                />
+              </a>
+              <a href="https://styled-components.com/" rel="noreferrer" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/Styled-DB7093?style=flat-square&logo=styled-components&logoColor=white"
+                  alt="styled Badge"
+                />
+              </a>
+              <a href="https://cloud.google.com/gcp/" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/Google Cloud-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
+                  alt="GCP Badge"
+                />
+              </a>
+            </div>
+            <ol>
+              <li>
+                국제화: 팀 내 linguist와 Phrase 서비스를 통해 다양한 언어의 번역 파일을 관리하고,
+                i18next 라이브러리를 활용하여 다국어 및 지역화 기능을 구현함.
+              </li>
+              <li>
+                프랑스어 출시: 프랑스어를 사용하는 사용자를 위해 국가별 화폐 및 날짜 형식, 언어별
+                텍스트 길이에 따른 디자인 차이 등을 고려하여 사용자에게 향샹된 현지화 경험을 제공함.
+              </li>
+              <li>
+                이벤트: 사용자 행동 분석과 안정적인 서비스 운영을 위해 Firebase와 Braze를 활용하여
+                자체 이벤트를 기록하고, 오류 발생 시 Crashlytics에 로그를 기록함. 이를 바탕으로 CS
+                문의 등 다양한 상황에서 Google Cloud 콘솔의 로그 탐색기를 활용하여 사용자의 행동
+                기록을 분석하여 문제를 해결함.
+              </li>
+            </ol>
           </div>
         </li>
-        <div className="border w-full my-6" />
+        <div className="border w-full my-8" />
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
             <a
@@ -223,19 +460,197 @@ export default function HomePage({ params }: PageProps) {
             </a>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Admin Developer</div>
-            <div>부서: Housing Loan Squad (12명)</div>
-            <div>직위: 팀원</div>
+            <div>매출: 2023년 1조 2,609억원 (개별)</div>
+            <div>자본: 2023년 1조 5,052억원 (개별)</div>
+            <div>총원: 2023년 12월 512명</div>
             <div>
               유형: <소득유형Badge type={소득Type.일반근로자_계약직} />
             </div>
           </div>
           <div>
-            역할: 대출 관련 프로세스 자동화로 토스씨엑스 담당자의 업무 효율성을 높이며, 대출 고객의
-            불편함을 최소화하는 토스뱅크 여신 심사·관리·운영 시스템(LUMOS, 루모스) 개발
+            설명: 토스의 운영사인 (주)비바리퍼블리카에서 만든 대한민국의 3번째 인터넷 전문 은행
+          </div>
+
+          <div className="border-l-2 pl-4">
+            <div className="grid grid-cols-2 gap-4 mt-6 mb-4 font-semibold">
+              <h4>토스뱅크 루모스 (여신 심사·관리·운영 시스템)</h4>
+              <div>2023년 8월 7일 ~ 11월 6일 (3개월)</div>
+            </div>
+            <div className="grid grid-cols-2 gap-x-4">
+              <div>직책: Admin Developer</div>
+              <div>부서: Housing Loan Squad (12명)</div>
+              <div>직위: 팀원</div>
+            </div>
+            <div>
+              역할: 대출 관련 프로세스 자동화로 토스씨엑스 담당자의 업무 효율성을 높이며, 대출
+              고객의 불편함을 최소화하는 토스뱅크 여신 심사·관리·운영 시스템(루모스)을 Next.js와
+              Toss Design System 기반으로 개발함
+            </div>
+            <div className="flex flex-wrap gap-1 my-2">
+              <a href="https://nextjs.org" rel="noreferrer" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/Next.js 13-000000?style=flat-square&logo=next.js&logoColor=white"
+                  alt="next.js"
+                />
+              </a>
+              <a href="https://toss.im/slash-21/sessions/3-4" rel="noreferrer" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/Toss Design System-0064FF?style=flat-square&logoColor=white"
+                  alt="toss design system"
+                />
+              </a>
+              <a href="https://tanstack.com/query/v4/" rel="noreferrer" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/React Query-FF4154?style=flat-square&logo=react-query&logoColor=white"
+                  alt="React Query Badge"
+                />
+              </a>
+              <a href="https://zod.dev/" rel="noreferrer" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/Zod-3E67B1?style=flat-square&logo=zod&logoColor=white"
+                  alt="zod"
+                />
+              </a>
+              <a href="https://www.framer.com/" rel="noreferrer" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/Framer-0055FF?style=flat-square&logo=framer&logoColor=white"
+                  alt="framer"
+                />
+              </a>
+              <a href="https://www.elastic.co/kr/kibana" rel="noreferrer" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/Kibana-005571?style=flat-square&logo=kibana&logoColor=white"
+                  alt="kibana"
+                />
+              </a>
+              <div className="pr-2" />
+              <a href="" rel="noreferrer" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white"
+                  alt="Jira Badge"
+                />
+              </a>
+            </div>
+            <ol>
+              <li>
+                전월세보증금대출 출시 전후 토스씨엑스 팀원과 소통하며 서류심사, 사후관리, 지킴보증
+                관련 기능을 개발함
+              </li>
+              <li>
+                Suspense 컴포넌트와 ErrorBoundary 개념을 이용해 네트워크 상태를 선언적으로 관리함
+              </li>
+              <li>
+                React Query를 사용해 응답 순서가 보장되지 않는 네트워크 요청을 비동기로 관리함
+              </li>
+              <li>
+                Promise를 활용해 Modal, Dialog 등의 컴포넌트 열기/닫기 로직을 선언적으로 관리함
+              </li>
+              <li>
+                <code>ts-pattern</code>의 match 함수와 Funnel 패턴을 활용해 다단계 페이지 이동을
+                명시적으로 관리함
+              </li>
+              <li>
+                검색 조건을 querystring에 저장해 페이지 이동이 일어나도 입력했던 검색 조건을
+                유지시킴
+              </li>
+              <li>
+                디자이너 팀원이 프레이머로 제작한 시안과 토스 디자인 시스템을 기반으로 화면
+                프로토타입을 빠르게 구현함
+              </li>
+              <li>
+                서비스 기능 장애가 발생했을 때 관련 커밋을 롤백한 후 Kibana 검색 및 집계 기능을
+                사용하여 오류 발생 주기와 원인을 분석함. 또한 해결 방안을 논의해 문서로 남긴 후
+                개선된 코드를 제안하고 구현함
+              </li>
+              <li>LUMOS 프로젝트 Docker 이미지 빌드 시간을 305초 → 213초로 (30%) 개선함</li>
+              <li>
+                사전에 팀의 코드 컨벤션과 브랜치 전략을 논의하고{' '}
+                <a
+                  href="https://blog.banksalad.com/tech/banksalad-code-review-culture/"
+                  target="_blank"
+                >
+                  Pn 룰
+                </a>{' '}
+                등을 공유해 Code Review 효율성을 높임
+              </li>
+              <li>
+                연관된 코드는 가까운 곳에 배치하여 컴포넌트 응집도를 높이고, 로직 세부 구현은
+                hook으로 숨겨 코드 파악에 필수적인 정보가 잘 보이도록 개선함
+              </li>
+            </ol>
           </div>
         </li>
       </ul>
+      <h2 className="text-3xl my-8 ">{dict.학력[lang]}</h2>
+      <table>
+        <thead>
+          <tr>
+            <td>{dict.학력_이름[lang]}</td>
+            <td>{dict.세부[lang]}</td>
+            <td>{dict.기간[lang]}</td>
+            <td>{dict.비고[lang]}</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td className="font-semibold">
+              <a href="https://www.cau.ac.kr" target="_blank" rel="noreferrer">
+                {dict.중앙대학교[lang]}
+              </a>
+            </td>
+            <td>
+              <a href="/images/학위증.webp" target="_blank">
+                {dict.학력_학위[lang]}
+              </a>
+              <div className="text-xs">(MAGNA CUM LAUDE)</div>
+            </td>
+            <td>
+              <a href="/pdf/중앙대학교-졸업증명서.pdf" target="_blank">
+                {dict.학력_기간[lang]}
+              </a>
+            </td>
+            <td>
+              <a href="/images/2022-univ.webp" target="_blank">
+                {dict.학력_전체학점[lang]}
+              </a>
+              <br />
+              {dict.학력_전공학점[lang]}
+            </td>
+          </tr>
+          <tr>
+            <td className="font-semibold">
+              <a href="https://school.jbedu.kr/honam-h" target="_blank" rel="noreferrer">
+                {dict.호남고등학교[lang]}
+              </a>
+            </td>
+            <td>{dict.호남고등학교_세부[lang]}</td>
+            <td>
+              <a href="/pdf/호남고등학교-생활기록부.pdf" target="_blank">
+                {dict.호남고등학교_기간[lang]}
+              </a>
+            </td>
+            <td>
+              <a href="/pdf/호남고등학교-성적증명서.pdf" target="_blank">
+                {dict.호남고등학교_성적[lang]}
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td className="font-semibold">
+              <a href="https://school.jbedu.kr/jb-hs" target="_blank" rel="noreferrer">
+                {dict.화산중학교[lang]}
+              </a>
+            </td>
+            <td>{dict.기숙형자율학교[lang]}</td>
+            <td>{dict.화산중학교_기간[lang]}</td>
+            <td>
+              <a href="/pdf/완주화산중학교-성적증명서.pdf" target="_blank">
+                {dict.화산중학교_성적[lang]}
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
       <h2 className="text-3xl my-8">기술</h2>
       <h4 className="my-2">Language</h4>
       <div className="flex gap-1">
@@ -503,76 +918,6 @@ export default function HomePage({ params }: PageProps) {
           </div>
         </div>
       </div>
-      <h2 className="text-3xl my-8 ">{dict.학력[lang]}</h2>
-      <table>
-        <thead>
-          <tr>
-            <td>{dict.학력_이름[lang]}</td>
-            <td>{dict.세부[lang]}</td>
-            <td>{dict.기간[lang]}</td>
-            <td>{dict.비고[lang]}</td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td className="font-semibold">
-              <a href="https://www.cau.ac.kr" target="_blank" rel="noreferrer">
-                {dict.중앙대학교[lang]}
-              </a>
-            </td>
-            <td>
-              <a href="/images/학위증.webp" target="_blank">
-                {dict.학력_학위[lang]}
-              </a>
-              <div className="text-xs">(MAGNA CUM LAUDE)</div>
-            </td>
-            <td>
-              <a href="/pdf/중앙대학교-졸업증명서.pdf" target="_blank">
-                {dict.학력_기간[lang]}
-              </a>
-            </td>
-            <td>
-              <a href="/images/2022-univ.webp" target="_blank">
-                {dict.학력_전체학점[lang]}
-              </a>
-              <br />
-              {dict.학력_전공학점[lang]}
-            </td>
-          </tr>
-          <tr>
-            <td className="font-semibold">
-              <a href="https://school.jbedu.kr/honam-h" target="_blank" rel="noreferrer">
-                {dict.호남고등학교[lang]}
-              </a>
-            </td>
-            <td>{dict.호남고등학교_세부[lang]}</td>
-            <td>
-              <a href="/pdf/호남고등학교-생활기록부.pdf" target="_blank">
-                {dict.호남고등학교_기간[lang]}
-              </a>
-            </td>
-            <td>
-              <a href="/pdf/호남고등학교-성적증명서.pdf" target="_blank">
-                {dict.호남고등학교_성적[lang]}
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td className="font-semibold">
-              <a href="https://school.jbedu.kr/jb-hs" target="_blank" rel="noreferrer">
-                {dict.화산중학교[lang]}
-              </a>
-            </td>
-            <td>{dict.기숙형자율학교[lang]}</td>
-            <td>{dict.화산중학교_기간[lang]}</td>
-            <td>
-              <a href="/pdf/완주화산중학교-성적증명서.pdf" target="_blank">
-                {dict.화산중학교_성적[lang]}
-              </a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
       <h2 className="text-3xl my-8">수상</h2>
       <ul>
         <li>
@@ -1284,156 +1629,6 @@ export default function HomePage({ params }: PageProps) {
       <div className="my-8" />
       <h1 className="text-4xl mb-8 font-semibold w-full break-before-page">포트폴리오</h1>
       <h2 className="text-3xl my-8">프로젝트</h2>
-      <div className="grid grid-cols-[2fr_3fr_2fr] gap-4 my-4">
-        <h4>Manta (만타)</h4>
-        <div>만타제품그룹(20명) ⊃ 엔지니어링팀(10명)</div>
-        <div>2023년 11월 27일 ~ 현재</div>
-      </div>
-      <div className="flex gap-0.5 my-2 items-center">
-        <a
-          href="https://github.com/ridi/manta"
-          target="_blank"
-          rel="noreferrer"
-          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
-        >
-          <div className="flex gap-1 items-center">
-            <Image src="/images/github.svg" alt="github" width="16" height="16" />
-            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
-              manta (Priv.)
-            </h5>
-          </div>
-        </a>
-        <a
-          href="https://manta.net/en"
-          target="_blank"
-          rel="noreferrer"
-          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
-        >
-          <div className="flex gap-1 items-center">
-            <Image
-              src="/images/manta-logo.png"
-              alt="manta"
-              width="282"
-              height="282"
-              className="h-4 w-4"
-            />
-            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
-              manta.net
-            </h5>
-          </div>
-        </a>
-        <a
-          href="https://play.google.com/store/apps/details?id=net.manta.comic&hl=en&gl=US&pli=1"
-          target="_blank"
-          rel="noreferrer"
-          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
-        >
-          <div className="flex gap-1 items-center">
-            <Image
-              src="/images/manta-logo.png"
-              alt="manta"
-              width="282"
-              height="282"
-              className="h-4 w-4"
-            />
-            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
-              Manta (Google Play)
-            </h5>
-          </div>
-        </a>
-        <a
-          href="https://apps.apple.com/kr/app/manta-unlimited-comics/id1536116642"
-          target="_blank"
-          rel="noreferrer"
-          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
-        >
-          <div className="flex gap-1 items-center">
-            <Image
-              src="/images/manta-logo.png"
-              alt="manta"
-              width="282"
-              height="282"
-              className="h-4 w-4"
-            />
-            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
-              Manta (App Store)
-            </h5>
-          </div>
-        </a>
-      </div>
-      <div>Unlimited Comics Perfect to Binge (글로벌 웹툰 구독 서비스)</div>
-      <div className="flex flex-wrap gap-1 my-2">
-        <a href="https://reactnative.dev/" target="_blank">
-          <img
-            src="https://img.shields.io/badge/React Native-61DAFB?style=flat-square&logo=React&logoColor=black"
-            alt="React Native"
-          />
-        </a>
-        <a href="https://nextjs.org" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"
-            alt="next.js"
-          />
-        </a>
-        <a href="https://ko.redux.js.org/" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=Redux&logoColor=white"
-            alt="Redux"
-          />
-        </a>
-        <a href="https://redux-toolkit.js.org/" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Redux Tookit-764ABC?style=flat-square&logo=Redux&logoColor=white"
-            alt="Redux Tookit"
-          />
-        </a>
-        <a href="https://vanilla-extract.style/" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Vanilla Extract-C2FCED?style=flat-square&logo=Vanilla Extract&logoColor=white"
-            alt="Vanilla Extract"
-          />
-        </a>
-        <a href="https://styled-components.com/" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Styled-DB7093?style=flat-square&logo=styled-components&logoColor=white"
-            alt="styled Badge"
-          />
-        </a>
-        <a href="https://cloud.google.com/gcp/" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Google Cloud-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
-            alt="GCP Badge"
-          />
-        </a>
-      </div>
-      <ol>
-        <li>
-          북미 웹툰 시장 점유율 2위인 글로벌 웹툰 서비스 Manta의 Frontend 분야를 개발함{' '}
-          <a
-            href="https://files-scs.pstatic.net/2024/01/03/mpZT5kjudA/%EC%9B%B9%ED%88%B0%EC%82%B0%EC%97%85_%EB%B0%B8%EB%A5%98%ED%8C%8C%EC%9D%B8%EB%8D%94.pdf"
-            target="_blank"
-            className="text-xs"
-          >
-            (2022년 점유율 9.8%)
-          </a>
-        </li>
-        <li>
-          React 문법을 기반으로 한 React Native 및 Next.js를 활용하여 코드 유지 관리 비용을
-          최소화하여 앱 및 웹 환경에서 고객에게 서비스를 제공함
-        </li>
-        <li>
-          팀 내 linguist와 Phrase 서비스를 통해 다양한 언어의 번역 파일을 관리하고, i18next
-          라이브러리를 활용하여 다국어 및 지역화 기능을 구현함. 국가별 화폐 및 날짜 형식, 언어별
-          텍스트 길이에 따른 디자인 차이 등을 고려하여 사용자들에게 향샹된 현지화 경험을 제공함.
-        </li>
-        <li>
-          사용자 행동 분석과 안정적인 서비스 운영을 위해 Firebase와 Braze를 활용하여 자체 이벤트를
-          기록하고, 오류 발생 시 Crashlytics에 로그를 기록함. 이를 바탕으로 CS 문의 등 다양한
-          상황에서 Google Cloud 콘솔의 로그 탐색기를 활용하여 사용자의 행동 기록을 분석하여 문제를
-          해결함.
-        </li>
-      </ol>
-      <div className="border w-full my-6" />
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>OFFICE AI</h4>
         <div>4명</div>
@@ -1545,118 +1740,6 @@ export default function HomePage({ params }: PageProps) {
           className="border"
         />
       </div>
-      <div className="border w-full my-6" />
-      <div className="grid grid-cols-[2fr_2fr_3fr] gap-4 my-4">
-        <h4>
-          토스뱅크 LUMOS, 루모스 <br />
-          (여신 심사·관리·운영 시스템)
-        </h4>
-        <div>개발: 6명 | 비개발: 6명</div>
-        <a href="/pdf/토스뱅크-경력증명서.pdf" target="_blank">
-          <div>2023년 8월 7일 ~ 11월 6일 (3개월)</div>
-        </a>
-      </div>
-      <div className="flex gap-0.5 my-2">
-        <a
-          href="https://github.tossbank.it/bank-lumos"
-          target="_blank"
-          rel="noreferrer"
-          className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
-        >
-          <div className="flex gap-1 items-center">
-            <Image src="/images/github.svg" alt="github" width="16" height="16" />
-            <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
-              bank-lumos (Priv.)
-            </h5>
-          </div>
-        </a>
-      </div>
-      <div>
-        기존 은행에서 사용하는 통합단말을 대체하면서, 토스씨엑스 내부적으로 사용하는 여신
-        심사·관리·운영 시스템을 Next.js와 Toss Design System 기반으로 개발함
-      </div>
-      <div className="flex flex-wrap gap-1 my-2">
-        <a href="https://nextjs.org" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Next.js 13-000000?style=flat-square&logo=next.js&logoColor=white"
-            alt="next.js"
-          />
-        </a>
-        <a href="https://toss.im/slash-21/sessions/3-4" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Toss Design System-0064FF?style=flat-square&logoColor=white"
-            alt="toss design system"
-          />
-        </a>
-        <a href="https://tanstack.com/query/v4/" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/React Query-FF4154?style=flat-square&logo=react-query&logoColor=white"
-            alt="React Query Badge"
-          />
-        </a>
-        <a href="https://zod.dev/" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Zod-3E67B1?style=flat-square&logo=zod&logoColor=white"
-            alt="zod"
-          />
-        </a>
-        <a href="https://www.framer.com/" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Framer-0055FF?style=flat-square&logo=framer&logoColor=white"
-            alt="framer"
-          />
-        </a>
-        <a href="https://www.elastic.co/kr/kibana" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Kibana-005571?style=flat-square&logo=kibana&logoColor=white"
-            alt="kibana"
-          />
-        </a>
-        <div className="pr-2" />
-        <a href="" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white"
-            alt="Jira Badge"
-          />
-        </a>
-      </div>
-      <ol>
-        <li>
-          전월세보증금대출 상품 출시 전후 토스씨엑스 팀원과 소통하며 서류심사, 사후관리, 지킴보증
-          관련 기능을 개발함
-        </li>
-        <li>Suspense 컴포넌트와 ErrorBoundary 개념을 이용해 네트워크 상태를 선언적으로 관리함</li>
-        <li>React Query를 사용해 응답 순서가 보장되지 않는 네트워크 요청을 비동기로 관리함</li>
-        <li>Promise를 활용해 Modal, Dialog 등의 컴포넌트 열기/닫기 로직을 선언적으로 관리함</li>
-        <li>
-          <code>ts-pattern</code>의 match 함수와 Funnel 패턴을 활용해 다단계 페이지 이동을
-          명시적으로 관리함
-        </li>
-        <li>
-          검색 조건을 querystring에 저장해 페이지 이동이 일어나도 입력했던 검색 조건을 유지시킴
-        </li>
-        <li>
-          디자이너 팀원이 프레이머로 제작한 시안과 토스 디자인 시스템을 기반으로 화면 프로토타입을
-          빠르게 구현함
-        </li>
-        <li>
-          서비스 기능 장애가 발생했을 때 관련 커밋을 롤백한 후 Kibana 검색 및 집계 기능을 사용하여
-          오류 발생 주기와 원인을 분석함. 또한 해결 방안을 논의해 문서로 남긴 후 개선된 코드를
-          제안하고 구현함
-        </li>
-        <li>LUMOS 프로젝트 Docker 이미지 빌드 시간을 305초 → 213초로 (30%) 개선함</li>
-        <li>
-          사전에 팀의 코드 컨벤션과 브랜치 전략을 논의하고{' '}
-          <a href="https://blog.banksalad.com/tech/banksalad-code-review-culture/" target="_blank">
-            Pn 룰
-          </a>{' '}
-          등을 공유해 Code Review 효율성을 높임
-        </li>
-        <li>
-          연관된 코드는 가까운 곳에 배치하여 컴포넌트 응집도를 높이고, 로직 세부 구현은 hook으로
-          숨겨 코드 파악에 필수적인 정보가 잘 보이도록 개선함
-        </li>
-      </ol>
       <div className="border w-full my-6" />
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>HOMI AI</h4>
