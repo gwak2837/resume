@@ -172,8 +172,8 @@ export default function HomePage({ params }: PageProps) {
             </a>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
-            <div>매출: 2023년 2,154억원</div>
-            <div>자산: 2023년 2,386억원</div>
+            <div>매출: 2023년 2,154억원 (개별)</div>
+            <div>자산: 2023년 2,386억원 (개별)</div>
             <div>총원: 2023년 12월 484명</div>
             <div>
               유형: <소득유형Badge type={소득Type.일반근로자_정규직} /> (수습 3개월)
