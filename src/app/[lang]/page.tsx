@@ -266,9 +266,17 @@ export default function HomePage({ params }: PageProps) {
             </div>
             <ol>
               <li>
+                만화e북 웹 뷰어 출시: 리디북스의 웹 뷰어를 개선하여 사용자가 만화를 더 편리하게 볼
+                수 있도록 함
+              </li>
+              <li>
+                리디셀렉트 B2B 출시: 기존 B2C 형태의 리디셀렉트를 개선하여 다른 기업이 임직원에게
+                전자책 구독 서비스를 복지 차원에서 제공할 수 있게 도와주는 서비스를 출시함
+              </li>
+              <li>
                 배포 및 롤백 시스템 구축: GrowthBook 서비스를 활용하여 feature flag를 설정하고
                 마이그레이션과 신규 기능 출시 시 피처 플래그를 활용한 배포를 담당함
-                <ol className="text-sm">
+                <ol className="text-sm text-slate-600">
                   <li>
                     Feature flag: 신규 기능을 출시하기 전에 사용자 세그먼트, 환경, 기능 단위로
                     GrowthBook에서 피처 플래그를 설정하여 원활한 기능 QA를 지원함. 배포 후 장애가
@@ -282,10 +290,6 @@ export default function HomePage({ params }: PageProps) {
                     오류 모니터링: Sentry와 DataDog를 활용하여 서비스 오류를 모니터링하고 관리함
                   </li>
                 </ol>
-              </li>
-              <li>
-                만화e북 웹 뷰어 출시: 리디북스의 웹 뷰어를 개선하여 사용자가 만화를 더 편리하게 볼
-                수 있도록 함
               </li>
             </ol>
           </div>
@@ -431,18 +435,18 @@ export default function HomePage({ params }: PageProps) {
             </div>
             <ol>
               <li>
-                국제화: 팀 내 linguist와 Phrase 서비스를 통해 다양한 언어의 번역 파일을 관리하고,
-                i18next 라이브러리를 활용하여 다국어 및 지역화 기능을 구현함.
-              </li>
-              <li>
                 프랑스어 출시: 프랑스어를 사용하는 사용자를 위해 국가별 화폐 및 날짜 형식, 언어별
                 텍스트 길이에 따른 디자인 차이 등을 고려하여 사용자에게 향샹된 현지화 경험을 제공함.
               </li>
               <li>
-                이벤트: 사용자 행동 분석과 안정적인 서비스 운영을 위해 Firebase와 Braze를 활용하여
-                자체 이벤트를 기록하고, 오류 발생 시 Crashlytics에 로그를 기록함. 이를 바탕으로 CS
-                문의 등 다양한 상황에서 Google Cloud 콘솔의 로그 탐색기를 활용하여 사용자의 행동
-                기록을 분석하여 문제를 해결함.
+                국제화: 팀 내 linguist와 Phrase 서비스를 통해 다양한 언어의 번역 파일을 관리하고,
+                i18next 라이브러리를 활용하여 다국어 및 지역화 기능을 구현함.
+              </li>
+              <li>
+                이벤트 추적: 사용자 행동 분석과 안정적인 서비스 운영을 위해 Firebase와 Braze를
+                활용하여 자체 이벤트를 기록하고, 오류 발생 시 Crashlytics에 로그를 기록함. 이를
+                바탕으로 CS 문의 등 다양한 상황에서 Google Cloud 콘솔의 로그 탐색기를 활용하여
+                사용자의 행동 기록을 분석하여 문제를 해결함.
               </li>
             </ol>
           </div>
@@ -536,38 +540,28 @@ export default function HomePage({ params }: PageProps) {
             </div>
             <ol>
               <li>
-                전월세보증금대출 출시 전후 토스씨엑스 팀원과 소통하며 서류심사, 사후관리, 지킴보증
-                관련 기능을 개발함
+                전월세보증금대출 출시: 토스뱅크 개발자와 토스씨엑스 담당자와 소통하며 대출 서류심사,
+                사후관리, 지킴보증 관련 기능을 개발함
               </li>
               <li>
-                Suspense 컴포넌트와 ErrorBoundary 개념을 이용해 네트워크 상태를 선언적으로 관리함
+                선언형 프로그래밍: Suspense 컴포넌트와 ErrorBoundary 개념을 이용해 네트워크 상태를
+                선언적으로 관리하고, React Query를 사용해 응답 순서가 보장되지 않는 네트워크 요청을
+                비동기로 관리함. 또한 Promise를 활용해 Modal, Dialog 등의 컴포넌트 열기/닫기 로직을
+                선언적으로 관리하고, Funnel 패턴을 활용해 다단계 페이지 이동도 선언적으로 관리함.
+                그리고 연관된 코드는 가까운 곳에 배치하여 컴포넌트 응집도를 높이고, 로직 세부 구현은
+                hook으로 숨겨 코드 파악에 필수적인 정보가 잘 보이도록 개선함
               </li>
               <li>
-                React Query를 사용해 응답 순서가 보장되지 않는 네트워크 요청을 비동기로 관리함
+                장애 대응: 서비스 기능 장애가 발생했을 때 관련 커밋을 롤백한 후 Kibana 검색 및 집계
+                기능을 사용하여 오류 발생 주기와 원인을 분석함. 또한 해결 방안을 논의해 문서로 남긴
+                후 개선된 코드를 제안하고 구현함
               </li>
               <li>
-                Promise를 활용해 Modal, Dialog 등의 컴포넌트 열기/닫기 로직을 선언적으로 관리함
+                CI 최적화: LUMOS 프로젝트 Docker 이미지 빌드 시간을 305초 → 213초로 (30%) 개선함
               </li>
+
               <li>
-                <code>ts-pattern</code>의 match 함수와 Funnel 패턴을 활용해 다단계 페이지 이동을
-                명시적으로 관리함
-              </li>
-              <li>
-                검색 조건을 querystring에 저장해 페이지 이동이 일어나도 입력했던 검색 조건을
-                유지시킴
-              </li>
-              <li>
-                디자이너 팀원이 프레이머로 제작한 시안과 토스 디자인 시스템을 기반으로 화면
-                프로토타입을 빠르게 구현함
-              </li>
-              <li>
-                서비스 기능 장애가 발생했을 때 관련 커밋을 롤백한 후 Kibana 검색 및 집계 기능을
-                사용하여 오류 발생 주기와 원인을 분석함. 또한 해결 방안을 논의해 문서로 남긴 후
-                개선된 코드를 제안하고 구현함
-              </li>
-              <li>LUMOS 프로젝트 Docker 이미지 빌드 시간을 305초 → 213초로 (30%) 개선함</li>
-              <li>
-                사전에 팀의 코드 컨벤션과 브랜치 전략을 논의하고{' '}
+                소통: 사전에 팀의 코드 컨벤션과 브랜치 전략을 논의하고{' '}
                 <a
                   href="https://blog.banksalad.com/tech/banksalad-code-review-culture/"
                   target="_blank"
@@ -575,10 +569,6 @@ export default function HomePage({ params }: PageProps) {
                   Pn 룰
                 </a>{' '}
                 등을 공유해 Code Review 효율성을 높임
-              </li>
-              <li>
-                연관된 코드는 가까운 곳에 배치하여 컴포넌트 응집도를 높이고, 로직 세부 구현은
-                hook으로 숨겨 코드 파악에 필수적인 정보가 잘 보이도록 개선함
               </li>
             </ol>
           </div>
