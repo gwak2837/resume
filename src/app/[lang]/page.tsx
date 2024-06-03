@@ -275,11 +275,11 @@ export default function HomePage({ params }: PageProps) {
                     발생하면 해당 피처 플래그를 비활성화해 장애를 빠르게 복구한 경험이 있음
                   </li>
                   <li>
-                    Argo CD/Rollouts: Argo CD와 Argo Rollouts를 활용하여 CI/CD 파이프라인을 구축하고
-                    배포 및 롤백을 자동화함
+                    CD 자동화: Argo CD와 Argo Rollouts를 활용하여 CI/CD 파이프라인을 구축하고 배포
+                    및 롤백을 자동화함
                   </li>
                   <li>
-                    Sentry, DataDog: Sentry와 DataDog를 활용하여 서비스의 에러와 모니터링을 관리함
+                    오류 모니터링: Sentry와 DataDog를 활용하여 서비스 오류를 모니터링하고 관리함
                   </li>
                 </ol>
               </li>
