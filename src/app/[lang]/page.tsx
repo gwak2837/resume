@@ -146,7 +146,7 @@ export default function HomePage({ params }: PageProps) {
               </tr>
               <tr>
                 <td className="border-none p-0">🧑‍🎨</td>
-                <td className="border-none p-0">자전거, 산책, 시사·경제·금융</td>
+                <td className="border-none p-0">자전거, 산책, 독서</td>
               </tr>
             </tbody>
           </table>
@@ -266,13 +266,26 @@ export default function HomePage({ params }: PageProps) {
             </div>
             <ol>
               <li>
-                Feature flag: 신규 기능을 출시하는 과정에서, 추후 배포 시 의도하지 않은 장애가
-                발생했을 때 빠르게 대응하기 위해 기능 단위로 GrowthBook에서 피처 플래그를 설정하고
-                배포 후 Sentry를 통해 에러를 모니터링함
+                배포 및 롤백 시스템 구축: GrowthBook 서비스를 활용하여 feature flag를 설정하고
+                마이그레이션과 신규 기능 출시 시 피처 플래그를 활용한 배포를 담당함
+                <ol className="text-sm">
+                  <li>
+                    Feature flag: 신규 기능을 출시하기 전에 사용자 세그먼트, 환경, 기능 단위로
+                    GrowthBook에서 피처 플래그를 설정하여 원활한 기능 QA를 지원함. 배포 후 장애가
+                    발생하면 해당 피처 플래그를 비활성화해 장애를 빠르게 복구한 경험이 있음
+                  </li>
+                  <li>
+                    Argo CD/Rollouts: Argo CD와 Argo Rollouts를 활용하여 CI/CD 파이프라인을 구축하고
+                    배포 및 롤백을 자동화함
+                  </li>
+                  <li>
+                    Sentry, DataDog: Sentry와 DataDog를 활용하여 서비스의 에러와 모니터링을 관리함
+                  </li>
+                </ol>
               </li>
               <li>
-                Trunk-Based: 브랜치 머지 시 충돌을 최소화하고, CI 과정을 안전하게 유지하기 위해 잦은
-                브랜치 머지가 수월한 Trunk 기반 개발 전략을 선택함
+                만화e북 웹 뷰어 출시: 리디북스의 웹 뷰어를 개선하여 사용자가 만화를 더 편리하게 볼
+                수 있도록 함
               </li>
             </ol>
           </div>
