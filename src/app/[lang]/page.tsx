@@ -1038,7 +1038,7 @@ export default function HomePage({ params }: PageProps) {
           </div>
           <div>
             역할:{' '}
-            <a href="https://www.bemyseason.co.kr/" target="_blank" rel="noreferrer">
+            <a href="https://www.instagram.com/be_myseason/" target="_blank" rel="noreferrer">
               '비마이시즌 - 다시 일하고 싶은 여성의 상호성장 플랫폼'
             </a>{' '}
             MVP 개발
