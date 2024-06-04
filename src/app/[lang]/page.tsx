@@ -251,16 +251,28 @@ export default function HomePage({ params }: PageProps) {
                   alt="PHP"
                 />
               </a>
-              <a href="https://www.mysql.com/" rel="noreferrer" target="_blank">
+              <a href="https://www.mysql.com/" target="_blank">
                 <img
                   src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"
                   alt="MySQL Badge"
                 />
               </a>
-              <a href="https://aws.amazon.com/ko/" rel="noreferrer" target="_blank">
+              <a href="https://argo-cd.readthedocs.io/en/stable/" target="_blank">
                 <img
-                  src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white"
-                  alt="AWS Badge"
+                  src="https://img.shields.io/badge/Argo CD-EF7B4D?style=flat-square&logo=argo&logoColor=white"
+                  alt="Argo Badge"
+                />
+              </a>
+              <a href="https://argo-cd.readthedocs.io/en/stable/" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/Datadog-632CA6?style=flat-square&logo=datadog&logoColor=white"
+                  alt="Datadog Badge"
+                />
+              </a>
+              <a href="https://argo-cd.readthedocs.io/en/stable/" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/Sentry-362D59?style=flat-square&logo=sentry&logoColor=white"
+                  alt="Sentry Badge"
                 />
               </a>
             </div>
@@ -288,7 +300,7 @@ export default function HomePage({ params }: PageProps) {
                     간편화함
                   </li>
                   <li>
-                    오류 모니터링: Sentry와 DataDog를 활용하여 서비스 오류를 모니터링하고 관리함
+                    오류 모니터링: Sentry와 Datadog를 활용하여 서비스 오류를 모니터링하고 관리함
                   </li>
                 </ol>
               </li>
@@ -530,12 +542,6 @@ export default function HomePage({ params }: PageProps) {
                 <img
                   src="https://img.shields.io/badge/Kibana-005571?style=flat-square&logo=kibana&logoColor=white"
                   alt="kibana"
-                />
-              </a>
-              <a href="" rel="noreferrer" target="_blank">
-                <img
-                  src="https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white"
-                  alt="Jira Badge"
                 />
               </a>
             </div>
@@ -2168,7 +2174,7 @@ export default function HomePage({ params }: PageProps) {
       <div className="flex flex-wrap gap-1 my-2">
         <a href="https://nextjs.org" rel="noreferrer" target="_blank">
           <img
-            src="https://img.shields.io/badge/Next.js 13-000000?style=flat-square&logo=next.js&logoColor=white"
+            src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"
             alt="next.js"
           />
         </a>
@@ -2238,7 +2244,7 @@ export default function HomePage({ params }: PageProps) {
       <div className="flex flex-wrap gap-1 my-2">
         <a href="" rel="noreferrer" target="_blank">
           <img
-            src="https://img.shields.io/badge/Next.js 13-000000?style=flat-square&logo=next.js&logoColor=white"
+            src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"
             alt="next.js"
           />
         </a>
@@ -2510,7 +2516,7 @@ export default function HomePage({ params }: PageProps) {
       <div className="flex flex-wrap gap-1 my-2">
         <a href="https://nextjs.org" rel="noreferrer" target="_blank">
           <img
-            src="https://img.shields.io/badge/Next.js 13-000000?style=flat-square&logo=next.js&logoColor=white"
+            src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"
             alt="next.js"
           />
         </a>
@@ -2631,7 +2637,7 @@ export default function HomePage({ params }: PageProps) {
       <div className="flex flex-wrap gap-1 my-2">
         <a href="https://nextjs.org" rel="noreferrer" target="_blank">
           <img
-            src="https://img.shields.io/badge/Next.js 13-000000?style=flat-square&logo=next.js&logoColor=white"
+            src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"
             alt="next.js"
           />
         </a>
