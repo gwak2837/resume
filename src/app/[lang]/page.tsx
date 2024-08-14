@@ -306,9 +306,9 @@ export default function HomePage({ params }: PageProps) {
                 </ol>
               </li>
               <li>
-                테스트 코드: Jest와 React Testing Library로 유닛 테스트를 작성하여 PR 리뷰어의 
-                코드 베이스 이해에 도움을 주고, Playwright로 E2E 테스트를 작성하여 서비스 배포 전 
-                핵심 사용자 플로우가 정상적으로 작동하는지 확인하는 QA 과정을 자동화함
+                테스트 코드: Jest와 React Testing Library로 유닛 테스트를 작성하여 코드 리뷰어가 코드 
+                베이스를 쉽게 이해할 수 있도록 도와주고, Playwright로 E2E 테스트를 작성하여 
+                핵심 사용자 플로우가 정상적으로 작동하는지 자동으로 검증함으로써 서비스 배포 전 QA 과정을 자동화함
               </li>
             </ol>
           </div>
