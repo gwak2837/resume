@@ -300,9 +300,15 @@ export default function HomePage({ params }: PageProps) {
                     간편화함
                   </li>
                   <li>
-                    오류 모니터링: Sentry와 Datadog를 활용하여 서비스 오류를 모니터링하고 관리함
+                    모니터링: Sentry와 Datadog를 활용하여 서비스 오류와 성능을 모니터링하고 팀원끼리 
+                    매주 모여서 서비스 트래픽 특이 사항을 공유하고 오류를 해결하는 시간을 가짐
                   </li>
                 </ol>
+              </li>
+              <li>
+                테스트 코드: Jest와 React Testing Library로 유닛 테스트를 작성하여 PR 리뷰어의 
+                코드 베이스 이해에 도움을 주고, Playwright로 E2E 테스트를 작성하여 서비스 배포 전 
+                핵심 사용자 플로우가 정상적으로 작동하는지 확인하는 QA 과정을 자동화함
               </li>
             </ol>
           </div>
