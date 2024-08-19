@@ -3546,9 +3546,7 @@ export default function HomePage({ params }: PageProps) {
       <h2 className="text-3xl my-8">기술</h2>
       <h3 className="text-2xl my-4">React.js (Next.js)</h3>
       <dl>
-        <li>Recoil.js, Context API 기능으로 전역 상태를 관리함</li>
         <li>React Query, Apollo client, useSWR 등 네트워크 요청 및 응답 데이터를 관리함</li>
-        <li>Next.js 프레임워크 기반 SSR를 개발함</li>
         <li>
           PWA를 적용해 모바일 접근성을 높이고, 브라우저 Notification/Push API로 사용자 재방문율을
           향상함
@@ -3584,7 +3582,6 @@ export default function HomePage({ params }: PageProps) {
         <li>Semantic HTML, SCSS 문법에 익숙함</li>
         <li>keyframe, transition 등을 활용한 애니메이션 구현 가능함</li>
         <li>마우스 Drag&Drop 기능과 스크롤 이벤트를 활용한 애니메이션 구현 가능함</li>
-        <li>Figma, Zeplin, Adobe XD와 같은 디자인 툴을 이용해 디자이너와 협업함</li>
         <li>순수 CSS를 이용해 Drawer, Modal, Carousel을 직접 구현 가능함</li>
       </dl>
       <h3 className="text-2xl my-4">JavaScript</h3>
@@ -3592,7 +3589,6 @@ export default function HomePage({ params }: PageProps) {
         <li>ES2022 까지의 문법 및 JavaScript 엔진에서 사용되는 비동기 개념에 익숙함</li>
         <li>TypeScript와 type 자동 생성 라이브러리를 사용해 개발 생산성을 높임</li>
         <li>esbuild, Webpack 번들러를 사용해 Docker 이미지 크기를 줄임</li>
-        <li>Promise, async await, generator 문법을 사용해 비동기 작업을 구현 가능함</li>
         <li>
           브라우저의{' '}
           <a
@@ -3658,7 +3654,6 @@ export default function HomePage({ params }: PageProps) {
       <dl>
         <li>클라우드 가상 머신에 Docker 기반 SSL 전용 PostgreSQL 서버와 Redis 서버를 구축함</li>
         <li>Cloud Build와 Cloud Run을 활용해 Docker 이미지 빌드 · 배포를 자동화(CI · CD)함</li>
-        <li>Cloud Function을 사용한 Slack 알림봇 개발 가능함</li>
         <li>GCP VPC 네트워크에서 방화벽 규칙을 설정해 요청 IP 또는 포트 범위를 제한함</li>
         <li>Cloud Storage에 이미지 파일을 동적으로 업로드하고 서비스 했음</li>
         <li>Cloud SQL 및 AWS RDS에 클라우드 DB 서버를 구축했음</li>
@@ -3666,11 +3661,9 @@ export default function HomePage({ params }: PageProps) {
       </dl>
       <h3 className="text-2xl my-4">외부 API</h3>
       <dl>
-        <li>카카오 OAuth, Google OAuth, 비바톤 OAuth, 네이버 OAuth 등과 연동 가능함</li>
+        <li>OAuth 2.0 스펙을 따르는 소셜 로그인 기능을 연동할 수 있음</li>
         <li>카카오페이, 토스페이를 사용해 결제 시스템을 자동화할 수 있음</li>
         <li>Google Analytics를 활용한 사이트 통계 분석 경험이 있음</li>
-        <li>네이버지도 API를 활용해 지도 기능을 개발할 수 있음</li>
-        <li>채널톡 API, Telegram API, SOLAPI를 활용해 사용자에게 알림용 메시지를 보낼 수 있음</li>
       </dl>
 
       <div className="w-full text-center text-slate-800 text-sm mt-8">작성일: {date}</div>
