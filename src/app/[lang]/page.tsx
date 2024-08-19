@@ -146,7 +146,7 @@ export default function HomePage({ params }: PageProps) {
               </tr>
               <tr>
                 <td className="border-none p-0">🧑‍🎨</td>
-                <td className="border-none p-0">자전거, 산책, 독서</td>
+                <td className="border-none p-0">자전거, 달리기, 웨이트, 독서</td>
               </tr>
             </tbody>
           </table>
