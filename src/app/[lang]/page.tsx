@@ -300,7 +300,7 @@ export default function HomePage({ params }: PageProps) {
                     간편화함
                   </li>
                   <li>
-                    모니터링: Sentry와 Datadog를 활용하여 서비스 오류와 성능을 모니터링하고 팀원끼리 
+                    모니터링: Sentry와 Datadog를 활용하여 서비스 오류와 성능을 모니터링하고, 팀원끼리 
                     매주 모여서 서비스 트래픽 특이 사항을 공유하고 오류를 해결하는 시간을 가짐
                   </li>
                 </ol>
