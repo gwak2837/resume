@@ -154,7 +154,7 @@ export default function HomePage({ params }: PageProps) {
       </div>
       <p className="my-4 ">{dict.한줄소개[lang]}</p>
       <h2 className="text-3xl my-8">
-        {dict.개발경력[lang]} <span className="text-sm">(3개월+α)</span>
+        {dict.개발경력[lang]} <span className="text-sm">(1년, 2024년 8월 26일 기준)</span>
       </h2>
       <ul>
         <li>
@@ -168,10 +168,10 @@ export default function HomePage({ params }: PageProps) {
               <RidiLogo />
             </a>
             <a href="/pdf/리디-재직증명서.pdf" target="_blank">
-              <div>2023년 11월 27일 ~ 현재 (α개월)</div>
+              <div>2023년 11월 27일 ~ 현재</div>
             </a>
           </div>
-          <div className="grid grid-cols-2 gap-x-4">
+          <div className="grid grid-cols-2 text-sm gap-x-4 gap-y-1 mb-2">
             <div>매출: 2023년 2,154억원 (개별)</div>
             <div>자산: 2023년 2,386억원 (개별)</div>
             <div>총원: 2023년 12월 484명</div>
@@ -180,25 +180,24 @@ export default function HomePage({ params }: PageProps) {
             </div>
           </div>
           <div>
-            설명: 글로벌 시장을 무대로 웹툰, 웹소설, 만화, 전자책 등을 온라인으로 제공하는 콘텐츠
-            플랫폼 기업
+            글로벌 시장을 무대로 웹툰, 웹소설, 만화, 전자책 등을 온라인으로 제공하는 콘텐츠 플랫폼
+            기업
           </div>
           <div className="border-l-2 pl-4">
             <div className="grid grid-cols-2 gap-4 mt-6 mb-4">
               <h4 className="text-lg font-semibold">RIDI 웹</h4>
               <div>2024년 4월 ~ 현재</div>
             </div>
-            <div className="grid grid-cols-2 gap-x-4">
-              <div>직책: Frontend Engineer</div>
+            <div className="grid grid-cols-2 gap-x-4 text-sm mb-1">
+              <div>직책: Frontend Engineer (Junior)</div>
               <div>부서: 개발센터(50명) ⊃ 웹팀(6명)</div>
-              <div>직위: Junior</div>
             </div>
-            <div>
-              역할: 국내 전자책 시장에서 점유율 50% 이상을 차지하는 리디북스의{' '}
-              <a href="https://ridibooks.com" target="_blank">
-                웹 사이트
+            <div className="text-sm">
+              역할: 국내 전자책 시장에서{' '}
+              <a href="https://blog.toss.im/article/fabonika-03-ridi" target="_blank">
+                점유율 50% 이상
               </a>
-              를 개발함
+              을 차지하는 리디북스의 웹 사이트를 개발함
             </div>
             <div className="flex gap-0.5 my-2 items-center">
               <a
@@ -286,8 +285,9 @@ export default function HomePage({ params }: PageProps) {
                 전자책 구독 서비스를 복지 차원에서 제공할 수 있게 도와주는 서비스를 출시함
               </li>
               <li>
-                배포 및 롤백 시스템 구축: GrowthBook 서비스를 활용하여 feature flag를 설정하고
-                마이그레이션과 신규 기능 출시 시 피처 플래그를 활용한 배포를 담당함
+                배포 및 롤백 시스템 구축: GrowthBook 서비스를 활용하여 피처 플래그(feature flag)를
+                설정함. 이를 통해 신규 기능 출시 전에 A/B 테스트로 더 나은 기획을 검증하고,
+                실사용자에게 배포 시 의도치 않게 발생할 수 있는 장애에 대비함.
                 <ol className="text-sm text-slate-600">
                   <li>
                     Feature flag: 신규 기능을 출시하기 전에 사용자 세그먼트, 환경, 기능 단위로
@@ -319,12 +319,11 @@ export default function HomePage({ params }: PageProps) {
               <h4 className="text-lg font-semibold">Manta - Unlimited Comics to Binge</h4>
               <div>2023년 11월 ~ 2024년 3월 (4개월)</div>
             </div>
-            <div className="grid grid-cols-2 gap-x-4">
-              <div>직책: Frontend Engineer</div>
+            <div className="grid grid-cols-2 gap-x-4 text-sm mb-1">
+              <div>직책: Frontend Engineer (Junior)</div>
               <div>부서: 만타제품그룹(20명) ⊃ 엔지니어링팀(10명)</div>
-              <div>직위: Junior</div>
             </div>
-            <div>
+            <div className="text-sm">
               역할: 북미 웹툰 시장 점유율 2위인 글로벌 웹툰 서비스 Manta의 React Native 앱(
               <a
                 href="https://play.google.com/store/apps/details?id=net.manta.comic&hl=en&gl=US&pli=1"
@@ -492,7 +491,7 @@ export default function HomePage({ params }: PageProps) {
               <div>2023년 8월 7일 ~ 11월 6일 (3개월)</div>
             </a>
           </div>
-          <div className="grid grid-cols-2 gap-x-4">
+          <div className="grid grid-cols-2 gap-x-4 text-sm gap-y-1 mb-2">
             <div>매출: 2023년 1조 2,609억원 (개별)</div>
             <div>자본: 2023년 1조 5,052억원 (개별)</div>
             <div>총원: 2023년 12월 512명</div>
@@ -500,9 +499,7 @@ export default function HomePage({ params }: PageProps) {
               유형: <소득유형Badge type={소득Type.일반근로자_계약직} />
             </div>
           </div>
-          <div>
-            설명: 토스의 운영사인 (주)비바리퍼블리카에서 만든 대한민국의 3번째 인터넷 전문 은행
-          </div>
+          <div>토스의 운영사인 (주)비바리퍼블리카에서 만든 대한민국의 3번째 인터넷 전문 은행</div>
 
           <div className="border-l-2 pl-4">
             <div className="grid grid-cols-2 gap-4 mt-6 mb-4">
@@ -511,12 +508,11 @@ export default function HomePage({ params }: PageProps) {
               </h4>
               <div>2023년 8월 ~ 11월 (3개월)</div>
             </div>
-            <div className="grid grid-cols-2 gap-x-4">
-              <div>직책: Admin Developer</div>
+            <div className="grid grid-cols-2 gap-x-4 text-sm mb-1">
+              <div>직책: Admin Developer (팀원)</div>
               <div>부서: Housing Loan Squad (12명)</div>
-              <div>직위: 팀원</div>
             </div>
-            <div>
+            <div className="text-sm mb-3">
               역할: 대출 관련 프로세스 자동화로 토스씨엑스 담당자의 업무 효율성을 높이며, 대출
               고객의 불편함을 최소화하는 토스뱅크 여신 심사·관리·운영 시스템을 Next.js와 Toss Design
               System 기반으로 개발함
@@ -834,7 +830,7 @@ export default function HomePage({ params }: PageProps) {
       </div>
       <div className="flex gap-4">
         <div>
-          <h4 className="my-2">Developer Tool</h4>
+          <h4 className="my-2">Operation Tool</h4>
           <div className="grid gap-1">
             <div className="flex gap-1">
               <a href="https://www.growthbook.io/" target="_blank">
@@ -849,12 +845,7 @@ export default function HomePage({ params }: PageProps) {
                   alt="Jest Badge"
                 />
               </a>
-              <a href="https://analytics.google.com/analytics/web/" target="_blank">
-                <img
-                  src="https://img.shields.io/badge/GA-E37400?style=flat-square&logo=Google Analytics&logoColor=white"
-                  alt="GA Badge"
-                />
-              </a>
+
               <a href="https://sentry.io/welcome/" rel="noreferrer" target="_blank">
                 <img
                   src="https://img.shields.io/badge/Sentry-362D59?style=flat-square&logo=sentry&logoColor=white"
@@ -867,10 +858,16 @@ export default function HomePage({ params }: PageProps) {
                   alt="Argo Badge"
                 />
               </a>
+              <a href="https://analytics.google.com/analytics/web/" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/GA-E37400?style=flat-square&logo=Google Analytics&logoColor=white"
+                  alt="GA Badge"
+                />
+              </a>
               <a href="https://github.com/GoogleChrome/web-vitals" rel="noreferrer" target="_blank">
                 <img
                   src="https://img.shields.io/badge/web--vitals-000000?style=flat-square&logo=web-vitals&logoColor=white"
-                  alt="Vercel Badge"
+                  alt="web-vitals Badge"
                 />
               </a>
             </div>
@@ -979,12 +976,8 @@ export default function HomePage({ params }: PageProps) {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Frontend Developer</div>
+            <div>직책: Frontend Developer (팀원)</div>
             <div>부서: 개발팀 (4명)</div>
-            <div>직위: 팀원</div>
-            <div>
-              유형: <소득유형Badge type={소득Type.사업소득자_개인} />
-            </div>
           </div>
           <div>
             역할: 고등학교 친구가 창업한 스타트업에서{' '}
@@ -1018,12 +1011,8 @@ export default function HomePage({ params }: PageProps) {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Frontend Developer</div>
+            <div>직책: Frontend Developer (개발팀장)</div>
             <div>부서: 개발팀 (2명)</div>
-            <div>직위: 개발팀장</div>
-            <div>
-              유형: <소득유형Badge type={소득Type.사업소득자_개인} />
-            </div>
           </div>
           <div>
             역할:{' '}
@@ -1061,12 +1050,8 @@ export default function HomePage({ params }: PageProps) {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Full stack Developer</div>
+            <div>직책: Full stack Developer (개발팀장)</div>
             <div>부서: 개발팀 (3명)</div>
-            <div>직위: 개발팀장</div>
-            <div>
-              유형: <소득유형Badge type={소득Type.사업소득자_개인} />
-            </div>
           </div>
           <div>역할: '4050 여성 전용 커뮤니티' 알파카살롱 기획 및 MVP 개발</div>
         </li>
@@ -1080,11 +1065,7 @@ export default function HomePage({ params }: PageProps) {
           </div>
           <div className="grid grid-cols-2 gap-x-4">
             <div>직책: 웹 개발 수업 강사</div>
-            <div>
-              유형: <소득유형Badge type={소득Type.사업소득자_개인} />
-            </div>
             <div>부서: 초중등반 (6명)</div>
-            <div>직위: 강사</div>
           </div>
           <div>
             역할: 초등학생/중학생을 대상으로 HTML/CSS/JS 개념 및 자기소개 웹페이지 제작 수업 (주
@@ -1098,18 +1079,13 @@ export default function HomePage({ params }: PageProps) {
               href="https://kimstudy.com/tutor/379acc6f-43dd-4544-8e99-54dc4e2e6b1f"
               target="_blank"
             >
-              <b>과외</b>
+              <b>개인 과외</b>
             </a>
             <a href="/pdf/김과외.pdf" target="_blank">
               2021년 8월 9일 ~ 2022년 2월 6일 (6개월)
             </a>
           </div>
-          <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: 개인 과외 강사</div>
-            <div>
-              유형: <소득유형Badge type={소득Type.사업소득자_개인} />
-            </div>
-          </div>
+          <div className="grid grid-cols-2 gap-x-4"></div>
           <div>
             역할: 대학생을 대상으로 Frontend·Backend·Cloud 개념, 네트워크 OSI 계층,{' '}
             <a
@@ -1118,7 +1094,7 @@ export default function HomePage({ params }: PageProps) {
             >
               SSR·CSR·SSG
             </a>
-            , Database 개념 수업 및 인스타그램 클론 코딩 지도 (주 3회, 1회 2시간)
+            , Database 개념 수업 및 인스타그램 클론 코딩 수업 (주 3회, 1회 2시간)
           </div>
         </li>
         <div className="border w-full my-6" />
@@ -1132,12 +1108,8 @@ export default function HomePage({ params }: PageProps) {
             </a>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Frontend Developer</div>
+            <div>직책: Frontend Developer (개발팀장, 참여연구원)</div>
             <div>부서: 개발팀 (2명)</div>
-            <div>직위: 참여연구원 (개발팀장)</div>
-            <div>
-              유형: <소득유형Badge type={소득Type.기타소득자} />
-            </div>
           </div>
           <div>
             역할: '3차) 블록체인 기술을 이용한 해외 건설프로젝트 스마트 분쟁관리 모델구축 연구' 과제
@@ -1173,12 +1145,8 @@ export default function HomePage({ params }: PageProps) {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Frontend Developer</div>
+            <div>직책: Frontend Developer (인턴)</div>
             <div>부서: Admin 개발팀 (4명)</div>
-            <div>직위: 인턴</div>
-            <div>
-              유형: <소득유형Badge type={소득Type.기타소득자} />
-            </div>
           </div>
           <div>
             역할:{' '}
@@ -1216,12 +1184,8 @@ export default function HomePage({ params }: PageProps) {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Frontend Developer</div>
+            <div>직책: Frontend Developer (인턴)</div>
             <div>부서: 개발부 (3명)</div>
-            <div>직위: 인턴</div>
-            <div>
-              유형: <소득유형Badge type={소득Type.기타소득자} />
-            </div>
           </div>
           <div>역할: '방탈출 리뷰 웹사이트' 기획·디자인 및 MVP 개발</div>
         </li>
@@ -1232,12 +1196,8 @@ export default function HomePage({ params }: PageProps) {
             <div>2019년 9월 16일 ~ 12월 13일 (3개월)</div>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: 수업 조교</div>
+            <div>직책: 수업 조교 (근로장학생)</div>
             <div>부서: ‘컴퓨팅적 사고와 문제 해결’ 과목</div>
-            <div>직위: 근로장학생</div>
-            <div>
-              유형: <소득유형Badge type={소득Type.기타소득자} />
-            </div>
           </div>
           <div>
             역할: 수업 중 수강생의 Scratch 프로그래밍 관련 질의 응답 및 과제 채점 (주 2회, 1회
@@ -1257,12 +1217,8 @@ export default function HomePage({ params }: PageProps) {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Software Developer</div>
+            <div>직책: Software Developer (참여연구원)</div>
             <div>부서: 개발팀 (2명)</div>
-            <div>직위: 참여연구원</div>
-            <div>
-              유형: <소득유형Badge type={소득Type.기타소득자} />
-            </div>
           </div>
           <div>
             역할: 'KFX IR 해석 기법 및 해석 소프트웨어 개발 연구' 과제 참여. 적외선 영상 통계 분석
@@ -1288,12 +1244,8 @@ export default function HomePage({ params }: PageProps) {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Data Analyst</div>
+            <div>직책: Data Analyst (인턴)</div>
             <div>부서: 연구4팀 (10명)</div>
-            <div>직위: 인턴</div>
-            <div>
-              유형: <소득유형Badge type={소득Type.기타소득자} />
-            </div>
           </div>
           <div>역할: 여론 조사 데이터 통계 분석 및 엑셀 함수 작성</div>
         </li>
@@ -1316,9 +1268,8 @@ export default function HomePage({ params }: PageProps) {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Data Labeler</div>
-            <div>소속: 논문3팀 (지도교수 포함 8명)</div>
-            <div>직위: 교환학생</div>
+            <div>직책: Data Labeler (교환학생)</div>
+            <div>소속: 3팀 (지도교수 포함 8명)</div>
           </div>
           <div>
             역할:{' '}
@@ -1335,9 +1286,8 @@ export default function HomePage({ params }: PageProps) {
             <div>2021년 2월 8일 ~ 11월 8일 (9개월)</div>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Full stack Developer (팀장)</div>
+            <div>직책: Full stack Developer (개발팀장, 공동창업자)</div>
             <div>소속: 전체(5명) ⊃ 개발팀(2명)</div>
-            <div>직위: 공동창업자</div>
           </div>
           <div>
             역할: '카페의 특색을 담아내는 사용자 주도 SNS형 디저트 정보 공유 공간' 디저트핏 기획 및
