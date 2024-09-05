@@ -171,33 +171,33 @@ export default function HomePage({ params }: PageProps) {
               <div>2023년 11월 27일 ~ 현재</div>
             </a>
           </div>
-          <div className="grid grid-cols-2 text-sm gap-x-4 gap-y-1 mb-2">
+          <div className="grid grid-cols-2 text-sm gap-x-4 gap-y-1">
             <div>매출: 2023년 2,154억원 (개별)</div>
             <div>자산: 2023년 2,386억원 (개별)</div>
             <div>총원: 2023년 12월 484명</div>
             <div>
               유형: <소득유형Badge type={소득Type.일반근로자_정규직} /> (수습 3개월)
             </div>
-          </div>
-          <div>
-            글로벌 시장을 무대로 웹툰, 웹소설, 만화, 전자책 등을 온라인으로 제공하는 콘텐츠 플랫폼
-            기업
+            <div className=" col-span-2">
+              소개: 글로벌 시장을 무대로 웹툰, 웹소설, 만화, 전자책 등을 온라인으로 제공하는 콘텐츠
+              플랫폼 기업
+            </div>
           </div>
           <div className="border-l-2 pl-4">
             <div className="grid grid-cols-2 gap-4 mt-6 mb-4">
               <h4 className="text-lg font-semibold">RIDI 웹</h4>
               <div>2024년 4월 ~ 현재</div>
             </div>
-            <div className="grid grid-cols-2 gap-x-4 text-sm mb-1">
+            <div className="grid grid-cols-2 gap-x-4">
               <div>직책: Frontend Engineer (Junior)</div>
               <div>부서: 개발센터(50명) ⊃ 웹팀(6명)</div>
-            </div>
-            <div className="text-sm">
-              역할: 국내 전자책 시장에서{' '}
-              <a href="https://blog.toss.im/article/fabonika-03-ridi" target="_blank">
-                점유율 50% 이상
-              </a>
-              을 차지하는 리디북스의 웹 사이트를 개발함
+              <div className="col-span-2">
+                역할: 국내 전자책 시장에서{' '}
+                <a href="https://blog.toss.im/article/fabonika-03-ridi" target="_blank">
+                  점유율 50% 이상
+                </a>
+                을 차지하는 리디북스의 웹 사이트를 개발함
+              </div>
             </div>
             <div className="flex gap-0.5 my-2 items-center">
               <a
@@ -315,41 +315,41 @@ export default function HomePage({ params }: PageProps) {
             </ol>
           </div>
           <div className="border-l-2 pl-4">
-            <div className="grid grid-cols-2 gap-4 mt-6 mb-4 ">
+            <div className="grid grid-cols-2 gap-4 mt-6 mb-4">
               <h4 className="text-lg font-semibold">Manta - Unlimited Comics to Binge</h4>
               <div>2023년 11월 ~ 2024년 3월 (4개월)</div>
             </div>
-            <div className="grid grid-cols-2 gap-x-4 text-sm mb-1">
+            <div className="grid grid-cols-2 gap-x-4">
               <div>직책: Frontend Engineer (Junior)</div>
               <div>부서: 만타제품그룹(20명) ⊃ 엔지니어링팀(10명)</div>
-            </div>
-            <div className="text-sm">
-              역할: 북미 웹툰 시장 점유율 2위인 글로벌 웹툰 서비스 Manta의 React Native 앱(
-              <a
-                href="https://play.google.com/store/apps/details?id=net.manta.comic&hl=en&gl=US&pli=1"
-                target="_blank"
-              >
-                Android
-              </a>{' '}
-              ·{' '}
-              <a
-                href="https://apps.apple.com/kr/app/manta-unlimited-comics/id1536116642"
-                target="_blank"
-              >
-                iOS
-              </a>
-              )과 Next.js 기반{' '}
-              <a href="https://manta.net/en" target="_blank">
-                웹 사이트
-              </a>
-              를 개발함{' '}
-              <a
-                href="https://files-scs.pstatic.net/2024/01/03/mpZT5kjudA/%EC%9B%B9%ED%88%B0%EC%82%B0%EC%97%85_%EB%B0%B8%EB%A5%98%ED%8C%8C%EC%9D%B8%EB%8D%94.pdf"
-                target="_blank"
-                className="text-xs"
-              >
-                (2022년 점유율 9.8%)
-              </a>
+              <div className="col-span-2">
+                역할: 북미 웹툰 시장 점유율 2위인 글로벌 웹툰 서비스 Manta의 React Native 앱(
+                <a
+                  href="https://play.google.com/store/apps/details?id=net.manta.comic&hl=en&gl=US&pli=1"
+                  target="_blank"
+                >
+                  Android
+                </a>{' '}
+                ·{' '}
+                <a
+                  href="https://apps.apple.com/kr/app/manta-unlimited-comics/id1536116642"
+                  target="_blank"
+                >
+                  iOS
+                </a>
+                )과 Next.js 기반{' '}
+                <a href="https://manta.net/en" target="_blank">
+                  웹 사이트
+                </a>
+                를 개발함{' '}
+                <a
+                  href="https://files-scs.pstatic.net/2024/01/03/mpZT5kjudA/%EC%9B%B9%ED%88%B0%EC%82%B0%EC%97%85_%EB%B0%B8%EB%A5%98%ED%8C%8C%EC%9D%B8%EB%8D%94.pdf"
+                  target="_blank"
+                  className="text-xs"
+                >
+                  (2022년 점유율 9.8%)
+                </a>
+              </div>
             </div>
             <div className="flex gap-0.5 my-2 items-center">
               <a
@@ -491,15 +491,17 @@ export default function HomePage({ params }: PageProps) {
               <div>2023년 8월 7일 ~ 11월 6일 (3개월)</div>
             </a>
           </div>
-          <div className="grid grid-cols-2 gap-x-4 text-sm gap-y-1 mb-2">
+          <div className="grid grid-cols-2 gap-x-4 text-sm gap-y-1">
             <div>매출: 2023년 1조 2,609억원 (개별)</div>
             <div>자본: 2023년 1조 5,052억원 (개별)</div>
             <div>총원: 2023년 12월 512명</div>
             <div>
               유형: <소득유형Badge type={소득Type.일반근로자_계약직} />
             </div>
+            <div className="col-span-2">
+              소개: 토스의 운영사인 (주)비바리퍼블리카에서 만든 대한민국의 3번째 인터넷 전문 은행
+            </div>
           </div>
-          <div>토스의 운영사인 (주)비바리퍼블리카에서 만든 대한민국의 3번째 인터넷 전문 은행</div>
 
           <div className="border-l-2 pl-4">
             <div className="grid grid-cols-2 gap-4 mt-6 mb-4">
@@ -508,14 +510,14 @@ export default function HomePage({ params }: PageProps) {
               </h4>
               <div>2023년 8월 ~ 11월 (3개월)</div>
             </div>
-            <div className="grid grid-cols-2 gap-x-4 text-sm mb-1">
+            <div className="grid grid-cols-2 gap-x-4">
               <div>직책: Admin Developer (팀원)</div>
               <div>부서: Housing Loan Squad (12명)</div>
-            </div>
-            <div className="text-sm mb-3">
-              역할: 대출 관련 프로세스 자동화로 토스씨엑스 담당자의 업무 효율성을 높이며, 대출
-              고객의 불편함을 최소화하는 토스뱅크 여신 심사·관리·운영 시스템을 Next.js와 Toss Design
-              System 기반으로 개발함
+              <div className="col-span-2">
+                역할: 대출 관련 프로세스 자동화로 토스씨엑스 담당자의 업무 효율성을 높이며, 대출
+                고객의 불편함을 최소화하는 토스뱅크 여신 심사·관리·운영 시스템을 Next.js와 Toss
+                Design System 기반으로 개발함
+              </div>
             </div>
             <div className="flex flex-wrap gap-1 my-2">
               <a href="https://nextjs.org" rel="noreferrer" target="_blank">
