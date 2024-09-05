@@ -300,15 +300,17 @@ export default function HomePage({ params }: PageProps) {
                     간편화함
                   </li>
                   <li>
-                    모니터링: Sentry와 Datadog를 활용하여 서비스 오류와 성능을 모니터링하고, 팀원끼리 
-                    매주 모여서 서비스 트래픽 특이 사항을 공유하고 오류를 해결하는 시간을 가짐
+                    모니터링: Sentry와 Datadog를 활용하여 서비스 오류와 성능을 모니터링하고,
+                    팀원끼리 매주 모여서 서비스 트래픽 특이 사항을 공유하고 오류를 해결하는 시간을
+                    가짐
                   </li>
                 </ol>
               </li>
               <li>
-                테스트 코드: Jest와 React Testing Library로 유닛 테스트를 작성하여 코드 리뷰어가 코드 
-                베이스를 쉽게 이해할 수 있도록 도와주고, Playwright로 E2E 테스트를 작성하여 
-                핵심 사용자 플로우가 정상적으로 작동하는지 자동으로 검증함으로써 서비스 배포 전 QA 과정을 자동화함
+                테스트 코드: Jest와 React Testing Library로 유닛 테스트를 작성하여 코드 리뷰어가
+                코드 베이스를 쉽게 이해할 수 있도록 도와주고, Playwright로 E2E 테스트를 작성하여
+                핵심 사용자 플로우가 정상적으로 작동하는지 자동으로 검증함으로써 서비스 배포 전 QA
+                과정을 자동화함
               </li>
             </ol>
           </div>
@@ -690,12 +692,6 @@ export default function HomePage({ params }: PageProps) {
             alt="SQL Badge"
           />
         </a>
-        <a href="https://graphql.org/" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white"
-            alt="GraphQL Badge"
-          />
-        </a>
       </div>
       <h4 className="my-2">Frontend</h4>
       <div className="grid gap-1">
@@ -742,16 +738,6 @@ export default function HomePage({ params }: PageProps) {
               alt="PWA Badge"
             />
           </a>
-          <a
-            href="https://developer.mozilla.org/en-US/docs/Web/API/Push_API"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <img
-              src="https://img.shields.io/badge/Web Push-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
-              alt="Web Push Badge"
-            />
-          </a>
           <a href="https://reactnative.dev/" target="_blank">
             <img
               src="https://img.shields.io/badge/React Native-61DAFB?style=flat-square&logo=react&logoColor=black"
@@ -763,10 +749,16 @@ export default function HomePage({ params }: PageProps) {
       <h4 className="my-2">Backend</h4>
       <div className="grid gap-1">
         <div className="flex gap-1">
-          <a href="https://www.fastify.io/" rel="noreferrer">
+          <a href="https://nodejs.org/en/" rel="noreferrer" target="_blank">
             <img
-              src="https://img.shields.io/badge/Fastify-000000?style=flat-square&logo=Fastify&logoColor=white"
-              alt="Fastify Badge"
+              src="https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white"
+              alt="Node.js Badge"
+            />
+          </a>
+          <a href="https://socket.io/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Socket.IO-010101?style=flat-square&logo=Socket.io&logoColor=white"
+              alt="WebSocket Badge"
             />
           </a>
           <a
@@ -779,22 +771,10 @@ export default function HomePage({ params }: PageProps) {
               alt="Server Push Badge"
             />
           </a>
-          <a href="https://socket.io/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Socket.IO-010101?style=flat-square&logo=Socket.io&logoColor=white"
-              alt="WebSocket Badge"
-            />
-          </a>
           <a href="https://www.prisma.io/" rel="noreferrer" target="_blank">
             <img
               src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=Prisma&logoColor=white"
               alt="prisma Badge"
-            />
-          </a>
-          <a href="https://nodejs.org/en/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white"
-              alt="Node.js Badge"
             />
           </a>
           <a href="https://www.docker.com/" rel="noreferrer" target="_blank">
@@ -828,7 +808,7 @@ export default function HomePage({ params }: PageProps) {
         <div className="flex gap-1">
           <a href="https://vercel.com/" rel="noreferrer" target="_blank">
             <img
-              src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white"
+              src="https://img.shields.io/badge/KV, Postgres, Blob-000000?style=flat-square&logo=vercel&logoColor=white"
               alt="Vercel Badge"
             />
           </a>
@@ -840,7 +820,7 @@ export default function HomePage({ params }: PageProps) {
           </a>
           <a href="https://aws.amazon.com/ko/" rel="noreferrer" target="_blank">
             <img
-              src="https://img.shields.io/badge/RDS, EC2, S3, VPC-232F3E?style=flat-square&logo=amazon-aws&logoColor=white"
+              src="https://img.shields.io/badge/RDS, EC2, S3, VPC-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white"
               alt="AWS Badge"
             />
           </a>
@@ -850,12 +830,6 @@ export default function HomePage({ params }: PageProps) {
               alt="Oracle Badge"
             />
           </a>
-          <a href="https://firebase.google.com/" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=Firebase&logoColor=black"
-              alt="Firebase Badge"
-            />
-          </a>
         </div>
       </div>
       <div className="flex gap-4">
@@ -863,23 +837,19 @@ export default function HomePage({ params }: PageProps) {
           <h4 className="my-2">Developer Tool</h4>
           <div className="grid gap-1">
             <div className="flex gap-1">
-              <a href="https://esbuild.github.io/" rel="noreferrer" target="_blank">
+              <a href="https://www.growthbook.io/" target="_blank">
                 <img
-                  src="https://img.shields.io/badge/esbuild-FFCF00?style=flat-square&logo=esbuild&logoColor=black"
-                  alt="esbuild Badge"
+                  src="https://img.shields.io/badge/GrowthBook-590dbd?style=flat-square&logo=GrowthBook&logoColor=black"
+                  alt="GrowthBook Badge"
                 />
               </a>
-              <a href="" rel="noreferrer" target="_blank">
+              <a href="" target="_blank">
                 <img
                   src="https://img.shields.io/badge/Jest-C21325?style=flat-square&logo=jest&logoColor=white"
                   alt="Jest Badge"
                 />
               </a>
-              <a
-                href="https://analytics.google.com/analytics/web/"
-                rel="noreferrer"
-                target="_blank"
-              >
+              <a href="https://analytics.google.com/analytics/web/" target="_blank">
                 <img
                   src="https://img.shields.io/badge/GA-E37400?style=flat-square&logo=Google Analytics&logoColor=white"
                   alt="GA Badge"
@@ -893,7 +863,13 @@ export default function HomePage({ params }: PageProps) {
               </a>
               <a href="https://vercel.com/docs/speed-insights" rel="noreferrer" target="_blank">
                 <img
-                  src="https://img.shields.io/badge/Speed insights-000000?style=flat-square&logo=vercel&logoColor=white"
+                  src="https://img.shields.io/badge/Argo CD-EF7B4D?style=flat-square&logo=argo&logoColor=white"
+                  alt="Argo Badge"
+                />
+              </a>
+              <a href="https://github.com/GoogleChrome/web-vitals" rel="noreferrer" target="_blank">
+                <img
+                  src="https://img.shields.io/badge/web--vitals-000000?style=flat-square&logo=web-vitals&logoColor=white"
                   alt="Vercel Badge"
                 />
               </a>
@@ -1104,11 +1080,11 @@ export default function HomePage({ params }: PageProps) {
           </div>
           <div className="grid grid-cols-2 gap-x-4">
             <div>직책: 웹 개발 수업 강사</div>
-            <div>부서: Class Steve Jobs (초중등반, 6명)</div>
-            <div>직위: 강사</div>
             <div>
               유형: <소득유형Badge type={소득Type.사업소득자_개인} />
             </div>
+            <div>부서: 초중등반 (6명)</div>
+            <div>직위: 강사</div>
           </div>
           <div>
             역할: 초등학생/중학생을 대상으로 HTML/CSS/JS 개념 및 자기소개 웹페이지 제작 수업 (주
