@@ -333,7 +333,7 @@ export default function HomePage({ params }: PageProps) {
                 >
                   점유율 2위
                 </a>
-                인 글로벌 웹툰 서비스 Manta의 React Native 앱과 Next.js 웹 사이트를 개발함
+                인 글로벌 웹툰 서비스 Manta의 React Native 앱과 Next.js 웹을 개발함
               </div>
             </div>
             <div className="flex gap-0.5 my-2 items-center">
