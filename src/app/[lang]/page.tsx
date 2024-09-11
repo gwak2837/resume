@@ -326,32 +326,14 @@ export default function HomePage({ params }: PageProps) {
               <div>직책: Frontend Engineer (Junior)</div>
               <div>부서: 만타제품그룹(20명) ⊃ 엔지니어링팀(10명)</div>
               <div className="col-span-2">
-                역할: 북미 웹툰 시장 점유율 2위인 글로벌 웹툰 서비스 Manta의 React Native 앱(
-                <a
-                  href="https://play.google.com/store/apps/details?id=net.manta.comic&hl=en&gl=US&pli=1"
-                  target="_blank"
-                >
-                  Android
-                </a>{' '}
-                ·{' '}
-                <a
-                  href="https://apps.apple.com/kr/app/manta-unlimited-comics/id1536116642"
-                  target="_blank"
-                >
-                  iOS
-                </a>
-                )과 Next.js 기반{' '}
-                <a href="https://manta.net/en" target="_blank">
-                  웹 사이트
-                </a>
-                를 개발함{' '}
+                역할: 북미 웹툰 시장{' '}
                 <a
                   href="https://files-scs.pstatic.net/2024/01/03/mpZT5kjudA/%EC%9B%B9%ED%88%B0%EC%82%B0%EC%97%85_%EB%B0%B8%EB%A5%98%ED%8C%8C%EC%9D%B8%EB%8D%94.pdf"
                   target="_blank"
-                  className="text-xs"
                 >
-                  (2022년 점유율 9.8%)
+                  점유율 2위
                 </a>
+                인 글로벌 웹툰 서비스 Manta의 React Native 앱과 Next.js 웹 사이트를 개발함
               </div>
             </div>
             <div className="flex gap-0.5 my-2 items-center">
