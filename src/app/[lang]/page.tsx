@@ -232,10 +232,10 @@ export default function HomePage({ params }: PageProps) {
                   alt="next.js"
                 />
               </a>
-              <a href="https://ko.redux.js.org/" target="_blank">
+              <a href="https://playwright.dev/" rel="noreferrer" target="_blank">
                 <img
-                  src="https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=Redux&logoColor=white"
-                  alt="Redux"
+                  src="https://img.shields.io/badge/Playwright-45ba4b?style=flat-square&logo=Playwright&logoColor=white"
+                  alt="Playwright Badge"
                 />
               </a>
               <a href="https://graphql.org/" rel="noreferrer" target="_blank">
@@ -293,8 +293,8 @@ export default function HomePage({ params }: PageProps) {
                 실사용자에게 배포 시 의도치 않게 발생할 수 있는 장애에 대비함.
                 <ol className="text-sm text-slate-600">
                   <li>
-                    Feature flag: 신규 기능을 출시하기 전에 사용자 세그먼트, 환경, 기능 단위로
-                    GrowthBook에서 피처 플래그를 설정하여 원활한 기능 QA를 지원함. 배포 후 장애가
+                    피처 플래그: 신규 기능을 출시하기 전에 사용자, 런타임 환경, 기능 단위로
+                    GrowthBook에서 피처 플래그를 설정하여 원활한 QA를 지원함. 배포 후 장애가
                     발생하면 해당 피처 플래그를 비활성화해 장애를 빠르게 복구한 경험이 있음
                   </li>
                   <li>
@@ -431,12 +431,6 @@ export default function HomePage({ params }: PageProps) {
                   alt="Redux"
                 />
               </a>
-              <a href="https://redux-toolkit.js.org/" target="_blank">
-                <img
-                  src="https://img.shields.io/badge/Redux Tookit-764ABC?style=flat-square&logo=Redux&logoColor=white"
-                  alt="Redux Tookit"
-                />
-              </a>
               <a href="https://vanilla-extract.style/" target="_blank">
                 <img
                   src="https://img.shields.io/badge/Vanilla Extract-C2FCED?style=flat-square&logo=Vanilla Extract&logoColor=white"
@@ -459,11 +453,14 @@ export default function HomePage({ params }: PageProps) {
             <ol>
               <li>
                 프랑스어 출시: 프랑스어를 사용하는 사용자를 위해 국가별 화폐 및 날짜 형식, 언어별
-                텍스트 길이에 따른 디자인 차이 등을 고려하여 사용자에게 향샹된 현지화 경험을 제공함.
+                텍스트 길이에 따른 디자인 차이, 콘텐츠 연령 등급 관련 현지 법률 등을 고려한
+                국제화(i18n) 디자인을 적용함.
               </li>
               <li>
-                국제화: 팀 내 linguist와 Phrase 서비스를 통해 다양한 언어의 번역 파일을 관리하고,
-                i18next 라이브러리를 활용하여 다국어 및 지역화 기능을 구현함.
+                연관 검색어 출시: 사용자 검색 경험을 향상시키기 위해 프론트엔드에 연관 검색어 기능을
+                적용함. 출시 대비 사용자의 검색 화면 체류 시간이 20% 이상 증가하는 등 사용자가
+                원하는 콘텐츠를 더 빠르게 찾을 수 있게 하여 서비스 검색 활용도와 사용자 만족도를
+                높임.
               </li>
               <li>
                 이벤트 추적: 사용자 행동 분석과 안정적인 서비스 운영을 위해 Firebase와 Braze를
@@ -557,35 +554,31 @@ export default function HomePage({ params }: PageProps) {
             <ol>
               <li>
                 전월세보증금대출 출시: 토스뱅크 개발자 및 토스CX 담당자와 협업하여 대출 서류 심사,
-                사후 관리, 지킴 보증 관련 기능을 성공적으로 출시함으로써, 토스뱅크 개인 담보대출
-                부문에서 약 2,000억 원의 대출 잔액 증가에 기여함
+                사후 관리, 지킴 보증 관련 기능을 출시함으로써, 토스뱅크 개인 담보대출 부문에서{' '}
+                <a
+                  href="https://www.sisajournal-e.com/news/articleView.html?idxno=401727"
+                  target="_blank"
+                >
+                  약 2,000억 원의 대출 잔액 증가
+                </a>
+                에 기여함
+              </li>
+              <li>
+                CI 최적화: LUMOS 프로젝트의 Docker 이미지 레이어에 원격 클라우드 캐싱을 적용하여
+                이미지 빌드 시간을 평균 300초에서 210초로 약 30% 단축함
               </li>
               <li>
                 선언형 프로그래밍: Suspense 컴포넌트와 ErrorBoundary 개념을 이용해 네트워크 상태를
                 선언적으로 관리하고, React Query를 사용해 응답 순서가 보장되지 않는 네트워크 요청을
-                비동기로 관리함. 또한 Promise를 활용해 Modal, Dialog 등의 컴포넌트 열기/닫기 로직을
-                선언적으로 관리하고, Funnel 패턴을 활용해 다단계 페이지 이동도 선언적으로 관리함.
-                그리고 연관된 코드는 가까운 곳에 배치하여 컴포넌트 응집도를 높이고, 로직 세부 구현은
-                hook으로 숨겨 코드 파악에 필수적인 정보가 잘 보이도록 개선함
+                비동기로 관리함. 또한 Promise를 활용해 Modal, Dialog 컴포넌트 상태를 선언적으로
+                관리하고, Funnel 패턴을 활용해 다단계 페이지 이동도 선언적으로 관리함. 그리고 연관된
+                코드는 가까운 곳에 배치하여 컴포넌트 응집도를 높이고, 로직 세부 구현은 hook으로 숨겨
+                코드 파악에 필수적인 정보가 잘 보이도록 개선함
               </li>
               <li>
                 장애 대응: 서비스 기능 장애가 발생했을 때 관련 커밋을 롤백한 후 Kibana 검색 및 집계
                 기능을 사용하여 오류 발생 주기와 원인을 분석함. 또한 해결 방안을 논의해 문서로 남긴
                 후 개선된 코드를 제안하고 구현함
-              </li>
-              <li>
-                CI 최적화: LUMOS 프로젝트 Docker 이미지 빌드 시간을 305초 → 213초로 (30%) 개선함
-              </li>
-
-              <li>
-                소통: 사전에 팀의 코드 컨벤션과 브랜치 전략을 논의하고{' '}
-                <a
-                  href="https://blog.banksalad.com/tech/banksalad-code-review-culture/"
-                  target="_blank"
-                >
-                  Pn 룰
-                </a>{' '}
-                등을 공유해 Code Review 효율성을 높임
               </li>
             </ol>
           </div>
@@ -728,10 +721,10 @@ export default function HomePage({ params }: PageProps) {
               alt="Zustand Badge"
             />
           </a>
-          <a href="https://zod.dev/" target="_blank">
+          <a href="https://playwright.dev/" rel="noreferrer" target="_blank">
             <img
-              src="https://img.shields.io/badge/Zod-3E67B1?style=flat-square&logo=zod&logoColor=white"
-              alt="zod"
+              src="https://img.shields.io/badge/Playwright-45ba4b?style=flat-square&logo=Playwright&logoColor=white"
+              alt="Playwright Badge"
             />
           </a>
           <a href="https://web.dev/progressive-web-apps/" rel="noreferrer" target="_blank">
@@ -851,7 +844,6 @@ export default function HomePage({ params }: PageProps) {
                   alt="Jest Badge"
                 />
               </a>
-
               <a href="https://sentry.io/welcome/" rel="noreferrer" target="_blank">
                 <img
                   src="https://img.shields.io/badge/Sentry-362D59?style=flat-square&logo=sentry&logoColor=white"
@@ -960,7 +952,9 @@ export default function HomePage({ params }: PageProps) {
         </tbody>
       </table>
       <OtherCertificates />
-      <h2 className="text-3xl my-8">개발 경험</h2>
+      <h2 className="text-3xl my-8">
+        개발 경험 <span className="text-sm">(급여 O, 4대보험 X)</span>
+      </h2>
       <ul>
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
@@ -1017,7 +1011,7 @@ export default function HomePage({ params }: PageProps) {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Frontend Developer (개발팀장)</div>
+            <div>직책: Frontend Developer (팀장)</div>
             <div>부서: 개발팀 (2명)</div>
           </div>
           <div>
@@ -1056,7 +1050,7 @@ export default function HomePage({ params }: PageProps) {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Full stack Developer (개발팀장)</div>
+            <div>직책: Full stack Developer (팀장)</div>
             <div>부서: 개발팀 (3명)</div>
           </div>
           <div>역할: '4050 여성 전용 커뮤니티' 알파카살롱 기획 및 MVP 개발</div>
@@ -1114,7 +1108,7 @@ export default function HomePage({ params }: PageProps) {
             </a>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Frontend Developer (개발팀장, 참여연구원)</div>
+            <div>직책: Frontend Developer (팀장, 참여연구원)</div>
             <div>부서: 개발팀 (2명)</div>
           </div>
           <div>
@@ -1256,7 +1250,9 @@ export default function HomePage({ params }: PageProps) {
           <div>역할: 여론 조사 데이터 통계 분석 및 엑셀 함수 작성</div>
         </li>
       </ul>
-      <h2 className="text-3xl my-8 ">개발 활동</h2>
+      <h2 className="text-3xl my-8 ">
+        개발 활동 <span className="text-sm">(급여 X)</span>
+      </h2>
       <ul>
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
