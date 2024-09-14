@@ -2,7 +2,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { APPLICATION_NAME } from '../../common/constants'
 import { PageProps } from '../../common/types'
-import 소득유형Badge, { 소득Type } from '../../components/소득유형Badge'
 import FestaLogo from '../../svg/FestaLogo'
 import PlanbyLogo from '../../svg/PlanbyLogo'
 import RidiLogo from '../../svg/RidiLogo'
@@ -14,6 +13,8 @@ import OtherCertificates from './OtherCertificates'
 
 import Image from 'next/image'
 import Link from 'next/link'
+
+const 경력로고색 = '767676'
 
 export async function generateStaticParams() {
   return [{ lang: 'ko' }, { lang: 'en' }, { lang: 'zh' }, { lang: 'ja' }]
@@ -53,103 +54,100 @@ export default function HomePage({ params }: PageProps) {
         </div>
       </div>
       <div>
-        <div className="grid gap-4 grid-cols-2">
-          <Image src="/images/profile.webp" alt="profile" width="350" height="350" priority />
-          <table className="border-none w-fit">
-            <tbody>
-              <tr>
-                <td className="border-none p-0">🧑&nbsp;&nbsp;</td>
-                <td className="border-none p-0">{dict.이름[lang]}</td>
-              </tr>
-              <tr>
-                <td className="border-none p-0">🎉</td>
-                <td className="border-none p-0">{dict.생일[lang]}</td>
-              </tr>
-              <tr>
-                <td className="border-none p-0 align-top">🎓</td>
-                <td className="border-none p-0">
+        <div className="flex gap-4 flex-wrap whitespace-nowrap text-sm">
+          <Image
+            src="/images/profile.webp"
+            className="w-[308px]"
+            alt="profile"
+            width={1736}
+            height={1736}
+            priority
+          />
+          <ul className="flex flex-col gap-1">
+            {[
+              { label: '이름', value: dict.이름[lang] },
+              { label: '출생', value: dict.생일[lang] },
+              {
+                label: '학위',
+                value: (
                   <a href="/images/학위증.webp" target="_blank">
                     {dict.학위[lang]}
                   </a>
-                </td>
-              </tr>
-              <tr>
-                <td className="border-none p-0 align-top">🏠</td>
-                <td className="border-none p-0">
+                ),
+              },
+              {
+                label: '거주',
+                value: (
                   <a href="https://naver.me/Fcg2bYyc" target="_blank" rel="noreferrer">
                     {dict.주소[lang]}
                   </a>
-                </td>
-              </tr>
-              <tr>
-                <td className="border-none p-0 align-top">🪖</td>
-                <td className="border-none p-0">
+                ),
+              },
+              {
+                label: '병역',
+                value: (
                   <a href="/pdf/병적증명서.pdf" target="_blank">
                     {dict.병역[lang]}
                   </a>
-                </td>
-              </tr>
-              <tr>
-                <td className="border-none p-0"></td>
-                <td className="border-none p-0">
+                ),
+              },
+              {
+                label: '',
+                value: (
                   <a href="/images/2023-military.webp" target="_blank">
                     {dict.KATUSA[lang]}
                   </a>
-                </td>
-              </tr>
-              <tr>
-                <td className="border-none p-0"></td>
-                <td className="border-none p-0">{dict.ROTC[lang]}</td>
-              </tr>
-              <tr>
-                <td className="border-none p-0">📱</td>
-                <td className="border-none p-0">
-                  <a href="tel:010-9203-2837">+82 010-9203-2837</a>
-                </td>
-              </tr>
-              <tr>
-                <td className="border-none p-0">✉️</td>
-                <td className="border-none p-0">
-                  <a href="mailto:gwak2837@google.com">gwak2837@google.com</a>{' '}
-                  <a href="mailto:gwak2837@kakao.com">(〃@kakao.com)</a>
-                </td>
-              </tr>
-              <tr>
-                <td className="border-none p-0">
-                  <Image src="/images/LinkedIn_icon.svg" alt="github" width="16" height="16" />
-                </td>
-                <td className="border-none p-0">
-                  <a href="https://www.linkedin.com/in/gwak2837/" target="_blank">
-                    linkedin.com/in/gwak2837
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td className="border-none p-0">
-                  <Image src="/images/github.svg" alt="github" width="16" height="16" />
-                </td>
-                <td className="border-none p-0">
+                ),
+              },
+              {
+                label: '',
+                value: dict.ROTC[lang],
+              },
+              {
+                label: '전화',
+                value: <a href="tel:010-9203-2837">+82 010-9203-2837</a>,
+              },
+              {
+                label: '메일',
+                value: <a href="mailto:gwak2837@google.com">gwak2837@google.com</a>,
+              },
+              {
+                label: <Image src="/images/github.svg" alt="github" width="16" height="16" />,
+                value: (
                   <a href="https://github.com/gwak2837" target="_blank">
                     github.com/gwak2837
                   </a>
-                </td>
-              </tr>
-              <tr>
-                <td className="border-none p-0">
-                  <Image src="/images/velog.png" alt="velog" width="16" height="16" />
-                </td>
-                <td className="border-none p-0">
+                ),
+              },
+              {
+                label: (
+                  <Image src="/images/LinkedIn_icon.svg" alt="github" width="16" height="16" />
+                ),
+                value: (
+                  <a href="https://www.linkedin.com/in/gwak2837/" target="_blank">
+                    linkedin.com/in/gwak2837
+                  </a>
+                ),
+              },
+              {
+                label: <Image src="/images/velog.png" alt="velog" width="16" height="16" />,
+                value: (
                   <a href="https://velog.io/@gwak2837" target="_blank">
                     velog.io/@gwak2837
                   </a>
-                </td>
-              </tr>
-              <tr>
-                <td className="border-none p-0">🧑‍🎨</td>
-                <td className="border-none p-0">자전거, 달리기, 웨이트, 독서</td>
-              </tr>
-            </tbody>
-          </table>
+                ),
+              },
+              {
+                label: '취미',
+                value: '자전거, 달리기, 웨이트, 독서',
+              },
+            ].map(({ label, value }, i) => (
+              <li key={i} className="flex gap-3 items-center">
+                <span className="w-6">{label}</span>
+                {value}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
       <p className="my-4 ">{dict.한줄소개[lang]}</p>
@@ -175,10 +173,8 @@ export default function HomePage({ params }: PageProps) {
             <div>매출: 2023년 2,154억원 (개별)</div>
             <div>자산: 2023년 2,386억원 (개별)</div>
             <div>총원: 2023년 12월 484명</div>
-            <div>
-              유형: <소득유형Badge type={소득Type.일반근로자_정규직} /> (수습 3개월)
-            </div>
-            <div className=" col-span-2">
+            <div>유형: 정규직 (수습 3개월)</div>
+            <div className="col-span-2">
               소개: 글로벌 시장을 무대로 웹툰, 웹소설, 만화, 전자책 등을 온라인으로 제공하는 콘텐츠
               플랫폼 기업
             </div>
@@ -188,7 +184,7 @@ export default function HomePage({ params }: PageProps) {
               <h4 className="text-lg font-semibold">RIDI 웹</h4>
               <div>2024년 4월 ~ 현재</div>
             </div>
-            <div className="grid grid-cols-2 gap-x-4">
+            <div className="grid grid-cols-2 gap-x-4 gap-y-1">
               <div>직책: Frontend Engineer (Junior)</div>
               <div>부서: 개발센터(50명) ⊃ 웹팀(6명)</div>
               <div className="col-span-2">
@@ -222,55 +218,55 @@ export default function HomePage({ params }: PageProps) {
             <div className="flex flex-wrap gap-1 my-2">
               <a href="https://reactjs.org/" rel="noreferrer" target="_blank">
                 <img
-                  src="https://img.shields.io/badge/React.js-61DAFB?style=flat-square&logo=react&logoColor=black"
+                  src={`https://img.shields.io/badge/React.js-${경력로고색}?style=flat-square&logo=react&logoColor=white`}
                   alt="React Badge"
                 />
               </a>
               <a href="https://nextjs.org" target="_blank">
                 <img
-                  src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"
+                  src={`https://img.shields.io/badge/Next.js-${경력로고색}?style=flat-square&logo=next.js&logoColor=white`}
                   alt="next.js"
                 />
               </a>
               <a href="https://playwright.dev/" rel="noreferrer" target="_blank">
                 <img
-                  src="https://img.shields.io/badge/Playwright-45ba4b?style=flat-square&logo=Playwright&logoColor=white"
+                  src={`https://img.shields.io/badge/Playwright-${경력로고색}?style=flat-square&logo=Playwright&logoColor=white`}
                   alt="Playwright Badge"
                 />
               </a>
               <a href="https://graphql.org/" rel="noreferrer" target="_blank">
                 <img
-                  src="https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white"
+                  src={`https://img.shields.io/badge/GraphQL-${경력로고색}?style=flat-square&logo=graphql&logoColor=white`}
                   alt="GraphQL Badge"
                 />
               </a>
               <a href="https://www.php.net/" target="_blank">
                 <img
-                  src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=PHP&logoColor=white"
+                  src={`https://img.shields.io/badge/PHP-${경력로고색}?style=flat-square&logo=PHP&logoColor=white`}
                   alt="PHP"
                 />
               </a>
               <a href="https://www.mysql.com/" target="_blank">
                 <img
-                  src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"
+                  src={`https://img.shields.io/badge/MySQL-${경력로고색}?style=flat-square&logo=mysql&logoColor=white`}
                   alt="MySQL Badge"
                 />
               </a>
               <a href="https://argo-cd.readthedocs.io/en/stable/" target="_blank">
                 <img
-                  src="https://img.shields.io/badge/Argo CD-EF7B4D?style=flat-square&logo=argo&logoColor=white"
+                  src={`https://img.shields.io/badge/Argo CD-${경력로고색}?style=flat-square&logo=argo&logoColor=white`}
                   alt="Argo Badge"
                 />
               </a>
               <a href="https://argo-cd.readthedocs.io/en/stable/" target="_blank">
                 <img
-                  src="https://img.shields.io/badge/Datadog-632CA6?style=flat-square&logo=datadog&logoColor=white"
+                  src={`https://img.shields.io/badge/Datadog-${경력로고색}?style=flat-square&logo=datadog&logoColor=white`}
                   alt="Datadog Badge"
                 />
               </a>
               <a href="https://argo-cd.readthedocs.io/en/stable/" target="_blank">
                 <img
-                  src="https://img.shields.io/badge/Sentry-362D59?style=flat-square&logo=sentry&logoColor=white"
+                  src={`https://img.shields.io/badge/Sentry-${경력로고색}?style=flat-square&logo=sentry&logoColor=white`}
                   alt="Sentry Badge"
                 />
               </a>
@@ -322,7 +318,7 @@ export default function HomePage({ params }: PageProps) {
               <h4 className="text-lg font-semibold">Manta - Unlimited Comics to Binge</h4>
               <div>2023년 11월 ~ 2024년 3월 (4개월)</div>
             </div>
-            <div className="grid grid-cols-2 gap-x-4">
+            <div className="grid grid-cols-2 gap-x-4 gap-y-1">
               <div>직책: Frontend Engineer (Junior)</div>
               <div>부서: 만타제품그룹(20명) ⊃ 엔지니어링팀(10명)</div>
               <div className="col-span-2">
@@ -397,37 +393,37 @@ export default function HomePage({ params }: PageProps) {
             <div className="flex flex-wrap gap-1 my-2">
               <a href="https://reactnative.dev/" target="_blank">
                 <img
-                  src="https://img.shields.io/badge/React Native-61DAFB?style=flat-square&logo=React&logoColor=black"
+                  src={`https://img.shields.io/badge/React Native-${경력로고색}?style=flat-square&logo=React&logoColor=white`}
                   alt="React Native"
                 />
               </a>
               <a href="https://nextjs.org" target="_blank">
                 <img
-                  src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"
+                  src={`https://img.shields.io/badge/Next.js-${경력로고색}?style=flat-square&logo=next.js&logoColor=white`}
                   alt="next.js"
                 />
               </a>
               <a href="https://ko.redux.js.org/" target="_blank">
                 <img
-                  src="https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=Redux&logoColor=white"
+                  src={`https://img.shields.io/badge/Redux-${경력로고색}?style=flat-square&logo=Redux&logoColor=white`}
                   alt="Redux"
                 />
               </a>
               <a href="https://vanilla-extract.style/" target="_blank">
                 <img
-                  src="https://img.shields.io/badge/Vanilla Extract-C2FCED?style=flat-square&logo=Vanilla Extract&logoColor=white"
+                  src={`https://img.shields.io/badge/Vanilla Extract-${경력로고색}?style=flat-square&logo=Vanilla Extract&logoColor=white`}
                   alt="Vanilla Extract"
                 />
               </a>
               <a href="https://styled-components.com/" rel="noreferrer" target="_blank">
                 <img
-                  src="https://img.shields.io/badge/Styled-DB7093?style=flat-square&logo=styled-components&logoColor=white"
+                  src={`https://img.shields.io/badge/Styled-${경력로고색}?style=flat-square&logo=styled-components&logoColor=white`}
                   alt="styled Badge"
                 />
               </a>
               <a href="https://cloud.google.com/gcp/" target="_blank">
                 <img
-                  src="https://img.shields.io/badge/Google Cloud-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
+                  src={`https://img.shields.io/badge/Google Cloud-${경력로고색}?style=flat-square&logo=google-cloud&logoColor=white`}
                   alt="GCP Badge"
                 />
               </a>
@@ -477,9 +473,7 @@ export default function HomePage({ params }: PageProps) {
             <div>매출: 2023년 1조 2,609억원 (개별)</div>
             <div>자본: 2023년 1조 5,052억원 (개별)</div>
             <div>총원: 2023년 12월 512명</div>
-            <div>
-              유형: <소득유형Badge type={소득Type.일반근로자_계약직} />
-            </div>
+            <div>유형: 계약직</div>
             <div className="col-span-2">
               소개: 토스의 운영사인 (주)비바리퍼블리카에서 만든 대한민국의 3번째 인터넷 전문 은행
             </div>
@@ -492,43 +486,43 @@ export default function HomePage({ params }: PageProps) {
               </h4>
               <div>2023년 8월 ~ 11월 (3개월)</div>
             </div>
-            <div className="grid grid-cols-2 gap-x-4">
+            <div className="grid grid-cols-2 gap-x-4 gap-y-1">
               <div>직책: Admin Developer (팀원)</div>
               <div>부서: Housing Loan Squad (12명)</div>
               <div className="col-span-2">
                 역할: 대출 관련 프로세스 자동화로 토스씨엑스 담당자의 업무 효율성을 높이며, 대출
-                고객의 불편함을 최소화하는 토스뱅크 여신 심사·관리·운영 시스템을 Next.js와 Toss
+                고객의 불편함을 최소화하는 토스뱅크 여신 심사·관리·운영 시스템을 Next.js 및 Toss
                 Design System 기반으로 개발함
               </div>
             </div>
             <div className="flex flex-wrap gap-1 my-2">
               <a href="https://nextjs.org" rel="noreferrer" target="_blank">
                 <img
-                  src="https://img.shields.io/badge/Next.js 13-000000?style=flat-square&logo=next.js&logoColor=white"
+                  src={`https://img.shields.io/badge/Next.js 13-${경력로고색}?style=flat-square&logo=next.js&logoColor=white`}
                   alt="next.js"
                 />
               </a>
               <a href="https://toss.im/slash-21/sessions/3-4" rel="noreferrer" target="_blank">
                 <img
-                  src="https://img.shields.io/badge/Toss Design System-0064FF?style=flat-square&logoColor=white"
+                  src={`https://img.shields.io/badge/Toss Design System-${경력로고색}?style=flat-square&logoColor=white`}
                   alt="toss design system"
                 />
               </a>
               <a href="https://tanstack.com/query/v4/" rel="noreferrer" target="_blank">
                 <img
-                  src="https://img.shields.io/badge/React Query-FF4154?style=flat-square&logo=react-query&logoColor=white"
+                  src={`https://img.shields.io/badge/React Query-${경력로고색}?style=flat-square&logo=react-query&logoColor=white`}
                   alt="React Query Badge"
                 />
               </a>
               <a href="https://zod.dev/" rel="noreferrer" target="_blank">
                 <img
-                  src="https://img.shields.io/badge/Zod-3E67B1?style=flat-square&logo=zod&logoColor=white"
+                  src={`https://img.shields.io/badge/Zod-${경력로고색}?style=flat-square&logo=zod&logoColor=white`}
                   alt="zod"
                 />
               </a>
               <a href="https://www.elastic.co/kr/kibana" rel="noreferrer" target="_blank">
                 <img
-                  src="https://img.shields.io/badge/Kibana-005571?style=flat-square&logo=kibana&logoColor=white"
+                  src={`https://img.shields.io/badge/Kibana-${경력로고색}?style=flat-square&logo=kibana&logoColor=white`}
                   alt="kibana"
                 />
               </a>

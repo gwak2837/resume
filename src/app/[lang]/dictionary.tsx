@@ -32,7 +32,7 @@ export const dict = {
     ja: '中央大学コンピューター工学部学士',
   },
   주소: {
-    ko: '서울특별시 강동구 천호동 (천호역)',
+    ko: '서울특별시 강동구 천호동',
     en: 'Gangdong-gu, Seoul, Republic of Korea',
     zh: '大韩民国首尔特别市江东区千戶洞',
     ja: '大韓民国ソウル特別市江東区千戸洞',
@@ -44,13 +44,13 @@ export const dict = {
     ja: '除隊 (大韓民国陸軍兵長満期除隊):',
   },
   ROTC: {
-    ko: '학군사관후보생 2019년 1월 ~ 2020년 9월',
+    ko: 'ROTC 2019.01~2020.09',
     en: 'ROTC Jan. 2019 - Sept. 2020',
     zh: 'ROTC 2019年1月～2020年9月',
     ja: 'ROTC 2019年 1月 ~ 2020年 9月',
   },
   KATUSA: {
-    ko: 'KATUSA 2022년 3월 ~ 2023년 7월',
+    ko: '카투사 2022.03~2023.07',
     en: 'KATUSA Mar. 2022 - July 2023',
     zh: 'KATUSA 2022年3月～2023年7月',
     ja: 'KATUSA 2022年 3月 ~ 2023年 7月',
