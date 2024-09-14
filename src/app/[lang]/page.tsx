@@ -13,6 +13,7 @@ import OtherCertificates from './OtherCertificates'
 
 import Image from 'next/image'
 import Link from 'next/link'
+import { Fragment } from 'react'
 
 const 경력로고색 = '767676'
 
@@ -54,7 +55,7 @@ export default function HomePage({ params }: PageProps) {
         </div>
       </div>
       <div>
-        <div className="flex gap-4 flex-wrap whitespace-nowrap text-sm">
+        <div className="flex gap-4 flex-wrap whitespace-nowrap ">
           <Image
             src="/images/profile.webp"
             className="w-[308px]"
@@ -150,7 +151,7 @@ export default function HomePage({ params }: PageProps) {
           </ul>
         </div>
       </div>
-      <p className="my-4 ">{dict.한줄소개[lang]}</p>
+      <p className="my-4 text-lg">{dict.한줄소개[lang]}</p>
       <h2 className="text-3xl my-8">
         {dict.개발경력[lang]} <span className="text-sm">(1년, 2024년 8월 26일 기준)</span>
       </h2>
@@ -162,14 +163,14 @@ export default function HomePage({ params }: PageProps) {
               className="flex gap-2 items-center"
               target="_blank"
             >
-              <h3 className="w-fit font-bold">리디(주)</h3>
+              <h3 className="w-fit text-xl font-bold">리디(주)</h3>
               <RidiLogo />
             </a>
             <a href="/pdf/리디-재직증명서.pdf" target="_blank">
               <div>2023년 11월 27일 ~ 현재</div>
             </a>
           </div>
-          <div className="grid grid-cols-2 text-sm gap-x-4 gap-y-1">
+          <div className="grid grid-cols-2  gap-x-4 gap-y-1">
             <div>매출: 2023년 2,154억원 (개별)</div>
             <div>자산: 2023년 2,386억원 (개별)</div>
             <div>총원: 2023년 12월 484명</div>
@@ -179,7 +180,7 @@ export default function HomePage({ params }: PageProps) {
               플랫폼 기업
             </div>
           </div>
-          <div className="border-l-2 pl-4 text-sm">
+          <div className="border-l-2 pl-4 ">
             <div className="grid grid-cols-2 gap-4 mt-6 mb-4">
               <h4 className="font-bold">RIDI 웹</h4>
               <div>2024년 4월 ~ 현재</div>
@@ -271,7 +272,7 @@ export default function HomePage({ params }: PageProps) {
                 />
               </a>
             </div>
-            <ol className="text-base my-4">
+            <ol className="text-lg my-4">
               <li>
                 <strong>만화e북 웹 뷰어 출시</strong>
                 <p className="text-slate-600 font-medium">
@@ -294,7 +295,7 @@ export default function HomePage({ params }: PageProps) {
                   기능 출시 전에 A/B 테스트로 더 나은 기획을 검증하고, 실사용자에게 배포 시 의도치
                   않게 발생할 수 있는 장애에 대비함
                 </p>
-                <ol className="text-sm text-slate-600">
+                <ol className="text-base text-slate-600">
                   <li>
                     피처 플래그: 신규 기능을 출시하기 전에 사용자, 런타임 환경, 기능 단위로
                     GrowthBook에서 피처 플래그를 설정하여 원활한 QA를 지원함. 배포 후 장애가
@@ -323,7 +324,7 @@ export default function HomePage({ params }: PageProps) {
               </li>
             </ol>
           </div>
-          <div className="border-l-2 pl-4 text-sm">
+          <div className="border-l-2 pl-4 ">
             <div className="grid grid-cols-2 gap-4 mt-6 mb-4">
               <h4 className="font-bold">Manta - Unlimited Comics to Binge</h4>
               <div>2023년 11월 ~ 2024년 3월 (4개월)</div>
@@ -356,7 +357,7 @@ export default function HomePage({ params }: PageProps) {
                     height="282"
                     className="h-4 w-4"
                   />
-                  <h5 className="underline-offset-4 font-medium text-sm	underline text-black decoration-gray-300 ">
+                  <h5 className="underline-offset-4 font-medium 	underline text-black decoration-gray-300 ">
                     manta.net
                   </h5>
                 </div>
@@ -375,7 +376,7 @@ export default function HomePage({ params }: PageProps) {
                     height="282"
                     className="h-4 w-4"
                   />
-                  <h5 className="underline-offset-4	font-medium text-sm underline text-black decoration-gray-300 ">
+                  <h5 className="underline-offset-4	font-medium  underline text-black decoration-gray-300 ">
                     Manta (Google Play)
                   </h5>
                 </div>
@@ -394,7 +395,7 @@ export default function HomePage({ params }: PageProps) {
                     height="282"
                     className="h-4 w-4"
                   />
-                  <h5 className="underline-offset-4	font-medium text-sm underline text-black decoration-gray-300 ">
+                  <h5 className="underline-offset-4	font-medium  underline text-black decoration-gray-300 ">
                     Manta (App Store)
                   </h5>
                 </div>
@@ -438,7 +439,7 @@ export default function HomePage({ params }: PageProps) {
                 />
               </a>
             </div>
-            <ol className="text-base my-4">
+            <ol className="text-lg my-4">
               <li>
                 <strong>프랑스어 출시</strong>
                 <p className="text-slate-600 font-medium">
@@ -487,7 +488,7 @@ export default function HomePage({ params }: PageProps) {
               <div>2023년 8월 7일 ~ 11월 6일 (3개월)</div>
             </a>
           </div>
-          <div className="grid grid-cols-2 gap-x-4 text-sm gap-y-1">
+          <div className="grid grid-cols-2 gap-x-4  gap-y-1">
             <div>매출: 2023년 1조 2,609억원 (개별)</div>
             <div>자본: 2023년 1조 5,052억원 (개별)</div>
             <div>총원: 2023년 12월 512명</div>
@@ -496,8 +497,7 @@ export default function HomePage({ params }: PageProps) {
               소개: 토스의 운영사인 (주)비바리퍼블리카에서 만든 대한민국의 3번째 인터넷 전문 은행
             </div>
           </div>
-
-          <div className="border-l-2 pl-4 text-sm">
+          <div className="border-l-2 pl-4 ">
             <div className="grid grid-cols-2 gap-4 mt-6 mb-4">
               <h4 className="font-bold">토스뱅크 루모스 (여신 심사·관리·운영 시스템)</h4>
               <div>2023년 8월 ~ 11월 (3개월)</div>
@@ -543,7 +543,7 @@ export default function HomePage({ params }: PageProps) {
                 />
               </a>
             </div>
-            <ol className="text-base my-4">
+            <ol className="text-lg my-4">
               <li>
                 <strong>전월세보증금대출 출시</strong>
                 <p className="text-slate-600 font-medium">
@@ -609,7 +609,7 @@ export default function HomePage({ params }: PageProps) {
               <a href="/images/학위증.webp" target="_blank">
                 {dict.학력_학위[lang]}
               </a>
-              <div className="text-xs">(MAGNA CUM LAUDE)</div>
+              <div className="text-sm">(MAGNA CUM LAUDE)</div>
             </td>
             <td>
               <a href="/pdf/중앙대학교-졸업증명서.pdf" target="_blank">
@@ -960,38 +960,119 @@ export default function HomePage({ params }: PageProps) {
         개발 경험 <span className="text-sm">(급여 O, 4대보험 X)</span>
       </h2>
       <ul>
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <a
-              href="https://www.linkedin.com/company/planby-technologies/about/"
-              className="flex gap-2 items-center"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <b>(주)플랜바이테크놀로지스</b>
-              <PlanbyLogo height="19" />
-            </a>
-            <div>
-              2023년 11월 7일 ~ 11월 26일 (3주)
-              <br />
-              <a href="/pdf/플랜바이테크놀로지스.pdf" target="_blank">
-                2023년 7월 24일 ~ 8월 6일 (2주)
+        {[
+          {
+            이름: (
+              <a
+                href="https://www.linkedin.com/company/planby-technologies/about/"
+                className="flex gap-2 items-center"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <h3 className="w-fit text-lg">(주)플랜바이테크놀로지스</h3>
+                <PlanbyLogo height="19" />
               </a>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Frontend Developer</div>
-            <div>부서: 개발팀 (4명)</div>
-          </div>
-          <div>
-            역할: 고등학교 친구가 창업한 스타트업에서{' '}
-            <a href="https://planby.us/" target="_blank" rel="noreferrer">
-              'HOMI AI - 인공지능이 꾸며주는 나의 공간'
-            </a>{' '}
-            인테리어 디자인 AI 자동화 솔루션 MVP 개발
-          </div>
-        </li>
-        <div className="border w-full my-6" />
+            ),
+            기간: (
+              <div>
+                2023년 11월 7일 ~ 11월 26일 (3주)
+                <br />
+                <a href="/pdf/플랜바이테크놀로지스.pdf" target="_blank">
+                  2023년 7월 24일 ~ 8월 6일 (2주)
+                </a>
+              </div>
+            ),
+            직책: 'Frontend Developer',
+            부서: '개발팀 (4명)',
+            역할: (
+              <>
+                고등학교 친구가 창업한 스타트업에서{' '}
+                <a href="https://planby.us/" target="_blank" rel="noreferrer">
+                  'HOMI AI - 인공지능이 꾸며주는 나의 공간'
+                </a>{' '}
+                인테리어 디자인 AI 자동화 MVP 개발
+              </>
+            ),
+          },
+          {
+            이름: '',
+            기간: '',
+            직책: '',
+            부서: '',
+            역할: '',
+          },
+          {
+            이름: '',
+            기간: '',
+            직책: '',
+            부서: '',
+            역할: '',
+          },
+          {
+            이름: '',
+            기간: '',
+            직책: '',
+            부서: '',
+            역할: '',
+          },
+          {
+            이름: '',
+            기간: '',
+            직책: '',
+            부서: '',
+            역할: '',
+          },
+          {
+            이름: '',
+            기간: '',
+            직책: '',
+            부서: '',
+            역할: '',
+          },
+          {
+            이름: '',
+            기간: '',
+            직책: '',
+            부서: '',
+            역할: '',
+          },
+          {
+            이름: '',
+            기간: '',
+            직책: '',
+            부서: '',
+            역할: '',
+          },
+          {
+            이름: '',
+            기간: '',
+            직책: '',
+            부서: '',
+            역할: '',
+          },
+          {
+            이름: '',
+            기간: '',
+            직책: '',
+            부서: '',
+            역할: '',
+          },
+        ].map(({ 이름, 기간, 직책, 부서, 역할 }, i) => (
+          <Fragment key={i}>
+            <li>
+              <div className="grid grid-cols-2 gap-4 my-4">
+                {이름}
+                {기간}
+              </div>
+              <div className="grid grid-cols-2 gap-x-4 gap-y-1">
+                <div>직책: {직책}</div>
+                <div>부서: {부서}</div>
+                <div className="col-span-2">역할: {역할}</div>
+              </div>
+            </li>
+            <div className="border first-of-type:hidden w-full my-6" />
+          </Fragment>
+        ))}
         <li>
           <div className="grid grid-cols-2 gap-4 my-4">
             <a
@@ -1041,7 +1122,7 @@ export default function HomePage({ params }: PageProps) {
               </a>
               <a
                 href="https://www.linkedin.com/company/%EB%A6%AC%ED%8A%B8%EB%A6%AC%EB%B2%84%EC%82%B4%EB%A1%B1/"
-                className="text-sm"
+                className=""
                 target="_blank"
               >
                 (現 리트리버살롱)
@@ -1134,11 +1215,7 @@ export default function HomePage({ params }: PageProps) {
                 <b>(주)페스타</b>
                 <FestaLogo />
               </a>
-              <a
-                href="https://www.sedaily.com/NewsView/264PCFEN6T"
-                className="text-sm"
-                target="_blank"
-              >
+              <a href="https://www.sedaily.com/NewsView/264PCFEN6T" className="" target="_blank">
                 (現 당근마켓 피인수 기업)
               </a>
             </div>
@@ -1255,7 +1332,7 @@ export default function HomePage({ params }: PageProps) {
         </li>
       </ul>
       <h2 className="text-3xl my-8 ">
-        개발 활동 <span className="text-sm">(급여 X)</span>
+        개발 활동 <span className="">(급여 X)</span>
       </h2>
       <ul>
         <li>
@@ -1336,7 +1413,7 @@ export default function HomePage({ params }: PageProps) {
             </a>
             <div>
               MMO&nbsp;
-              <span className="text-xs">(IT교육회사)</span>
+              <span className="text-sm">(IT교육회사)</span>
             </div>
             <div>팀원 3명</div>
             <div>2022년 11월 27일</div>
@@ -1507,7 +1584,7 @@ export default function HomePage({ params }: PageProps) {
         협업과 서로의 성장에 기반한다는 사실을 느꼈습니다.
       </p>
       <h3 className="text-lg my-4 ">
-        가치관 및 신조 <span className="text-xs font-normal">약 900자</span>
+        가치관 및 신조 <span className="text-sm font-normal">약 900자</span>
       </h3>
       <p className="my-2">
         저는 개인적인 성장과 팀의 목표 달성을 중시하는 프론트엔드 개발자입니다. 프론트엔드 개발의
@@ -1537,7 +1614,7 @@ export default function HomePage({ params }: PageProps) {
         높은 결과물을 산출할 수 있기에, 이 부분에서 책임감을 나타낼 것을 약속드립니다.
       </p>
       <h3 className="text-lg my-4 ">
-        성격의 장단점 <span className="text-xs font-normal">약 800자</span>
+        성격의 장단점 <span className="text-sm font-normal">약 800자</span>
       </h3>
       <p className="my-2">
         저는 업무에 깊이 몰입하며 뛰어난 집중력을 발휘합니다. 이는 3개월 동안 토스뱅크(주)라는 금융
@@ -1562,8 +1639,8 @@ export default function HomePage({ params }: PageProps) {
         요청해 서비스에 대한 시야를 넓히고 있으며, 프로젝트 전체를 이해하는 개발자로 성장하고
         있습니다.
       </p>
-      <div className="w-full text-center text-slate-800 text-sm mt-8">작성일: {date}</div>
-      <div className="w-full text-center text-slate-800 text-sm">작성자: 곽태욱</div>
+      <div className="w-full text-center text-slate-800  mt-8">작성일: {date}</div>
+      <div className="w-full text-center text-slate-800 ">작성자: 곽태욱</div>
       <div className="my-8" />
       <h1 className="text-4xl mb-8 font-semibold w-full break-before-page">포트폴리오</h1>
       <h2 className="text-3xl my-8">프로젝트</h2>
@@ -1726,7 +1803,7 @@ export default function HomePage({ params }: PageProps) {
             </h5>
           </div>
         </a>
-        <span className="text-xs text-red-500">백엔드 비활성화됨</span>
+        <span className="text-sm text-red-500">백엔드 비활성화됨</span>
       </div>
       <div>AI가 만드는 내일의 우리집 인테리어를 경험해보세요</div>
       <div className="flex flex-wrap gap-1 my-2">
@@ -1948,7 +2025,7 @@ export default function HomePage({ params }: PageProps) {
             </h5>
           </div>
         </a>
-        <span className="text-xs text-red-500">백엔드 비활성화됨</span>
+        <span className="text-sm text-red-500">백엔드 비활성화됨</span>
       </div>
       <div>
         대한민국 한 해 예산이 약 600조이고 이걸 중앙 정부와 지자체가 나눠서 가져간다. 하지만 현재
@@ -2176,7 +2253,7 @@ export default function HomePage({ params }: PageProps) {
             </h5>
           </div>
         </a>
-        <span className="text-xs text-red-500">백엔드 비활성화됨</span>
+        <span className="text-sm text-red-500">백엔드 비활성화됨</span>
       </div>
       <div>시시각각 변하는 쿠팡의 가격을 추적하여 알림을 받기 위해 프로젝트를 시작함</div>
       <div className="flex flex-wrap gap-1 my-2">
@@ -2304,7 +2381,7 @@ export default function HomePage({ params }: PageProps) {
             </h5>
           </div>
         </a>
-        <span className="text-xs text-red-500">백엔드 비활성화됨</span>
+        <span className="text-sm text-red-500">백엔드 비활성화됨</span>
       </div>
       <div>공공보건 증진을 위한 개인간 보건기록 QR코드 익명 인증 서비스</div>
       <div className="flex flex-wrap gap-1 my-2">
@@ -2747,7 +2824,7 @@ export default function HomePage({ params }: PageProps) {
             </h5>
           </div>
         </a>
-        <span className="text-xs text-red-500">백엔드 비활성화됨</span>
+        <span className="text-sm text-red-500">백엔드 비활성화됨</span>
       </div>
       <div>
         <a href="https://www.onoffmix.com/event/236424" target="_blank" rel="noreferrer">
@@ -2935,7 +3012,7 @@ export default function HomePage({ params }: PageProps) {
             </h5>
           </div>
         </a>
-        <span className="text-xs text-red-500">백엔드 비활성화됨</span>
+        <span className="text-sm text-red-500">백엔드 비활성화됨</span>
       </div>
       <div>
         <b>소</b>소한 행<b>복</b> :) 카페 및 디저트 매장 검색이 불편하니 검색을 편리하게 만들자!{' '}
@@ -3597,9 +3674,8 @@ export default function HomePage({ params }: PageProps) {
         <li>카카오페이, 토스페이를 사용해 결제 시스템을 자동화할 수 있음</li>
         <li>Google Analytics를 활용한 사이트 통계 분석 경험이 있음</li>
       </dl>
-
-      <div className="w-full text-center text-slate-800 text-sm mt-8">작성일: {date}</div>
-      <div className="w-full text-center text-slate-800 text-sm">작성자: 곽태욱</div>
+      <div className="w-full text-center text-slate-800  mt-8">작성일: {date}</div>
+      <div className="w-full text-center text-slate-800 ">작성자: 곽태욱</div>
     </main>
   )
 }
