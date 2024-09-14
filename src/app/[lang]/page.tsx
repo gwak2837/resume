@@ -476,7 +476,7 @@ export default function HomePage({ params }: PageProps) {
               className="flex gap-2 items-center"
               target="_blank"
             >
-              <h4 className="w-fit font-bold">토스뱅크(주)</h4>
+              <h4 className="w-fit text-xl font-bold">토스뱅크(주)</h4>
               <Image
                 src="/images/TossBank_Logo_Primary.png"
                 alt="tossbank"
@@ -969,7 +969,7 @@ export default function HomePage({ params }: PageProps) {
                 target="_blank"
                 rel="noreferrer"
               >
-                <h3 className="w-fit text-lg">(주)플랜바이테크놀로지스</h3>
+                <h3 className="w-fit">(주)플랜바이테크놀로지스</h3>
                 <PlanbyLogo height="19" />
               </a>
             ),
@@ -1000,7 +1000,7 @@ export default function HomePage({ params }: PageProps) {
                 className="flex gap-2 items-center"
                 target="_blank"
               >
-                <h3 className="w-fit text-lg">(주)더하트컴퍼니</h3>
+                <h3 className="w-fit">(주)더하트컴퍼니</h3>
                 <Image
                   src="/images/theheartcompany-logo.png"
                   alt="theheartcompany"
@@ -1034,7 +1034,7 @@ export default function HomePage({ params }: PageProps) {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <h3 className="w-fit text-lg">(주)알파카살롱</h3>
+                  <h3 className="w-fit">(주)알파카살롱</h3>
                   <Image
                     src="/images/알파카살롱-logo.jpg"
                     alt="알파카살롱"
@@ -1062,7 +1062,7 @@ export default function HomePage({ params }: PageProps) {
           {
             이름: (
               <a href="http://www.beyondcoding.kr/about.php" target="_blank" rel="noreferrer">
-                <h3 className="w-fit text-lg">비욘드코딩 (코딩학원)</h3>
+                <h3 className="w-fit">비욘드코딩 (코딩학원)</h3>
               </a>
             ),
             기간: <div>2021.08.25 ~ 09.30 (1개월)</div>,
@@ -1076,7 +1076,7 @@ export default function HomePage({ params }: PageProps) {
                 href="https://kimstudy.com/tutor/379acc6f-43dd-4544-8e99-54dc4e2e6b1f"
                 target="_blank"
               >
-                <h3 className="w-fit text-lg">개인 과외</h3>
+                <h3 className="w-fit">개인 과외</h3>
               </a>
             ),
             기간: (
@@ -1102,7 +1102,7 @@ export default function HomePage({ params }: PageProps) {
           {
             이름: (
               <a href="http://pmcm.cau.ac.kr/" target="_blank" rel="noreferrer">
-                <h3 className="w-fit text-lg">중앙대학교 건설경영정보 연구실 (김경주 교수)</h3>
+                <h3 className="w-fit">중앙대학교 건설경영정보 연구실 (김경주 교수)</h3>
               </a>
             ),
             기간: (
@@ -1123,7 +1123,7 @@ export default function HomePage({ params }: PageProps) {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <h3 className="w-fit text-lg">(주)페스타</h3>
+                  <h3 className="w-fit">(주)페스타</h3>
                   <FestaLogo />
                 </a>
                 <a href="https://www.sedaily.com/NewsView/264PCFEN6T" target="_blank">
@@ -1155,7 +1155,7 @@ export default function HomePage({ params }: PageProps) {
                 target="_blank"
                 rel="noreferrer"
               >
-                <h3 className="w-fit text-lg">(주)행복한 다람쥐단</h3>
+                <h3 className="w-fit">(주)행복한 다람쥐단</h3>
                 <Image
                   src="/images/happydaram-logo.webp"
                   alt="행복한다람쥐단"
@@ -1180,7 +1180,7 @@ export default function HomePage({ params }: PageProps) {
             역할: "'방탈출 리뷰 웹사이트' 기획·디자인 및 MVP 개발",
           },
           {
-            이름: <h3 className="w-fit text-lg">중앙대학교 2019년 2학기 SW 기초 교과목 멘토</h3>,
+            이름: <h3 className="w-fit">중앙대학교 2019년 2학기 SW 기초 교과목 멘토</h3>,
             기간: <div>2019.09.16 ~ 12.13 (3개월)</div>,
             직책: '수업 조교 (근로장학생)',
             부서: "'컴퓨팅적 사고와 문제 해결' 과목",
@@ -1189,9 +1189,7 @@ export default function HomePage({ params }: PageProps) {
           {
             이름: (
               <a href="https://web.cau.ac.kr/energy/index.htm" target="_blank" rel="noreferrer">
-                <h3 className="w-fit text-lg">
-                  중앙대학교 에너지 및 복사특성 연구실 (김태국 교수)
-                </h3>
+                <h3 className="w-fit">중앙대학교 에너지 및 복사특성 연구실 (김태국 교수)</h3>
               </a>
             ),
             기간: (
@@ -1211,7 +1209,7 @@ export default function HomePage({ params }: PageProps) {
                 target="_blank"
                 rel="noreferrer"
               >
-                <h3 className="w-fit text-lg">(주)리서치랩</h3>
+                <h3 className="w-fit">(주)리서치랩</h3>
                 <Image src="/images/researchlab-logo.jpg" alt="리서치랩" width="69" height="20" />
               </a>
             ),
@@ -1231,7 +1229,7 @@ export default function HomePage({ params }: PageProps) {
                 {이름}
                 {기간}
               </div>
-              <div className="grid grid-cols-2 gap-x-4 gap-y-1">
+              <div className="grid grid-cols-2 gap-x-4">
                 {직책 && <div>직책: {직책}</div>}
                 {부서 && <div>부서: {부서}</div>}
                 <div className="col-span-2">역할: {역할}</div>
@@ -1253,7 +1251,7 @@ export default function HomePage({ params }: PageProps) {
                 target="_blank"
                 rel="noreferrer"
               >
-                <h3 className="w-fit text-lg">Purdue University 해외교육</h3>
+                <h3 className="w-fit">Purdue University 해외교육</h3>
               </a>
             ),
             기간: (
@@ -1273,7 +1271,7 @@ export default function HomePage({ params }: PageProps) {
             ),
           },
           {
-            이름: <h3 className="w-fit text-lg">신디(SinDy, Signature in Dessert) 창업</h3>,
+            이름: <h3 className="w-fit">신디(SinDy, Signature in Dessert) 창업</h3>,
             기간: <div>2021.02.08 ~ 11.08 (9개월)</div>,
             직책: 'Full stack Developer 팀장 (공동창업자)',
             부서: '전체(5명) ⊃ 개발팀(2명)',
@@ -1286,7 +1284,7 @@ export default function HomePage({ params }: PageProps) {
                 {이름}
                 {기간}
               </div>
-              <div className="grid grid-cols-2 gap-x-4 gap-y-1">
+              <div className="grid grid-cols-2 gap-x-4">
                 {직책 && <div>직책: {직책}</div>}
                 {부서 && <div>부서: {부서}</div>}
                 <div className="col-span-2">역할: {역할}</div>
