@@ -153,7 +153,7 @@ export default function HomePage({ params }: PageProps) {
       </div>
       <p className="my-4 text-lg">{dict.한줄소개[lang]}</p>
       <h2 className="text-3xl my-8">
-        {dict.개발경력[lang]} <span className="text-sm">(1년, 2024년 8월 26일 기준)</span>
+        {dict.개발경력[lang]} <span className="text-sm">(1년, 2024.08.26 기준)</span>
       </h2>
       <ul>
         <li>
@@ -167,7 +167,7 @@ export default function HomePage({ params }: PageProps) {
               <RidiLogo />
             </a>
             <a href="/pdf/리디-재직증명서.pdf" target="_blank">
-              <div>2023년 11월 27일 ~ 현재</div>
+              <div>2023.11.27 ~ 현재</div>
             </a>
           </div>
           <div className="grid grid-cols-2  gap-x-4 gap-y-1">
@@ -183,7 +183,7 @@ export default function HomePage({ params }: PageProps) {
           <div className="border-l-2 pl-4 ">
             <div className="grid grid-cols-2 gap-4 mt-6 mb-4">
               <h4 className="font-bold">RIDI 웹</h4>
-              <div>2024년 4월 ~ 현재</div>
+              <div>2024.04.01 ~ 현재</div>
             </div>
             <div className="grid grid-cols-2 gap-x-4 gap-y-1">
               <div>직책: Frontend Engineer (Junior)</div>
@@ -327,7 +327,7 @@ export default function HomePage({ params }: PageProps) {
           <div className="border-l-2 pl-4 ">
             <div className="grid grid-cols-2 gap-4 mt-6 mb-4">
               <h4 className="font-bold">Manta - Unlimited Comics to Binge</h4>
-              <div>2023년 11월 ~ 2024년 3월 (4개월)</div>
+              <div>2023.11.27 ~ 2024.03.31 (4개월)</div>
             </div>
             <div className="grid grid-cols-2 gap-x-4 gap-y-1">
               <div>직책: Frontend Engineer (Junior)</div>
@@ -485,7 +485,7 @@ export default function HomePage({ params }: PageProps) {
               />
             </a>
             <a href="/pdf/토스뱅크-경력증명서.pdf" target="_blank">
-              <div>2023년 8월 7일 ~ 11월 6일 (3개월)</div>
+              <div>2023.08.07 ~ 11.06 (3개월)</div>
             </a>
           </div>
           <div className="grid grid-cols-2 gap-x-4  gap-y-1">
@@ -500,7 +500,7 @@ export default function HomePage({ params }: PageProps) {
           <div className="border-l-2 pl-4 ">
             <div className="grid grid-cols-2 gap-4 mt-6 mb-4">
               <h4 className="font-bold">토스뱅크 루모스 (여신 심사·관리·운영 시스템)</h4>
-              <div>2023년 8월 ~ 11월 (3개월)</div>
+              <div>2023.08.07 ~ 11.06 (3개월)</div>
             </div>
             <div className="grid grid-cols-2 gap-x-4 gap-y-1 mb-3">
               <div>직책: Admin Developer</div>
@@ -611,7 +611,7 @@ export default function HomePage({ params }: PageProps) {
               </a>
               <div className="text-sm">(MAGNA CUM LAUDE)</div>
             </td>
-            <td>
+            <td className="text-center">
               <a href="/pdf/중앙대학교-졸업증명서.pdf" target="_blank">
                 {dict.학력_기간[lang]}
               </a>
@@ -631,7 +631,7 @@ export default function HomePage({ params }: PageProps) {
               </a>
             </td>
             <td>{dict.호남고등학교_세부[lang]}</td>
-            <td>
+            <td className="text-center">
               <a href="/pdf/호남고등학교-생활기록부.pdf" target="_blank">
                 {dict.호남고등학교_기간[lang]}
               </a>
@@ -649,7 +649,7 @@ export default function HomePage({ params }: PageProps) {
               </a>
             </td>
             <td>{dict.기숙형자율학교[lang]}</td>
-            <td>{dict.화산중학교_기간[lang]}</td>
+            <td className="text-center">{dict.화산중학교_기간[lang]}</td>
             <td>
               <a href="/pdf/완주화산중학교-성적증명서.pdf" target="_blank">
                 {dict.화산중학교_성적[lang]}
@@ -995,388 +995,307 @@ export default function HomePage({ params }: PageProps) {
             ),
           },
           {
-            이름: '',
-            기간: '',
-            직책: '',
-            부서: '',
-            역할: '',
+            이름: (
+              <a
+                href="https://www.saramin.co.kr/zf_user/company-info/view?csn=eFE2Qks5TzVpanROVE5pQW9ZbGMyZz09"
+                className="flex gap-2 items-center"
+                target="_blank"
+              >
+                <h3 className="w-fit text-lg">(주)더하트컴퍼니</h3>
+                <Image
+                  src="/images/theheartcompany-logo.png"
+                  alt="theheartcompany"
+                  width="56"
+                  height="24"
+                />
+              </a>
+            ),
+            기간: (
+              <a href="/pdf/더하트컴퍼니.pdf" target="_blank">
+                2022년 2월 14일 ~ 3월 13일 (1개월)
+              </a>
+            ),
+            직책: 'Frontend Developer 팀장',
+            부서: '개발팀 (2명)',
+            역할: (
+              <>
+                <a href="https://www.instagram.com/be_myseason/" target="_blank" rel="noreferrer">
+                  '비마이시즌 - 다시 일하고 싶은 여성의 상호성장 플랫폼'
+                </a>{' '}
+                MVP 개발
+              </>
+            ),
           },
           {
-            이름: '',
-            기간: '',
-            직책: '',
-            부서: '',
-            역할: '',
+            이름: (
+              <div className="flex gap-2 items-center">
+                <a
+                  href="https://www.linkedin.com/company/%EC%A3%BC-%EC%95%8C%ED%8C%8C%EC%B9%B4%EC%82%B4%EB%A1%B1/about/"
+                  className="flex gap-2 items-center"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <h3 className="w-fit text-lg">(주)알파카살롱</h3>
+                  <Image
+                    src="/images/알파카살롱-logo.jpg"
+                    alt="알파카살롱"
+                    width="72"
+                    height="24"
+                  />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/%EB%A6%AC%ED%8A%B8%EB%A6%AC%EB%B2%84%EC%82%B4%EB%A1%B1/"
+                  target="_blank"
+                >
+                  (現 리트리버살롱)
+                </a>
+              </div>
+            ),
+            기간: (
+              <a href="/pdf/알파카살롱.pdf" target="_blank">
+                2021년 11월 9일 ~ 2022년 2월 8일 (3개월)
+              </a>
+            ),
+            직책: 'Full stack Developer 팀장',
+            부서: '개발팀 (3명)',
+            역할: "'4050 여성 전용 커뮤니티' 알파카살롱 기획 및 MVP 개발",
           },
           {
-            이름: '',
-            기간: '',
-            직책: '',
-            부서: '',
-            역할: '',
+            이름: (
+              <a href="http://www.beyondcoding.kr/about.php" target="_blank" rel="noreferrer">
+                <h3 className="w-fit text-lg">비욘드코딩 (코딩학원)</h3>
+              </a>
+            ),
+            기간: <div>2021년 8월 25일 ~ 9월 30일 (1개월)</div>,
+            직책: '웹 개발 수업 강사',
+            부서: '초중등반 (6명)',
+            역할: '초등학생/중학생을 대상으로 HTML/CSS/JS 개념 및 자기소개 웹페이지 제작 수업 (주 2회, 1회 3시간)',
           },
           {
-            이름: '',
-            기간: '',
+            이름: (
+              <a
+                href="https://kimstudy.com/tutor/379acc6f-43dd-4544-8e99-54dc4e2e6b1f"
+                target="_blank"
+              >
+                <h3 className="w-fit text-lg">개인 과외</h3>
+              </a>
+            ),
+            기간: (
+              <a href="/pdf/김과외.pdf" target="_blank">
+                2021년 8월 9일 ~ 2022년 2월 6일 (6개월)
+              </a>
+            ),
             직책: '',
             부서: '',
-            역할: '',
+            역할: (
+              <>
+                대학생을 대상으로 Frontend·Backend·Cloud 개념, 네트워크 OSI 계층,{' '}
+                <a
+                  href="https://velog.io/@gwak2837/Next.js-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%A0%8C%EB%8D%94%EB%A7%81-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0"
+                  target="_blank"
+                >
+                  SSR·CSR·SSG
+                </a>
+                , Database 개념 수업 및 인스타그램 클론 코딩 수업 (주 3회, 1회 2시간)
+              </>
+            ),
           },
           {
-            이름: '',
-            기간: '',
-            직책: '',
-            부서: '',
-            역할: '',
+            이름: (
+              <a href="http://pmcm.cau.ac.kr/" target="_blank" rel="noreferrer">
+                <h3 className="w-fit text-lg">중앙대학교 건설경영정보 연구실 (김경주 교수)</h3>
+              </a>
+            ),
+            기간: (
+              <a href="/images/2021-cau-lab.webp" target="_blank">
+                2021년 6월 1일 ~ 8월 31일 (3개월)
+              </a>
+            ),
+            직책: 'Frontend Developer 팀장 (참여연구원)',
+            부서: '개발팀 (2명)',
+            역할: "'3차) 블록체인 기술을 이용한 해외 건설프로젝트 스마트 분쟁관리 모델구축 연구' 과제 참여. 건설 프로젝트 수주 협상 과정에서 주고 받는 이메일을 블록체인 상에 관리하여 추후 분쟁 발생 여지를 최소화하는 사이트 개발",
           },
           {
-            이름: '',
-            기간: '',
-            직책: '',
-            부서: '',
-            역할: '',
+            이름: (
+              <div className="flex gap-2 items-center">
+                <a
+                  href="https://www.linkedin.com/company/festaio/"
+                  className="flex gap-2 items-center"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <h3 className="w-fit text-lg">(주)페스타</h3>
+                  <FestaLogo />
+                </a>
+                <a href="https://www.sedaily.com/NewsView/264PCFEN6T" target="_blank">
+                  (現 당근마켓 피인수 기업)
+                </a>
+              </div>
+            ),
+            기간: (
+              <a href="/pdf/페스타.pdf" target="_blank">
+                2020년 9월 1일 ~ 12월 31일 (4개월)
+              </a>
+            ),
+            직책: 'Frontend Developer',
+            부서: '개발팀 (4명)',
+            역할: (
+              <>
+                <a href="https://festa.io/" target="_blank" rel="noreferrer">
+                  '페스타 - 온·오프라인 이벤트 티켓 및 고객 관리 서비스'
+                </a>{' '}
+                Admin(관리자) 서비스 기획 및 개발
+              </>
+            ),
           },
           {
-            이름: '',
-            기간: '',
-            직책: '',
-            부서: '',
-            역할: '',
+            이름: (
+              <a
+                href="https://www.saramin.co.kr/zf_user/company-info/view?csn=VHFyWXhFL2E1N1hYMkhEZmUxK05SZz09"
+                className="flex gap-2 items-center"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <h3 className="w-fit text-lg">(주)행복한 다람쥐단</h3>
+                <Image
+                  src="/images/happydaram-logo.webp"
+                  alt="행복한다람쥐단"
+                  width="28"
+                  height="25"
+                />
+              </a>
+            ),
+            기간: (
+              <div>
+                <a href="/images/2019-happydaram.webp" target="_blank">
+                  2019년 12월 23일
+                </a>{' '}
+                ~{' '}
+                <a href="/images/2019-happydaram2.webp" target="_blank">
+                  2020년 2월 21일 (2개월)
+                </a>
+              </div>
+            ),
+            직책: 'Frontend Developer',
+            부서: '개발부 (3명)',
+            역할: "'방탈출 리뷰 웹사이트' 기획·디자인 및 MVP 개발",
           },
           {
-            이름: '',
-            기간: '',
-            직책: '',
-            부서: '',
-            역할: '',
+            이름: <h3 className="w-fit text-lg">중앙대학교 2019년 2학기 SW 기초 교과목 멘토</h3>,
+            기간: <div>2019년 9월 16일 ~ 12월 13일 (3개월)</div>,
+            직책: '수업 조교 (근로장학생)',
+            부서: "'컴퓨팅적 사고와 문제 해결' 과목",
+            역할: '수업 중 수강생의 Scratch 프로그래밍 관련 질의 응답 및 과제 채점 (주 2회, 1회 2시간)',
           },
           {
-            이름: '',
-            기간: '',
-            직책: '',
-            부서: '',
-            역할: '',
+            이름: (
+              <a href="https://web.cau.ac.kr/energy/index.htm" target="_blank" rel="noreferrer">
+                <h3 className="w-fit text-lg">
+                  중앙대학교 에너지 및 복사특성 연구실 (김태국 교수)
+                </h3>
+              </a>
+            ),
+            기간: (
+              <a href="/images/2019-cau-lab.webp" target="_blank">
+                2019년 4월 1일 ~ 8월 31일 (5개월)
+              </a>
+            ),
+            직책: 'Software Developer (참여연구원)',
+            부서: '개발팀 (2명)',
+            역할: "'KFX IR 해석 기법 및 해석 소프트웨어 개발 연구' 과제 참여. 적외선 영상 통계 분석 개발 보조 (C++), OpenMP 라이브러리 기반 병렬처리로 수학 계산 성능 최적화",
+          },
+          {
+            이름: (
+              <a
+                href="https://www.saramin.co.kr/zf_user/company-info/view/csn/b2ZtOGw4SWdmTldhbjVLK2pqNzdDZz09/company_nm/(%EC%A3%BC)%EB%A6%AC%EC%84%9C%EC%B9%98%EB%9E%A9"
+                className="flex gap-2 items-center"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <h3 className="w-fit text-lg">(주)리서치랩</h3>
+                <Image src="/images/researchlab-logo.jpg" alt="리서치랩" width="69" height="20" />
+              </a>
+            ),
+            기간: (
+              <a href="/images/2017-researchlab.webp" target="_blank">
+                2017년 7월 31일 ~ 8월 25일 (1개월)
+              </a>
+            ),
+            직책: 'Data Analyst',
+            부서: '연구4팀 (10명)',
+            역할: '여론 조사 데이터 통계 분석 및 엑셀 함수 작성',
           },
         ].map(({ 이름, 기간, 직책, 부서, 역할 }, i) => (
           <Fragment key={i}>
             <li>
-              <div className="grid grid-cols-2 gap-4 my-4">
+              <div className="grid grid-cols-2 items-center gap-4 my-4">
                 {이름}
                 {기간}
               </div>
               <div className="grid grid-cols-2 gap-x-4 gap-y-1">
-                <div>직책: {직책}</div>
-                <div>부서: {부서}</div>
+                {직책 && <div>직책: {직책}</div>}
+                {부서 && <div>부서: {부서}</div>}
                 <div className="col-span-2">역할: {역할}</div>
               </div>
             </li>
-            <div className="border first-of-type:hidden w-full my-6" />
+            <div className="border last-of-type:hidden w-full my-5" />
           </Fragment>
         ))}
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <a
-              href="https://www.saramin.co.kr/zf_user/company-info/view?csn=eFE2Qks5TzVpanROVE5pQW9ZbGMyZz09"
-              className="flex gap-2 items-center"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <b>(주)더하트컴퍼니</b>
-              <Image
-                src="/images/theheartcompany-logo.png"
-                alt="theheartcompany"
-                width="56"
-                height="24"
-              />
-            </a>
-            <div>
-              <a href="/pdf/더하트컴퍼니.pdf" target="_blank">
-                2022년 2월 14일 ~ 3월 13일 (1개월)
-              </a>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Frontend Developer 팀장</div>
-            <div>부서: 개발팀 (2명)</div>
-          </div>
-          <div>
-            역할:{' '}
-            <a href="https://www.instagram.com/be_myseason/" target="_blank" rel="noreferrer">
-              '비마이시즌 - 다시 일하고 싶은 여성의 상호성장 플랫폼'
-            </a>{' '}
-            MVP 개발
-          </div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <div className="flex gap-2 items-center">
-              <a
-                href="https://www.linkedin.com/company/%EC%A3%BC-%EC%95%8C%ED%8C%8C%EC%B9%B4%EC%82%B4%EB%A1%B1/about/"
-                className="flex gap-2 items-center"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <b>(주)알파카살롱</b>{' '}
-                <Image src="/images/알파카살롱-logo.jpg" alt="알파카살롱" width="72" height="24" />
-              </a>
-              <a
-                href="https://www.linkedin.com/company/%EB%A6%AC%ED%8A%B8%EB%A6%AC%EB%B2%84%EC%82%B4%EB%A1%B1/"
-                className=""
-                target="_blank"
-              >
-                (現 리트리버살롱)
-              </a>
-            </div>
-            <div>
-              <a href="/pdf/알파카살롱.pdf" target="_blank">
-                2021년 11월 9일 ~ 2022년 2월 8일 (3개월)
-              </a>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Full stack Developer 팀장</div>
-            <div>부서: 개발팀 (3명)</div>
-          </div>
-          <div>역할: '4050 여성 전용 커뮤니티' 알파카살롱 기획 및 MVP 개발</div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <a href="http://www.beyondcoding.kr/about.php" target="_blank" rel="noreferrer">
-              <b>비욘드코딩 (코딩학원)</b>
-            </a>
-            <div>2021년 8월 25일 ~ 9월 30일 (1개월)</div>
-          </div>
-          <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: 웹 개발 수업 강사</div>
-            <div>부서: 초중등반 (6명)</div>
-          </div>
-          <div>
-            역할: 초등학생/중학생을 대상으로 HTML/CSS/JS 개념 및 자기소개 웹페이지 제작 수업 (주
-            2회, 1회 3시간)
-          </div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <a
-              href="https://kimstudy.com/tutor/379acc6f-43dd-4544-8e99-54dc4e2e6b1f"
-              target="_blank"
-            >
-              <b>개인 과외</b>
-            </a>
-            <a href="/pdf/김과외.pdf" target="_blank">
-              2021년 8월 9일 ~ 2022년 2월 6일 (6개월)
-            </a>
-          </div>
-          <div className="grid grid-cols-2 gap-x-4"></div>
-          <div>
-            역할: 대학생을 대상으로 Frontend·Backend·Cloud 개념, 네트워크 OSI 계층,{' '}
-            <a
-              href="https://velog.io/@gwak2837/Next.js-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%A0%8C%EB%8D%94%EB%A7%81-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0"
-              target="_blank"
-            >
-              SSR·CSR·SSG
-            </a>
-            , Database 개념 수업 및 인스타그램 클론 코딩 수업 (주 3회, 1회 2시간)
-          </div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <a href="http://pmcm.cau.ac.kr/" target="_blank" rel="noreferrer">
-              <b>중앙대학교 건설경영정보 연구실 (김경주 교수)</b>
-            </a>
-            <a href="/images/2021-cau-lab.webp" target="_blank">
-              2021년 6월 1일 ~ 8월 31일 (3개월)
-            </a>
-          </div>
-          <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Frontend Developer 팀장 (참여연구원)</div>
-            <div>부서: 개발팀 (2명)</div>
-          </div>
-          <div>
-            역할: '3차) 블록체인 기술을 이용한 해외 건설프로젝트 스마트 분쟁관리 모델구축 연구' 과제
-            참여. 건설 프로젝트 수주 협상 과정에서 주고 받는 이메일을 블록체인 상에 관리하여 추후
-            분쟁 발생 여지를 최소화하는 사이트 개발
-          </div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <div className="flex gap-2 items-center">
-              <a
-                href="https://www.linkedin.com/company/festaio/"
-                className="flex gap-2 items-center"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <b>(주)페스타</b>
-                <FestaLogo />
-              </a>
-              <a href="https://www.sedaily.com/NewsView/264PCFEN6T" className="" target="_blank">
-                (現 당근마켓 피인수 기업)
-              </a>
-            </div>
-            <div>
-              <a href="/pdf/페스타.pdf" target="_blank">
-                2020년 9월 1일 ~ 12월 31일 (4개월)
-              </a>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Frontend Developer</div>
-            <div>부서: Admin 개발팀 (4명)</div>
-          </div>
-          <div>
-            역할:{' '}
-            <a href="https://festa.io/" target="_blank" rel="noreferrer">
-              '페스타 - 온·오프라인 이벤트 티켓 및 고객 관리 서비스'
-            </a>{' '}
-            Admin(관리자) 서비스 기획 및 개발
-          </div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <a
-              href="https://www.saramin.co.kr/zf_user/company-info/view?csn=VHFyWXhFL2E1N1hYMkhEZmUxK05SZz09"
-              className="flex gap-2 items-center"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <b>(주)행복한 다람쥐단 </b>
-              <Image
-                src="/images/happydaram-logo.webp"
-                alt="행복한다람쥐단"
-                width="28"
-                height="25"
-              />
-            </a>
-            <div>
-              <a href="/images/2019-happydaram.webp" target="_blank">
-                2019년 12월 23일
-              </a>{' '}
-              ~{' '}
-              <a href="/images/2019-happydaram2.webp" target="_blank">
-                2020년 2월 21일 (2개월)
-              </a>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Frontend Developer</div>
-            <div>부서: 개발부 (3명)</div>
-          </div>
-          <div>역할: '방탈출 리뷰 웹사이트' 기획·디자인 및 MVP 개발</div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <b>중앙대학교 2019년 2학기 SW 기초 교과목 멘토</b>
-            <div>2019년 9월 16일 ~ 12월 13일 (3개월)</div>
-          </div>
-          <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: 수업 조교 (근로장학생)</div>
-            <div>부서: ‘컴퓨팅적 사고와 문제 해결’ 과목</div>
-          </div>
-          <div>
-            역할: 수업 중 수강생의 Scratch 프로그래밍 관련 질의 응답 및 과제 채점 (주 2회, 1회
-            2시간)
-          </div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <a href="https://web.cau.ac.kr/energy/index.htm" target="_blank" rel="noreferrer">
-              <b>중앙대학교 에너지 및 복사특성 연구실 (김태국 교수)</b>
-            </a>
-            <div>
-              <a href="/images/2019-cau-lab.webp" target="_blank">
-                2019년 4월 1일 ~ 8월 31일 (5개월)
-              </a>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Software Developer (참여연구원)</div>
-            <div>부서: 개발팀 (2명)</div>
-          </div>
-          <div>
-            역할: 'KFX IR 해석 기법 및 해석 소프트웨어 개발 연구' 과제 참여. 적외선 영상 통계 분석
-            개발 보조 (C++), OpenMP 라이브러리 기반 병렬처리로 수학 계산 성능 최적화
-          </div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <a
-              href="https://www.saramin.co.kr/zf_user/company-info/view/csn/b2ZtOGw4SWdmTldhbjVLK2pqNzdDZz09/company_nm/(%EC%A3%BC)%EB%A6%AC%EC%84%9C%EC%B9%98%EB%9E%A9"
-              className="flex gap-2 items-center"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <b>(주)리서치랩</b>
-              <Image src="/images/researchlab-logo.jpg" alt="리서치랩" width="69" height="20" />
-            </a>
-            <div>
-              <a href="/images/2017-researchlab.webp" target="_blank">
-                2017년 7월 31일 ~ 8월 25일 (1개월)
-              </a>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Data Analyst</div>
-            <div>부서: 연구4팀 (10명)</div>
-          </div>
-          <div>역할: 여론 조사 데이터 통계 분석 및 엑셀 함수 작성</div>
-        </li>
       </ul>
       <h2 className="text-3xl my-8 ">
-        개발 활동 <span className="">(급여 X)</span>
+        개발 활동 <span className="text-sm">(급여 X)</span>
       </h2>
       <ul>
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <a
-              href="https://swedu.cau.ac.kr/core/program/programview?menuid=001004001002007&programgroupno=8&programno=420"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <b>Purdue University 온라인 해외교육</b>
-            </a>
-            <div>
+        {[
+          {
+            이름: (
+              <a
+                href="https://swedu.cau.ac.kr/core/program/programview?menuid=001004001002007&programgroupno=8&programno=420"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <h3 className="w-fit text-lg">Purdue University 해외교육</h3>
+              </a>
+            ),
+            기간: (
               <a href="/pdf/Certificates-IITP-Summer-2021-CAU.pdf" target="_blank">
                 2021년 7월 5일 ~ 8월 20일 (2개월)
               </a>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Data Labeler (교환학생)</div>
-            <div>소속: 3팀 (지도교수 포함 8명)</div>
-          </div>
-          <div>
-            역할:{' '}
-            <a href="/pdf/IITP_2021_summer_UAV_ground_scanning_system.pdf" target="_blank">
-              'UAV Ground Scanning System'
-            </a>{' '}
-            논문 작성 및 학습 데이터 수집/가공
-          </div>
-        </li>
-        <div className="border w-full my-6" />
-        <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
-            <b>신디(SinDy, Signature in Dessert) 창업</b>
-            <div>2021년 2월 8일 ~ 11월 8일 (9개월)</div>
-          </div>
-          <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Full stack Developer 팀장 (공동창업자)</div>
-            <div>소속: 전체(5명) ⊃ 개발팀(2명)</div>
-          </div>
-          <div>
-            역할: '카페의 특색을 담아내는 사용자 주도 SNS형 디저트 정보 공유 공간' 디저트핏 기획 및
-            Frontend · Backend · Cloud 개발
-          </div>
-        </li>
+            ),
+            직책: 'Data Labeler (교환학생)',
+            부서: '3팀 (지도교수 포함 8명)',
+            역할: (
+              <>
+                <a href="/pdf/IITP_2021_summer_UAV_ground_scanning_system.pdf" target="_blank">
+                  'UAV Ground Scanning System'
+                </a>{' '}
+                논문 작성 및 학습 데이터 수집/가공
+              </>
+            ),
+          },
+          {
+            이름: <h3 className="w-fit text-lg">신디(SinDy, Signature in Dessert) 창업</h3>,
+            기간: <div>2021년 2월 8일 ~ 11월 8일 (9개월)</div>,
+            직책: 'Full stack Developer 팀장 (공동창업자)',
+            부서: '전체(5명) ⊃ 개발팀(2명)',
+            역할: "'카페의 특색을 담아내는 사용자 주도 SNS형 디저트 정보 공유 공간' 디저트핏 기획 및 Frontend · Backend · Cloud 개발",
+          },
+        ].map(({ 이름, 기간, 직책, 부서, 역할 }, i) => (
+          <Fragment key={i}>
+            <li>
+              <div className="grid grid-cols-2 items-center gap-4 my-4">
+                {이름}
+                {기간}
+              </div>
+              <div className="grid grid-cols-2 gap-x-4 gap-y-1">
+                {직책 && <div>직책: {직책}</div>}
+                {부서 && <div>부서: {부서}</div>}
+                <div className="col-span-2">역할: {역할}</div>
+              </div>
+            </li>
+            <div className="border last-of-type:hidden w-full my-5" />
+          </Fragment>
+        ))}
       </ul>
       <h2 className="text-3xl my-8">수상</h2>
       <ul>
