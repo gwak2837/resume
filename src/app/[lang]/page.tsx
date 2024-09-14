@@ -58,13 +58,13 @@ export default function HomePage({ params }: PageProps) {
         <div className="flex gap-4 flex-wrap whitespace-nowrap ">
           <Image
             src="/images/profile.webp"
-            className="w-[308px]"
+            className="w-[328px]"
             alt="profile"
             width={1736}
             height={1736}
             priority
           />
-          <ul className="flex flex-col gap-1">
+          <ul className="flex flex-col gap-[3px]">
             {[
               { label: '이름', value: dict.이름[lang] },
               { label: '출생', value: dict.생일[lang] },
