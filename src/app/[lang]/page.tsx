@@ -339,7 +339,7 @@ export default function HomePage({ params }: PageProps) {
                 >
                   점유율 2위
                 </a>
-                인 글로벌 웹툰 서비스 Manta의 React Native 앱과 Next.js 웹을 개발함
+                인 글로벌 웹툰 서비스 Manta의 React Native 기반 앱과 Next.js 기반 웹을 개발함
               </div>
             </div>
             <div className="flex gap-0.5 my-2 items-center">
@@ -452,13 +452,13 @@ export default function HomePage({ params }: PageProps) {
                 <p className="text-slate-600 font-medium">
                   사용자 검색 경험을 향상시키기 위해 프론트엔드에 연관 검색어 기능을 적용함. 출시
                   대비 사용자의 검색 화면 체류 시간이 20% 이상 증가하는 등 사용자가 원하는 콘텐츠를
-                  더 빠르게 찾을 수 있게 하여 서비스 검색 활용도와 사용자 만족도를 높임
+                  빠르게 찾을 수 있게 함
                 </p>
               </li>
               <li>
                 <strong>이벤트 추적</strong>
                 <p className="text-slate-600 font-medium">
-                  사용자 행동 분석과 안정적인 서비스 운영을 위해 Firebase와 Braze를 활용하여 자체
+                  안정적인 서비스 운영과 사용자 행동 분석을 위해 Firebase와 Braze를 활용하여 추적
                   이벤트를 기록하고, 오류 발생 시 Crashlytics에 로그를 기록함. 이를 바탕으로 CS 문의
                   등 다양한 상황에서 Google Cloud 콘솔의 로그 탐색기를 활용하여 사용자의 행동 기록을
                   분석하여 문제를 해결함
