@@ -139,7 +139,7 @@ export default function HomePage({ params }: PageProps) {
               },
               {
                 label: '취미',
-                value: '자전거, 달리기, 웨이트, 독서',
+                value: '자전거, 웨이트, 독서',
               },
             ].map(({ label, value }, i) => (
               <li key={i} className="flex gap-3 items-center">
@@ -162,7 +162,7 @@ export default function HomePage({ params }: PageProps) {
               className="flex gap-2 items-center"
               target="_blank"
             >
-              <h4 className="w-fit font-bold">리디(주)</h4>
+              <h3 className="w-fit font-bold">리디(주)</h3>
               <RidiLogo />
             </a>
             <a href="/pdf/리디-재직증명서.pdf" target="_blank">
@@ -179,9 +179,9 @@ export default function HomePage({ params }: PageProps) {
               플랫폼 기업
             </div>
           </div>
-          <div className="border-l-2 pl-4">
+          <div className="border-l-2 pl-4 text-sm">
             <div className="grid grid-cols-2 gap-4 mt-6 mb-4">
-              <h4 className="text-lg font-semibold">RIDI 웹</h4>
+              <h4 className="font-bold">RIDI 웹</h4>
               <div>2024년 4월 ~ 현재</div>
             </div>
             <div className="grid grid-cols-2 gap-x-4 gap-y-1">
@@ -209,7 +209,7 @@ export default function HomePage({ params }: PageProps) {
                     height="282"
                     className="h-5 w-5 border rounded"
                   />
-                  <h5 className="underline-offset-4 font-medium text-sm underline text-black decoration-gray-300 ">
+                  <h5 className="underline-offset-4 font-medium underline text-black decoration-gray-300 ">
                     ridibooks.com
                   </h5>
                 </div>
@@ -271,22 +271,29 @@ export default function HomePage({ params }: PageProps) {
                 />
               </a>
             </div>
-            <ol>
+            <ol className="text-base my-4">
               <li>
-                만화e북 웹 뷰어 출시: 일본 디지털 만화 시장의 성장에 발맞춰 기존 리디북스 웹 뷰어를
-                개선하여 만화 e북 파일도 열람할 수 있도록 지원함. 이를 통해 사용자가 웹에서 직접
-                만화를 감상할 수 있게 함으로써, 만화 e북 판매 매출이 출시 전월 대비 3.61% 증가하는
-                데 기여함.
+                <strong>만화e북 웹 뷰어 출시</strong>
+                <p className="text-slate-600 font-medium">
+                  일본 디지털 만화 시장의 성장에 발맞춰 기존 리디북스 웹 뷰어에서 만화e북 파일도
+                  열람할 수 있도록 지원함. 사용자가 웹에서 바로 만화를 감상할 수 있게 함으로써, 출시
+                  이후 만화e북 판매 매출이 전월 대비 3.61% 증가하는 데 기여함.
+                </p>
               </li>
               <li>
-                리디셀렉트 B2B 출시: 기존 B2C 형태의 리디셀렉트를 개선하여 다른 기업이 임직원에게
-                전자책 구독 서비스를 복지 차원에서 제공할 수 있게 도와주는 서비스를 출시하여 리디
-                B2B 매출에 기여함
+                <strong>리디셀렉트 B2B 출시</strong>
+                <p className="text-slate-600 font-medium">
+                  기존 B2C 형태의 리디셀렉트를 개선하여 다른 기업이 임직원에게 전자책 구독 서비스를
+                  복지 차원에서 제공할 수 있게 도와주는 서비스를 출시하여 리디 B2B 매출에 기여함
+                </p>
               </li>
               <li>
-                배포 및 롤백 시스템 구축: GrowthBook 서비스를 활용하여 피처 플래그(feature flag)를
-                설정함. 이를 통해 신규 기능 출시 전에 A/B 테스트로 더 나은 기획을 검증하고,
-                실사용자에게 배포 시 의도치 않게 발생할 수 있는 장애에 대비함.
+                <strong>배포 및 롤백 시스템 구축</strong>
+                <p className="text-slate-600 font-medium">
+                  GrowthBook 서비스를 활용하여 피처 플래그(feature flag)를 설정함. 이를 통해 신규
+                  기능 출시 전에 A/B 테스트로 더 나은 기획을 검증하고, 실사용자에게 배포 시 의도치
+                  않게 발생할 수 있는 장애에 대비함
+                </p>
                 <ol className="text-sm text-slate-600">
                   <li>
                     피처 플래그: 신규 기능을 출시하기 전에 사용자, 런타임 환경, 기능 단위로
@@ -306,16 +313,19 @@ export default function HomePage({ params }: PageProps) {
                 </ol>
               </li>
               <li>
-                테스트 코드: Jest와 React Testing Library로 유닛 테스트를 작성하여 코드 리뷰어가
-                코드 베이스를 쉽게 이해할 수 있도록 도와주고, Playwright로 E2E 테스트를 작성하여
-                핵심 사용자 플로우가 정상적으로 작동하는지 자동으로 검증함으로써 서비스 배포 전 QA
-                과정을 자동화함
+                <strong>테스트 코드</strong>
+                <p className="text-slate-600 font-medium">
+                  Jest와 React Testing Library로 유닛 테스트를 작성하여 코드 리뷰어가 코드 베이스를
+                  쉽게 이해할 수 있도록 도와주고, Playwright로 E2E 테스트를 작성하여 핵심 사용자
+                  플로우가 정상적으로 작동하는지 자동으로 검증함으로써 서비스 배포 전 QA 과정을
+                  자동화함
+                </p>
               </li>
             </ol>
           </div>
-          <div className="border-l-2 pl-4">
+          <div className="border-l-2 pl-4 text-sm">
             <div className="grid grid-cols-2 gap-4 mt-6 mb-4">
-              <h4 className="text-lg font-semibold">Manta - Unlimited Comics to Binge</h4>
+              <h4 className="font-bold">Manta - Unlimited Comics to Binge</h4>
               <div>2023년 11월 ~ 2024년 3월 (4개월)</div>
             </div>
             <div className="grid grid-cols-2 gap-x-4 gap-y-1">
@@ -428,23 +438,31 @@ export default function HomePage({ params }: PageProps) {
                 />
               </a>
             </div>
-            <ol>
+            <ol className="text-base my-4">
               <li>
-                프랑스어 출시: 프랑스어를 사용하는 사용자를 위해 국가별 화폐 및 날짜 형식, 언어별
-                텍스트 길이에 따른 디자인 차이, 콘텐츠 연령 등급 관련 현지 법률 등을 고려한
-                국제화(i18n) 디자인을 적용함.
+                <strong>프랑스어 출시</strong>
+                <p className="text-slate-600 font-medium">
+                  프랑스어를 사용하는 사용자를 위해 국가별 화폐 및 날짜 형식, 언어별 텍스트 길이에
+                  따른 디자인 차이, 콘텐츠 연령 등급 관련 현지 법률 등을 고려한 국제화(i18n)
+                  디자인을 적용함
+                </p>
               </li>
               <li>
-                연관 검색어 출시: 사용자 검색 경험을 향상시키기 위해 프론트엔드에 연관 검색어 기능을
-                적용함. 출시 대비 사용자의 검색 화면 체류 시간이 20% 이상 증가하는 등 사용자가
-                원하는 콘텐츠를 더 빠르게 찾을 수 있게 하여 서비스 검색 활용도와 사용자 만족도를
-                높임.
+                <strong>연관 검색어 출시</strong>
+                <p className="text-slate-600 font-medium">
+                  사용자 검색 경험을 향상시키기 위해 프론트엔드에 연관 검색어 기능을 적용함. 출시
+                  대비 사용자의 검색 화면 체류 시간이 20% 이상 증가하는 등 사용자가 원하는 콘텐츠를
+                  더 빠르게 찾을 수 있게 하여 서비스 검색 활용도와 사용자 만족도를 높임
+                </p>
               </li>
               <li>
-                이벤트 추적: 사용자 행동 분석과 안정적인 서비스 운영을 위해 Firebase와 Braze를
-                활용하여 자체 이벤트를 기록하고, 오류 발생 시 Crashlytics에 로그를 기록함. 이를
-                바탕으로 CS 문의 등 다양한 상황에서 Google Cloud 콘솔의 로그 탐색기를 활용하여
-                사용자의 행동 기록을 분석하여 문제를 해결함.
+                <strong>이벤트 추적</strong>
+                <p className="text-slate-600 font-medium">
+                  사용자 행동 분석과 안정적인 서비스 운영을 위해 Firebase와 Braze를 활용하여 자체
+                  이벤트를 기록하고, 오류 발생 시 Crashlytics에 로그를 기록함. 이를 바탕으로 CS 문의
+                  등 다양한 상황에서 Google Cloud 콘솔의 로그 탐색기를 활용하여 사용자의 행동 기록을
+                  분석하여 문제를 해결함
+                </p>
               </li>
             </ol>
           </div>
@@ -479,14 +497,12 @@ export default function HomePage({ params }: PageProps) {
             </div>
           </div>
 
-          <div className="border-l-2 pl-4">
+          <div className="border-l-2 pl-4 text-sm">
             <div className="grid grid-cols-2 gap-4 mt-6 mb-4">
-              <h4 className="text-lg font-semibold">
-                토스뱅크 루모스 (여신 심사·관리·운영 시스템)
-              </h4>
+              <h4 className="font-bold">토스뱅크 루모스 (여신 심사·관리·운영 시스템)</h4>
               <div>2023년 8월 ~ 11월 (3개월)</div>
             </div>
-            <div className="grid grid-cols-2 gap-x-4 gap-y-1">
+            <div className="grid grid-cols-2 gap-x-4 gap-y-1 mb-3">
               <div>직책: Admin Developer (팀원)</div>
               <div>부서: Housing Loan Squad (12명)</div>
               <div className="col-span-2">
@@ -527,34 +543,46 @@ export default function HomePage({ params }: PageProps) {
                 />
               </a>
             </div>
-            <ol>
+            <ol className="text-base my-4">
               <li>
-                전월세보증금대출 출시: 토스뱅크 개발자 및 토스CX 담당자와 협업하여 대출 서류 심사,
-                사후 관리, 지킴 보증 관련 기능을 출시함으로써, 토스뱅크 개인 담보대출 부문에서{' '}
-                <a
-                  href="https://www.sisajournal-e.com/news/articleView.html?idxno=401727"
-                  target="_blank"
-                >
-                  약 2,000억 원의 대출 잔액 증가
-                </a>
-                에 기여함
+                <strong>전월세보증금대출 출시</strong>
+                <p className="text-slate-600 font-medium">
+                  토스뱅크 개발자 및 토스CX 담당자와 협업하여 대출 서류 심사, 사후 관리, 지킴 보증
+                  관련 기능을 출시함으로써, 토스뱅크 개인 담보대출 부문에서{' '}
+                  <a
+                    href="https://www.sisajournal-e.com/news/articleView.html?idxno=401727"
+                    target="_blank"
+                  >
+                    약 2,000억 원의 대출 잔액 증가
+                  </a>
+                  에 기여함
+                </p>
               </li>
               <li>
-                CI 최적화: LUMOS 프로젝트의 Docker 이미지 레이어에 원격 클라우드 캐싱을 적용하여
-                이미지 빌드 시간을 평균 300초에서 210초로 약 30% 단축함
+                <strong>CI 최적화</strong>
+                <p className="text-slate-600 font-medium">
+                  LUMOS 프로젝트의 Docker 이미지 레이어에 원격 클라우드 캐싱을 적용하여 이미지 빌드
+                  시간을 평균 300초에서 210초로 약 30% 단축함
+                </p>
               </li>
               <li>
-                선언형 프로그래밍: Suspense 컴포넌트와 ErrorBoundary 개념을 이용해 네트워크 상태를
-                선언적으로 관리하고, React Query를 사용해 응답 순서가 보장되지 않는 네트워크 요청을
-                비동기로 관리함. 또한 Promise를 활용해 Modal, Dialog 컴포넌트 상태를 선언적으로
-                관리하고, Funnel 패턴을 활용해 다단계 페이지 이동도 선언적으로 관리함. 그리고 연관된
-                코드는 가까운 곳에 배치하여 컴포넌트 응집도를 높이고, 로직 세부 구현은 hook으로 숨겨
-                코드 파악에 필수적인 정보가 잘 보이도록 개선함
+                <strong>선언형 프로그래밍</strong>
+                <p className="text-slate-600 font-medium">
+                  Suspense와 ErrorBoundary 개념을 이용해 네트워크 상태를 선언적으로 관리하고, React
+                  Query를 사용해 응답 순서가 보장되지 않는 네트워크 요청을 비동기로 관리함. 또한
+                  Promise를 활용해 Modal, Dialog 컴포넌트 상태를 선언적으로 관리하고, Funnel 패턴을
+                  활용해 다단계 페이지 이동도 선언적으로 관리함. 그리고 연관된 코드는 가까운 곳에
+                  배치하여 컴포넌트 응집도를 높이고, 로직 세부 구현은 hook으로 숨겨 코드 파악에
+                  필수적인 정보가 잘 보이도록 개선함
+                </p>
               </li>
               <li>
-                장애 대응: 서비스 기능 장애가 발생했을 때 관련 커밋을 롤백한 후 Kibana 검색 및 집계
-                기능을 사용하여 오류 발생 주기와 원인을 분석함. 또한 해결 방안을 논의해 문서로 남긴
-                후 개선된 코드를 제안하고 구현함
+                <strong>장애 대응</strong>
+                <p className="text-slate-600 font-medium">
+                  서비스 기능 장애가 발생했을 때 관련 커밋을 롤백한 후 Kibana 검색 및 집계 기능을
+                  사용하여 오류 발생 주기와 원인을 분석함. 또한 해결 방안을 논의해 문서로 남긴 후
+                  개선된 코드를 제안하고 구현함
+                </p>
               </li>
             </ol>
           </div>
