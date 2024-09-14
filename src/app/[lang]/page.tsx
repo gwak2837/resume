@@ -503,7 +503,7 @@ export default function HomePage({ params }: PageProps) {
               <div>2023년 8월 ~ 11월 (3개월)</div>
             </div>
             <div className="grid grid-cols-2 gap-x-4 gap-y-1 mb-3">
-              <div>직책: Admin Developer (팀원)</div>
+              <div>직책: Admin Developer</div>
               <div>부서: Housing Loan Squad (12명)</div>
               <div className="col-span-2">
                 역할: 대출 관련 프로세스 자동화로 토스씨엑스 담당자의 업무 효율성을 높이며, 대출
@@ -980,7 +980,7 @@ export default function HomePage({ params }: PageProps) {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Frontend Developer (팀원)</div>
+            <div>직책: Frontend Developer</div>
             <div>부서: 개발팀 (4명)</div>
           </div>
           <div>
@@ -1015,7 +1015,7 @@ export default function HomePage({ params }: PageProps) {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Frontend Developer (팀장)</div>
+            <div>직책: Frontend Developer 팀장</div>
             <div>부서: 개발팀 (2명)</div>
           </div>
           <div>
@@ -1054,7 +1054,7 @@ export default function HomePage({ params }: PageProps) {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Full stack Developer (팀장)</div>
+            <div>직책: Full stack Developer 팀장</div>
             <div>부서: 개발팀 (3명)</div>
           </div>
           <div>역할: '4050 여성 전용 커뮤니티' 알파카살롱 기획 및 MVP 개발</div>
@@ -1112,7 +1112,7 @@ export default function HomePage({ params }: PageProps) {
             </a>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Frontend Developer (팀장, 참여연구원)</div>
+            <div>직책: Frontend Developer 팀장 (참여연구원)</div>
             <div>부서: 개발팀 (2명)</div>
           </div>
           <div>
@@ -1149,7 +1149,7 @@ export default function HomePage({ params }: PageProps) {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Frontend Developer (인턴)</div>
+            <div>직책: Frontend Developer</div>
             <div>부서: Admin 개발팀 (4명)</div>
           </div>
           <div>
@@ -1188,7 +1188,7 @@ export default function HomePage({ params }: PageProps) {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Frontend Developer (인턴)</div>
+            <div>직책: Frontend Developer</div>
             <div>부서: 개발부 (3명)</div>
           </div>
           <div>역할: '방탈출 리뷰 웹사이트' 기획·디자인 및 MVP 개발</div>
@@ -1248,7 +1248,7 @@ export default function HomePage({ params }: PageProps) {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Data Analyst (인턴)</div>
+            <div>직책: Data Analyst</div>
             <div>부서: 연구4팀 (10명)</div>
           </div>
           <div>역할: 여론 조사 데이터 통계 분석 및 엑셀 함수 작성</div>
@@ -1292,7 +1292,7 @@ export default function HomePage({ params }: PageProps) {
             <div>2021년 2월 8일 ~ 11월 8일 (9개월)</div>
           </div>
           <div className="grid grid-cols-2 gap-x-4">
-            <div>직책: Full stack Developer (개발팀장, 공동창업자)</div>
+            <div>직책: Full stack Developer 팀장 (공동창업자)</div>
             <div>소속: 전체(5명) ⊃ 개발팀(2명)</div>
           </div>
           <div>
