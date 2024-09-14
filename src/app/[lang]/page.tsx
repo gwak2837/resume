@@ -1334,7 +1334,7 @@ export default function HomePage({ params }: PageProps) {
               <span className="text-sm">(IT교육회사)</span>
             </div>
             <div>팀원 3명</div>
-            <div>2022년 11월 27일</div>
+            <div>2022.11.27</div>
           </div>
           <div>
             결식 아동에게 줄 크리스마스 선물 크라우드펀딩 서비스{' '}
@@ -1352,7 +1352,7 @@ export default function HomePage({ params }: PageProps) {
             </a>
             <div>제주테크노벨리</div>
             <div>팀원 3명</div>
-            <div>2022년 1월 22일</div>
+            <div>2022.01.22</div>
           </div>
           <div>
             식의약용 자생식물 데이터 기반 사업화 서비스 아이디어 제시{' '}
@@ -1373,9 +1373,9 @@ export default function HomePage({ params }: PageProps) {
             </a>
             <div>경희대학교 캠퍼스타운</div>
             <div>팀원 5명</div>
-            <div>2021년 11월 1일</div>
+            <div>2021.11.01</div>
           </div>
-          <div>Sindy 창업팀 추가 선정 (2021년 11월 1일 ~ 2022년 8월 31일, 10개월)</div>
+          <div>Sindy 창업팀 추가 선정 (2021.11.01 ~ 2022.08.31, 10개월)</div>
         </li>
         <div className="border w-full my-6" />
         <li>
@@ -1389,9 +1389,9 @@ export default function HomePage({ params }: PageProps) {
             </a>
             <div>POSCO</div>
             <div>팀원 5명</div>
-            <div>2021년 10월 18일</div>
+            <div>2021.10.18</div>
           </div>
-          <div>Sindy 창업팀 선정 (2021년 10월 18일 ~ 10월 29일, 2주)</div>
+          <div>Sindy 창업팀 선정 (2021.10.18 ~ 10.29, 2주)</div>
         </li>
         <div className="border w-full my-6" />
         <li>
@@ -1405,9 +1405,9 @@ export default function HomePage({ params }: PageProps) {
             </a>
             <div>중앙대학교 LINC+</div>
             <div>팀원 5명</div>
-            <div>2021년 7월 1일</div>
+            <div>2021.07.01</div>
           </div>
-          <div>Sindy 창업팀 선정 (2021년 7월 1일 ~ 12월 31일, 6개월, 지원금 200만원)</div>
+          <div>Sindy 창업팀 선정 (2021.07.01 ~ 12.31, 6개월, 지원금 200만원)</div>
         </li>
         <div className="border w-full my-6" />
         <li>
@@ -1421,9 +1421,9 @@ export default function HomePage({ params }: PageProps) {
             </a>
             <div>중소벤처기업부</div>
             <div>팀원 5명</div>
-            <div>2021년 6월 1일</div>
+            <div>2021.06.01</div>
           </div>
-          <div>Sindy 창업팀 선정 및 2단계 진출 (2021년 6월 1일 ~ 7월 31일, 2개월)</div>
+          <div>Sindy 창업팀 선정 및 2단계 진출 (2021.06.01 ~ 07.31, 2개월)</div>
         </li>
         <div className="border w-full my-6" />
         <li>
@@ -1433,9 +1433,9 @@ export default function HomePage({ params }: PageProps) {
             </a>
             <div>동작구청</div>
             <div>팀원 5명</div>
-            <div>2021년 2월 5일</div>
+            <div>2021.02.05</div>
           </div>
-          <div>Sindy 창업팀 선정 (2021년 2월 5일 ~ 11월 30일, 10개월, 지원금 500만원)</div>
+          <div>Sindy 창업팀 선정 (2021.02.05 ~ 11.30, 10개월, 지원금 500만원)</div>
         </li>
         <div className="border w-full my-6" />
         <li>
@@ -1449,7 +1449,7 @@ export default function HomePage({ params }: PageProps) {
             </a>
             <div>중앙대 다빈치학습혁신원</div>
             <div>팀원 5명</div>
-            <div>2020년 12월 3일</div>
+            <div>2020.12.03</div>
           </div>
           <div>‘버려지는 소재를 새로운 순환으로’를 주제로 사업계획서 작성</div>
           <div>
@@ -1467,7 +1467,7 @@ export default function HomePage({ params }: PageProps) {
             <div>한국장학재단</div>
             <div>본인</div>
             <a href="/images/2019-scholarship.webp" target="_blank">
-              2019년 8월 14일
+              2019.08.14
             </a>
           </div>
           <div>2019-1학기 ~ 2020-2학기 전액장학금 (4개 학기)</div>
@@ -1480,7 +1480,7 @@ export default function HomePage({ params }: PageProps) {
             </a>
             <div>BBR, 디센터</div>
             <div>팀원 7명</div>
-            <div>2018년 10월 29일</div>
+            <div>2018.10.29</div>
           </div>
           <div>
             블록체인 기반 전자투표 시스템(e-voting) 기획 및 개발{' '}
