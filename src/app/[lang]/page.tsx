@@ -923,7 +923,7 @@ export default function HomePage({ params }: PageProps) {
               </a>
             </td>
             <td className="text-center">과학기술정보통신부</td>
-            <td className="text-center">2021년 5월 22일</td>
+            <td className="text-center">2021.05.22</td>
           </tr>
           <tr>
             <td>
@@ -937,7 +937,7 @@ export default function HomePage({ params }: PageProps) {
               </a>
             </td>
             <td className="text-center">국제테스트 연구원</td>
-            <td className="text-center">2020년 5월 3일</td>
+            <td className="text-center">2020.05.03</td>
           </tr>
           <tr>
             <td>
@@ -951,7 +951,7 @@ export default function HomePage({ params }: PageProps) {
               </a>
             </td>
             <td className="text-center">대한민국한자교육연구회</td>
-            <td className="text-center">2009년 11월 28일</td>
+            <td className="text-center">2009.11.28</td>
           </tr>
         </tbody>
       </table>
@@ -975,10 +975,9 @@ export default function HomePage({ params }: PageProps) {
             ),
             기간: (
               <div>
-                2023년 11월 7일 ~ 11월 26일 (3주)
-                <br />
+                2023.11.07 ~ 11.26 (3주),{' '}
                 <a href="/pdf/플랜바이테크놀로지스.pdf" target="_blank">
-                  2023년 7월 24일 ~ 8월 6일 (2주)
+                  2023.07.24 ~ 08.06 (2주)
                 </a>
               </div>
             ),
@@ -1012,7 +1011,7 @@ export default function HomePage({ params }: PageProps) {
             ),
             기간: (
               <a href="/pdf/더하트컴퍼니.pdf" target="_blank">
-                2022년 2월 14일 ~ 3월 13일 (1개월)
+                2022.02.14 ~ 03.13 (1개월)
               </a>
             ),
             직책: 'Frontend Developer 팀장',
@@ -1053,7 +1052,7 @@ export default function HomePage({ params }: PageProps) {
             ),
             기간: (
               <a href="/pdf/알파카살롱.pdf" target="_blank">
-                2021년 11월 9일 ~ 2022년 2월 8일 (3개월)
+                2021.11.09 ~ 2022.02.08 (3개월)
               </a>
             ),
             직책: 'Full stack Developer 팀장',
@@ -1066,7 +1065,7 @@ export default function HomePage({ params }: PageProps) {
                 <h3 className="w-fit text-lg">비욘드코딩 (코딩학원)</h3>
               </a>
             ),
-            기간: <div>2021년 8월 25일 ~ 9월 30일 (1개월)</div>,
+            기간: <div>2021.08.25 ~ 09.30 (1개월)</div>,
             직책: '웹 개발 수업 강사',
             부서: '초중등반 (6명)',
             역할: '초등학생/중학생을 대상으로 HTML/CSS/JS 개념 및 자기소개 웹페이지 제작 수업 (주 2회, 1회 3시간)',
@@ -1082,7 +1081,7 @@ export default function HomePage({ params }: PageProps) {
             ),
             기간: (
               <a href="/pdf/김과외.pdf" target="_blank">
-                2021년 8월 9일 ~ 2022년 2월 6일 (6개월)
+                2021.08.09 ~ 2022.02.06 (6개월)
               </a>
             ),
             직책: '',
@@ -1108,7 +1107,7 @@ export default function HomePage({ params }: PageProps) {
             ),
             기간: (
               <a href="/images/2021-cau-lab.webp" target="_blank">
-                2021년 6월 1일 ~ 8월 31일 (3개월)
+                2021.06.01 ~ 08.31 (3개월)
               </a>
             ),
             직책: 'Frontend Developer 팀장 (참여연구원)',
@@ -1134,7 +1133,7 @@ export default function HomePage({ params }: PageProps) {
             ),
             기간: (
               <a href="/pdf/페스타.pdf" target="_blank">
-                2020년 9월 1일 ~ 12월 31일 (4개월)
+                2020.09.01 ~ 12.31 (4개월)
               </a>
             ),
             직책: 'Frontend Developer',
@@ -1168,11 +1167,11 @@ export default function HomePage({ params }: PageProps) {
             기간: (
               <div>
                 <a href="/images/2019-happydaram.webp" target="_blank">
-                  2019년 12월 23일
+                  2019.12.23
                 </a>{' '}
                 ~{' '}
                 <a href="/images/2019-happydaram2.webp" target="_blank">
-                  2020년 2월 21일 (2개월)
+                  2020.02.21 (2개월)
                 </a>
               </div>
             ),
@@ -1182,7 +1181,7 @@ export default function HomePage({ params }: PageProps) {
           },
           {
             이름: <h3 className="w-fit text-lg">중앙대학교 2019년 2학기 SW 기초 교과목 멘토</h3>,
-            기간: <div>2019년 9월 16일 ~ 12월 13일 (3개월)</div>,
+            기간: <div>2019.09.16 ~ 12.13 (3개월)</div>,
             직책: '수업 조교 (근로장학생)',
             부서: "'컴퓨팅적 사고와 문제 해결' 과목",
             역할: '수업 중 수강생의 Scratch 프로그래밍 관련 질의 응답 및 과제 채점 (주 2회, 1회 2시간)',
@@ -1197,7 +1196,7 @@ export default function HomePage({ params }: PageProps) {
             ),
             기간: (
               <a href="/images/2019-cau-lab.webp" target="_blank">
-                2019년 4월 1일 ~ 8월 31일 (5개월)
+                2019.04.01 ~ 08.31 (5개월)
               </a>
             ),
             직책: 'Software Developer (참여연구원)',
@@ -1218,7 +1217,7 @@ export default function HomePage({ params }: PageProps) {
             ),
             기간: (
               <a href="/images/2017-researchlab.webp" target="_blank">
-                2017년 7월 31일 ~ 8월 25일 (1개월)
+                2017.07.31 ~ 08.25 (1개월)
               </a>
             ),
             직책: 'Data Analyst',
@@ -1259,7 +1258,7 @@ export default function HomePage({ params }: PageProps) {
             ),
             기간: (
               <a href="/pdf/Certificates-IITP-Summer-2021-CAU.pdf" target="_blank">
-                2021년 7월 5일 ~ 8월 20일 (2개월)
+                2021.07.05 ~ 08.20 (2개월)
               </a>
             ),
             직책: 'Data Labeler (교환학생)',
@@ -1275,7 +1274,7 @@ export default function HomePage({ params }: PageProps) {
           },
           {
             이름: <h3 className="w-fit text-lg">신디(SinDy, Signature in Dessert) 창업</h3>,
-            기간: <div>2021년 2월 8일 ~ 11월 8일 (9개월)</div>,
+            기간: <div>2021.02.08 ~ 11.08 (9개월)</div>,
             직책: 'Full stack Developer 팀장 (공동창업자)',
             부서: '전체(5명) ⊃ 개발팀(2명)',
             역할: "'카페의 특색을 담아내는 사용자 주도 SNS형 디저트 정보 공유 공간' 디저트핏 기획 및 Frontend · Backend · Cloud 개발",
@@ -1310,7 +1309,7 @@ export default function HomePage({ params }: PageProps) {
             </a>
             <div>인천관광공사</div>
             <div>팀원 2명</div>
-            <div>2022년 12월 9일</div>
+            <div>2022.12.09</div>
           </div>
           <div>
             여행일지 자동기록 서비스 아이디어 제시{' '}
