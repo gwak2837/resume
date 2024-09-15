@@ -58,7 +58,7 @@ export default function HomePage({ params }: PageProps) {
         <div className="flex gap-4 flex-wrap whitespace-nowrap ">
           <Image
             src="/images/profile.webp"
-            className="w-[328px]"
+            className="w-[251px] aspect-square"
             alt="profile"
             width={1736}
             height={1736}
@@ -113,6 +113,19 @@ export default function HomePage({ params }: PageProps) {
                 value: <a href="mailto:gwak2837@google.com">gwak2837@google.com</a>,
               },
               {
+                label: '',
+                value: <a href="mailto:gwak2837@kakao.com">gwak2837@kakao.com</a>,
+              },
+            ].map(({ label, value }, i) => (
+              <li key={i} className="flex gap-3 items-center">
+                <span className="w-6">{label}</span>
+                {value}
+              </li>
+            ))}
+          </ul>
+          <ul className="flex flex-col gap-[3px]">
+            {[
+              {
                 label: <Image src="/images/github.svg" alt="github" width="16" height="16" />,
                 value: (
                   <a href="https://github.com/gwak2837" target="_blank">
@@ -157,20 +170,20 @@ export default function HomePage({ params }: PageProps) {
       </h2>
       <ul>
         <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
+          <div className="grid grid-cols-2 text-lg gap-4 my-4">
             <a
               href="https://www.linkedin.com/company/ridi/"
               className="flex gap-2 items-center"
               target="_blank"
             >
-              <h3 className="w-fit text-xl font-bold">리디(주)</h3>
+              <h3 className="w-fit font-bold">리디(주)</h3>
               <RidiLogo />
             </a>
             <a href="/pdf/리디-재직증명서.pdf" target="_blank">
               <div>2023.11.27 ~ 현재</div>
             </a>
           </div>
-          <div className="grid grid-cols-2  gap-x-4 gap-y-1">
+          <div className="grid grid-cols-2 gap-x-4 gap-y-1">
             <div>매출: 2023년 2,154억원 (개별)</div>
             <div>자산: 2023년 2,386억원 (개별)</div>
             <div>총원: 2023년 12월 484명</div>
@@ -470,18 +483,19 @@ export default function HomePage({ params }: PageProps) {
         </li>
         <div className="border w-full my-8" />
         <li>
-          <div className="grid grid-cols-2 gap-4 my-4">
+          <div className="grid grid-cols-2 gap-4 my-4 text-lg">
             <a
               href="https://www.linkedin.com/company/toss-bank/"
               className="flex gap-2 items-center"
               target="_blank"
             >
-              <h4 className="w-fit text-xl font-bold">토스뱅크(주)</h4>
+              <h4 className="w-fit font-bold">토스뱅크(주)</h4>
               <Image
                 src="/images/TossBank_Logo_Primary.png"
                 alt="tossbank"
-                width="80"
-                height="14"
+                width="4000"
+                height="711"
+                className="h-[1.2em] w-fit"
               />
             </a>
             <a href="/pdf/토스뱅크-경력증명서.pdf" target="_blank">
