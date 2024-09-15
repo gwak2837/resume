@@ -289,9 +289,12 @@ export default function HomePage({ params }: PageProps) {
               <li>
                 <strong>만화e북 웹 뷰어 출시</strong>
                 <p className="text-slate-600 font-medium">
-                  일본 디지털 만화 시장의 성장에 발맞춰 기존 리디북스 웹 뷰어에서 만화e북 파일도
-                  열람할 수 있도록 지원함. 사용자가 웹에서 바로 만화를 감상할 수 있게 함으로써, 출시
-                  이후 만화e북 판매 매출이 전월 대비 3.61% 증가하는 데 기여함.
+                  일본 디지털 만화 시장의 성장에 발맞춰 기존 리디 웹 뷰어에서 만화e북 파일도 열람할
+                  수 있도록 지원함. 사용자가 웹에서 바로 만화를 감상할 수 있게 해서, 출시 이후
+                  만화e북 판매 매출이 전월 대비 3.61% 증가하는 데 기여했고, 만화e북 신규 고객의 웹
+                  뷰어 사용율이 5%로 증가함. 구체적으로 모바일 / PC 웹뷰어 전환율이 각각 8.5%p /
+                  99%p 증가했고, 뷰어 이탈율이 각각 5%p / 99%p 감소했으며, 뷰어 오픈 시간이 각각 91%
+                  / 99% 단축됨
                 </p>
               </li>
               <li>
@@ -1569,8 +1572,8 @@ export default function HomePage({ params }: PageProps) {
         요청해 서비스에 대한 시야를 넓히고 있으며, 프로젝트 전체를 이해하는 개발자로 성장하고
         있습니다.
       </p>
-      <div className="w-full text-center text-slate-800  mt-8">작성일: {date}</div>
-      <div className="w-full text-center text-slate-800 ">작성자: 곽태욱</div>
+      <div className="w-full text-center text-sm text-slate-800  mt-8">작성일: {date}</div>
+      <div className="w-full text-center text-sm text-slate-800 ">작성자: 곽태욱</div>
       <div className="my-8" />
       <h1 className="text-4xl mb-8 font-semibold w-full break-before-page">포트폴리오</h1>
       <h2 className="text-3xl my-8">프로젝트</h2>
