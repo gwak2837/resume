@@ -194,7 +194,7 @@ export default function HomePage({ params }: PageProps) {
             </div>
           </div>
           <div className="border-l-2 px-4">
-            <div className="grid grid-cols-2 gap-4 my-4 text-lg">
+            <div className="grid grid-cols-2 gap-4 my-4">
               <h4 className="font-bold">RIDI 웹</h4>
               <div>2024.04.01 ~ 현재</div>
             </div>
@@ -298,7 +298,7 @@ export default function HomePage({ params }: PageProps) {
                 </p>
               </li>
               <li>
-                <strong>피처 플래그</strong>
+                <strong>피처 플래그 활용</strong>
                 <ol className="list-[circle]">
                   <li>
                     <p className="text-slate-600 font-medium">
@@ -322,7 +322,7 @@ export default function HomePage({ params }: PageProps) {
                 </ol>
               </li>
               <li>
-                <strong>Argo CD 배포 및 Argo Rollouts 롤백</strong>
+                <strong>Argo CD/Rollouts 배포 및 롤백</strong>
                 <p className="text-slate-600 font-medium">
                   Jenkins와 <code>kubectl</code>을 활용한 배포 방식에서는 서비스 배포 상태 추적,
                   실시간 클러스터 모니터링의 한계, 롤백 프로세스의 복잡성, 고급 배포 전략의 부재
@@ -346,7 +346,7 @@ export default function HomePage({ params }: PageProps) {
             </ol>
           </div>
           <div className="border-l-2 px-4">
-            <div className="grid grid-cols-2 gap-4 my-4 text-lg">
+            <div className="grid grid-cols-2 gap-4 my-4">
               <h4 className="font-bold">Manta - Unlimited Comics to Binge</h4>
               <div>2023.11.27 ~ 2024.03.31 (4개월)</div>
             </div>
@@ -520,7 +520,7 @@ export default function HomePage({ params }: PageProps) {
             </div>
           </div>
           <div className="border-l-2 pl-4">
-            <div className="grid grid-cols-2 gap-4 my-4 text-lg">
+            <div className="grid grid-cols-2 gap-4 my-4">
               <h4 className="font-bold">토스뱅크 루모스 (여신 심사·관리·운영 시스템)</h4>
               <div>2023.08.07 ~ 11.06 (3개월)</div>
             </div>
