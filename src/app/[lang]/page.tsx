@@ -193,8 +193,8 @@ export default function HomePage({ params }: PageProps) {
               플랫폼 기업
             </div>
           </div>
-          <div className="border-l-2 pl-4 ml-2">
-            <div className="grid grid-cols-2 gap-4 my-4">
+          <div className="border-l-2 px-4">
+            <div className="grid grid-cols-2 gap-4 my-4 text-lg">
               <h4 className="font-bold">RIDI 웹</h4>
               <div>2024.04.01 ~ 현재</div>
             </div>
@@ -285,7 +285,7 @@ export default function HomePage({ params }: PageProps) {
                 />
               </a>
             </div>
-            <ol className="text-lg my-4">
+            <ol className="my-4">
               <li>
                 <strong>만화e북 웹 뷰어 출시</strong>
                 <p className="text-slate-600 font-medium">
@@ -345,8 +345,8 @@ export default function HomePage({ params }: PageProps) {
               </li>
             </ol>
           </div>
-          <div className="border-l-2 pl-4 ml-2">
-            <div className="grid grid-cols-2 gap-4 my-4">
+          <div className="border-l-2 px-4">
+            <div className="grid grid-cols-2 gap-4 my-4 text-lg">
               <h4 className="font-bold">Manta - Unlimited Comics to Binge</h4>
               <div>2023.11.27 ~ 2024.03.31 (4개월)</div>
             </div>
@@ -460,7 +460,7 @@ export default function HomePage({ params }: PageProps) {
                 />
               </a>
             </div>
-            <ol className="text-lg my-4">
+            <ol className="my-4">
               <li>
                 <strong>프랑스어 출시</strong>
                 <p className="text-slate-600 font-medium">
@@ -519,8 +519,8 @@ export default function HomePage({ params }: PageProps) {
               소개: 토스의 운영사인 (주)비바리퍼블리카에서 만든 대한민국의 3번째 인터넷 전문 은행
             </div>
           </div>
-          <div className="border-l-2 pl-4 ml-2">
-            <div className="grid grid-cols-2 gap-4 my-4">
+          <div className="border-l-2 pl-4">
+            <div className="grid grid-cols-2 gap-4 my-4 text-lg">
               <h4 className="font-bold">토스뱅크 루모스 (여신 심사·관리·운영 시스템)</h4>
               <div>2023.08.07 ~ 11.06 (3개월)</div>
             </div>
@@ -565,7 +565,7 @@ export default function HomePage({ params }: PageProps) {
                 />
               </a>
             </div>
-            <ol className="text-lg my-4">
+            <ol className="my-4">
               <li>
                 <strong>전월세보증금대출 출시</strong>
                 <p className="text-slate-600 font-medium">
