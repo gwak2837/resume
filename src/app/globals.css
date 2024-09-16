@@ -124,11 +124,16 @@ strong {
 
 code {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   padding: 0.3rem 0.25rem 0.05rem;
   margin-right: 0.1rem;
   border-radius: 0.25rem;
   --tw-bg-opacity: 1;
   font-weight: 600;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+
+@media page {
+  size: A4;
+  margin: 0;
 }

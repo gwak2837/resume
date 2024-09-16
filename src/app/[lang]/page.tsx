@@ -43,7 +43,7 @@ export default function HomePage({ params }: PageProps) {
   const date = dict.작성일[lang]
 
   return (
-    <main className="mx-auto mb-8 max-w-[720px]">
+    <main className="mx-auto max-w-[720px]">
       <LanguageUpdate lang={lang} />
       <div className="flex justify-between items-center">
         <h1 className="text-4xl mb-6 font-semibold w-full">{dict.이력서[lang]}</h1>
@@ -55,16 +55,16 @@ export default function HomePage({ params }: PageProps) {
         </div>
       </div>
       <div>
-        <div className="flex gap-4 flex-wrap whitespace-nowrap ">
+        <div className="flex gap-4 flex-wrap whitespace-nowrap">
           <Image
             src="/images/profile.webp"
-            className="w-[251px] aspect-square"
+            className="w-[178px] aspect-square"
             alt="profile"
             width={1736}
             height={1736}
             priority
           />
-          <ul className="flex flex-col gap-[3px]">
+          <ul className="flex flex-col gap-1">
             {[
               { label: '이름', value: dict.이름[lang] },
               { label: '출생', value: dict.생일[lang] },
@@ -104,6 +104,15 @@ export default function HomePage({ params }: PageProps) {
                 label: '',
                 value: dict.ROTC[lang],
               },
+            ].map(({ label, value }, i) => (
+              <li key={i} className="flex gap-3 items-center">
+                <span className="w-6">{label}</span>
+                {value}
+              </li>
+            ))}
+          </ul>
+          <ul className="flex flex-col gap-1">
+            {[
               {
                 label: '전화',
                 value: <a href="tel:010-9203-2837">+82 010-9203-2837</a>,
@@ -116,15 +125,6 @@ export default function HomePage({ params }: PageProps) {
                 label: '',
                 value: <a href="mailto:gwak2837@kakao.com">gwak2837@kakao.com</a>,
               },
-            ].map(({ label, value }, i) => (
-              <li key={i} className="flex gap-3 items-center">
-                <span className="w-6">{label}</span>
-                {value}
-              </li>
-            ))}
-          </ul>
-          <ul className="flex flex-col gap-[3px]">
-            {[
               {
                 label: <Image src="/images/github.svg" alt="github" width="16" height="16" />,
                 value: (
@@ -193,8 +193,8 @@ export default function HomePage({ params }: PageProps) {
               플랫폼 기업
             </div>
           </div>
-          <div className="border-l-2 pl-4 ">
-            <div className="grid grid-cols-2 gap-4 mt-6 mb-4">
+          <div className="border-l-2 pl-4 ml-2">
+            <div className="grid grid-cols-2 gap-4 my-4">
               <h4 className="font-bold">RIDI 웹</h4>
               <div>2024.04.01 ~ 현재</div>
             </div>
@@ -206,7 +206,7 @@ export default function HomePage({ params }: PageProps) {
                 <a href="https://blog.toss.im/article/fabonika-03-ridi" target="_blank">
                   점유율 50% 이상
                 </a>
-                을 차지하는 리디북스의 웹 사이트를 개발함
+                을 차지하는 리디의 Next.js 기반 웹을 개발함
               </div>
             </div>
             <div className="flex gap-0.5 my-2 items-center">
@@ -298,50 +298,55 @@ export default function HomePage({ params }: PageProps) {
                 </p>
               </li>
               <li>
-                <strong>리디셀렉트 B2B 출시</strong>
-                <p className="text-slate-600 font-medium">
-                  기존 B2C 형태의 리디셀렉트를 개선하여 다른 기업이 임직원에게 전자책 구독 서비스를
-                  복지 차원에서 제공할 수 있게 도와주는 서비스를 출시하여 리디 B2B 매출에 기여함
-                </p>
-              </li>
-              <li>
-                <strong>배포 및 롤백 시스템 구축</strong>
-                <p className="text-slate-600 font-medium">
-                  GrowthBook 서비스를 활용하여 피처 플래그(feature flag)를 설정함. 이를 통해 신규
-                  기능 출시 전에 A/B 테스트로 더 나은 기획을 검증하고, 실사용자에게 배포 시 의도치
-                  않게 발생할 수 있는 장애에 대비함
-                </p>
-                <ol className="text-base text-slate-600">
+                <strong>피처 플래그</strong>
+                <ol className="list-[circle]">
                   <li>
-                    피처 플래그: 신규 기능을 출시하기 전에 사용자, 런타임 환경, 기능 단위로
-                    GrowthBook에서 피처 플래그를 설정하여 원활한 QA를 지원함. 배포 후 장애가
-                    발생하면 해당 피처 플래그를 비활성화해 장애를 빠르게 복구한 경험이 있음
+                    <p className="text-slate-600 font-medium">
+                      롤백: 신규 기능을 출시하기 전에 GrowthBook을 통해 사용자, 런타임 환경, 기능
+                      단위로 피처 플래그를 설정하여 원활한 QA를 지원함. 배포 후 장애가 발생하면
+                      추가적인 코드 변경이나 재배포 없이 해당 피처 플래그만 비활성화하여, 평균 3분
+                      이내에 문제 기능을 차단하고 기존 상태로 복구해 서비스 중단 시간을 최소화함
+                    </p>
                   </li>
                   <li>
-                    CD 자동화: GitOps를 Argo CD와 통합하여 지속적 배포(CD) 파이프라인을 구축하고,
-                    Argo Rollouts를 활용하여 서비스 배포 및 롤백 전략 적용(canary, blue-green 등)을
-                    간편화함
-                  </li>
-                  <li>
-                    모니터링: Sentry와 Datadog를 활용하여 서비스 오류와 성능을 모니터링하고,
-                    팀원끼리 매주 모여서 서비스 트래픽 특이 사항을 공유하고 오류를 해결하는 시간을
-                    가짐
+                    <p className="text-slate-600 font-medium">
+                      A/B 테스트: 총 10만 명의 사용자를 대상으로 2주간 여러 UI 개선안에 대한 A/B
+                      테스트를 진행함. 사용자 중 50%는 기존 UI를 유지했고, 나머지 50%는 여러
+                      그룹으로 나누어 각기 다른 UI 개선안을 제공함. 실험 결과, 새로운 UI를 사용하는
+                      특정 그룹에서 매출 등 주요 가드레일 지표가 유지되는 동시에, KPI인 사용자
+                      참여율이 10%p, 유료 전환율이 5%p 상승한 것을 확인함. 이 데이터를 바탕으로 해당
+                      UI 개선안을 프로덕션 환경에 최종 배포함. 이를 통해 UI 개선 효과를 데이터
+                      기반으로 평가하고 가장 효율적인 UI를 식별할 수 있었음
+                    </p>
                   </li>
                 </ol>
               </li>
               <li>
+                <strong>Argo CD 배포 및 Argo Rollouts 롤백</strong>
+                <p className="text-slate-600 font-medium">
+                  Jenkins와 <code>kubectl</code>을 활용한 배포 방식에서는 서비스 배포 상태 추적,
+                  실시간 클러스터 모니터링의 한계, 롤백 프로세스의 복잡성, 고급 배포 전략의 부재
+                  등의 불편함이 있음. 이에 다른 팀원이 기존에 Argo CD를 사용하고 있는 백엔드 환경을
+                  참고해서 웹 프론트엔드 서비스에도 Argo CD와 Argo Rollouts를 도입하여 GitOps 기반의
+                  선언형 배포 및 롤백 전략을 적용한 과정을 따라해봄
+                </p>
+              </li>
+              <li>
                 <strong>테스트 코드</strong>
                 <p className="text-slate-600 font-medium">
-                  Jest와 React Testing Library로 유닛 테스트를 작성하여 코드 리뷰어가 코드 베이스를
-                  쉽게 이해할 수 있도록 도와주고, Playwright로 E2E 테스트를 작성하여 핵심 사용자
-                  플로우가 정상적으로 작동하는지 자동으로 검증함으로써 서비스 배포 전 QA 과정을
-                  자동화함
+                  Jest와 React Testing Library로 유닛 테스트를 작성해 코드 리뷰어가 코드베이스를
+                  보다 쉽게 이해할 수 있도록 지원하고, Playwright로 E2E 테스트를 구축해 핵심 기능의
+                  유저 플로우가 정상적으로 작동하는지 자동으로 검증함. 이를 통해 배포 전 QA 과정을
+                  자동화하고, 오류를 사전에 감지하여 고객이 문제를 인지하기 전에 해결할 수 있었음.
+                  특히, 기존에 QA 팀원이 수동으로 진행하던 회귀 테스트의 일부를 E2E 테스트로
+                  자동화하여, 배포 전 테스트에 소요되는 시간을 평균 40% 단축시켜 배포 생산성을
+                  향상시킴
                 </p>
               </li>
             </ol>
           </div>
-          <div className="border-l-2 pl-4 ">
-            <div className="grid grid-cols-2 gap-4 mt-6 mb-4">
+          <div className="border-l-2 pl-4 ml-2">
+            <div className="grid grid-cols-2 gap-4 my-4">
               <h4 className="font-bold">Manta - Unlimited Comics to Binge</h4>
               <div>2023.11.27 ~ 2024.03.31 (4개월)</div>
             </div>
@@ -505,7 +510,7 @@ export default function HomePage({ params }: PageProps) {
               <div>2023.08.07 ~ 11.06 (3개월)</div>
             </a>
           </div>
-          <div className="grid grid-cols-2 gap-x-4  gap-y-1">
+          <div className="grid grid-cols-2 gap-x-4 gap-y-1">
             <div>매출: 2023년 1조 2,609억원 (개별)</div>
             <div>자본: 2023년 1조 5,052억원 (개별)</div>
             <div>총원: 2023년 12월 512명</div>
@@ -514,8 +519,8 @@ export default function HomePage({ params }: PageProps) {
               소개: 토스의 운영사인 (주)비바리퍼블리카에서 만든 대한민국의 3번째 인터넷 전문 은행
             </div>
           </div>
-          <div className="border-l-2 pl-4 ">
-            <div className="grid grid-cols-2 gap-4 mt-6 mb-4">
+          <div className="border-l-2 pl-4 ml-2">
+            <div className="grid grid-cols-2 gap-4 my-4">
               <h4 className="font-bold">토스뱅크 루모스 (여신 심사·관리·운영 시스템)</h4>
               <div>2023.08.07 ~ 11.06 (3개월)</div>
             </div>
