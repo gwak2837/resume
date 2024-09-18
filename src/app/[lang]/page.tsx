@@ -322,16 +322,6 @@ export default function HomePage({ params }: PageProps) {
                 </ol>
               </li>
               <li>
-                <strong>Argo CD/Rollouts 배포 및 롤백</strong>
-                <p className="text-slate-600 font-medium">
-                  Jenkins와 <code>kubectl</code>을 활용한 배포 방식에서는 서비스 배포 상태 추적,
-                  실시간 클러스터 모니터링의 한계, 롤백 프로세스의 복잡성, 고급 배포 전략의 부재
-                  등의 불편함이 있음. 이에 다른 팀원이 기존에 Argo CD를 사용하고 있는 백엔드 환경을
-                  참고해서 웹 프론트엔드 서비스에도 Argo CD와 Argo Rollouts를 도입하여 GitOps 기반의
-                  선언형 배포 및 롤백 전략을 적용한 과정을 따라해봄
-                </p>
-              </li>
-              <li>
                 <strong>테스트 코드</strong>
                 <p className="text-slate-600 font-medium">
                   Jest와 React Testing Library로 유닛 테스트를 작성해 코드 리뷰어가 코드베이스를
@@ -341,6 +331,16 @@ export default function HomePage({ params }: PageProps) {
                   특히, 기존에 QA 팀원이 수동으로 진행하던 회귀 테스트의 일부를 E2E 테스트로
                   자동화하여, 배포 전 테스트에 소요되는 시간을 평균 40% 단축시켜 배포 생산성을
                   향상시킴
+                </p>
+              </li>
+              <li>
+                <strong>Argo CD/Rollouts 배포 및 롤백</strong>
+                <p className="text-slate-600 font-medium">
+                  Jenkins와 <code>kubectl</code>을 활용한 배포 방식에서는 서비스 배포 상태 추적,
+                  실시간 클러스터 모니터링의 한계, 롤백 프로세스의 복잡성, 고급 배포 전략의 부재
+                  등의 불편함이 있음. 이에 다른 팀원이 기존에 Argo CD를 사용하고 있는 백엔드 환경을
+                  참고해서 웹 프론트엔드 서비스에도 Argo CD와 Argo Rollouts를 도입하여 GitOps 기반의
+                  선언형 배포 및 롤백 전략을 적용한 과정을 따라해봄
                 </p>
               </li>
             </ol>
