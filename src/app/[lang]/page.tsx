@@ -412,8 +412,8 @@ export default function HomePage({ params }: PageProps) {
                   <Image
                     src="/images/manta-logo.png"
                     alt="manta"
-                    width="282"
-                    height="282"
+                    width="64"
+                    height="64"
                     className="h-4 w-4"
                   />
                   <h5 className="underline-offset-4	font-medium  underline text-black decoration-gray-300 ">
