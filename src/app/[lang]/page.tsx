@@ -60,8 +60,8 @@ export default function HomePage({ params }: PageProps) {
             src="/images/profile.webp"
             className="w-[178px] aspect-square"
             alt="profile"
-            width={1736}
-            height={1736}
+            width={178}
+            height={178}
             priority
           />
           <ul className="flex flex-col gap-1">
