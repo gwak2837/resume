@@ -166,7 +166,7 @@ export default function HomePage({ params }: PageProps) {
       </div>
       <p className="my-4 text-lg">{dict.한줄소개[lang]}</p>
       <h2 className="text-3xl my-8">
-        {dict.개발경력[lang]} <span className="text-sm">(1년, 2024.08.26 기준)</span>
+        {dict.개발경력[lang]} <span className="text-sm">(1년 1개월, 2024.09.26 기준)</span>
       </h2>
       <ul>
         <li>
