@@ -76,6 +76,7 @@ const myFont = localFont({
     'Segoe UI Symbol',
     'sans-serif',
   ],
+  weight: '400 700',
 })
 
 export default function RootLayout({ children }: LayoutProps) {
