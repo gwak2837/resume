@@ -287,6 +287,28 @@ export default function HomePage({ params }: PageProps) {
             </div>
             <ol className="my-4">
               <li>
+                <strong className="flex gap-2 items-center">
+                  동료 평가{' '}
+                  <a
+                    className="text-sm"
+                    href="/pdf/RIDI Track Record Review 기준.pdf"
+                    target="_blank"
+                  >
+                    (평가 기준 : Outstanding, Excellent, Good, Moderate, Need Improvement)
+                  </a>
+                </strong>
+                <div className="flex gap-2 items-center">
+                  2024-09 Excellent
+                  <a
+                    className="text-sm"
+                    href="/pdf/RIDI Track Record Review 결과.pdf"
+                    target="_blank"
+                  >
+                    <div>(세부 결과)</div>
+                  </a>
+                </div>
+              </li>
+              <li>
                 <strong>만화e북 웹 뷰어 출시</strong>
                 <p className="text-slate-600 font-medium">
                   일본 디지털 만화 시장의 성장에 발맞춰 기존 리디 웹 뷰어에서 만화e북 파일도 열람할
