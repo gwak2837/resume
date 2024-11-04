@@ -288,7 +288,7 @@ export default function HomePage({ params }: PageProps) {
             <ol className="my-4">
               <li>
                 <strong className="flex gap-2 items-center">
-                  동료 평가{' '}
+                  성과 평가{' '}
                   <a
                     className="text-sm"
                     href="/pdf/RIDI Track Record Review 기준.pdf"
