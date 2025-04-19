@@ -331,7 +331,7 @@ export default function HomePage({ params }: PageProps) {
                   만화e북 판매 매출이 전월 대비 3.61% 증가하는 데 기여했고, 만화e북 신규 고객의 웹
                   뷰어 사용율이 5%로 증가함. 구체적으로 모바일 / PC 웹뷰어 전환율이 각각 8.5%p /
                   99%p 증가했고, 뷰어 이탈율이 각각 5%p / 99%p 감소했으며, 뷰어 오픈 시간이 각각 91%
-                  / 99% 단축됨
+                  / 99% 단축됨.
                 </p>
               </li>
               <li>
@@ -340,7 +340,7 @@ export default function HomePage({ params }: PageProps) {
                   신규 기능을 출시하기 전에 GrowthBook을 통해 사용자, 런타임 환경, 기능 단위로 피처
                   플래그를 설정하여 원활한 QA를 지원함. 배포 후 장애가 발생하면 추가적인 코드
                   변경이나 재배포 없이 해당 피처 플래그만 비활성화하여, 평균 3분 이내에 문제 기능을
-                  차단하고 기존 상태로 복구해 서비스 중단 시간을 최소화함
+                  차단하고 기존 상태로 복구해 서비스 중단 시간을 최소화함.
                 </p>
               </li>
               {/* <li>
@@ -361,7 +361,7 @@ export default function HomePage({ params }: PageProps) {
                   Playwright로 30여 개 핵심 사용자 시나리오의 E2E 테스트 자동화 파이프라인을 구축함.
                   프로덕션 배포 전 수동으로 진행하던 QA 업무를 E2E 테스트로 자동화하여, 배포 전
                   리그레션 테스트에 소요되는 시간을 평균 31분 → 18분으로 42% 단축시켜 배포 생산성을
-                  향상시킴
+                  향상시킴.
                 </p>
               </li>
               <li>
@@ -370,14 +370,14 @@ export default function HomePage({ params }: PageProps) {
                   <li>
                     <p className="text-slate-600 font-medium">
                       REST API 리팩토링: 필요한 데이터만 보내주는 신규 REST API를 설계하고 기존
-                      로직을 리팩토링하여 응답 크기를 40.5 kB → 20.5 kB로 절반 가까이 줄임
+                      로직을 리팩토링하여 응답 크기를 40.5 kB → 20.5 kB로 절반 가까이 줄임.
                     </p>
                   </li>
                   <li>
                     <p className="text-slate-600 font-medium">
                       GraphQL API 확장: 작품 정보 페이지에 쿠폰 프로모션 배너를 신규로 노출하기 위해
                       GraphQL 스키마 타입을 새로 정의하고, 쿠폰 도메인 데이터베이스 쿼리 및 GraphQL
-                      resolver를 구현하여 UI와 연동함
+                      resolver를 구현하여 UI와 연동함.
                     </p>
                   </li>
                 </ol>
@@ -400,7 +400,7 @@ export default function HomePage({ params }: PageProps) {
                 >
                   점유율 2위
                 </a>
-                인 글로벌 웹툰 서비스 Manta의 React Native 기반 앱과 Next.js 기반 웹을 개발함
+                인 글로벌 웹툰 서비스 Manta의 React Native 기반 앱과 Next.js 기반 웹을 개발함.
               </div>
             </div>
             <div className="flex gap-0.5 my-2 items-center">
@@ -505,7 +505,7 @@ export default function HomePage({ params }: PageProps) {
                 <p className="text-slate-600 font-medium">
                   프랑스어를 사용하는 사용자를 위해 국가별 화폐 및 날짜 형식, 언어별 텍스트 길이에
                   따른 디자인 차이, 콘텐츠 연령 등급 관련 현지 법률 등을 고려한 국제화(i18n)
-                  디자인을 적용함
+                  디자인을 적용함.
                 </p>
               </li>
               <li>
@@ -513,7 +513,7 @@ export default function HomePage({ params }: PageProps) {
                 <p className="text-slate-600 font-medium">
                   사용자 검색 경험을 향상시키기 위해 프론트엔드에 연관 검색어 기능을 적용함. 출시
                   대비 사용자의 검색 화면 체류 시간이 20% 이상 증가하는 등 사용자가 원하는 콘텐츠를
-                  빠르게 찾을 수 있게 함
+                  빠르게 찾을 수 있게 함.
                 </p>
               </li>
               <li>
@@ -522,7 +522,7 @@ export default function HomePage({ params }: PageProps) {
                   안정적인 서비스 운영과 사용자 행동 분석을 위해 Firebase와 Braze를 활용하여 추적
                   이벤트를 기록하고, 오류 발생 시 Crashlytics에 로그를 기록함. 이를 바탕으로 CS 문의
                   등 다양한 상황에서 Google Cloud 콘솔의 로그 탐색기를 활용하여 사용자의 행동 기록을
-                  분석하여 문제를 해결함
+                  분석하여 문제를 해결함.
                 </p>
               </li>
             </ol>
@@ -579,7 +579,7 @@ export default function HomePage({ params }: PageProps) {
               <div className="col-span-2">
                 역할: 대출 관련 프로세스 자동화로 토스씨엑스 담당자의 업무 효율성을 높이며, 대출
                 고객의 불편함을 최소화하는 토스뱅크 여신 심사·관리·운영 시스템을 Next.js 및 Toss
-                Design System 기반으로 개발함
+                Design System 기반으로 개발함.
               </div>
             </div>
             <div className="flex flex-wrap gap-1 my-2">
@@ -626,14 +626,14 @@ export default function HomePage({ params }: PageProps) {
                   >
                     약 2,000억 원의 대출 잔액 증가
                   </a>
-                  에 기여함
+                  에 기여함.
                 </p>
               </li>
               <li>
                 <strong>CI 최적화</strong>
                 <p className="text-slate-600 font-medium">
-                  LUMOS 프로젝트의 Docker 이미지 레이어에 원격 클라우드 캐싱을 적용하여 이미지 빌드
-                  시간을 평균 300초에서 210초로 약 30% 단축함
+                  Docker 이미지 레이어에 원격 클라우드 캐싱을 적용하여 <code>docker build</code>{' '}
+                  시간을 평균 300초 → 210초로 30% 단축함.
                 </p>
               </li>
               <li>
@@ -641,7 +641,7 @@ export default function HomePage({ params }: PageProps) {
                 <p className="text-slate-600 font-medium">
                   서비스 기능 장애가 발생했을 때 관련 커밋을 롤백한 후 Kibana 검색 및 집계 기능을
                   사용하여 오류 발생 주기와 원인을 분석함. 또한 해결 방안을 논의해 문서로 남긴 후
-                  개선된 코드를 제안하고 구현함
+                  개선된 코드를 제안하고 구현함.
                 </p>
               </li>
               <li>
@@ -652,7 +652,7 @@ export default function HomePage({ params }: PageProps) {
                   Promise를 활용해 Modal, Dialog 컴포넌트 상태를 선언적으로 관리하고, Funnel 패턴을
                   활용해 다단계 페이지 이동도 선언적으로 관리함. 그리고 연관된 코드는 가까운 곳에
                   배치하여 컴포넌트 응집도를 높이고, 로직 세부 구현은 hook으로 숨겨 코드 파악에
-                  필수적인 정보가 잘 보이도록 개선함
+                  필수적인 정보가 잘 보이도록 개선함.
                 </p>
               </li>
             </ol>
