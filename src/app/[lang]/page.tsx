@@ -556,14 +556,21 @@ export default function HomePage({ params }: PageProps) {
                 1조 2,609억원 (개별)
               </a>
             </div>
-
             <div>
               자본: 2023년{' '}
               <a href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240404002475" target="_blank">
                 1조 5,052억원 (개별)
               </a>
             </div>
-            <div>총원: 2023년 12월 512명</div>
+            <div>
+              총원: 2023년{' '}
+              <a
+                href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240404002475&dcmNo=9834643"
+                target="_blank"
+              >
+                12월 533명
+              </a>
+            </div>
             <div>유형: 계약직</div>
             <div className="col-span-2">
               소개: 토스의 운영사인 (주)비바리퍼블리카에서 만든 대한민국의 3번째 인터넷 전문 은행
