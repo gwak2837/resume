@@ -54,6 +54,9 @@ export default function HomePage({ params }: PageProps) {
           <Link href="/ja">日本語</Link>
         </div>
       </div>
+      <h2 className="bg-none text-2xl my-4 text-center">
+        다만, 사랑하고 살아가는 프론트엔드 개발자
+      </h2>
       <div>
         <div className="flex gap-4 flex-wrap whitespace-nowrap">
           <Image
@@ -126,6 +129,14 @@ export default function HomePage({ params }: PageProps) {
                 value: <a href="mailto:gwak2837@kakao.com">gwak2837@kakao.com</a>,
               },
               {
+                label: <Image src="/images/velog.png" alt="velog" width="16" height="16" />,
+                value: (
+                  <a href="https://velog.io/@gwak2837" target="_blank">
+                    velog.io/@gwak2837
+                  </a>
+                ),
+              },
+              {
                 label: <Image src="/images/github.svg" alt="github" width="16" height="16" />,
                 value: (
                   <a href="https://github.com/gwak2837" target="_blank">
@@ -144,14 +155,6 @@ export default function HomePage({ params }: PageProps) {
                 ),
               },
               {
-                label: <Image src="/images/velog.png" alt="velog" width="16" height="16" />,
-                value: (
-                  <a href="https://velog.io/@gwak2837" target="_blank">
-                    velog.io/@gwak2837
-                  </a>
-                ),
-              },
-              {
                 label: '취미',
                 value: '자전거, 웨이트, 독서',
               },
@@ -166,7 +169,7 @@ export default function HomePage({ params }: PageProps) {
       </div>
       <p className="my-4 text-lg">{dict.한줄소개[lang]}</p>
       <h2 className="text-3xl my-8">
-        {dict.개발경력[lang]} <span className="text-sm">(1년 1개월, 2024.09.26 기준)</span>
+        {dict.개발경력[lang]} <span className="text-sm">(1년 8개월, 2025.04.19 기준)</span>
       </h2>
       <ul>
         <li>
@@ -184,10 +187,28 @@ export default function HomePage({ params }: PageProps) {
             </a>
           </div>
           <div className="grid grid-cols-2 gap-x-4 gap-y-1">
-            <div>매출: 2023년 2,154억원 (개별)</div>
-            <div>자산: 2023년 2,386억원 (개별)</div>
-            <div>총원: 2023년 12월 484명</div>
-            <div>유형: 정규직 (수습 3개월)</div>
+            <div>
+              매출: 2024년{' '}
+              <a href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250402003376" target="_blank">
+                2,354억원 (연결)
+              </a>
+            </div>
+            <div>
+              자산: 2024년{' '}
+              <a href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250402003376" target="_blank">
+                2,376억원 (연결)
+              </a>
+            </div>
+            <div>
+              총원: 2024년{' '}
+              <a
+                href="https://www.innoforest.co.kr/company/CP00000016/%EB%A6%AC%EB%94%94"
+                target="_blank"
+              >
+                12월 445명
+              </a>
+            </div>
+            <div>유형: 정규직</div>
             <div className="col-span-2">
               소개: 글로벌 시장을 무대로 웹툰, 웹소설, 만화, 전자책 등을 온라인으로 제공하는 콘텐츠
               플랫폼 기업
@@ -200,13 +221,13 @@ export default function HomePage({ params }: PageProps) {
             </div>
             <div className="grid grid-cols-2 gap-x-4 gap-y-1">
               <div>직책: Frontend Engineer (Junior)</div>
-              <div>부서: 개발센터(50명) ⊃ 웹팀(6명)</div>
+              <div>부서: 서비스플랫폼그룹(50명) ⊃ 웹팀(6명)</div>
               <div className="col-span-2">
                 역할: 국내 전자책 시장에서{' '}
                 <a href="https://blog.toss.im/article/fabonika-03-ridi" target="_blank">
                   점유율 50% 이상
                 </a>
-                을 차지하는 리디의 Next.js 기반 웹을 개발함
+                을 차지하는 리디 웹 사이트 신규 기능 개발 및 유지보수
               </div>
             </div>
             <div className="flex gap-0.5 my-2 items-center">
@@ -272,16 +293,10 @@ export default function HomePage({ params }: PageProps) {
                   alt="Argo Badge"
                 />
               </a>
-              <a href="https://argo-cd.readthedocs.io/en/stable/" target="_blank">
+              <a href="https://nodejs.org/en/" rel="noreferrer" target="_blank">
                 <img
-                  src={`https://img.shields.io/badge/Datadog-${경력로고색}?style=flat-square&logo=datadog&logoColor=white`}
-                  alt="Datadog Badge"
-                />
-              </a>
-              <a href="https://argo-cd.readthedocs.io/en/stable/" target="_blank">
-                <img
-                  src={`https://img.shields.io/badge/Sentry-${경력로고색}?style=flat-square&logo=sentry&logoColor=white`}
-                  alt="Sentry Badge"
+                  src={`https://img.shields.io/badge/Node.js-${경력로고색}?style=flat-square&logo=node.js&logoColor=white`}
+                  alt="Node.js Badge"
                 />
               </a>
             </div>
@@ -321,49 +336,51 @@ export default function HomePage({ params }: PageProps) {
               </li>
               <li>
                 <strong>피처 플래그 활용</strong>
-                <ol className="list-[circle]">
-                  <li>
-                    <p className="text-slate-600 font-medium">
-                      롤백: 신규 기능을 출시하기 전에 GrowthBook을 통해 사용자, 런타임 환경, 기능
-                      단위로 피처 플래그를 설정하여 원활한 QA를 지원함. 배포 후 장애가 발생하면
-                      추가적인 코드 변경이나 재배포 없이 해당 피처 플래그만 비활성화하여, 평균 3분
-                      이내에 문제 기능을 차단하고 기존 상태로 복구해 서비스 중단 시간을 최소화함
-                    </p>
-                  </li>
-                  <li>
-                    <p className="text-slate-600 font-medium">
-                      A/B 테스트: 총 10만 명의 사용자를 대상으로 2주간 여러 UI 개선안에 대한 A/B
-                      테스트를 진행함. 사용자 중 50%는 기존 UI를 유지했고, 나머지 50%는 여러
-                      그룹으로 나누어 각기 다른 UI 개선안을 제공함. 실험 결과, 새로운 UI를 사용하는
-                      특정 그룹에서 매출 등 주요 가드레일 지표가 유지되는 동시에, KPI인 사용자
-                      참여율이 10%p, 유료 전환율이 5%p 상승한 것을 확인함. 이 데이터를 바탕으로 해당
-                      UI 개선안을 프로덕션 환경에 최종 배포함. 이를 통해 UI 개선 효과를 데이터
-                      기반으로 평가하고 가장 효율적인 UI를 식별할 수 있었음
-                    </p>
-                  </li>
-                </ol>
-              </li>
-              <li>
-                <strong>테스트 코드</strong>
                 <p className="text-slate-600 font-medium">
-                  Jest와 React Testing Library로 유닛 테스트를 작성해 코드 리뷰어가 코드베이스를
-                  보다 쉽게 이해할 수 있도록 지원하고, Playwright로 E2E 테스트를 구축해 핵심 기능의
-                  유저 플로우가 정상적으로 작동하는지 자동으로 검증함. 이를 통해 배포 전 QA 과정을
-                  자동화하고, 오류를 사전에 감지하여 고객이 문제를 인지하기 전에 해결할 수 있었음.
-                  특히, 기존에 QA 팀원이 수동으로 진행하던 회귀 테스트의 일부를 E2E 테스트로
-                  자동화하여, 배포 전 테스트에 소요되는 시간을 평균 40% 단축시켜 배포 생산성을
+                  신규 기능을 출시하기 전에 GrowthBook을 통해 사용자, 런타임 환경, 기능 단위로 피처
+                  플래그를 설정하여 원활한 QA를 지원함. 배포 후 장애가 발생하면 추가적인 코드
+                  변경이나 재배포 없이 해당 피처 플래그만 비활성화하여, 평균 3분 이내에 문제 기능을
+                  차단하고 기존 상태로 복구해 서비스 중단 시간을 최소화함
+                </p>
+              </li>
+              {/* <li>
+                <strong>A/B 테스트</strong>
+                <p className="text-slate-600 font-medium">
+                  총 10만 명의 사용자를 대상으로 2주간 여러 UI 개선안에 대한 A/B 테스트를 진행함.
+                  사용자 중 50%는 기존 UI를 유지했고, 나머지 50%는 여러 그룹으로 나누어 각기 다른 UI
+                  개선안을 제공함. 실험 결과, 새로운 UI를 사용하는 특정 그룹에서 매출 등 주요
+                  가드레일 지표가 유지되는 동시에, KPI인 사용자 참여율이 10%p, 유료 전환율이 5%p
+                  상승한 것을 확인함. 이 데이터를 바탕으로 해당 UI 개선안을 프로덕션 환경에 최종
+                  배포함. 이를 통해 UI 개선 효과를 데이터 기반으로 평가하고 가장 효율적인 UI를
+                  식별할 수 있었음
+                </p>
+              </li> */}
+              <li>
+                <strong>E2E 테스트</strong>
+                <p className="text-slate-600 font-medium">
+                  Playwright로 30여 개 핵심 사용자 시나리오의 E2E 테스트 자동화 파이프라인을 구축함.
+                  프로덕션 배포 전 수동으로 진행하던 QA 업무를 E2E 테스트로 자동화하여, 배포 전
+                  리그레션 테스트에 소요되는 시간을 평균 31분 → 18분으로 42% 단축시켜 배포 생산성을
                   향상시킴
                 </p>
               </li>
               <li>
-                <strong>Argo CD/Rollouts 배포 및 롤백</strong>
-                <p className="text-slate-600 font-medium">
-                  Jenkins와 <code>kubectl</code>을 활용한 배포 방식에서는 서비스 배포 상태 추적,
-                  실시간 클러스터 모니터링의 한계, 롤백 프로세스의 복잡성, 고급 배포 전략의 부재
-                  등의 불편함이 있음. 이에 다른 팀원이 기존에 Argo CD를 사용하고 있는 백엔드 환경을
-                  참고해서 웹 프론트엔드 서비스에도 Argo CD와 Argo Rollouts를 도입하여 GitOps 기반의
-                  선언형 배포 및 롤백 전략을 적용한 과정을 따라해봄
-                </p>
+                <strong>Node.js 기반 백엔드 API 개발</strong>
+                <ol>
+                  <li>
+                    <p className="text-slate-600 font-medium">
+                      REST API 리팩토링: 필요한 데이터만 보내주는 신규 REST API를 설계하고 기존
+                      로직을 리팩토링하여 응답 크기를 40.5 kB → 20.5 kB로 절반 가까이 줄임
+                    </p>
+                  </li>
+                  <li>
+                    <p className="text-slate-600 font-medium">
+                      GraphQL API 확장: 작품 정보 페이지에 쿠폰 프로모션 배너를 신규로 노출하기 위해
+                      GraphQL 스키마 타입을 새로 정의하고, 쿠폰 도메인 데이터베이스 쿼리 및 GraphQL
+                      resolver를 구현하여 UI와 연동함
+                    </p>
+                  </li>
+                </ol>
               </li>
             </ol>
           </div>
@@ -533,8 +550,19 @@ export default function HomePage({ params }: PageProps) {
             </a>
           </div>
           <div className="grid grid-cols-2 gap-x-4 gap-y-1">
-            <div>매출: 2023년 1조 2,609억원 (개별)</div>
-            <div>자본: 2023년 1조 5,052억원 (개별)</div>
+            <div>
+              매출: 2023년{' '}
+              <a href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240404002475" target="_blank">
+                1조 2,609억원 (개별)
+              </a>
+            </div>
+
+            <div>
+              자본: 2023년{' '}
+              <a href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240404002475" target="_blank">
+                1조 5,052억원 (개별)
+              </a>
+            </div>
             <div>총원: 2023년 12월 512명</div>
             <div>유형: 계약직</div>
             <div className="col-span-2">
@@ -544,7 +572,6 @@ export default function HomePage({ params }: PageProps) {
           <div className="border-l-2 pl-4">
             <div className="grid grid-cols-2 gap-4 my-4">
               <h4 className="font-bold">토스뱅크 루모스 (여신 심사·관리·운영 시스템)</h4>
-              <div>2023.08.07 ~ 11.06 (3개월)</div>
             </div>
             <div className="grid grid-cols-2 gap-x-4 gap-y-1 mb-3">
               <div>직책: Admin Developer</div>
@@ -610,6 +637,14 @@ export default function HomePage({ params }: PageProps) {
                 </p>
               </li>
               <li>
+                <strong>장애 대응</strong>
+                <p className="text-slate-600 font-medium">
+                  서비스 기능 장애가 발생했을 때 관련 커밋을 롤백한 후 Kibana 검색 및 집계 기능을
+                  사용하여 오류 발생 주기와 원인을 분석함. 또한 해결 방안을 논의해 문서로 남긴 후
+                  개선된 코드를 제안하고 구현함
+                </p>
+              </li>
+              <li>
                 <strong>선언형 프로그래밍</strong>
                 <p className="text-slate-600 font-medium">
                   Suspense와 ErrorBoundary 개념을 이용해 네트워크 상태를 선언적으로 관리하고, React
@@ -618,14 +653,6 @@ export default function HomePage({ params }: PageProps) {
                   활용해 다단계 페이지 이동도 선언적으로 관리함. 그리고 연관된 코드는 가까운 곳에
                   배치하여 컴포넌트 응집도를 높이고, 로직 세부 구현은 hook으로 숨겨 코드 파악에
                   필수적인 정보가 잘 보이도록 개선함
-                </p>
-              </li>
-              <li>
-                <strong>장애 대응</strong>
-                <p className="text-slate-600 font-medium">
-                  서비스 기능 장애가 발생했을 때 관련 커밋을 롤백한 후 Kibana 검색 및 집계 기능을
-                  사용하여 오류 발생 주기와 원인을 분석함. 또한 해결 방안을 논의해 문서로 남긴 후
-                  개선된 코드를 제안하고 구현함
                 </p>
               </li>
             </ol>
@@ -741,7 +768,7 @@ export default function HomePage({ params }: PageProps) {
         <div className="flex gap-1">
           <a href="https://nextjs.org/" target="_blank">
             <img
-              src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"
+              src="https://img.shields.io/badge/Next.js App router-000000?style=flat-square&logo=next.js&logoColor=white"
               alt="Next.js Badge"
             />
           </a>
@@ -755,12 +782,6 @@ export default function HomePage({ params }: PageProps) {
             <img
               src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white"
               alt="tailwind Badge"
-            />
-          </a>
-          <a href="https://tanstack.com/query/latest/docs/react/overview" target="_blank">
-            <img
-              src="https://img.shields.io/badge/React Query-FF4154?style=flat-square&logo=react-query&logoColor=white"
-              alt="react query Badge"
             />
           </a>
           <a href="https://zustand-demo.pmnd.rs/" rel="noreferrer" target="_blank">
@@ -804,20 +825,10 @@ export default function HomePage({ params }: PageProps) {
               alt="WebSocket Badge"
             />
           </a>
-          <a
-            href="https://en.wikipedia.org/wiki/HTTP/2_Server_Push"
-            rel="noreferrer"
-            target="_blank"
-          >
+          <a href="https://orm.drizzle.team/" rel="noreferrer" target="_blank">
             <img
-              src="https://img.shields.io/badge/Server Push-4285F4?style=flat-square&logo=google-chrome&logoColor=white"
-              alt="Server Push Badge"
-            />
-          </a>
-          <a href="https://www.prisma.io/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=Prisma&logoColor=white"
-              alt="prisma Badge"
+              src="https://img.shields.io/badge/Drizzle-C5F74F?style=flat-square&logo=drizzle&logoColor=black"
+              alt="Drizzle Badge"
             />
           </a>
           <a href="https://www.docker.com/" rel="noreferrer" target="_blank">
@@ -851,26 +862,26 @@ export default function HomePage({ params }: PageProps) {
         <div className="flex gap-1">
           <a href="https://vercel.com/" rel="noreferrer" target="_blank">
             <img
-              src="https://img.shields.io/badge/KV, Postgres, Blob-000000?style=flat-square&logo=vercel&logoColor=white"
+              src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white"
               alt="Vercel Badge"
             />
           </a>
           <a href="https://cloud.google.com/gcp/" target="_blank">
             <img
-              src="https://img.shields.io/badge/Cloud Run, Cloud Storage, Cloud SQL, VPC-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
+              src="https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=Supabase&logoColor=white"
+              alt="Supabase Badge"
+            />
+          </a>
+          <a href="https://cloud.google.com/gcp/" target="_blank">
+            <img
+              src="https://img.shields.io/badge/GCP -- Cloud Run, Cloud Storage, Cloud SQL-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
               alt="GCP Badge"
             />
           </a>
           <a href="https://aws.amazon.com/ko/" rel="noreferrer" target="_blank">
             <img
-              src="https://img.shields.io/badge/RDS, EC2, S3, VPC-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white"
+              src="https://img.shields.io/badge/RDS, EC2, S3-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white"
               alt="AWS Badge"
-            />
-          </a>
-          <a href="https://cloud.oracle.com/?region=ap-seoul-1" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Instances, VCN-F80000?style=flat-square&logo=oracle&logoColor=white"
-              alt="Oracle Badge"
             />
           </a>
         </div>
@@ -910,10 +921,10 @@ export default function HomePage({ params }: PageProps) {
                   alt="GA Badge"
                 />
               </a>
-              <a href="https://github.com/GoogleChrome/web-vitals" rel="noreferrer" target="_blank">
+              <a href="https://amplitude.com/" rel="noreferrer" target="_blank">
                 <img
-                  src="https://img.shields.io/badge/web--vitals-000000?style=flat-square&logo=web-vitals&logoColor=white"
-                  alt="web-vitals Badge"
+                  src="https://img.shields.io/badge/Amplitude-1e61f0?style=flat-square&logo=Amplitude&logoColor=white"
+                  alt="Amplitude Badge"
                 />
               </a>
             </div>
@@ -1677,7 +1688,6 @@ export default function HomePage({ params }: PageProps) {
         피드백을 요청해 서비스에 대한 시야를 넓히고 있으며, 프로젝트 전체를 이해하는 개발자로
         성장하고 있습니다.
       </p>
-
       <div className="w-full text-center text-sm text-slate-800  mt-8">작성일: {date}</div>
       <div className="w-full text-center text-sm text-slate-800 ">작성자: 곽태욱</div>
       <div className="my-8" />

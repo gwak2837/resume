@@ -59,9 +59,10 @@ export const metadata: Metadata = {
 }
 
 const myFont = localFont({
-  src: './PretendardVariable.woff2',
+  src: './PretendardVariable.400-700.3713.woff2',
+  display: 'swap',
+  weight: '400 700',
   fallback: [
-    'Pretendard',
     '-apple-system',
     'BlinkMacSystemFont',
     'system-ui',
@@ -76,7 +77,6 @@ const myFont = localFont({
     'Segoe UI Symbol',
     'sans-serif',
   ],
-  weight: '400 700',
 })
 
 export default function RootLayout({ children }: LayoutProps) {
