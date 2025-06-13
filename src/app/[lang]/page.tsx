@@ -169,7 +169,7 @@ export default function HomePage({ params }: PageProps) {
       </div>
       <p className="my-4 text-lg">{dict.한줄소개[lang]}</p>
       <h2 className="text-3xl my-8">
-        {dict.개발경력[lang]} <span className="text-sm">(1년 8개월, 2025.04.26 기준)</span>
+        {dict.개발경력[lang]} <span className="text-sm">(1년 10개월, {date} 기준)</span>
       </h2>
       <ul>
         <li>
@@ -974,7 +974,11 @@ export default function HomePage({ params }: PageProps) {
         <tbody>
           <tr>
             <td>
-              <a href="https://www.q-net.or.kr/crf005.do?id=crf00503&jmCd=1320" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.q-net.or.kr/crf005.do?id=crf00503&jmCd=1320"
+                target="_blank"
+                rel="noreferrer"
+              >
                 2025년 정기 기사 1회
               </a>
             </td>
