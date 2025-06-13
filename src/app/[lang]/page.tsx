@@ -974,6 +974,20 @@ export default function HomePage({ params }: PageProps) {
         <tbody>
           <tr>
             <td>
+              <a href="https://www.q-net.or.kr/crf005.do?id=crf00503&jmCd=1320" target="_blank" rel="noreferrer">
+                2025년 정기 기사 1회
+              </a>
+            </td>
+            <td className="text-center">
+              <a href="/pdf/2025-06-13_정보처리기사.pdf" target="_blank">
+                정보처리기사
+              </a>
+            </td>
+            <td className="text-center">과학기술정보통신부</td>
+            <td className="text-center">2025.06.13</td>
+          </tr>
+          <tr>
+            <td>
               <a href="https://www.topcit.or.kr/home.do" target="_blank" rel="noreferrer">
                 TOPCIT
               </a>{' '}
