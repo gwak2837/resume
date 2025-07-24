@@ -195,7 +195,6 @@ export default async function HomePage({ params }: PageProps) {
         <div className="relative">
           {/* Timeline line */}
           <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gray-200"></div>
-
           <WorkExperiences />
         </div>
       </section>
