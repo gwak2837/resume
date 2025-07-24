@@ -1,18 +1,17 @@
 import './globals.css'
 
 import {
-  CANONICAL_URL,
   APPLICATION_NAME,
-  DESCRIPTION,
   APPLICATION_SHORT_NAME,
   AUTHOR,
+  CANONICAL_URL,
+  CATEGORY,
+  DESCRIPTION,
   KEYWORDS,
   THEME_COLOR,
-  CATEGORY,
 } from '../common/constants'
 import { LayoutProps } from '../common/types'
 
-import { Analytics } from '@vercel/analytics/react'
 import { Metadata } from 'next'
 import localFont from 'next/font/local'
 
@@ -92,7 +91,6 @@ export default function RootLayout({ children }: LayoutProps) {
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 
       <body className={myFont.className}>{children}</body>
-      <Analytics />
     </html>
   )
 }
