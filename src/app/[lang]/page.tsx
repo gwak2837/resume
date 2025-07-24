@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 import { APPLICATION_NAME } from '../../common/constants'
 import { PageProps } from '../../common/types'
@@ -9,6 +8,7 @@ import { getISODate } from '../../util/date'
 import Certificates from './Certificates'
 import { dict } from './dictionary'
 import Education from './Education'
+import Hero from './Hero'
 import LanguageUpdate from './LanguageUpdate'
 import OtherCertificates from './OtherCertificates'
 import Portpolio from './Portpolio'
@@ -47,8 +47,8 @@ export default async function HomePage({ params }: PageProps) {
   return (
     <main className="mx-auto max-w-[720px]">
       <LanguageUpdate lang={lang} />
-      <div className="flex justify-between items-center">
-        <h1 className="text-4xl mb-6 font-semibold w-full">{dict.이력서[lang]}</h1>
+      <div className="flex justify-end items-center">
+        <h1 className="sr-only">{dict.이력서[lang]}</h1>
         <div className="flex whitespace-nowrap gap-2">
           <Link href="/ko">한국어</Link>
           <Link href="/en">English</Link>
@@ -56,120 +56,15 @@ export default async function HomePage({ params }: PageProps) {
           <Link href="/ja">日本語</Link>
         </div>
       </div>
-      <h2 className="bg-none text-2xl my-4 text-center">
-        다만, 사랑하고 살아가는 프론트엔드 개발자
-      </h2>
-      <div>
-        <div className="flex gap-4 flex-wrap whitespace-nowrap">
-          <Image
-            src="/images/profile.webp"
-            className="w-[178px] aspect-square"
-            alt="profile"
-            width={712}
-            height={712}
-            priority
-          />
-          <ul className="flex flex-col gap-1">
-            {[
-              { label: '이름', value: dict.이름[lang] },
-              { label: '출생', value: dict.생일[lang] },
-              {
-                label: '학위',
-                value: (
-                  <a href="/images/학위증.webp" target="_blank">
-                    {dict.학위[lang]}
-                  </a>
-                ),
-              },
-              {
-                label: '거주',
-                value: (
-                  <a href="https://naver.me/Fcg2bYyc" target="_blank" rel="noreferrer">
-                    {dict.주소[lang]}
-                  </a>
-                ),
-              },
-              {
-                label: '병역',
-                value: (
-                  <a href="/pdf/병적증명서.pdf" target="_blank">
-                    {dict.병역[lang]}
-                  </a>
-                ),
-              },
-              {
-                label: '',
-                value: (
-                  <a href="/images/2023-military.webp" target="_blank">
-                    {dict.KATUSA[lang]}
-                  </a>
-                ),
-              },
-              {
-                label: '',
-                value: dict.ROTC[lang],
-              },
-            ].map(({ label, value }, i) => (
-              <li key={i} className="flex gap-3 items-center">
-                <span className="w-6">{label}</span>
-                {value}
-              </li>
-            ))}
-          </ul>
-          <ul className="flex flex-col gap-1">
-            {[
-              {
-                label: '전화',
-                value: <a href="tel:010-9203-2837">+82 010-9203-2837</a>,
-              },
-              {
-                label: '메일',
-                value: <a href="mailto:gwak2837@google.com">gwak2837@google.com</a>,
-              },
-              {
-                label: '',
-                value: <a href="mailto:gwak2837@kakao.com">gwak2837@kakao.com</a>,
-              },
-              {
-                label: <Image src="/images/velog.png" alt="velog" width="16" height="16" />,
-                value: (
-                  <a href="https://velog.io/@gwak2837" target="_blank">
-                    velog.io/@gwak2837
-                  </a>
-                ),
-              },
-              {
-                label: <Image src="/images/github.svg" alt="github" width="16" height="16" />,
-                value: (
-                  <a href="https://github.com/gwak2837" target="_blank">
-                    github.com/gwak2837
-                  </a>
-                ),
-              },
-              {
-                label: (
-                  <Image src="/images/LinkedIn_icon.svg" alt="github" width="16" height="16" />
-                ),
-                value: (
-                  <a href="https://www.linkedin.com/in/gwak2837/" target="_blank">
-                    linkedin.com/in/gwak2837
-                  </a>
-                ),
-              },
-              {
-                label: '취미',
-                value: '자전거, 웨이트, 독서',
-              },
-            ].map(({ label, value }, i) => (
-              <li key={i} className="flex gap-3 items-center">
-                <span className="w-6">{label}</span>
-                {value}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-      <p className="my-4 text-lg">{dict.한줄소개[lang]}</p>
+
+      {/* Hero Section */}
+      <section id="hero" className="mb-12">
+        <h2 className="bg-none text-2xl my-4 text-center">
+          다만, 사랑하고 살아가는 프론트엔드 개발자
+        </h2>
+        <Hero lang={lang} />
+        <p className="my-4 text-lg">{dict.한줄소개[lang]}</p>
+      </section>
 
       {/* 경력 */}
       <section id="experience" className="mb-12">
@@ -447,7 +342,6 @@ export default async function HomePage({ params }: PageProps) {
               부서: '개발팀 (4명)',
               역할: (
                 <>
-                  고등학교 친구가 창업한 스타트업에서{' '}
                   <a href="https://planby.us/" target="_blank" rel="noreferrer">
                     'HOMI AI - 인공지능이 꾸며주는 나의 공간'
                   </a>{' '}
