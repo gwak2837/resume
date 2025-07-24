@@ -28,7 +28,7 @@ export default function WorkExperiences() {
             </a>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-2 mb-4 text-sm text-gray-600">
+          <div className="grid grid-cols-2 gap-2 mb-4 text-sm text-gray-600">
             <div>
               매출: 2024년{' '}
               <a href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250402003376" target="_blank">
@@ -375,7 +375,7 @@ export default function WorkExperiences() {
             </a>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-2 mb-4 text-sm text-gray-600">
+          <div className="grid grid-cols-2 gap-2 mb-4 text-sm text-gray-600">
             <div>
               매출: 2023년{' '}
               <a href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240404002475" target="_blank">
