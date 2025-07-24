@@ -14,7 +14,7 @@ export default function OtherCertificates() {
   return (
     <>
       <a href="/" target="_blank" rel="noreferrer">
-        <button className="w-full text-center my-4 text-slate-500 text-sm" onClick={toggleShow}>
+        <button className="w-full text-center mt-4 text-slate-500 text-sm" onClick={toggleShow}>
           {show ? '기타 자격증 숨기기' : '기타 자격증 보기'}
         </button>
       </a>
