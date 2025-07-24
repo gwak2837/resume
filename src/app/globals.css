@@ -6,6 +6,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@media print {
+  @page {
+    size: A4;
+  }
+
+  body {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  /* Better text rendering */
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
 :root {
   --mobile-min-width: 320px;
   --mobile-min-height: 568px;
@@ -131,9 +148,4 @@ code {
   --tw-bg-opacity: 1;
   font-weight: 600;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
-}
-
-@media page {
-  size: A4;
-  margin: 0;
 }
