@@ -371,7 +371,7 @@ export default function WorkExperiences() {
               target="_blank"
               className="text-sm whitespace-nowrap"
             >
-              2023.08 ~ 2023.11 (3개월)
+              2023.08.07 ~ 2023.11.06 (3개월)
             </a>
           </div>
 
