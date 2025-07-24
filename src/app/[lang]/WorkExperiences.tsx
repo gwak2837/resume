@@ -58,10 +58,10 @@ export default function WorkExperiences() {
                 <div className="flex justify-between items-center p-4 bg-gray-100 rounded-lg transition">
                   <div>
                     <h4 className="font-semibold">RIDI 웹</h4>
-                    <p className="text-sm text-gray-600">
+                    <p className="text-sm text-gray-700">
                       Frontend Engineer{' '}
-                      <span className="text-gray-400 font-medium text-xs">(Junior)</span> · Web Team{' '}
-                      <span className="text-gray-400 font-medium text-xs">(6명)</span>
+                      <span className="text-gray-500 font-medium text-xs">(Junior)</span> · Web Team{' '}
+                      <span className="text-gray-500 font-medium text-xs">(6명)</span>
                     </p>
                   </div>
                   <div className="flex items-center gap-2">
@@ -207,11 +207,11 @@ export default function WorkExperiences() {
                 <div className="flex justify-between items-center p-4 bg-gray-100 rounded-lg transition">
                   <div>
                     <h4 className="font-semibold">Manta - Unlimited Comics</h4>
-                    <p className="text-sm text-gray-600">
+                    <p className="text-sm text-gray-700">
                       Frontend Engineer{' '}
-                      <span className="text-gray-400 font-medium text-xs">(Junior)</span> ·
+                      <span className="text-gray-500 font-medium text-xs">(Junior)</span> ·
                       Engineering Team{' '}
-                      <span className="text-gray-400 font-medium text-xs">(10명)</span>
+                      <span className="text-gray-500 font-medium text-xs">(10명)</span>
                     </p>
                   </div>
                   <div className="flex items-center gap-2">
@@ -404,10 +404,10 @@ export default function WorkExperiences() {
                 <div className="flex justify-between items-center p-4 bg-gray-100 rounded-lg transition">
                   <div>
                     <h4 className="font-semibold">토스뱅크 루모스 (여신 심사·관리·운영 시스템)</h4>
-                    <p className="text-sm text-gray-600">
+                    <p className="text-sm text-gray-700">
                       Admin Developer{' '}
-                      <span className="text-gray-400 font-medium text-xs">(계약직)</span> · Housing
-                      Loan Squad <span className="text-gray-400 font-medium text-xs">(12명)</span>
+                      <span className="text-gray-500 font-medium text-xs">(계약직)</span> · Housing
+                      Loan Squad <span className="text-gray-500 font-medium text-xs">(12명)</span>
                     </p>
                   </div>
                   <div className="flex items-center gap-2">
