@@ -20,7 +20,7 @@ export default function WorkExperiences() {
               <RidiLogo />
             </a>
             <a
-              href="/pdf/리디-재직증명서.pdf"
+              href="/pdf/리디-재직증명서-2024.pdf"
               target="_blank"
               className="text-sm whitespace-nowrap"
             >
