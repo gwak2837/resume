@@ -12,7 +12,7 @@ import {
 } from '../common/constants'
 import { LayoutProps } from '../common/types'
 
-import { Metadata } from 'next'
+import { Metadata, Viewport } from 'next'
 import localFont from 'next/font/local'
 
 export const metadata: Metadata = {
@@ -24,8 +24,6 @@ export const metadata: Metadata = {
   generator: null,
   keywords: KEYWORDS,
   referrer: 'strict-origin-when-cross-origin',
-  themeColor: THEME_COLOR,
-  viewport: { width: 'device-width', initialScale: 1, viewportFit: 'cover' },
   robots: { index: true, follow: true },
   alternates: { canonical: CANONICAL_URL },
   icons: {
@@ -55,6 +53,13 @@ export const metadata: Metadata = {
   bookmarks: CANONICAL_URL,
   category: CATEGORY,
   classification: CATEGORY,
+}
+
+export const viewport: Viewport = {
+  themeColor: THEME_COLOR,
+  width: 'device-width',
+  initialScale: 1,
+  viewportFit: 'cover',
 }
 
 const myFont = localFont({

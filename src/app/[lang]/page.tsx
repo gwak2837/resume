@@ -11,6 +11,7 @@ import { dict } from './dictionary'
 import LanguageUpdate from './LanguageUpdate'
 import OtherCertificates from './OtherCertificates'
 
+import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Fragment } from 'react'
@@ -21,25 +22,24 @@ export async function generateStaticParams() {
   return [{ lang: 'ko' }, { lang: 'en' }, { lang: 'zh' }, { lang: 'ja' }]
 }
 
-export async function generateMetadata({ params }: PageProps) {
-  const lang = params.lang as 'ko' | 'en' | 'zh' | 'ja'
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const lang = (await params).lang as 'ko' | 'en' | 'zh' | 'ja'
 
-  return {
-    title:
-      lang === 'ko'
-        ? APPLICATION_NAME
-        : lang === 'en'
-        ? `Taeuk Gwak ${getISODate(new Date())} Resume Portpolio`
-        : lang === 'zh'
-        ? `郭泰昱 ${getISODate(new Date())} 履历书 作品集`
-        : lang === 'ja'
-        ? `郭泰昱 ${getISODate(new Date())} 履歴書 ポートフォリオ`
-        : APPLICATION_NAME,
+  if (lang === 'ko') {
+    return { title: APPLICATION_NAME }
+  } else if (lang === 'en') {
+    return { title: `Taeuk Gwak ${getISODate(new Date())} Resume Portpolio` }
+  } else if (lang === 'zh') {
+    return { title: `郭泰昱 ${getISODate(new Date())} 履历书 作品集` }
+  } else if (lang === 'ja') {
+    return { title: `郭泰昱 ${getISODate(new Date())} 履歴書 ポートフォリオ` }
   }
+
+  return { title: APPLICATION_NAME }
 }
 
-export default function HomePage({ params }: PageProps) {
-  const lang = params.lang as 'ko' | 'en' | 'zh' | 'ja'
+export default async function HomePage({ params }: PageProps) {
+  const lang = (await params).lang as 'ko' | 'en' | 'zh' | 'ja'
   const date = dict.작성일[lang]
 
   return (
@@ -343,7 +343,7 @@ export default function HomePage({ params }: PageProps) {
                   차단하고 기존 상태로 복구해 서비스 중단 시간을 최소화함.
                 </p>
               </li>
-              {/* <li>
+              <li>
                 <strong>A/B 테스트</strong>
                 <p className="text-slate-600 font-medium">
                   총 10만 명의 사용자를 대상으로 2주간 여러 UI 개선안에 대한 A/B 테스트를 진행함.
@@ -354,7 +354,7 @@ export default function HomePage({ params }: PageProps) {
                   배포함. 이를 통해 UI 개선 효과를 데이터 기반으로 평가하고 가장 효율적인 UI를
                   식별할 수 있었음
                 </p>
-              </li> */}
+              </li>
               <li>
                 <strong>E2E 테스트</strong>
                 <p className="text-slate-600 font-medium">
@@ -1529,9 +1529,9 @@ export default function HomePage({ params }: PageProps) {
             <div>팀원 5명</div>
             <div>2020.12.03</div>
           </div>
-          <div>‘버려지는 소재를 새로운 순환으로’를 주제로 사업계획서 작성</div>
+          <div>'버려지는 소재를 새로운 순환으로'를 주제로 사업계획서 작성</div>
           <div>
-            ‘온라인 새활용 제품 유통 플랫폼’ 기획으로{' '}
+            '온라인 새활용 제품 유통 플랫폼' 기획으로{' '}
             <a href="/images/2020-C-디자인씽킹-아카데미.jpeg" target="_blank">
               대상(1등)
             </a>{' '}

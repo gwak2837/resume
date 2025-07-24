@@ -2,11 +2,11 @@ import { type ReactNode } from 'react'
 
 export type LayoutProps = {
   children: ReactNode
-  params: Record<string, any>
+  params: Promise<Record<string, any>>
 }
 
 export type PageProps = {
-  params: Record<string, any>
+  params: Promise<Record<string, any>>
   searchParams: Record<string, string | string[] | undefined>
 }
 
@@ -16,5 +16,5 @@ export type ErrorProps = {
 }
 
 export type RouteProps = {
-  params: Record<string, string>
+  params: Promise<Record<string, string>>
 }
