@@ -188,7 +188,7 @@ export default async function HomePage({ params }: PageProps) {
           </svg>
           <h2 className="text-3xl font-bold">
             {dict.개발경력[lang]}{' '}
-            <span className="text-sm font-normal text-gray-500">(1년 10개월, {date} 기준)</span>
+            <span className="text-sm font-normal text-gray-500">(1년 11개월, {date} 기준)</span>
           </h2>
         </div>
         <div className="relative">
