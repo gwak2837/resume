@@ -191,242 +191,285 @@ export default async function HomePage({ params }: PageProps) {
             <span className="text-sm font-normal text-gray-500">(1년 10개월, {date} 기준)</span>
           </h2>
         </div>
-
         <div className="relative">
-          {/* Timeline line */}
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gray-200"></div>
+          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gray-200" />
           <WorkExperiences />
         </div>
       </section>
 
-      <h2 className="text-3xl my-8 ">{dict.학력[lang]}</h2>
-      <Education lang={lang} />
-
-      <h2 className="text-3xl my-8">기술</h2>
-      <h4 className="my-2">Language</h4>
-      <div className="flex gap-1">
-        <a href="https://javascript.info/" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/ES2023-F7DF1E?style=flat-square&logo=JavaScript&logoColor=black"
-            alt="JavaScript Badge"
-          />
-        </a>
-        <a href="https://www.typescriptlang.org/" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/TypeScript-235A97?style=flat-square&logo=Typescript&logoColor=white"
-            alt="TypeScript Badge"
-          />
-        </a>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"
-            alt="CSS3 Badge"
-          />
-        </a>
-        <a href="https://www.python.org/" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"
-            alt="Python Badge"
-          />
-        </a>
-        <a href="https://en.wikipedia.org/wiki/SQL" rel="noreferrer" target="_blank">
-          <img
-            src="https://img.shields.io/badge/SQL-003B57?style=flat-square&logo=SQL&logoColor=white"
-            alt="SQL Badge"
-          />
-        </a>
-      </div>
-      <h4 className="my-2">Frontend</h4>
-      <div className="grid gap-1">
-        <div className="flex gap-1">
-          <a href="https://nextjs.org/" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Next.js App router-000000?style=flat-square&logo=next.js&logoColor=white"
-              alt="Next.js Badge"
-            />
-          </a>
-          <a href="https://react.dev/" target="_blank">
-            <img
-              src="https://img.shields.io/badge/React.js-61DAFB?style=flat-square&logo=react&logoColor=black"
-              alt="React Badge"
-            />
-          </a>
-          <a href="https://tailwindcss.com/" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white"
-              alt="tailwind Badge"
-            />
-          </a>
-          <a href="https://zustand-demo.pmnd.rs/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Zustand-3578e5?style=flat-square&logo=Zustand&logoColor=white"
-              alt="Zustand Badge"
-            />
-          </a>
-          <a href="https://playwright.dev/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Playwright-45ba4b?style=flat-square&logo=Playwright&logoColor=white"
-              alt="Playwright Badge"
-            />
-          </a>
-          <a href="https://web.dev/progressive-web-apps/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/PWA-5A0FC8?style=flat-square&logo=PWA&logoColor=white"
-              alt="PWA Badge"
-            />
-          </a>
-          <a href="https://reactnative.dev/" target="_blank">
-            <img
-              src="https://img.shields.io/badge/React Native-61DAFB?style=flat-square&logo=react&logoColor=black"
-              alt="React Badge"
-            />
-          </a>
-        </div>
-      </div>
-      <h4 className="my-2">Backend</h4>
-      <div className="grid gap-1">
-        <div className="flex gap-1">
-          <a href="https://nodejs.org/en/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white"
-              alt="Node.js Badge"
-            />
-          </a>
-          <a href="https://socket.io/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Socket.IO-010101?style=flat-square&logo=Socket.io&logoColor=white"
-              alt="WebSocket Badge"
-            />
-          </a>
-          <a href="https://orm.drizzle.team/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Drizzle-C5F74F?style=flat-square&logo=drizzle&logoColor=black"
-              alt="Drizzle Badge"
-            />
-          </a>
-          <a href="https://www.docker.com/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"
-              alt="Docker Badge"
-            />
-          </a>
-          <a href="https://www.postgresql.org/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=PostgreSQL&logoColor=white"
-              alt="PostgreSQL Badge"
-            />
-          </a>
-          <a href="https://redis.io/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"
-              alt="Redis Badge"
-            />
-          </a>
-          <a href="https://www.elastic.co/kr" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Elasticsearch, Kibana-005571?style=flat-square&logo=elastic&logoColor=white"
-              alt="elasticsearch Badge"
-            />
-          </a>
-        </div>
-      </div>
-      <h4 className="my-2">Cloud</h4>
-      <div className="grid gap-1">
-        <div className="flex gap-1">
-          <a href="https://vercel.com/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white"
-              alt="Vercel Badge"
-            />
-          </a>
-          <a href="https://cloud.google.com/gcp/" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=Supabase&logoColor=white"
-              alt="Supabase Badge"
-            />
-          </a>
-          <a href="https://cloud.google.com/gcp/" target="_blank">
-            <img
-              src="https://img.shields.io/badge/GCP -- Cloud Run, Cloud Storage, Cloud SQL-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
-              alt="GCP Badge"
-            />
-          </a>
-          <a href="https://aws.amazon.com/ko/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/RDS, EC2, S3-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white"
-              alt="AWS Badge"
-            />
-          </a>
-        </div>
-      </div>
-      <div className="flex gap-4">
+      {/* Education & Certificates - Combined */}
+      <section className="mb-12">
         <div>
-          <h4 className="my-2">Operation Tool</h4>
-          <div className="grid gap-1">
+          <div className="flex items-center gap-3 mb-6">
+            <svg
+              className="w-8 h-8 text-green-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              {' '}
+              <path d="M12 14l9-5-9-5-9 5 9 5z" />
+              <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+              />{' '}
+            </svg>
+            <h2 className="text-3xl font-bold">{dict.학력[lang]}</h2>
+          </div>
+          <Education lang={lang} />
+        </div>
+      </section>
+
+      {/* Skills Section - Redesigned */}
+      <section id="skills" className="my-12">
+        <div className="flex items-center gap-3 mb-6">
+          <svg
+            className="w-8 h-8 text-purple-600"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+            />
+          </svg>
+          <h2 className="text-3xl font-bold">기술 스택</h2>
+        </div>
+        <h4 className="my-2">Language</h4>
+        <div className="flex gap-1">
+          <a href="https://javascript.info/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/ES2023-F7DF1E?style=flat-square&logo=JavaScript&logoColor=black"
+              alt="JavaScript Badge"
+            />
+          </a>
+          <a href="https://www.typescriptlang.org/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/TypeScript-235A97?style=flat-square&logo=Typescript&logoColor=white"
+              alt="TypeScript Badge"
+            />
+          </a>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"
+              alt="CSS3 Badge"
+            />
+          </a>
+          <a href="https://www.python.org/" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"
+              alt="Python Badge"
+            />
+          </a>
+          <a href="https://en.wikipedia.org/wiki/SQL" rel="noreferrer" target="_blank">
+            <img
+              src="https://img.shields.io/badge/SQL-003B57?style=flat-square&logo=SQL&logoColor=white"
+              alt="SQL Badge"
+            />
+          </a>
+        </div>
+        <h4 className="my-2">Frontend</h4>
+        <div className="grid gap-1">
+          <div className="flex gap-1">
+            <a href="https://nextjs.org/" target="_blank">
+              <img
+                src="https://img.shields.io/badge/Next.js App router-000000?style=flat-square&logo=next.js&logoColor=white"
+                alt="Next.js Badge"
+              />
+            </a>
+            <a href="https://react.dev/" target="_blank">
+              <img
+                src="https://img.shields.io/badge/React.js-61DAFB?style=flat-square&logo=react&logoColor=black"
+                alt="React Badge"
+              />
+            </a>
+            <a href="https://tailwindcss.com/" target="_blank">
+              <img
+                src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white"
+                alt="tailwind Badge"
+              />
+            </a>
+            <a href="https://zustand-demo.pmnd.rs/" rel="noreferrer" target="_blank">
+              <img
+                src="https://img.shields.io/badge/Zustand-3578e5?style=flat-square&logo=Zustand&logoColor=white"
+                alt="Zustand Badge"
+              />
+            </a>
+            <a href="https://playwright.dev/" rel="noreferrer" target="_blank">
+              <img
+                src="https://img.shields.io/badge/Playwright-45ba4b?style=flat-square&logo=Playwright&logoColor=white"
+                alt="Playwright Badge"
+              />
+            </a>
+            <a href="https://web.dev/progressive-web-apps/" rel="noreferrer" target="_blank">
+              <img
+                src="https://img.shields.io/badge/PWA-5A0FC8?style=flat-square&logo=PWA&logoColor=white"
+                alt="PWA Badge"
+              />
+            </a>
+            <a href="https://reactnative.dev/" target="_blank">
+              <img
+                src="https://img.shields.io/badge/React Native-61DAFB?style=flat-square&logo=react&logoColor=black"
+                alt="React Badge"
+              />
+            </a>
+          </div>
+        </div>
+        <h4 className="my-2">Backend</h4>
+        <div className="grid gap-1">
+          <div className="flex gap-1">
+            <a href="https://nodejs.org/en/" rel="noreferrer" target="_blank">
+              <img
+                src="https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white"
+                alt="Node.js Badge"
+              />
+            </a>
+            <a href="https://socket.io/" rel="noreferrer" target="_blank">
+              <img
+                src="https://img.shields.io/badge/Socket.IO-010101?style=flat-square&logo=Socket.io&logoColor=white"
+                alt="WebSocket Badge"
+              />
+            </a>
+            <a href="https://orm.drizzle.team/" rel="noreferrer" target="_blank">
+              <img
+                src="https://img.shields.io/badge/Drizzle-C5F74F?style=flat-square&logo=drizzle&logoColor=black"
+                alt="Drizzle Badge"
+              />
+            </a>
+            <a href="https://www.docker.com/" rel="noreferrer" target="_blank">
+              <img
+                src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"
+                alt="Docker Badge"
+              />
+            </a>
+            <a href="https://www.postgresql.org/" rel="noreferrer" target="_blank">
+              <img
+                src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=PostgreSQL&logoColor=white"
+                alt="PostgreSQL Badge"
+              />
+            </a>
+            <a href="https://redis.io/" rel="noreferrer" target="_blank">
+              <img
+                src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"
+                alt="Redis Badge"
+              />
+            </a>
+            <a href="https://www.elastic.co/kr" rel="noreferrer" target="_blank">
+              <img
+                src="https://img.shields.io/badge/Elasticsearch, Kibana-005571?style=flat-square&logo=elastic&logoColor=white"
+                alt="elasticsearch Badge"
+              />
+            </a>
+          </div>
+        </div>
+        <h4 className="my-2">Cloud</h4>
+        <div className="grid gap-1">
+          <div className="flex gap-1">
+            <a href="https://vercel.com/" rel="noreferrer" target="_blank">
+              <img
+                src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white"
+                alt="Vercel Badge"
+              />
+            </a>
+            <a href="https://cloud.google.com/gcp/" target="_blank">
+              <img
+                src="https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=Supabase&logoColor=white"
+                alt="Supabase Badge"
+              />
+            </a>
+            <a href="https://cloud.google.com/gcp/" target="_blank">
+              <img
+                src="https://img.shields.io/badge/GCP -- Cloud Run, Cloud Storage, Cloud SQL-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
+                alt="GCP Badge"
+              />
+            </a>
+            <a href="https://aws.amazon.com/ko/" rel="noreferrer" target="_blank">
+              <img
+                src="https://img.shields.io/badge/RDS, EC2, S3-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white"
+                alt="AWS Badge"
+              />
+            </a>
+          </div>
+        </div>
+        <div className="flex gap-4">
+          <div>
+            <h4 className="my-2">Operation Tool</h4>
+            <div className="grid gap-1">
+              <div className="flex gap-1">
+                <a href="https://www.growthbook.io/" target="_blank">
+                  <img
+                    src="https://img.shields.io/badge/GrowthBook-590dbd?style=flat-square&logo=GrowthBook&logoColor=black"
+                    alt="GrowthBook Badge"
+                  />
+                </a>
+                <a href="" target="_blank">
+                  <img
+                    src="https://img.shields.io/badge/Jest-C21325?style=flat-square&logo=jest&logoColor=white"
+                    alt="Jest Badge"
+                  />
+                </a>
+                <a href="https://sentry.io/welcome/" rel="noreferrer" target="_blank">
+                  <img
+                    src="https://img.shields.io/badge/Sentry-362D59?style=flat-square&logo=sentry&logoColor=white"
+                    alt="Sentry"
+                  />
+                </a>
+                <a href="https://vercel.com/docs/speed-insights" rel="noreferrer" target="_blank">
+                  <img
+                    src="https://img.shields.io/badge/Argo CD-EF7B4D?style=flat-square&logo=argo&logoColor=white"
+                    alt="Argo Badge"
+                  />
+                </a>
+                <a href="https://analytics.google.com/analytics/web/" target="_blank">
+                  <img
+                    src="https://img.shields.io/badge/GA-E37400?style=flat-square&logo=Google Analytics&logoColor=white"
+                    alt="GA Badge"
+                  />
+                </a>
+                <a href="https://amplitude.com/" rel="noreferrer" target="_blank">
+                  <img
+                    src="https://img.shields.io/badge/Amplitude-1e61f0?style=flat-square&logo=Amplitude&logoColor=white"
+                    alt="Amplitude Badge"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h4 className="my-2">AI</h4>
             <div className="flex gap-1">
-              <a href="https://www.growthbook.io/" target="_blank">
+              <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui" target="_blank">
                 <img
-                  src="https://img.shields.io/badge/GrowthBook-590dbd?style=flat-square&logo=GrowthBook&logoColor=black"
-                  alt="GrowthBook Badge"
+                  src="https://img.shields.io/badge/Stable Diffusion-1F1E37?style=flat-square&logo=ngrok&logoColor=white"
+                  alt="Stable Diffusion Badge"
                 />
               </a>
-              <a href="" target="_blank">
+              <a href="https://github.com/bmaltais/kohya_ss" target="_blank">
                 <img
-                  src="https://img.shields.io/badge/Jest-C21325?style=flat-square&logo=jest&logoColor=white"
-                  alt="Jest Badge"
+                  src="https://img.shields.io/badge/LoRA-1F1E37?style=flat-square&logo=ngrok&logoColor=white"
+                  alt="LoRA Badge"
                 />
               </a>
-              <a href="https://sentry.io/welcome/" rel="noreferrer" target="_blank">
+              <a href="https://www.runpod.io/" target="_blank">
                 <img
-                  src="https://img.shields.io/badge/Sentry-362D59?style=flat-square&logo=sentry&logoColor=white"
-                  alt="Sentry"
-                />
-              </a>
-              <a href="https://vercel.com/docs/speed-insights" rel="noreferrer" target="_blank">
-                <img
-                  src="https://img.shields.io/badge/Argo CD-EF7B4D?style=flat-square&logo=argo&logoColor=white"
-                  alt="Argo Badge"
-                />
-              </a>
-              <a href="https://analytics.google.com/analytics/web/" target="_blank">
-                <img
-                  src="https://img.shields.io/badge/GA-E37400?style=flat-square&logo=Google Analytics&logoColor=white"
-                  alt="GA Badge"
-                />
-              </a>
-              <a href="https://amplitude.com/" rel="noreferrer" target="_blank">
-                <img
-                  src="https://img.shields.io/badge/Amplitude-1e61f0?style=flat-square&logo=Amplitude&logoColor=white"
-                  alt="Amplitude Badge"
+                  src="https://img.shields.io/badge/RunPod-824edc?style=flat-square&logo=RunPod&logoColor=white"
+                  alt="RunPod Badge"
                 />
               </a>
             </div>
           </div>
         </div>
-        <div>
-          <h4 className="my-2">AI</h4>
-          <div className="flex gap-1">
-            <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui" target="_blank">
-              <img
-                src="https://img.shields.io/badge/Stable Diffusion-1F1E37?style=flat-square&logo=ngrok&logoColor=white"
-                alt="Stable Diffusion Badge"
-              />
-            </a>
-            <a href="https://github.com/bmaltais/kohya_ss" target="_blank">
-              <img
-                src="https://img.shields.io/badge/LoRA-1F1E37?style=flat-square&logo=ngrok&logoColor=white"
-                alt="LoRA Badge"
-              />
-            </a>
-            <a href="https://www.runpod.io/" target="_blank">
-              <img
-                src="https://img.shields.io/badge/RunPod-824edc?style=flat-square&logo=RunPod&logoColor=white"
-                alt="RunPod Badge"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
+      </section>
 
       <h2 className="text-3xl my-8">자격증</h2>
       <Certificates />
