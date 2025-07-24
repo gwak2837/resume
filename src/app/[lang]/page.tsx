@@ -12,6 +12,7 @@ import Education from './Education'
 import LanguageUpdate from './LanguageUpdate'
 import OtherCertificates from './OtherCertificates'
 import Portpolio from './Portpolio'
+import ShieldBadge from './ShieldBadge'
 import WorkExperiences from './WorkExperiences'
 
 import { Metadata } from 'next'
@@ -265,162 +266,101 @@ export default async function HomePage({ params }: PageProps) {
         </div>
         <h4 className="my-2">Language</h4>
         <div className="flex gap-1">
-          <a href="https://javascript.info/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/ES2023-F7DF1E?style=flat-square&logo=JavaScript&logoColor=black"
-              alt="JavaScript Badge"
-            />
-          </a>
-          <a href="https://www.typescriptlang.org/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/TypeScript-235A97?style=flat-square&logo=Typescript&logoColor=white"
-              alt="TypeScript Badge"
-            />
-          </a>
-          <a
+          <ShieldBadge
+            href="https://javascript.info/"
+            alt="ES2023"
+            logo="JavaScript"
+            logoColor="black"
+            bgColor="F7DF1E"
+          />
+          <ShieldBadge href="https://www.typescriptlang.org/" alt="TypeScript" bgColor="235A97" />
+          <ShieldBadge
             href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <img
-              src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"
-              alt="CSS3 Badge"
-            />
-          </a>
-          <a href="https://www.python.org/" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"
-              alt="Python Badge"
-            />
-          </a>
-          <a href="https://en.wikipedia.org/wiki/SQL" rel="noreferrer" target="_blank">
-            <img
-              src="https://img.shields.io/badge/SQL-003B57?style=flat-square&logo=SQL&logoColor=white"
-              alt="SQL Badge"
-            />
-          </a>
+            alt="CSS3"
+            logo="CSS"
+            bgColor="663399"
+          />
+          <ShieldBadge href="https://www.python.org/" alt="Python" bgColor="3776AB" />
+          <ShieldBadge href="https://en.wikipedia.org/wiki/SQL" alt="SQL" bgColor="003B57" />
         </div>
         <h4 className="my-2">Frontend</h4>
         <div className="grid gap-1">
           <div className="flex gap-1">
-            <a href="https://nextjs.org/" target="_blank">
-              <img
-                src="https://img.shields.io/badge/Next.js App router-000000?style=flat-square&logo=next.js&logoColor=white"
-                alt="Next.js Badge"
-              />
-            </a>
-            <a href="https://react.dev/" target="_blank">
-              <img
-                src="https://img.shields.io/badge/React.js-61DAFB?style=flat-square&logo=react&logoColor=black"
-                alt="React Badge"
-              />
-            </a>
-            <a href="https://tailwindcss.com/" target="_blank">
-              <img
-                src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white"
-                alt="tailwind Badge"
-              />
-            </a>
-            <a href="https://zustand-demo.pmnd.rs/" rel="noreferrer" target="_blank">
-              <img
-                src="https://img.shields.io/badge/Zustand-3578e5?style=flat-square&logo=Zustand&logoColor=white"
-                alt="Zustand Badge"
-              />
-            </a>
-            <a href="https://playwright.dev/" rel="noreferrer" target="_blank">
-              <img
-                src="https://img.shields.io/badge/Playwright-45ba4b?style=flat-square&logo=Playwright&logoColor=white"
-                alt="Playwright Badge"
-              />
-            </a>
-            <a href="https://web.dev/progressive-web-apps/" rel="noreferrer" target="_blank">
-              <img
-                src="https://img.shields.io/badge/PWA-5A0FC8?style=flat-square&logo=PWA&logoColor=white"
-                alt="PWA Badge"
-              />
-            </a>
-            <a href="https://reactnative.dev/" target="_blank">
-              <img
-                src="https://img.shields.io/badge/React Native-61DAFB?style=flat-square&logo=react&logoColor=black"
-                alt="React Badge"
-              />
-            </a>
+            <ShieldBadge
+              href="https://nextjs.org/"
+              alt="Next.js App router"
+              logo="next.js"
+              bgColor="000000"
+            />
+            <ShieldBadge
+              href="https://react.dev/"
+              alt="React.js"
+              logo="react"
+              logoColor="black"
+              bgColor="61DAFB"
+            />
+            <ShieldBadge
+              href="https://tailwindcss.com/"
+              alt="Tailwind"
+              logo="tailwindcss"
+              bgColor="06B6D4"
+            />
+            <ShieldBadge href="https://zustand-demo.pmnd.rs/" alt="Zustand" bgColor="3578e5" />
+            <ShieldBadge
+              href="https://playwright.dev/"
+              alt="Playwright"
+              logo="Playwright"
+              bgColor="45ba4b"
+            />
+            <ShieldBadge href="https://web.dev/progressive-web-apps/" alt="PWA" bgColor="5A0FC8" />
+            <ShieldBadge
+              href="https://reactnative.dev/"
+              alt="React Native"
+              logo="react"
+              logoColor="black"
+              bgColor="61DAFB"
+            />
           </div>
         </div>
         <h4 className="my-2">Backend</h4>
         <div className="grid gap-1">
           <div className="flex gap-1">
-            <a href="https://nodejs.org/en/" rel="noreferrer" target="_blank">
-              <img
-                src="https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white"
-                alt="Node.js Badge"
-              />
-            </a>
-            <a href="https://socket.io/" rel="noreferrer" target="_blank">
-              <img
-                src="https://img.shields.io/badge/Socket.IO-010101?style=flat-square&logo=Socket.io&logoColor=white"
-                alt="WebSocket Badge"
-              />
-            </a>
-            <a href="https://orm.drizzle.team/" rel="noreferrer" target="_blank">
-              <img
-                src="https://img.shields.io/badge/Drizzle-C5F74F?style=flat-square&logo=drizzle&logoColor=black"
-                alt="Drizzle Badge"
-              />
-            </a>
-            <a href="https://www.docker.com/" rel="noreferrer" target="_blank">
-              <img
-                src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"
-                alt="Docker Badge"
-              />
-            </a>
-            <a href="https://www.postgresql.org/" rel="noreferrer" target="_blank">
-              <img
-                src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=PostgreSQL&logoColor=white"
-                alt="PostgreSQL Badge"
-              />
-            </a>
-            <a href="https://redis.io/" rel="noreferrer" target="_blank">
-              <img
-                src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"
-                alt="Redis Badge"
-              />
-            </a>
-            <a href="https://www.elastic.co/kr" rel="noreferrer" target="_blank">
-              <img
-                src="https://img.shields.io/badge/Elasticsearch, Kibana-005571?style=flat-square&logo=elastic&logoColor=white"
-                alt="elasticsearch Badge"
-              />
-            </a>
+            <ShieldBadge href="https://nodejs.org/en/" alt="Node.js" bgColor="43853D" />
+            <ShieldBadge href="https://socket.io/" alt="Socket.IO" bgColor="010101" />
+            <ShieldBadge
+              href="https://orm.drizzle.team/"
+              alt="Drizzle"
+              bgColor="C5F74F"
+              logoColor="black"
+            />
+            <ShieldBadge href="https://www.docker.com/" alt="Docker" bgColor="2496ED" />
+            <ShieldBadge href="https://www.postgresql.org/" alt="PostgreSQL" bgColor="4169E1" />
+            <ShieldBadge href="https://redis.io/" alt="Redis" bgColor="DC382D" />
+            <ShieldBadge
+              href="https://www.elastic.co/kr"
+              alt="Elasticsearch, Kibana"
+              logo="elastic"
+              bgColor="005571"
+            />
           </div>
         </div>
         <h4 className="my-2">Cloud</h4>
         <div className="grid gap-1">
           <div className="flex gap-1">
-            <a href="https://vercel.com/" rel="noreferrer" target="_blank">
-              <img
-                src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white"
-                alt="Vercel Badge"
-              />
-            </a>
-            <a href="https://cloud.google.com/gcp/" target="_blank">
-              <img
-                src="https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=Supabase&logoColor=white"
-                alt="Supabase Badge"
-              />
-            </a>
-            <a href="https://cloud.google.com/gcp/" target="_blank">
-              <img
-                src="https://img.shields.io/badge/GCP -- Cloud Run, Cloud Storage, Cloud SQL-4285F4?style=flat-square&logo=google-cloud&logoColor=white"
-                alt="GCP Badge"
-              />
-            </a>
-            <a href="https://aws.amazon.com/ko/" rel="noreferrer" target="_blank">
-              <img
-                src="https://img.shields.io/badge/RDS, EC2, S3-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white"
-                alt="AWS Badge"
-              />
-            </a>
+            <ShieldBadge href="https://vercel.com/" alt="Vercel" bgColor="000000" />
+            <ShieldBadge href="https://supabase.com/" alt="Supabase" bgColor="3FCF8E" />
+            <ShieldBadge href="https://www.cloudflare.com/" alt="Cloudflare" bgColor="F38020" />
+            <ShieldBadge
+              href="https://cloud.google.com/gcp/"
+              alt="Cloud Run, Cloud Storage, Cloud SQL"
+              logo="Google Cloud"
+              bgColor="4285F4"
+            />
+            <ShieldBadge
+              href="https://aws.amazon.com/ko/"
+              alt="AWS - RDS, EC2, S3"
+              bgColor="232F3E"
+            />
           </div>
         </div>
         <div className="flex gap-4">
@@ -428,66 +368,33 @@ export default async function HomePage({ params }: PageProps) {
             <h4 className="my-2">Operation Tool</h4>
             <div className="grid gap-1">
               <div className="flex gap-1">
-                <a href="https://www.growthbook.io/" target="_blank">
-                  <img
-                    src="https://img.shields.io/badge/GrowthBook-590dbd?style=flat-square&logo=GrowthBook&logoColor=black"
-                    alt="GrowthBook Badge"
-                  />
-                </a>
-                <a href="" target="_blank">
-                  <img
-                    src="https://img.shields.io/badge/Jest-C21325?style=flat-square&logo=jest&logoColor=white"
-                    alt="Jest Badge"
-                  />
-                </a>
-                <a href="https://sentry.io/welcome/" rel="noreferrer" target="_blank">
-                  <img
-                    src="https://img.shields.io/badge/Sentry-362D59?style=flat-square&logo=sentry&logoColor=white"
-                    alt="Sentry"
-                  />
-                </a>
-                <a href="https://vercel.com/docs/speed-insights" rel="noreferrer" target="_blank">
-                  <img
-                    src="https://img.shields.io/badge/Argo CD-EF7B4D?style=flat-square&logo=argo&logoColor=white"
-                    alt="Argo Badge"
-                  />
-                </a>
-                <a href="https://analytics.google.com/analytics/web/" target="_blank">
-                  <img
-                    src="https://img.shields.io/badge/GA-E37400?style=flat-square&logo=Google Analytics&logoColor=white"
-                    alt="GA Badge"
-                  />
-                </a>
-                <a href="https://amplitude.com/" rel="noreferrer" target="_blank">
-                  <img
-                    src="https://img.shields.io/badge/Amplitude-1e61f0?style=flat-square&logo=Amplitude&logoColor=white"
-                    alt="Amplitude Badge"
-                  />
-                </a>
+                <ShieldBadge href="https://vitest.dev/" alt="Vitest" bgColor="6E9F18" />
+                <ShieldBadge href="https://sentry.io/welcome/" alt="Sentry" bgColor="362D59" />
+                <ShieldBadge href="https://datadoghq.com/" alt="Datadog" bgColor="632CA6" />
+                <ShieldBadge
+                  href="https://analytics.google.com/analytics/web/"
+                  alt="GA"
+                  logo="Google Analytics"
+                  bgColor="E37400"
+                />
+                <ShieldBadge href="https://amplitude.com/" alt="Amplitude" bgColor="1e61f0" />
+                <ShieldBadge href="https://www.growthbook.io/" alt="GrowthBook" bgColor="590dbd" />
               </div>
             </div>
           </div>
           <div>
             <h4 className="my-2">AI</h4>
             <div className="flex gap-1">
-              <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui" target="_blank">
-                <img
-                  src="https://img.shields.io/badge/Stable Diffusion-1F1E37?style=flat-square&logo=ngrok&logoColor=white"
-                  alt="Stable Diffusion Badge"
-                />
-              </a>
-              <a href="https://github.com/bmaltais/kohya_ss" target="_blank">
-                <img
-                  src="https://img.shields.io/badge/LoRA-1F1E37?style=flat-square&logo=ngrok&logoColor=white"
-                  alt="LoRA Badge"
-                />
-              </a>
-              <a href="https://www.runpod.io/" target="_blank">
-                <img
-                  src="https://img.shields.io/badge/RunPod-824edc?style=flat-square&logo=RunPod&logoColor=white"
-                  alt="RunPod Badge"
-                />
-              </a>
+              <ShieldBadge
+                href="https://github.com/comfyanonymous/ComfyUI"
+                alt="ComfyUI"
+                bgColor="F0FF41"
+              />
+              <ShieldBadge
+                href="https://github.com/bmaltais/kohya_ss"
+                alt="LoRA"
+                bgColor="1F1E37"
+              />
             </div>
           </div>
         </div>
