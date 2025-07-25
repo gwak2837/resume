@@ -9,7 +9,7 @@ export default function Portpolio({ date }: Props) {
   return (
     <>
       <h1 className="text-4xl mb-8 font-semibold w-full break-before-page">포트폴리오</h1>
-      <h2 className="text-3xl my-8">프로젝트</h2>
+      <h2 className="text-2xl my-8">프로젝트</h2>
       <div className="grid grid-cols-[2fr_1fr_3fr] gap-4 my-4">
         <h4>OFFICE AI</h4>
         <div>4명</div>
@@ -1918,8 +1918,8 @@ export default function Portpolio({ date }: Props) {
       >
         Notion에서 보기
       </a>
-      <h2 className="text-3xl my-8">기술</h2>
-      <h3 className="text-2xl my-4">React.js (Next.js)</h3>
+      <h2 className="text-2xl my-8">기술</h2>
+      <h3 className="text-xl my-4">React.js (Next.js)</h3>
       <dl>
         <li>React Query, Apollo client, useSWR 등 네트워크 요청 및 응답 데이터를 관리함</li>
         <li>
@@ -1948,7 +1948,7 @@ export default function Portpolio({ date }: Props) {
         <li>함수형 프로그래밍에서 나오는 클로저 개념을 활용해 useState를 간단하게 직접 구현함</li>
         <li>메모이제이션 개념을 이용한 useMemo, useCallback을 활용해 컴포넌트 렌더링을 최적화함</li>
       </dl>
-      <h3 className="text-2xl my-4">HTML · CSS</h3>
+      <h3 className="text-xl my-4">HTML · CSS</h3>
       <dl>
         <li>
           W3C 웹 표준과 웹 접근성(a11y)을 지키려 노력하며 크로스 브라우징에 대응할 수 있음 (IE11
@@ -1959,7 +1959,7 @@ export default function Portpolio({ date }: Props) {
         <li>마우스 Drag&Drop 기능과 스크롤 이벤트를 활용한 애니메이션 구현 가능함</li>
         <li>순수 CSS를 이용해 Drawer, Modal, Carousel을 직접 구현 가능함</li>
       </dl>
-      <h3 className="text-2xl my-4">JavaScript</h3>
+      <h3 className="text-xl my-4">JavaScript</h3>
       <dl>
         <li>ES2022 까지의 문법 및 JavaScript 엔진에서 사용되는 비동기 개념에 익숙함</li>
         <li>TypeScript와 type 자동 생성 라이브러리를 사용해 개발 생산성을 높임</li>
@@ -2001,7 +2001,7 @@ export default function Portpolio({ date }: Props) {
         </li>
         <li>웹소켓 또는 HTTP/2 Push 기능을 활용해 일대일 채팅 기능을 구현함</li>
       </dl>
-      <h3 className="text-2xl my-4">Backend</h3>
+      <h3 className="text-xl my-4">Backend</h3>
       <dl>
         <li>Fastify, Next.js, Express.js, Koa.js 라이브러리로 REST API 서버를 개발함</li>
         <li>Apollo Server를 사용해 GraphQL API 서버를 개발함</li>
@@ -2012,7 +2012,7 @@ export default function Portpolio({ date }: Props) {
           BFF 개념을 활용해 프론트엔드 개별 페이지에 최적화된 엔드포인트를 설계 · 구현할 수 있음
         </li>
       </dl>
-      <h3 className="text-2xl my-4">PostgreSQL</h3>
+      <h3 className="text-xl my-4">PostgreSQL</h3>
       <dl>
         <li>
           외래키와 junction 테이블을 사용해 테이블 간 일대일, 일대다, 다대다 관계를 설정할 수 있음
@@ -2025,7 +2025,7 @@ export default function Portpolio({ date }: Props) {
           SQL 간 경쟁조건이 있을 때 의도된 결과를 얻기 위해 특정 테이블 또는 레코드를 잠글 수 있음
         </li>
       </dl>
-      <h3 className="text-2xl my-4">Cloud</h3>
+      <h3 className="text-xl my-4">Cloud</h3>
       <dl>
         <li>클라우드 가상 머신에 Docker 기반 SSL 전용 PostgreSQL 서버와 Redis 서버를 구축함</li>
         <li>Cloud Build와 Cloud Run을 활용해 Docker 이미지 빌드 · 배포를 자동화(CI · CD)함</li>
@@ -2034,7 +2034,7 @@ export default function Portpolio({ date }: Props) {
         <li>Cloud SQL 및 AWS RDS에 클라우드 DB 서버를 구축했음</li>
         <li>AWS RDS, AWS EC2, AWS S3, Oracle Instance, 가비아 클라우드를 사용한 경험이 있음</li>
       </dl>
-      <h3 className="text-2xl my-4">외부 API</h3>
+      <h3 className="text-xl my-4">외부 API</h3>
       <dl>
         <li>OAuth 2.0 스펙을 따르는 소셜 로그인 기능을 연동할 수 있음</li>
         <li>카카오페이, 토스페이를 사용해 결제 시스템을 자동화할 수 있음</li>

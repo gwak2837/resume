@@ -1,12 +1,14 @@
 import 'server-only'
 
+export const 작성일 = {
+  ko: '2025.07.27',
+  en: 'July 27, 2025',
+  zh: '2025年7月27日',
+  ja: '2025年7月27日',
+}
+
 export const generalDict = {
-  작성일: {
-    ko: '2025.07.27',
-    en: 'July 27, 2025',
-    zh: '2025年7月27日',
-    ja: '2025年7月27日',
-  },
+  작성일: 작성일,
   이력서: {
     ko: '이력서',
     en: 'Resume',
@@ -60,9 +62,9 @@ export const generalDict = {
     ja: '経験',
   },
   경력기간: {
-    ko: (date: string) => `(1년 11개월, ${date} 기준)`,
-    en: (date: string) => `(1 year 11 months, as of ${date})`,
-    zh: (date: string) => `(1年11个月，截至${date})`,
-    ja: (date: string) => `(1年11ヶ月、${date}基準)`,
+    ko: `(1년 11개월, ${작성일.ko} 기준)`,
+    en: `(1 year 11 months, as of ${작성일.en})`,
+    zh: `(1年11个月，截至${작성일.zh})`,
+    ja: `(1年11ヶ月、${작성일.ja}基準)`,
   },
 }

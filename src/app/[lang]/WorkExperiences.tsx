@@ -65,7 +65,7 @@ const PositionDetails = ({
         <div className="flex items-center gap-2">
           <span className="text-sm text-gray-500">{period}</span>
           <svg
-            className="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"
+            className="w-5 h-5 text-gray-400 group-open:rotate-180 transition"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
