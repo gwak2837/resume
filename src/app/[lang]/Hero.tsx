@@ -63,7 +63,6 @@ const ContactLink = ({
 const ExternalLink = ({
   href,
   children,
-  showIcon = true,
 }: {
   href: string
   children: ReactNode
@@ -76,7 +75,6 @@ const ExternalLink = ({
     className="transition inline-flex items-center gap-1"
   >
     {children}
-    {showIcon && ICONS.externalLink}
   </a>
 )
 
@@ -178,9 +176,7 @@ export default function Hero({ lang }: Props) {
           <InfoSection title={heroDict.basicInfoTitle[lang]}>
             <InfoItem label={heroDict.birthLabel[lang]}>{heroDict.생일[lang]}</InfoItem>
             <InfoItem label={heroDict.locationLabel[lang]}>
-              <ExternalLink href="https://naver.me/Fcg2bYyc" showIcon={false}>
-                {heroDict.주소[lang]}
-              </ExternalLink>
+              <ExternalLink href="https://naver.me/Fcg2bYyc">{heroDict.주소[lang]}</ExternalLink>
             </InfoItem>
             <InfoItem label={heroDict.interestsLabel[lang]}>{heroDict.interests[lang]}</InfoItem>
           </InfoSection>
