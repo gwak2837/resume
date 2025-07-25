@@ -89,7 +89,7 @@ export default async function HomePage({ params }: PageProps) {
         </div>
         <div className="relative">
           <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gray-200" />
-          <WorkExperiences />
+          <WorkExperiences lang={lang} />
         </div>
       </section>
 
