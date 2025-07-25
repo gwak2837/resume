@@ -1,6 +1,6 @@
 import RidiLogo from '../../svg/RidiLogo'
 
-import { dict } from './dictionary'
+import { workExperiencesDict } from './dictionary/work-experiences'
 
 import Image from 'next/image'
 import { PropsWithChildren, ReactNode } from 'react'
@@ -84,7 +84,7 @@ export default function WorkExperiences({ lang }: Props) {
     <ul className="space-y-8">
       {/* RIDI */}
       <li className="relative">
-        <TimelineDot>{dict.현재[lang]}</TimelineDot>
+        <TimelineDot>{workExperiencesDict.현재[lang]}</TimelineDot>
         <ExperienceCard>
           <div className="flex flex-row justify-between items-start gap-4 mb-4">
             <a
@@ -92,7 +92,7 @@ export default function WorkExperiences({ lang }: Props) {
               className="flex gap-2 items-center"
               target="_blank"
             >
-              <h3 className="text-lg font-bold">{dict.리디주[lang]}</h3>
+              <h3 className="text-lg font-bold">{workExperiencesDict.리디주[lang]}</h3>
               <RidiLogo />
             </a>
             <a
@@ -100,34 +100,34 @@ export default function WorkExperiences({ lang }: Props) {
               target="_blank"
               className="text-sm whitespace-nowrap"
             >
-              {dict.리디_기간[lang]}
+              {workExperiencesDict.리디_기간[lang]}
             </a>
           </div>
           <CompanyInfo>
             <div>
-              {dict.매출[lang]}:{' '}
+              {workExperiencesDict.매출[lang]}:{' '}
               <a href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250402003376" target="_blank">
-                {dict.리디_매출[lang]}
+                {workExperiencesDict.리디_매출[lang]}
               </a>
             </div>
             <div>
-              {dict.총원[lang]}:{' '}
+              {workExperiencesDict.총원[lang]}:{' '}
               <a
                 href="https://www.innoforest.co.kr/company/CP00000016/%EB%A6%AC%EB%94%94"
                 target="_blank"
               >
-                {dict.리디_총원[lang]}
+                {workExperiencesDict.리디_총원[lang]}
               </a>
             </div>
           </CompanyInfo>
-          <p className="text-sm text-gray-700 mb-4">{dict.리디_설명[lang]}</p>
+          <p className="text-sm text-gray-700 mb-4">{workExperiencesDict.리디_설명[lang]}</p>
           <div className="space-y-4">
             <PositionDetails
               title={`RIDI ${lang === 'ko' ? '웹' : lang === 'ja' ? 'ウェブ' : 'Web'}`}
-              team={dict.리디웹_팀[lang]}
-              period={dict.리디웹_기간[lang]}
+              team={workExperiencesDict.리디웹_팀[lang]}
+              period={workExperiencesDict.리디웹_기간[lang]}
             >
-              <p className="text-sm">{dict.리디웹_설명[lang]}</p>
+              <p className="text-sm">{workExperiencesDict.리디웹_설명[lang]}</p>
               <a
                 href="https://ridibooks.com"
                 target="_blank"
@@ -162,51 +162,61 @@ export default function WorkExperiences({ lang }: Props) {
               <div className="space-y-2">
                 <Achievement>
                   <strong className="text-sm">
-                    {dict.성과평가[lang]}{' '}
+                    {workExperiencesDict.성과평가[lang]}{' '}
                     <a
                       className="text-xs"
                       href="/pdf/RIDI Track Record Review 기준.pdf"
                       target="_blank"
                     >
-                      {dict.성과평가_기준[lang]}
+                      {workExperiencesDict.성과평가_기준[lang]}
                     </a>
                   </strong>
                   <p className="text-sm text-gray-600 mt-1">
-                    {dict.성과평가_결과[lang]}{' '}
+                    {workExperiencesDict.성과평가_결과[lang]}{' '}
                     <a
                       className="text-xs"
                       href="/pdf/RIDI Track Record Review 결과.pdf"
                       target="_blank"
                     >
-                      <span>{dict.세부결과[lang]}</span>
+                      <span>{workExperiencesDict.세부결과[lang]}</span>
                     </a>
                   </p>
                 </Achievement>
                 <Achievement>
-                  <strong className="text-sm">{dict.만화이북_출시[lang]}</strong>
-                  <p className="text-sm text-gray-600 mt-1">{dict.만화이북_설명[lang]}</p>
+                  <strong className="text-sm">{workExperiencesDict.만화이북_출시[lang]}</strong>
+                  <p className="text-sm text-gray-600 mt-1">
+                    {workExperiencesDict.만화이북_설명[lang]}
+                  </p>
                 </Achievement>
                 <Achievement>
-                  <strong className="text-sm">{dict.AB테스트[lang]}</strong>
-                  <p className="text-sm text-gray-600 mt-1">{dict.AB테스트_설명[lang]}</p>
+                  <strong className="text-sm">{workExperiencesDict.AB테스트[lang]}</strong>
+                  <p className="text-sm text-gray-600 mt-1">
+                    {workExperiencesDict.AB테스트_설명[lang]}
+                  </p>
                 </Achievement>
                 <Achievement>
-                  <strong className="text-sm">{dict.E2E테스트[lang]}</strong>
-                  <p className="text-sm text-gray-600 mt-1">{dict.E2E테스트_설명[lang]}</p>
+                  <strong className="text-sm">{workExperiencesDict.E2E테스트[lang]}</strong>
+                  <p className="text-sm text-gray-600 mt-1">
+                    {workExperiencesDict.E2E테스트_설명[lang]}
+                  </p>
                 </Achievement>
                 <Achievement>
-                  <strong className="text-sm">{dict.백엔드API개발[lang]}</strong>
-                  <p className="text-sm text-gray-600 mt-1">{dict.백엔드API개발_REST[lang]}</p>
-                  <p className="text-sm text-gray-600 mt-1">{dict.백엔드API개발_GraphQL[lang]}</p>
+                  <strong className="text-sm">{workExperiencesDict.백엔드API개발[lang]}</strong>
+                  <p className="text-sm text-gray-600 mt-1">
+                    {workExperiencesDict.백엔드API개발_REST[lang]}
+                  </p>
+                  <p className="text-sm text-gray-600 mt-1">
+                    {workExperiencesDict.백엔드API개발_GraphQL[lang]}
+                  </p>
                 </Achievement>
               </div>
             </PositionDetails>
             <PositionDetails
               title="Manta - Unlimited Comics"
-              team={dict.만타_팀[lang]}
-              period={dict.만타_기간[lang]}
+              team={workExperiencesDict.만타_팀[lang]}
+              period={workExperiencesDict.만타_기간[lang]}
             >
-              <p className="text-sm">{dict.만타_설명[lang]}</p>
+              <p className="text-sm">{workExperiencesDict.만타_설명[lang]}</p>
               <div className="flex flex-wrap gap-0.5">
                 {[
                   { href: 'https://manta.net/en', label: 'manta.net' },
@@ -245,16 +255,22 @@ export default function WorkExperiences({ lang }: Props) {
               </div>
               <div className="space-y-2">
                 <Achievement>
-                  <strong className="text-sm">{dict.프랑스어출시[lang]}</strong>
-                  <p className="text-sm text-gray-600 mt-1">{dict.프랑스어출시_설명[lang]}</p>
+                  <strong className="text-sm">{workExperiencesDict.프랑스어출시[lang]}</strong>
+                  <p className="text-sm text-gray-600 mt-1">
+                    {workExperiencesDict.프랑스어출시_설명[lang]}
+                  </p>
                 </Achievement>
                 <Achievement>
-                  <strong className="text-sm">{dict.연관검색어[lang]}</strong>
-                  <p className="text-sm text-gray-600 mt-1">{dict.연관검색어_설명[lang]}</p>
+                  <strong className="text-sm">{workExperiencesDict.연관검색어[lang]}</strong>
+                  <p className="text-sm text-gray-600 mt-1">
+                    {workExperiencesDict.연관검색어_설명[lang]}
+                  </p>
                 </Achievement>
                 <Achievement>
-                  <strong className="text-sm">{dict.센트리오류분류[lang]}</strong>
-                  <p className="text-sm text-gray-600 mt-1">{dict.센트리오류분류_설명[lang]}</p>
+                  <strong className="text-sm">{workExperiencesDict.센트리오류분류[lang]}</strong>
+                  <p className="text-sm text-gray-600 mt-1">
+                    {workExperiencesDict.센트리오류분류_설명[lang]}
+                  </p>
                 </Achievement>
               </div>
             </PositionDetails>
@@ -272,7 +288,7 @@ export default function WorkExperiences({ lang }: Props) {
               className="flex gap-2 items-center"
               target="_blank"
             >
-              <h3 className="text-lg font-bold">{dict.토스뱅크주[lang]}</h3>
+              <h3 className="text-lg font-bold">{workExperiencesDict.토스뱅크주[lang]}</h3>
               <Image
                 src="/images/TossBank_Logo_Primary.png"
                 alt="tossbank"
@@ -286,34 +302,34 @@ export default function WorkExperiences({ lang }: Props) {
               target="_blank"
               className="text-sm whitespace-nowrap"
             >
-              {dict.토스뱅크_기간[lang]}
+              {workExperiencesDict.토스뱅크_기간[lang]}
             </a>
           </div>
           <CompanyInfo>
             <div>
-              {dict.매출[lang]}:{' '}
+              {workExperiencesDict.매출[lang]}:{' '}
               <a href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240404002475" target="_blank">
-                {dict.토스뱅크_매출[lang]}
+                {workExperiencesDict.토스뱅크_매출[lang]}
               </a>
             </div>
             <div>
-              {dict.총원[lang]}:{' '}
+              {workExperiencesDict.총원[lang]}:{' '}
               <a
                 href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240404002475&dcmNo=9834643"
                 target="_blank"
               >
-                {dict.토스뱅크_총원[lang]}
+                {workExperiencesDict.토스뱅크_총원[lang]}
               </a>
             </div>
           </CompanyInfo>
-          <p className="text-sm text-gray-700 mb-4">{dict.토스뱅크_설명[lang]}</p>
+          <p className="text-sm text-gray-700 mb-4">{workExperiencesDict.토스뱅크_설명[lang]}</p>
           <div className="space-y-4">
             <PositionDetails
-              title={dict.루모스[lang]}
-              team={dict.루모스_팀[lang]}
-              period={dict.루모스_기간[lang]}
+              title={workExperiencesDict.루모스[lang]}
+              team={workExperiencesDict.루모스_팀[lang]}
+              period={workExperiencesDict.루모스_기간[lang]}
             >
-              <p className="text-sm">{dict.루모스_설명[lang]}</p>
+              <p className="text-sm">{workExperiencesDict.루모스_설명[lang]}</p>
               <div className="flex flex-wrap gap-1 mb-3">
                 {['Next.js 13', 'Toss Design System', 'React Query'].map((tech) => (
                   <TechBadge key={tech} tech={tech} />
@@ -321,16 +337,22 @@ export default function WorkExperiences({ lang }: Props) {
               </div>
               <div className="space-y-2">
                 <Achievement>
-                  <strong className="text-sm">{dict.전월세보증금대출[lang]}</strong>
-                  <p className="text-sm text-gray-600 mt-1">{dict.전월세보증금대출_설명[lang]}</p>
+                  <strong className="text-sm">{workExperiencesDict.전월세보증금대출[lang]}</strong>
+                  <p className="text-sm text-gray-600 mt-1">
+                    {workExperiencesDict.전월세보증금대출_설명[lang]}
+                  </p>
                 </Achievement>
                 <Achievement>
-                  <strong className="text-sm">{dict.CI최적화[lang]}</strong>
-                  <p className="text-sm text-gray-600 mt-1">{dict.CI최적화_설명[lang]}</p>
+                  <strong className="text-sm">{workExperiencesDict.CI최적화[lang]}</strong>
+                  <p className="text-sm text-gray-600 mt-1">
+                    {workExperiencesDict.CI최적화_설명[lang]}
+                  </p>
                 </Achievement>
                 <Achievement>
-                  <strong className="text-sm">{dict.선언형프로그래밍[lang]}</strong>
-                  <p className="text-sm text-gray-600 mt-1">{dict.선언형프로그래밍_설명[lang]}</p>
+                  <strong className="text-sm">{workExperiencesDict.선언형프로그래밍[lang]}</strong>
+                  <p className="text-sm text-gray-600 mt-1">
+                    {workExperiencesDict.선언형프로그래밍_설명[lang]}
+                  </p>
                 </Achievement>
               </div>
             </PositionDetails>

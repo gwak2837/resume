@@ -1,4 +1,4 @@
-import { dict } from './dictionary'
+import { heroDict } from './dictionary/hero'
 
 import Image from 'next/image'
 
@@ -22,13 +22,13 @@ export default function Hero({ lang }: Props) {
         </div>
         <ul className="flex flex-col gap-1">
           {[
-            { label: '이름', value: dict.이름[lang] },
-            { label: '출생', value: dict.생일[lang] },
+            { label: '이름', value: heroDict.이름[lang] },
+            { label: '출생', value: heroDict.생일[lang] },
             {
               label: '학위',
               value: (
                 <a href="/images/학위증.webp" target="_blank">
-                  {dict.학위[lang]}
+                  {heroDict.학위[lang]}
                 </a>
               ),
             },
@@ -36,7 +36,7 @@ export default function Hero({ lang }: Props) {
               label: '거주',
               value: (
                 <a href="https://naver.me/Fcg2bYyc" target="_blank" rel="noreferrer">
-                  {dict.주소[lang]}
+                  {heroDict.주소[lang]}
                 </a>
               ),
             },
@@ -44,7 +44,7 @@ export default function Hero({ lang }: Props) {
               label: '병역',
               value: (
                 <a href="/pdf/병적증명서.pdf" target="_blank">
-                  {dict.병역[lang]}
+                  {heroDict.병역[lang]}
                 </a>
               ),
             },
@@ -57,11 +57,11 @@ export default function Hero({ lang }: Props) {
           <li className="flex text-sm gap-3 items-center">
             <span className="w-6"></span>
             <a href="/images/2023-military.webp" target="_blank">
-              ㄴ{dict.KATUSA[lang]}
+              ㄴ{heroDict.KATUSA[lang]}
             </a>
           </li>
           <li className="flex text-sm gap-3 items-center">
-            <span className="w-6"></span>ㄴ{dict.ROTC[lang]}
+            <span className="w-6"></span>ㄴ{heroDict.ROTC[lang]}
           </li>
         </ul>
         <ul className="flex flex-col gap-1">

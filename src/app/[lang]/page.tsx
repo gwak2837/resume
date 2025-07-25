@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import { APPLICATION_NAME } from '../../common/constants'
 import { PageProps } from '../../common/types'
 import FestaLogo from '../../svg/FestaLogo'
@@ -6,7 +5,7 @@ import PlanbyLogo from '../../svg/PlanbyLogo'
 import { getISODate } from '../../util/date'
 
 import Certificates from './Certificates'
-import { dict } from './dictionary'
+import { generalDict } from './dictionary/general'
 import Education from './Education'
 import Hero from './Hero'
 import LanguageUpdate from './LanguageUpdate'
@@ -42,13 +41,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function HomePage({ params }: PageProps) {
   const lang = (await params).lang as 'ko' | 'en' | 'zh' | 'ja'
-  const date = dict.작성일[lang]
+  const date = generalDict.작성일[lang]
 
   return (
     <main className="mx-auto max-w-[720px]">
       <LanguageUpdate lang={lang} />
       <div className="flex justify-end items-center">
-        <h1 className="sr-only">{dict.이력서[lang]}</h1>
+        <h1 className="sr-only">{generalDict.이력서[lang]}</h1>
         <div className="flex whitespace-nowrap gap-2">
           <Link href="/ko">한국어</Link>
           <Link href="/en">English</Link>
@@ -63,11 +62,11 @@ export default async function HomePage({ params }: PageProps) {
           다만, 사랑하고 살아가는 프론트엔드 개발자
         </h2>
         <Hero lang={lang} />
-        <p className="my-4 text-lg">{dict.한줄소개[lang]}</p>
+        <p className="my-4 text-lg">{generalDict.한줄소개[lang]}</p>
       </section>
 
       {/* 경력 */}
-      <section id="experience" className="mb-12">
+      <section id="work-experience" className="mb-12">
         <div className="flex items-center gap-3 mb-6">
           <svg
             className="w-8 h-8 text-blue-600"
@@ -83,7 +82,7 @@ export default async function HomePage({ params }: PageProps) {
             />
           </svg>
           <h2 className="text-3xl font-bold">
-            {dict.개발경력[lang]}{' '}
+            {generalDict.개발경력[lang]}{' '}
             <span className="text-sm font-semibold text-gray-600">(1년 11개월, {date} 기준)</span>
           </h2>
         </div>
@@ -113,7 +112,7 @@ export default async function HomePage({ params }: PageProps) {
                 d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
               />{' '}
             </svg>
-            <h2 className="text-3xl font-bold">{dict.학력[lang]}</h2>
+            <h2 className="text-3xl font-bold">{generalDict.학력[lang]}</h2>
           </div>
           <Education lang={lang} />
         </div>
@@ -296,7 +295,7 @@ export default async function HomePage({ params }: PageProps) {
       </section>
 
       {/* 개발 경험 */}
-      <section id="minor-experience" className="mb-12">
+      <section id="development-experience" className="mb-12">
         <div className="flex items-center gap-3 mb-6">
           <svg
             className="w-8 h-8 text-blue-600"

@@ -442,6 +442,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@next/third-parties@npm:^15.4.4":
+  version: 15.4.4
+  resolution: "@next/third-parties@npm:15.4.4"
+  dependencies:
+    third-party-capital: "npm:1.0.20"
+  peerDependencies:
+    next: ^13.0.0 || ^14.0.0 || ^15.0.0
+    react: ^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0
+  checksum: 4ee68829515d4d13c71400a96a07ce2a8836b7cc1cd60860055921ee1acff48cbc1f218c25fbce3a108e84614d18ad19e90d3efbc9bebb76a74a36f4312d4ac4
+  languageName: node
+  linkType: hard
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -4565,6 +4577,7 @@ __metadata:
   resolution: "resume@workspace:."
   dependencies:
     "@formatjs/intl-localematcher": "npm:^0.5.0"
+    "@next/third-parties": "npm:^15.4.4"
     "@types/negotiator": "npm:^0"
     "@types/node": "npm:^18.18.7"
     "@types/react": "npm:^18.2.33"
@@ -5226,6 +5239,13 @@ __metadata:
   dependencies:
     any-promise: "npm:^1.0.0"
   checksum: 486e1283a867440a904e36741ff1a177faa827cf94d69506f7e3ae4187b9afdf9ec368b3d8da225c192bfe2eb943f3f0080594156bf39f21b57cd1411e2e7f6d
+  languageName: node
+  linkType: hard
+
+"third-party-capital@npm:1.0.20":
+  version: 1.0.20
+  resolution: "third-party-capital@npm:1.0.20"
+  checksum: 40e2531b428a21f05531fc62ef82859c0071211eff09588baf75d4b525096bbdb4f93e17e2d538849db8d4fc3cceb074933d7be59fddc26f86718fbbe852a97f
   languageName: node
   linkType: hard
 

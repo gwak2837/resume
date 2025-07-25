@@ -1,5 +1,3 @@
-import './globals.css'
-
 import {
   APPLICATION_NAME,
   APPLICATION_SHORT_NAME,
@@ -8,10 +6,13 @@ import {
   CATEGORY,
   DESCRIPTION,
   KEYWORDS,
+  NEXT_PUBLIC_GA_ID,
   THEME_COLOR,
 } from '../common/constants'
 import { LayoutProps } from '../common/types'
+import './globals.css'
 
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { Metadata, Viewport } from 'next'
 import localFont from 'next/font/local'
 
@@ -62,7 +63,7 @@ export const viewport: Viewport = {
   viewportFit: 'cover',
 }
 
-const myFont = localFont({
+const PretendardVariable = localFont({
   src: './PretendardVariable.400-700.3713.woff2',
   display: 'swap',
   weight: '400 700',
@@ -95,7 +96,10 @@ export default function RootLayout({ children }: LayoutProps) {
       <meta name="revisit-after" content="3 days" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 
-      <body className={myFont.className}>{children}</body>
+      <body className={`${PretendardVariable.className} antialiased h-full`}>
+        {children}
+        {NEXT_PUBLIC_GA_ID && <GoogleAnalytics gaId={NEXT_PUBLIC_GA_ID} />}
+      </body>
     </html>
   )
 }
