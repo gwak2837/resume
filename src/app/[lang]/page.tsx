@@ -58,9 +58,7 @@ export default async function HomePage({ params }: PageProps) {
 
       {/* Hero Section */}
       <section id="hero" className="mb-12">
-        <h2 className="bg-none text-2xl my-4 text-center">
-          다만, 사랑하고 살아가는 프론트엔드 개발자
-        </h2>
+        <h2 className="bg-none text-2xl my-4 text-center">{generalDict.히어로태그라인[lang]}</h2>
         <Hero lang={lang} />
         <p className="my-4">{generalDict.한줄소개[lang]}</p>
       </section>
@@ -136,10 +134,10 @@ export default async function HomePage({ params }: PageProps) {
               d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
             />
           </svg>
-          <h2 className="text-2xl font-bold">자격증</h2>
+          <h2 className="text-2xl font-bold">{generalDict.자격증[lang]}</h2>
         </div>
-        <Certificates />
-        <OtherCertificates />
+        <Certificates lang={lang} />
+        <OtherCertificates lang={lang} />
       </section>
 
       {/* 기술 스택 */}
@@ -158,7 +156,7 @@ export default async function HomePage({ params }: PageProps) {
               d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
             />
           </svg>
-          <h2 className="text-2xl font-bold">기술 스택</h2>
+          <h2 className="text-2xl font-bold">{generalDict.기술스택[lang]}</h2>
         </div>
         <h4 className="my-2">Language</h4>
         <div className="flex gap-1">
@@ -313,8 +311,10 @@ export default async function HomePage({ params }: PageProps) {
             />
           </svg>
           <h2 className="text-2xl font-bold">
-            개발 경험{' '}
-            <span className="text-sm font-semibold text-gray-600">(급여 O, 4대보험 X)</span>
+            {generalDict.개발경험[lang]}{' '}
+            <span className="text-sm font-semibold text-gray-600">
+              {generalDict.급여있음[lang]}
+            </span>
           </h2>
         </div>
         <ul>
@@ -615,7 +615,10 @@ export default async function HomePage({ params }: PageProps) {
             />
           </svg>
           <h2 className="text-2xl font-bold">
-            개발 활동 <span className="text-sm font-semibold text-gray-600">(급여 X)</span>
+            {generalDict.개발활동[lang]}{' '}
+            <span className="text-sm font-semibold text-gray-600">
+              {generalDict.급여없음[lang]}
+            </span>
           </h2>
         </div>
         <ul>
@@ -688,7 +691,7 @@ export default async function HomePage({ params }: PageProps) {
               d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
             />
           </svg>
-          <h2 className="text-2xl font-bold">수상</h2>
+          <h2 className="text-2xl font-bold">{generalDict.수상[lang]}</h2>
         </div>
         <ul>
           <li>
@@ -905,7 +908,7 @@ export default async function HomePage({ params }: PageProps) {
               d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
             />
           </svg>
-          <h2 className="text-2xl font-bold">소개</h2>
+          <h2 className="text-2xl font-bold">{generalDict.소개[lang]}</h2>
         </div>
         <p className="my-2">
           직접 만든 기프트링크 동아리의 소프트웨어 개발자로 시작해, (주)페스타 인턴, 신디(Sindy)
@@ -914,7 +917,8 @@ export default async function HomePage({ params }: PageProps) {
           협업과 서로의 성장에 기반한다는 사실을 느꼈습니다.
         </p>
         <h3 className="text-lg my-4 ">
-          문제 해결 경험 <span className="text-sm font-normal">약 950자</span>
+          {generalDict.문제해결경험[lang]}{' '}
+          <span className="text-sm font-normal">{generalDict.약950자[lang]}</span>
         </h3>
         <p className="my-2">
           제가 난관에 부딪혔을 때 해결했던 사례로 토스뱅크에서의 경험을 말씀드릴 수 있습니다.
@@ -946,7 +950,8 @@ export default async function HomePage({ params }: PageProps) {
           팀원들과의 협업을 통해 해결책을 모색하는 것이 중요하다는 것을 배웠습니다.
         </p>
         <h3 className="text-lg my-4 ">
-          직무 성취 경험 <span className="text-sm font-normal">약 900자</span>
+          {generalDict.직무성취경험[lang]}{' '}
+          <span className="text-sm font-normal">{generalDict.약900자[lang]}</span>
         </h3>
         <p className="my-2">
           제가 가장 큰 성취감을 느낄 때는 제가 참여한 프로젝트가 회사와 사용자 모두에게 실질적인
@@ -974,7 +979,8 @@ export default async function HomePage({ params }: PageProps) {
           분석하고 해결하여 팀의 목표 달성에 이바지했다는 점에서 큰 만족감을 얻었습니다.
         </p>
         <h3 className="text-lg my-4 ">
-          가치관 및 신조 <span className="text-sm font-normal">약 900자</span>
+          {generalDict.가치관및신조[lang]}{' '}
+          <span className="text-sm font-normal">{generalDict.약900자[lang]}</span>
         </h3>
         <p className="my-2">
           저는 개인적인 성장과 팀의 목표 달성을 중시하는 프론트엔드 개발자입니다. 프론트엔드 개발의
@@ -1004,7 +1010,8 @@ export default async function HomePage({ params }: PageProps) {
           만족도 높은 결과물을 산출할 수 있기에, 이 부분에서 책임감을 나타낼 것을 약속드립니다.
         </p>
         <h3 className="text-lg my-4 ">
-          이루고 싶은 것 <span className="text-sm font-normal">약 850자</span>
+          {generalDict.이루고싶은것[lang]}{' '}
+          <span className="text-sm font-normal">{generalDict.약850자[lang]}</span>
         </h3>
         <p className="my-2">
           개발자로서 이루고자 하는 것은 기술을 통해 일상생활에서 사람들이 겪는 불편함을 해결하고,
@@ -1035,7 +1042,8 @@ export default async function HomePage({ params }: PageProps) {
           방안을 모색하고 싶습니다.
         </p>
         <h3 className="text-lg my-4 ">
-          성격의 장단점 <span className="text-sm font-normal">약 300자</span>
+          {generalDict.성격의장단점[lang]}{' '}
+          <span className="text-sm font-normal">{generalDict.약300자[lang]}</span>
         </h3>
         <p className="my-2">
           저는 업무에 깊이 몰입하며 뛰어난 집중력을 발휘합니다. 이는 3개월 동안 토스뱅크(주)라는
@@ -1052,7 +1060,7 @@ export default async function HomePage({ params }: PageProps) {
       </section>
 
       <div className="w-full text-center text-sm text-slate-800  mt-8">작성일: {date}</div>
-      <div className="w-full text-center text-sm text-slate-800 ">작성자: 곽태욱</div>
+      <div className="w-full text-center text-sm text-slate-800 ">{generalDict.작성자[lang]}</div>
       <div className="my-8" />
       <Portpolio date={date} />
     </main>
