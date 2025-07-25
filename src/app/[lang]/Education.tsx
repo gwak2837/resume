@@ -26,7 +26,7 @@ export default function Education({ lang }: Props) {
             <a href="/images/학위증.webp" target="_blank">
               {educationDict.학력_학위[lang]}
             </a>
-            <div className="text-sm">(MAGNA CUM LAUDE)</div>
+            <div className="text-xs">(MAGNA CUM LAUDE)</div>
           </td>
           <td className="text-center">
             <a href="/pdf/중앙대학교-졸업증명서.pdf" target="_blank">

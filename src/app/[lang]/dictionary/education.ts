@@ -32,7 +32,7 @@ export const educationDict = {
     ja: '中央大学',
   },
   학력_학위: {
-    ko: '컴퓨터공학부 학사',
+    ko: '컴퓨터공학부 공학사 (심화이수)',
     en: 'BCompSc',
     zh: '计算机工程学士',
     ja: 'コンピューター工学部学士',
