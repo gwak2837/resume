@@ -1,14 +1,14 @@
 import 'server-only'
+import { formatDate } from './utils'
 
 export const 작성일 = {
-  ko: '2025.07.27',
-  en: 'July 27, 2025',
-  zh: '2025年7月27日',
-  ja: '2025年7月27日',
+  ko: formatDate(2025, 7, 27, 'ko'),
+  en: formatDate(2025, 7, 27, 'en'),
+  zh: formatDate(2025, 7, 27, 'zh'),
+  ja: formatDate(2025, 7, 27, 'ja'),
 }
 
 export const generalDict = {
-  작성일: 작성일,
   이력서: {
     ko: '이력서',
     en: 'Resume',

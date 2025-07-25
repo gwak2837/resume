@@ -5,7 +5,7 @@ import PlanbyLogo from '../../svg/PlanbyLogo'
 import { getISODate } from '../../util/date'
 
 import Certificates from './Certificates'
-import { generalDict } from './dictionary/general'
+import { generalDict, 작성일 } from './dictionary/general'
 import Education from './Education'
 import Hero from './Hero'
 import LanguageUpdate from './LanguageUpdate'
@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function HomePage({ params }: PageProps) {
   const lang = (await params).lang as 'ko' | 'en' | 'zh' | 'ja'
-  const date = generalDict.작성일[lang]
+  const date = 작성일[lang]
 
   return (
     <main className="mx-auto max-w-[720px]">

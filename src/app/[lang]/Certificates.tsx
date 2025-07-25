@@ -1,12 +1,21 @@
-export default function Certificates() {
+import { formatDate, formatSession } from './dictionary/utils'
+import { certificatesDict } from './dictionary/certificates'
+
+type Props = {
+  lang: 'ko' | 'en' | 'zh' | 'ja'
+}
+
+export default function Certificates({ lang }: Props) {
+  const dict = certificatesDict
+
   return (
     <table>
       <thead>
         <tr>
-          <td>이름</td>
-          <td>내용</td>
-          <td>주관</td>
-          <td>일시</td>
+          <td>{dict.이름[lang]}</td>
+          <td>{dict.내용[lang]}</td>
+          <td>{dict.주관[lang]}</td>
+          <td>{dict.일시[lang]}</td>
         </tr>
       </thead>
       <tbody>
@@ -17,31 +26,31 @@ export default function Certificates() {
               target="_blank"
               rel="noreferrer"
             >
-              2025년 정기 기사 1회
+              {dict.정기기사1회[lang]}
             </a>
           </td>
           <td className="text-center">
             <a href="/pdf/2025-06-13_정보처리기사.pdf" target="_blank">
-              정보처리기사
+              {dict.정보처리기사[lang]}
             </a>
           </td>
-          <td className="text-center">과학기술정보통신부</td>
-          <td className="text-center">2025.06.13</td>
+          <td className="text-center">{dict.과학기술정보통신부[lang]}</td>
+          <td className="text-center">{formatDate(2025, 6, 13, lang)}</td>
         </tr>
         <tr>
           <td>
             <a href="https://www.topcit.or.kr/home.do" target="_blank" rel="noreferrer">
               TOPCIT
             </a>{' '}
-            제15회
+            {formatSession(15, lang)}
           </td>
           <td className="text-center">
             <a href="/pdf/2021-05-22_TOPCIT_15회.pdf" target="_blank">
-              627점 (전국 4등)
+              627{dict.점[lang]} ({dict.전국4등[lang]})
             </a>
           </td>
-          <td className="text-center">과학기술정보통신부</td>
-          <td className="text-center">2021.05.22</td>
+          <td className="text-center">{dict.과학기술정보통신부[lang]}</td>
+          <td className="text-center">{formatDate(2021, 5, 22, lang)}</td>
         </tr>
         <tr>
           <td>
@@ -51,25 +60,25 @@ export default function Certificates() {
           </td>
           <td className="text-center">
             <a href="/images/2020-gtelp.webp" target="_blank">
-              82점
+              82{dict.점[lang]}
             </a>
           </td>
-          <td className="text-center">국제테스트 연구원</td>
-          <td className="text-center">2020.05.03</td>
+          <td className="text-center">{dict.국제테스트연구원[lang]}</td>
+          <td className="text-center">{formatDate(2020, 5, 3, lang)}</td>
         </tr>
         <tr>
           <td>
             <a href="https://www.hanja.ne.kr/index_original.asp" target="_blank" rel="noreferrer">
-              대한검정회
+              {dict.대한검정회[lang]}
             </a>
           </td>
           <td className="text-center">
             <a href="/images/2009-hanja.webp" target="_blank">
-              준1급
+              {dict.준1급[lang]}
             </a>
           </td>
-          <td className="text-center">대한민국한자교육연구회</td>
-          <td className="text-center">2009.11.28</td>
+          <td className="text-center">{dict.대한민국한자교육연구회[lang]}</td>
+          <td className="text-center">{formatDate(2009, 11, 28, lang)}</td>
         </tr>
       </tbody>
     </table>

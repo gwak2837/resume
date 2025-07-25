@@ -43,10 +43,10 @@ export const workExperiencesDict = {
     ja: 'RIDI株式会社',
   },
   리디_기간: {
-    ko: '2023.11.27 ~ 현재',
-    en: 'Nov 27, 2023 ~ Present',
-    zh: '2023年11月27日 ~ 至今',
-    ja: '2023年11月27日 ~ 現在',
+    ko: '현재',
+    en: 'Present',
+    zh: '至今',
+    ja: '現在',
   },
   리디_매출: {
     ko: '2024년 2,354억원 (연결)',

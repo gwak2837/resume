@@ -4,6 +4,7 @@ import { workExperiencesDict } from './dictionary/work-experiences'
 
 import Image from 'next/image'
 import { PropsWithChildren, ReactNode } from 'react'
+import { formatDate } from './dictionary/utils'
 
 type Props = {
   lang: 'ko' | 'en' | 'zh' | 'ja'
@@ -100,7 +101,7 @@ export default function WorkExperiences({ lang }: Props) {
               target="_blank"
               className="text-sm whitespace-nowrap"
             >
-              {workExperiencesDict.리디_기간[lang]}
+              {formatDate(2023, 11, 27, lang)} ~ {workExperiencesDict.리디_기간[lang]}
             </a>
           </div>
           <CompanyInfo>

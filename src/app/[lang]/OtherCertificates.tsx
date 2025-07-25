@@ -1,88 +1,97 @@
-export default function OtherCertificates() {
+import { formatDate, formatSession } from './dictionary/utils'
+import { certificatesDict } from './dictionary/certificates'
+
+type Props = {
+  lang: 'ko' | 'en' | 'zh' | 'ja'
+}
+
+export default function OtherCertificates({ lang }: Props) {
+  const dict = certificatesDict
+
   return (
     <details className="mt-4">
       <summary className="w-fit mx-auto text-slate-500 text-sm cursor-pointer hover:text-slate-700 transition">
-        기타 자격증 보기
+        {dict.기타자격증보기[lang]}
       </summary>
       <table className="mt-2">
         <thead>
           <tr>
-            <td>이름</td>
-            <td>내용</td>
-            <td>주관</td>
-            <td>일시</td>
+            <td>{dict.이름[lang]}</td>
+            <td>{dict.내용[lang]}</td>
+            <td>{dict.주관[lang]}</td>
+            <td>{dict.일시[lang]}</td>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>TOPCIT 제14회</td>
-            <td className="text-center">523점</td>
-            <td className="text-center">과학기술정보통신부</td>
-            <td className="text-center">2020년 10월 31일</td>
+            <td>TOPCIT {formatSession(14, lang)}</td>
+            <td className="text-center">523{dict.점[lang]}</td>
+            <td className="text-center">{dict.과학기술정보통신부[lang]}</td>
+            <td className="text-center">{formatDate(2020, 10, 31, lang)}</td>
           </tr>
           <tr>
-            <td>TOPCIT 제13회</td>
-            <td className="text-center">609점</td>
-            <td className="text-center">과학기술정보통신부</td>
-            <td className="text-center">2020년 6월 20일</td>
+            <td>TOPCIT {formatSession(13, lang)}</td>
+            <td className="text-center">609{dict.점[lang]}</td>
+            <td className="text-center">{dict.과학기술정보통신부[lang]}</td>
+            <td className="text-center">{formatDate(2020, 6, 20, lang)}</td>
           </tr>
           <tr>
-            <td>TOPCIT 제12회</td>
-            <td className="text-center">488점</td>
-            <td className="text-center">과학기술정보통신부</td>
-            <td className="text-center">2019년 10월 19일</td>
+            <td>TOPCIT {formatSession(12, lang)}</td>
+            <td className="text-center">488{dict.점[lang]}</td>
+            <td className="text-center">{dict.과학기술정보통신부[lang]}</td>
+            <td className="text-center">{formatDate(2019, 10, 19, lang)}</td>
           </tr>
           <tr>
-            <td>TOPCIT 제11회</td>
-            <td className="text-center">383점</td>
-            <td className="text-center">과학기술정보통신부</td>
-            <td className="text-center">2019년 5월 18일</td>
+            <td>TOPCIT {formatSession(11, lang)}</td>
+            <td className="text-center">383{dict.점[lang]}</td>
+            <td className="text-center">{dict.과학기술정보통신부[lang]}</td>
+            <td className="text-center">{formatDate(2019, 5, 18, lang)}</td>
           </tr>
           <tr>
-            <td>TOPCIT 제10회</td>
-            <td className="text-center">343점</td>
-            <td className="text-center">과학기술정보통신부</td>
-            <td className="text-center">2018년 10월 20일</td>
+            <td>TOPCIT {formatSession(10, lang)}</td>
+            <td className="text-center">343{dict.점[lang]}</td>
+            <td className="text-center">{dict.과학기술정보통신부[lang]}</td>
+            <td className="text-center">{formatDate(2018, 10, 20, lang)}</td>
           </tr>
           <tr>
-            <td>TOPCIT 제9회</td>
-            <td className="text-center">397점</td>
-            <td className="text-center">과학기술정보통신부</td>
-            <td className="text-center">2018년 5월 19일</td>
+            <td>TOPCIT {formatSession(9, lang)}</td>
+            <td className="text-center">397{dict.점[lang]}</td>
+            <td className="text-center">{dict.과학기술정보통신부[lang]}</td>
+            <td className="text-center">{formatDate(2018, 5, 19, lang)}</td>
           </tr>
           <tr>
-            <td>태권도</td>
-            <td className="text-center">1단</td>
-            <td className="text-center">국기원</td>
-            <td className="text-center">2015년 11월 18일</td>
+            <td>{dict.태권도[lang]}</td>
+            <td className="text-center">1{dict.단[lang]}</td>
+            <td className="text-center">{dict.국기원[lang]}</td>
+            <td className="text-center">{formatDate(2015, 11, 18, lang)}</td>
           </tr>
           <tr>
-            <td>유도</td>
-            <td className="text-center">2단</td>
-            <td className="text-center">대한유도회</td>
-            <td className="text-center">2013년 11월 27일</td>
+            <td>{dict.유도[lang]}</td>
+            <td className="text-center">2{dict.단[lang]}</td>
+            <td className="text-center">{dict.대한유도회[lang]}</td>
+            <td className="text-center">{formatDate(2013, 11, 27, lang)}</td>
           </tr>
           <tr>
-            <td>그래픽기술자격</td>
-            <td className="text-center">3급</td>
-            <td className="text-center">한국생산성본부</td>
-            <td className="text-center">2010년 11월 26일</td>
+            <td>{dict.그래픽기술자격[lang]}</td>
+            <td className="text-center">3{dict.급[lang]}</td>
+            <td className="text-center">{dict.한국생산성본부[lang]}</td>
+            <td className="text-center">{formatDate(2010, 11, 26, lang)}</td>
           </tr>
           <tr>
             <td>
-              정보기술자격
+              {dict.정보기술자격[lang]}
               <br />
-              (한글파워포인트)
+              {dict.한글파워포인트[lang]}
             </td>
-            <td className="text-center">A등급</td>
-            <td className="text-center">한국생산성본부</td>
-            <td className="text-center">2009년 12월 3일</td>
+            <td className="text-center">A{dict.등급[lang]}</td>
+            <td className="text-center">{dict.한국생산성본부[lang]}</td>
+            <td className="text-center">{formatDate(2009, 12, 3, lang)}</td>
           </tr>
           <tr>
-            <td>워드프로세서</td>
-            <td className="text-center">3급</td>
-            <td className="text-center">대한상공회의소</td>
-            <td className="text-center">2008년 12월 26일</td>
+            <td>{dict.워드프로세서[lang]}</td>
+            <td className="text-center">3{dict.급[lang]}</td>
+            <td className="text-center">{dict.대한상공회의소[lang]}</td>
+            <td className="text-center">{formatDate(2008, 12, 26, lang)}</td>
           </tr>
         </tbody>
       </table>
