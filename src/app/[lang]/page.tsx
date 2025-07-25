@@ -62,7 +62,7 @@ export default async function HomePage({ params }: PageProps) {
           다만, 사랑하고 살아가는 프론트엔드 개발자
         </h2>
         <Hero lang={lang} />
-        <p className="my-4 text-lg">{generalDict.한줄소개[lang]}</p>
+        <p className="my-4">{generalDict.한줄소개[lang]}</p>
       </section>
 
       {/* 경력 */}

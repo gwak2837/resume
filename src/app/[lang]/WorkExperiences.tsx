@@ -37,7 +37,7 @@ const TechBadge = ({ tech }: { tech: string }) => (
 
 const Achievement = ({ children }: PropsWithChildren) => (
   <div className="flex items-start gap-2">
-    <span className="text-green-500 mt-px">•</span>
+    <span className="text-blue-500 mt-px">•</span>
     <div>{children}</div>
   </div>
 )
