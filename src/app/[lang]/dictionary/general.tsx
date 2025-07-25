@@ -3,9 +3,9 @@ import 'server-only'
 export const generalDict = {
   작성일: {
     ko: '2025.07.27',
-    en: 'Jul 27th, 2025',
+    en: 'July 27, 2025',
     zh: '2025年7月27日',
-    ja: '2025年 7月 27日',
+    ja: '2025年7月27日',
   },
   이력서: {
     ko: '이력서',
@@ -22,10 +22,10 @@ export const generalDict = {
     ),
     en: (
       <>
-        I'm Logan Gwak, a <b>frontend developer</b> who listens to customers while planning products
-        that solve customer inconveniences, solves business problems, and shares the knowledge
-        gained during product development with others to think about the reason for the existence of
-        technology.
+        I'm Logan Gwak, a <b>frontend developer</b> who builds products that solve real customer
+        problems. I focus on understanding user needs, addressing business challenges, and sharing
+        the engineering knowledge I gain while continuously questioning why products and
+        technologies exist.
       </>
     ),
     zh: (
@@ -56,7 +56,7 @@ export const generalDict = {
   개발경험: {
     ko: '경험',
     en: 'Experience',
-    zh: '',
-    ja: '',
+    zh: '经验',
+    ja: '経験',
   },
 }
