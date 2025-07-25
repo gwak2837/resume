@@ -8,8 +8,8 @@ type Props = {
 
 export default function Hero({ lang }: Props) {
   return (
-    <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8 border-2">
-      <div className="grid grid-cols-3 gap-6 whitespace-nowrap">
+    <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-6 border-2">
+      <div className="grid grid-cols-3 gap-4 whitespace-nowrap">
         <div className="text-center md:text-left">
           <Image
             src="/images/profile.webp"

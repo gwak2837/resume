@@ -579,7 +579,7 @@ export const dict = {
   },
   루모스: {
     ko: '토스뱅크 루모스 (여신 심사·관리·운영 시스템)',
-    en: 'Toss Bank Lumos (Loan Review·Management·Operation System)',
+    en: 'Toss Bank Lumos (Loan Management·Operation System)',
     zh: 'Toss Bank Lumos（贷款审查·管理·运营系统）',
     ja: 'トスバンクルモス（与信審査・管理・運営システム）',
   },
