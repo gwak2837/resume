@@ -59,4 +59,10 @@ export const generalDict = {
     zh: '经验',
     ja: '経験',
   },
+  경력기간: {
+    ko: (date: string) => `(1년 11개월, ${date} 기준)`,
+    en: (date: string) => `(1 year 11 months, as of ${date})`,
+    zh: (date: string) => `(1年11个月，截至${date})`,
+    ja: (date: string) => `(1年11ヶ月、${date}基準)`,
+  },
 }
