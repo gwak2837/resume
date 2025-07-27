@@ -9,7 +9,6 @@ import {
   siGooglecloud,
   siJavascript,
   siKibana,
-  siMysql,
   siNextdotjs,
   siNodedotjs,
   siPostgresql,
@@ -65,7 +64,7 @@ const techCategories = [
       {
         name: 'SQL',
         href: 'https://en.wikipedia.org/wiki/SQL',
-        icon: siMysql,
+        icon: null,
       },
     ],
     featured: ['TypeScript', 'JavaScript (ES2023)'],
@@ -182,7 +181,7 @@ const techCategories = [
     featured: ['Node.js', 'PostgreSQL', 'Docker'],
   },
   {
-    title: 'Cloud & Infrastructure',
+    title: 'Cloud',
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path
@@ -225,7 +224,7 @@ const techCategories = [
     featured: ['Vercel', 'Google Cloud (Cloud Run, Storage, SQL)', 'AWS (RDS, EC2, S3)'],
   },
   {
-    title: 'DevOps & Operations',
+    title: 'Operations',
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path
@@ -279,7 +278,7 @@ const techCategories = [
     featured: ['Sentry', 'Datadog'],
   },
   {
-    title: 'AI & Machine Learning',
+    title: 'AI',
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path
@@ -342,9 +341,9 @@ export default function TechStack() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`
-                      inline-flex items-center gap-1.5 px-3 py-1.5 text-sm rounded-full
+                      inline-flex items-center gap-1.5 px-3 py-1 text-sm rounded-full
                       transition-all duration-200
-                      bg-white text-gray-800 font-medium shadow-sm border border-gray-200
+                      bg-white text-gray-800 font-medium border
                     `}
                   >
                     {item.icon && (
