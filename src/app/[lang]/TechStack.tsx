@@ -169,7 +169,7 @@ const techCategories = [
       },
       {
         name: 'Elasticsearch',
-        href: 'https://www.elastic.co/kr',
+        href: 'https://www.elastic.co/kr/enterprise-search',
         icon: siElasticsearch,
       },
       {
@@ -325,7 +325,9 @@ export default function TechStack() {
           <div className="relative">
             {/* Header */}
             <div className="flex items-center gap-3 mb-4">
-              <div className={`p-2 rounded-lg bg-white ${category.iconColor}`}>{category.icon}</div>
+              <div className={`p-2 rounded-lg bg-white border ${category.iconColor}`}>
+                {category.icon}
+              </div>
               <h4 className="text-lg font-semibold text-gray-800">{category.title}</h4>
             </div>
 
