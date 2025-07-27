@@ -134,8 +134,8 @@ export default function Hero({ lang }: Props) {
             src="/images/profile.webp"
             className="w-32 h-32 rounded-full border-4 border-white shadow-md"
             alt="profile"
-            width={712}
-            height={712}
+            width={150}
+            height={150}
             priority
           />
 
