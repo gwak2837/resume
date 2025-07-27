@@ -315,10 +315,16 @@ export default function TechStack() {
           key={index}
           className={`group relative overflow-hidden rounded-xl bg-gradient-to-br ${category.color} border p-5`}
         >
+          {/* Background Pattern */}
+          <div className="absolute inset-0 opacity-5">
+            <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-current" />
+            <div className="absolute -left-8 -bottom-8 h-32 w-32 rounded-full bg-current" />
+          </div>
+
           {/* Content */}
           <div className="relative">
             {/* Header */}
-            <div className="flex items-center gap-1 mb-4">
+            <div className="flex items-center gap-3 mb-4">
               <div className={`p-2 rounded-lg bg-white ${category.iconColor}`}>{category.icon}</div>
               <h4 className="text-lg font-semibold text-gray-800">{category.title}</h4>
             </div>
