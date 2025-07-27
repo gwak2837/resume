@@ -313,7 +313,7 @@ export default function TechStack() {
       {techCategories.map((category, index) => (
         <div
           key={index}
-          className={`group relative overflow-hidden rounded-xl bg-gradient-to-br ${category.color} border p-5`}
+          className={`group relative overflow-hidden rounded-xl bg-gradient-to-br ${category.color} border-2 p-5`}
         >
           {/* Background Pattern */}
           <div className="absolute inset-0 opacity-5">
@@ -324,10 +324,8 @@ export default function TechStack() {
           {/* Content */}
           <div className="relative">
             {/* Header */}
-            <div className="flex items-center gap-3 mb-4">
-              <div className={`p-2 rounded-lg bg-white shadow-sm ${category.iconColor}`}>
-                {category.icon}
-              </div>
+            <div className="flex items-center gap-1 mb-4">
+              <div className={`p-2 rounded-lg bg-white ${category.iconColor}`}>{category.icon}</div>
               <h4 className="text-lg font-semibold text-gray-800">{category.title}</h4>
             </div>
 
