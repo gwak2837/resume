@@ -38,7 +38,7 @@ const techCategories = [
         />
       </svg>
     ),
-    color: 'from-blue-50 to-indigo-50 border-blue-200',
+    color: 'border-blue-100',
     iconColor: 'text-blue-600',
     items: [
       {
@@ -81,7 +81,7 @@ const techCategories = [
         />
       </svg>
     ),
-    color: 'from-purple-50 to-pink-50 border-purple-200',
+    color: 'border-purple-100',
     iconColor: 'text-purple-600',
     items: [
       {
@@ -134,7 +134,7 @@ const techCategories = [
         />
       </svg>
     ),
-    color: 'from-green-50 to-emerald-50 border-green-200',
+    color: 'border-green-100',
     iconColor: 'text-green-600',
     items: [
       {
@@ -192,7 +192,7 @@ const techCategories = [
         />
       </svg>
     ),
-    color: 'from-sky-50 to-cyan-50 border-sky-200',
+    color: 'border-sky-100',
     iconColor: 'text-sky-600',
     items: [
       {
@@ -241,7 +241,7 @@ const techCategories = [
         />
       </svg>
     ),
-    color: 'from-orange-50 to-amber-50 border-orange-200',
+    color: 'border-orange-100',
     iconColor: 'text-orange-600',
     items: [
       {
@@ -289,7 +289,7 @@ const techCategories = [
         />
       </svg>
     ),
-    color: 'from-rose-50 to-pink-50 border-rose-200',
+    color: 'border-rose-100',
     iconColor: 'text-rose-600',
     items: [
       {
@@ -313,21 +313,13 @@ export default function TechStack() {
       {techCategories.map((category, index) => (
         <div
           key={index}
-          className={`group relative overflow-hidden rounded-xl bg-gradient-to-br ${category.color} border p-5`}
+          className={`group relative overflow-hidden rounded-xl bg-gradient-to-br ${category.color} border-2 p-5`}
         >
-          {/* Background Pattern */}
-          <div className="absolute inset-0 opacity-5">
-            <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-current" />
-            <div className="absolute -left-8 -bottom-8 h-32 w-32 rounded-full bg-current" />
-          </div>
-
           {/* Content */}
           <div className="relative">
             {/* Header */}
-            <div className="flex items-center gap-3 mb-4">
-              <div className={`p-2 rounded-lg bg-white border ${category.iconColor}`}>
-                {category.icon}
-              </div>
+            <div className="flex items-center gap-1 mb-4">
+              <div className={`p-2 rounded-lg bg-white ${category.iconColor}`}>{category.icon}</div>
               <h4 className="text-lg font-semibold text-gray-800">{category.title}</h4>
             </div>
 
