@@ -1,5 +1,5 @@
-import { formatDate, formatSession } from './dictionary/utils'
 import { certificatesDict } from './dictionary/certificates'
+import { formatDate, formatSession } from './dictionary/utils'
 
 type Props = {
   lang: 'ko' | 'en' | 'zh' | 'ja'

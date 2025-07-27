@@ -1,10 +1,10 @@
 import RidiLogo from '../../svg/RidiLogo'
 
+import { formatDate } from './dictionary/utils'
 import { workExperiencesDict } from './dictionary/work-experiences'
 
 import Image from 'next/image'
 import { PropsWithChildren, ReactNode } from 'react'
-import { formatDate } from './dictionary/utils'
 
 type Props = {
   lang: 'ko' | 'en' | 'zh' | 'ja'

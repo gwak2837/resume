@@ -11,7 +11,7 @@ import Hero from './Hero'
 import LanguageUpdate from './LanguageUpdate'
 import OtherCertificates from './OtherCertificates'
 import Portpolio from './Portpolio'
-import ShieldBadge from './ShieldBadge'
+import TechStack from './TechStack'
 import WorkExperiences from './WorkExperiences'
 
 import { Metadata } from 'next'
@@ -158,140 +158,7 @@ export default async function HomePage({ params }: PageProps) {
           </svg>
           <h2 className="text-2xl font-bold">{generalDict.기술스택[lang]}</h2>
         </div>
-        <h4 className="my-2">Language</h4>
-        <div className="flex gap-1">
-          <ShieldBadge
-            href="https://javascript.info/"
-            alt="ES2023"
-            logo="JavaScript"
-            logoColor="black"
-            bgColor="F7DF1E"
-          />
-          <ShieldBadge href="https://www.typescriptlang.org/" alt="TypeScript" bgColor="235A97" />
-          <ShieldBadge
-            href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-            alt="CSS3"
-            logo="CSS"
-            bgColor="663399"
-          />
-          <ShieldBadge href="https://www.python.org/" alt="Python" bgColor="3776AB" />
-          <ShieldBadge href="https://en.wikipedia.org/wiki/SQL" alt="SQL" bgColor="003B57" />
-        </div>
-        <h4 className="my-2">Frontend</h4>
-        <div className="grid gap-1">
-          <div className="flex gap-1">
-            <ShieldBadge
-              href="https://nextjs.org/"
-              alt="Next.js App router"
-              logo="next.js"
-              bgColor="000000"
-            />
-            <ShieldBadge
-              href="https://react.dev/"
-              alt="React.js"
-              logo="react"
-              logoColor="black"
-              bgColor="61DAFB"
-            />
-            <ShieldBadge
-              href="https://tailwindcss.com/"
-              alt="Tailwind"
-              logo="tailwindcss"
-              bgColor="06B6D4"
-            />
-            <ShieldBadge href="https://zustand-demo.pmnd.rs/" alt="Zustand" bgColor="3578e5" />
-            <ShieldBadge
-              href="https://playwright.dev/"
-              alt="Playwright"
-              logo="Playwright"
-              bgColor="45ba4b"
-            />
-            <ShieldBadge href="https://web.dev/progressive-web-apps/" alt="PWA" bgColor="5A0FC8" />
-            <ShieldBadge
-              href="https://reactnative.dev/"
-              alt="React Native"
-              logo="react"
-              logoColor="black"
-              bgColor="61DAFB"
-            />
-          </div>
-        </div>
-        <h4 className="my-2">Backend</h4>
-        <div className="grid gap-1">
-          <div className="flex gap-1">
-            <ShieldBadge href="https://nodejs.org/en/" alt="Node.js" bgColor="43853D" />
-            <ShieldBadge href="https://socket.io/" alt="Socket.IO" bgColor="010101" />
-            <ShieldBadge
-              href="https://orm.drizzle.team/"
-              alt="Drizzle"
-              bgColor="C5F74F"
-              logoColor="black"
-            />
-            <ShieldBadge href="https://www.docker.com/" alt="Docker" bgColor="2496ED" />
-            <ShieldBadge href="https://www.postgresql.org/" alt="PostgreSQL" bgColor="4169E1" />
-            <ShieldBadge href="https://redis.io/" alt="Redis" bgColor="DC382D" />
-            <ShieldBadge
-              href="https://www.elastic.co/kr"
-              alt="Elasticsearch, Kibana"
-              logo="elastic"
-              bgColor="005571"
-            />
-          </div>
-        </div>
-        <h4 className="my-2">Cloud</h4>
-        <div className="grid gap-1">
-          <div className="flex gap-1">
-            <ShieldBadge href="https://vercel.com/" alt="Vercel" bgColor="000000" />
-            <ShieldBadge href="https://supabase.com/" alt="Supabase" bgColor="3FCF8E" />
-            <ShieldBadge href="https://www.cloudflare.com/" alt="Cloudflare" bgColor="F38020" />
-            <ShieldBadge
-              href="https://cloud.google.com/gcp/"
-              alt="Cloud Run, Cloud Storage, Cloud SQL"
-              logo="Google Cloud"
-              bgColor="4285F4"
-            />
-            <ShieldBadge
-              href="https://aws.amazon.com/ko/"
-              alt="AWS - RDS, EC2, S3"
-              bgColor="232F3E"
-            />
-          </div>
-        </div>
-        <div className="flex gap-4">
-          <div>
-            <h4 className="my-2">Operation Tool</h4>
-            <div className="grid gap-1">
-              <div className="flex gap-1">
-                <ShieldBadge href="https://vitest.dev/" alt="Vitest" bgColor="6E9F18" />
-                <ShieldBadge href="https://sentry.io/welcome/" alt="Sentry" bgColor="362D59" />
-                <ShieldBadge href="https://datadoghq.com/" alt="Datadog" bgColor="632CA6" />
-                <ShieldBadge
-                  href="https://analytics.google.com/analytics/web/"
-                  alt="GA"
-                  logo="Google Analytics"
-                  bgColor="E37400"
-                />
-                <ShieldBadge href="https://amplitude.com/" alt="Amplitude" bgColor="1e61f0" />
-                <ShieldBadge href="https://www.growthbook.io/" alt="GrowthBook" bgColor="590dbd" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <h4 className="my-2">AI</h4>
-            <div className="flex gap-1">
-              <ShieldBadge
-                href="https://github.com/comfyanonymous/ComfyUI"
-                alt="ComfyUI"
-                bgColor="F0FF41"
-              />
-              <ShieldBadge
-                href="https://github.com/bmaltais/kohya_ss"
-                alt="LoRA"
-                bgColor="1F1E37"
-              />
-            </div>
-          </div>
-        </div>
+        <TechStack />
       </section>
 
       {/* 개발 경험 */}
