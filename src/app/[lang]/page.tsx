@@ -92,6 +92,60 @@ export default async function HomePage({ params }: PageProps) {
         </div>
       </section>
 
+      {/* 개인 프로젝트 */}
+      <section id="personal-project" className="mb-12">
+        <div className="flex items-center gap-3 mb-6">
+          <svg
+            className="w-8 h-8 text-yellow-600"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M13 10V3L4 14h7v7l9-11h-7z"
+            />
+          </svg>
+          <h2 className="text-2xl font-bold">
+            {lang === 'ko'
+              ? '개인 프로젝트'
+              : lang === 'en'
+              ? 'Personal Project'
+              : lang === 'zh'
+              ? '个人项目'
+              : '個人プロジェクト'}
+          </h2>
+        </div>
+
+        {/* Metrics Dashboard */}
+        <div className="mb-6 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-200">
+          <div className="grid grid-cols-3 gap-4 text-center">
+            <div>
+              <div className="text-3xl font-bold text-blue-600">30K</div>
+              <div className="text-xs text-gray-600">MAU (Amplitude)</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold text-indigo-600">21K</div>
+              <div className="text-xs text-gray-600">MAU (Google Analytics)</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold text-purple-600">100%</div>
+              <div className="text-xs text-gray-600">
+                {lang === 'ko'
+                  ? '오픈소스'
+                  : lang === 'en'
+                  ? 'Open Source'
+                  : lang === 'zh'
+                  ? '开源'
+                  : 'オープンソース'}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 학력 */}
       <section id="education" className="mb-12">
         <div>
