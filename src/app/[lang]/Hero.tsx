@@ -1,7 +1,8 @@
-import { heroDict } from './dictionary/hero'
 
 import Image from 'next/image'
 import { ReactNode } from 'react'
+
+import { heroDict } from './dictionary/hero'
 
 type Props = {
   lang: 'ko' | 'en' | 'zh' | 'ja'

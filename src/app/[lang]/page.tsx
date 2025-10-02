@@ -1,3 +1,8 @@
+import { Metadata } from 'next'
+import Image from 'next/image'
+import Link from 'next/link'
+import { Fragment } from 'react'
+
 import { APPLICATION_NAME } from '../../common/constants'
 import { PageProps } from '../../common/types'
 import FestaLogo from '../../svg/FestaLogo'
@@ -13,11 +18,6 @@ import OtherCertificates from './OtherCertificates'
 import Portpolio from './Portpolio'
 import TechStack from './TechStack'
 import WorkExperiences from './WorkExperiences'
-
-import { Metadata } from 'next'
-import Image from 'next/image'
-import Link from 'next/link'
-import { Fragment } from 'react'
 
 export async function generateStaticParams() {
   return [{ lang: 'ko' }, { lang: 'en' }, { lang: 'zh' }, { lang: 'ja' }]
