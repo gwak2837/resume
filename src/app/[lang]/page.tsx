@@ -123,24 +123,16 @@ export default async function HomePage({ params }: PageProps) {
         <div className="mb-6 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-200">
           <div className="grid grid-cols-3 gap-4 text-center">
             <div>
-              <div className="text-3xl font-bold text-blue-600">30K</div>
-              <div className="text-xs text-gray-600">MAU (Amplitude)</div>
-            </div>
-            <div>
               <div className="text-3xl font-bold text-indigo-600">21K</div>
               <div className="text-xs text-gray-600">MAU (Google Analytics)</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-purple-600">100%</div>
-              <div className="text-xs text-gray-600">
-                {lang === 'ko'
-                  ? '오픈소스'
-                  : lang === 'en'
-                  ? 'Open Source'
-                  : lang === 'zh'
-                  ? '开源'
-                  : 'オープンソース'}
-              </div>
+              <div className="text-3xl font-bold text-blue-600">30K</div>
+              <div className="text-xs text-gray-600">MAU (Amplitude)</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold text-purple-600">37K</div>
+              <div className="text-xs text-gray-600">MAU (Cloudflare Analytics)</div>
             </div>
           </div>
         </div>
