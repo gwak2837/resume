@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -11,13 +12,14 @@ import { getISODate } from '../../util/date'
 
 import Certificates from './Certificates'
 import { generalDict, 작성일 } from './dictionary/general'
+import { projectDict } from './dictionary/project'
 import Education from './Education'
 import Hero from './Hero'
 import LanguageUpdate from './LanguageUpdate'
 import OtherCertificates from './OtherCertificates'
 import Portpolio from './Portpolio'
 import TechStack from './TechStack'
-import WorkExperiences from './WorkExperiences'
+import WorkExperiences, { TechBadge } from './WorkExperiences'
 
 export async function generateStaticParams() {
   return [{ lang: 'ko' }, { lang: 'en' }, { lang: 'zh' }, { lang: 'ja' }]
@@ -108,34 +110,112 @@ export default async function HomePage({ params }: PageProps) {
               d="M13 10V3L4 14h7v7l9-11h-7z"
             />
           </svg>
-          <h2 className="text-2xl font-bold">
-            {lang === 'ko'
-              ? '개인 프로젝트'
-              : lang === 'en'
-              ? 'Personal Project'
-              : lang === 'zh'
-              ? '个人项目'
-              : '個人プロジェクト'}
-          </h2>
+          <h2 className="text-2xl font-bold">{projectDict.개인프로젝트[lang]}</h2>
         </div>
-
         {/* Metrics Dashboard */}
         <div className="mb-6 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-200">
           <div className="grid grid-cols-3 gap-4 text-center">
             <div>
-              <div className="text-3xl font-bold text-indigo-600">21K</div>
+              <div className="text-3xl font-bold text-indigo-600">
+                {projectDict.googleAnalytics[lang]}
+              </div>
               <div className="text-xs text-gray-600">MAU (Google Analytics)</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-blue-600">30K</div>
+              <div className="text-3xl font-bold text-blue-600">{projectDict.amplitude[lang]}</div>
               <div className="text-xs text-gray-600">MAU (Amplitude)</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-purple-600">37K</div>
+              <div className="text-3xl font-bold text-purple-600">
+                {projectDict.cloudflareAnalytics[lang]}
+              </div>
               <div className="text-xs text-gray-600">MAU (Cloudflare Analytics)</div>
             </div>
           </div>
         </div>
+        <div className="flex justify-between whitespace-nowrap gap-4 my-4">
+          <h4>리토미 (litomi)</h4>
+          <div>2025년 3월 1일 ~ 현재</div>
+        </div>
+        <div>만화 웹 뷰어</div>
+        <div className="flex gap-0.5 my-2 items-center">
+          <a
+            href="https://github.com/gwak2837/litomi"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+          >
+            <div className="flex gap-1 items-center">
+              <Image src="/images/github.svg" alt="github" width="16" height="16" />
+              <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
+                litomi
+              </h5>
+            </div>
+          </a>
+          <a
+            href="https://litomi.in"
+            target="_blank"
+            // rel="noreferrer"
+            className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
+          >
+            <div className="flex gap-1 items-center">
+              <Image src="/images/litomi.png" alt="litomi" width="16" height="16" />
+              <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
+                litomi.in
+              </h5>
+            </div>
+          </a>
+        </div>
+        <div className="flex flex-wrap gap-1 my-2">
+          <TechBadge tech="Next.js 15 App router" />
+          <TechBadge tech="TailwindCSS" />
+          <TechBadge tech="Drizzle ORM" />
+          <TechBadge tech="PostgreSQL" />
+          <TechBadge tech="Vercel" />
+          <TechBadge tech="Cloudflare" />
+          <TechBadge tech="Supabase" />
+        </div>
+        <ol>
+          <li>
+            <strong>고급 웹 뷰어 시스템 설계 및 구현:</strong> 터치보기/스크롤보기 듀얼 모드 지원,
+            한 쪽/두 쪽 레이아웃 전환 기능, 상하/좌우 넘기기 제스처 인식 시스템 구현. 상하
+            스와이프로 실시간 밝기 조절(0-100% 범위), 좌우 스와이프로 페이지 네비게이션 처리. 이미지
+            레이아웃 동적 조정 알고리즘 구현, 자동 슬라이드쇼 기능 및 마지막 감상 페이지 저장/복원
+            시스템 개발. 스크롤 기반 페이지 넘기기와 반응형 이미지 너비 조절 기능 구현
+          </li>
+          <li>
+            <strong>현대적 웹 표준 기반 사용자 인증 및 알림 시스템:</strong> WebAuthn API를 활용한
+            패스키(Passkey) 로그인 구현으로 비밀번호 없는 보안 인증 제공. RFC 6238 표준 기반
+            TOTP(Time-based One-Time Password) 2단계 인증 시스템 구축. Service Worker와 Push API를
+            활용한 웹 푸시 알림 시스템 개발, 사용자 맞춤형 키워드 알림 기능 구현. 키워드 기반 콘텐츠
+            필터링 시스템으로 유해 콘텐츠 차단 기능 제공
+          </li>
+          <li>
+            <strong>데이터 관리 및 분석 시스템 구축:</strong> PostgreSQL 기반 북마크 폴더
+            시스템(서재 기능) 설계로 계층적 데이터 관리 구현. 감상 기록 추적 시스템 개발 및
+            조회수/북마크 기반 기간별 인기 순위 알고리즘 구현. Google Analytics Data API 연동으로
+            실시간 페이지 인기도 분석 시스템 구축. 태그 한글 번역 시스템으로 사용자 접근성 향상
+          </li>
+          <li>
+            <strong>멀티 플랫폼 배포 및 성능 최적화:</strong> Vercel Edge Functions 활용 및 SSG/ISR
+            전략으로 Fluid Active CPU 사용량 70% 감소. Next.js Link 컴포넌트의 prefetch 선택적
+            비활성화로 Function Invocations 50% 절감. WAF(Web Application Firewall) 경로 조건
+            세분화로 Rate Limit 요청 최적화. cache-control 헤더 전략적 설정으로 CDN 캐시 적중률
+            향상. 5개 플랫폼(Vercel, Netlify, Fly.io, Render, sherpa.io) 동시 배포 파이프라인 구축
+          </li>
+          <li>
+            <strong>장애 대응 및 복원력 있는 아키텍처:</strong> 외부 API 장애 시 Exponential Backoff
+            패턴으로 일시적 장애 처리, Circuit Breaker 패턴 구현으로 지속적 장애 시 시스템 보호.
+            Edge 환경 최적화로 글로벌 지연시간 최소화. Cloudflare와 Supabase 통합으로 분산 처리 및
+            실시간 데이터 동기화 구현
+          </li>
+          <li>
+            <strong>오픈소스 철학 및 윤리적 광고 정책:</strong> 유해 광고(도박, 성인, 약물,
+            암호화폐, 스캠, 피싱) 완전 차단 정책으로 사용자 보호 최우선. GitHub 공개 저장소 운영으로
+            코드 투명성 확보, SonarQube 연동으로 지속적인 코드 품질 관리. Bun 1.2 런타임 활용으로
+            빌드 성능 개선, Docker 컨테이너화로 일관된 개발/배포 환경 구축
+          </li>
+        </ol>
       </section>
 
       {/* 학력 */}

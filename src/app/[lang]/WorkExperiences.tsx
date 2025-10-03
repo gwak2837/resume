@@ -1,10 +1,11 @@
+import Image from 'next/image'
+import { PropsWithChildren, ReactNode } from 'react'
+
 import RidiLogo from '../../svg/RidiLogo'
 
 import { formatDate } from './dictionary/utils'
 import { workExperiencesDict } from './dictionary/work-experiences'
 
-import Image from 'next/image'
-import { PropsWithChildren, ReactNode } from 'react'
 
 type Props = {
   lang: 'ko' | 'en' | 'zh' | 'ja'
@@ -32,7 +33,7 @@ const CompanyInfo = ({ children }: PropsWithChildren) => (
   <div className="grid grid-cols-2 gap-2 mb-4 text-sm text-gray-600">{children}</div>
 )
 
-const TechBadge = ({ tech }: { tech: string }) => (
+export const TechBadge = ({ tech }: { tech: string }) => (
   <span className="px-2 py-1 bg-gray-100 rounded text-xs">{tech}</span>
 )
 
