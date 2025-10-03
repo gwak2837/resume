@@ -171,9 +171,12 @@ export default async function HomePage({ params }: PageProps) {
           <TechBadge tech="TailwindCSS" />
           <TechBadge tech="Drizzle ORM" />
           <TechBadge tech="PostgreSQL" />
+          <TechBadge tech="Redis" />
           <TechBadge tech="Vercel" />
           <TechBadge tech="Cloudflare" />
           <TechBadge tech="Supabase" />
+          <TechBadge tech="Upstash" />
+          <TechBadge tech="Amplitude" />
         </div>
         <ol>
           <li>
