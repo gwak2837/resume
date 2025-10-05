@@ -176,7 +176,7 @@ export default async function HomePage({ params }: PageProps) {
           <TechBadge tech="Cloudflare" />
           <TechBadge tech="Sentry" />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           {/* Viewer Features */}
           <div className="p-4 rounded-lg border border-blue-100">
             <h4 className="font-bold text-gray-900 mb-3 flex items-center gap-2">
