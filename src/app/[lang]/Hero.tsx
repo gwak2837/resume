@@ -1,4 +1,3 @@
-
 import Image from 'next/image'
 import { ReactNode } from 'react'
 
@@ -122,8 +121,6 @@ const socialLinks = [
   { href: 'https://velog.io/@gwak2837', icon: '/images/velog.png', text: 'velog.io/@gwak2837' },
 ]
 
-const emailAddresses = ['gwak2837@google.com', 'gwak2837@kakao.com']
-
 export default function Hero({ lang }: Props) {
   return (
     <div className="bg-white rounded-lg border-2 border-gray-200 overflow-hidden">
@@ -205,28 +202,14 @@ export default function Hero({ lang }: Props) {
           </InfoSection>
 
           {/* Column 3: Contact & Links */}
-          <InfoSection title={heroDict.contactLinksTitle[lang]}>
-            <InfoItem label={heroDict.emailLabel[lang]}>
-              <div className="space-y-1">
-                {emailAddresses.map((email) => (
-                  <a
-                    key={email}
-                    href={`mailto:${email}`}
-                    className="text-sm font-medium text-gray-900 transition block"
-                  >
-                    {email}
-                  </a>
-                ))}
-              </div>
-            </InfoItem>
-            <div>
-              <dt className="text-sm text-gray-500 mb-2">{heroDict.onlineProfilesLabel[lang]}</dt>
-              <dd>
+          <InfoSection title={heroDict.other[lang]}>
+            <InfoItem label={heroDict.onlineProfilesLabel[lang]}>
+              <div className="space-y-1 mt-2">
                 {socialLinks.map((link) => (
                   <SocialLink key={link.href} {...link} />
                 ))}
-              </dd>
-            </div>
+              </div>
+            </InfoItem>
           </InfoSection>
         </div>
       </div>

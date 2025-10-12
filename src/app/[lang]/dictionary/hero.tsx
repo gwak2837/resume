@@ -67,11 +67,11 @@ export const heroDict = {
     zh: '教育与兵役',
     ja: '学歴・兵役',
   },
-  contactLinksTitle: {
-    ko: '연락처 및 링크',
-    en: 'Contact & Links',
-    zh: '联系方式',
-    ja: '連絡先・リンク',
+  other: {
+    ko: '기타',
+    en: 'Other',
+    zh: '其他',
+    ja: 'その他',
   },
   birthLabel: {
     ko: '생년월일',
@@ -108,12 +108,6 @@ export const heroDict = {
     en: 'Military Service',
     zh: '兵役',
     ja: '兵役',
-  },
-  emailLabel: {
-    ko: '이메일',
-    en: 'Email',
-    zh: '邮箱',
-    ja: 'メール',
   },
   onlineProfilesLabel: {
     ko: '링크',

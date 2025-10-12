@@ -6,7 +6,6 @@ import RidiLogo from '../../svg/RidiLogo'
 import { formatDate } from './dictionary/utils'
 import { workExperiencesDict } from './dictionary/work-experiences'
 
-
 type Props = {
   lang: 'ko' | 'en' | 'zh' | 'ja'
 }
@@ -174,14 +173,10 @@ export default function WorkExperiences({ lang }: Props) {
                     </a>
                   </strong>
                   <p className="text-sm text-gray-600 mt-1">
+                    {workExperiencesDict.성과평가_결과_2025_03[lang]}{' '}
+                  </p>
+                  <p className="text-sm text-gray-600 mt-1">
                     {workExperiencesDict.성과평가_결과[lang]}{' '}
-                    <a
-                      className="text-xs"
-                      href="/pdf/RIDI Track Record Review 결과.pdf"
-                      target="_blank"
-                    >
-                      <span>{workExperiencesDict.세부결과[lang]}</span>
-                    </a>
                   </p>
                 </Achievement>
                 <Achievement>
@@ -333,7 +328,7 @@ export default function WorkExperiences({ lang }: Props) {
             >
               <p className="text-sm">{workExperiencesDict.루모스_설명[lang]}</p>
               <div className="flex flex-wrap gap-1 mb-3">
-                {['Next.js 13', 'Toss Design System', 'React Query'].map((tech) => (
+                {['Next.js', 'Toss Design System', 'React Query'].map((tech) => (
                   <TechBadge key={tech} tech={tech} />
                 ))}
               </div>

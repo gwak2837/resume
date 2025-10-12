@@ -138,6 +138,12 @@ export const workExperiencesDict = {
     zh: '（标准：Outstanding, Excellent, Good, Moderate, Need Improvement）',
     ja: '（基準：Outstanding, Excellent, Good, Moderate, Need Improvement）',
   },
+  성과평가_결과_2025_03: {
+    ko: '2025-03 Good',
+    en: '2025-03 Good',
+    zh: '2025-03 Good',
+    ja: '2025-03 Good',
+  },
   성과평가_결과: {
     ko: '2024-09 Excellent',
     en: '2024-09 Excellent',
