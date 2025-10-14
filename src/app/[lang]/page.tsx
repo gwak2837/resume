@@ -165,7 +165,7 @@ export default async function HomePage({ params }: PageProps) {
           </a>
         </div>
         <div className="flex flex-wrap gap-1 my-3">
-          <TechBadge tech="Next.js 15 App Router" />
+          <TechBadge tech="Next.js App Router" />
           <TechBadge tech="TailwindCSS" />
           <TechBadge tech="Drizzle ORM" />
           <TechBadge tech="PostgreSQL" />
