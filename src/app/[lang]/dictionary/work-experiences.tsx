@@ -477,7 +477,7 @@ export const workExperiencesDict = {
     ja: 'CI最適化',
   },
   CI최적화_설명: {
-    ko: 'Docker 이미지 레이어에 원격 클라우드 캐싱을 적용하여 프로젝트 빌드 시간을 평균 300초에서 210초로 30% 단축함.',
+    ko: 'Docker 이미지 레이어에 원격 클라우드 캐싱을 적용하여 빌드 시간을 평균 300초에서 210초로 30% 단축함.',
     en: 'Applied remote cloud caching to Docker image layers, reducing project build time from average 300 seconds to 210 seconds (30% reduction).',
     zh: '将远程云缓存应用于Docker镜像层，将项目构建时间从平均300秒缩短到210秒（减少30%）。',
     ja: 'Dockerイメージレイヤーにリモートクラウドキャッシングを適用し、プロジェクトビルド時間を平均300秒から210秒に30%短縮。',
