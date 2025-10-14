@@ -427,6 +427,10 @@ export default async function HomePage({ params }: PageProps) {
         <TechStack />
       </section>
 
+      <h1 className="text-4xl mb-8 font-semibold break-before-page">
+        {generalDict.추가정보[lang]}
+      </h1>
+
       {/* 개발 경험 */}
       <section id="development-experience" className="mb-12">
         <div className="flex items-center gap-3 mb-6">

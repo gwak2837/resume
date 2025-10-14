@@ -73,6 +73,12 @@ export const generalDict = {
     zh: '技术栈',
     ja: '技術スタック',
   },
+  추가정보: {
+    ko: '추가 정보',
+    en: 'Additional Information',
+    zh: '附加信息',
+    ja: '追加情報',
+  },
   개발경험: {
     ko: '개발 경험',
     en: 'Development Experience',
