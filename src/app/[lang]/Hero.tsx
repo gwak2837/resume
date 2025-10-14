@@ -87,9 +87,9 @@ const InfoSection = ({ title, children }: { title: string; children: ReactNode }
 )
 
 // Info item component
-const InfoItem = ({ label, children }: { label: string; children: ReactNode }) => (
+const InfoItem = ({ label, children }: { label?: string; children: ReactNode }) => (
   <div>
-    <dt className="text-sm text-gray-500">{label}</dt>
+    {label && <dt className="text-sm text-gray-500">{label}</dt>}
     <dd className="text-sm font-medium text-gray-900">{children}</dd>
   </div>
 )
@@ -148,8 +148,8 @@ export default function Hero({ lang }: Props) {
                 +82 10-9203-2837
               </ContactLink>
               <span className="hidden sm:inline text-gray-300">|</span>
-              <ContactLink href="mailto:gwak2837@google.com" icon={ICONS.email}>
-                gwak2837@google.com
+              <ContactLink href="mailto:gwak2837@gmail.com" icon={ICONS.email}>
+                gwak2837@gmail.com
               </ContactLink>
             </div>
           </div>
@@ -203,7 +203,7 @@ export default function Hero({ lang }: Props) {
 
           {/* Column 3: Contact & Links */}
           <InfoSection title={heroDict.other[lang]}>
-            <InfoItem label={heroDict.onlineProfilesLabel[lang]}>
+            <InfoItem>
               <div className="space-y-1 mt-2">
                 {socialLinks.map((link) => (
                   <SocialLink key={link.href} {...link} />
