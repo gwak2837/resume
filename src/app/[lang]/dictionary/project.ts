@@ -14,15 +14,15 @@ export const projectDict = {
     ja: '3.8万',
   },
   amplitude: {
-    ko: '9.7만',
-    en: '97K',
-    zh: '9.7万',
-    ja: '9.7万',
+    ko: '10.3만',
+    en: '103K',
+    zh: '10.3万',
+    ja: '10.3万',
   },
   cloudflareAnalytics: {
-    ko: '5.8만',
-    en: '58K',
-    zh: '5.8万',
-    ja: '5.8万',
+    ko: '5.9만',
+    en: '59K',
+    zh: '5.9万',
+    ja: '5.9万',
   },
 }
