@@ -2,10 +2,10 @@ import 'server-only'
 import { formatDate } from './utils'
 
 export const 작성일 = {
-  ko: formatDate(2025, 10, 19, 'ko'),
-  en: formatDate(2025, 10, 19, 'en'),
-  zh: formatDate(2025, 10, 19, 'zh'),
-  ja: formatDate(2025, 10, 19, 'ja'),
+  ko: formatDate(2025, 10, 26, 'ko'),
+  en: formatDate(2025, 10, 26, 'en'),
+  zh: formatDate(2025, 10, 26, 'zh'),
+  ja: formatDate(2025, 10, 26, 'ja'),
 }
 
 export const generalDict = {
@@ -170,10 +170,10 @@ export const generalDict = {
     ja: '約300文字',
   },
   경력기간: {
-    ko: `(2년 1개월, ${작성일.ko} 기준)`,
-    en: `(2 years 1 month, as of ${작성일.en})`,
-    zh: `(2年1个月，截至${작성일.zh})`,
-    ja: `(2年1ヶ月、${작성일.ja}基準)`,
+    ko: `(2년 2개월, ${작성일.ko} 기준)`,
+    en: `(2 years 2 months, as of ${작성일.en})`,
+    zh: `(2年2个月，截至${작성일.zh})`,
+    ja: `(2年2ヶ月、${작성일.ja}基準)`,
   },
   작성자: {
     ko: '작성자: 곽태욱',
