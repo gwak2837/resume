@@ -123,13 +123,13 @@ export default async function HomePage({ params }: PageProps) {
             </div>
             <div>
               <div className="text-3xl font-bold text-blue-600">{projectDict.amplitude[lang]}</div>
-              <div className="text-xs text-gray-600">MAU (Amplitude)</div>
+              <div className="text-xs text-gray-600">Day 7 Retention (Amplitude)</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-purple-600">
                 {projectDict.cloudflareAnalytics[lang]}
               </div>
-              <div className="text-xs text-gray-600">MAU (Cloudflare Analytics)</div>
+              <div className="text-xs text-gray-600">% Data Cached (Cloudflare)</div>
             </div>
           </div>
         </div>
