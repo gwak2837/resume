@@ -116,9 +116,13 @@ export default async function HomePage({ params }: PageProps) {
         <div className="mb-6 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-200">
           <div className="grid grid-cols-3 gap-4 text-center">
             <div>
-              <div className="text-3xl font-bold text-indigo-600">
+              <a
+                href="/images/2025-10-27-Google-Analytics.webp"
+                target="_blank"
+                className="text-3xl font-bold text-indigo-600"
+              >
                 {projectDict.googleAnalytics[lang]}
-              </div>
+              </a>
               <div className="text-xs text-gray-600">MAU (Google Analytics)</div>
             </div>
             <div>
@@ -126,10 +130,14 @@ export default async function HomePage({ params }: PageProps) {
               <div className="text-xs text-gray-600">Day 7 Retention (Amplitude)</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-purple-600">
+              <a
+                href="/images/2025-10-27-Cloudflare.webp"
+                target="_blank"
+                className="text-3xl font-bold text-purple-600"
+              >
                 {projectDict.cloudflareAnalytics[lang]}
-              </div>
-              <div className="text-xs text-gray-600">% Data Cached (Cloudflare)</div>
+              </a>
+              <div className="text-xs text-gray-600">Data Cached (Cloudflare)</div>
             </div>
           </div>
         </div>
