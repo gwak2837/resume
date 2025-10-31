@@ -117,7 +117,7 @@ export default async function HomePage({ params }: PageProps) {
           <div className="grid grid-cols-3 gap-4 text-center">
             <div>
               <a
-                href="/images/2025-10-27-Google-Analytics.webp"
+                href="/images/2025-google-analytics.webp"
                 target="_blank"
                 className="text-3xl font-bold text-indigo-600"
               >
@@ -131,7 +131,7 @@ export default async function HomePage({ params }: PageProps) {
             </div>
             <div>
               <a
-                href="/images/2025-10-27-Cloudflare.webp"
+                href="/images/2025-cloudflare.webp"
                 target="_blank"
                 className="text-3xl font-bold text-purple-600"
               >
