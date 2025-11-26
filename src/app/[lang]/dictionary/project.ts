@@ -20,9 +20,9 @@ export const projectDict = {
     ja: '22.7%',
   },
   cloudflareAnalytics: {
-    ko: '88.9%',
-    en: '88.9%',
-    zh: '88.9%',
-    ja: '88.9%',
+    ko: '88.4%',
+    en: '88.4%',
+    zh: '88.4%',
+    ja: '88.4%',
   },
 }
