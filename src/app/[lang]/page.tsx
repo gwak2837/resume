@@ -126,7 +126,13 @@ export default async function HomePage({ params }: PageProps) {
               <div className="text-xs text-gray-600">MAU (Google Analytics)</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-blue-600">{projectDict.amplitude[lang]}</div>
+              <a
+                href="/images/2025-amplitude.webp"
+                target="_blank"
+                className="text-3xl font-bold text-blue-600"
+              >
+                {projectDict.amplitude[lang]}
+              </a>
               <div className="text-xs text-gray-600">Day 7 Retention (Amplitude)</div>
             </div>
             <div>
@@ -839,6 +845,46 @@ export default async function HomePage({ params }: PageProps) {
           <h2 className="text-2xl font-bold">{generalDict.수상[lang]}</h2>
         </div>
         <ul>
+          {/* RIDI 2025 Demo Week - Featured Award */}
+          <li className="relative">
+            <div className="absolute -left-3 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-500 to-indigo-500 rounded-full" />
+            <div className="grid grid-cols-[5fr_3fr_1fr_2fr] gap-4 my-2">
+              <a
+                href="https://youtu.be/L7TKh6Ih41M?si=oNU1suhgFCf0WZeu&t=62"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-2"
+              >
+                <b>리디 2025 데모위크</b>
+                <span className="px-2 py-0.5 text-xs font-semibold bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-full">
+                  1st
+                </span>
+              </a>
+              <div className="text-gray-600">리디(주) 사내 해커톤</div>
+              <div>팀원 4명</div>
+              <div>2025.04</div>
+            </div>
+            <div className="mt-2 text-gray-700">
+              <span className="font-medium text-gray-900">'리디 콜렉트'</span> — 리디의 감상 경험을
+              '소장'으로 확장하는 디지털 컬렉션 시스템
+            </div>
+            <div className="flex flex-wrap gap-1.5 mt-2">
+              <span className="px-2 py-0.5 text-xs bg-blue-50 text-blue-700 rounded-md">
+                포토카드 수집
+              </span>
+              <span className="px-2 py-0.5 text-xs bg-indigo-50 text-indigo-700 rounded-md">
+                가챠 시스템
+              </span>
+              <span className="px-2 py-0.5 text-xs bg-purple-50 text-purple-700 rounded-md">
+                서브 플랫폼
+              </span>
+            </div>
+            <div className="mt-2 text-sm text-gray-500">
+              워킹데이 4일간 아이디어를 실제 제품으로 구현 · FE: 송태민, 곽태욱 · Webtoon PD:
+              Injeong Kang
+            </div>
+          </li>
+          <div className="border w-full my-6" />
           <li>
             <div className="grid grid-cols-[5fr_3fr_1fr_2fr] gap-4 my-2">
               <a

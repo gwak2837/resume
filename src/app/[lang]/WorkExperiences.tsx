@@ -180,6 +180,14 @@ export default function WorkExperiences({ lang }: Props) {
                   </p>
                 </Achievement>
                 <Achievement>
+                  <strong className="text-sm flex items-center gap-2">
+                    {workExperiencesDict.데모위크[lang]}
+                  </strong>
+                  <p className="text-sm text-gray-600 mt-1">
+                    {workExperiencesDict.데모위크_설명[lang]}
+                  </p>
+                </Achievement>
+                <Achievement>
                   <strong className="text-sm">{workExperiencesDict.만화이북_출시[lang]}</strong>
                   <p className="text-sm text-gray-600 mt-1">
                     {workExperiencesDict.만화이북_설명[lang]}

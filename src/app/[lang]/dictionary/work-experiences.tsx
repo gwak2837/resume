@@ -150,6 +150,54 @@ export const workExperiencesDict = {
     zh: '2024-09 Excellent',
     ja: '2024-09 Excellent',
   },
+  데모위크: {
+    ko: '2025 데모위크 1등 수상',
+    en: '2025 Demo Week 1st Place',
+    zh: '2025 Demo Week 第一名',
+    ja: '2025 Demo Week 1位受賞',
+  },
+  데모위크_설명: {
+    ko: (
+      <>
+        사내 해커톤에서 '리디 콜렉트' — 리디의 감상 경험을 '소장'으로 확장하는 디지털 컬렉션
+        시스템(포토카드 수집, 가챠)을 주제로 4명이서 기획·디자인·개발하여 1등을 수상함. 근무일 4일
+        동안 아이디어를 실제 제품으로 구현하는 과정을 경험함.{' '}
+        <a
+          href="https://youtu.be/L7TKh6Ih41M?si=oNU1suhgFCf0WZeu&t=62"
+          className="text-xs"
+          target="_blank"
+        >
+          YouTube
+        </a>
+      </>
+    ),
+    en: (
+      <>
+        Won 1st place at company hackathon by planning and developing 'RIDI Collect' — a digital
+        collection system (photocard collection, gacha) in 4 days.{' '}
+        <a href="https://youtu.be/L7TKh6Ih41M?si=oNU1suhgFCf0WZeu&t=62" target="_blank">
+          Presentation
+        </a>
+      </>
+    ),
+    zh: (
+      <>
+        在公司黑客松中策划并开发'RIDI Collect'——数字收藏系统（照片卡收集、扭蛋），4天内获得第一名。{' '}
+        <a href="https://youtu.be/L7TKh6Ih41M?si=oNU1suhgFCf0WZeu&t=62" target="_blank">
+          发表视频
+        </a>
+      </>
+    ),
+    ja: (
+      <>
+        社内ハッカソンで'RIDI
+        Collect'——デジタルコレクションシステム（フォトカード収集、ガチャ）を4日間で企画・開発し、1位を受賞。{' '}
+        <a href="https://youtu.be/L7TKh6Ih41M?si=oNU1suhgFCf0WZeu&t=62" target="_blank">
+          発表動画
+        </a>
+      </>
+    ),
+  },
   만화이북_출시: {
     ko: '만화e북 웹 뷰어 출시',
     en: 'Manga E-book Web Viewer Launch',

@@ -14,10 +14,10 @@ export const projectDict = {
     ja: '9.1万',
   },
   amplitude: {
-    ko: '22.7%',
-    en: '22.7%',
-    zh: '22.7%',
-    ja: '22.7%',
+    ko: '24.8%',
+    en: '24.8%',
+    zh: '24.8%',
+    ja: '24.8%',
   },
   cloudflareAnalytics: {
     ko: '88.4%',
