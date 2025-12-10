@@ -2,10 +2,10 @@ import 'server-only'
 import { formatDate } from './utils'
 
 export const 작성일 = {
-  ko: formatDate(2025, 11, 26, 'ko'),
-  en: formatDate(2025, 11, 26, 'en'),
-  zh: formatDate(2025, 11, 26, 'zh'),
-  ja: formatDate(2025, 11, 26, 'ja'),
+  ko: formatDate(2025, 12, 10, 'ko'),
+  en: formatDate(2025, 12, 10, 'en'),
+  zh: formatDate(2025, 12, 10, 'zh'),
+  ja: formatDate(2025, 12, 10, 'ja'),
 }
 
 export const generalDict = {
