@@ -152,20 +152,6 @@ export default async function HomePage({ params }: PageProps) {
           <div>2025년 3월 1일 ~ 현재</div>
         </div>
         <div>만화 웹 뷰어</div>
-        <div className="flex gap-0.5 my-2 items-center">
-          <a
-            href="https://github.com/gwak2837/litomi"
-            target="_blank"
-            className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
-          >
-            <div className="flex gap-1 items-center">
-              <Image src="/images/github.svg" alt="github" width="16" height="16" />
-              <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
-                GitHub
-              </h5>
-            </div>
-          </a>
-        </div>
         <div className="flex flex-wrap gap-1 my-3">
           <TechBadge tech="Next.js App Router" />
           <TechBadge tech="TailwindCSS" />
