@@ -165,18 +165,6 @@ export default async function HomePage({ params }: PageProps) {
               </h5>
             </div>
           </a>
-          <a
-            href="https://litomi.in"
-            target="_blank"
-            className="hover:no-underline	p-1 hover:bg-slate-100 rounded-lg focus:no-underline"
-          >
-            <div className="flex gap-1 items-center">
-              <Image src="/images/litomi.png" alt="litomi" width="16" height="16" />
-              <h5 className="underline-offset-4	underline text-black decoration-gray-300 ">
-                litomi.in
-              </h5>
-            </div>
-          </a>
         </div>
         <div className="flex flex-wrap gap-1 my-3">
           <TechBadge tech="Next.js App Router" />
