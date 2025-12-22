@@ -2,10 +2,10 @@ import 'server-only'
 import { formatDate } from './utils'
 
 export const 작성일 = {
-  ko: formatDate(2025, 12, 10, 'ko'),
-  en: formatDate(2025, 12, 10, 'en'),
-  zh: formatDate(2025, 12, 10, 'zh'),
-  ja: formatDate(2025, 12, 10, 'ja'),
+  ko: formatDate(2025, 12, 26, 'ko'),
+  en: formatDate(2025, 12, 26, 'en'),
+  zh: formatDate(2025, 12, 26, 'zh'),
+  ja: formatDate(2025, 12, 26, 'ja'),
 }
 
 export const generalDict = {
@@ -56,10 +56,10 @@ export const generalDict = {
     ja: '職務経歴',
   },
   경력기간: {
-    ko: `(2년 3개월, ${작성일.ko} 기준)`,
-    en: `(2 years 3 months, as of ${작성일.en})`,
-    zh: `(2年3个月，截至${작성일.zh})`,
-    ja: `(2年3ヶ月、${작성일.ja}基準)`,
+    ko: `(2년 4개월, ${작성일.ko} 기준)`,
+    en: `(2 years 4 months, as of ${작성일.en})`,
+    zh: `(2年4个月，截至${작성일.zh})`,
+    ja: `(2年4ヶ月、${작성일.ja}基準)`,
   },
   학력: {
     ko: '학력',
