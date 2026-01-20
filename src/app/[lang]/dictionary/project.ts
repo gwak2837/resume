@@ -8,10 +8,10 @@ export const projectDict = {
     ja: '個人プロジェクト',
   },
   googleAnalytics: {
-    ko: '11.2만',
-    en: '112K',
-    zh: '11.2万',
-    ja: '11.2万',
+    ko: '12.2만',
+    en: '122K',
+    zh: '12.2万',
+    ja: '12.2万',
   },
   amplitude: {
     ko: '26.1%',
