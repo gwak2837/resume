@@ -155,7 +155,7 @@ export default function Hero({ lang }: Props) {
           </div>
 
           {/* Quick Status Badge */}
-          <div className="ml-auto">
+          {/* <div className="ml-auto">
             <span className="inline-flex items-center px-4 py-2 bg-green-100 text-green-800 text-sm font-medium rounded-full">
               <span className="relative flex w-2 h-2 mr-2">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75" />
@@ -163,7 +163,7 @@ export default function Hero({ lang }: Props) {
               </span>
               {heroDict.availableStatus[lang]}
             </span>
-          </div>
+          </div> */}
         </div>
       </div>
 

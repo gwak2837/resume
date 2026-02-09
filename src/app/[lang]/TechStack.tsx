@@ -1,4 +1,5 @@
 import {
+  siArgo,
   siCloudflare,
   siCss,
   siDatadog,
@@ -8,6 +9,7 @@ import {
   siGoogleanalytics,
   siGooglecloud,
   siJavascript,
+  siKubernetes,
   siNextdotjs,
   siNodedotjs,
   siPostgresql,
@@ -41,12 +43,7 @@ const techCategories = [
     iconColor: 'text-blue-600',
     items: [
       {
-        name: 'JavaScript (ES2023)',
-        href: 'https://javascript.info/',
-        icon: siJavascript,
-      },
-      {
-        name: 'TypeScript',
+        name: 'TypeScript 5.9',
         href: 'https://www.typescriptlang.org/',
         icon: siTypescript,
       },
@@ -56,7 +53,7 @@ const techCategories = [
         icon: siCss,
       },
       {
-        name: 'Python',
+        name: 'Python 3',
         href: 'https://www.python.org/',
         icon: siPython,
       },
@@ -66,7 +63,6 @@ const techCategories = [
         icon: null,
       },
     ],
-    featured: ['TypeScript', 'JavaScript (ES2023)'],
   },
   {
     title: 'Frontend',
@@ -84,7 +80,7 @@ const techCategories = [
     iconColor: 'text-purple-600',
     items: [
       {
-        name: 'Next.js App Router',
+        name: 'Next.js',
         href: 'https://nextjs.org/',
         icon: siNextdotjs,
       },
@@ -97,16 +93,6 @@ const techCategories = [
         name: 'Tailwind CSS',
         href: 'https://tailwindcss.com/',
         icon: siTailwindcss,
-      },
-      {
-        name: 'Zustand',
-        href: 'https://zustand-demo.pmnd.rs/',
-        icon: null,
-      },
-      {
-        name: 'Playwright',
-        href: 'https://playwright.dev/',
-        icon: null,
       },
       {
         name: 'PWA',
@@ -136,12 +122,7 @@ const techCategories = [
         icon: siNodedotjs,
       },
       {
-        name: 'Socket.IO',
-        href: 'https://socket.io/',
-        icon: siSocketdotio,
-      },
-      {
-        name: 'Drizzle ORM',
+        name: 'Drizzle',
         href: 'https://orm.drizzle.team/',
         icon: siDrizzle,
       },
@@ -149,6 +130,11 @@ const techCategories = [
         name: 'Docker',
         href: 'https://www.docker.com/',
         icon: siDocker,
+      },
+      {
+        name: 'Kubernetes',
+        href: 'https://kubernetes.io/',
+        icon: siKubernetes,
       },
       {
         name: 'PostgreSQL',
@@ -231,6 +217,11 @@ const techCategories = [
     iconColor: 'text-orange-600',
     items: [
       {
+        name: 'Argo CD',
+        href: 'https://argoproj.github.io/cd/',
+        icon: siArgo,
+      },
+      {
         name: 'Sentry',
         href: 'https://sentry.io/welcome/',
         icon: siSentry,
@@ -241,24 +232,9 @@ const techCategories = [
         icon: siDatadog,
       },
       {
-        name: 'Vitest',
-        href: 'https://vitest.dev/',
-        icon: siVitest,
-      },
-      {
-        name: 'Google Analytics',
+        name: 'GA',
         href: 'https://analytics.google.com/analytics/web/',
         icon: siGoogleanalytics,
-      },
-      {
-        name: 'Amplitude',
-        href: 'https://amplitude.com/',
-        icon: null,
-      },
-      {
-        name: 'GrowthBook',
-        href: 'https://www.growthbook.io/',
-        icon: null,
       },
     ],
   },
