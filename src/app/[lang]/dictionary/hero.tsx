@@ -92,7 +92,7 @@ export const heroDict = {
     ja: '趣味',
   },
   interests: {
-    ko: '자전거, 웨이트, 독서',
+    ko: '자전거, 달리기, 코딩',
     en: 'Cycling, Weight Training, Reading',
     zh: '骑行、健身、阅读',
     ja: '自転車、ウェイトトレーニング、読書',
