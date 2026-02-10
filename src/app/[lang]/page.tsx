@@ -415,12 +415,28 @@ export default async function HomePage({ params }: PageProps) {
         <TechStack />
       </section>
 
-      <h1 className="text-4xl mb-8 font-semibold break-before-page">
-        {generalDict.추가정보[lang]}
-      </h1>
+      {/* 추가정보 (화면에서는 접힘, 프린트 시에는 항상 노출) */}
+      <details className="group">
+        <summary className="text-4xl mb-8 font-semibold break-before-page cursor-pointer select-none list-none flex items-center justify-between [&::-webkit-details-marker]:hidden">
+          <span>{generalDict.추가정보[lang]}</span>
+          <svg
+            className="w-6 h-6 text-slate-500 transition-transform group-[open]:rotate-180 print:hidden"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </summary>
 
-      {/* 개발 경험 */}
-      <section id="development-experience" className="mb-12">
+        <div className="print:!block">
+          {/* 개발 경험 */}
+          <section id="development-experience" className="mb-12">
         <div className="flex items-center gap-3 mb-6">
           <svg
             className="w-8 h-8 text-blue-600"
@@ -1188,6 +1204,8 @@ export default async function HomePage({ params }: PageProps) {
       <div className="w-full text-center text-sm text-slate-800 ">{generalDict.작성자[lang]}</div>
       <div className="my-8" />
       <Portpolio date={date} />
+        </div>
+      </details>
     </main>
   )
 }
