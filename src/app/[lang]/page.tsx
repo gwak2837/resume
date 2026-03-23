@@ -114,7 +114,7 @@ export default async function HomePage({ params }: PageProps) {
         </div>
         {/* Metrics Dashboard */}
         <div className="mb-6 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-200">
-          <div className="grid grid-cols-3 gap-4 text-center">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
             <div>
               <a
                 href="/images/2025-google-analytics.webp"
@@ -145,6 +145,12 @@ export default async function HomePage({ params }: PageProps) {
               </a>
               <div className="text-xs text-gray-600">Data Cached (Cloudflare)</div>
             </div>
+            <div>
+              <span className="text-3xl font-bold text-green-600">
+                {projectDict.adRevenue[lang]}
+              </span>
+              <div className="text-xs text-gray-600">Monthly Ad Revenue</div>
+            </div>
           </div>
         </div>
         <div className="flex justify-between whitespace-nowrap gap-4 my-4">
@@ -153,16 +159,18 @@ export default async function HomePage({ params }: PageProps) {
         </div>
         <div>만화 웹 뷰어</div>
         <div className="flex flex-wrap gap-1 my-3">
-          <TechBadge tech="Next.js App Router" />
+          <TechBadge tech="Next.js" />
           <TechBadge tech="TailwindCSS" />
-          <TechBadge tech="Drizzle ORM" />
+          <TechBadge tech="Drizzle" />
+          <TechBadge tech="Hono" />
           <TechBadge tech="PostgreSQL" />
           <TechBadge tech="Redis" />
           <TechBadge tech="Docker" />
-          <TechBadge tech="Vercel" />
-          <TechBadge tech="Supabase" />
+          <TechBadge tech="Argo CD" />
+          <TechBadge tech="Grafana" />
+          <TechBadge tech="k3s" />
           <TechBadge tech="Cloudflare" />
-          <TechBadge tech="Sentry" />
+          <TechBadge tech="Self-Hosted" />
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
           {/* Viewer Features */}

@@ -8,10 +8,10 @@ export const projectDict = {
     ja: '個人プロジェクト',
   },
   googleAnalytics: {
-    ko: '13.4만',
-    en: '134K',
-    zh: '13.4万',
-    ja: '13.4万',
+    ko: '13.9만',
+    en: '139K',
+    zh: '13.9万',
+    ja: '13.9万',
   },
   amplitude: {
     ko: '26.1%',
@@ -24,5 +24,11 @@ export const projectDict = {
     en: '90.5%',
     zh: '90.5%',
     ja: '90.5%',
+  },
+  adRevenue: {
+    ko: '$302',
+    en: '$302',
+    zh: '$302',
+    ja: '$302',
   },
 }
