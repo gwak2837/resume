@@ -46,7 +46,7 @@ export default async function HomePage({ params }: PageProps) {
   const date = 작성일[lang]
 
   return (
-    <main className="mx-auto max-w-[720px]">
+    <main className="mx-auto max-w-[718px]">
       <LanguageUpdate lang={lang} />
       <div className="flex justify-end items-center">
         <h1 className="sr-only">{generalDict.이력서[lang]}</h1>
