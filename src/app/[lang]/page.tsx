@@ -154,10 +154,9 @@ export default async function HomePage({ params }: PageProps) {
           </div>
         </div>
         <div className="flex justify-between whitespace-nowrap gap-4 my-4">
-          <h4>리토미 (litomi)</h4>
+          <h4>만화 웹 뷰어</h4>
           <div>2025년 3월 1일 ~ 현재</div>
         </div>
-        <div>만화 웹 뷰어</div>
         <div className="flex flex-wrap gap-1 my-3">
           <TechBadge tech="Next.js" />
           <TechBadge tech="TailwindCSS" />
