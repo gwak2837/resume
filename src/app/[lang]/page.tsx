@@ -157,6 +157,13 @@ export default async function HomePage({ params }: PageProps) {
           <h4>만화 웹 뷰어</h4>
           <div>2025년 3월 1일 ~ 현재</div>
         </div>
+        <div className="text-gray-700 leading-relaxed text-sm my-4">
+          기획, 디자인, 프론트엔드부터 백엔드 및 클라우드 인프라 파이프라인 구축까지 전체 시스템
+          아키텍처를 홀로 전담하여 완성한 풀스택 웹 뷰어 플랫폼입니다. 브라우저의 한계를 극복하는
+          제스처 뷰어 엔진, 계정 보안 엣지 인증망, 비동기 분산 수집/크롤링 파이프라인, PWA
+          데스크톱/모바일 앱 네이티브 환경 최적화까지 폭넓은 엔지니어링 역량을 집약한
+          프로덕트입니다.
+        </div>
         <div className="flex flex-wrap gap-1 my-3">
           <TechBadge tech="Next.js" />
           <TechBadge tech="TailwindCSS" />
@@ -169,6 +176,7 @@ export default async function HomePage({ params }: PageProps) {
           <TechBadge tech="Grafana" />
           <TechBadge tech="k3s" />
           <TechBadge tech="Cloudflare" />
+          <TechBadge tech="GCP" />
           <TechBadge tech="Self-Hosted" />
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
