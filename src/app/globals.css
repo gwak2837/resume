@@ -1,0 +1,151 @@
+@import '~sanitize.css';
+@import '~sanitize.css/forms.css';
+@import '~sanitize.css/typography.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media print {
+  @page {
+    size: A4;
+  }
+
+  body {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  /* Better text rendering */
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+:root {
+  --mobile-min-width: 320px;
+  --mobile-min-height: 568px;
+  --tablet-min-width_1: 767px;
+  --tablet-min-width: 768px;
+  --tablet-max-width: 1366px;
+  --desktop-min-width: 1440px;
+  --hd-desktop-min-width: 1920px;
+}
+
+html,
+body {
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  line-height: 1.6rem;
+  word-break: normal;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  width: 100%;
+}
+
+h2 {
+  background: rgb(241 245 249);
+}
+
+a {
+  color: rgb(14 116 144);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  text-decoration: underline;
+}
+
+textarea {
+  border: none;
+  line-height: 1.75rem;
+}
+
+b {
+  font-weight: bold;
+}
+
+table {
+  border-width: 1px;
+  width: 100%;
+
+  thead {
+    td {
+      border-width: 1px;
+      color: #444;
+      font-size: 0.9rem;
+      padding: 0.5rem;
+      text-align: center;
+    }
+  }
+  tbody {
+    td {
+      border-width: 1px;
+      line-height: 1.5rem;
+      padding: 0.5rem;
+    }
+  }
+}
+
+ol,
+dl {
+  list-style: inside;
+  list-style-position: outside;
+}
+
+ol {
+  margin-left: 1.2rem;
+}
+
+ol > li {
+  margin: 0.5rem 0;
+}
+
+pre {
+  display: inline;
+  font-size: 0.9rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+
+strong {
+  font-weight: 600;
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.95rem;
+  padding: 0.3rem 0.25rem 0.05rem;
+  margin-right: 0.1rem;
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  font-weight: 600;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
